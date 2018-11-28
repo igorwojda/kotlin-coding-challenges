@@ -13,7 +13,7 @@ import org.junit.Test
 // character string is a palindrome
 // --- Examples:
 //   tolerantPalindrome("abba") == true
-//   tolerantPalindrome("abb!a") == true
+//   tolerantPalindrome("abb#a") == true
 //   tolerantPalindrome("abcdefg") == false
 
 private fun tolerantPalindrome(str: String, characterRemoved: Boolean = false): Boolean {
