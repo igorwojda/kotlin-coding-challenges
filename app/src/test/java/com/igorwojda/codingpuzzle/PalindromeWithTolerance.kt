@@ -16,12 +16,11 @@ import org.junit.Test
 //   tolerantPalindrome("abb!a") == true
 //   tolerantPalindrome("abcdefg") == false
 
-private fun tolerantPalindrome(str: String): Boolean {
+private fun tolerantPalindrome(str: String, characterRemoved: Boolean = false): Boolean {
     return false
 }
 
 class PalindromeWithToleranceTest {
-
     @Test
     fun `"aba" is a palindrome`() {
         tolerantPalindrome("aba") shouldEqual true
@@ -30,6 +29,11 @@ class PalindromeWithToleranceTest {
     @Test
     fun `"ab!a" is a palindrome`() {
         tolerantPalindrome("ab!a") shouldEqual true
+    }
+
+    @Test
+    fun `"a!ba" is a palindrome`() {
+        tolerantPalindrome("a!ba") shouldEqual true
     }
 
     @Test
@@ -61,9 +65,9 @@ class PalindromeWithToleranceTest {
     fun `"Fish hsif" is not a palindrome`() {
         tolerantPalindrome("Fish hsif") shouldEqual false
     }
+
     @Test
     fun `"pennep" a palindrome`() {
         tolerantPalindrome("pennep") shouldEqual true
     }
-
 }
