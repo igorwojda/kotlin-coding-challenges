@@ -8,7 +8,7 @@ private fun palindromeSolution1(str: String): Boolean {
 //iterative, double pointer solution
 private fun palindromeSolution2(str: String): Boolean {
     str.forEachIndexed { index, char ->
-        val rightIndex = str.length - index - 1
+        val rightIndex = str.lastIndex - index
 
         if(char != str[rightIndex])
             return false
@@ -21,22 +21,14 @@ private fun palindromeSolution2(str: String): Boolean {
 }
 
 //recursive solution
-private fun palindrome(str: String): Boolean {
+private fun palindromeSolution3(str: String): Boolean {
     return if(str.isEmpty() || str.length == 1) {
         true
     } else {
         if(str.first() == str.last()) {
-            palindrome(str.substring(1 until str.lastIndex))
+            palindromeSolution3(str.substring(1 until str.lastIndex))
         } else {
             false
         }
     }
 }
-
-//not working, because kotlin does not have allIndexed - equivalent of Array.prototype.every()
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
-//private fun palindrome(str: String): Boolean {
-//    return str.allIndexed { index, char ->
-//        char == str[str.length - index - 1]
-//    }
-//}
