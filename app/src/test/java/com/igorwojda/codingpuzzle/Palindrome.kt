@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle
 
-import org.amshove.kluent.shouldBe
+import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 // --- Directions
@@ -20,36 +20,36 @@ class PalindromeTest {
 
     @Test
     fun `"aba" is a palindrome`() {
-        palindrome("aba") shouldBe true
+        palindrome("aba") shouldEqual true
     }
 
     @Test
     fun `" aba" is not a palindrome`() {
-        palindrome(" aba") shouldBe false
+        palindrome(" aba") shouldEqual false
     }
 
     @Test
     fun `"aba " is not a palindrome`() {
-        palindrome("aba ") shouldBe false
+        palindrome("aba ") shouldEqual false
     }
 
     @Test
     fun `"greetings" is not a palindrome`() {
-        palindrome("greetings") shouldBe false
+        palindrome("greetings") shouldEqual false
     }
 
     @Test
     fun `"1000000001" a palindrome`() {
-        palindrome("1000000001") shouldBe true
+        palindrome("1000000001") shouldEqual true
     }
 
     @Test
     fun `"Fish hsif" is not a palindrome`() {
-        palindrome("Fish hsif") shouldBe false
+        palindrome("Fish hsif") shouldEqual false
     }
     @Test
     fun `"pennep" a palindrome`() {
-        palindrome("pennep") shouldBe true
+        palindrome("pennep") shouldEqual true
     }
 
 }
