@@ -12,16 +12,10 @@ private fun fibonacciSequenceRecursiveCacheSolution1(
             return n
         }
 
-        var result2 = fibonacciSequenceRecursiveCacheSolution1(
-            n - 1,
-            methodCache
-        ) + fibonacciSequenceRecursiveCacheSolution1(
-            n - 2,
-            methodCache
-        )
-        methodCache.add(MethodCache(n, result2))
-        return result2
-    } else {
-        return result
+        result = fibonacciSequenceRecursiveCacheSolution1(n - 1, methodCache) +
+            fibonacciSequenceRecursiveCacheSolution1(n - 2, methodCache)
+        methodCache.add(MethodCache(n, result))
     }
+
+    return result
 }
