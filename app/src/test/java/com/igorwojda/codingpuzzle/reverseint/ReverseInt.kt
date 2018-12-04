@@ -3,16 +3,6 @@ package com.igorwojda.codingpuzzle.reverseint
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-// --- Instructions
-// Given an integer, return an integer that is the reverse
-// ordering of numbers.
-// --- Examples
-//   reverseInt(15) === 51
-//   reverseInt(981) === 189
-//   reverseInt(500) === 5
-//   reverseInt(-15) === -51
-//   reverseInt(-90) === -9
-
 private fun reverseInt(i: Int): Int {
     return 0
 }
