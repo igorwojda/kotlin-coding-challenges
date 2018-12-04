@@ -35,9 +35,7 @@ private fun fibonacciSequenceSolution3(n: Int): Int {
     return when (n) {
         0 -> 0
         1 -> 1
-        else -> fibonacciSequenceSolution3(n - 1) + fibonacciSequenceSolution3(
-            n - 2
-        )
+        else -> fibonacciSequenceSolution3(n - 1) + fibonacciSequenceSolution3(n - 2)
     }
 }
 
@@ -47,7 +45,5 @@ private fun fibonacciSequenceSolution4(n: Int): Int {
         return n
     }
 
-    return fibonacciSequenceSolution4(n - 1) + fibonacciSequenceSolution4(
-        n - 2
-    )
+    return fibonacciSequenceSolution4(n - 1) + fibonacciSequenceSolution4(n - 2)
 }

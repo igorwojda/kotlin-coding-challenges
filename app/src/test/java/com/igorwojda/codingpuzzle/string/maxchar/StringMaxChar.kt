@@ -3,13 +3,6 @@ package com.igorwojda.codingpuzzle.string.maxchar
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-// --- Directions
-// Given a string, return the character that is most
-// commonly used in the string.
-// --- Examples
-// maxChar("abcccccccd") === "c"
-// maxChar("apple 1231111") === "1"
-
 private fun maxChar(str: String): Char? {
     return 'a'
 }

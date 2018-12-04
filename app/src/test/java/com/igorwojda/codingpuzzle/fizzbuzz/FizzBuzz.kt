@@ -3,7 +3,7 @@ package com.igorwojda.codingpuzzle.fizzbuzz
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-// --- Directions
+// --- Instructions
 // Write a program that adds to list numbers
 // from 1 to n. But for multiples of three print
 // “fizz” instead of the number and for the multiples

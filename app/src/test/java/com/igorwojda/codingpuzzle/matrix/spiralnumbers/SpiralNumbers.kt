@@ -3,23 +3,6 @@ package com.igorwojda.codingpuzzle.matrix.spiralnumbers
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-// --- Directions
-// Write a function that accepts an integer N
-// and returns a NxN spiral spiralNumbersMatrix.
-// --- Examples
-//   spiralNumbersMatrix(2)
-//     [[1, 2],
-//     [4, 3]]
-//   spiralNumbersMatrix(3)
-//     [[1, 2, 3],
-//     [8, 9, 4],
-//     [7, 6, 5]]
-//  spiralNumbersMatrix(4)
-//     [[1,   2,  3, 4],
-//     [12, 13, 14, 5],
-//     [11, 16, 15, 6],
-//     [10,  9,  8, 7]]
-
 private fun spiralNumbersMatrix(n: Int): List<MutableList<Int?>> {
     return listOf()
 }

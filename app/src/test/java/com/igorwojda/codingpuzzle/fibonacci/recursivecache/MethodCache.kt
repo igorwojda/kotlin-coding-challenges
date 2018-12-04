@@ -1,3 +1,3 @@
 package com.igorwojda.codingpuzzle.fibonacci.recursivecache
 
-data class FibonacciCache(val n: Int, val result: Int)
+data class MethodCache(val n: Int, val result: Int)
