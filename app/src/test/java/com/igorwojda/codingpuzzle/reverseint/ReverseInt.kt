@@ -3,7 +3,7 @@ package com.igorwojda.codingpuzzle.reverseint
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-// --- Directions
+// --- Instructions
 // Given an integer, return an integer that is the reverse
 // ordering of numbers.
 // --- Examples

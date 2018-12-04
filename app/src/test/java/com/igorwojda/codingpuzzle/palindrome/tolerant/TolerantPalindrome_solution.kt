@@ -1,5 +1,3 @@
-@file:JvmName("TolerantPalindromeKt")
-
 package com.igorwojda.codingpuzzle.palindrome.tolerant
 
 //iterative solution

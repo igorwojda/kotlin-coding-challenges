@@ -3,16 +3,6 @@ package com.igorwojda.codingpuzzle.fibonacci.classic
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-// --- Directions
-// Print out the n-th entry in the fibonacciSequence series.
-// The fibonacciSequence series is an ordering of numbers where
-// each number is the sum of the preceding two.
-// For example, the sequence
-//  [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
-// forms the first ten entries of the fibonacciSequence series.
-// Example:
-//   fibonacciSequence(4) == 3
-
 private fun fibonacciSequence(n: Int): Int {
     return 0
 }

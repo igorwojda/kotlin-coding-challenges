@@ -3,16 +3,6 @@ package com.igorwojda.codingpuzzle.listchunk
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-// --- Directions
-// Given an array and chunk size, divide the array into many sub arrays
-// where each sub array is of length size
-// --- Examples
-// chunk([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]]
-// chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
-// chunk([1, 2, 3, 4, 5, 6, 7, 8], 3) --> [[ 1, 2, 3], [4, 5, 6], [7, 8]]
-// chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
-// chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
-
 class ListChunkTest {
     @Test
     fun `chunk divides an list of 10 elements with chunk size 2`() {

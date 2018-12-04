@@ -3,8 +3,6 @@ package com.igorwojda.codingpuzzle.rangecontainsrange
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-//Write function to check if range1 contains range2
-
 class RangeContainsRangeTest {
     @Test
     fun `5-7 range contains 5-7`() {
