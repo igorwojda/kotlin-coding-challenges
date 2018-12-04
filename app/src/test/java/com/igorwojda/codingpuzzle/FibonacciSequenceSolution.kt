@@ -2,20 +2,20 @@ package com.igorwojda.codingpuzzle
 
 //iterative solution
 private fun fibonacciSequenceSolution1(n: Int): Int {
-    if(n == 0) {
+    if (n == 0) {
         return 0
     } else if (n == 1) {
         return 1
     }
 
-    var prevPrev = 0
-    var prev = 1
+    var first = 0
+    var second = 1
     var current = 0
 
     (2..n).forEach {
-        current = prevPrev + prev
-        prevPrev = prev
-        prev = current
+        current = first + second
+        first = second
+        second = current
     }
 
     return current
