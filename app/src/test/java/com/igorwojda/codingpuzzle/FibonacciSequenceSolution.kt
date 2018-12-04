@@ -2,10 +2,8 @@ package com.igorwojda.codingpuzzle
 
 //iterative solution
 private fun fibonacciSequenceSolution1(n: Int): Int {
-    if (n == 0) {
-        return 0
-    } else if (n == 1) {
-        return 1
+    if (n < 2) {
+        return n
     }
 
     var first = 0
@@ -43,8 +41,8 @@ private fun fibonacciSequenceSolution3(n: Int): Int {
 
 //recursive solution
 private fun fibonacciSequenceSolution4(n: Int): Int {
-    if (n == 1 || n == 2) {
-        return 1
+    if (n < 2) {
+        return n
     }
 
     return fibonacciSequenceSolution4(n - 1) + fibonacciSequenceSolution4(n - 2)
