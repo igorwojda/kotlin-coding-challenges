@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun maxChar(str: String): Char? {
-    return 'a'
+    return 'z'
 }
 
 class StringMaxCharTest {

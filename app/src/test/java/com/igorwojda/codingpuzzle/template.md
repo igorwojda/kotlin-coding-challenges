@@ -1,6 +1,0 @@
-# Instructions
-
-# Examples
-```
-
-```
