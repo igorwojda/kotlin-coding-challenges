@@ -42,10 +42,10 @@ private fun fibonacciSequenceSolution3(n: Int): Int {
 }
 
 //recursive solution
-private fun fibonacciSequence4(n: Int): Int {
+private fun fibonacciSequenceSolution4(n: Int): Int {
     if (n == 1 || n == 2) {
         return 1
     }
 
-    return fibonacciSequence4(n - 1) + fibonacciSequence4(n - 2)
+    return fibonacciSequenceSolution4(n - 1) + fibonacciSequenceSolution4(n - 2)
 }
