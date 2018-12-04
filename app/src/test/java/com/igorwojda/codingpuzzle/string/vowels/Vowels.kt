@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.string.vovels
+package com.igorwojda.codingpuzzle.string.vowels
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

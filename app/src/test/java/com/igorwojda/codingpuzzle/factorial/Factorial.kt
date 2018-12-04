@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.recursivefactorial
+package com.igorwojda.codingpuzzle.factorial
 
 import org.amshove.kluent.shouldEqual
 import org.amshove.kluent.shouldThrow

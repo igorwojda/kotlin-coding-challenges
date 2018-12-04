@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.recursiveprintnumber.classic
+package com.igorwojda.codingpuzzle.printnumber.classic
 
 private fun printNumberSolutioin(n: Int): List<Int> {
     val list = mutableListOf<Int>()

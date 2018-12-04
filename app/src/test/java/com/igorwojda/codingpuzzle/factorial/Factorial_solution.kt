@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.recursivefactorial
+package com.igorwojda.codingpuzzle.factorial
 
 private fun factorialSolution1(n: Long): Long {
     require(n >= 0) { "Underflow error in factorial" }

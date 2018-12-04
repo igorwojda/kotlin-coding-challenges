@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.string.vovels
+package com.igorwojda.codingpuzzle.string.vowels
 
 //Kotlin collection processing
 private fun vowelsSolution2(str: String): Int {
