@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.recursiveprintnumber.steps
+package com.igorwojda.codingpuzzle.printnumber.steps
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
