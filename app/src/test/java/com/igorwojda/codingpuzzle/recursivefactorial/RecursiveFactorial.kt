@@ -5,10 +5,7 @@ import org.amshove.kluent.shouldThrow
 import org.junit.Test
 
 private fun factorial(n: Long): Long {
-    require(n >= 0) { "Underflow error in factorial" }
-    require(n <= 20) { "Overflow error in factorial" }
-
-    return if (n == 0L) 1 else n * factorial(n - 1)
+    return 0L
 }
 
 class RecursiveFactorial {
