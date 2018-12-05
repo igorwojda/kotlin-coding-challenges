@@ -20,7 +20,7 @@ Order of the programming problems is random, however in the future I many split 
 5. Each problem is located in separate package and it contains 3 files:
 * `ProblemName.md` - description of the problem
 * `ProblemName.kt` - contains empty method/class to solver problem and set of tests (we will write code, solve problem here)
-* `ProblemName_solution.kt` - file that contains problem solution
+* `ProblemNameSolution.kt` - file that contains problem solution
 
 # How to run the tests?
 Open `ProblemName.kt` file for specific problem. There will be single class with `Test` suffix (`ProblemNameTest`). Click on green arrow
