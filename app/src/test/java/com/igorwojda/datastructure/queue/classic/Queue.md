@@ -12,15 +12,15 @@ For simplicity we can assume that Queue will only accept `Int`, however you can 
 # Examples
 Example 1
 ```
-val q = Queue();
-q.add(1);
-q.remove(); -> returns 1;
+val q = Queue()
+q.add(1)
+q.remove() -> returns 1
 q.remove() -> returns null
 ```
 
 Example 2
 ```
-val q = Queue();
+val q = Queue()
 q.add(1)
 q.add(2)
 q.add(3)

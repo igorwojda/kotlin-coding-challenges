@@ -56,7 +56,8 @@ Be patient, persistent and have fun solving 🤓
 ## Data structures
 1. [Queue](app/src/test/java/com/igorwojda/datastructure/queue/classic/Queue.md)
 1. [Generic queue](app/src/test/java/com/igorwojda/datastructure/queue/generic/GenericQueue.md)
-1. [Queue weave](app/src/test/java/com/igorwojda/datastructure/queue/weave/Weave.md)
+1. [Stack](app/src/test/java/com/igorwojda/datastructure/stack/classic/Stack.md)
+1. [Generic stack](app/src/test/java/com/igorwojda/datastructure/stack/generic/GenericStack.md)
 
 # Contribute
 If you have any doubts, found a problem, found better solution or simply you want to add new programming problem please create PR
