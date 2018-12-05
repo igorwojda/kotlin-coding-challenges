@@ -1,29 +1,33 @@
 package com.igorwojda.codingpuzzle.string.maxchar
 
 //Optimal approach: complexity O(n)
-private fun recurringCharSolution1(str: String): Char? {
-    val set = mutableSetOf<Char>()
+object RecurringCharSolution1 {
+    private fun recurringChar(str: String): Char? {
+        val set = mutableSetOf<Char>()
 
-    str.forEach { char ->
-        if (set.any { it == char }) {
-            return char
+        str.forEach { char ->
+            if (set.any { it == char }) {
+                return char
+            }
+
+            set.add(char)
         }
 
-        set.add(char)
+        return null
     }
-
-    return null
 }
 
 //Naive approach: complexity O(n^2)
-private fun recurringCharSolution2(str: String): Char? {
-    str.forEachIndexed { index, c ->
-        str.substring(index + 1).forEach {
-            if (c == it) {
-                return it
+object RecurringCharSolution2 {
+    private fun recurringChar(str: String): Char? {
+        str.forEachIndexed { index, c ->
+            str.substring(index + 1).forEach {
+                if (c == it) {
+                    return it
+                }
             }
         }
-    }
 
-    return null
+        return null
+    }
 }

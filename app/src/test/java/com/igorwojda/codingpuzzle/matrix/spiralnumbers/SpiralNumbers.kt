@@ -7,7 +7,7 @@ private fun spiralNumbersMatrix(n: Int): List<MutableList<Int?>> {
     return listOf()
 }
 
-class SpiralNumbersTest {
+class SpiralNumbersMatrixTest {
     @Test
     fun `matrix produces a 2x2 array`() {
         val matrix = spiralNumbersMatrix(2)

@@ -1,34 +1,40 @@
 package com.igorwojda.codingpuzzle.palindrome.classic
 
 //string reverse
-private fun palindromeSolution1(str: String): Boolean {
-    return str == str.reversed()
+object PalindromeSolution1 {
+    private fun palindrome(str: String): Boolean {
+        return str == str.reversed()
+    }
 }
 
 //iterative, double pointer solution
-private fun palindromeSolution2(str: String): Boolean {
-    str.forEachIndexed { index, char ->
-        val rightIndex = str.lastIndex - index
+object PalindromeSolution2 {
+    private fun palindrome(str: String): Boolean {
+        str.forEachIndexed { index, char ->
+            val rightIndex = str.lastIndex - index
 
-        if (char != str[rightIndex])
-            return false
+            if (char != str[rightIndex])
+                return false
 
-        if (index > rightIndex)
-            return true
+            if (index > rightIndex)
+                return true
+        }
+
+        return true
     }
-
-    return true
 }
 
 //recursive solution
-private fun palindromeSolution3(str: String): Boolean {
-    return if (str.isEmpty() || str.length == 1) {
-        true
-    } else {
-        if (str.first() == str.last()) {
-            palindromeSolution3(str.substring(1 until str.lastIndex))
+object PalindromeSolution3 {
+    private fun palindrome(str: String): Boolean {
+        return if (str.isEmpty() || str.length == 1) {
+            true
         } else {
-            false
+            if (str.first() == str.last()) {
+                palindrome(str.substring(1 until str.lastIndex))
+            } else {
+                false
+            }
         }
     }
 }

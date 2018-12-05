@@ -4,12 +4,13 @@ recursion it has exponential complexity (function is called recursively multiple
 a long time. Store arguments of each call along with the result using `MethodCache` class. If the function is called again with the same
 arguments, return the precomputed result rather than running the function again.
 
+# Examples
 ```
-private fun fibonacci(n: Int): Int {
+private fun fibonacciSequenceRecursiveCached(n: Int): Int {
     if (n < 2) {
         return n
     }
 
-    return fibonacci(n - 1) + fibonacci(n - 2)
+    return fibonacciSequenceRecursiveCached(n - 1) + fibonacciSequenceRecursiveCached(n - 2)
 }
 ```
