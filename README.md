@@ -3,7 +3,7 @@ This repository contains set of programming problems that are meant to be solved
 challenges will help you to prepare for [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
 This project is Android Studio project, because it allow quick out of the box JUnit test support. To start you just need to import project
-directly from github into Android Studio (detailed instructions).
+directly from github into Android Studio (detailed instructions below).
 
 I strongly encourage you to take a pen, piece of paper and take your time thinking about problem before you look at the presented solution
 (sometimes one night sleep is all we need before solution pop ups into our head). SOme solution many have method or class names with
