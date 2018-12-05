@@ -1,4 +1,4 @@
-package com.igorwojda.datastructure.weave
+package com.igorwojda.datastructure.queue.weave
 
 private object WaveSolution {
     class GenericQueue<E> {

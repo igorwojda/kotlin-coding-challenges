@@ -1,17 +1,10 @@
-package com.igorwojda.datastructure.weave
+package com.igorwojda.datastructure.queue.weave
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun weave(q1: GenericQueue<*>, q2: GenericQueue<*>): GenericQueue<*> {
-    val result = GenericQueue<Any>()
-
-    while (q1.peek() != null && q2.peek() != null) {
-        q1.remove()?.let { result.add(it) }
-        q2.remove()?.let { result.add(it) }
-    }
-
-    return result
+    return GenericQueue<Any>()
 }
 
 private class GenericQueue<E> {

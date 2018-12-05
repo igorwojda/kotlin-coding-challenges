@@ -1,4 +1,4 @@
-package com.igorwojda.datastructure.queue
+package com.igorwojda.datastructure.queue.classic
 
 private object QueueSolution {
     class Queue {
