@@ -17,3 +17,6 @@ pyramid(3)
     ' ### '
     '#####'
 ```
+
+# Files
+[Package](.)
