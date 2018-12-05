@@ -1,51 +1,52 @@
-package com.igorwojda.datastructure.genericqueue
+package com.igorwojda.datastructure.queue.classic
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private class GenericQueue<E> {
-    fun add(element: E) {}
+private class Queue {
+    fun add(i: Int) {
+    }
 
     fun remove() = 0
 
     fun peek() = 0
 }
 
-class GenericQueueTest {
+class QueueTest {
     @Test
     fun `can add elements to a queue`() {
-        GenericQueue<Int>().apply { add(1) }
+        Queue().apply { add(1) }
     }
 
     @Test
     fun `can remove elements from empty queue`() {
-        GenericQueue<Int>().apply { remove() shouldEqual null }
+        Queue().apply { remove() shouldEqual null }
     }
 
     @Test
     fun `can remove elements from a queue`() {
-        GenericQueue<String>().apply {
-            add("ABC")
+        Queue().apply {
+            add(1)
             remove()
         }
     }
 
     @Test
     fun `order of elements is maintained`() {
-        GenericQueue<Char>().apply {
-            add('A')
-            add('B')
-            add('C')
-            remove() shouldEqual 'A'
-            remove() shouldEqual 'B'
-            remove() shouldEqual 'C'
+        Queue().apply {
+            add(1)
+            add(2)
+            add(3)
+            remove() shouldEqual 1
+            remove() shouldEqual 2
+            remove() shouldEqual 3
             remove() shouldEqual null
         }
     }
 
     @Test
     fun `peek returns, but does not remove element`() {
-        GenericQueue<Int>().apply {
+        Queue().apply {
             add(1)
             add(2)
             peek() shouldEqual 1
