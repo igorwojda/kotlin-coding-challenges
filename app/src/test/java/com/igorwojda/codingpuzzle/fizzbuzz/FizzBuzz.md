@@ -4,7 +4,8 @@ of five add `Buzz`. For numbers which are multiples of both three and five add `
 
 # Examples
 ```
-fizzBuzz(5) //return listOf(1, 2, "fizz", 4, "buzz")
+fizzBuzz(5) //return listOf(1, 2, "Fizz", 4, "Buzz")
+fizzBuzz(16) //return listOf(1, 2, "Fizz", 4, "Buzz", 5, "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz", 16)
 ```
 
 # Files
