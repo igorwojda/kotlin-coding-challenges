@@ -1,7 +1,7 @@
 package com.igorwojda.datastructure.queue.classic
 
 private object QueueSolution {
-    class Queue {
+    private class Queue {
         private val list = mutableListOf<Int>()
 
         fun add(i: Int) {
