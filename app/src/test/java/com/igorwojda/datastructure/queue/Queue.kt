@@ -15,46 +15,47 @@ private class Queue {
 class QueueTest {
     @Test
     fun `can add elements to a queue`() {
-        val q = Queue()
-        q.add(1)
+        Queue().apply { add(1) }
     }
 
     @Test
     fun `can remove elements from empty queue`() {
-        val q = Queue()
-        q.remove() shouldEqual null
+        Queue().apply { remove() shouldEqual null }
     }
 
     @Test
     fun `can remove elements from a queue`() {
-        val q = Queue()
-        q.add(1)
-        q.remove()
+        Queue().apply {
+            add(1)
+            remove()
+        }
     }
 
     @Test
     fun `order of elements is maintained`() {
-        val q = Queue()
-        q.add(1)
-        q.add(2)
-        q.add(3)
-        q.remove() shouldEqual 1
-        q.remove() shouldEqual 2
-        q.remove() shouldEqual 3
-        q.remove() shouldEqual null
+        Queue().apply {
+            add(1)
+            add(2)
+            add(3)
+            remove() shouldEqual 1
+            remove() shouldEqual 2
+            remove() shouldEqual 3
+            remove() shouldEqual null
+        }
     }
 
     @Test
     fun `peek returns, but does not remove element`() {
-        val q = Queue()
-        q.add(1)
-        q.add(2)
-        q.peek() shouldEqual 1
-        q.peek() shouldEqual 1
-        q.remove() shouldEqual 1
-        q.peek() shouldEqual 2
-        q.remove() shouldEqual 2
-        q.peek() shouldEqual null
-        q.remove() shouldEqual null
+        Queue().apply {
+            add(1)
+            add(2)
+            peek() shouldEqual 1
+            peek() shouldEqual 1
+            remove() shouldEqual 1
+            peek() shouldEqual 2
+            remove() shouldEqual 2
+            peek() shouldEqual null
+            remove() shouldEqual null
+        }
     }
 }
