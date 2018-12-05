@@ -4,14 +4,12 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private class Queue {
-    private val list = mutableListOf<Int>()
-
     fun add(i: Int) {
     }
 
-    fun remove(): Int {
-        return 0
-    }
+    fun remove() = 0
+
+    fun peek() = 0
 }
 
 class QueueTest {
@@ -43,6 +41,19 @@ class QueueTest {
         q.remove() shouldEqual 1
         q.remove() shouldEqual 2
         q.remove() shouldEqual 3
+        q.remove() shouldEqual null
+    }
+
+    @Test
+    fun `peek does not remove element`() {
+        val q = Queue()
+        q.add(1)
+        q.add(2)
+        q.peek() shouldEqual 1
+        q.remove() shouldEqual 1
+        q.peek() shouldEqual 2
+        q.remove() shouldEqual 2
+        q.peek() shouldEqual null
         q.remove() shouldEqual null
     }
 }

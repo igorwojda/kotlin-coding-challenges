@@ -4,13 +4,11 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private class GenericQueue<E> {
-    private val list = mutableListOf<E>()
+    fun add(element: E) {}
 
-    fun add(element: E) {
-        list.add(element)
-    }
+    fun remove() = 0
 
-    fun remove() = if (list.isEmpty()) null else list.removeAt(0)
+    fun peek() = 0
 }
 
 class GenericQueueTest {
@@ -42,6 +40,19 @@ class GenericQueueTest {
         q.remove() shouldEqual 'A'
         q.remove() shouldEqual 'B'
         q.remove() shouldEqual 'C'
+        q.remove() shouldEqual null
+    }
+
+    @Test
+    fun `peek does not remove element`() {
+        val q = GenericQueue<Int>()
+        q.add(1)
+        q.add(2)
+        q.peek() shouldEqual 1
+        q.remove() shouldEqual 1
+        q.peek() shouldEqual 2
+        q.remove() shouldEqual 2
+        q.peek() shouldEqual null
         q.remove() shouldEqual null
     }
 }
