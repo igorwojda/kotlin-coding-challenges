@@ -11,6 +11,8 @@ private fun fibonacciSequenceRecursiveCached(n: Int, methodCache: MutableList<Me
     return fibonacciSequenceRecursiveCached(n - 1) + fibonacciSequenceRecursiveCached(n - 2)
 }
 
+private data class MethodCache(val n: Int, val result: Int)
+
 //@Test(timeout=1000)
 class FibonacciSeriesRecursiveMethodCacheTest {
     @Test

@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.matrix.spiralnumbers
 
-object SpiralNumbersSolution {
+private object SpiralNumbersSolution {
     private fun spiralNumbersMatrix(n: Int): List<MutableList<Int?>> {
         val list = MutableList(n) {
             MutableList<Int?>(n) { null }

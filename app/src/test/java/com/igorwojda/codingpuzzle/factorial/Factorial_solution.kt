@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.factorial
 
-object FactorialSolution {
+private object FactorialSolution {
     private fun factorial(n: Long): Long {
         require(n >= 0) { "Underflow error in factorial" }
         require(n <= 20) { "Overflow error in factorial" }

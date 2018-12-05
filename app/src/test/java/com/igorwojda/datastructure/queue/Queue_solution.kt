@@ -1,6 +1,6 @@
 package com.igorwojda.datastructure.queue
 
-object QueueSolution {
+private object QueueSolution {
     class Queue {
         private val list = mutableListOf<Int>()
 

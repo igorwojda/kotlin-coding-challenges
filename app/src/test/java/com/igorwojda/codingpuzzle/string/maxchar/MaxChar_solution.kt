@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.string.maxchar
 
-object MaxCharSolution {
+private object MaxCharSolution {
     private fun maxChar(str: String): Char? {
         val map = mutableMapOf<Char, Int>()
 

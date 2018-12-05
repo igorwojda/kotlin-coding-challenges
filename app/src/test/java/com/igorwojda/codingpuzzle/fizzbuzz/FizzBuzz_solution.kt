@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.fizzbuzz
 
-object FizzBuzzSolution {
+private object FizzBuzzSolution {
     private fun fizzBuzz(n: Int): List<String> {
         val list = mutableListOf<String>()
 

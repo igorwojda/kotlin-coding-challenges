@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.listchunk
 
-object ChunkSolution1 {
+private object ChunkSolution1 {
     private fun chunk(list: List<Int>, size: Int): List<List<Int>> {
         val chunks = mutableListOf<MutableList<Int>>()
 
@@ -16,7 +16,7 @@ object ChunkSolution1 {
     }
 }
 
-object ChunkSolution2 {
+private object ChunkSolution2 {
     private fun chunk(list: List<Int>, size: Int): List<List<Int>> {
         val chunks = mutableListOf<List<Int>>()
 
@@ -29,7 +29,7 @@ object ChunkSolution2 {
     }
 }
 
-object ChunkSolution3 {
+private object ChunkSolution3 {
     private fun chunk(list: List<Int>, size: Int): List<List<Int>> {
         var index = 0
         val chunks = mutableListOf<List<Int>>()
