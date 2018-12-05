@@ -1,14 +1,18 @@
 # Kotlin coding puzzles
-This repository contains set of programming problems that are meant to be solved using [Kotlin](https://kotlinlang.org/) language. These
-challenges will help you to prepare for [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
+This repository contains set of programming problems that are meant to be solved using [Kotlin](https://kotlinlang.org/) language (no
+worries solutions are here as well). These challenges will help you to prepare for
+[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews by revealing certain tricks and shaping your way of
+thinking.
 
 This project is Android Studio project, because it allow quick out of the box JUnit test support. To start you just need to import project
 directly from github into Android Studio (detailed instructions below).
 
-I strongly encourage you to take a pen, piece of paper and take your time thinking about problem before you look at the presented solution
+I strongly encourage you to take a pen, piece of paper, take your time and think about problem before you look at the presented solution
 (sometimes one night sleep is all we need before solution pop ups into our head).
 
-Order of the programming problems is random, however in the future I many split hem into various levels.
+Order of the programming problems is random for now, however some of them may contain reference to problems that should be solved before to
+make final problem easier. It all up to you how you approach this, just remember that to succeed you need to practice often, repeat same
+tasks multiple times and be persistent over time.
 
 # How to open project and run the tests?
 1. Install [Android Studio](https://developer.android.com/studio/)
