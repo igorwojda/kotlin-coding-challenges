@@ -1,13 +1,15 @@
 package com.igorwojda.datastructure.queue
 
-private class QueueSolution {
-    private val list = mutableListOf<Int>()
+object QueueSolution {
+    class Queue {
+        private val list = mutableListOf<Int>()
 
-    fun add(i: Int) {
-        list.add(i)
+        fun add(i: Int) {
+            list.add(i)
+        }
+
+        fun remove() = if (list.isEmpty()) null else list.removeAt(0)
+
+        fun peek() = list.firstOrNull()
     }
-
-    fun remove() = if (list.isEmpty()) null else list.removeAt(0)
-
-    fun peek() = list.firstOrNull()
 }

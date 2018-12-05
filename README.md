@@ -6,8 +6,7 @@ This project is Android Studio project, because it allow quick out of the box JU
 directly from github into Android Studio (detailed instructions below).
 
 I strongly encourage you to take a pen, piece of paper and take your time thinking about problem before you look at the presented solution
-(sometimes one night sleep is all we need before solution pop ups into our head). SOme solution many have method or class names with
-`Solution` prefix to avoid Kotlin class/function conflicts hoverer body of both will valid solution.
+(sometimes one night sleep is all we need before solution pop ups into our head).
 
 Order of the programming problems is random, however in the future I many split hem into various levels.
 

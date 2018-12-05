@@ -5,8 +5,8 @@ the first ten entries of the fibonacci sequence.
 
 # Example
 ```
-fibonacciSequence(1) == 1
-fibonacciSequence(2) == 1
-fibonacciSequence(3) == 2
-fibonacciSequence(4) == 3
+fibonacci(1) == 1
+fibonacci(2) == 1
+fibonacci(3) == 2
+fibonacci(4) == 3
 ```

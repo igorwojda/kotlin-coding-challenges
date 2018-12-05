@@ -1,14 +1,16 @@
 package com.igorwojda.codingpuzzle.printnumber.classic
 
-private fun printNumberSolutioin(n: Int): List<Int> {
-    val list = mutableListOf<Int>()
+object PrintNumberSolution {
+    private fun printNumber(n: Int): List<Int> {
+        val list = mutableListOf<Int>()
 
-    if (n == 0) {
-        return listOf()
-    } else {
-        list.add(n)
+        if (n == 0) {
+            return listOf()
+        } else {
+            list.add(n)
+        }
+
+        list.addAll(printNumber(n - 1))
+        return list
     }
-
-    list.addAll(printNumberSolutioin(n - 1))
-    return list
 }
