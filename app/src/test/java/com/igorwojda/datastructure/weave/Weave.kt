@@ -4,7 +4,14 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun weave(q1: GenericQueue<*>, q2: GenericQueue<*>): GenericQueue<*> {
-    return GenericQueue<Any>()
+    val result = GenericQueue<Any>()
+
+    while (q1.peek() != null && q2.peek() != null) {
+        q1.remove()?.let { result.add(it) }
+        q2.remove()?.let { result.add(it) }
+    }
+
+    return result
 }
 
 private class GenericQueue<E> {
