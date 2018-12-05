@@ -24,7 +24,8 @@ Order of the programming problems is random, however in the future I many split 
 
 # How to run the tests?
 Open `ProblemName.kt` file for specific problem. There will be single class with `Test` suffix (`ProblemNameTest`). Click on green arrow
-on the left of method name (runs single test) or test class name (run all tests in Test class).
+on the left of method name (runs single test) or test class name (run all tests in Test class). After running test you can rerun last
+configuration using `Run command` (`Cmd+R`).
 
 # Programming problems
 Be patient, persistent and have fun solving 🤓
