@@ -12,4 +12,4 @@ anagrams('Hi there', 'Bye there') --> False
 ```
 
 # Files
-[Files](app/src/test/java/com/igorwojda/codingpuzzle/anagram)
+[Files](../)
