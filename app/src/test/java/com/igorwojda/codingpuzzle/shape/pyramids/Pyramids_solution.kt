@@ -1,7 +1,7 @@
 package com.igorwojda.codingpuzzle.shape.pyramids
 
 //iterative solution
-object PyramidSolution1 {
+private object PyramidSolution1 {
     private fun pyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
         val numColumns = (n * 2) - 1
@@ -21,7 +21,7 @@ object PyramidSolution1 {
 }
 
 //iterative solution - calculate mid point
-object PyramidSolution2 {
+private object PyramidSolution2 {
     private fun pyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
         val midpoint = ((2 * n) - 1) / 2
@@ -44,7 +44,7 @@ object PyramidSolution2 {
 }
 
 //recursive solution
-object PyramidSolution3 {
+private object PyramidSolution3 {
     private fun pyramid(n: Int, row: Int = 0) {
         val numColumns = ((n - 1) * 2) + 1
         val midpoint = ((2 * n) - 1) / 2
@@ -73,7 +73,7 @@ object PyramidSolution3 {
 }
 
 //recursive solution
-object PyramidSolution4 {
+private object PyramidSolution4 {
     private fun pyramid(n: Int, row: Int = 0, level: String = "") {
         val numColumns = (n * 2) - 1
 

@@ -1,7 +1,7 @@
 package com.igorwojda.codingpuzzle.shape.steps
 
 //iterative solution
-object StepsSolution1 {
+private object StepsSolution1 {
     private fun steps(n: Int): MutableList<String> {
         val list = mutableListOf<String>()
 
@@ -21,7 +21,7 @@ object StepsSolution1 {
 }
 
 //recursive solution
-object StepsSolution2 {
+private object StepsSolution2 {
     private fun steps(n: Int, row: Int = 0, stair: String = "") {
         //handle complete all of the work
         if (n == row) {

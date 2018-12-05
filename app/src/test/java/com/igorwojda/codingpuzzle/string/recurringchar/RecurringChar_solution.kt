@@ -1,7 +1,7 @@
 package com.igorwojda.codingpuzzle.string.maxchar
 
 //Optimal approach: complexity O(n)
-object RecurringCharSolution1 {
+private object RecurringCharSolution1 {
     private fun recurringChar(str: String): Char? {
         val set = mutableSetOf<Char>()
 
@@ -18,7 +18,7 @@ object RecurringCharSolution1 {
 }
 
 //Naive approach: complexity O(n^2)
-object RecurringCharSolution2 {
+private object RecurringCharSolution2 {
     private fun recurringChar(str: String): Char? {
         str.forEachIndexed { index, c ->
             str.substring(index + 1).forEach {

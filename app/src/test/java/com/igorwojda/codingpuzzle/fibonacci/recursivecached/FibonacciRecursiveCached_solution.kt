@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.fibonacci.recursivecached
 
-object FibonacciRecursiveCachedSolution {
+private object FibonacciRecursiveCachedSolution {
     private data class MethodCache(val n: Int, val result: Int)
 
     private fun fibonacciSequenceRecursiveCached(

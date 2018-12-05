@@ -1,14 +1,14 @@
 package com.igorwojda.codingpuzzle.palindrome.classic
 
 //string reverse
-object PalindromeSolution1 {
+private object PalindromeSolution1 {
     private fun palindrome(str: String): Boolean {
         return str == str.reversed()
     }
 }
 
 //iterative, double pointer solution
-object PalindromeSolution2 {
+private object PalindromeSolution2 {
     private fun palindrome(str: String): Boolean {
         str.forEachIndexed { index, char ->
             val rightIndex = str.lastIndex - index
@@ -25,7 +25,7 @@ object PalindromeSolution2 {
 }
 
 //recursive solution
-object PalindromeSolution3 {
+private object PalindromeSolution3 {
     private fun palindrome(str: String): Boolean {
         return if (str.isEmpty() || str.length == 1) {
             true

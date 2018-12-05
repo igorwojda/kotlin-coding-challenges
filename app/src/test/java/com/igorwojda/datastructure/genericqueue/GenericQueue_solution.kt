@@ -1,6 +1,6 @@
 package com.igorwojda.datastructure.genericqueue
 
-object GenericQueueSolution {
+private object GenericQueueSolution {
     private class GenericQueue<E> {
         private val list = mutableListOf<E>()
 

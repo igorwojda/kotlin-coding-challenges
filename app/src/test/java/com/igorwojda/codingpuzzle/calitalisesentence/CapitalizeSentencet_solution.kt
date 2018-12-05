@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.calitalisesentence
 
-object capitalizeSolution1 {
+private object capitalizeSolution1 {
     private fun capitalize(str: String): String {
         val words = mutableListOf<String>()
 
@@ -12,7 +12,7 @@ object capitalizeSolution1 {
     }
 }
 
-object capitalizeSolution2 {
+private object capitalizeSolution2 {
     private fun capitalize(str: String): String {
         return str.split(" ").joinToString(" ") { it.capitalize() }
     }
