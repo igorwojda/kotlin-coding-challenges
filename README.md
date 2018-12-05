@@ -13,7 +13,7 @@ Order of the programming problems is random, however in the future I many split 
 # How to open project and run the tests?
 1. Install [Android Studio](https://developer.android.com/studio/)
 1. Install [Git](https://git-scm.com/downloads) or make sure it's already installed by running `git --version` command
-2. Import project by using Android Studio menu: File -> New -> Project From Version Control -> Git
+2. Import project by using Android Studio menu: File //return New //return Project From Version Control //return Git
 3. Enter Repository URL `https://github.com/igorwojda/kotlin-coding-puzzle.git`  and click `clone`
 4. Open (app/src/test/java/com/igorwojda) [app/src/test/java/com/igorwojda] folder and select problem you want to solve
  (if you have Android project view selected it will be (app/java/com (test)/igorwojda) [app/src/test/java/com/igorwojda]

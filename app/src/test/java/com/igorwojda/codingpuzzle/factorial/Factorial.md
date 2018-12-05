@@ -4,11 +4,11 @@ Factorial is number that is created by multiplying all whole numbers from our ch
 
 # Examples
 ```
-factorial(-1) -> "Underflow error in factorial"
-factorial(20) -> "Overflow error in factorial"
-factorial(1) -> 1
-factorial(2) -> 2
-factorial(3) -> 6
+factorial(-1) //return "Underflow error in factorial"
+factorial(20) //return "Overflow error in factorial"
+factorial(1) //return 1
+factorial(2) //return 2
+factorial(3) //return 6
 ```
 
 # Files
