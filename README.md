@@ -27,7 +27,10 @@ Order of the programming problems is random, however in the future I many split 
 Open `ProblemName.kt` file for specific problem. There will be single class with `Test` suffix (`ProblemNameTest`). Click on green arrow
 on the left of method name (runs single test) or test class name (run all tests in Test class).
 
-# Kotlin Algorithms
+# Programming problems
+Be patient, persistent and have fun solving 🤓
+
+## Algorithms
 1. [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
 1. [Capitalize sentence](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
 1. [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/classic/Fibonacci.md)
@@ -49,7 +52,7 @@ on the left of method name (runs single test) or test class name (run all tests 
 1. [String reverse](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
 1. [String vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
 
-# Kotlin data structures
+## Data structures
 1. [Queue](app/src/test/java/com/igorwojda/datastructure/queue/Queue.md)
 1. [Generic queue](app/src/test/java/com/igorwojda/datastructure/genericqueue/GenericQueue.md)
 
