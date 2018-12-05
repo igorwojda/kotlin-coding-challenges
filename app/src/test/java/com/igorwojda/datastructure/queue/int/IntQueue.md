@@ -5,7 +5,7 @@ Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) da
 * `peek` method - returns last element (the one that should be returned) without removing it from the queue
 
 Adding to the queue should store an element until it is removed. First element added to a queue will be the first that is removed (FIFO).
-For simplicity we can assume that Queue will only accept `Int`, however you can jump straight to
+For simplicity we can assume that IntQueue will only accept `Int`, however you can jump straight to
 [generic queue](../genericqueue/GenericQueue.md) problem if you feel comfortable.
 
 

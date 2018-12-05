@@ -11,7 +11,7 @@ private class GenericQueue<E> {
     fun peek() = 0
 }
 
-class GenericQueueTest {
+class GenericIntQueueTest {
     @Test
     fun `can add elements to a queue`() {
         GenericQueue<Int>().apply { add(1) }

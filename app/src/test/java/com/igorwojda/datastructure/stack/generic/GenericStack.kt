@@ -13,7 +13,7 @@ private class GenericStack<E> {
     fun peek() = 0
 }
 
-class GenericStackTest {
+class GenericIntStackTest {
     @Test
     fun `stack can add and remove items`() {
         GenericStack<Int>().apply {
