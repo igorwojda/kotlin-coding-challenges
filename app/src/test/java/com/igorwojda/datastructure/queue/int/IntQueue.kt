@@ -1,9 +1,9 @@
-package com.igorwojda.datastructure.queue.classic
+package com.igorwojda.datastructure.queue.int
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private class Queue {
+private class IntQueue {
     fun add(i: Int) {
     }
 
@@ -12,20 +12,20 @@ private class Queue {
     fun peek() = 0
 }
 
-class QueueTest {
+class IntIntQueueTest {
     @Test
     fun `can add elements to a queue`() {
-        Queue().apply { add(1) }
+        IntQueue().apply { add(1) }
     }
 
     @Test
     fun `can remove elements from empty queue`() {
-        Queue().apply { remove() shouldEqual null }
+        IntQueue().apply { remove() shouldEqual null }
     }
 
     @Test
     fun `can remove elements from a queue`() {
-        Queue().apply {
+        IntQueue().apply {
             add(1)
             remove()
         }
@@ -33,7 +33,7 @@ class QueueTest {
 
     @Test
     fun `order of elements is maintained`() {
-        Queue().apply {
+        IntQueue().apply {
             add(1)
             add(2)
             add(3)
@@ -46,7 +46,7 @@ class QueueTest {
 
     @Test
     fun `peek returns, but does not remove element`() {
-        Queue().apply {
+        IntQueue().apply {
             add(1)
             add(2)
             peek() shouldEqual 1

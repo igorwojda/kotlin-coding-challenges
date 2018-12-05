@@ -1,7 +1,7 @@
-package com.igorwojda.datastructure.queue.classic
+package com.igorwojda.datastructure.queue.int
 
-private object QueueSolution {
-    private class Queue {
+private object IntQueueSolution {
+    private class IntQueue {
         private val list = mutableListOf<Int>()
 
         fun add(i: Int) {

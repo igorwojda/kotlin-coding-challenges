@@ -1,9 +1,9 @@
-package com.igorwojda.datastructure.queue.classic
+package com.igorwojda.datastructure.queue.int
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private class Stack {
+private class IntStack {
     val list = mutableListOf<Int>()
 
     fun push(element: Int) {}
@@ -13,10 +13,10 @@ private class Stack {
     fun peek() = 0
 }
 
-class StackTest {
+class IntStackTest {
     @Test
     fun `stack can add and remove items`() {
-        Stack().apply {
+        IntStack().apply {
             push(1)
             pop() shouldEqual 1
             push(2)
@@ -26,7 +26,7 @@ class StackTest {
 
     @Test
     fun `stack can follows first in, last out`() {
-        Stack().apply {
+        IntStack().apply {
             push(1)
             push(2)
             push(3)
@@ -38,7 +38,7 @@ class StackTest {
 
     @Test
     fun `peek returns the first element but does not pop it`() {
-        Stack().apply {
+        IntStack().apply {
             push(1)
             push(2)
             push(3)
