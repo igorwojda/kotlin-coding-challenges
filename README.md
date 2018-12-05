@@ -1,4 +1,13 @@
-# Kotlin code puzzles (with solutions)
+# Kotlin coding puzzles
+This repository contains set of programming problems that are meant to be solved using [Kotlin](https://kotlinlang.org/) language. These
+challenges will help you to prepare for [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
+
+I strongly encourage you to take a pen, piece of paper and take your time thinking about problem before you look at the presented solution
+(sometimes one night sleep is all we need before solution pop ups into our head).
+
+Order of the programming problems is random, however in the future I many split hem into various levels.
+
+# Kotlin Algorithms
 1. [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
 1. [Capitalize Sentence](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
 1. [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/classic/Fibonacci.md)
@@ -19,3 +28,13 @@
 1. [String Recurring Char](app/src/test/java/com/igorwojda/codingpuzzle/string/recurringchar/RecurringChar.md)
 1. [String Reverse](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
 1. [String Vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
+
+# Kotlin data structures
+1. [Queue](app/src/test/java/com/igorwojda/datastructure/queue/Queue.md)
+
+# Contribute
+If you have any doubts, found a problem, found better solution or simply you want to add new programming problem please create PR
+or open new issue.
+
+# Inspiration & References
+* [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
