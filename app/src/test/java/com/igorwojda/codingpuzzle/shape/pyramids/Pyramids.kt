@@ -10,7 +10,7 @@ fun pyramid(n: Int): List<String> {
 class PyramidsTest {
 
     @Test
-    fun `pryamid n = 2`() {
+    fun `pyramid n = 2`() {
         pyramid(2).also {
             it.size shouldEqual 2
             it[0] shouldEqual " # "
@@ -19,7 +19,7 @@ class PyramidsTest {
     }
 
     @Test
-    fun `pryamid n = 3`() {
+    fun `pyramid n = 3`() {
         pyramid(3).also {
             it.size shouldEqual 3
             it[0] shouldEqual "  #  "
@@ -30,7 +30,7 @@ class PyramidsTest {
     }
 
     @Test
-    fun `pryamid n = 4`() {
+    fun `pyramid n = 4`() {
         pyramid(4).also {
             it.size shouldEqual 4
             it[0] shouldEqual "   #   "
