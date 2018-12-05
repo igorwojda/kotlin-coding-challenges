@@ -6,9 +6,9 @@ import org.junit.Test
 private class GenericQueue<E> {
     fun add(element: E) {}
 
-    fun remove() = 0
+    fun remove(): Int? = 0
 
-    fun peek() = 0
+    fun peek(): Int? = 0
 }
 
 class GenericIntQueueTest {

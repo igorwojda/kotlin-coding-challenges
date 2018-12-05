@@ -1,3 +1,7 @@
+# Prerequirements
+Optionally you can start with simpler version by solving [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/classic/Queue.md) queue
+problem first.
+
 # Instructions
 Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) data structure. The queue should be a class with methods:
 * `add` method - adds element to a queue (enqueue the element)
@@ -5,8 +9,7 @@ Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) da
 * `peek` method - returns last element (the one that should be returned) without removing it from the queue
 
 Adding to the queue should store an element until it is removed. First element added to a queue will be the first that is removed (FIFO).
-This is generic venison of the queue witch means we must define data type for the queue (`IntQueue<String>`). You can start with simpler version
-by solving [Int queue](../int/IntQueue.md) queue problem first.
+This is generic venison of the queue witch means we must define data type for the queue (`IntQueue<String>`).
 
 # Hints
 * [Kotlin generics](https://kotlinlang.org/docs/reference/generics.html)

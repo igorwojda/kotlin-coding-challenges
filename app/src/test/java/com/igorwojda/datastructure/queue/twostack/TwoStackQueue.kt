@@ -1,31 +1,50 @@
-package com.igorwojda.datastructure.queue.int
+package com.igorwojda.datastructure.queue.twostack
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private class IntQueue {
-    fun add(i: Int) {
+private class TwoStackQueue {
+    val stackPrimary = IntStack()
+    val stackTemporary = IntStack()
+
+    fun add(element: Int) {
     }
 
-    fun remove(): Int? = 0
+    fun remove(): Int? {
+        return 0
+    }
 
-    fun peek(): Int? = 0
+    fun peek(): Int? {
+        return 0
+    }
 }
 
-class IntQueueTest {
+private class IntStack {
+    val list = mutableListOf<Int>()
+
+    fun push(element: Int) {
+        list.add(element)
+    }
+
+    fun pop() = if (list.isEmpty()) null else list.removeAt(list.lastIndex)
+
+    fun peek() = list.lastOrNull()
+}
+
+class TwoStackQueueTest {
     @Test
     fun `can add elements to a queue`() {
-        IntQueue().apply { add(1) }
+        TwoStackQueue().apply { add(1) }
     }
 
     @Test
     fun `can remove elements from empty queue`() {
-        IntQueue().apply { remove() shouldEqual null }
+        TwoStackQueue().apply { remove() shouldEqual null }
     }
 
     @Test
     fun `can remove elements from a queue`() {
-        IntQueue().apply {
+        TwoStackQueue().apply {
             add(1)
             remove()
         }
@@ -33,7 +52,7 @@ class IntQueueTest {
 
     @Test
     fun `order of elements is maintained`() {
-        IntQueue().apply {
+        TwoStackQueue().apply {
             add(1)
             add(2)
             add(3)
@@ -46,7 +65,7 @@ class IntQueueTest {
 
     @Test
     fun `peek returns, but does not remove element`() {
-        IntQueue().apply {
+        TwoStackQueue().apply {
             add(1)
             add(2)
             peek() shouldEqual 1

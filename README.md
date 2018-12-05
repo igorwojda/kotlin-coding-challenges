@@ -54,10 +54,11 @@ Be patient, persistent and have fun solving 🤓
 1. [String vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
 
 ## Data structures
-1. [Queue](app/src/test/java/com/igorwojda/datastructure/queue/classic/Queue.md)
+1. [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/classic/Queue.md)
 1. [Generic queue](app/src/test/java/com/igorwojda/datastructure/queue/generic/GenericQueue.md)
-1. [Stack](app/src/test/java/com/igorwojda/datastructure/stack/classic/Stack.md)
+1. [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/classic/Stack.md)
 1. [Generic stack](app/src/test/java/com/igorwojda/datastructure/stack/generic/GenericStack.md)
+1. [Two stack queue](app/src/test/java/com/igorwojda/datastructure/queue/twostack/TwoStackQueue.md)
 
 # Contribute
 If you have any doubts, found a problem, found better solution or simply you want to add new programming problem please create PR
