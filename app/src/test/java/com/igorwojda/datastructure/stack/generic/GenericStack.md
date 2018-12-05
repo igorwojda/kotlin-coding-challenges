@@ -16,9 +16,9 @@ by solving [Int stack](../int/IntStack.md) stack problem first.
 val s = new Stack()
 s.push(1)
 s.push(2)
-s.pop() -> 2
-s.pop() -> 1
-s.pop() -> null
+s.pop() //return 2
+s.pop() //return 1
+s.pop() //return null
 ```
 
 # Files

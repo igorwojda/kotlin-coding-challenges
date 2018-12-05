@@ -4,9 +4,9 @@ is zero then empty list should be returned.
 
 # Examples
 ```
-printNumber(0) -> []
-printNumber(2) -> [2, 1]
-printNumber(5) -> [5, 4, 3, 2, 1]
+printNumber(0) //return []
+printNumber(2) //return [2, 1]
+printNumber(5) //return [5, 4, 3, 2, 1]
 ```
 
 # Files

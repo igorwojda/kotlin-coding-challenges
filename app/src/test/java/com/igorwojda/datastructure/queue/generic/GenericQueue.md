@@ -16,8 +16,8 @@ Example 1
 ```
 val q = Queue<Int>()
 q.add(1)
-q.remove() -> returns 1
-q.remove() -> returns null
+q.remove() //return returns 1
+q.remove() //return returns null
 ```
 
 Example 2
@@ -26,10 +26,10 @@ val q = Queue<Char>()
 q.add('A')
 q.add('B')
 q.add('C')
-q.remove() -> returns A
-q.remove() -> returns B
-q.remove() -> returns C
-q.remove() -> returns null
+q.remove() //return returns A
+q.remove() //return returns B
+q.remove() //return returns C
+q.remove() //return returns null
 ```
 
 # Files
