@@ -5,8 +5,8 @@ Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) da
 * `peek` method - returns last element (the one that should be returned) without removing it from the queue
 
 Adding to the queue should store an element until it is removed. First element added to a queue will be the first that is removed (FIFO).
-This is generic venison of the queue witch means we must define data type for a queue (`Queue<String>`). You can start with simpler version
-by solving [non-generic queue](../queue/Queue.md) queue problem first.
+This is generic venison of the queue witch means we must define data type for the queue (`Queue<String>`). You can start with simpler version
+by solving [non-generic queue](../clasic/Queue.md) queue problem first.
 
 # Hints
 * [Kotlin generics](https://kotlinlang.org/docs/reference/generics.html)
@@ -14,15 +14,15 @@ by solving [non-generic queue](../queue/Queue.md) queue problem first.
 # Examples
 Example 1
 ```
-val q = Queue<Int>();
-q.add(1);
-q.remove(); -> returns 1;
+val q = Queue<Int>()
+q.add(1)
+q.remove() -> returns 1
 q.remove() -> returns null
 ```
 
 Example 2
 ```
-val q = Queue<Char>();
+val q = Queue<Char>()
 q.add('A')
 q.add('B')
 q.add('C')

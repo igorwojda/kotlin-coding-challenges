@@ -6,15 +6,15 @@ inserting `null` into the new one. Take into consideration the fact that both qu
 
 # Examples
 ```
-val queueOne = new Queue();
-queueOne.add(1);
-queueOne.add(2);
+val queueOne = new Queue()
+queueOne.add(1)
+queueOne.add(2)
 
-val queueTwo = new Queue();
-queueTwo.add('Hi');
-queueTwo.add('There');
+val queueTwo = new Queue()
+queueTwo.add('Hi')
+queueTwo.add('There')
 
-val queueThree = weave(queueOne, queueTwo);
+val queueThree = weave(queueOne, queueTwo)
 queueThree.remove() // 1
 queueThree.remove() // 'Hi'
 queueThree.remove() // 2
