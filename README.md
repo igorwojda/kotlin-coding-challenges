@@ -2,11 +2,30 @@
 This repository contains set of programming problems that are meant to be solved using [Kotlin](https://kotlinlang.org/) language. These
 challenges will help you to prepare for [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
+This project is Android Studio project, because it allow quick out of the box JUnit test support. To start you just need to import project
+directly from github into Android Studio (detailed instructions).
+
 I strongly encourage you to take a pen, piece of paper and take your time thinking about problem before you look at the presented solution
 (sometimes one night sleep is all we need before solution pop ups into our head). SOme solution many have method or class names with
 `Solution` prefix to avoid Kotlin class/function conflicts hoverer body of both will valid solution.
 
 Order of the programming problems is random, however in the future I many split hem into various levels.
+
+# How to open project and run the tests?
+1. Install [Android Studio](https://developer.android.com/studio/)
+1. Install [Git](https://git-scm.com/downloads) or make sure it's already installed by running `git --version` command
+2. Import project by using Android Studio menu: File -> New -> Project From Version Control -> Git
+3. Enter Repository URL `https://github.com/igorwojda/kotlin-coding-puzzle.git`  and click `clone`
+4. Open (app/src/test/java/com/igorwojda) [app/src/test/java/com/igorwojda] folder and select problem you want to solve
+ (if you have Android project view selected it will be (app/java/com (test)/igorwojda) [app/src/test/java/com/igorwojda]
+5. Each problem is located in separate package and it contains 3 files:
+* `ProblemName.md` - description of the problem
+* `ProblemName.kt` - contains empty method/class to solver problem and set of tests (we will write code, solve problem here)
+* `ProblemName_solution.kt` - file that contains problem solution
+
+# How to run the tests?
+Open `ProblemName.kt` file for specific problem. There will be single class with `Test` suffix (`ProblemNameTest`). Click on green arrow
+on the left of method name (runs single test) or test class name (run all tests in Test class).
 
 # Kotlin Algorithms
 1. [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
