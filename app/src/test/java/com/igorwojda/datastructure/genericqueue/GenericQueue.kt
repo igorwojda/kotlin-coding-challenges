@@ -44,10 +44,11 @@ class GenericQueueTest {
     }
 
     @Test
-    fun `peek does not remove element`() {
+    fun `peek returns, but does not remove element`() {
         val q = GenericQueue<Int>()
         q.add(1)
         q.add(2)
+        q.peek() shouldEqual 1
         q.peek() shouldEqual 1
         q.remove() shouldEqual 1
         q.peek() shouldEqual 2
