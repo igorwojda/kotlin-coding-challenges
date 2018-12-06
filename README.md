@@ -16,12 +16,12 @@ tasks multiple times and be persistent over time.
 # How to start?
 ## How to open project?
 1. Install [Android Studio](https://developer.android.com/studio/)
-1. Install [Git](https://git-scm.com/downloads) or make sure it's already installed by running `git --version` command
-2. Import project by using Android Studio menu: File //return New //return Project From Version Control //return Git
-3. Enter Repository URL `https://github.com/igorwojda/kotlin-coding-puzzle.git`  and click `clone`
-4. Open (app/src/test/java/com/igorwojda)[app/src/test/java/com/igorwojda] folder and select problem you want to solve
- (if you have Android project view selected it will be (app/java/com (test)/igorwojda)[app/src/test/java/com/igorwojda]
-5. Each problem is located in separate package and it contains 3 files:
+2. Install [Git](https://git-scm.com/downloads) or make sure it's already installed by running `git --version` command
+3. Import project by using Android Studio menu: File //return New //return Project From Version Control //return Git
+4. Enter Repository URL `https://github.com/igorwojda/kotlin-coding-puzzle.git`  and click `clone`
+5. Open [app/src/test/java/com/igorwojda](app/src/test/java/com/igorwojda/) folder in `Project` view or
+   [app/java/com (test)/igorwojda](app/src/test/java/com/igorwojda/) in `Android` view in project panel.
+7. Each problem is located in separate package and it contains 3 files:
 * `ProblemName.md` - description of the problem
 * `ProblemName.kt` - contains empty method/class to solver problem and set of tests (we will write code, solve problem here)
 * `ProblemNameSolution.kt` - file that contains one or more problem solutions (encapsulated in Kotlin `object` to avoid conflicts with other
