@@ -1,7 +1,7 @@
 package com.igorwojda.datastructure.linkedlist
 
-private object LinkedListSolution {
-    private class LinkedList<E> : Iterable<Node<E>> {
+private object LinkedListSolutionBasic {
+    private class LinkedList<E> {
         var head: Node<E>? = null
 
         val first: Node<E>?
@@ -109,17 +109,6 @@ private object LinkedListSolution {
         fun clear() {
             head = null
         }
-
-        override fun iterator() = object : Iterator<Node<E>> {
-            var node = head
-            override fun hasNext() = node != null
-
-            override fun next(): Node<E> {
-                val currentNode = node
-                node = node?.next
-                return currentNode!!
-            }
-        }
     }
 
     private data class Node<T>(
@@ -222,6 +211,13 @@ private object LinkedListSolutionExtended {
                 node = node?.next
                 return currentNode!!
             }
+        }
+
+        operator fun plus(linkedList: LinkedList<E>): LinkedList<E> {
+            val result = LinkedList<E>()
+            forEach { result.insertLast(it.data) }
+            linkedList.forEach { result.insertLast(it.data) }
+            return result
         }
     }
 
