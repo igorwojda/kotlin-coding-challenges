@@ -8,18 +8,31 @@ the node at the end of the first half of the list.
 Do not use a counter variable, do not retrieve the `size` of the list, and only iterate through the list one time.
 
 # Hints
->! Hint 1 We are using version of linked list that implements Kotlin
-[iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interface.
-
 <details>
   <summary>Hint 1</summary>
+   We are using version of linked list that implements Kotlin
+   [iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interface.
+</details>
+
+<details>
+  <summary>Hint 2</summary>
    We should use more then one variable to store values that are retrieved during iteration
 </details>
->! Hint 2 Name of these variables should be `slow` and `fast`
 
->! Hint 3 Assign next node to `slow` variable in every iteration
+<details>
+  <summary>Hint 3</summary>
+  Name of these variables should be `slow` and `fast`
+</details>
 
->! Hint 4 Assign next node of next node to `fast` variable in every iteration
+<details>
+  <summary>Hint 4</summary>
+  Assign next node to `slow` variable in every iteration
+</details>
+
+<details>
+  <summary>Hint 5</summary>
+  Assign next node of next node to `fast` variable in every iteration
+</details>
 
 # Examples
 Example 1
