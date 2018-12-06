@@ -4,60 +4,127 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 class LinkedList<E> {
-    val head: Node<E>? = null
-    val size: Int = 0
+    var head: Node<E>? = null
+    val first: Node<E>?
+        get() = head
 
-    val first: Node<E>? get() = head
-
-    val last: Node<E>?
+    val size: Int
         get() {
-            val node: Node? = null
-            while ()
+            var count = 0
+            var node = head
+
+            while (node != null) {
+                count++
+                node = node.next
+            }
+
+            return count
         }
 
-    fun insertFirst(i: E) {
-        TODO("not implemented")
-    }
+    var last: Node<E>? = null
+        get() {
+            var node = head
 
-    fun insertLast(i: E) {
-        TODO("not implemented")
-    }
+            while (node?.next != null) {
+                node = node.next
+            }
 
-    fun removeFirst() {
-        TODO("not implemented")
-    }
+            return node
+        }
 
-    fun removeLast() {
-        TODO("not implemented")
-    }
-
-    fun getAt(index: Int): Node<E>? {
-        TODO("not implemented")
-    }
-
-    fun insertAt(data: E, index: Int) {
-        TODO("not implemented")
-    }
-
-    fun removeAt(index: Int): Int {
-        TODO("not implemented")
+    fun insertFirst(data: E) {
+        head = Node(data, head)
     }
 
     fun clear() {
+        head = null
     }
+
+    fun removeFirst() {
+        head = head?.next
+    }
+
+    fun removeLast() {
+        if (head?.next == null) {
+            head = null
+            return
+        }
+
+        var prevNode = head
+        var node = head?.next
+
+        while (node?.next != null) {
+            prevNode = node
+            node = node.next
+        }
+
+        prevNode?.next = null
+    }
+
+    fun insertLast(data: E) {
+        Node(data).also {
+            if (head == null) {
+                head = it
+            } else {
+                last?.next = it
+            }
+        }
+    }
+
+    fun getAt(index: Int): Node<E>? {
+        if (head == null) {
+            return null
+        }
+
+        var node = head
+        var counter = 0
+
+        while (node != null) {
+            if (counter == index) {
+                return node
+            }
+
+            counter++
+            node = node.next
+        }
+
+        return null
+    }
+
+    fun removeAt(index: Int) {
+        if (index == 0) {
+            head = head?.next
+        } else {
+            val prevNode = getAt(index - 1)
+            val nextNode = prevNode?.next?.next
+            prevNode?.next = nextNode
+        }
+    }
+
+    fun insertAt(data: E, index: Int) {
+        if (index == 0) {
+            head = Node(data, head)
+        } else {
+            val prevNode = getAt(index - 1) ?: last
+            val node = prevNode?.next
+            prevNode?.next = Node(data, node)
+        }
+    }
+
+    override fun toString() = head?.toString() ?: "null"
 }
 
-class Node<T>(
+data class Node<T>(
     val data: T,
-    val next: Any
+    var next: Node<T>? = null
 )
 
 class LinkedListTest {
     @Test
-    fun `has properties "data" and "next"`() {
-        val node = Node("a", "b")
-        node.data shouldEqual "a"
-        node.next shouldEqual "b"
+    fun `when list is created head node is null`() {
+        LinkedList<Int>().apply {
+            head shouldEqual null
+        }
     }
 
     @Test
@@ -86,9 +153,9 @@ class LinkedListTest {
     fun `returns the first element`() {
         LinkedList<Int>().apply {
             insertFirst(1)
-            first.data shouldEqual 1
+            first?.data shouldEqual 1
             insertFirst(2)
-            first.data shouldEqual 2
+            first?.data shouldEqual 2
         }
     }
 
@@ -96,11 +163,11 @@ class LinkedListTest {
     fun `returns the last element`() {
         LinkedList<Int>().apply {
             insertFirst(2)
-            last.data shouldEqual 2
-            last.next shouldEqual null
+            last?.data shouldEqual 2
+            last?.next shouldEqual null
             insertFirst(1)
-            last.data shouldEqual 2
-            last.next shouldEqual null
+            last?.data shouldEqual 2
+            last?.next shouldEqual null
         }
     }
 
@@ -119,6 +186,7 @@ class LinkedListTest {
     }
 
     @Test
+
     fun `removes the first node when the list has a size of one`() {
         LinkedList<String>().apply {
             insertFirst("a")
@@ -136,22 +204,22 @@ class LinkedListTest {
             insertFirst("a")
             removeFirst()
             size shouldEqual 2
-            first.data shouldEqual "b"
+            first?.data shouldEqual "b"
             removeFirst()
             size shouldEqual 1
-            first.data shouldEqual "c"
+            first?.data shouldEqual "c"
         }
     }
 
     @Test
-    fun `RemoveLast removes the last node when list is empty`() {
+    fun `removeLast removes the last node when list is empty`() {
         LinkedList<Any>().apply {
             removeLast()
         }
     }
 
     @Test
-    fun `RemoveLast removes the last node when list is length 1`() {
+    fun `removeLast removes the last node when list is length 1`() {
         LinkedList<String>().apply {
             insertFirst("a")
             removeLast()
@@ -160,7 +228,7 @@ class LinkedListTest {
     }
 
     @Test
-    fun `RemoveLast removes the last node when list is length 2`() {
+    fun `removeLast removes the last node when list is length 2`() {
         LinkedList<String>().apply {
             insertFirst("b")
             insertFirst("a")
@@ -171,26 +239,24 @@ class LinkedListTest {
     }
 
     @Test
-    fun `RemoveLast removes the last node when list is length 3`() {
+    fun `removeLast removes the last node when list is length 3`() {
         LinkedList<String>().apply {
             insertFirst("c")
             insertFirst("b")
             insertFirst("a")
             removeLast()
             size shouldEqual 2
-            last.data shouldEqual "b"
+            last?.data shouldEqual "b"
         }
     }
 
     @Test
-    fun `adds to the end of the list`() {
+    fun `add to the end of the list`() {
         LinkedList<String>().apply {
             insertFirst("a")
-
             insertLast("b")
-
             size shouldEqual 2
-            last.data shouldEqual "b"
+            last?.data shouldEqual "b"
         }
     }
 
@@ -204,15 +270,15 @@ class LinkedListTest {
             insertLast(3)
             insertLast(4)
 
-            getAt(0).data shouldEqual 1
-            getAt(1).data shouldEqual 2
-            getAt(2).data shouldEqual 3
-            getAt(3).data shouldEqual 4
+            getAt(0)?.data shouldEqual 1
+            getAt(1)?.data shouldEqual 2
+            getAt(2)?.data shouldEqual 3
+            getAt(3)?.data shouldEqual 4
         }
     }
 
     @Test
-    fun `removeAt doesnt crash on an empty list`() {
+    fun `removeAt does not crash on an empty list`() {
         LinkedList<Int>().apply {
             removeAt(0)
             removeAt(1)
@@ -221,7 +287,7 @@ class LinkedListTest {
     }
 
     @Test
-    fun `removeAt doesnt crash on an index out of bounds`() {
+    fun `removeAt does not crash on an index out of bounds`() {
         LinkedList<String>().apply {
             insertFirst("a")
             removeAt(1)
@@ -235,9 +301,9 @@ class LinkedListTest {
             insertLast(2)
             insertLast(3)
             insertLast(4)
-            getAt(0).data shouldEqual 1
+            getAt(0)?.data shouldEqual 1
             removeAt(0)
-            getAt(0).data shouldEqual 2
+            getAt(0)?.data shouldEqual 2
         }
     }
 
@@ -248,9 +314,9 @@ class LinkedListTest {
             insertLast(2)
             insertLast(3)
             insertLast(4)
-            getAt(1).data shouldEqual 2
+            getAt(1)?.data shouldEqual 2
             removeAt(1)
-            getAt(1).data shouldEqual 3
+            getAt(1)?.data shouldEqual 3
         }
     }
 
@@ -261,7 +327,7 @@ class LinkedListTest {
             insertLast(2)
             insertLast(3)
             insertLast(4)
-            getAt(3).data shouldEqual 4
+            getAt(3)?.data shouldEqual 4
             removeAt(3)
             getAt(3) shouldEqual null
         }
@@ -271,7 +337,7 @@ class LinkedListTest {
     fun `inserts a new node with data at the 0 index when the list is empty`() {
         LinkedList<String>().apply {
             insertAt("hi", 0)
-            first.data shouldEqual "hi"
+            first?.data shouldEqual "hi"
         }
     }
 
@@ -282,10 +348,10 @@ class LinkedListTest {
             insertLast("b")
             insertLast("c")
             insertAt("hi", 0)
-            getAt(0).data shouldEqual "hi"
-            getAt(1).data shouldEqual "a"
-            getAt(2).data shouldEqual "b"
-            getAt(3).data shouldEqual "c"
+            getAt(0)?.data shouldEqual "hi"
+            getAt(1)?.data shouldEqual "a"
+            getAt(2)?.data shouldEqual "b"
+            getAt(3)?.data shouldEqual "c"
         }
     }
 
@@ -297,11 +363,11 @@ class LinkedListTest {
             insertLast("c")
             insertLast("d")
             insertAt("hi", 2)
-            getAt(0).data shouldEqual "a"
-            getAt(1).data shouldEqual "b"
-            getAt(2).data shouldEqual "hi"
-            getAt(3).data shouldEqual "c"
-            getAt(4).data shouldEqual "d"
+            getAt(0)?.data shouldEqual "a"
+            getAt(1)?.data shouldEqual "b"
+            getAt(2)?.data shouldEqual "hi"
+            getAt(3)?.data shouldEqual "c"
+            getAt(4)?.data shouldEqual "d"
         }
     }
 
@@ -311,9 +377,9 @@ class LinkedListTest {
             insertLast("a")
             insertLast("b")
             insertAt("hi", 2)
-            getAt(0).data shouldEqual "a"
-            getAt(1).data shouldEqual "b"
-            getAt(2).data shouldEqual "hi"
+            getAt(0)?.data shouldEqual "a"
+            getAt(1)?.data shouldEqual "b"
+            getAt(2)?.data shouldEqual "hi"
         }
     }
 
@@ -324,49 +390,49 @@ class LinkedListTest {
             insertLast("b")
             insertAt("hi", 30)
 
-            getAt(0).data shouldEqual "a"
-            getAt(1).data shouldEqual "b"
-            getAt(2).data shouldEqual "hi"
+            getAt(0)?.data shouldEqual "a"
+            getAt(1)?.data shouldEqual "b"
+            getAt(2)?.data shouldEqual "hi"
         }
     }
-
-    @Test
-    fun `applies a transform to each node`() {
-        LinkedList<Int>().apply {
-            insertLast(1)
-            insertLast(2)
-            insertLast(3)
-            insertLast(4)
-
-//            forEach(node => {
-//                node.data += 10
-//            }
-
-            getAt(0).data shouldEqual 11
-            getAt(1).data shouldEqual 12
-            getAt(2).data shouldEqual 13
-            getAt(3).data shouldEqual 14
-        }
-    }
-
-    @Test
-    fun `works with the linked list`() {
-        LinkedList<Int>().apply {
-            insertLast(1)
-            insertLast(2)
-            insertLast(3)
-            insertLast(4)
-
-            //        for (let node of l) {
-//            node.data += 10
+//-=================Iteration
+//    @Test
+//    fun `applies a transform to each node`() {
+//        LinkedList<Int>().apply {
+//            insertLast(1)
+//            insertLast(2)
+//            insertLast(3)
+//            insertLast(4)
+//
+////            forEach(node => {
+////                node.data += 10
+////            }
+//
+//            getAt(0).data shouldEqual 11
+//            getAt(1).data shouldEqual 12
+//            getAt(2).data shouldEqual 13
+//            getAt(3).data shouldEqual 14
 //        }
-
-            getAt(0).data shouldEqual 11
-            getAt(1).data shouldEqual 12
-            getAt(2).data shouldEqual 13
-            getAt(3).data shouldEqual 14
-        }
-    }
+//    }
+//
+//    @Test
+//    fun `works with the linked list`() {
+//        LinkedList<Int>().apply {
+//            insertLast(1)
+//            insertLast(2)
+//            insertLast(3)
+//            insertLast(4)
+//
+//            //        for (let node of l) {
+////            node.data += 10
+////        }
+//
+//            getAt(0).data shouldEqual 11
+//            getAt(1).data shouldEqual 12
+//            getAt(2).data shouldEqual 13
+//            getAt(3).data shouldEqual 14
+//        }
+//    }
 
 //    @Test
 //    fun `for...of works on an empty list`() {
