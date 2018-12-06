@@ -1,4 +1,6 @@
 # Instructions
+[Problem files](.)
+
 Write function to check if range1 contains range2
 
 # Examples
@@ -9,5 +11,3 @@ rangeContainsRange(5..8, 5..9) //return false
 
 ```
 
-# Files
-[Package](.)

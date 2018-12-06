@@ -1,4 +1,6 @@
 # Instructions
+[Problem files](.)
+
 Implement a [stack](https://en.wikipedia.org/wiki/Stack) data structure. The stack should be a class with methods:
 * `push` method - adds element to the stack
 * `pop` method - removes the "top" element from the stack
@@ -30,5 +32,3 @@ q.remove() //return returns 3
 q.remove() //return returns null
 ```
 
-# Files
-[Package](.)

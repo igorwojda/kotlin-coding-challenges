@@ -3,6 +3,8 @@ Optionally you can start with simpler version by solving [Int stack](app/src/tes
 problem first.
 
 # Instructions
+[Problem files](.)
+
 Implement a [stack](https://en.wikipedia.org/wiki/Stack) data structure. The stack should be a class with methods:
 * `push` method - adds element to the stack
 * `pop` method - removes the "top" element from the stack
@@ -23,6 +25,3 @@ s.pop() //return 2
 s.pop() //return 1
 s.pop() //return null
 ```
-
-# Files
-[Package](.)
