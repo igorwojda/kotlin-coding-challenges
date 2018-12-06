@@ -1,4 +1,4 @@
-package com.igorwojda.datastructure.linkedlist
+package com.igorwojda.datastructure.linkedlist.base
 
 class LinkedList<E> {
 
