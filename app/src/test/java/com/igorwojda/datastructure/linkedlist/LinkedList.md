@@ -4,8 +4,8 @@ Implement [LinkedList](https://en.wikipedia.org/wiki/Linked_list) data structure
 big problem, so we will split it into multiple steps (multiple methods and properties tah we have to implement).
 
 We also want to handle various edge cases, because we are assuming that developer using our class many do certain mistakes. That's why each
-step has one or more tests. Tests are commented out default, so before staring each step we will have to enable one ore more  related
-test(s) by uncommenting it. To quickly uncomment the test elect all lines containing test method and press `Cmd + /` keys (`Comment with
+step has one or more tests. Tests are commented out default, so before staring each step we will have to enable one ore more related
+test(s) by uncommenting it. To quickly uncomment the test select all lines containing test method and press `Cmd + /` keys (`Comment with
 line Comment` action).
 
 # Steps
@@ -213,6 +213,14 @@ list.insertLast(4)
 list.map { it + 10 }
 list.sumBy { it.data } // returns 10
 ```
+
+# Extra
+# 14. Update internal implementation
+If you haven't done it already it's a good time to refactor the `LinkedList` class. We can improve internal implementations without changing
+the external API. Methods `insertFirst`/`insertLast`/`removeFirst`/`removeLast`/`first`/`last` can be refactored by using `insertAt`/
+`removeAt`/`getAt` methods (with appropriate) parameters.
+
+Solution for extended version is in the `LinkedListSolutionExtended` object.
 
 # Files
 [Package](.)

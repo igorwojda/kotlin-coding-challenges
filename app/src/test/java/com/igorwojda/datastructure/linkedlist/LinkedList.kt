@@ -5,8 +5,12 @@ import org.junit.Test
 
 private class LinkedList<E> : Iterable<Node<E>> {
     var head: Node<E>? = null
+
     val first: Node<E>?
-        get() = head
+        get() = getAt(0)
+
+    val last: Node<E>?
+        get() = getAt(size - 1)
 
     val size: Int
         get() {
@@ -21,29 +25,12 @@ private class LinkedList<E> : Iterable<Node<E>> {
             return count
         }
 
-    var last: Node<E>? = null
-        get() {
-            var node = head
-
-            while (node?.next != null) {
-                node = node.next
-            }
-
-            return node
-        }
-
     fun insertFirst(data: E) {
-        head = Node(data, head)
+        insertAt(data, 0)
     }
 
     fun insertLast(data: E) {
-        Node(data).also {
-            if (head == null) {
-                head = it
-            } else {
-                last?.next = it
-            }
-        }
+        insertAt(data, size)
     }
 
     fun insertAt(data: E, index: Int) {
@@ -57,24 +44,21 @@ private class LinkedList<E> : Iterable<Node<E>> {
     }
 
     fun removeFirst() {
-        head = head?.next
+        removeAt(0)
     }
 
     fun removeLast() {
-        if (head?.next == null) {
-            head = null
-            return
+        removeAt(size - 1)
+    }
+
+    fun removeAt(index: Int) {
+        if (index == 0) {
+            head = head?.next
+        } else {
+            val prevNode = getAt(index - 1)
+            val nextNode = prevNode?.next?.next
+            prevNode?.next = nextNode
         }
-
-        var prevNode = head
-        var node = head?.next
-
-        while (node?.next != null) {
-            prevNode = node
-            node = node.next
-        }
-
-        prevNode?.next = null
     }
 
     fun getAt(index: Int): Node<E>? {
@@ -97,19 +81,11 @@ private class LinkedList<E> : Iterable<Node<E>> {
         return null
     }
 
-    fun removeAt(index: Int) {
-        if (index == 0) {
-            head = head?.next
-        } else {
-            val prevNode = getAt(index - 1)
-            val nextNode = prevNode?.next?.next
-            prevNode?.next = nextNode
-        }
-    }
-
     fun clear() {
         head = null
     }
+
+    override fun toString() = head.toString()
 
     override fun iterator() = object : Iterator<Node<E>> {
         var node = head
@@ -261,12 +237,11 @@ class LinkedListTest {
 
     @Test
     fun `add to the end of the list`() {
-        LinkedList<String>().apply {
-            insertFirst("a")
-            insertLast("b")
-            size shouldEqual 2
-            last?.data shouldEqual "b"
-        }
+        val l = LinkedList<String>()
+        l.insertFirst("a")
+        l.insertLast("b")
+        l.size shouldEqual 2
+        l.last?.data shouldEqual "b"
     }
 
     @Test
