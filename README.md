@@ -30,7 +30,7 @@ coding puzzles)
 ## How to run the tests?
 Open `ProblemName.kt` file for specific problem. There will be single class with `Test` suffix (`ProblemNameTest`). Click on green arrow
 on the left of method name (runs single test) or test class name (run all tests in Test class). After running test you can rerun last
-configuration using `Run command` (`⌘+R`).
+configuration using `Run command` (`⌘ + R`).
 
 # Coding puzzles
 Be patient, persistent and have fun solving 🤓
