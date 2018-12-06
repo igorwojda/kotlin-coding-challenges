@@ -11,8 +11,8 @@ line Comment` action).
 # Steps
 ## 1. constructor `LinkedList<E>()`
 * **Description**: Create a class to represent a linked list. When created, a linked list should have no head node associated with it. The
-`LinkedList` instance will have one property, 'head', which is a reference to the first node of the linked list. By default 'head' should
-be 'null'.
+`LinkedList` instance will have one property, `head`, which is a reference to the first node of the linked list. By default `head` should
+be `null`.
 * **Test**: `when list is created head node is null`
 
 Example:
@@ -22,9 +22,15 @@ list.head // null
 ```
 
 ## 2. `insertFirst(data: E)`
-* **Description**: Creates a Node from argument 'data' and assigns the resulting node to the 'head' property. Make sure to handle the
-case in which the linked list already has a node assigned to the 'head' property.
-* **Test**: `appends a node to the start of the list`
+* **Description**: Creates a Node from argument `data` and assigns the resulting node to the `head` property. Make sure to handle the
+case in which the linked list already has a node assigned to the `head` property.
+* **Test**: `append a node to the start of the list`
+
+Example:
+```
+val list = LinkedList<String>()
+list.insertFirst('Hi There') // List has one node
+```
 
 Example:
 ```
@@ -34,11 +40,11 @@ list.insertFirst('Hi There') // List has one node
 
 ## 3. `size`
 * **Description**: Returns the number of nodes in the linked list.
-* **Test**: `returns the number of items in the linked list`
+* **Test**: `return the number of items in the linked list`
 
 Example:
 ```
-val list = LinkedList()
+val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
@@ -47,11 +53,11 @@ list.size() // returns 3
 
 ## 4. `first: Node`
 * **Description**: Returns the first node of the linked list.
-* **Test**: `returns the first element`
+* **Test**: `return the first element`
 
 Example:
 ```
-val list = LinkedList()
+val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.getFirst() // returns Node instance with data 'a'
@@ -59,11 +65,11 @@ list.getFirst() // returns Node instance with data 'a'
 
 ## 5 `last: Node`
 * **Description**: Returns the last node of the linked list
-* **Test**: `returns the last element`
+* **Test**: `return the last element`
 
 Example:
 ```
-val list = LinkedList()
+val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.getLast() // returns node with data 'a'
@@ -71,11 +77,11 @@ list.getLast() // returns node with data 'a'
 
 ## 6. `clear()`
 * **Description**: Empties the linked list of any nodes.
-* **Test**: `empties out the list`
+* **Test**: `empty out the list`
 
 Example:
 ```
-val list = LinkedList()
+val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.clear()
@@ -84,11 +90,12 @@ list.size() // returns 0
 
 ## 7. `removeFirst()`
 * **Description**: 	Removes only the first node of the linked list. The list's head should now be the second element.
-* **Tests**: `removes the first node when the list has a size of one`, `removes the first node when the list has a size of three`
+* **Tests**: `remove the first node when the list has a size of one`,
+             `remove the first node when the list has a size of three`
 
 Example:
 ```
-val list = LinkedList()
+val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.removeFirst()
@@ -97,12 +104,14 @@ list.getFirst() // returns node with data 'a'
 
 ## 8. `removeLast()`
 * **Description**: removes the last node of the chain.
-* **Tests**: `removeLast removes the last node when list is empty`, `removeLast removes the last node when list is length 1`,
-`removeLast removes the last node when list is length 2`, `removeLast removes the last node when list is length 3`
+* **Tests**: `remove the last node when list is empty`,
+             `remove the last node when list is length 1`,
+             `remove the last node when list is length 2`,
+             `remove the last node when list is length 3`
 
 Example:
 ```
-val list = LinkedList()
+val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.removeLast()
@@ -117,7 +126,7 @@ list.getLast() // returns node with data of 'b'
 
 Example:
 ```
-val list = LinkedList()
+val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertLast('c')
@@ -126,11 +135,11 @@ list.getLast() // returns node with data 'C'
 
 ## 10. `getAt(index: Int)`
 * **Description**: 	Returns the node at the provided index.
-* **Test**: `returns the node at given index`
+* **Test**: `return the node at given index`
 
 Example:
 ```
-val list = List()
+val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
@@ -139,12 +148,15 @@ list.getAt(1) // returns node with data 'b'
 
 ## 11. `removeAt(index: Int)`
 * **Description**: 	Removes node at the provided index.
-* **Test**: `removeAt does not crash on an empty list`, `removeAt does not crash on an index out of bounds`,
-`removeAt deletes the first node`, `removeAt deletes the node at the given index`
+* **Tests**: `remove from empty list`,
+             `remove with index out of bounds`,
+             `remove the first node`,
+             `remove the node at the given index`,
+             `remove the last node`
 
 Example:
 ```
-val list = List()
+val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
@@ -154,37 +166,52 @@ list.getAt(1) // returns node with data 'a'
 
 ## 12. `insertAt(data: E, index: Int)`
 * **Description**: 	Create an insert a node at provided index. If index is out of bounds, add the node to the end of the list.
-* **Test**: `inserts a new node with data at the 0 index when the list is empty`,
-`inserts a new node with data at the 0 index when the list has elements`, `inserts a new node with data at a middle index`,
-`inserts a new node with data at a last index`, `insert a new node when index is out of bounds`
+* **Tests**: `insert a new node with data at the 0 index when the list is empty`,
+             `insert a new node with data at the 0 index when the list has elements`,
+             `inserts a new node with data at a middle index`,
+             `insert a new node with data at a last index`,
+             `insert a new node when index is out of bounds`
 
 Example:
 ```
-val list = List()
+val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
-list.insertAt('Hi', 1)
-list.getAt(1) // returns node with data 'Hi'
+list.insertAt('H', 1)
+list.getAt(1) // returns node with data 'H'
 ```
 
-## 12. Implement Kotlin `Iterator` interface
-* **Description**: Calls the provided function with every node of the chain
-* **Test**:
+## 13. Kotlin `Iterator` interface
+* **Description**: Allows to iterate over list of items using t Kotlin
+[Iterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html) and
+[Iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interfaces. This allows to use many Kotlin
+extensions for `Iterable` interface such as `forEach`, `filter`, `sumBy`, `map` etc.
+* **Tests**: `sum all the nodes`
 
-Example:
+Example 1:
 ```
-val list = List()
+val list = LinkedList<Int>()
 
 list.insertLast(1)
 list.insertLast(2)
 list.insertLast(3)
 list.insertLast(4)
 
-list.forEach(node => {
-node.data += 10
-})
-list.getAt(0) // Returns node with data '11'
+list.forEach { print(node) } // prints 1234
+```
+
+Example 2:
+```
+val list = LinkedList()
+
+list.insertLast(1)
+list.insertLast(2)
+list.insertLast(3)
+list.insertLast(4)
+
+list.map { it + 10 }
+list.sumBy { it.data } // returns 10
 ```
 
 # Files
