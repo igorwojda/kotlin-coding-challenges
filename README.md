@@ -13,8 +13,8 @@ I strongly encourage you to take a pen, piece of paper, take your time and think
 Order of the programming problems is random for now, however some of them may contain reference to problems that should be solved before to
 make final problem easier. It all up to you how you approach this, just remember that to succeed you need to practice often, repeat same
 tasks multiple times and be persistent over time.
-
-# How to open project and run the tests?
+# How to start?
+## How to open project?
 1. Install [Android Studio](https://developer.android.com/studio/)
 1. Install [Git](https://git-scm.com/downloads) or make sure it's already installed by running `git --version` command
 2. Import project by using Android Studio menu: File //return New //return Project From Version Control //return Git
@@ -24,10 +24,10 @@ tasks multiple times and be persistent over time.
 5. Each problem is located in separate package and it contains 3 files:
 * `ProblemName.md` - description of the problem
 * `ProblemName.kt` - contains empty method/class to solver problem and set of tests (we will write code, solve problem here)
-* `ProblemNameSolution.kt` - file that contains problem solution (encapsulated in Kotlin object to avoid conflicts with other
-functions/methods)
+* `ProblemNameSolution.kt` - file that contains one or more problem solutions (encapsulated in Kotlin `object` to avoid conflicts with other
+coding puzzles)
 
-# How to run the tests?
+## How to run the tests?
 Open `ProblemName.kt` file for specific problem. There will be single class with `Test` suffix (`ProblemNameTest`). Click on green arrow
 on the left of method name (runs single test) or test class name (run all tests in Test class). After running test you can rerun last
 configuration using `Run command` (`Cmd+R`).
