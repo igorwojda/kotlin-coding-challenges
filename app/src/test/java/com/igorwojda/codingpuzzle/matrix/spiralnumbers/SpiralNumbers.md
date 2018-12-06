@@ -1,4 +1,6 @@
 # Instructions
+[Problem files](.)
+
 Write a function that accepts an integer `n` and returns a spiral numbers matrix (size n x n). Numbers in matrix are placed according to
 spiral - starting top left corner and then go Right //return Down //return Left //return Up //return Right...
 
@@ -20,5 +22,3 @@ spiralNumbersMatrix(4)
    [10,  9,  8, 7]]
 ```
 
-# Files
-[Package](.)

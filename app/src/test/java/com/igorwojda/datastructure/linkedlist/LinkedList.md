@@ -1,5 +1,7 @@
 
 # Instructions
+[Problem files](.)
+
 Implement [LinkedList](https://en.wikipedia.org/wiki/Linked_list) data structure. This is quite big problem, so we will split it into
 multiple steps (multiple methods and properties that we have to implement).
 
@@ -7,6 +9,7 @@ We also want to handle various edge cases, because we are assuming that develope
 step has one or more tests associated with it. Tests are commented out default, so before staring each step we will have to enable all tests
 related to given step by uncommenting it. To quickly uncomment the test select all lines containing test method and press `Cmd + /` keys
 (`Comment with line Comment` action).
+
 
 # Basic steps
 Solution for basics steps is available in the `LinkedListSolutionBasic` object ([LinkedListSolution.kt](LinkedListSolution.kt) file).
@@ -250,6 +253,3 @@ list.getAt(3)?.data shouldEqual 4
 list.getAt(4)?.data shouldEqual 5
 ```
 
-
-# Files
-[Package](.)
