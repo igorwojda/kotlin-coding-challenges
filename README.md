@@ -19,8 +19,8 @@ tasks multiple times and be persistent over time.
 1. Install [Git](https://git-scm.com/downloads) or make sure it's already installed by running `git --version` command
 2. Import project by using Android Studio menu: File //return New //return Project From Version Control //return Git
 3. Enter Repository URL `https://github.com/igorwojda/kotlin-coding-puzzle.git`  and click `clone`
-4. Open (app/src/test/java/com/igorwojda) [app/src/test/java/com/igorwojda] folder and select problem you want to solve
- (if you have Android project view selected it will be (app/java/com (test)/igorwojda) [app/src/test/java/com/igorwojda]
+4. Open (app/src/test/java/com/igorwojda)[app/src/test/java/com/igorwojda] folder and select problem you want to solve
+ (if you have Android project view selected it will be (app/java/com (test)/igorwojda)[app/src/test/java/com/igorwojda]
 5. Each problem is located in separate package and it contains 3 files:
 * `ProblemName.md` - description of the problem
 * `ProblemName.kt` - contains empty method/class to solver problem and set of tests (we will write code, solve problem here)
@@ -39,7 +39,7 @@ Be patient, persistent and have fun solving 🤓
 1. [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
 1. [Capitalize sentence](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
 1. [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/classic/Fibonacci.md)
-1. [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/recursivecache/FibonacciRecursiveCache.md)
+1. [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/classic/Fibonacci.md)
 1. [Fizz Buzz](app/src/test/java/com/igorwojda/codingpuzzle/fizzbuzz/FizzBuzz.md)
 1. [List chunk](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
 1. [Matrix spiral numbers](app/src/test/java/com/igorwojda/codingpuzzle/matrix/spiralnumbers/SpiralNumbers.md)
@@ -58,12 +58,12 @@ Be patient, persistent and have fun solving 🤓
 1. [String vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
 
 ## Data structures
-1. [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/classic/Queue.md)
+1. [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
 1. [Generic queue](app/src/test/java/com/igorwojda/datastructure/queue/generic/GenericQueue.md)
-1. [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/classic/Stack.md)
+1. [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
 1. [Generic stack](app/src/test/java/com/igorwojda/datastructure/stack/generic/GenericStack.md)
 1. [Two stack queue](app/src/test/java/com/igorwojda/datastructure/queue/twostack/TwoStackQueue.md)
-1. [Linked list](app/src/test/java/com/igorwojda/datastructure/linkedlist/LinkedList.md)
+1. [Linked list](app/src/test/java/com/igorwojda/datastructure/linkedlist/base/LinkedList.md)
 
 # Contribute
 If you have any doubts, found a problem, found better solution or simply you want to add new programming problem please create PR
