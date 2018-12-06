@@ -11,7 +11,7 @@ Do not use a counter variable, do not retrieve the `size` of the list, and only 
 <details>
   <summary>Hint 1</summary>
    We are using version of linked list that implements Kotlin
-   [iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interface.
+   <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html">Iterator</a> interface.
 </details>
 
 <details>
