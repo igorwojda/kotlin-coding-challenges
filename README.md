@@ -1,8 +1,8 @@
 # Kotlin coding puzzles
 This repository contains set of programming problems that are meant to be solved using [Kotlin](https://kotlinlang.org/) language (no
 worries solutions are here as well). These challenges will help you to prepare for
-[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews by revealing certain tricks and shaping your way of
-thinking.
+[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews by revealing certain tricks, present problem solving
+strategies and train your mind to thing is specific way.
 
 This project is Android Studio project, because it allow quick out of the box JUnit test support. To start you just need to import project
 directly from github into Android Studio (detailed instructions below).
@@ -37,37 +37,39 @@ Be patient, persistent and have fun solving 🤓
 
 ## Algorithms
 1. [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
-1. [Capitalize sentence](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
-1. [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/classic/Fibonacci.md)
-1. [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/classic/Fibonacci.md)
-1. [Fizz Buzz](app/src/test/java/com/igorwojda/codingpuzzle/fizzbuzz/FizzBuzz.md)
-1. [List chunk](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
-1. [Matrix spiral numbers](app/src/test/java/com/igorwojda/codingpuzzle/matrix/spiralnumbers/SpiralNumbers.md)
-1. [Palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/classic/Palindrome.md)
-1. [Tolerant palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/tolerant/TolerantPalindrome.md)
-1. [Range contains range](app/src/test/java/com/igorwojda/codingpuzzle/rangecontainsrange/RangeContainsRange.md)
-1. [Factorial](app/src/test/java/com/igorwojda/codingpuzzle/factorial/Factorial.md)
-1. [Print number](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/classic/PrintNumber.md)
-1. [Print number with steps](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/steps/PrintNumberWithSteps.md)
-1. [Reverse numbers](app/src/test/java/com/igorwojda/codingpuzzle/reverseint/ReverseInt.md)
-1. [Shape pyramids](app/src/test/java/com/igorwojda/codingpuzzle/shape/pyramids/Pyramids.md)
-1. [Shape steps](app/src/test/java/com/igorwojda/codingpuzzle/shape/steps/Steps.md)
-1. [String max char](app/src/test/java/com/igorwojda/codingpuzzle/string/maxchar/MaxChar.md)
-1. [String recurring char](app/src/test/java/com/igorwojda/codingpuzzle/string/recurringchar/RecurringChar.md)
-1. [String reverse](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
-1. [String vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
+2. [Capitalize sentence](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
+3. [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/classic/Fibonacci.md)
+4. [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/classic/Fibonacci.md)
+5. [Fizz Buzz](app/src/test/java/com/igorwojda/codingpuzzle/fizzbuzz/FizzBuzz.md)
+6. [List chunk](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
+7. [Matrix spiral numbers](app/src/test/java/com/igorwojda/codingpuzzle/matrix/spiralnumbers/SpiralNumbers.md)
+8. [Palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/classic/Palindrome.md)
+9. [Tolerant palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/tolerant/TolerantPalindrome.md)
+10. [Range contains range](app/src/test/java/com/igorwojda/codingpuzzle/rangecontainsrange/RangeContainsRange.md)
+11. [Factorial](app/src/test/java/com/igorwojda/codingpuzzle/factorial/Factorial.md)
+12. [Print number](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/classic/PrintNumber.md)
+13. [Print number with steps](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/steps/PrintNumberWithSteps.md)
+14. [Reverse numbers](app/src/test/java/com/igorwojda/codingpuzzle/reverseint/ReverseInt.md)
+15. [Shape pyramids](app/src/test/java/com/igorwojda/codingpuzzle/shape/pyramids/Pyramids.md)
+16. [Shape steps](app/src/test/java/com/igorwojda/codingpuzzle/shape/steps/Steps.md)
+17. [String max char](app/src/test/java/com/igorwojda/codingpuzzle/string/maxchar/MaxChar.md)
+18. [String recurring char](app/src/test/java/com/igorwojda/codingpuzzle/string/recurringchar/RecurringChar.md)
+19. [String reverse](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
+20. [String vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
 
 ## Data structures
 1. [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
-1. [Generic queue](app/src/test/java/com/igorwojda/datastructure/queue/generic/GenericQueue.md)
-1. [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
-1. [Generic stack](app/src/test/java/com/igorwojda/datastructure/stack/generic/GenericStack.md)
-1. [Two stack queue](app/src/test/java/com/igorwojda/datastructure/queue/twostack/TwoStackQueue.md)
-1. [Linked list](app/src/test/java/com/igorwojda/datastructure/linkedlist/base/LinkedList.md)
+2. [Generic queue](app/src/test/java/com/igorwojda/datastructure/queue/generic/GenericQueue.md)
+3. [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
+4. [Generic stack](app/src/test/java/com/igorwojda/datastructure/stack/generic/GenericStack.md)
+5. [Two stack queue](app/src/test/java/com/igorwojda/datastructure/queue/twostack/TwoStackQueue.md)
+6. [Linked list](app/src/test/java/com/igorwojda/datastructure/linkedlist/base/LinkedList.md)
+7. [Linked list midpoint](app/src/test/java/com/igorwojda/datastructure/linkedlist/midpoint/Midpoint.md)
 
 # Contribute
 If you have any doubts, found a problem, found better solution or simply you want to add new programming problem please create PR
 or open new issue.
 
 # Inspiration & References
+For more detailed explanations of various problems please take a look at these courses and books:
 * [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)

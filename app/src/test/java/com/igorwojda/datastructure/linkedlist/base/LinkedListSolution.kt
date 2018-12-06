@@ -117,8 +117,8 @@ private object LinkedListSolutionBasic {
     )
 }
 
-private object LinkedListSolutionExtended {
-    private class LinkedList<E> : Iterable<Node<E>> {
+object LinkedListSolutionExtended {
+    class LinkedList<E> : Iterable<Node<E>> {
         var head: Node<E>? = null
 
         val first: Node<E>?
@@ -221,7 +221,7 @@ private object LinkedListSolutionExtended {
         }
     }
 
-    private data class Node<T>(
+    data class Node<T>(
         val data: T,
         var next: Node<T>? = null
     )
