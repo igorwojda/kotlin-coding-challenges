@@ -1,10 +1,10 @@
 package com.igorwojda.datastructure.linkedlist.base
 
-class LinkedList<E> {
+private class LinkedList<E> {
 
 }
 
-data class Node<T>(
+private class Node<T>(
     val data: T,
     val next: Node<T>? = null
 )

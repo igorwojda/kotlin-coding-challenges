@@ -31,4 +31,3 @@ q.remove() //return returns 2
 q.remove() //return returns 3
 q.remove() //return returns null
 ```
-
