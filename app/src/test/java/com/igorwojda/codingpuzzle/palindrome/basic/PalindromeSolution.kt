@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.palindrome.classic
+package com.igorwojda.codingpuzzle.palindrome.basic
 
 //string reverse
 private object PalindromeSolution1 {

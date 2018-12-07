@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.palindrome.classic
+package com.igorwojda.codingpuzzle.palindrome.basic
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

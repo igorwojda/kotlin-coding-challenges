@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.printnumber.classic
+package com.igorwojda.codingpuzzle.printnumber.basic
 
 private object PrintNumberSolution {
     private fun printNumber(n: Int): List<Int> {
