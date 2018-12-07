@@ -5,7 +5,7 @@ import com.igorwojda.datastructure.linkedlist.base.LinkedListSolutionExtended.No
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun midpoint(linkedList: LinkedList<Char>): Node<Char>? {
+private fun midpoint(list: LinkedList<Char>): Node<Char>? {
     return null
 }
 

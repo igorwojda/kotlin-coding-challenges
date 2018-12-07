@@ -11,6 +11,26 @@ of `while` loop.
 # Limitations
 Do not use a counter variable, do not retrieve the `size` of the list, and only iterate through the list one time.
 
+# Examples
+Example 1
+```
+val l = new LinkedList()
+l.insertLast('a')
+l.insertLast('b')
+l.insertLast('c')
+midpoint(l).data // returns 'b'
+```
+
+Example 2
+```
+val l = new LinkedList()
+l.insertLast('a')
+l.insertLast('b')
+l.insertLast('c')
+l.insertLast('d')
+midpoint(l).data // returns 'b'
+```
+
 # Hints
 <details>
   <summary>Hint 1</summary>
@@ -31,23 +51,3 @@ Do not use a counter variable, do not retrieve the `size` of the list, and only 
   <summary>Hint 4</summary>
   Assign next node of next node to `fast` variable in every iteration
 </details>
-
-# Examples
-Example 1
-```
-val l = new LinkedList()
-l.insertLast('a')
-l.insertLast('b')
-l.insertLast('c')
-midpoint(l).data // returns 'b'
-```
-
-Example 2
-```
-val l = new LinkedList()
-l.insertLast('a')
-l.insertLast('b')
-l.insertLast('c')
-l.insertLast('d')
-midpoint(l).data // returns 'b'
-```
