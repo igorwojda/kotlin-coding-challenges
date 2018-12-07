@@ -1,21 +1,22 @@
 # Kotlin coding puzzles
-This repository contains set of programming problems that are meant to be solved using [Kotlin](https://kotlinlang.org/) language (no
+This repository contains a set of programming problems that are meant to be solved using [Kotlin](https://kotlinlang.org/) language (no
 worries hints and solutions are here as well). These challenges will help you to prepare for
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews by revealing certain tricks, present problem solving
-strategies and train your brain 🧠.
+strategies and train your brain.
 
-This project is [Android Studio](https://developer.android.com/studio/) project, because it allow quick out of the box JUnit test support.
-To start you just need to import project directly from github into Android Studio (detailed instructions below). You can also copy the code
+This project is [Android Studio](https://developer.android.com/studio/) project because it allows quick out of the box JUnit test support.
+To start you just need to import project directly from GitHub into Android Studio (detailed instructions below). You can also copy the code
 and run it in other IDE.
 
-Before solving any task I strongly encourage you to take a pen, piece of paper, take your time and think about problem. Take your time
-before you take a look at the presented solution (sometimes one night sleep is all we need before solution pop ups into our head).
+Before solving any task I strongly encourage you to take a pen, piece of paper, take your time and think about the problem. Take your time
+before you take a look at the presented solution (sometimes one-night sleep is all we need before solution pop-ups into our head).
 
-Order of the programming problems is random for now, however some of them may contain reference to problems that should be solved before to
-make final problem easier. It all up to you how you approach this, just remember that to succeed you need to practice often, repeat same
+Order of the programming problems is random for now, however, some of them may contain a reference to problems that should be solved before to
+make the final problem easier. It all up to you how you approach this, just remember that to succeed you need to practice often, repeat same
 tasks multiple times and be persistent over time.
+
 # How to start?
-## How to open project?
+## How to open this project?
 1. Install [Android Studio](https://developer.android.com/studio/)
 2. Install [Git](https://git-scm.com/downloads) or make sure it's already installed by running `git --version` command
 3. Import project by using Android Studio menu: File //return New //return Project From Version Control //return Git
@@ -29,8 +30,7 @@ tasks multiple times and be persistent over time.
 coding puzzles)
 
 ## How to run the tests?
-Open `ProblemName.kt` file for specific problem. There will be single class with `Test` suffix (`ProblemNameTest`). Click on green arrow
-on the left of method name (runs single test) or test class name (run all tests in Test class). After running test you can rerun last
+Open `ProblemName.kt` file for a specific problem. There will be a single class with `Test` suffix (`ProblemNameTest`). Click on the green circle with green arrow on the left of method name (runs single test) or test class name (run all tests in Test class). After running the test you can rerun last
 configuration using `Run command` (`⌘ + R`).
 
 # Coding puzzles
@@ -69,8 +69,8 @@ Be patient, persistent and have fun solving 🤓
 9. [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
 
 # Contribute
-If you have any doubts, found a problem, found better solution or simply you want to add new programming problem please create PR
-or open new issue.
+If you have any doubts, found a problem, found a better solution or simply you want to add new programming problem please create PR
+or open a new issue.
 
 # Inspiration & References
 For more detailed explanations of various problems please take a look at these courses and books:
