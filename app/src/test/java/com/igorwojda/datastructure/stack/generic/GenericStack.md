@@ -1,6 +1,6 @@
 # Generic stack
 
-## Prerequirements
+## Pre requirements
 
 Before this challenge you should complete [Int stack](/app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
 stack problem first.

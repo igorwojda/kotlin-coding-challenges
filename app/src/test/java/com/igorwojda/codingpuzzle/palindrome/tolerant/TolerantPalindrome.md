@@ -1,6 +1,6 @@
 # Tolerant palindrome
 
-## Prerequirements
+## Pre requirements
 
 * Before this challenge you should complete [Palindrome](../basic/Palindrome.md) puzzle.
 

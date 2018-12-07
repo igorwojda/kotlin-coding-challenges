@@ -1,5 +1,8 @@
 # Linked list midpoint
 
+## Pre requirements
+[Linked list](/app/build/tmp/kotlin-classes/debugUnitTest/com/igorwojda/datastructure/linkedlist) puzzle
+
 ## Instructions
 
 [Problem files](.)
