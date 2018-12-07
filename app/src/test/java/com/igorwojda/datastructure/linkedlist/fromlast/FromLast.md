@@ -1,6 +1,6 @@
 # Take n-th element from last
 
-## Pre requirements
+## Nice to solve before
 * [Linked list](../base/LinkedList.md)
 * [Linked list midpoint](../midpoint/Midpoint.md)
 * [Circular linked list?](../circularcheck/CircularCheck.md)

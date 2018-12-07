@@ -1,10 +1,9 @@
 # Two stack queue
 
-## Pre requirements
+## Nice to solve before
 
-* Before this challenge you should complete [Int queue](/app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md) and
-  [Int stack](/app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md) puzzles or have good understanding how `stack` and `queue`
-  works.
+* [Int queue](/app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
+* [Int stack](/app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
 
 ## Instructions
 
