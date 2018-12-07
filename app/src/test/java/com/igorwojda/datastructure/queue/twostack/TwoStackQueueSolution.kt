@@ -1,5 +1,7 @@
 package com.igorwojda.datastructure.queue.twostack
 
+import com.igorwojda.datastructure.queue.int.IntStackSolution.IntStack
+
 private object TwoStackQueueSolution {
     private class IntQueue {
         val stackPrimary = IntStack()
@@ -35,17 +37,5 @@ private object TwoStackQueueSolution {
                 stackTemporary.pop()?.let { stackPrimary.push(it) }
             }
         }
-    }
-
-    private class IntStack {
-        val list = mutableListOf<Int>()
-
-        fun push(element: Int) {
-            list.add(element)
-        }
-
-        fun pop() = if (list.isEmpty()) null else list.removeAt(list.lastIndex)
-
-        fun peek() = list.lastOrNull()
     }
 }
