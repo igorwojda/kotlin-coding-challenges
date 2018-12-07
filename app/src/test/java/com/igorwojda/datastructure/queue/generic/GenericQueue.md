@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-* [Int queue](/app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
+* [Int queue](../int/IntQueue.md)
 
 ## Instructions
 
