@@ -37,11 +37,11 @@ Be patient, persistent and have fun solving 🤓
 
 ## Algorithms
 1. [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
-2. [Capitalize sentence](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
+2. [Sentence capitalization](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
 3. [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/classic/Fibonacci.md)
 4. [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/classic/Fibonacci.md)
 5. [Fizz Buzz](app/src/test/java/com/igorwojda/codingpuzzle/fizzbuzz/FizzBuzz.md)
-6. [List chunk](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
+6. [List chunking](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
 7. [Matrix spiral numbers](app/src/test/java/com/igorwojda/codingpuzzle/matrix/spiralnumbers/SpiralNumbers.md)
 8. [Palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/classic/Palindrome.md)
 9. [Tolerant palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/tolerant/TolerantPalindrome.md)
@@ -49,13 +49,13 @@ Be patient, persistent and have fun solving 🤓
 11. [Factorial](app/src/test/java/com/igorwojda/codingpuzzle/factorial/Factorial.md)
 12. [Print number](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/classic/PrintNumber.md)
 13. [Print number with steps](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/steps/PrintNumberWithSteps.md)
-14. [Reverse numbers](app/src/test/java/com/igorwojda/codingpuzzle/reverseint/ReverseInt.md)
+14. [Int reversal](app/src/test/java/com/igorwojda/codingpuzzle/reverseint/ReverseInt.md)
 15. [Shape pyramids](app/src/test/java/com/igorwojda/codingpuzzle/shape/pyramids/Pyramids.md)
 16. [Shape steps](app/src/test/java/com/igorwojda/codingpuzzle/shape/steps/Steps.md)
 17. [String max char](app/src/test/java/com/igorwojda/codingpuzzle/string/maxchar/MaxChar.md)
 18. [String recurring char](app/src/test/java/com/igorwojda/codingpuzzle/string/recurringchar/RecurringChar.md)
-19. [String reverse](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
-20. [String vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
+19. [String reversal](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
+20. [Find the vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
 
 ## Data structures
 1. [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
@@ -65,7 +65,7 @@ Be patient, persistent and have fun solving 🤓
 5. [Two stack queue](app/src/test/java/com/igorwojda/datastructure/queue/twostack/TwoStackQueue.md)
 6. [Linked list](app/src/test/java/com/igorwojda/datastructure/linkedlist/base/LinkedList.md)
 7. [Linked list midpoint](app/src/test/java/com/igorwojda/datastructure/linkedlist/midpoint/Midpoint.md)
-8. [Linked list circular check](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
+8. [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
 
 # Contribute
 If you have any doubts, found a problem, found better solution or simply you want to add new programming problem please create PR
