@@ -1,8 +1,10 @@
-# Prerequirements
+# Generic queue
+
+## Prerequirements
 Optionally you can start with simpler version by solving [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/classic/Queue.md) queue
 problem first.
 
-# Instructions
+## Instructions
 [Problem files](.)
 
 Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) data structure. The queue should be a class with methods:
@@ -14,7 +16,7 @@ Adding to the queue should store an element until it is removed. First element a
 This is [generic](https://kotlinlang.org/docs/reference/generics.html) venison of the queue witch means we must define data type for the
 queue (`IntQueue<String>`).
 
-# Examples
+## Examples
 Example 1
 ```
 val q = Queue<Int>()

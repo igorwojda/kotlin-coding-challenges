@@ -1,8 +1,10 @@
-# Prerequirements
+# Generic stack
+
+## Prerequirements
 Optionally you can start with simpler version by solving [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/classic/Stack.md) stack
 problem first.
 
-# Instructions
+## Instructions
 [Problem files](.)
 
 Implement a [stack](https://en.wikipedia.org/wiki/Stack) data structure. The stack should be a class with methods:
@@ -14,7 +16,7 @@ Adding to the stack should store an element until it is removed. First element a
 This is [generic](https://kotlinlang.org/docs/reference/generics.html) venison of the stack witch means we must define data type for the
 stack (`IntStack<String>`).
 
-# Examples
+## Examples
 ```
 val s = new Stack()
 s.push(1)

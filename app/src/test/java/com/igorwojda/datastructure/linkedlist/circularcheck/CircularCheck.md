@@ -1,9 +1,11 @@
-# Instructions
+# Circular linked list?
+
+## Instructions
 [Problem files](.)
 
 Given a linked list, return true if the list is circular, false if it is not.
 
-# Examples
+## Examples
 Example 1
 ```
 val l = new List();
@@ -24,7 +26,7 @@ val a = new Node('a');
 circular(l) // returns false
 ```
 
-# Hints
+## Hints
 <details>
   <summary>Hint 1</summary>
    We should use more then one variable to store values that are retrieved during iteration (two pointer solution)

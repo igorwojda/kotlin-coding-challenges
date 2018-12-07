@@ -1,4 +1,5 @@
-# Instructions
+# Annagram
+## Instructions
 [Problem files](.)
 
 Check to see if two provided strings are anagrams of each other. Anagram is a word created by rearranging the letters of another word
@@ -6,7 +7,7 @@ Check to see if two provided strings are anagrams of each other. Anagram is a wo
 the same as lower case
 
 
-# Examples
+## Examples
 ```
 anagrams('rail safety', 'fairy tales') --> True
 anagrams('RAIL! SAFETY!', 'fairy tales') --> True

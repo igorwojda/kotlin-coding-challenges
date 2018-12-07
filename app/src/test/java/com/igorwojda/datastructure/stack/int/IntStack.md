@@ -1,4 +1,6 @@
-# Instructions
+# Int stack
+
+## Instructions
 [Problem files](.)
 
 Implement a [stack](https://en.wikipedia.org/wiki/Stack) data structure. The stack should be a class with methods:
@@ -10,8 +12,7 @@ Adding to the stack should store an element until it is removed. First element a
 simplicity we can assume that IntQueue will only accept `Int`, however you can jump straight to [generic stack](../generic/GenericStack.md)
 problem if you feel comfortable.
 
-
-# Examples
+## Examples
 Example 1
 ```
 val q = Queue()
