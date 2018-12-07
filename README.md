@@ -1,6 +1,6 @@
 # Kotlin coding puzzles
 This repository contains set of programming problems that are meant to be solved using [Kotlin](https://kotlinlang.org/) language (no
-worries solutions are here as well). These challenges will help you to prepare for
+worries hints and solutions are here as well). These challenges will help you to prepare for
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews by revealing certain tricks, present problem solving
 strategies and train your mind to thing is specific way.
 
