@@ -1,6 +1,7 @@
 # Int queue
 
 ## Instructions
+
 [Problem files](.)
 
 Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) data structure. The queue should be a class with methods:
@@ -14,7 +15,9 @@ For simplicity we can assume that IntQueue will only accept `Int`, however you c
 
 
 ## Examples
+
 Example 1
+
 ```
 val q = Queue()
 q.add(1)
@@ -23,6 +26,7 @@ q.remove() //return returns null
 ```
 
 Example 2
+
 ```
 val q = Queue()
 q.add(1)
@@ -33,3 +37,4 @@ q.remove() //return returns 2
 q.remove() //return returns 3
 q.remove() //return returns null
 ```
+

@@ -1,8 +1,8 @@
 # Kotlin coding puzzles
+
 This repository contains a set of programming problems that are meant to be solved using [Kotlin](https://kotlinlang.org/) language (no
-worries hints and solutions are here as well). These challenges will help you to prepare for
-[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews by revealing certain tricks, present problem solving
-strategies and train your brain.
+worries hints and solutions are here as well) to help you to practice your Kotlin skills and prepare for
+[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
 This project is [Android Studio](https://developer.android.com/studio/) project because it allows quick out of the box JUnit test support.
 To start you just need to import project directly from GitHub into Android Studio (detailed instructions below). You can also copy the code
@@ -16,27 +16,32 @@ make the final problem easier. It all up to you how you approach this, just reme
 tasks multiple times and be persistent over time.
 
 # How to start?
+
 ## How to open this project?
+
 1. Install [Android Studio](https://developer.android.com/studio/)
 2. Install [Git](https://git-scm.com/downloads) or make sure it's already installed by running `git --version` command
 3. Import project by using Android Studio menu: File //return New //return Project From Version Control //return Git
 4. Enter Repository URL `https://github.com/igorwojda/kotlin-coding-puzzle.git`  and click `clone`
 5. Open [app/src/test/java/com/igorwojda](app/src/test/java/com/igorwojda/) folder in `Project` view or
    [app/java/com (test)/igorwojda](app/src/test/java/com/igorwojda/) in `Android` view in project panel.
-7. Each problem is located in separate package and it contains 3 files:
+6. Each problem is located in separate package and it contains 3 files:
 * `ProblemName.md` - description of the problem
 * `ProblemName.kt` - contains empty method/class to solver problem and set of tests (we will write code, solve problem here)
 * `ProblemNameSolution.kt` - file that contains one or more problem solutions (encapsulated in Kotlin `object` to avoid conflicts with other
-coding puzzles)
+  coding puzzles)
 
 ## How to run the tests?
+
 Open `ProblemName.kt` file for a specific problem. There will be a single class with `Test` suffix (`ProblemNameTest`). Click on the green circle with green arrow on the left of method name (runs single test) or test class name (run all tests in Test class). After running the test you can rerun last
 configuration using `Run command` (`⌘ + R`).
 
 # Coding puzzles
+
 Be patient, persistent and have fun solving 🤓
 
 ## Algorithms
+
 1. [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
 2. [Sentence capitalization](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
 3. [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/basic/Fibonacci.md)
@@ -54,10 +59,11 @@ Be patient, persistent and have fun solving 🤓
 15. [Pyramid shape](app/src/test/java/com/igorwojda/codingpuzzle/shape/pyramids/Pyramids.md)
 16. [Steps shape](app/src/test/java/com/igorwojda/codingpuzzle/shape/steps/Steps.md)
 17. [Max occurring char](app/src/test/java/com/igorwojda/codingpuzzle/string/maxchar/MaxOccurrentChar.md)
-19. [String reversal](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
-20. [Find the vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
+18. [String reversal](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
+19. [Find the vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
 
 ## Data structures
+
 1. [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
 2. [Generic queue](app/src/test/java/com/igorwojda/datastructure/queue/generic/GenericQueue.md)
 3. [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
@@ -69,9 +75,12 @@ Be patient, persistent and have fun solving 🤓
 9. [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
 
 # Contribute
+
 If you have any doubts, found a problem, found a better solution or simply you want to add new programming problem please create PR
 or open a new issue.
 
 # Inspiration & References
+
 For more detailed explanations of various problems please take a look at these courses and books:
 * [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
+

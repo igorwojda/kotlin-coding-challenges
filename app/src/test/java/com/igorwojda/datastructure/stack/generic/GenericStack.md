@@ -1,10 +1,12 @@
 # Generic stack
 
 ## Prerequirements
+
 Before this challenge you should complete [Int stack](/app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
 stack problem first.
 
 ## Instructions
+
 [Problem files](.)
 
 Implement a [stack](https://en.wikipedia.org/wiki/Stack) data structure. The stack should be a class with methods:
@@ -17,6 +19,7 @@ This is [generic](https://kotlinlang.org/docs/reference/generics.html) venison o
 stack (`IntStack<String>`).
 
 ## Examples
+
 ```
 val s = new Stack()
 s.push(1)
@@ -25,3 +28,4 @@ s.pop() //return 2
 s.pop() //return 1
 s.pop() //return null
 ```
+

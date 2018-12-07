@@ -1,6 +1,7 @@
 # Linked list midpoint
 
 ## Instructions
+
 [Problem files](.)
 
 Return the 'middle' node of a linked list. If the list has an even number of elements, return
@@ -11,10 +12,13 @@ We are using version of linked list that implements Kotlin
 of `while` loop.
 
 ## Limitations
+
 Do not use a counter variable, do not retrieve the `size` of the list, and only iterate through the list one time.
 
 ## Examples
+
 Example 1
+
 ```
 val l = new LinkedList()
 l.insertLast('a')
@@ -24,6 +28,7 @@ midpoint(l).data // returns 'b'
 ```
 
 Example 2
+
 ```
 val l = new LinkedList()
 l.insertLast('a')
@@ -34,22 +39,24 @@ midpoint(l).data // returns 'b'
 ```
 
 ## Hints
+
 <details>
-  <summary>Hint 1</summary>
-   We should use more then one variable to store values that are retrieved during iteration (two pointer solution)
+<summary>Hint 1</summary>
+We should use more then one variable to store values that are retrieved during iteration (two pointer solution)
 </details>
 
 <details>
-  <summary>Hint 2</summary>
-  Name of these variables should be `slow` and `fast`
+<summary>Hint 2</summary>
+Name of these variables should be `slow` and `fast`
 </details>
 
 <details>
-  <summary>Hint 3</summary>
-  Assign next node to `slow` variable in every iteration
+<summary>Hint 3</summary>
+Assign next node to `slow` variable in every iteration
 </details>
 
 <details>
-  <summary>Hint 4</summary>
-  Assign next node of next node to `fast` variable in every iteration
+<summary>Hint 4</summary>
+Assign next node of next node to `fast` variable in every iteration
 </details>
+

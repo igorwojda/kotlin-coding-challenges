@@ -1,10 +1,12 @@
 # Generic queue
 
 ## Prerequirements
+
 Before this challenge you should complete [Int queue](/app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md) queue
 problem first.
 
 ## Instructions
+
 [Problem files](.)
 
 Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) data structure. The queue should be a class with methods:
@@ -17,7 +19,9 @@ This is [generic](https://kotlinlang.org/docs/reference/generics.html) venison o
 queue (`IntQueue<String>`).
 
 ## Examples
+
 Example 1
+
 ```
 val q = Queue<Int>()
 q.add(1)
@@ -26,6 +30,7 @@ q.remove() //return returns null
 ```
 
 Example 2
+
 ```
 val q = Queue<Char>()
 q.add('A')
