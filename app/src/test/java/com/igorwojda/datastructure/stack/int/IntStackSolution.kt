@@ -1,7 +1,7 @@
 package com.igorwojda.datastructure.queue.int
 
-private object IntStackSolution {
-    private class IntStack {
+object IntStackSolution {
+    class IntStack {
         val list = mutableListOf<Int>()
 
         fun push(element: Int) {

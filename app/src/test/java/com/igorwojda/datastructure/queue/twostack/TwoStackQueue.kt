@@ -1,5 +1,6 @@
 package com.igorwojda.datastructure.queue.twostack
 
+import com.igorwojda.datastructure.queue.int.IntStackSolution.IntStack
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
@@ -17,18 +18,6 @@ private class TwoStackQueue {
     fun peek(): Int? {
         return 0
     }
-}
-
-private class IntStack {
-    val list = mutableListOf<Int>()
-
-    fun push(element: Int) {
-        list.add(element)
-    }
-
-    fun pop() = if (list.isEmpty()) null else list.removeAt(list.lastIndex)
-
-    fun peek() = list.lastOrNull()
 }
 
 class TwoStackQueueTest {
