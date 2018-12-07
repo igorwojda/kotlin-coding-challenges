@@ -1,11 +1,13 @@
 # Int reversal
 
 ## Instructions
+
 [Problem files](.)
 
 Given an integer, return an integer that is the reverse ordering of numbers.
 
 ## Examples
+
 ```
 reverseInt(15) //return 51
 reverseInt(981) //return 189

@@ -1,5 +1,7 @@
 # Annagram
+
 ## Instructions
+
 [Problem files](.)
 
 Check to see if two provided strings are anagrams of each other. Anagram is a word created by rearranging the letters of another word
@@ -8,6 +10,7 @@ the same as lower case
 
 
 ## Examples
+
 ```
 anagrams('rail safety', 'fairy tales') --> True
 anagrams('RAIL! SAFETY!', 'fairy tales') --> True

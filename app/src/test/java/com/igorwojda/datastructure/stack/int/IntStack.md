@@ -1,6 +1,7 @@
 # Int stack
 
 ## Instructions
+
 [Problem files](.)
 
 Implement a [stack](https://en.wikipedia.org/wiki/Stack) data structure. The stack should be a class with methods:
@@ -13,7 +14,9 @@ simplicity we can assume that IntQueue will only accept `Int`, however you can j
 problem if you feel comfortable.
 
 ## Examples
+
 Example 1
+
 ```
 val q = Queue()
 q.add(1)
@@ -22,6 +25,7 @@ q.remove() //return returns null
 ```
 
 Example 2
+
 ```
 val q = Queue()
 q.add(1)

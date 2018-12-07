@@ -1,12 +1,15 @@
 # Circular linked list?
 
 ## Instructions
+
 [Problem files](.)
 
 Given a linked list, return true if the list is circular, false if it is not.
 
 ## Examples
+
 Example 1
+
 ```
 val l = new List();
 val a = new Node('a');
@@ -20,6 +23,7 @@ circular(l) // returns true
 ```
 
 Example 2
+
 ```
 val l = new List();
 val a = new Node('a');
@@ -27,25 +31,24 @@ circular(l) // returns false
 ```
 
 ## Hints
+
 <details>
-  <summary>Hint 1</summary>
-   We should use more then one variable to store values that are retrieved during iteration (two pointer solution)
+<summary>Hint 1</summary>
+We should use more then one variable to store values that are retrieved during iteration (two pointer solution)
 </details>
 
 <details>
-  <summary>Hint 2</summary>
-  Name of these variables should be `slow` and `fast`
+<summary>Hint 2</summary>
+Name of these variables should be `slow` and `fast`
 </details>
 
 <details>
-  <summary>Hint 3</summary>
-  Assign next node to `slow` variable in every iteration
+<summary>Hint 3</summary>
+Assign next node to `slow` variable in every iteration
 </details>
 
 <details>
-  <summary>Hint 4</summary>
-  Assign next node of next node to `fast` variable in every iteration
+<summary>Hint 4</summary>
+Assign next node of next node to `fast` variable in every iteration
 </details>
-
-
 

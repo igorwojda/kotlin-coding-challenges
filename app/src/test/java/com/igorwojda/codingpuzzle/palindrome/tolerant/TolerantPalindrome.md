@@ -1,9 +1,11 @@
 # Tolerant palindrome
 
 ## Prerequirements
+
 * Before this challenge you should complete [Palindrome](../basic/Palindrome.md) puzzle.
 
 ## Instructions
+
 [Problem files](.)
 
 Given a string, return true if the string is a palindrome or false if it is not.  Palindromes are strings that form the same word if it is
@@ -12,6 +14,7 @@ Our string will be (tolerant) palindrome if after removing one character string 
 
 
 ## Examples
+
 ```
 tolerantPalindrome("abba") == true
 tolerantPalindrome("abb#a") == true
