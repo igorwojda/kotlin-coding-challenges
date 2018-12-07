@@ -1,4 +1,6 @@
-# Instructions
+# Int queue
+
+## Instructions
 [Problem files](.)
 
 Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) data structure. The queue should be a class with methods:
@@ -11,7 +13,7 @@ For simplicity we can assume that IntQueue will only accept `Int`, however you c
 [generic queue](../genericqueue/GenericQueue.md) problem if you feel comfortable.
 
 
-# Examples
+## Examples
 Example 1
 ```
 val q = Queue()

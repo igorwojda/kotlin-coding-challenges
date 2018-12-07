@@ -1,4 +1,6 @@
-# Instructions
+# Combine two queues
+
+## Instructions
 [Problem files](.)
 
 Implement the `weave` function.  Weave receives two queues as arguments and combines the contents of each into a new, third queue.
@@ -6,7 +8,7 @@ The third queue should contain the content of the two queues. The function shoul
 inserting `null` into the new one. Take into consideration the fact that both queues may be of different length. IntQueue can only expose
 `add`, `remove`, and `peek` methods to external clients.
 
-# Examples
+## Examples
 ```
 val queueOne = new Queue()
 queueOne.add(1)

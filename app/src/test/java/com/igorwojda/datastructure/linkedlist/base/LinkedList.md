@@ -1,5 +1,5 @@
-
-# Instructions
+# Linked list
+## Instructions
 [Problem files](.)
 
 Implement [LinkedList](https://en.wikipedia.org/wiki/Linked_list) data structure. This is quite big problem, so we will split it into

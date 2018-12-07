@@ -1,10 +1,12 @@
-# Instructions
+# Print numbers
+
+## Instructions
 [Problem files](.)
 
 Write a function that accepts a positive Int `n`. The function should return a list representing all numbers from `n` to `1`. If `n` value
 is zero then empty list should be returned.
 
-# Examples
+## Examples
 ```
 printNumber(0) //return []
 printNumber(2) //return [2, 1]

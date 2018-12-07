@@ -1,4 +1,6 @@
-# Instructions
+# Linked list midpoint
+
+## Instructions
 [Problem files](.)
 
 Return the 'middle' node of a linked list. If the list has an even number of elements, return
@@ -8,10 +10,10 @@ We are using version of linked list that implements Kotlin
 [Iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interface, so we can use `forEach` instead
 of `while` loop.
 
-# Limitations
+## Limitations
 Do not use a counter variable, do not retrieve the `size` of the list, and only iterate through the list one time.
 
-# Examples
+## Examples
 Example 1
 ```
 val l = new LinkedList()
@@ -31,7 +33,7 @@ l.insertLast('d')
 midpoint(l).data // returns 'b'
 ```
 
-# Hints
+## Hints
 <details>
   <summary>Hint 1</summary>
    We should use more then one variable to store values that are retrieved during iteration (two pointer solution)
