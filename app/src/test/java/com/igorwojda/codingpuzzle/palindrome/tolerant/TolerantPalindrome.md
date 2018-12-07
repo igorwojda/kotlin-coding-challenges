@@ -1,8 +1,8 @@
 # Tolerant palindrome
 
-## Pre requirements
+## Nice to solve before
 
-* Before this challenge you should complete [Palindrome](../basic/Palindrome.md) puzzle.
+* [Palindrome](../basic/Palindrome.md)
 
 ## Instructions
 

@@ -1,6 +1,6 @@
 # Problem name
 
-## Pre requirements
+## Nice to solve before
 
 ## Instructions
 

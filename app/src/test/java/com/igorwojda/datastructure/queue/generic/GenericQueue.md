@@ -1,9 +1,8 @@
 # Generic queue
 
-## Pre requirements
+## Nice to solve before
 
-Before this challenge you should complete [Int queue](/app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md) queue
-problem first.
+* [Int queue](/app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
 
 ## Instructions
 

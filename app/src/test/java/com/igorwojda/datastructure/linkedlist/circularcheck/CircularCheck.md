@@ -1,7 +1,7 @@
 # Circular linked list?
 
-## Pre requirements
-[Linked list](/app/build/tmp/kotlin-classes/debugUnitTest/com/igorwojda/datastructure/linkedlist) puzzle
+## Nice to solve before
+[Linked list](/app/build/tmp/kotlin-classes/debugUnitTest/com/igorwojda/datastructure/linkedlist)
 
 ## Instructions
 
