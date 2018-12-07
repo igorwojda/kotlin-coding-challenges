@@ -5,20 +5,15 @@ import com.igorwojda.datastructure.linkedlist.base.LinkedListSolutionExtended.No
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-fun midpoint(linkedList: LinkedList<Char>): Node<Char> {
-    var slow: Node<Char>
-    var fast: Node<Char>
-
-    linkedList.forEach {
-
-    }
+private fun midpoint(linkedList: LinkedList<Char>): Node<Char>? {
+    return null
 }
 
 class MidpointTest {
     @Test
     fun `midpoint of list with 0 elements`() {
         val l = LinkedList<Char>()
-        midpoint(l).data shouldEqual null
+        midpoint(l)?.data shouldEqual null
     }
 
     @Test
@@ -27,7 +22,7 @@ class MidpointTest {
         l.insertLast('a')
         l.insertLast('b')
         l.insertLast('c')
-        midpoint(l).data shouldEqual 'b'
+        midpoint(l)?.data shouldEqual 'b'
     }
 
     @Test
@@ -38,7 +33,7 @@ class MidpointTest {
         l.insertLast('c')
         l.insertLast('d')
         l.insertLast('e')
-        midpoint(l).data shouldEqual 'c'
+        midpoint(l)?.data shouldEqual 'c'
     }
 
     @Test
@@ -46,7 +41,7 @@ class MidpointTest {
         val l = LinkedList<Char>()
         l.insertLast('a')
         l.insertLast('b')
-        midpoint(l).data shouldEqual 'a'
+        midpoint(l)?.data shouldEqual 'a'
     }
 
     @Test
@@ -56,7 +51,7 @@ class MidpointTest {
         l.insertLast('b')
         l.insertLast('c')
         l.insertLast('d')
-        midpoint(l).data shouldEqual 'b'
+        midpoint(l)?.data shouldEqual 'b'
     }
 }
 
