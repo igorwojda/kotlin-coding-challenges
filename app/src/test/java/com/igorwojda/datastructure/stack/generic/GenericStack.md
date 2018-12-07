@@ -1,7 +1,7 @@
 # Generic stack
 
 ## Prerequirements
-Optionally you can start with simpler version by solving [Int stack](/app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
+Before this challenge you should complete [Int stack](/app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
 stack problem first.
 
 ## Instructions
