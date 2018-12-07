@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.printnumber.classic
+package com.igorwojda.codingpuzzle.printnumber.basic
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

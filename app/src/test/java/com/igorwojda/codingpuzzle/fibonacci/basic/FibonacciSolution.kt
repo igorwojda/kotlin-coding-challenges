@@ -1,4 +1,4 @@
-package com.igorwojda.codingpuzzle.fibonacci.classic
+package com.igorwojda.codingpuzzle.fibonacci.basic
 
 //iterative solution
 private object FibonacciSolution1 {
