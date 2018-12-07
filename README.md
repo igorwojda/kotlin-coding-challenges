@@ -11,9 +11,9 @@ and run it in other IDE.
 Before solving any task I strongly encourage you to take a pen, piece of paper, take your time and think about the problem. Take your time
 before you take a look at the presented solution (sometimes one-night sleep is all we need before solution pop-ups into our head).
 
-Order of the programming problems is random for now, however, some of them may contain a reference to problems that should be solved before to
-make the final problem easier. It all up to you how you approach this, just remember that to succeed you need to practice often, repeat same
-tasks multiple times and be persistent over time.
+Order of the programming problems is random for now, however, some of them may contain a reference to problems that should be solved before
+to make the final problem easier. It all up to you how you approach this, just remember that to succeed you need to practice often, repeat
+same tasks multiple times and be persistent over time.
 
 # How to start?
 
@@ -33,8 +33,9 @@ tasks multiple times and be persistent over time.
 
 ## How to run the tests?
 
-Open `ProblemName.kt` file for a specific problem. There will be a single class with `Test` suffix (`ProblemNameTest`). Click on the green circle with green arrow on the left of method name (runs single test) or test class name (run all tests in Test class). After running the test you can rerun last
-configuration using `Run command` (`⌘ + R`).
+Open `ProblemName.kt` file for a specific problem. There will be a single class with `Test` suffix (`ProblemNameTest`). Click on the green
+circle with green arrow on the left of method name (runs single test) or test class name (run all tests in Test class). After running the
+test you can rerun last configuration using `Run command` (`⌘ + R`).
 
 # Coding puzzles
 
