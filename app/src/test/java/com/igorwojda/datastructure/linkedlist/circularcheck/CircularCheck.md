@@ -17,6 +17,13 @@ c.next = b;
 circular(l) // returns true
 ```
 
+Example 2
+```
+val l = new List();
+val a = new Node('a');
+circular(l) // returns false
+```
+
 # Hints
 <details>
   <summary>Hint 1</summary>
