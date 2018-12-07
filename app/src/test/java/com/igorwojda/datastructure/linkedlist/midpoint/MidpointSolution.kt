@@ -1,11 +1,11 @@
 import com.igorwojda.datastructure.linkedlist.base.LinkedListSolutionExtended
 
 private object MidpointSolution {
-    private fun midpoint(linkedList: LinkedListSolutionExtended.LinkedList<Char>): LinkedListSolutionExtended.Node<Char>? {
-        var slow = linkedList.first
-        var fast = linkedList.first
+    private fun midpoint(list: LinkedListSolutionExtended.LinkedList<Char>): LinkedListSolutionExtended.Node<Char>? {
+        var slow = list.first
+        var fast = list.first
 
-        linkedList.forEach {
+        list.forEach {
             if (fast?.next?.next == null) {
                 return slow
             }

@@ -12,9 +12,6 @@ inside of the 'Queue' class.The queue should be a class with methods:
 * `remove` method - removes the element from a queue (enqueue the element)
 * `peek` method - returns last element (the one that should be returned) without removing it from the queue
 
-# Hints
-* [Kotlin generics](https://kotlinlang.org/docs/reference/generics.html)
-
 # Examples
 ```
 val q = new Queue();
