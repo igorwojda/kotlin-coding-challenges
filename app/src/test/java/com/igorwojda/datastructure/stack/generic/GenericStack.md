@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-* [Int stack](/app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
+* [Int stack](../int/IntStack.md)
 
 ## Instructions
 
