@@ -12,46 +12,55 @@ private fun midpoint(list: LinkedList<Char>): Node<Char>? {
 class MidpointTest {
     @Test
     fun `midpoint of list with 0 elements`() {
-        val l = LinkedList<Char>()
-        midpoint(l)?.data shouldEqual null
+        LinkedList<Char>().apply {
+            midpoint(this)?.data shouldEqual null
+        }
     }
 
     @Test
     fun `midpoint of list with 3 elements`() {
-        val l = LinkedList<Char>()
-        l.insertLast('a')
-        l.insertLast('b')
-        l.insertLast('c')
-        midpoint(l)?.data shouldEqual 'b'
+        LinkedList<Char>().apply {
+            insertLast('a')
+            insertLast('b')
+            insertLast('c')
+
+            midpoint(this)?.data shouldEqual 'b'
+        }
     }
 
     @Test
     fun `midpoint of list with 5 elements`() {
-        val l = LinkedList<Char>()
-        l.insertLast('a')
-        l.insertLast('b')
-        l.insertLast('c')
-        l.insertLast('d')
-        l.insertLast('e')
-        midpoint(l)?.data shouldEqual 'c'
+        LinkedList<Char>().apply {
+            insertLast('a')
+            insertLast('b')
+            insertLast('c')
+            insertLast('d')
+            insertLast('e')
+
+            midpoint(this)?.data shouldEqual 'c'
+        }
     }
 
     @Test
     fun `midpoint of list with 2 elements`() {
-        val l = LinkedList<Char>()
-        l.insertLast('a')
-        l.insertLast('b')
-        midpoint(l)?.data shouldEqual 'a'
+        LinkedList<Char>().apply {
+            insertLast('a')
+            insertLast('b')
+
+            midpoint(this)?.data shouldEqual 'a'
+        }
     }
 
     @Test
     fun `midpoint of list with 4 elements`() {
-        val l = LinkedList<Char>()
-        l.insertLast('a')
-        l.insertLast('b')
-        l.insertLast('c')
-        l.insertLast('d')
-        midpoint(l)?.data shouldEqual 'b'
+        LinkedList<Char>().apply {
+            insertLast('a')
+            insertLast('b')
+            insertLast('c')
+            insertLast('d')
+
+            midpoint(this)?.data shouldEqual 'b'
+        }
     }
 }
 

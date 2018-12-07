@@ -1,12 +1,16 @@
 # Problem name
 
-## Prerequirements
+## Pre requirements
 
 ## Instructions
 
 [Problem files](.)
 
-instructions
+???
+
+## Limitations
+
+???
 
 ## Examples
 
@@ -26,5 +30,5 @@ Example 2
 
 <details>
 <summary>Hint 1</summary>
-desc
+???
 </details>

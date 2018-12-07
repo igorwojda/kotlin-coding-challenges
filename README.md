@@ -34,8 +34,8 @@ same tasks multiple times and be persistent over time.
 ## How to run the tests?
 
 Open `ProblemName.kt` file for a specific problem. There will be a single class with `Test` suffix (`ProblemNameTest`). Click on the green
-circle with green arrow on the left of method name (runs single test) or test class name (run all tests in Test class). After running the
-test you can rerun last configuration using `Run command` (`⌘ + R`).
+green arrow on the left of method name (runs single test) or test class name (run all tests in Test class). After running the test you can
+rerun last configuration using `Run command` (`⌘ + R`).
 
 # Coding puzzles
 
@@ -74,6 +74,7 @@ Be patient, persistent and have fun solving 🤓
 7. [Linked list](app/src/test/java/com/igorwojda/datastructure/linkedlist/base/LinkedList.md)
 8. [Linked list midpoint](app/src/test/java/com/igorwojda/datastructure/linkedlist/midpoint/Midpoint.md)
 9. [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
+10. [Linked list take n-th element from last](app/src/test/java/com/igorwojda/datastructure/linkedlist/fromlast/FromLast.md)
 
 # Contribute
 
