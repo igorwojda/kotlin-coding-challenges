@@ -4,21 +4,14 @@ This repository contains a set of programming problems that are meant to be solv
 worries hints and solutions are here as well) to help you to practice your coding skills and prepare for
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
-This project is [Android Studio](https://developer.android.com/studio/) project because it allows quick out of the box JUnit test support.
-To start you just need to import project directly from GitHub into Android Studio (detailed instructions below).
-
-Before solving any task I strongly encourage you to take a pen, piece of paper, take your time and think about the problem. Take your time
-before you take a look at the presented solution (sometimes one-night sleep is all we need before solution pop-ups into our head).
-
-Order of the programming problems is random for now, however, some of them may contain a reference to problems that should be solved before
-to make the final problem easier. It all up to you how you approach this, just remember that to succeed you need to practice often, repeat
-same tasks multiple times and be persistent over time.
 
 # How do I start?
 
 ## Opening this project
+This project is [Android Studio](https://developer.android.com/studio/) project because it allows quick out of the box JUnit test support
+and it is free.
 
-1. Install [Android Studio](https://developer.android.com/studio/) (free)
+1. Install Android Studio
 2. Install git `brew install git` using cmd
 3. Import project by using Android Studio menu: `File -> New -> Project From Version Control -> Git`
 4. Enter Repository URL `https://github.com/igorwojda/kotlin-coding-puzzle.git`  and click `clone`
@@ -28,23 +21,27 @@ same tasks multiple times and be persistent over time.
    ice preview of markdown files (files containing puzzles description)
 
 ## Problem structure
-Each problem is located in separate package and it contains 3 files:
-* `ProblemName.md` - description of the problem
-* `ProblemName.kt` - contains empty method/class to solver problem and set of tests (we will write code, solve problem here)
-* `ProblemNameSolution.kt` - file that contains one or more problem solutions (encapsulated in Kotlin `object` to avoid conflicts with other
-  coding puzzles)
-
-<img src="https://github.com/igorwojda/kotlin-coding-puzzle/master/misc/images/SampleTask.png?sanitize=true&raw=true" />
+Each problem is located in separate package and it contains 3 files
+([screen](https://github.com/igorwojda/kotlin-coding-puzzle/blob/master/misc/images/SampleTask.png)):
+* `Problem.md` - description of the problem
+* `Problem.kt` - contains empty method/class where problem should be solved and set of tests to run
+* `ProblemSolution.kt` - file that contains one or more problem solutions (encapsulated in Kotlin `object` just to avoid conflicts with
+  other coding puzzles)
 
 ## Running tests
 
-Open `ProblemName.kt` file for a specific problem. There will be a single class with `Test` suffix (`ProblemNameTest`). Click on the green
-green arrow on the left of method name (runs single test) or test class name (run all tests in Test class). After running the test you can
-rerun last configuration using `Run command` (`⌘ + R`).
+Open `Problem.kt` file for a any problem. Locate class with `Test` suffix (`ProblemTest`). Click on the green green arrow close to line
+number to run one or more tests in the class
+([screen](https://github.com/igorwojda/kotlin-coding-puzzle/blob/master/misc/images/RunTest.png)). After running the test you can rerun last
+configuration using `Run command` (`⌘ + R`).
 
 # Coding puzzles
+Before solving any task I strongly encourage you to take a pen, piece of paper, take your time and think about the problem. Take your time
+before you take a look at the presented solution (sometimes one-night sleep is all we need before solution pop-ups into our head).
 
-Be patient, persistent and have fun solving 🤓
+Order of the programming problems is random for now, however, some of them may contain a reference to problems that should be solved before
+to make the final problem easier. It all up to you how you approach this, just remember that to succeed you need to practice often, repeat
+same tasks multiple times be patient and persistent over time.
 
 ## Algorithms
 
