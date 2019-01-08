@@ -48,7 +48,7 @@ tree.root // null
 ### 3. Breath first traversal (BF traverse)
 
 * **Description**: Breath-first traversal is level-order traversal, where we visit every node on a level before going to a lower level.
-<img src="https://github.com/igorwojda/kotlin-coding-puzzle/blob/master/app/src/test/java/com/igorwojda/datastructure/tree/basic/image/breadth-first_traversal.svg?sanitize=true&raw=true">
+<img src="./misc/breadth-first_traversal.svg">
 
 * * **Test**: `breath first traverse`
 
