@@ -8,12 +8,20 @@ private class Tree {
 
     fun traverseBF(): List<String> {
         val result = mutableListOf<String>()
+        val nodes = mutableListOf<Node>()
 
-        return result
-    }
+        root?.let { root ->
+            nodes.add(root)
 
-    fun traverseDF(): List<String> {
-        val result = mutableListOf<String>()
+            while(nodes.isNotEmpty()) {
+                val node = nodes.removeAt(0)
+                result.add(node.data)
+
+                if(node.children.isNotEmpty()) {
+                    nodes.addAll(node.children)
+                }
+            }
+        }
 
         return result
     }
@@ -23,7 +31,11 @@ private class Node(val data: String) {
     val children = mutableListOf<Node>()
 
     fun add(data: String) {
-        children.add(Node(data))
+        add(Node(data))
+    }
+
+    fun add(node: Node) {
+        children.add(node)
     }
 
     fun remove(data: String) {
@@ -32,6 +44,36 @@ private class Node(val data: String) {
 }
 
 class TreeTest {
+    private val tree: Tree
+        get() {
+            //left branch
+            val nodeD = Node("D").apply {
+                add("C")
+                add("E")
+            }
+
+            val nodeB = Node("B").apply {
+                add("A")
+                add(nodeD)
+            }
+
+            //right branch
+            val nodeH = Node("H")
+            val nodeI = Node("I").apply { add(nodeH) }
+            val nodeG = Node("G").apply { add(nodeI) }
+
+            //root node
+            val nodeF = Node("F").apply {
+                add(nodeB)
+                add(nodeG)
+            }
+
+            //tree
+            val tree = Tree()
+            tree.root = nodeF
+            return tree
+        }
+
     @Test
     fun `create Node with abc data`() {
         val n = Node("abc")
@@ -64,26 +106,12 @@ class TreeTest {
 
     @Test
     fun `breath first traverse`() {
-        val tree = Tree()
-        tree.root = Node("a")
-        tree.root?.add("b")
-        tree.root?.add("c")
-        tree.root?.children?.get(0)?.add("d")
-
-        val result = tree.traverseBF()
-        result shouldEqual listOf("a", "b", "c", "d")
+        tree.traverseBF() shouldEqual listOf("F", "B", "G", "A", "D", "I", "C", "E", "H")
     }
-
-    @Test
-    fun `depth first traverse`() {
-        val tree = Tree()
-        tree.root = Node("a")
-        tree.root?.add("b")
-        tree.root?.add("d")
-        tree.root?.children?.get(0)?.add("c")
-
-        val result = tree.traverseDF()
-
-        result shouldEqual listOf("a", "b", "c", "d")
-    }
+//
+//    @Test
+//    fun `depth first traverse`() {
+//
+//    }
 }
+
