@@ -45,18 +45,18 @@ val tree = Tree("abc")
 tree.root // null
 ```
 
-### 3. Breath first traversal (BF traverse)
+### 3. Breath First traversal (BF traversal)
 
 * **Description**: Breath-first traversal is level-order traversal, where we visit every node on a level before going to a lower level.
 <img src="./misc/breadth-first_traversal.svg">
 
-* * **Test**: `breath first traverse`
+* **Test**: `breath first traverse`
 
 Example:
 
 ```
 val tree = Tree("abc")
-tree.traverseBF
+//..
+tree.traverseBF()
 ```
-
 
