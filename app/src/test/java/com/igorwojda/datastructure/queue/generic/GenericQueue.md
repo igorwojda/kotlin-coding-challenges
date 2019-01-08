@@ -12,6 +12,7 @@ Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) da
 * `add` method - adds element to a queue (enqueue the element)
 * `remove` method - removes the element from a queue (enqueue the element)
 * `peek` method - returns last element (the one that should be returned) without removing it from the queue
+* `isEmpty` method - return `true` if queue is empty, otherwise return `false`
 
 Adding to the queue should store an element until it is removed. First element added to a queue will be the first that is removed (FIFO).
 This is [generic](https://kotlinlang.org/docs/reference/generics.html) venison of the queue witch means we must define data type for the
@@ -24,20 +25,24 @@ Example 1
 ```
 val q = Queue<Int>()
 q.add(1)
-q.remove() //return returns 1
-q.remove() //return returns null
+q.remove() //return 1
+q.remove() //return null
 ```
 
 Example 2
 
 ```
 val q = Queue<Char>()
+q.isEmpty() //return true
 q.add('A')
+q.isEmpty() //return false
 q.add('B')
 q.add('C')
-q.remove() //return returns A
-q.remove() //return returns B
-q.remove() //return returns C
-q.remove() //return returns null
+q.remove() //return A
+q.peek() //return A
+q.peek() //return A
+q.remove() //return B
+q.remove() //return C
+q.remove() //return null
 ```
 

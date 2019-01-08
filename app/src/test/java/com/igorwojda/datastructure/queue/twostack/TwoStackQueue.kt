@@ -8,16 +8,13 @@ private class TwoStackQueue {
     val stackPrimary = IntStack()
     val stackTemporary = IntStack()
 
-    fun add(element: Int) {
-    }
+    fun add(element: Int) {}
 
-    fun remove(): Int? {
-        return 0
-    }
+    fun remove(): Int? = 0
 
-    fun peek(): Int? {
-        return 0
-    }
+    fun peek(): Int? = 0
+
+    fun isEmpty() = false
 }
 
 class TwoStackQueueTest {

@@ -10,6 +10,8 @@ private class IntQueue {
     fun remove(): Int? = 0
 
     fun peek(): Int? = 0
+
+    fun isEmpty(): Boolean = false
 }
 
 class IntQueueTest {
@@ -56,6 +58,19 @@ class IntQueueTest {
             remove() shouldEqual 2
             peek() shouldEqual null
             remove() shouldEqual null
+        }
+    }
+
+    @Test
+    fun `isEmpty returns true`() {
+        IntQueue().isEmpty() shouldEqual true
+    }
+
+    @Test
+    fun `isEmpty returns false`() {
+        IntQueue().apply {
+            add(1)
+            isEmpty() shouldEqual false
         }
     }
 }

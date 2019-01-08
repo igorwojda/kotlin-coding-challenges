@@ -17,6 +17,8 @@ private class GenericQueue<E> {
     fun remove() = if (list.isEmpty()) null else list.removeAt(0)
 
     fun peek() = list.firstOrNull()
+
+    fun isEmpty() = list.isEmpty()
 }
 
 class WeaveTest {

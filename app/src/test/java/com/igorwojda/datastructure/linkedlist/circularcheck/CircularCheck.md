@@ -22,7 +22,7 @@ l.head = a;
 a.next = b;
 b.next = c;
 c.next = b;
-circular(l) // returns true
+circular(l) // return true
 ```
 
 Example 2
@@ -30,7 +30,7 @@ Example 2
 ```
 val l = new List();
 val a = new Node('a');
-circular(l) // returns false
+circular(l) // return false
 ```
 
 ## Hints

@@ -6,9 +6,11 @@ import org.junit.Test
 private class GenericQueue<E> {
     fun add(element: E) {}
 
-    fun remove(): Int? = 0
+    fun remove(): E? = null
 
-    fun peek(): Int? = 0
+    fun peek(): E? = null
+
+    fun isEmpty() = false
 }
 
 class GenericIntQueueTest {
@@ -55,6 +57,20 @@ class GenericIntQueueTest {
             remove() shouldEqual 2
             peek() shouldEqual null
             remove() shouldEqual null
+        }
+    }
+
+
+    @Test
+    fun `isEmpty returns true`() {
+        GenericQueue<Int>().isEmpty() shouldEqual true
+    }
+
+    @Test
+    fun `isEmpty returns false`() {
+        GenericQueue<Int>().apply {
+            add(1)
+            isEmpty() shouldEqual false
         }
     }
 }

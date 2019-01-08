@@ -27,7 +27,7 @@ val l = new LinkedList()
 l.insertLast('a')
 l.insertLast('b')
 l.insertLast('c')
-midpoint(l).data // returns 'b'
+midpoint(l).data // return 'b'
 ```
 
 Example 2
@@ -38,7 +38,7 @@ l.insertLast('a')
 l.insertLast('b')
 l.insertLast('c')
 l.insertLast('d')
-midpoint(l).data // returns 'b'
+midpoint(l).data // return 'b'
 ```
 
 ## Hints
