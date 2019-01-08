@@ -35,6 +35,8 @@ number to run one or more tests in the class
 ([screen](https://github.com/igorwojda/kotlin-coding-puzzle/blob/master/misc/images/RunTest.png)). After running the test you can rerun last
 configuration using `Run command` (`⌘ + R`).
 
+Larger problems will have larger test base, so tests have to be uncommented one by one while solving various steps of the given puzzle.
+
 # Coding puzzles
 Before solving any task I strongly encourage you to take a pen, piece of paper, take your time and think about the problem. Take your time
 before you take a look at the presented solution (sometimes one-night sleep is all we need before solution pop-ups into our head).
