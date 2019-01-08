@@ -262,10 +262,9 @@ list.sumBy { it.data } // returns 10
 
 ## 15. Add plus operator overloading
 
-Implement [operator oveloading](https://kotlinlang.org/docs/reference/operator-overloading.html) to easily add two lists lists.
+Implement [operator overloading](https://kotlinlang.org/docs/reference/operator-overloading.html) to easily add two lists lists.
 
-* **Tests**" `add two empty lists`,
-  `add two lists`
+* **Tests** `add two empty lists`, `add two lists`
 
 
 ```
