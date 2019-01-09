@@ -37,6 +37,17 @@ class TreeTest {
     }
 }
 
+//---------Tree------------
+//
+//           F
+//         /   \
+//        B     G
+//       / \     \
+//      A   D     I
+//         / \   /
+//        C   E H
+//
+//--------------------------
 private val tree: Node
     get() {
         //left branch
