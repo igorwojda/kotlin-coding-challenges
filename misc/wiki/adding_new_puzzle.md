@@ -12,4 +12,3 @@ Copy all files from [Puzzle template folder](../template/puzzlename) into new pu
    4. Add solution
 4. Add link for the new puzzle to [README.md](../../README.md) file
 5. Create PR
-
