@@ -43,40 +43,25 @@ Example:
 ```
 val tree = Tree("abc")
 tree.root // null
+tree.root = Node("A")
 ```
 
 ### 3. Breath First traversal (BF traversal)
 
-* **Description**: Breath-first traversal is level-order traversal, where we visit every node on a level before going to a lower level.
-<img src="./misc/breadth_first_traversal.svg">
-
+* **Description**: Implement breath-first traversal - traversal, where we visit every node on a level before going to a lower
+  level.
 * **Test**: `breath first traverse`
 
 Example:
 
-```
-val nodeA = Node("A")
-nodeA.add("B")
-nodeA.add("C")
-val tree = Tree()
-tree.root = NodeA()
-tree.traverseBF() // [A, B, C]
-```
-
-### 3. Depth First traversal (BF traversal)
-
-* **Description**: Bepth-first traversal is traversal, where we.... ??????
 <img src="./misc/breadth_first_traversal.svg">
 
+### 4. Depth First traversal (BF traversal)
+
+* **Description**: Implement depth-first traversal - traversal, where we visit node and then all of it's children before visiting next
+  node.
 * **Test**: `depth first traverse`
 
 Example:
 
-```
-val nodeA = Node("A")
-nodeA.add("B")
-nodeA.add("C")
-val tree = Tree()
-tree.root = NodeA()
-tree.traverseBF() // [A, B, C]
-```
+<img src="./misc/depth_first_traversal.svg">

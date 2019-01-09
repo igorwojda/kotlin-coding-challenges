@@ -124,10 +124,5 @@ class TreeTest {
     fun `depth first traverse`() {
         tree.traverseDF() shouldEqual listOf("F", "B", "A", "D", "C", "E", "G", "I", "H")
     }
-//
-//    @Test
-//    fun `depth first traverse`() {
-//
-//    }
 }
 
