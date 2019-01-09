@@ -3,6 +3,10 @@ package com.igorwojda.codingpuzzle.listchunk
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
+private fun chunk(list: List<Int>, size: Int): List<List<Int>> {
+    return listOf(listOf())
+}
+
 class ListChunkTest {
     @Test
     fun `chunk divides an list of 10 elements with chunk size 2`() {
@@ -32,6 +36,3 @@ class ListChunkTest {
     }
 }
 
-private fun chunk(list: List<Int>, size: Int): List<List<Int>> {
-    return listOf(listOf())
-}
