@@ -19,7 +19,7 @@ Example:
 
 <img src="./misc/breadth_first_traversal.svg">
 
-### 2. Depth First traversal (BF traversal)
+### 2. Depth First traversal (DF traversal)
 
 * **Description**: Implement depth-first traversal - traversal, where we visit node and then all of it's children before visiting next
   node.
