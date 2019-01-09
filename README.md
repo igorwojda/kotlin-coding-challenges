@@ -2,7 +2,7 @@
 
 This repository contains a set of programming puzzles that are solved using [Kotlin](https://kotlinlang.org/) language (no worries hints and
 solutions are here as well). Goal of this repository is to help you to practice your coding skills and prepare for
-[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews. Keep in mind that each puzzle may have more than one solution
+[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews. Keep in mind that each puzzle may have more than one solution.
 
 
 # How do I start?
