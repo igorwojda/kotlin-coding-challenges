@@ -7,20 +7,6 @@ private fun weave(q1: GenericQueue<*>, q2: GenericQueue<*>): GenericQueue<*> {
     return GenericQueue<Any>()
 }
 
-private class GenericQueue<E> {
-    private val list = mutableListOf<E>()
-
-    fun add(element: E) {
-        list.add(element)
-    }
-
-    fun remove() = if (list.isEmpty()) null else list.removeAt(0)
-
-    fun peek() = list.firstOrNull()
-
-    fun isEmpty() = list.isEmpty()
-}
-
 class WeaveTest {
     @Test
     fun `can add elements to a queue`() {
@@ -162,4 +148,18 @@ class WeaveTest {
             remove() shouldEqual null
         }
     }
+}
+
+private class GenericQueue<E> {
+    private val list = mutableListOf<E>()
+
+    fun add(element: E) {
+        list.add(element)
+    }
+
+    fun remove() = if (list.isEmpty()) null else list.removeAt(0)
+
+    fun peek() = list.firstOrNull()
+
+    fun isEmpty() = list.isEmpty()
 }
