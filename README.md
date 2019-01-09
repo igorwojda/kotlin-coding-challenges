@@ -79,6 +79,7 @@ same tasks multiple times be patient and persistent over time.
 8. [Linked list midpoint](app/src/test/java/com/igorwojda/datastructure/linkedlist/midpoint/Midpoint.md)
 9. [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
 10. [Linked list take n-th element from last](app/src/test/java/com/igorwojda/datastructure/linkedlist/fromlast/FromLast.md)
+11. [Tree traversal](app/src/test/java/com/igorwojda/datastructure/tree/traversal/Tree.md)
 
 # Contribute
 
