@@ -1,4 +1,4 @@
-package com.igorwojda.problem
+package com.igorwojda.puzzle
 
 private object PuzzleSolution {
 
