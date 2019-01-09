@@ -1,4 +1,4 @@
-package com.igorwojda.datastructure.tree.traversal
+package com.igorwojda.problem
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
