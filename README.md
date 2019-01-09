@@ -21,16 +21,16 @@ and it is free.
    ice preview of markdown files (files containing puzzles description)
 
 ## Problem structure
-Each problem is located in separate package and it contains 3 files
+Each puzzle is located in separate package and it contains 3 files
 ([screen](./misc/images/SampleTask.png)):
-* `Problem.md` - description of the problem
-* `Problem.kt` - contains empty method/class where problem should be solved and set of tests to run
-* `ProblemSolution.kt` - file that contains one or more problem solutions (encapsulated in Kotlin `object` just to avoid conflicts with
+* `Puzzle.md` - description of the problem
+* `Puzzle.kt` - contains empty method/class where problem should be solved and set of tests to run
+* `PuzzleSolution.kt - file that contains one or more problem solutions (encapsulated in Kotlin `object` just to avoid conflicts with
   other coding puzzles)
 
 ## Running tests
 
-Open `Problem.kt` file for a any problem. Locate class with `Test` suffix (`ProblemTest`). Click on the green green arrow close to line
+Open `Puzzle.kt` file for a any problem. Locate class with `Test` suffix (`ProblemTest`). Click on the green green arrow close to line
 number to run one or more tests in the class
 ([screen](./misc/images/RunTest.png)). After running the test you can rerun last
 configuration using `Run command` (`⌘ + R`).
@@ -79,12 +79,12 @@ same tasks multiple times be patient and persistent over time.
 8. [Linked list midpoint](app/src/test/java/com/igorwojda/datastructure/linkedlist/midpoint/Midpoint.md)
 9. [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
 10. [Linked list take n-th element from last](app/src/test/java/com/igorwojda/datastructure/linkedlist/fromlast/FromLast.md)
-11. [Tree traversal](app/src/test/java/com/igorwojda/datastructure/tree/traversal/Tree.md)
+11. [Tree traversal](app/src/test/java/com/igorwojda/datastructure/tree/traversal/TreeTraversal.md)
 
 # Contribute
 
-If you have any doubts, found a problem, found a better solution or simply you want to add new programming problem please create PR
-or open a new issue.
+If you have any doubts, found a problem, have a better solution or simply you want to [add new puzzle](/misc/wiki/adding_new_puzzle.md)
+please create PR or open a new issue.
 
 # Inspiration & References
 

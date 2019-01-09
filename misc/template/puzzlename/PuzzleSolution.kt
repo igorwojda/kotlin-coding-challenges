@@ -1,5 +1,5 @@
 package com.igorwojda.datastructure.tree.traversal
 
-private object ProblemSolution {
+private object PuzzleSolution {
 
 }
