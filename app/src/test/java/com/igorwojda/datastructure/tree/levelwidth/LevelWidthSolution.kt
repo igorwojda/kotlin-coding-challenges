@@ -32,8 +32,8 @@ object LevelWidthSolution {
     private object LevelWidthSolution2 {
         // Counters array solution
         private fun levelWidth(tree: Node): List<Int> {
-            val counters = mutableListOf<Int>()
             val rowSeparator = null
+            val counters = mutableListOf<Int>()
             val nodes = mutableListOf<Node?>()
             nodes.add(tree)
             nodes.add(rowSeparator)
@@ -42,7 +42,7 @@ object LevelWidthSolution {
             while (nodes.size >= 2) { // 2 means node and separator
                 val node = nodes.removeAt(0)
 
-                if (node == null) { //end of row
+                if (node == rowSeparator) { //end of row
                     nodes.add(rowSeparator)
                     counters.add(0)
                 } else {
