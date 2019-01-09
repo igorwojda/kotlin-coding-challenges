@@ -2,7 +2,7 @@
 
 ## Instructions
 
-[Problem files](.) Traverse[Tree](https://en.wikipedia.org/wiki/Tree_(data_structure)) data structure using `Breath-First` and
+[Puzzle files](.) Traverse[Tree](https://en.wikipedia.org/wiki/Tree_(data_structure)) data structure using `Breath-First` and
 `Depth-First` traversals.
 
 ## Steps

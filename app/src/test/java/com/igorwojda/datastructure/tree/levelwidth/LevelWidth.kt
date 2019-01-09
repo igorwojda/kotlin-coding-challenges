@@ -3,16 +3,40 @@ package com.igorwojda.datastructure.tree.levelwidth
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-// body of class or function that have to be implemented by solving problem
 private fun levelWidth(tree: Node): List<Int> {
-    val result = mutableListOf<Int>()
-
-    return result
+    return emptyList()
 }
 
-
 class LevelWidthTest {
-    @Test fun `levelWidth returns number of nodes at widest point` () {
+    @Test
+    fun `levelWidth returns 1, 2`() {
+        //-- -------Tree------------
+        //
+        //           A
+        //         /   \
+        //        B     C
+        //
+        //--------------------------
+
+        val root = Node("A")
+        root.add("B")
+        root.add("C")
+
+        levelWidth(root) shouldEqual listOf(1, 2)
+    }
+
+    @Test
+    fun `levelWidth returns 1, 3, 2`() {
+        //-- -------Tree------------
+        //
+        //           A
+        //         / | \
+        //        B  C  D
+        //        |     |
+        //        E     F
+        //
+        //--------------------------
+
         val root = Node("A")
         val nodeB = Node("B")
         root.add(nodeB)
@@ -22,10 +46,23 @@ class LevelWidthTest {
         nodeB.add("E")
         nodeD.add("F")
 
-        levelWidth(root) shouldEqual listOf("1", "3", "2")
+        levelWidth(root) shouldEqual listOf(1, 3, 2)
     }
 
-    @Test fun `levelWidth returns number of nodes at widest point 2` () {
+    @Test
+    fun `levelWidth returns 1, 1, 2, 1`() {
+        //------------Tree----------
+        //
+        //             A
+        //            /
+        //           B
+        //          / \
+        //         C   D
+        //        /
+        //       E
+        //
+        //--------------------------
+
         val root = Node("A")
         val nodeB = Node("B")
         root.add(nodeB)
@@ -38,7 +75,7 @@ class LevelWidthTest {
     }
 }
 
-private class Node(val data: String, val children:MutableList<Node> = mutableListOf()) {
+private class Node(val data: String, val children: MutableList<Node> = mutableListOf()) {
     fun add(data: String) {
         add(Node(data))
     }
@@ -49,13 +86,5 @@ private class Node(val data: String, val children:MutableList<Node> = mutableLis
 
     fun remove(data: String) {
         children.removeAll { it.data == data }
-    }
-
-    fun traverseBF(): List<String> {
-        return emptyList()
-    }
-
-    fun traverseDF(): List<String> {
-        return emptyList()
     }
 }

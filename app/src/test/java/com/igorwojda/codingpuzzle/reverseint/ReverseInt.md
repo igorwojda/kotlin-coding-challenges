@@ -2,7 +2,7 @@
 
 ## Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
 Given an integer, return an integer that is the reverse ordering of numbers.
 

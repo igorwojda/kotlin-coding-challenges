@@ -6,7 +6,7 @@
 
 ## Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
 Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) data structure. The queue should be a class with methods:
 * `add` method - adds element to a queue (enqueue the element)

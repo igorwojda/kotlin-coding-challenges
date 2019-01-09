@@ -1,10 +1,10 @@
-# Problem name
+# Puzzle name
 
 ## Nice to solve before
 
 ## Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
 ???
 

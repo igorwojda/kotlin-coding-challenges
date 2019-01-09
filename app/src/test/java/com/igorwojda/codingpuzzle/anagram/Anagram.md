@@ -2,7 +2,7 @@
 
 ## Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
 Check to see if two provided strings are anagrams of each other. Anagram is a word created by rearranging the letters of another word
 (contains same characters and in the same quantity). Only consider characters, not spaces or punctuation.  Consider capital letters to be
