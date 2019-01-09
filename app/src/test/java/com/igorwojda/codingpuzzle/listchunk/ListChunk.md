@@ -2,7 +2,7 @@
 
 ## Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
 Given an array and chunk size, divide the array into multiple sub arrays where each sub array is of length of chunk size.
 

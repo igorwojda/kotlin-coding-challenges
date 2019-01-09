@@ -2,9 +2,9 @@
 
 ### Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
-Implement [LinkedList](https://en.wikipedia.org/wiki/Linked_list) data structure. This is quite big problem, so we will split it into
+Implement [LinkedList](https://en.wikipedia.org/wiki/Linked_list) data structure. This is quite big puzzle, so we will split it into
 multiple steps (multiple methods and properties that we have to implement).
 
 We also want to handle various edge cases, because we are assuming that developer using our class many do certain mistakes. That's why each

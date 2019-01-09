@@ -7,7 +7,7 @@
 
 ## Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
 Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) data structure using two stacks. Do not create an list
 inside of the 'Queue' class.The queue should be a class with methods:

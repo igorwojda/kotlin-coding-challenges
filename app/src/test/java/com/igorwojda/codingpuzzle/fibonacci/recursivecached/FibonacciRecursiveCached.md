@@ -2,7 +2,7 @@
 
 ## Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
 Below function returns out the n-th entry in the [fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number)  series. However due to
 recursion it has exponential complexity (function is called recursively multiple times with identical arguments) and its execution takes

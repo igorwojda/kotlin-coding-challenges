@@ -1,10 +1,11 @@
 # Tree level width
 
 ## Nice to solve before
+[Tree traversal](../traversal/TreeTraversal.md)
 
 ## Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
 Given the root node of a tree, return an array where each element is the width of the tree at each level.
 

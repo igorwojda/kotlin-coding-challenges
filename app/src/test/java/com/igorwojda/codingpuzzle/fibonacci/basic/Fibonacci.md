@@ -2,7 +2,7 @@
 
 ## Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
 Print out the n-th entry in the fibonacciSequence series. The
 [fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number) series is an

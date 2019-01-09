@@ -2,7 +2,7 @@
 
 ## Instructions
 
-[Problem files](.)
+[Puzzle files](.)
 
 Implement a [stack](https://en.wikipedia.org/wiki/Stack) data structure. The stack should be a class with methods:
 * `push` method - adds element to the stack
