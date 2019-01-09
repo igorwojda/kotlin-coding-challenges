@@ -10,17 +10,28 @@ private class Tree {
         val result = mutableListOf<String>()
         val nodes = mutableListOf<Node>()
 
-        root?.let { root ->
-            nodes.add(root)
+        root?.let { nodes.add(it) }
 
-            while(nodes.isNotEmpty()) {
-                val node = nodes.removeAt(0)
-                result.add(node.data)
+        while(nodes.isNotEmpty()) {
+            val node = nodes.removeAt(0)
+            result.add(node.data)
+            nodes.addAll(node.children)
+        }
 
-                if(node.children.isNotEmpty()) {
-                    nodes.addAll(node.children)
-                }
-            }
+        return result
+    }
+
+    fun traverseDF(): List<String> {
+        val result = mutableListOf<String>()
+        val nodes = mutableListOf<Node>()
+
+        root?.let { nodes.add(it) }
+
+        while(nodes.isNotEmpty()) {
+            val node = nodes.removeAt(0)
+
+            result.add(node.data)
+            nodes.addAll(0, node.children)
         }
 
         return result
@@ -107,6 +118,11 @@ class TreeTest {
     @Test
     fun `breath first traverse`() {
         tree.traverseBF() shouldEqual listOf("F", "B", "G", "A", "D", "I", "C", "E", "H")
+    }
+
+    @Test
+    fun `depth first traverse`() {
+        tree.traverseDF() shouldEqual listOf("F", "B", "A", "D", "C", "E", "G", "I", "H")
     }
 //
 //    @Test
