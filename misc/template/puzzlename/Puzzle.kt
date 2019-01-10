@@ -7,7 +7,7 @@ import org.junit.Test
 
 class PuzzleTest {
     @Test
-    fun `some test`() {
-        "aaa" shouldEqual "aaa"
+    fun `simple test`() {
+        "value" shouldEqual "value"
     }
 }
