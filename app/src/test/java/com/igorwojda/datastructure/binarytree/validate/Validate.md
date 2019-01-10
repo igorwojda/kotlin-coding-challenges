@@ -10,34 +10,21 @@
 Given a node, validate the binary search tree, ensuring that every node's left hand child is less than the parent node's value, and that
 every node's right hand child is greater than the parent
 
-## Limitations
-
-## Steps
-???
-
-### Step 1
-???
-
-### Step 2
-???
-
-## Examples
-
 Example 1
 
 ```
-
-```
-
-Example 2
-
-```
-
+val tree = Node(2)
+tree.insert(10)
+isValidSearchBinaryTree(tree) // true
 ```
 
 ## Hints
 
 <details>
 <summary>Hint 1</summary>
-???
+We should use recursion
+</details>
+
+<summary>Hint 2</summary>
+We should also pass `min` and `max` to `isValidSearchBinaryTree` method
 </details>
