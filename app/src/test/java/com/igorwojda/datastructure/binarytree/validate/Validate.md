@@ -1,4 +1,4 @@
-# Binary Search Tree (Validate)
+# Binary Search Tree (validate)
 
 ## Nice to solve before
 [Binary search tree](../insert/Insert.md)

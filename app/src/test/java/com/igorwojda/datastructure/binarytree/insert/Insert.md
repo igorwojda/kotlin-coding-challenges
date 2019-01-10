@@ -1,4 +1,4 @@
-# Binary Search Tree (Insert)
+# Binary Search Tree (insert)
 
 ## Instructions
 
