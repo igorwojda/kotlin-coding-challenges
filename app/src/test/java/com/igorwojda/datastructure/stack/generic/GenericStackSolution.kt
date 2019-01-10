@@ -1,4 +1,4 @@
-package com.igorwojda.datastructure.queue.generic
+package com.igorwojda.datastructure.stack.generic
 
 private object GenericStackSolution {
     private class GenericStack<E> {
