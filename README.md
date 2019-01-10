@@ -80,7 +80,8 @@ same tasks multiple times be patient and persistent over time.
 9. [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
 10. [Linked list take n-th element from last](app/src/test/java/com/igorwojda/datastructure/linkedlist/fromlast/FromLast.md)
 11. [Tree traversal](app/src/test/java/com/igorwojda/datastructure/tree/traversal/TreeTraversal.md)
-11. [Tree level width](app/src/test/java/com/igorwojda/datastructure/tree/levelwidth/LevelWidth.md)
+12. [Tree level width](app/src/test/java/com/igorwojda/datastructure/tree/levelwidth/LevelWidth.md)
+13. [Binary Tree](app/src/test/java/com/igorwojda/datastructure/tree/binarysearchtree/BinarySearchTree.md)
 
 # Contribute
 
