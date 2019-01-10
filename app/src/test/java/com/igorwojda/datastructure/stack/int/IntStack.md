@@ -19,8 +19,8 @@ Example 1
 ```
 val q = Queue()
 q.add(1)
-q.remove() //return 1
-q.remove() //return null
+q.remove() // 1
+q.remove() // null
 ```
 
 Example 2
@@ -30,9 +30,9 @@ val q = Queue()
 q.add(1)
 q.add(2)
 q.add(3)
-q.remove() //return 1
-q.remove() //return 2
-q.remove() //return 3
-q.remove() //return null
+q.remove() // 1
+q.remove() // 2
+q.remove() // 3
+q.remove() // null
 ```
 

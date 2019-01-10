@@ -20,12 +20,12 @@ inside of the 'Queue' class.The queue should be a class with methods:
 
 ```
 val q = new Queue();
-q.isEmpty() //return true
+q.isEmpty() // true
 q.add(1);
-q.isEmpty() //return false
+q.isEmpty() // false
 q.add(2);
-q.peek();  // return 1
-q.remove(); // return 1
-q.remove(); // return 2
+q.peek();  // 1
+q.remove(); // 1
+q.remove(); // 2
 ```
 

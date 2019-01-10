@@ -25,24 +25,24 @@ Example 1
 ```
 val q = Queue<Int>()
 q.add(1)
-q.remove() //return 1
-q.remove() //return null
+q.remove() // 1
+q.remove() // null
 ```
 
 Example 2
 
 ```
 val q = Queue<Char>()
-q.isEmpty() //return true
+q.isEmpty() // true
 q.add('A')
-q.isEmpty() //return false
+q.isEmpty() // false
 q.add('B')
 q.add('C')
-q.remove() //return A
-q.peek() //return A
-q.peek() //return A
-q.remove() //return B
-q.remove() //return C
-q.remove() //return null
+q.remove() // A
+q.peek() // A
+q.peek() // A
+q.remove() // B
+q.remove() // C
+q.remove() // null
 ```
 
