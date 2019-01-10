@@ -84,6 +84,9 @@ same tasks multiple times be patient and persistent over time.
 13. [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/datastructure/binarytree/insert/Insert.md)
 14. [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/datastructure/binarytree/validate/Validate.md)
 
+## Sorting
+1. Bubble sort
+
 # Contribute
 
 If you have any doubts, found a puzzle, have a better solution or simply you want to [add new puzzle](/misc/wiki/adding_new_puzzle.md)
@@ -95,6 +98,14 @@ please create PR or open a new issue.
 
 # Inspiration
 
-For more detailed explanations of various puzzles please take a look at these courses and books:
+For more detailed explanations and more puzzles please take a check these resources.
+## Video courses
 * [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
+
+## Websites
+* [HackerRank](https://www.hackerrank.com/)
+* [CoderByte](https://coderbyte.com/challenges)
+* [CodeChef](https://www.codechef.com/problems/school)
+* [LeetCode](https://leetcode.com/problemset/all)
+* [GeeksForGeeks](https://www.geeksforgeeks.org)
 
