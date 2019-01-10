@@ -81,8 +81,8 @@ same tasks multiple times be patient and persistent over time.
 10. [Linked list take n-th element from last](app/src/test/java/com/igorwojda/datastructure/linkedlist/fromlast/FromLast.md)
 11. [Tree traversal](app/src/test/java/com/igorwojda/datastructure/tree/traversal/TreeTraversal.md)
 12. [Tree level width](app/src/test/java/com/igorwojda/datastructure/tree/levelwidth/LevelWidth.md)
-13. [Binary Search Tree (Insert)](app/src/test/java/com/igorwojda/datastructure/binarytree/insert/Insert.md)
-14. [Binary Search Tree (Validate)](app/src/test/java/com/igorwojda/datastructure/binarytree/validate/Validate.md)
+13. [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/datastructure/binarytree/insert/Insert.md)
+14. [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/datastructure/binarytree/validate/Validate.md)
 
 # Contribute
 
