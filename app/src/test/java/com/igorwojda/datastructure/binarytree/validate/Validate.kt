@@ -3,24 +3,44 @@ package com.igorwojda.datastructure.binarytree.validate
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun validate(node: Node<Int>, min: Int? = null, max: Int? = null): Boolean {
+private fun isValidSearchBinaryTree(node: Node<Int>): Boolean {
     return false
 }
 
 class PuzzleTest {
     @Test
     fun `Validate recognizes a valid BST`() {
+        //-- -------Tree------------
+        //
+        //           10
+        //          /  \
+        //         5    15
+        //        /       \
+        //       0         20
+        //--------------------------
+
         val node = Node(10)
         node.insert(5)
         node.insert(15)
         node.insert(0)
         node.insert(20)
 
-        validate(node) shouldEqual true
+        isValidSearchBinaryTree(node) shouldEqual true
     }
 
     @Test
     fun `Validate recognizes an invalid BST`() {
+        //-- -------Tree------------
+        //
+        //           10
+        //          /  \
+        //         5    15
+        //        /       \
+        //       0         20
+        //        \
+        //        999
+        //--------------------------
+
         val node = Node(10)
         node.insert(5)
         node.insert(15)
@@ -28,7 +48,7 @@ class PuzzleTest {
         node.insert(20)
         node.left?.left?.right = Node(999)
 
-        validate(node) shouldEqual false
+        isValidSearchBinaryTree(node) shouldEqual false
     }
 }
 
