@@ -10,13 +10,13 @@ private fun levelWidth(tree: Node): List<Int> {
 class LevelWidthTest {
     @Test
     fun `levelWidth returns 1, 2`() {
-        //-- -------Tree------------
+        // -- -------Tree------------
         //
         //           A
         //         /   \
         //        B     C
         //
-        //--------------------------
+        // --------------------------
 
         val root = Node("A")
         root.add("B")
@@ -27,7 +27,7 @@ class LevelWidthTest {
 
     @Test
     fun `levelWidth returns 1, 3, 2`() {
-        //-- -------Tree------------
+        // -- -------Tree------------
         //
         //           A
         //         / | \
@@ -35,7 +35,7 @@ class LevelWidthTest {
         //        |     |
         //        E     F
         //
-        //--------------------------
+        // --------------------------
 
         val root = Node("A")
         val nodeB = Node("B")
@@ -51,7 +51,7 @@ class LevelWidthTest {
 
     @Test
     fun `levelWidth returns 1, 1, 2, 1`() {
-        //------------Tree----------
+        // ------------Tree----------
         //
         //             A
         //            /
@@ -61,7 +61,7 @@ class LevelWidthTest {
         //        /
         //       E
         //
-        //--------------------------
+        // --------------------------
 
         val root = Node("A")
         val nodeB = Node("B")

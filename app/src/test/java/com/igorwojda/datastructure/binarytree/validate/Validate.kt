@@ -10,14 +10,14 @@ private fun isValidSearchBinaryTree(node: Node<Int>): Boolean {
 class PuzzleTest {
     @Test
     fun `Validate recognizes a valid BST`() {
-        //-- -------Tree------------
+        // -- -------Tree------------
         //
         //           10
         //          /  \
         //         5    15
         //        /       \
         //       0         20
-        //--------------------------
+        // --------------------------
 
         val node = Node(10)
         node.insert(5)
@@ -30,7 +30,7 @@ class PuzzleTest {
 
     @Test
     fun `Validate recognizes an invalid BST`() {
-        //-- -------Tree------------
+        // -- -------Tree------------
         //
         //           10
         //          /  \
@@ -39,7 +39,7 @@ class PuzzleTest {
         //       0         20
         //        \
         //        999
-        //--------------------------
+        // --------------------------
 
         val node = Node(10)
         node.insert(5)
@@ -58,13 +58,13 @@ private data class Node<E : Comparable<E>>(
     var right: Node<E>? = null
 ) {
     fun insert(e: E) {
-        if (e < data) { //left node
+        if (e < data) { // left node
             if (left == null) {
                 left = Node(e)
             } else {
                 left?.insert(e)
             }
-        } else if (e > data) { //right node
+        } else if (e > data) { // right node
             if (right == null) {
                 right = Node(e)
             } else {

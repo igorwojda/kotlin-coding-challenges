@@ -42,7 +42,7 @@ object LevelWidthSolution {
             while (nodes.size >= 2) { // 2 means node and separator
                 val node = nodes.removeAt(0)
 
-                if (node == rowSeparator) { //end of row
+                if (node == rowSeparator) { // end of row
                     nodes.add(rowSeparator)
                     counters.add(0)
                 } else {
@@ -69,4 +69,3 @@ object LevelWidthSolution {
         }
     }
 }
-

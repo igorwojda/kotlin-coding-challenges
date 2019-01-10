@@ -24,6 +24,3 @@ class StringReverseTest {
         Assert.assertEquals(4, 2 + 2)
     }
 }
-
-
-

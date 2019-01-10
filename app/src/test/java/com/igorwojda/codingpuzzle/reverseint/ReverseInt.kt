@@ -31,4 +31,3 @@ class ReverseIntTest {
         reverseInt(-2359) shouldEqual -9532
     }
 }
-

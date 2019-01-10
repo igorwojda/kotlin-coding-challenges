@@ -3,7 +3,7 @@ package com.igorwojda.datastructure.tree.traversal
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private class Node(val data: String, val children:MutableList<Node> = mutableListOf()) {
+private class Node(val data: String, val children: MutableList<Node> = mutableListOf()) {
     fun add(data: String) {
         add(Node(data))
     }
@@ -37,7 +37,7 @@ class TreeTest {
     }
 }
 
-//---------Tree------------
+// ---------Tree------------
 //
 //           F
 //         /   \
@@ -47,10 +47,10 @@ class TreeTest {
 //         / \   /
 //        C   E H
 //
-//--------------------------
+// --------------------------
 private val tree: Node
     get() {
-        //left branch
+        // left branch
         val nodeD = Node("D").apply {
             add("C")
             add("E")
@@ -61,14 +61,14 @@ private val tree: Node
             add(nodeD)
         }
 
-        //right branch
+        // right branch
         val nodeH = Node("H")
         val nodeI = Node("I").apply { add(nodeH) }
         val nodeG = Node("G").apply { add(nodeI) }
 
-        //root node
+        // root node
 
-        //tree
+        // tree
         return Node("F").apply {
             add(nodeB)
             add(nodeG)

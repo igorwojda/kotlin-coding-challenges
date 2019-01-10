@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.printnumber.steps
 
-private object PrintNumberSolution {
+private object PrintNumberWithStepsSolution {
     private fun printNumber(n: Int, step: Int = 1): List<Int> {
         val list = mutableListOf<Int>()
 

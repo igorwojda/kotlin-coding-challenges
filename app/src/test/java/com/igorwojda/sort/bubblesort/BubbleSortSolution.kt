@@ -1,5 +1,3 @@
 package com.igorwojda.sort.bubblesort
 
-private object BubbleSortSolution {
-
-}
+private object BubbleSortSolution

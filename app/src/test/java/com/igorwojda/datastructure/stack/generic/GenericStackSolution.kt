@@ -13,5 +13,3 @@ private object GenericStackSolution {
         fun peek() = list.lastOrNull()
     }
 }
-
-

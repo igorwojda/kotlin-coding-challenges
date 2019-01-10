@@ -32,4 +32,3 @@ class StepsTest {
         result[2] shouldEqual "###"
     }
 }
-

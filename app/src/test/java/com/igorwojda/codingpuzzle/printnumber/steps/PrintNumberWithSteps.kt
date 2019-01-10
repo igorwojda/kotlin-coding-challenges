@@ -28,5 +28,3 @@ class RecursivePrintNumberWithSteps {
         printNumber(11, 3) shouldEqual listOf(11, 8, 5, 2)
     }
 }
-
-

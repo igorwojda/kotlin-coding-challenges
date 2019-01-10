@@ -7,13 +7,13 @@ private object InsertSolution {
         var right: Node<E>? = null
     ) {
         fun insert(e: E) {
-            if (e < data) { //left node
+            if (e < data) { // left node
                 if (left == null) {
                     left = Node(e)
                 } else {
                     left?.insert(e)
                 }
-            } else if (e > data) { //right node
+            } else if (e > data) { // right node
                 if (right == null) {
                     right = Node(e)
                 } else {

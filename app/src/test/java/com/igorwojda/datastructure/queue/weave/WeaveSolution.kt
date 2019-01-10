@@ -1,6 +1,6 @@
 package com.igorwojda.datastructure.queue.weave
 
-private object WaveSolution {
+private object WeaveSolution {
     class GenericQueue<E> {
         private val list = mutableListOf<E>()
 

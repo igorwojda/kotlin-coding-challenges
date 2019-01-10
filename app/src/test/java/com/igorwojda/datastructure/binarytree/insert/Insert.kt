@@ -19,7 +19,7 @@ private data class Node<E : Comparable<E>>(
 class BinarySearchTreeTest {
     @Test
     fun `can insert correctly`() {
-        //-- -------Tree------------
+        // -- -------Tree------------
         //
         //           10
         //         /   \
@@ -27,7 +27,7 @@ class BinarySearchTreeTest {
         //                \
         //                 17
         //
-        //--------------------------
+        // --------------------------
 
         val node = Node(10)
         node.insert(5)
@@ -41,7 +41,7 @@ class BinarySearchTreeTest {
 
     @Test
     fun `contains returns true when value is found`() {
-        //-- -------Tree------------
+        // -- -------Tree------------
         //
         //           10
         //          /  \
@@ -50,7 +50,7 @@ class BinarySearchTreeTest {
         //       0         20
         //      / \
         //    -5   3
-        //--------------------------
+        // --------------------------
 
         val node = Node(10)
         node.insert(5)
@@ -65,7 +65,7 @@ class BinarySearchTreeTest {
 
     @Test
     fun `contains returns false if value not found`() {
-        //-- -------Tree------------
+        // -- -------Tree------------
         //
         //           10
         //          /  \
@@ -74,7 +74,7 @@ class BinarySearchTreeTest {
         //       0         20
         //      / \
         //    -5   3
-        //--------------------------
+        // --------------------------
 
         val node = Node(10)
         node.insert(5)
@@ -87,4 +87,3 @@ class BinarySearchTreeTest {
         node.contains(9999) shouldEqual false
     }
 }
-

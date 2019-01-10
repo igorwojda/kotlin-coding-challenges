@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.palindrome.tolerant
 
-//iterative solution
+// iterative solution
 private fun tolerantPalindromeSolution1(str: String): Boolean {
     var characterRemoved = false
 
@@ -27,7 +27,7 @@ private fun tolerantPalindromeSolution1(str: String): Boolean {
     return false
 }
 
-//recursive solution
+// recursive solution
 private fun tolerantPalindromeSolution2(str: String, characterRemoved: Boolean = false): Boolean {
     return if (str.isEmpty() || str.length == 1) {
         true

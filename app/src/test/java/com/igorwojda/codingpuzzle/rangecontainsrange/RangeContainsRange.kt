@@ -43,5 +43,3 @@ class RangeContainsRangeTest {
         rangeContainsRange(5..8, 3..5) shouldEqual false
     }
 }
-
-

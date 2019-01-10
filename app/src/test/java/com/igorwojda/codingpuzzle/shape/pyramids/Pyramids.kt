@@ -25,7 +25,6 @@ class PyramidsTest {
             it[0] shouldEqual "  #  "
             it[1] shouldEqual " ### "
             it[2] shouldEqual "#####"
-
         }
     }
 

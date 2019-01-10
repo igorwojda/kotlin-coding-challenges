@@ -26,4 +26,3 @@ class FizzBuzzTest {
         fizzBuzz(16) shouldEqual list
     }
 }
-
