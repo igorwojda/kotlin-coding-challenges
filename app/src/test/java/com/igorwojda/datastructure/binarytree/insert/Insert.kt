@@ -1,4 +1,4 @@
-package com.igorwojda.datastructure.tree.binarysearchtree
+package com.igorwojda.datastructure.binarytree.insert
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
@@ -19,9 +19,18 @@ private data class Node<E : Comparable<E>>(
 class BinarySearchTreeTest {
     @Test
     fun `can insert correctly`() {
+        //-- -------Tree------------
+        //
+        //           10
+        //         /   \
+        //        5     15
+        //                \
+        //                 17
+        //
+        //--------------------------
+
         val node = Node(10)
         node.insert(5)
-        node.insert(15)
         node.insert(15)
         node.insert(17)
 
@@ -32,6 +41,17 @@ class BinarySearchTreeTest {
 
     @Test
     fun `contains returns true when value is found`() {
+        //-- -------Tree------------
+        //
+        //           10
+        //          /  \
+        //         5    15
+        //        /       \
+        //       0         20
+        //      / \
+        //    -5   3
+        //--------------------------
+
         val node = Node(10)
         node.insert(5)
         node.insert(15)
@@ -45,6 +65,17 @@ class BinarySearchTreeTest {
 
     @Test
     fun `contains returns false if value not found`() {
+        //-- -------Tree------------
+        //
+        //           10
+        //          /  \
+        //         5    15
+        //        /       \
+        //       0         20
+        //      / \
+        //    -5   3
+        //--------------------------
+
         val node = Node(10)
         node.insert(5)
         node.insert(15)

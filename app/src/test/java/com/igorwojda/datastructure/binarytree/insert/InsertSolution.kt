@@ -1,6 +1,6 @@
-package com.igorwojda.datastructure.tree.binarysearchtree
+package com.igorwojda.datastructure.binarytree.insert
 
-private object BinarySearchTreeSolution {
+private object InsertSolution {
     private data class Node<E : Comparable<E>>(
         var data: E,
         var left: Node<E>? = null,
