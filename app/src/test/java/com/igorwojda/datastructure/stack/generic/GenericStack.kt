@@ -1,4 +1,4 @@
-package com.igorwojda.datastructure.queue.generic
+package com.igorwojda.datastructure.stack.generic
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

@@ -1,15 +1,16 @@
 # Kotlin coding puzzles
 
-This repository contains a set of programming puzzles that are solved using [Kotlin](https://kotlinlang.org/) language (no worries hints and
-solutions are here as well). Goal of this repository is to help you to practice your coding skills and prepare for
-[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews. Keep in mind that each puzzle may have more than one solution.
+This repository contains a set of programming puzzles that meant to be solved using [Kotlin](https://kotlinlang.org/) language (no worries
+hints and solutions and tests that will verify you solution are here as well). Purpose of this repository is to help you to practice your coding
+skills and prepare for [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews. Keep in mind that each puzzle may have
+more than one solution.
 
 
 # How do I start?
 
 ## Opening this project
-This project is [Android Studio](https://developer.android.com/studio/) project because it allows quick out of the box JUnit test support
-and it is free.
+This repository contains [Android Studio](https://developer.android.com/studio/) project. We can quickly open the project simply
+by checking out this the project from git repository.
 
 1. Install Android Studio
 2. Install git `brew install git` using cmd
@@ -88,21 +89,25 @@ same tasks multiple times be patient and persistent over time.
 1. Bubble sort
 
 # Contribute
-
-If you have any doubts, found a puzzle, have a better solution or simply you want to [add new puzzle](/misc/wiki/adding_new_puzzle.md)
+If you think something is incorrect, you have found a new puzzle, have a better solution or simply you want to [add new puzzle](/misc/wiki/adding_new_puzzle.md)
 please create PR or open a new issue.
 
 # References
 * [Big O Notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)
-* [Cracking the Coding Interview](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
 
-# Inspiration
 
 For more detailed explanations and more puzzles please take a check these resources.
+## Books
+* [Cracking the Coding Interview, Gayle Laakmann McDowell](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
+* [Algorithms, 4th Edition, Robert Sedgewick ](https://algs4.cs.princeton.edu/home/)
+
 ## Video courses
 * [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
 
-## Websites
+## Articles
+* [Data structures explained by Vaidehi Joshi](https://medium.com/basecs/tagged/data-structures)
+
+## Coding problems websites
 * [HackerRank](https://www.hackerrank.com/)
 * [CoderByte](https://coderbyte.com/challenges)
 * [CodeChef](https://www.codechef.com/problems/school)
