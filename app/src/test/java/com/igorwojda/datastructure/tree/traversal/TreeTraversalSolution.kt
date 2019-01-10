@@ -1,7 +1,7 @@
 package com.igorwojda.datastructure.tree.traversal
 
 private object TreeTraversalSolution {
-    private class Node(val data: String, val children:MutableList<Node> = mutableListOf()) {
+    private class Node(val data: String, val children: MutableList<Node> = mutableListOf()) {
         fun add(data: String) {
             add(Node(data))
         }
@@ -20,7 +20,7 @@ private object TreeTraversalSolution {
 
             nodes.add(this)
 
-            while(nodes.isNotEmpty()) {
+            while (nodes.isNotEmpty()) {
                 val node = nodes.removeAt(0)
                 result.add(node.data)
                 nodes.addAll(node.children)
@@ -35,7 +35,7 @@ private object TreeTraversalSolution {
 
             nodes.add(this)
 
-            while(nodes.isNotEmpty()) {
+            while (nodes.isNotEmpty()) {
                 val node = nodes.removeAt(0)
 
                 result.add(node.data)

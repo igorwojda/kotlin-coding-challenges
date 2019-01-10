@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.shape.pyramids
 
-//iterative solution
+// iterative solution
 private object PyramidSolution1 {
     private fun pyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
@@ -20,7 +20,7 @@ private object PyramidSolution1 {
     }
 }
 
-//iterative solution - calculate mid point
+// iterative solution - calculate mid point
 private object PyramidSolution2 {
     private fun pyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
@@ -43,18 +43,18 @@ private object PyramidSolution2 {
     }
 }
 
-//recursive solution
+// recursive solution
 private object PyramidSolution3 {
     private fun pyramid(n: Int, row: Int = 0) {
         val numColumns = ((n - 1) * 2) + 1
         val midpoint = ((2 * n) - 1) / 2
 
-        //handle complete all of the work
+        // handle complete all of the work
         if (n == row) {
             return
         }
 
-        //handle the case where we are assembling string
+        // handle the case where we are assembling string
         var rowStr = ""
 
         (0 until numColumns).forEach { column ->
@@ -67,17 +67,17 @@ private object PyramidSolution3 {
 
         println(rowStr)
 
-        //handle row
+        // handle row
         pyramid(n, row + 1)
     }
 }
 
-//recursive solution
+// recursive solution
 private object PyramidSolution4 {
     private fun pyramid(n: Int, row: Int = 0, level: String = "") {
         val numColumns = (n * 2) - 1
 
-        //handle complete all of the work
+        // handle complete all of the work
         if (n == row) {
             return
         }
@@ -88,7 +88,7 @@ private object PyramidSolution4 {
             return
         }
 
-        //handle the case where we are assembling string
+        // handle the case where we are assembling string
         val midpoint = ((2 * n) - 1) / 2
         var add = ""
 
@@ -98,7 +98,7 @@ private object PyramidSolution4 {
             " "
         }
 
-        //handle row
+        // handle row
         pyramid(n, row, level + add)
     }
 }

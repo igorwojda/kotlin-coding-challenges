@@ -49,7 +49,7 @@ private object SpiralNumbersSolution {
                 MatrixDirection.UP -> {
                     val upValue = if (rowIndex == 0) null else list[rowIndex - 1][columnIndex]
 
-                    if (upValue == null && rowIndex > 0) {  //rowIndex == 0
+                    if (upValue == null && rowIndex > 0) { // rowIndex == 0
                         rowIndex--
                     } else {
                         columnIndex++

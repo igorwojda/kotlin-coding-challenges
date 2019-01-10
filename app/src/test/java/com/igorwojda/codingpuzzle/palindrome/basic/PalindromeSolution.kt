@@ -1,13 +1,13 @@
 package com.igorwojda.codingpuzzle.palindrome.basic
 
-//string reverse
+// string reverse
 private object PalindromeSolution1 {
     private fun palindrome(str: String): Boolean {
         return str == str.reversed()
     }
 }
 
-//iterative, double pointer solution
+// iterative, double pointer solution
 private object PalindromeSolution2 {
     private fun palindrome(str: String): Boolean {
         str.forEachIndexed { index, char ->
@@ -24,7 +24,7 @@ private object PalindromeSolution2 {
     }
 }
 
-//recursive solution
+// recursive solution
 private object PalindromeSolution3 {
     private fun palindrome(str: String): Boolean {
         return if (str.isEmpty() || str.length == 1) {

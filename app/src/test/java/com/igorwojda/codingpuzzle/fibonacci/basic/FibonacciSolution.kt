@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.fibonacci.basic
 
-//iterative solution
+// iterative solution
 private object FibonacciSolution1 {
     private fun fibonacci(n: Int): Int {
         if (n < 2) {
@@ -21,7 +21,7 @@ private object FibonacciSolution1 {
     }
 }
 
-//iterative solution with temporary list (not efficient)
+// iterative solution with temporary list (not efficient)
 private object FibonacciSolution2 {
     private fun fibonacci(n: Int): Int {
         val list = mutableListOf(0, 1)
@@ -34,7 +34,7 @@ private object FibonacciSolution2 {
     }
 }
 
-//recursive solution
+// recursive solution
 private object FibonacciSolution3 {
     private fun fibonacci(n: Int): Int {
         return when (n) {
@@ -45,7 +45,7 @@ private object FibonacciSolution3 {
     }
 }
 
-//recursive solution
+// recursive solution
 private object FibonacciSolution4 {
     private fun fibonacci(n: Int): Int {
         if (n < 2) {

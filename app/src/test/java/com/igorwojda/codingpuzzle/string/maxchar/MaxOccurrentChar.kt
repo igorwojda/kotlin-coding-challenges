@@ -28,4 +28,3 @@ class StringMaxCharTest {
         maxOccurrentChar("ab1c1d1e1f1g1") shouldEqual '1'
     }
 }
-

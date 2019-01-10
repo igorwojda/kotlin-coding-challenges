@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.string.reverse
 
-//Kotlin idiomatic way
+// Kotlin idiomatic way
 private object ReverseSolution1 {
     private fun reverse(str: String): String {
         return str.reversed()

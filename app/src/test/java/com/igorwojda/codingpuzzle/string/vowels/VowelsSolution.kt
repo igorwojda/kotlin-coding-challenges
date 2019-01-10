@@ -1,6 +1,6 @@
 package com.igorwojda.codingpuzzle.string.vowels
 
-//Kotlin collection processing
+// Kotlin collection processing
 private object VowelsSolution1 {
     private fun vowels(str: String): Int {
         val vowels = listOf('a', 'e', 'i', 'o', 'u', 'y')
@@ -8,7 +8,7 @@ private object VowelsSolution1 {
     }
 }
 
-//Iterative
+// Iterative
 private object VowelsSolution2 {
     private fun vowels(str: String): Int {
         val vowels = listOf('a', 'e', 'i', 'o', 'u', 'y')
@@ -23,4 +23,3 @@ private object VowelsSolution2 {
         return counter
     }
 }
-

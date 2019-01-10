@@ -60,7 +60,6 @@ class GenericIntQueueTest {
         }
     }
 
-
     @Test
     fun `isEmpty returns true`() {
         GenericQueue<Int>().isEmpty() shouldEqual true

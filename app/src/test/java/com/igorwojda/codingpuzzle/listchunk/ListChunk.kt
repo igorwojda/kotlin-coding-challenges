@@ -35,4 +35,3 @@ class ListChunkTest {
         chunk(list, 5) shouldEqual listOf(listOf(1, 2, 3, 4, 5), listOf(6, 7, 8, 9, 10), listOf(11, 12, 13))
     }
 }
-

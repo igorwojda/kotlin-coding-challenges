@@ -1,8 +1,6 @@
 package com.igorwojda.datastructure.linkedlist.base
 
-private class LinkedList<E> {
-
-}
+private class LinkedList<E>
 
 private class Node<T>(
     val data: T,
@@ -333,4 +331,3 @@ class LinkedListTest {
 //        }
 //    }
 }
-
