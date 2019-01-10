@@ -1,4 +1,4 @@
-# Puzzle name
+# Binary Search Tree (Insert)
 
 ## Instructions
 
