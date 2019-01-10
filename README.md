@@ -93,10 +93,8 @@ If you think something is incorrect, you have found a new puzzle, have a better 
 please create PR or open a new issue.
 
 # References
-* [Big O Notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)
 
-
-For more detailed explanations and more puzzles please take a check these resources.
+For more detailed explanations and more puzzles please take a look check the resources.
 ## Books
 * [Cracking the Coding Interview, Gayle Laakmann McDowell](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
 * [Algorithms, 4th Edition, Robert Sedgewick ](https://algs4.cs.princeton.edu/home/)
