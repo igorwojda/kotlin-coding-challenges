@@ -5,7 +5,7 @@
 [Puzzle files](.)
 
 Write a function that accepts an integer `n` and returns a spiral numbers matrix (size n x n). Numbers in matrix are placed according to
-spiral - starting top left corner and then go Right //return Down //return Left //return Up //return Right...
+spiral - starting top left corner and then go right, down, left, up, right...
 
 ## Examples
 

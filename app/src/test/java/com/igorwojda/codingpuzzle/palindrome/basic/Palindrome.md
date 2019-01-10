@@ -11,8 +11,8 @@ reversed. Include spaces and punctuation in determining if the string is a palin
 ## Examples
 
 ```
-palindrome("abba") //return true
-palindrome("abcdefg") //return false
+palindrome("abba") // true
+palindrome("abcdefg") // false
 
 ```
 

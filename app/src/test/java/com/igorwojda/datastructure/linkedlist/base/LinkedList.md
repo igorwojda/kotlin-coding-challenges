@@ -63,7 +63,7 @@ val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
-list.size() // return 3
+list.size() // 3
 ```
 
 ### 4. `first: Node` property
@@ -77,7 +77,7 @@ Example:
 val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
-list.getFirst() // return Node instance with data 'a'
+list.getFirst() // 'a'
 ```
 
 ### 5 `last: Node` property
@@ -91,7 +91,7 @@ Example:
 val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
-list.getLast() // return node with data 'a'
+list.getLast() // 'a'
 ```
 
 ### 6. `clear()` method
@@ -106,7 +106,7 @@ val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.clear()
-list.size() // return 0
+list.size() // 0
 ```
 
 ### 7. `removeFirst()` method
@@ -122,7 +122,7 @@ val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.removeFirst()
-list.getFirst() // return node with data 'a'
+list.getFirst() // 'a'
 ```
 
 ### 8. `removeLast()` method
@@ -140,8 +140,8 @@ val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.removeLast()
-list.size() // returns 1
-list.getLast() // return node with data of 'b'
+list.size() // 1
+list.getLast() // of 'b'
 
 ```
 
@@ -157,7 +157,7 @@ val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertLast('c')
-list.getLast() // return node with data 'C'
+list.getLast() // 'C'
 ```
 
 ### 10. `getAt(index: Int)` method
@@ -172,7 +172,7 @@ val list = LinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
-list.getAt(1) // returns node with data 'b'
+list.getAt(1) // 'b'
 ```
 
 ### 11. `removeAt(index: Int)` method
@@ -192,7 +192,7 @@ list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
 list.removeAt(1)
-list.getAt(1) // return node with data 'a'
+list.getAt(1) // 'a'
 ```
 
 ### 12. `insertAt(data: E, index: Int)` method
@@ -212,7 +212,7 @@ list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
 list.insertAt('H', 1)
-list.getAt(1) // return node with data 'H'
+list.getAt(1) // 'H'
 ```
 
 ## Extra steps
@@ -244,7 +244,7 @@ list.insertLast(2)
 list.insertLast(3)
 list.insertLast(4)
 
-list.forEach { print(node) } // print 1234
+list.forEach { print(node) } // 1234
 ```
 
 Example 2:
@@ -257,7 +257,7 @@ list.insertLast(2)
 list.insertLast(3)
 list.insertLast(4)
 
-list.sumBy { it.data } // return 10
+list.sumBy { it.data } // 10
 ```
 
 ### 15. Add plus operator overloading

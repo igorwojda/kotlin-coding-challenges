@@ -9,8 +9,8 @@ Write a function that returns the number of vowels used in a string.  Vowels are
 ## Examples
 
 ```
-vowels('Hi There!') //return 3
-vowels('Why do you ask?') //return 4
-vowels('Why?') //return 0
+vowels('Hi There!') // 3
+vowels('Why do you ask?') // 4
+vowels('Why?') // 0
 ```
 
