@@ -17,7 +17,7 @@ using `Breath-First` and `Depth-First` traversals.
 
 Example:
 
-<img src="./misc/breadth_first_traversal.svg">
+![breadth_first_traversal.svg](misc/breadth_first_traversal.svg)
 
 ### 2. Depth First traversal (DF traversal)
 
@@ -26,5 +26,4 @@ Example:
 * **Test**: `depth first traverse`
 
 Example:
-
-<img src="./misc/depth_first_traversal.svg">
+![depth_first_traversal.svg](misc/depth_first_traversal.svg)

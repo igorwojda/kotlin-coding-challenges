@@ -4,7 +4,7 @@ private object BubbleSortSolution {
     private fun bubbleSort(list: List<Int>): List<Number> {
         val sorted = list.toMutableList()
 
-        sorted.forEachIndexed { i, _ ->
+        (0..sorted.lastIndex).forEach { i ->
             var swapped = false
             (0 until (sorted.size - i - 1)).forEach { j ->
                 val element = sorted[j]
