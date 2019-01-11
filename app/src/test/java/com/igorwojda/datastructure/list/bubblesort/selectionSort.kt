@@ -3,7 +3,7 @@ package com.igorwojda.datastructure.list.bubblesort
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun bubbleSort(list: List<Int>): List<Number> {
+private fun selectionSort(list: List<Int>): List<Number> {
     return list
 }
 
@@ -15,6 +15,6 @@ class BubbleSortTest {
 
     @Test
     fun `bubble sort test`() {
-        bubbleSort(LIST) shouldEqual SORTED_LIST
+        selectionSort(LIST) shouldEqual SORTED_LIST
     }
 }

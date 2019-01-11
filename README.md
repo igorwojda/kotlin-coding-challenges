@@ -22,8 +22,7 @@ by checking out this the project from git repository.
    ice preview of markdown files (files containing puzzles description)
 
 ## Puzzle structure
-Each puzzle is located in separate package and it contains 3 files
-([screen](./misc/images/SampleTask.png)):
+Each puzzle is located in separate package and it contains 3 files ([screen](./misc/image/SampleTask.png)):
 * `Puzzle.md` - description of the puzzle
 * `Puzzle.kt` - contains empty method/class where puzzle should be solved and set of tests to run
 * `PuzzleSolution.kt - file that contains one or more puzzle solutions (encapsulated in Kotlin `object` just to avoid conflicts with
@@ -31,10 +30,9 @@ Each puzzle is located in separate package and it contains 3 files
 
 ## Running tests
 
-Open `Puzzle.kt` file for a any puzzle. Locate class with `Test` suffix (`PuzzleTest`). Click on the green green arrow close to line
-number to run one or more tests in the class
-([screen](./misc/images/RunTest.png)). After running the test you can rerun last
-configuration using `Run command` (`⌘ + R`).
+Open `Puzzle.kt` file for a any puzzle. Locate class with `Test` suffix (`PuzzleTest`). Click on the green green arrow close to line number
+to run one or more tests in the class ([screen](./misc/image/RunTest.png)). After running the test you can rerun last configuration using
+`Run command` (`⌘ + R`).
 
 Larger puzzles will have larger test base, so tests have to be uncommented one by one while solving various steps of the given puzzle.
 
@@ -65,6 +63,7 @@ same tasks multiple times be patient and persistent over time.
 **List**
 * [List chunking](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
 * [Bubble sort](app/src/test/java/com/igorwojda/datastructure/list/bubblesort/BubbleSort.md)
+* [Selection sort](app/src/test/java/com/igorwojda/datastructure/list/selectionsort/SelectionSort.md)
 
 **Queue**
 * [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
@@ -127,6 +126,6 @@ If you think something is incorrect, you have found a new puzzle, have a better 
 please create PR or open a new issue.
 
 # Follow me
-![avatar.png](misc/images/avatar.png)
+![avatar.png](misc/image/avatar.png)
 
 [Twitter](https://twitter.com/igorwojda) | [Medium](https://medium.com/@igorwojda) | [Linkedin](https://www.linkedin.com/in/igorwojda/)
