@@ -48,62 +48,59 @@ same tasks multiple times be patient and persistent over time.
 
 ## Kotlin programing puzzles
 
-### Data structure puzzles
-1. String
-   1. [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
-   2. [Sentence capitalization](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
-   3. [Palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/basic/Palindrome.md)
-   4. [Tolerant palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/tolerant/TolerantPalindrome.md)
-   5. [Max occurring char](app/src/test/java/com/igorwojda/codingpuzzle/string/maxchar/MaxOccurrentChar.md)
-   6. [String reversal](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
-   7. [Find the vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
-   8. [Pyramid shape](app/src/test/java/com/igorwojda/codingpuzzle/shape/pyramids/Pyramids.md)
-   9. [Steps shape](app/src/test/java/com/igorwojda/codingpuzzle/shape/steps/Steps.md)
+**String**
+* [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
+* [Sentence capitalization](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
+* [Palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/basic/Palindrome.md)
+* [Tolerant palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/tolerant/TolerantPalindrome.md)
+* [Max occurring char](app/src/test/java/com/igorwojda/codingpuzzle/string/maxchar/MaxOccurrentChar.md)
+* [String reversal](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
+* [Find the vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
+* [Pyramid shape](app/src/test/java/com/igorwojda/codingpuzzle/shape/pyramids/Pyramids.md)
+* [Steps shape](app/src/test/java/com/igorwojda/codingpuzzle/shape/steps/Steps.md)
 
-2. Int
-   1. [Int reversal](app/src/test/java/com/igorwojda/codingpuzzle/reverseint/ReverseInt.md)
+**Int**
+* [Int reversal](app/src/test/java/com/igorwojda/codingpuzzle/reverseint/ReverseInt.md)
 
-3. List
-   1. [List chunking](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
+**List**
+* [List chunking](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
+* [Bubble sort](app/src/test/java/com/igorwojda/datastructure/list/bubblesort/BubbleSort.md)
 
-4. List Sorting
-   1. [Bubble sort](app/src/test/java/com/igorwojda/datastructure/list/bubblesort/BubbleSort.md)
+**Queue**
+* [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
+* [Generic queue](app/src/test/java/com/igorwojda/datastructure/queue/generic/GenericQueue.md)
+* [Combine two queues](app/src/test/java/com/igorwojda/datastructure/queue/weave/Weave.md)
+* [Two stack queue](app/src/test/java/com/igorwojda/datastructure/queue/twostack/TwoStackQueue.md)
 
-5. Range
-   1. [Range contains range?](app/src/test/java/com/igorwojda/codingpuzzle/rangecontainsrange/RangeContainsRange.md)
+**Stack**
+* [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
+* [Generic stack](app/src/test/java/com/igorwojda/datastructure/stack/generic/GenericStack.md)
 
-6. Queue
-   1. [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
-   2. [Generic queue](app/src/test/java/com/igorwojda/datastructure/queue/generic/GenericQueue.md)
-   3. [Combine two queues](app/src/test/java/com/igorwojda/datastructure/queue/weave/Weave.md)
-   4. [Two stack queue](app/src/test/java/com/igorwojda/datastructure/queue/twostack/TwoStackQueue.md)
+**Linked list**
+* [Linked list](app/src/test/java/com/igorwojda/datastructure/linkedlist/base/LinkedList.md)
+* [Linked list midpoint](app/src/test/java/com/igorwojda/datastructure/linkedlist/midpoint/Midpoint.md)
+* [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
+* [Linked list take n-th element from last](app/src/test/java/com/igorwojda/datastructure/linkedlist/fromlast/FromLast.md)
 
-7. Stack
-   1. [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
-   2. [Generic stack](app/src/test/java/com/igorwojda/datastructure/stack/generic/GenericStack.md)
+**Tree**
+* [Tree traversal](app/src/test/java/com/igorwojda/datastructure/tree/traversal/TreeTraversal.md)
+* [Tree level width](app/src/test/java/com/igorwojda/datastructure/tree/levelwidth/LevelWidth.md)
 
-8. Linked list
-   1. [Linked list](app/src/test/java/com/igorwojda/datastructure/linkedlist/base/LinkedList.md)
-   2. [Linked list midpoint](app/src/test/java/com/igorwojda/datastructure/linkedlist/midpoint/Midpoint.md)
-   3. [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
-   4. [Linked list take n-th element from last](app/src/test/java/com/igorwojda/datastructure/linkedlist/fromlast/FromLast.md)
+**Binary tree**
+* [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/datastructure/binarytree/insert/Insert.md)
+* [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/datastructure/binarytree/validate/Validate.md)
 
-9. Tree
-   1. [Tree traversal](app/src/test/java/com/igorwojda/datastructure/tree/traversal/TreeTraversal.md)
-   2. [Tree level width](app/src/test/java/com/igorwojda/datastructure/tree/levelwidth/LevelWidth.md)
+**Various challenges**
+* [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/basic/Fibonacci.md)
+* [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/recursivecached/FibonacciRecursiveCached.md)
+* [Fizz Buzz](app/src/test/java/com/igorwojda/codingpuzzle/fizzbuzz/FizzBuzz.md)
+* [Spiral matrix generator](app/src/test/java/com/igorwojda/codingpuzzle/matrix/spiralnumbers/SpiralNumbers.md)
+* [Factorial](app/src/test/java/com/igorwojda/codingpuzzle/factorial/Factorial.md)
+* [Print number](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/basic/PrintNumber.md)
+* [Print number with steps](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/steps/PrintNumberWithSteps.md)
 
-10. Binary tree
-    1. [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/datastructure/binarytree/insert/Insert.md)
-    2. [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/datastructure/binarytree/validate/Validate.md)
-
-### Various challenges
-1. [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/basic/Fibonacci.md)
-2. [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/recursivecached/FibonacciRecursiveCached.md)
-3. [Fizz Buzz](app/src/test/java/com/igorwojda/codingpuzzle/fizzbuzz/FizzBuzz.md)
-4. [Spiral matrix generator](app/src/test/java/com/igorwojda/codingpuzzle/matrix/spiralnumbers/SpiralNumbers.md)
-5. [Factorial](app/src/test/java/com/igorwojda/codingpuzzle/factorial/Factorial.md)
-6. [Print number](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/basic/PrintNumber.md)
-7. [Print number with steps](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/steps/PrintNumberWithSteps.md)
+**Range**
+* [Range contains range?](app/src/test/java/com/igorwojda/codingpuzzle/rangecontainsrange/RangeContainsRange.md)
 
 # References
 
