@@ -15,14 +15,17 @@ Example 1
 
 Sort `[5, 1, 4, 2, 8]`
 
+Find the minimum element in sublist 1...4 and place it at index 0
+```
+[5, 1, 4, 2, 8] -> [1, 5, 4, 2, 8] Swap since 1 < 5
+```
 
+Find the minimum element in sublist 2...4 and place it at index 1
+```
+[1, 5, 4, 2, 8] -> [1, 2, 4, 5, 8] Swap since 2 < 4
+```
 
-## Hints
-
-<details>
-<summary>Hint 1</summary>
-The algorithm uses two sublists in a given array.
-
-1. The sublist which is already sorted
-2. Remaining sublist which is unsorted
-</details>
+Find the minimum element in sublist 3...4 and place it at index 2
+```
+[1, 2, 4, 5, 8] -> [1, 2, 4, 5, 8] No swap since 5 < 8
+```
