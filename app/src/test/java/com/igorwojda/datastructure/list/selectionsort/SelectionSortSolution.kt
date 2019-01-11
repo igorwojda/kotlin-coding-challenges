@@ -1,4 +1,4 @@
-package com.igorwojda.datastructure.list.bubblesort
+package com.igorwojda.datastructure.list.selectionsort
 
 private object SelectionSortSolution {
     private fun selectionSort(list: List<Int>): List<Number> {
