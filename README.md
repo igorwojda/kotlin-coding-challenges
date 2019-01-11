@@ -106,11 +106,13 @@ same tasks multiple times be patient and persistent over time.
 
 For more detailed explanations and more puzzles please take a look check the resources.
 ## Books
-* [Cracking the Coding Interview, Gayle Laakmann McDowell](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
-* [Algorithms, 4th Edition, Robert Sedgewick ](https://algs4.cs.princeton.edu/home/)
+* [Cracking the Coding Interview](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
+* [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
+* [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms/)
 
 ## Video courses
 * [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
+* [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/)
 
 ## Articles
 * [Data structures explained by Vaidehi Joshi](https://medium.com/basecs/tagged/data-structures)
