@@ -46,51 +46,64 @@ Order of the programming puzzles is random for now, however, some of them may co
 to make the final puzzle easier. It all up to you how you approach this, just remember that to succeed you need to practice often, repeat
 same tasks multiple times be patient and persistent over time.
 
-## Algorithms
+## Kotlin programing puzzles
 
-1. [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
-2. [Sentence capitalization](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
-3. [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/basic/Fibonacci.md)
-4. [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/recursivecached/FibonacciRecursiveCached.md)
-5. [Fizz Buzz](app/src/test/java/com/igorwojda/codingpuzzle/fizzbuzz/FizzBuzz.md)
-6. [List chunking](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
-7. [Spiral matrix generator](app/src/test/java/com/igorwojda/codingpuzzle/matrix/spiralnumbers/SpiralNumbers.md)
-8. [Palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/basic/Palindrome.md)
-9. [Tolerant palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/tolerant/TolerantPalindrome.md)
-10. [Range contains range?](app/src/test/java/com/igorwojda/codingpuzzle/rangecontainsrange/RangeContainsRange.md)
-11. [Factorial](app/src/test/java/com/igorwojda/codingpuzzle/factorial/Factorial.md)
-12. [Print number](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/basic/PrintNumber.md)
-13. [Print number with steps](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/steps/PrintNumberWithSteps.md)
-14. [Int reversal](app/src/test/java/com/igorwojda/codingpuzzle/reverseint/ReverseInt.md)
-15. [Pyramid shape](app/src/test/java/com/igorwojda/codingpuzzle/shape/pyramids/Pyramids.md)
-16. [Steps shape](app/src/test/java/com/igorwojda/codingpuzzle/shape/steps/Steps.md)
-17. [Max occurring char](app/src/test/java/com/igorwojda/codingpuzzle/string/maxchar/MaxOccurrentChar.md)
-18. [String reversal](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
-19. [Find the vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
+### Data structure puzzles
+1. String
+   1. [Anagram](app/src/test/java/com/igorwojda/codingpuzzle/anagram/Anagram.md)
+   2. [Sentence capitalization](app/src/test/java/com/igorwojda/codingpuzzle/calitalisesentence/CapitalizeSentence.md)
+   3. [Palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/basic/Palindrome.md)
+   4. [Tolerant palindrome](app/src/test/java/com/igorwojda/codingpuzzle/palindrome/tolerant/TolerantPalindrome.md)
+   5. [Max occurring char](app/src/test/java/com/igorwojda/codingpuzzle/string/maxchar/MaxOccurrentChar.md)
+   6. [String reversal](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md)
+   7. [Find the vowels](app/src/test/java/com/igorwojda/codingpuzzle/string/vowels/Vowels.md)
+   8. [Pyramid shape](app/src/test/java/com/igorwojda/codingpuzzle/shape/pyramids/Pyramids.md)
+   9. [Steps shape](app/src/test/java/com/igorwojda/codingpuzzle/shape/steps/Steps.md)
 
-## Data structures
+2. Int
+   1. [Int reversal](app/src/test/java/com/igorwojda/codingpuzzle/reverseint/ReverseInt.md)
 
-1. [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
-2. [Generic queue](app/src/test/java/com/igorwojda/datastructure/queue/generic/GenericQueue.md)
-3. [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
-4. [Combine two queues](app/src/test/java/com/igorwojda/datastructure/queue/weave/Weave.md)
-5. [Generic stack](app/src/test/java/com/igorwojda/datastructure/stack/generic/GenericStack.md)
-6. [Two stack queue](app/src/test/java/com/igorwojda/datastructure/queue/twostack/TwoStackQueue.md)
-7. [Linked list](app/src/test/java/com/igorwojda/datastructure/linkedlist/base/LinkedList.md)
-8. [Linked list midpoint](app/src/test/java/com/igorwojda/datastructure/linkedlist/midpoint/Midpoint.md)
-9. [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
-10. [Linked list take n-th element from last](app/src/test/java/com/igorwojda/datastructure/linkedlist/fromlast/FromLast.md)
-11. [Tree traversal](app/src/test/java/com/igorwojda/datastructure/tree/traversal/TreeTraversal.md)
-12. [Tree level width](app/src/test/java/com/igorwojda/datastructure/tree/levelwidth/LevelWidth.md)
-13. [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/datastructure/binarytree/insert/Insert.md)
-14. [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/datastructure/binarytree/validate/Validate.md)
+3. List
+   1. [List chunking](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
 
-## Sorting
-1. Bubble sort
+4. List Sorting
+   1. [Bubble sort](app/src/test/java/com/igorwojda/datastructure/list/bubblesort/BubbleSort.md)
 
-# Contribute
-If you think something is incorrect, you have found a new puzzle, have a better solution or simply you want to [add new puzzle](/misc/wiki/adding_new_puzzle.md)
-please create PR or open a new issue.
+5. Range
+   1. [Range contains range?](app/src/test/java/com/igorwojda/codingpuzzle/rangecontainsrange/RangeContainsRange.md)
+
+6. Queue
+   1. [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
+   2. [Generic queue](app/src/test/java/com/igorwojda/datastructure/queue/generic/GenericQueue.md)
+   3. [Combine two queues](app/src/test/java/com/igorwojda/datastructure/queue/weave/Weave.md)
+   4. [Two stack queue](app/src/test/java/com/igorwojda/datastructure/queue/twostack/TwoStackQueue.md)
+
+7. Stack
+   1. [Int stack](app/src/test/java/com/igorwojda/datastructure/stack/int/IntStack.md)
+   2. [Generic stack](app/src/test/java/com/igorwojda/datastructure/stack/generic/GenericStack.md)
+
+8. Linked list
+   1. [Linked list](app/src/test/java/com/igorwojda/datastructure/linkedlist/base/LinkedList.md)
+   2. [Linked list midpoint](app/src/test/java/com/igorwojda/datastructure/linkedlist/midpoint/Midpoint.md)
+   3. [Circular linked list?](app/src/test/java/com/igorwojda/datastructure/linkedlist/circularcheck/CircularCheck.md)
+   4. [Linked list take n-th element from last](app/src/test/java/com/igorwojda/datastructure/linkedlist/fromlast/FromLast.md)
+
+9. Tree
+   1. [Tree traversal](app/src/test/java/com/igorwojda/datastructure/tree/traversal/TreeTraversal.md)
+   2. [Tree level width](app/src/test/java/com/igorwojda/datastructure/tree/levelwidth/LevelWidth.md)
+
+10. Binary tree
+    1. [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/datastructure/binarytree/insert/Insert.md)
+    2. [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/datastructure/binarytree/validate/Validate.md)
+
+### Various challenges
+1. [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/basic/Fibonacci.md)
+2. [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/recursivecached/FibonacciRecursiveCached.md)
+3. [Fizz Buzz](app/src/test/java/com/igorwojda/codingpuzzle/fizzbuzz/FizzBuzz.md)
+4. [Spiral matrix generator](app/src/test/java/com/igorwojda/codingpuzzle/matrix/spiralnumbers/SpiralNumbers.md)
+5. [Factorial](app/src/test/java/com/igorwojda/codingpuzzle/factorial/Factorial.md)
+6. [Print number](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/basic/PrintNumber.md)
+7. [Print number with steps](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/steps/PrintNumberWithSteps.md)
 
 # References
 
@@ -112,3 +125,11 @@ For more detailed explanations and more puzzles please take a look check the res
 * [LeetCode](https://leetcode.com/problemset/all)
 * [GeeksForGeeks](https://www.geeksforgeeks.org)
 
+# Contribute
+If you think something is incorrect, you have found a new puzzle, have a better solution or simply you want to [add new puzzle](/misc/wiki/adding_new_puzzle.md)
+please create PR or open a new issue.
+
+# Follow me
+![avatar.png](misc/images/avatar.png)
+
+[Twitter](https://twitter.com/igorwojda) | [Medium](https://medium.com/@igorwojda) | [Linkedin](https://www.linkedin.com/in/igorwojda/)
