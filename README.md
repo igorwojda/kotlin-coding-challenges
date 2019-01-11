@@ -64,6 +64,7 @@ same tasks multiple times be patient and persistent over time.
 * [List chunking](app/src/test/java/com/igorwojda/codingpuzzle/listchunk/ListChunk.md)
 * [Bubble sort](app/src/test/java/com/igorwojda/datastructure/list/bubblesort/BubbleSort.md)
 * [Selection sort](app/src/test/java/com/igorwojda/datastructure/list/selectionsort/SelectionSort.md)
+* [Merge sort](app/src/test/java/com/igorwojda/datastructure/list/mergesort/MergeSort.md)
 
 **Queue**
 * [Int queue](app/src/test/java/com/igorwojda/datastructure/queue/int/IntQueue.md)
@@ -89,6 +90,9 @@ same tasks multiple times be patient and persistent over time.
 * [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/datastructure/binarytree/insert/Insert.md)
 * [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/datastructure/binarytree/validate/Validate.md)
 
+**Range**
+* [Range contains range?](app/src/test/java/com/igorwojda/codingpuzzle/rangecontainsrange/RangeContainsRange.md)
+
 **Various challenges**
 * [Fibonacci](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/basic/Fibonacci.md)
 * [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/codingpuzzle/fibonacci/recursivecached/FibonacciRecursiveCached.md)
@@ -97,9 +101,6 @@ same tasks multiple times be patient and persistent over time.
 * [Factorial](app/src/test/java/com/igorwojda/codingpuzzle/factorial/Factorial.md)
 * [Print number](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/basic/PrintNumber.md)
 * [Print number with steps](app/src/test/java/com/igorwojda/codingpuzzle/printnumber/steps/PrintNumberWithSteps.md)
-
-**Range**
-* [Range contains range?](app/src/test/java/com/igorwojda/codingpuzzle/rangecontainsrange/RangeContainsRange.md)
 
 # References
 
