@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Write a function that accepts a positive Int `n` and Int `step`. The function should return sum of all numbers from 1 up tp (and including)
+Write a function that accepts a positive Int `n` and calculates sum of all numbers from 1 up tp (and including)
 number `n`
 
 ## Examples
