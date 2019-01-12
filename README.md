@@ -65,6 +65,7 @@ Puzzles are segregated by different levels of difficulty.
 * [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
 * [Add up to](app/src/test/java/com/igorwojda/int/addupto/AddUpTo.md)
 * [Count up and down](app/src/test/java/com/igorwojda/various/countupanddown/CountUpAndDown.md)
+* [Get all pairs](app/src/test/java/com/igorwojda/various/getallpairs/GetAllPairs.md)
 
 **Apprentice**
 * [Palindrome](app/src/test/java/com/igorwojda/string/palindrome/basic/Palindrome.md)
