@@ -122,7 +122,6 @@ Puzzles are segregated by different levels of difficulty.
 
 # References
 
-For more detailed explanations and more puzzles please take a look check the resources.
 ## Books
 
 * [Cracking the Coding Interview](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
