@@ -4,22 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun squareEquals(list1: List<Int>, list2: List<Int>): Boolean {
-    if (list1.size != list2.size) {
-        return false
-    }
-
-    val frequencyCounter1 = mutableMapOf<Int, Int>()
-    list1.forEach {
-        val key = it * it
-        frequencyCounter1.merge(key, 1, Int::plus)
-    }
-
-    val frequencyCounter2 = mutableMapOf<Int, Int>()
-    list2.forEach {
-        frequencyCounter2.merge(it, 1, Int::plus)
-    }
-
-    return frequencyCounter1 == frequencyCounter2
+    return false
 }
 
 class SquareEqualsTest {
