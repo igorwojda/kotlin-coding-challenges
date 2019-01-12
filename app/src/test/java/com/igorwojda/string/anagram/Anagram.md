@@ -17,3 +17,7 @@ anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 anagrams('Hi there', 'Bye there') --> False
 ```
 
+<details>
+<summary>Hint 1</summary>
+Use frequency counter
+</details>
