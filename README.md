@@ -63,6 +63,7 @@ Puzzles are segregated by different levels of difficulty.
 **New in Town**
 * [Sentence capitalization](app/src/test/java/com/igorwojda/string/calitalisesentence/CapitalizeSentence.md)
 * [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
+* [Add up to](app/src/test/java/com/igorwojda/int/addupto/AddUpTo.md)
 
 **Apprentice**
 * [Palindrome](app/src/test/java/com/igorwojda/string/palindrome/basic/Palindrome.md)
