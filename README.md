@@ -58,52 +58,42 @@ same tasks multiple times be patient and persistent over time.
 
 ## Kotlin programing puzzles
 
-**String**
-* [Anagram](app/src/test/java/com/igorwojda/string/anagram/Anagram.md)
+Puzzles are segregated by different levels of difficulty.
+
+**New in Town**
 * [Sentence capitalization](app/src/test/java/com/igorwojda/string/calitalisesentence/CapitalizeSentence.md)
+* [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
+
+**Apprentice**
 * [Palindrome](app/src/test/java/com/igorwojda/string/palindrome/basic/Palindrome.md)
 * [Tolerant palindrome](app/src/test/java/com/igorwojda/string/palindrome/tolerant/TolerantPalindrome.md)
+* [Anagram](app/src/test/java/com/igorwojda/string/anagram/Anagram.md)
 * [Max occurring char](app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md)
 * [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
 * [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
-
-**Int**
 * [Int reversal](app/src/test/java/com/igorwojda/int/reverse/Reverse.md)
-
-**List**
-* [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
-* [Bubble sort](app/src/test/java/com/igorwojda/list/bubblesort/BubbleSort.md)
-* [Selection sort](app/src/test/java/com/igorwojda/list/selectionsort/SelectionSort.md)
-* [Merge sort](app/src/test/java/com/igorwojda/list/mergesort/MergeSort.md)
-
-**Queue**
+* 
+**Paladin**
 * [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
 * [Generic queue](app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
 * [Combine two queues](app/src/test/java/com/igorwojda/queue/weave/Weave.md)
 * [Two stack queue](app/src/test/java/com/igorwojda/queue/twostack/TwoStackQueue.md)
-
-**Stack**
 * [Int stack](app/src/test/java/com/igorwojda/stack/int/IntStack.md)
 * [Generic stack](app/src/test/java/com/igorwojda/stack/generic/GenericStack.md)
+* [Bubble sort](app/src/test/java/com/igorwojda/list/bubblesort/BubbleSort.md)
+* [Selection sort](app/src/test/java/com/igorwojda/list/selectionsort/SelectionSort.md)
 
-**Linked list**
+**Commander**
+* [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
 * [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
 * [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
 * [Circular linked list?](app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
 * [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
-
-**Tree**
 * [Tree traversal](app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
 * [Tree level width](app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
-
-**Binary tree**
 * [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
 * [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
-
-**Range**
-* [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
-
-**Various challenges**
+* [Merge sort](app/src/test/java/com/igorwojda/list/mergesort/MergeSort.md)
 * [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
 * [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
 * [Fibonacci](app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md)
