@@ -24,6 +24,11 @@ class AnagramTest {
     }
 
     @Test
+    fun `"hi" is an anagram of "ihi"`() {
+        anagrams("hi", "ihi") shouldEqual false
+    }
+
+    @Test
     fun `"hello" is an anagram of "llohe"`() {
         anagrams("hello", "llohe") shouldEqual true
     }
