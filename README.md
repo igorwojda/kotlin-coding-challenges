@@ -86,7 +86,7 @@ Puzzles are segregated by different levels of difficulty.
 * [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
 * [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
 * [Int reversal](app/src/test/java/com/igorwojda/int/reverse/Reverse.md)
-* 
+
 **Warrior**
 * [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
 * [Generic queue](app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
