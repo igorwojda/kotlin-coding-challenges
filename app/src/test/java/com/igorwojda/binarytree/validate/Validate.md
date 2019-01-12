@@ -17,8 +17,6 @@ Requirements that are always true for any given node in `Binary Search Tree`:
 
 ## Examples
 
-Example 1
-
 ```
 val tree = Node(2)
 tree.insert(10)

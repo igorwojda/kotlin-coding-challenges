@@ -13,8 +13,6 @@ elements left to be compared.
 
 ## Examples
 
-Example 1
-
 Sort `[5, 1, 4, 2, 8]`
 
 **First Pass**

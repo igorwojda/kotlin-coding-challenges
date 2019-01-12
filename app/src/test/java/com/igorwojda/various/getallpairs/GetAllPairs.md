@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Write a function, which accepts a positive Int `n` and return list containing pairs with all combinations of numbers from 0 to `n`.
+Implement a function, which accepts a positive Int `n` and return list containing pairs with all combinations of numbers from 0 to `n`.
 
 ## Examples
 

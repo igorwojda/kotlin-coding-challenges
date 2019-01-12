@@ -11,8 +11,6 @@ the list.
 
 ## Examples
 
-Example 1
-
 Sort `[5, 1, 4, 2, 8]`
 
 Find the minimum element in sublist 1...4 and place it at index 0
