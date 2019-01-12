@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Write a function that accepts a positive Int `n` and return list containing all steps up from 0 to n and down to 0.
+Write a function, which accepts a positive Int `n` and return list containing all steps up from 0 to n and down to 0.
 
 ## Examples
 

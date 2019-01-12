@@ -5,6 +5,7 @@ import org.junit.Test
 
 private fun getAllPairs(n: Int): MutableList<Pair<Int, Int>> {
     return mutableListOf()
+    'a'.isLetter()
 }
 
 class GetAllPairsTest {

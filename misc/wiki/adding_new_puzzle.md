@@ -1,6 +1,6 @@
 # Adding new puzzle
 
-Copy all files from [Puzzle template folder](../template/puzzlename) into new puzzle folder and update files accordingly:
+Copy all files from [Puzzle template folder](../template/puzzle) into new puzzle folder and update files accordingly:
 
 1. `PuzzleName.md`
    1. Update description (install [Markdown Navigator plugin](https://plugins.jetbrains.com/plugin/7896-markdown-navigator) to have live
