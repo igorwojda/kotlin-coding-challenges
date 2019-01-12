@@ -96,6 +96,7 @@ Puzzles are segregated by different levels of difficulty.
 * [Bubble sort](app/src/test/java/com/igorwojda/list/bubblesort/BubbleSort.md)
 * [Selection sort](app/src/test/java/com/igorwojda/list/selectionsort/SelectionSort.md)
 * [List square equals](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
+* [List sum zero](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
 
 **Commander**
 * [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)

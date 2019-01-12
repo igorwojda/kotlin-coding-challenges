@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Given an `Int`, return an `Int` that is the reverse ordering of numbers.
+Given an integer `n`, return an integer that is the reverse ordering of digits.
 
 ## Examples
 
