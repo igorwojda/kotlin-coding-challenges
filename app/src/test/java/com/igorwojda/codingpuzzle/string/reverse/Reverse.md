@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Given a string, return a new string with the reversed order of characters
+Write a function that accepts a string input and returns a reversed copy.
 
 ## Limitations:
 

@@ -1,10 +1,18 @@
 # Kotlin coding puzzles
 
 This repository contains a set of programming puzzles that meant to be solved using [Kotlin](https://kotlinlang.org/) language (no worries
-hints and solutions and tests that will verify you solution are here as well). Purpose of this repository is to help you to practice your coding
-skills and prepare for [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews. Keep in mind that each puzzle may have
-more than one solution.
+hints, solutions and tests that will verify you solution are here as well). Purpose of this repository is to help you to practice your coding
+skills and prepare for [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
+
+## Solutions
+Repository contains one or more solutions for any given puzzle, however keep in mind that each puzzle will usually have more than one
+solution. Even simple puzzle like [String reversal](app/src/test/java/com/igorwojda/codingpuzzle/string/reverse/Reverse.md) can be solved in
+[10 different approaches](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/).
+
+At the beginning it's good to focus on understanding the puzzle and solve it and learn various tricks. Latter you can compare various
+solutions in terms of space/time complexity
+([Big O Notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)).
 
 # How do I start?
 
@@ -29,7 +37,6 @@ Each puzzle is located in separate package and it contains 3 files ([screen](./m
   other coding puzzles)
 
 ## Running tests
-
 Open `Puzzle.kt` file for a any puzzle. Locate class with `Test` suffix (`PuzzleTest`). Click on the green green arrow close to line number
 to run one or more tests in the class ([screen](./misc/image/RunTest.png)). After running the test you can rerun last configuration using
 `Run command` (`⌘ + R`).
