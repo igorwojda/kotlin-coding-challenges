@@ -1,19 +1,29 @@
 # Kotlin coding puzzles
 
-This repository contains a set of programming puzzles that meant to be solved using [Kotlin](https://kotlinlang.org/) language (no worries
-hints, solutions and tests that will verify you solution are here as well). Purpose of this repository is to help you to practice your coding
-skills and prepare for [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
-
+This repository contains a set of [programming puzzles](#kotlin-programing-puzzles) that meant to be solved using
+[Kotlin](https://kotlinlang.org/) language (no worries hints, solutions and tests that will verify your solution are here as well). Purpose
+of this repository is to help you to practice deliberately and develop strong problem solving skills. This will make you better programmer
+and will help you to get new job by passing [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
 ## Solutions
 
 Repository contains one or more solutions for any given puzzle, however keep in mind that each puzzle will usually have more than one
 solution. Even simple puzzle like [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md) can be solved in
-[10 different approaches](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/).
+[10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually we are compare various solutions using
+([Big O notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)) and we look at code
+readability.
 
-At the beginning it's good to focus on understanding the puzzle and solve it and learn various tricks. Latter you can compare various
-solutions in terms of space/time complexity
-([Big O Notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)).
+To be good at solving programming puzzles you will also need a proper problem solving strategy.
+
+In 1945 Hungarian mathematician
+[George Pólya](https://en.wikipedia.org/wiki/George_P%C3%B3lya), [described](https://en.wikipedia.org/wiki/How_to_Solve_It) famous method of
+problem solving:
+
+* First, we have to [understand](https://en.wikipedia.org/wiki/Understanding) the [problem](https://en.wikipedia.org/wiki/Problem)
+* After understanding [make a plan](https://en.wikipedia.org/wiki/Plan)
+* Carry out the plan. [Look back](https://en.wikipedia.org/wiki/Review)
+* [Look back ](https://en.wikipedia.org/wiki/Review) on your work.
+  [How could it be better?](https://en.wikipedia.org/wiki/Scientific_method)
 
 # How do I start?
 
@@ -76,7 +86,7 @@ Puzzles are segregated by different levels of difficulty.
 * [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
 * [Int reversal](app/src/test/java/com/igorwojda/int/reverse/Reverse.md)
 * 
-**Paladin**
+**Warrior**
 * [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
 * [Generic queue](app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
 * [Combine two queues](app/src/test/java/com/igorwojda/queue/weave/Weave.md)
@@ -85,6 +95,7 @@ Puzzles are segregated by different levels of difficulty.
 * [Generic stack](app/src/test/java/com/igorwojda/stack/generic/GenericStack.md)
 * [Bubble sort](app/src/test/java/com/igorwojda/list/bubblesort/BubbleSort.md)
 * [Selection sort](app/src/test/java/com/igorwojda/list/selectionsort/SelectionSort.md)
+* [List square equals](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
 
 **Commander**
 * [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
@@ -118,8 +129,8 @@ For more detailed explanations and more puzzles please take a look check the res
 
 ## Video courses
 
-* [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
 * [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/)
+* [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
 
 ## Articles
 

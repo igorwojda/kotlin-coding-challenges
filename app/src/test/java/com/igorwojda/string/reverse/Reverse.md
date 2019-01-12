@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Write a function that accepts a `String` input and returns a reversed copy.
+Write a function, which accepts a `String` input and returns a reversed copy.
 
 ## Limitations:
 
