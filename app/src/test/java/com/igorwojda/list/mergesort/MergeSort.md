@@ -15,8 +15,6 @@ Algorithm:
 
 ## Examples
 
-Example 1
-
 Sort `[5, 1, 4, 2]`
 
 ```

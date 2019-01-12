@@ -4,8 +4,8 @@
 
 [Puzzle files](.)
 
-Write a function called which accepts a sorted list of integers. The function should find the first pair where the sum is 0. Return an
-pair that includes both values that sum to zero or null if a pair does not exist.
+Implement a function which accepts a sorted list of integers. The function should find the first pair where the sum is 0. Return an pair that
+includes both values that sum to zero or null if a pair does not exist.
 
 
 ## Examples

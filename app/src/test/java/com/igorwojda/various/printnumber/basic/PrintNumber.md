@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Write a function, which accepts a positive Int `n`. The function should return a list representing all numbers from `n` to `1`. If `n` value
+Implement a function, which accepts a positive Int `n`. The function should return a list representing all numbers from `n` to `1`. If `n` value
 is zero then empty list should be returned.
 
 ## Examples

@@ -4,12 +4,10 @@
 
 [Puzzle files](.)
 
-Write a function, which accepts two lists of integers. The function should return `true` if every value in the first list has it's
+Implement a function, which accepts two lists of integers. The function should return `true` if every value in the first list has it's
 corresponding value squared in the second list. The frequency of values must be the same.
 
 ## Examples
-
-Example 1
 
 ```
 squareEquals(listOf(2), listOf(4)) // true
