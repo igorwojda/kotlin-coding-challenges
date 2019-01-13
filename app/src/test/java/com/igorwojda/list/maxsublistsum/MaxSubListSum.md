@@ -1,4 +1,4 @@
-# Max sub list sum
+# Max sub-list sum
 
 ## Instructions
 
