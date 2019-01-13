@@ -1,4 +1,4 @@
-# List square compare
+# Square compare
 
 ## Instructions
 

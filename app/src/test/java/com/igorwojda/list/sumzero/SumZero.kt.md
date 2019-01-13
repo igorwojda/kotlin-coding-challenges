@@ -1,4 +1,4 @@
-# List Sum zero
+# Sum zero
 
 ## Instructions
 
