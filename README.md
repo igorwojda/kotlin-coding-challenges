@@ -20,7 +20,7 @@ complexity and latter we look at code readability.
 This repository contains [Android Studio](https://developer.android.com/studio/) project. We can quickly open the project simply
 by checking out this the project from git repository.
 
-1. Install Android Studio
+1. Install Android Studio (we need version 3.3+ because of a [bug](https://youtrack.jetbrains.com/issue/KT-28090) that reruns tests incorrectly)
 2. Install git `brew install git` using cmd
 3. Import project by using Android Studio menu: `File -> New -> Project From Version Control -> Git`
 4. Enter Repository URL `https://github.com/igorwojda/kotlin-coding-puzzle.git`  and click `clone`
