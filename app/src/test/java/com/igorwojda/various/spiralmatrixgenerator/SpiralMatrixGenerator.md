@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Implement a function, which accepts an integer `n` and returns a spiral numbers matrix (size `n` x `n`). Numbers in matrix are placed according to
+Given integer `n` implement a function which generates a spiral numbers matrix (size `n` x `n`). Numbers in matrix are placed according to
 spiral - starting top left corner and then go right, down, left, up, right...
 
 ## Examples

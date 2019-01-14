@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Write a method that will capitalize first letter of every word.
+Given string implement a function which capitalizes first letter of every word.
 
 ## Examples
 

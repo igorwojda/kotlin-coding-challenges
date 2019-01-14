@@ -75,8 +75,6 @@ private object MaxSubListSumNaiveSolution1 {
 }
 
 private object MaxSubListSumNaiveSolution2 {
-    // Naive solution
-    // Complexity: O(n^2)
     private fun maxSubListSum(list: List<Int>, n: Int): Int? {
         if (list.isEmpty()) return null
 

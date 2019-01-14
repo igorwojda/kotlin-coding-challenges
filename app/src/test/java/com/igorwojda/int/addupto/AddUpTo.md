@@ -4,8 +4,7 @@
 
 [Puzzle files](.)
 
-Implement a function, which accepts a positive Int `n` and calculates sum of all numbers from 1 up tp (and including)
-number `n`
+Given positive integer `n` implement a function which calculates sum of all numbers from `1` up to (and including) number `n`.
 
 ## Examples
 

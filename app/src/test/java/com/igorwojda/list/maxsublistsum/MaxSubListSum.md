@@ -4,8 +4,9 @@
 
 [Puzzle files](.)
 
-Write a function which accepts an `list` of integers and a number called `n`. The function should calculate the maximum sum of `n`
-continuous/consecutive elements in the `list` (`n` digits next to another that have the largest sum).
+
+Given `list` of integers and integer `n` implement a function which calculates the maximum sum of `n` consecutive elements in the `list`
+(sum of `n` digits next to another that have the largest sum).
 
 ## Examples
 

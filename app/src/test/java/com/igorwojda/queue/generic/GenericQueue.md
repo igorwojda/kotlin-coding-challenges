@@ -15,7 +15,7 @@ Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) da
 * `isEmpty` method - return `true` if queue is empty, otherwise return `false`
 
 Adding to the queue should store an element until it is removed. First element added to a queue will be the first that is removed (FIFO).
-This is [generic](https://kotlinlang.org/docs/reference/generics.html) venison of the queue witch means we must define data type for the
+This is [generic](https://kotlinlang.org/docs/reference/generics.html) venison of the queue which means we must define data type for the
 queue (`IntQueue<String>`).
 
 ## Examples

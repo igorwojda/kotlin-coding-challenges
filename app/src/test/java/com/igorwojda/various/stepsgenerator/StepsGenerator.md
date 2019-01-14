@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Implement a function, which accepts a positive integer `n`. The function should return a list representing the generateSteps with n levels using the `#`
+Given a positive integer `n` implement a function which returns a list representing the generated steps with `n` levels using the `#`
 character. Make sure the step has appropriate number of spaces on the right hand side!
 
 ## Examples
