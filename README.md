@@ -99,6 +99,7 @@ Puzzles are segregated by different levels of difficulty.
 * [Square equals](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
 * [Sum zero](app/src/test/java/com/igorwojda/list/sumzero/SumZero.md)
 * [Max sub-list list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
+* [Digit frequency](app/src/test/java/com/igorwojda/int/digitfrequency/DigitFrequency.md)
 
 **Commander**
 * [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
