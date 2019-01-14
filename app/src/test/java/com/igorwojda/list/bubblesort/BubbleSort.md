@@ -31,7 +31,7 @@ Sort `[5, 1, 4, 2, 8]`
 [1, 2, 4, 5, 8] -> [1, 2, 4, 5, 8]
 ```
 
-Now, the array is already sorted, but the algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted
+Now, the list is already sorted, but the algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted
 
 **Third Pass**
 ```

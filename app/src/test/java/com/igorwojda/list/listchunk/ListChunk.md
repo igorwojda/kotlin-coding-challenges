@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Given an array and chunk size, divide the array into multiple sub arrays where each sub array is of length of chunk size.
+Given an list and chunk size, divide the list into multiple sub lists where each sub-list is of length of chunk size.
 
 [Puzzle files](.)
 
