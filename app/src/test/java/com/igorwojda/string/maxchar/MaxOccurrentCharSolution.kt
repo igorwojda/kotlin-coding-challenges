@@ -12,7 +12,8 @@ private object MaxOccurrentCharSolution1 {
     }
 }
 
-// Recursive optimal approach: complexity O(n)
+// Recursive optimal approach:
+// Time complexity: O(n)
 private object MaxOccurrentCharSolution2 {
     private fun recurringChar(str: String): Char? {
         val set = mutableSetOf<Char>()
@@ -29,7 +30,8 @@ private object MaxOccurrentCharSolution2 {
     }
 }
 
-// Recursive naive approach: complexity O(n^2)
+// Recursive naive approach
+// Time complexity: O(n^2)
 private object MaxOccurrentCharSolution3 {
     private fun recurringChar(str: String): Char? {
         str.forEachIndexed { index, c ->

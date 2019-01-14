@@ -2,7 +2,7 @@ package com.igorwojda.list.squareequal
 
 private object SquareEqualasSolution1 {
     // Optimal solution
-    // Complexity: O(n)
+    // Time complexity: O(n)
     private fun squareEquals(list1: List<Int>, list2: List<Int>): Boolean {
         if (list1.size != list2.size) {
             return false
@@ -25,7 +25,7 @@ private object SquareEqualasSolution1 {
 
 private object SquareEqualasSolution2 {
     // Naive solution
-    // Complexity: O(n^2)
+    // Time complexity: O(n^2)
     private fun squareEquals(list1: List<Int>, list2: List<Int>): Boolean {
         val mutableList2 = list2.toMutableList()
 
