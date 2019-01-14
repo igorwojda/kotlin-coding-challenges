@@ -97,7 +97,7 @@ Puzzles are segregated by different levels of difficulty.
 * [Bubble sort](app/src/test/java/com/igorwojda/list/bubblesort/BubbleSort.md)
 * [Selection sort](app/src/test/java/com/igorwojda/list/selectionsort/SelectionSort.md)
 * [Square equals](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
-* [Sum zero](app/src/test/java/com/igorwojda/list/sumzero/SumZero.kt.md)
+* [Sum zero](app/src/test/java/com/igorwojda/list/sumzero/SumZero.md)
 * [Max sub-list list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
 
 **Commander**
