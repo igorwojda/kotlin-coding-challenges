@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Write function to check if range1 contains range2.
+Given two ranges implement a function which checks if range1 contains range2.
 
 ## Examples
 

@@ -4,7 +4,7 @@
 
 [Puzzle files](.)
 
-Implement a function which accepts a sorted list of integers. The function should count the unique values in the list.
+Given two sorted list of integers implement a which function counts the unique values.
 
 ## Examples
 

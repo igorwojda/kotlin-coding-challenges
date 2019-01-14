@@ -4,8 +4,8 @@
 
 [Puzzle files](.)
 
-Implement a function, which accepts a positive Int `n` and Int `step`. The function should return a list representing all numbers from `n` to `1`
-skipping all values by certain step. If `n` value is zero then empty list should be returned.
+Given positive integer `n` and integer `step` implement a function which returns a list representing all numbers from `n` to `1` taking
+`step` into consideration. If `n` value is zero then empty list should be returned.
 
 ## Examples
 
