@@ -2,10 +2,10 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Given string implement a function, which returns the number of vowels used in a string. Vowels are the characters `a`, `e` `i`, `o`, `u` and
 `y`.
+
+[Puzzle files](.)
 
 ## Examples
 

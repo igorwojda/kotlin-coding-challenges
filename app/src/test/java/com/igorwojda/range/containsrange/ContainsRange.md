@@ -2,9 +2,9 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Given two ranges implement a function which checks if range1 contains range2.
+
+[Puzzle files](.)
 
 ## Examples
 

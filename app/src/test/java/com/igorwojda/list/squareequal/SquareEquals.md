@@ -2,11 +2,11 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Given two lists of integers implement a function which returns `true` if every value in the first list has it's corresponding value squared
 in the second list. The frequency of values must be the same eg. if there are two values in first list, two exactly two squared values must
 exist in second list.
+
+[Puzzle files](.)
 
 ## Examples
 

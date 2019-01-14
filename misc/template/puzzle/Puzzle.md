@@ -4,9 +4,9 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 ???
+
+[Puzzle files](.)
 
 ## Limitations
 

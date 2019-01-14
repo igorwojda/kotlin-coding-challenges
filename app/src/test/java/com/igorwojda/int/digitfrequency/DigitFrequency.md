@@ -2,9 +2,9 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Given two integers implement a function which determines if they tah the same frequency of digits.
+
+[Puzzle files](.)
 
 ## Examples
 
