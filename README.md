@@ -64,7 +64,7 @@ We can translate this method into more concrete steps.
 **Understand the problem**
 
 1. Can I rephrase problem using your my own words?
-2. what are the inputs?
+2. What are the inputs?
 3. What are the outputs?
 4. How should I label the important pieces of data that are a part of the problem?
 5. Explore concrete examples
