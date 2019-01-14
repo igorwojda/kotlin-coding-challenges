@@ -10,20 +10,8 @@ and will help you to get new job by passing [whiteboard coding](https://www.quor
 Repository contains one or more solutions for any given puzzle, however keep in mind that each puzzle will usually have more than one
 solution. Even simple puzzle like [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md) can be solved in
 [10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually we are compare various solutions using
-([Big O notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)) and we look at code
-readability.
-
-To be good at solving programming puzzles you will also need a proper problem solving strategy.
-
-In 1945 Hungarian mathematician
-[George Pólya](https://en.wikipedia.org/wiki/George_P%C3%B3lya), [described](https://en.wikipedia.org/wiki/How_to_Solve_It) famous method of
-problem solving:
-
-* First, we have to [understand](https://en.wikipedia.org/wiki/Understanding) the [problem](https://en.wikipedia.org/wiki/Problem)
-* After understanding [make a plan](https://en.wikipedia.org/wiki/Plan)
-* Carry out the plan. [Look back](https://en.wikipedia.org/wiki/Review)
-* [Look back ](https://en.wikipedia.org/wiki/Review) on your work.
-  [How could it be better?](https://en.wikipedia.org/wiki/Scientific_method)
+([Big O notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)) to determine space/time
+complexity and latter we look at code readability.
 
 # How do I start?
 
@@ -57,18 +45,55 @@ to run one or more tests in the class ([screen](./misc/image/RunTest.png)). Afte
 
 Larger puzzles will have larger test base, so tests have to be uncommented one by one while solving various steps of the given puzzle.
 
-# Coding puzzles
+## Solving puzzles
 
-Before solving any task I strongly encourage you to take a pen, piece of paper, take your time and think about the puzzle. Take your time
-before you take a look at the presented solution (sometimes one-night sleep is all we need before solution pop-ups into our head).
+To be good at solving programming puzzles you will also need a proper problem solving strategy.
 
-Order of the programming puzzles is random for now, however, some of them may contain a reference to puzzles that should be solved before
-to make the final puzzle easier. It all up to you how you approach this, just remember that to succeed you need to practice often, repeat
-same tasks multiple times be patient and persistent over time.
+In 1945 Hungarian mathematician
+[George Pólya](https://en.wikipedia.org/wiki/George_P%C3%B3lya), [described](https://en.wikipedia.org/wiki/How_to_Solve_It) famous method of
+problem solving:
+
+* First, we have to [understand](https://en.wikipedia.org/wiki/Understanding) the [problem](https://en.wikipedia.org/wiki/Problem)
+* After understanding [make a plan](https://en.wikipedia.org/wiki/Plan)
+* Carry out the plan. [Look back](https://en.wikipedia.org/wiki/Review)
+* [Look back ](https://en.wikipedia.org/wiki/Review) on your work.
+  [How could it be better?](https://en.wikipedia.org/wiki/Scientific_method)
+
+We can translate this method into more concrete steps.
+
+**Understand the problem**
+
+1. Can I rephrase problem using your my own words?
+2. what are the inputs?
+3. What are the outputs?
+4. How should I label the important pieces of data that are a part of the problem?
+5. Explore concrete examples
+   1. Start with simple examples and progress to more complex ones
+   2. Explore empty inputs
+   3. Explore invalid inputs
+
+**Break it down**
+
+1. Write exact, atomic steps we need to take (as comments in file)
+
+**Solve it**
+
+Solve the problem. If you can't just solve similar problem or try to solve current problem by temporally excluding
+most difficult part.
+
+**Refactor & Simplify**
+
+1. Try to refactor te code
+2. Improve performance (Big-O notation)
+3. Check how other people solved this problem
+
+Take your time before you take a look at the presented solution.
 
 ## Kotlin programing puzzles
 
-Puzzles are segregated by different levels of difficulty.
+Puzzles are segregated by different difficulty. Some puzzle may contain a reference to puzzles that should be solved before to
+have better understanding of the problem.  To succeed you need to practice often, repeat same puzzles multiple times and
+be persistent over time. Good luck!
 
 **New in Town**
 * [Sentence capitalization](app/src/test/java/com/igorwojda/string/calitalisesentence/CapitalizeSentence.md)
