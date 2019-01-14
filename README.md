@@ -87,13 +87,11 @@ most difficult part.
 2. Improve performance (Big-O notation)
 3. Check how other people solved this problem
 
-Take your time before you take a look at the presented solution.
-
 ## Kotlin programing puzzles
 
 Puzzles are segregated by different difficulty. Some puzzle may contain a reference to puzzles that should be solved before to
-have better understanding of the problem.  To succeed you need to practice often, repeat same puzzles multiple times and
-be persistent over time. Good luck!
+have better understanding of the problem. To succeed you need to practice often, repeat same puzzles multiple times and
+be persistent over time. Take your time before you take a look at the presented solution. Good luck!
 
 **New in Town**
 * [Sentence capitalization](app/src/test/java/com/igorwojda/string/calitalisesentence/CapitalizeSentence.md)
