@@ -2,7 +2,7 @@ package com.igorwojda.list.sumzero
 
 private object SumZeroSolution1 {
     // Optimal solution
-    // Complexity: O(n)
+    // Time complexity: O(n)
     fun sumZero(list: List<Int>): Pair<Int, Int>? {
         if (list.isEmpty()) {
             return null
@@ -30,7 +30,7 @@ private object SumZeroSolution1 {
 
 private object SumZeroSolution2 {
     // Naive solution
-    // Complexity: O(n^2)
+    // Time complexity: O(n^2)
     fun sumZero(list: List<Int>): Pair<Int, Int>? {
         list.forEachIndexed { index, element1 ->
             (index..list.lastIndex).forEach { index2 ->
