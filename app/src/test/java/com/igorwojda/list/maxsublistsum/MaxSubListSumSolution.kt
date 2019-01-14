@@ -35,7 +35,7 @@ private object OptimalSolution2 {
     }
 }
 
-// Time Complexity: O(n^2)
+// Time Complexity: O(n*m)
 // Loop through the list and at each index loop again to calculate sum of sublist (from index to index + n)
 private object NaiveSolution1 {
     private fun maxSubListSum(list: List<Int>, n: Int): Int? {
