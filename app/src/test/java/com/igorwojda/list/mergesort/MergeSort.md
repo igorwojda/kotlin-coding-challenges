@@ -2,8 +2,6 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Sort list of numbers from lowest number to greatest number using [merge sort](https://en.wikipedia.org/wiki/Merge_sort).
 
 Algorithm:
@@ -12,6 +10,7 @@ Algorithm:
 3. Split lists until each list has single element (a list containing one element is considered sorted)
 4. Merge sub-lists to produce new sorted sub-lists until there is only one sub-list remaining. This will be the sorted list.
 
+[Puzzle files](.)
 
 ## Examples
 

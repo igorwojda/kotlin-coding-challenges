@@ -2,8 +2,6 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Traverse [tree](https://en.wikipedia.org/wiki/Tree_(data_structure)) using `Breath-First` and `Depth-First` traversals (every single node
 can have unlimited number of children).
 

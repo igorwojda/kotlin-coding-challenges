@@ -2,9 +2,9 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Given a `String` implement a function which returns a reversed copy of that string.
+
+[Puzzle files](.)
 
 ## Limitations:
 

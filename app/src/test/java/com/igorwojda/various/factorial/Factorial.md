@@ -2,10 +2,10 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Given positive long `n` implement a function, which returns a [factorial](https://en.wikipedia.org/wiki/Factorial). Factorial is number that
 is created by multiplying all whole numbers from our chosen number `n` down to 1.
+
+[Puzzle files](.)
 
 ## Examples
 

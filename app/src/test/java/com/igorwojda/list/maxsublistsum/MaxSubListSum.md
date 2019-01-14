@@ -2,11 +2,11 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 
 Given `list` of integers and integer `n` implement a function which calculates the maximum sum of `n` consecutive elements in the `list`
 (sum of `n` digits next to another that have the largest sum).
+
+[Puzzle files](.)
 
 ## Examples
 

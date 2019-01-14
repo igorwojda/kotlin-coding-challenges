@@ -2,9 +2,9 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Given two sorted list of integers implement a which function counts the unique values.
+
+[Puzzle files](.)
 
 ## Examples
 

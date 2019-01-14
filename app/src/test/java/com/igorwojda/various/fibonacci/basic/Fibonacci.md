@@ -2,8 +2,6 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Print out the n-th entry in the fibonacciSequence series. The
 [fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number) series is an
 ordering of numbers where each number is the sum of the preceding two.

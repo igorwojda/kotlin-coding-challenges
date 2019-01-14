@@ -2,9 +2,9 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Given string implement a function which capitalizes first letter of every word.
+
+[Puzzle files](.)
 
 ## Examples
 

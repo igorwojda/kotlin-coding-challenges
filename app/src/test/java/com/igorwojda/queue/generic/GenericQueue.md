@@ -6,8 +6,6 @@
 
 ## Instructions
 
-[Puzzle files](.)
-
 Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) data structure. The queue should be a class with methods:
 * `add` method - adds element to a queue (enqueue the element)
 * `remove` method - removes the element from a queue (enqueue the element)
@@ -17,6 +15,8 @@ Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) da
 Adding to the queue should store an element until it is removed. First element added to a queue will be the first that is removed (FIFO).
 This is [generic](https://kotlinlang.org/docs/reference/generics.html) venison of the queue which means we must define data type for the
 queue (`IntQueue<String>`).
+
+[Puzzle files](.)
 
 ## Examples
 
