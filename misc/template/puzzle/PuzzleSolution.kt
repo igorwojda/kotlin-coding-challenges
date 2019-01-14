@@ -1,5 +1,13 @@
 package com.igorwojda.puzzle
 
-private object PuzzleSolution {
+// Time compexity:
+// ???
+private object OptimalSolution {
+
+}
+
+// Time compexity:
+// ???
+private object NaiveSolution {
 
 }
