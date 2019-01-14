@@ -15,7 +15,7 @@ private object MergeSortSolution {
         return merge(mergeSort(left), mergeSort(right))
     }
 
-    //Take two sorted arrays and merge them together into one sorted array
+    //Take two sorted lists and merge them together into one sorted list
     private fun merge(left: List<Int>, right: List<Int>): MutableList<Int> {
         val result = mutableListOf<Int>()
         val mutableLeft = left.toMutableList()

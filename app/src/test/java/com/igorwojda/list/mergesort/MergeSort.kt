@@ -7,7 +7,7 @@ private fun mergeSort(list: List<Int>): List<Int> {
     return list
 }
 
-//Merge two sorted arrays one sorted array
+//Merge two sorted lists into one sorted list
 private fun merge(left: List<Int>, right: List<Int>): MutableList<Int> {
     return mutableListOf()
 }

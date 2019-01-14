@@ -9,7 +9,7 @@ private fun generateSpiralMatrix(n: Int): List<MutableList<Int?>> {
 
 class SpiralMatrixGeneratorTest {
     @Test
-    fun `matrix produces a 2x2 array`() {
+    fun `generateSpiralMatrix generates a 2x2 matrix`() {
         val matrix = generateSpiralMatrix(2)
         matrix.size shouldEqual 2
         matrix[0] shouldEqual listOf(1, 2)
@@ -17,7 +17,7 @@ class SpiralMatrixGeneratorTest {
     }
 
     @Test
-    fun `matrix produces a 3x3 array`() {
+    fun `generateSpiralMatrix generates a 3x3 matrix`() {
         val matrix = generateSpiralMatrix(3)
         matrix.size shouldEqual 3
         matrix[0] shouldEqual listOf(1, 2, 3)
@@ -26,7 +26,7 @@ class SpiralMatrixGeneratorTest {
     }
 
     @Test
-    fun `matrix produces a 4x4 array`() {
+    fun `generateSpiralMatrix generates a 4x4 matrix`() {
         val matrix = generateSpiralMatrix(4)
         matrix.size shouldEqual 4
         matrix[0] shouldEqual listOf(1, 2, 3, 4)
