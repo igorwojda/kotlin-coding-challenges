@@ -148,20 +148,20 @@ be persistent over time. Take your time before you take a look at the presented 
 
 # References
 
+## Articles
+
+* [Data structures explained](https://medium.com/basecs/tagged/data-structures) series
+
 ## Books
 
-* [Cracking the Coding Interview](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
+* [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
 * [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
-* [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms/)
 
 ## Video courses
 
 * [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/)
 * [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
-
-## Articles
-
-* [Data structures explained by Vaidehi Joshi](https://medium.com/basecs/tagged/data-structures)
+* [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms/)
 
 ## Coding problems websites
 
