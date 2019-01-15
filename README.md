@@ -124,6 +124,7 @@ be persistent over time. Take your time before you take a look at the presented 
 * [Max sub-list list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
 * [Digit frequency](app/src/test/java/com/igorwojda/int/digitfrequency/DigitFrequency.md)
 * [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedparams/GetDuplicatedArguments.md)
+* [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
 
 **Commander**
 * [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
