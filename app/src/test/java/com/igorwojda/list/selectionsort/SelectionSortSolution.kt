@@ -8,12 +8,12 @@ private object SelectionSortSolution {
             var indexOfMin = i
 
             ((i + 1)..sorted.lastIndex).forEach { j ->
-                if(sorted[j] < sorted[indexOfMin]) {
+                if (sorted[j] < sorted[indexOfMin]) {
                     indexOfMin = j
                 }
             }
 
-            if(indexOfMin != i) {
+            if (indexOfMin != i) {
                 val temp = sorted[i]
                 sorted[i] = sorted[indexOfMin]
                 sorted[indexOfMin] = temp

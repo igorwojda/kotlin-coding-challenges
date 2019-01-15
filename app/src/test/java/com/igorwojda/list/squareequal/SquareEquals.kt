@@ -33,13 +33,3 @@ class SquareEqualsTest {
         squareEquals(listOf(1, 2, 1), listOf(4, 1, 4)) shouldEqual false
     }
 }
-
-
-
-
-
-
-
-
-
-
