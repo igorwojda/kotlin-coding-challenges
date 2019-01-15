@@ -96,7 +96,7 @@ have better understanding of the problem. To succeed you need to practice often,
 be persistent over time. Take your time before you take a look at the presented solution. Good luck!
 
 **New in Town**
-* [Sentence capitalization](app/src/test/java/com/igorwojda/string/calitalisesentence/CapitalizeSentence.md)
+* [Capitalize sentence](app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
 * [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
 * [Add up to](app/src/test/java/com/igorwojda/int/addupto/AddUpTo.md)
 * [Count up and down](app/src/test/java/com/igorwojda/various/countupanddown/CountUpAndDown.md)

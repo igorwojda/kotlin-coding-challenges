@@ -1,4 +1,4 @@
-package com.igorwojda.string.calitalisesentence
+package com.igorwojda.string.capitalizesentence
 
 private object capitalizeSolution1 {
     private fun capitalize(str: String): String {

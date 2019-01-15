@@ -1,4 +1,4 @@
-package com.igorwojda.string.calitalisesentence
+package com.igorwojda.string.capitalizesentence
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
