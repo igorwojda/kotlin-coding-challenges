@@ -1,7 +1,12 @@
 package com.igorwojda.various.stepsgenerator
 
-// iterative solution
+// Kotlin repeat function
 private object StepsGeneratorSolution1 {
+    private fun generateSteps(n: Int) = List(n) { "#".repeat(it + 1) + " ".repeat(n - it - 1) }
+}
+
+// iterative solution
+private object StepsGeneratorSolution2 {
     private fun generateSteps(n: Int): MutableList<String> {
         val list = mutableListOf<String>()
 
@@ -21,7 +26,7 @@ private object StepsGeneratorSolution1 {
 }
 
 // recursive solution
-private object StepsGeneratorSolution2 {
+private object StepsGeneratorSolution3 {
     private fun generateSteps(n: Int, row: Int = 0, stair: String = "") {
         // handle complete all of the work
         if (n == row) {
