@@ -1,7 +1,7 @@
 package com.igorwojda.int.digitfrequency
 
 // Time complexity: O(n)
-// Create digit frequency map for each integer and compare them
+// Generate digit frequency map for each integer and compare them
 private object OptimalSolution {
     private fun equalDigitFrequency(i1: Int, i2: Int): Boolean {
         val i1Str = i1.toString()
