@@ -2,16 +2,16 @@
 
 This repository contains a set of [programming puzzles](#kotlin-programing-puzzles) that meant to be solved using
 [Kotlin](https://kotlinlang.org/) language (no worries hints, solutions and tests that will verify your solution are here as well). Purpose
-of this repository is to help you to practice deliberately and develop strong problem solving skills. This will make you better programmer
+of this repository is to help you to practice deliberately and develop strong problem-solving skills. This will make you better programmer
 and will help you to get new job by passing [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
 ## Solutions
 
-Repository contains one or more solutions for any given puzzle, however keep in mind that each puzzle will usually have more than one
+The repository contains one or more solutions for any given puzzle, however, keep in mind that each puzzle will usually have more than one
 solution. Even simple puzzle like [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md) can be solved in
-[10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually we are compare various solutions using
+[10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually, we compare various solutions using
 ([Big O notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)) to determine space/time
-complexity and latter we look at code readability.
+complexity and later we look at code readability.
 
 # How do I start?
 
@@ -20,34 +20,36 @@ complexity and latter we look at code readability.
 This repository contains [Android Studio](https://developer.android.com/studio/) project. We can quickly open the project simply
 by checking out this the project from git repository.
 
-1. Install Android Studio (we need version 3.3+ because of a [bug](https://youtrack.jetbrains.com/issue/KT-28090) that reruns tests incorrectly)
+1. Install Android Studio (we need version 3.3+ because of a [bug](https://youtrack.jetbrains.com/issue/KT-28090) in previous versions that reruns tests incorrectly)
 2. Install git `brew install git` using cmd
 3. Import project by using Android Studio menu: `File -> New -> Project From Version Control -> Git`
 4. Enter Repository URL `https://github.com/igorwojda/kotlin-coding-puzzle.git`  and click `clone`
 5. Navigate to [app/src/test/java/com/igorwojda](app/src/test/java/com/igorwojda/) folder in `Project` view or
    [app/java/com (test)/igorwojda](app/src/test/java/com/igorwojda/) in `Android` view in project panel.
 6. Optionally install [Markdown Navigator](https://plugins.jetbrains.com/plugin/7896-markdown-navigator) plugin for Android studio to have
-   ice preview of markdown files (files containing puzzles description)
+   nice preview of markdown files (files containing puzzles description)
+
+**Info**: If you can't run tests after opening the project please restart Android Studio.
 
 ## Puzzle structure
 
 Each puzzle is located in separate package and it contains 3 files ([screen](./misc/image/SampleTask.png)):
 * `Puzzle.md` - description of the puzzle
-* `Puzzle.kt` - contains empty method/class where puzzle should be solved and set of tests to run
+* `Puzzle.kt` - contains empty method/class where puzzle should be solved and a set of tests to run
 * `PuzzleSolution.kt` - file that contains one or more puzzle solutions (encapsulated in Kotlin `object` just to avoid conflicts with
   other coding puzzles)
 
 ## Running tests
 
-Open `Puzzle.kt` file for a any puzzle. Locate class with `Test` suffix (`PuzzleTest`). Click on the green green arrow close to line number
-to run one or more tests in the class ([screen](./misc/image/RunTest.png)). After running the test you can rerun last configuration using
+Open `Puzzle.kt` file for any puzzle. Locate class with `Test` suffix (`PuzzleTest`). Click on the green green arrow close to line number
+to run one or more tests in the class ([screen](./misc/image/RunTest.png)). After running the test you can rerun the last configuration using
 `Run command` (`⌘ + R`).
 
 Larger puzzles will have larger test base, so tests have to be uncommented one by one while solving various steps of the given puzzle.
 
 ## Solving puzzles
 
-To be good at solving programming puzzles you will also need a proper problem solving strategy.
+To be good at solving-programming puzzles you will also need a proper problem solving strategy.
 
 In 1945 Hungarian mathematician
 [George Pólya](https://en.wikipedia.org/wiki/George_P%C3%B3lya), [described](https://en.wikipedia.org/wiki/How_to_Solve_It) famous method of
@@ -74,11 +76,11 @@ We can translate this method into more concrete steps.
 
 **Break it down**
 
-1. Write exact, atomic steps we need to take (as comments in file)
+1. Write exact, atomic steps we need to take (as comments in the file)
 
 **Solve it**
 
-Solve the problem. If you can't just solve similar problem or try to solve current problem by temporally excluding
+Solve the problem. If you can't just solve similar problem or try to solve current problem by temporally excluding the
 most difficult part.
 
 **Refactor & Simplify**
