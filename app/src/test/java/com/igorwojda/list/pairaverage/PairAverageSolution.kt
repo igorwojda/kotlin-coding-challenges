@@ -4,7 +4,7 @@ package com.igorwojda.list.pairaverage
 // Double pointer solution
 private object OptimalSolution {
     fun hasAverage(list: List<Int>, average: Double): Boolean {
-        if(list.size < 2) {
+        if (list.size < 2) {
             return false
         }
 
@@ -24,3 +24,5 @@ private object OptimalSolution {
         return false
     }
 }
+
+private object KtLintWillNotComplain

@@ -29,4 +29,3 @@ private object AddUpToSolution4 {
         return n * (n + 1) / 2
     }
 }
-

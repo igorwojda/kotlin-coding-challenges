@@ -11,7 +11,7 @@ private object SumZeroSolution1 {
         var leftIndex = 0
         var rightIndex = list.lastIndex
 
-        //declare loop
+        // declare loop
         while (leftIndex != rightIndex) {
             val leftElement = list[leftIndex]
             val rightElement = list[rightIndex]

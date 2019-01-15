@@ -7,15 +7,15 @@ fun hasAverage(list: List<Int>, average: Double): Boolean {
     return false
 }
 
-private fun <E> MutableList<E>.aaa2(a:E) {
+private fun <E> MutableList<E>.aaa2(a: E) {
     set(0, a)
 }
 
-fun MutableList<Int>.aaa( ) {
+fun MutableList<Int>.aaa() {
     set(0, 12)
 }
 
-inline fun <K, V>MutableMap<K, V>.incrementExisting(key: K, value: V): Unit {
+inline fun <K, V> MutableMap<K, V>.incrementExisting(key: K, value: V) {
     put(key, value)
 }
 

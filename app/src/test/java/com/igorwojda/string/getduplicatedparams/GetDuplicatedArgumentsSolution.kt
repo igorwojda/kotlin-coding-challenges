@@ -20,7 +20,7 @@ private object OptimalSolution2 {
         val sortedList = strings.sorted()
 
         for (it in 0 until sortedList.lastIndex) {
-            if(sortedList[currentIndex] == sortedList[nextIndex]) {
+            if (sortedList[currentIndex] == sortedList[nextIndex]) {
                 result.add(sortedList[currentIndex])
             }
 

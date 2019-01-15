@@ -30,7 +30,7 @@ private object NaiveSolution {
         }
 
         i1Str.forEach {
-            //under the hood 'indexOf' iterates through entire list (it's like nested loop)
+            // under the hood 'indexOf' iterates through entire list (it's like nested loop)
             val index = i2Str.indexOf(it)
 
             if (index == -1) {
