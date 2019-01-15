@@ -177,6 +177,10 @@ be persistent over time. Take your time before you take a look at the presented 
 If you think something is incorrect, you have found a new puzzle, have a better solution or simply you want to [add new puzzle](/misc/wiki/adding_new_puzzle.md)
 please create PR or open a new issue.
 
+# Contributors
+* [Alan Evans](https://github.com/alanevansbc)
+* [Norbert Kiesel](https://github.com/nkiesel)
+
 # Follow me
 
 ![avatar.png](misc/image/avatar.png)
