@@ -127,6 +127,7 @@ be persistent over time. Take your time before you take a look at the presented 
 * [Digit frequency](app/src/test/java/com/igorwojda/int/digitfrequency/DigitFrequency.md)
 * [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedparams/GetDuplicatedArguments.md)
 * [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
+* [Is substring](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 
 **Commander**
 * [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
