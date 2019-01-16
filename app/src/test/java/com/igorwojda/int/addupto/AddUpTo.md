@@ -9,6 +9,8 @@ Given positive integer `n` implement a function which calculates sum of all numb
 
 ```
 addUpTo(1) // 1
+
 addUpTo(2) // 3
+
 addUpTo(3) // 6
 ```

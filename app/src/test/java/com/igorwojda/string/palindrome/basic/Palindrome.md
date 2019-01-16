@@ -11,7 +11,7 @@ reversed. Include spaces and punctuation in determining if the string is a palin
 
 ```
 palindrome("abba") // true
-palindrome("abcdefg") // false
 
+palindrome("abcdefg") // false
 ```
 

@@ -12,6 +12,8 @@ Given `list` of integers and integer `n` implement a function which calculates t
 
 ```
 maxSubListSum(listOf<Int>(), 3) // null
+
 maxSubListSum(listOf(4, 2, 7), 2) // 9
+
 maxSubListSum(listOf(4, 2, 7, 5, 8, 9, 5, 1), 3) // 22
 ```

@@ -10,6 +10,7 @@ Given string implement a function which capitalizes first letter of every word.
 
 ```
 capitalize("flower") // "Flower"
+
 capitalize("this is a house") // "This Is A House"
 ```
 

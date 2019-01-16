@@ -11,7 +11,9 @@ empty list should be returned.
 
 ```
 printNumber(0) // []
+
 printNumber(2) // [2, 1]
+
 printNumber(5) // [5, 4, 3, 2, 1]
 ```
 

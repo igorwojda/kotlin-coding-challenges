@@ -22,7 +22,6 @@ Sort `[5, 1, 4, 2]`
      [5]    [1]   [4]    [2] All lists are sorted
        [1, 5]        [2,4] Merge
           [1, 5, 2, 4] Merge
-    
 ```
 
 

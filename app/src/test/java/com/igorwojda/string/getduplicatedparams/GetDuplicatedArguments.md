@@ -11,8 +11,8 @@ list of all unique duplicates. If no params arguments are passes return empty li
 
 ```
 getDuplicatedParams("a", "b", "c") //empty list
-getDuplicatedParams("a", "b", "c", "a") // [a]
 
+getDuplicatedParams("a", "b", "c", "a") // [a]
 ```
 
 ## Hints

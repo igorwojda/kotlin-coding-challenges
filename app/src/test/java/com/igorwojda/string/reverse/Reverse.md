@@ -14,7 +14,9 @@ Don't use Kotlin `String.reverse` function
 
 ```
 reverse('apple') == 'leppa'
+
 reverse('hello') == 'olleh'
+
 reverse('Greetings!') == '!sgniteerG'
 ```
 

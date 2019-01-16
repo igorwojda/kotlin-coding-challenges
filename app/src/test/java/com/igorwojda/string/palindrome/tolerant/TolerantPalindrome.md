@@ -16,8 +16,9 @@ Our string will be (tolerant) palindrome if after removing one character string 
 
 ```
 tolerantPalindrome("abba") == true
-tolerantPalindrome("abb#a") == true
-tolerantPalindrome("abcdefg") == false
 
+tolerantPalindrome("abb#a") == true
+
+tolerantPalindrome("abcdefg") == false
 ```
 
