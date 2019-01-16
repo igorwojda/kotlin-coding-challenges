@@ -1,6 +1,6 @@
 # Kotlin coding puzzles
 
-This repository contains a set of [programming puzzles](#kotlin-programing-puzzles) that meant to be solved using
+This repository contains a set of [programming puzzles](#kotlin-programing-puzzles) that meant to be solved using 
 [Kotlin](https://kotlinlang.org/) language (no worries hints, solutions and tests that will verify your solution are
 here as well). Purpose of this repository is to help you to practice deliberately and develop strong problem-solving
 skills. This will make you better programmer and will help you to get new job by passing
@@ -16,11 +16,13 @@ Each puzzle is located in separate package and it contains 3 files ([screen](./m
 
 # Solutions
 
-The repository contains one or more solutions for any given puzzle, however, keep in mind that each puzzle will usually have more than one
-solution. Even simple puzzle like [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md) can be solved in
-[10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually, we compare various solutions using
-([Big O notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)) to determine space/time
-complexity and later we look at code readability.
+The repository contains one or more solutions for any given puzzle, however, keep in mind that each puzzle will usually
+have more than one solution. Even simple puzzle like
+[String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md) can be solved in
+[10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually, we compare various
+solutions using
+([Big O notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)) to
+determine space/time complexity and later we look at code readability.
 
 # How do I start?
 
@@ -112,6 +114,8 @@ be persistent over time. Take your time before you take a look at the presented 
 - [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
 - [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
 - [Int reversal](app/src/test/java/com/igorwojda/int/reverse/Reverse.md)
+- [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
+- [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
 
 **Warrior**
 - [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
@@ -129,7 +133,8 @@ be persistent over time. Take your time before you take a look at the presented 
 - [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedparams/GetDuplicatedArguments.md)
 - [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
 - [Is substring](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
-
+- [Min sub-list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
+- 
 **Commander**
 - [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
 - [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
@@ -141,8 +146,6 @@ be persistent over time. Take your time before you take a look at the presented 
 - [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
 - [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
 - [Merge sort](app/src/test/java/com/igorwojda/list/mergesort/MergeSort.md)
-- [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
-- [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
 - [Fibonacci](app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md)
 - [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
 - [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
