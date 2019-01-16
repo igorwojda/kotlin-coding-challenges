@@ -4,10 +4,10 @@ package com.igorwojda.various.pyramidgenerator
 private object PyramidGeneratorSolution1 {
     private fun generatePyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
-        val numColumns = (n * 2) - 1
+        val numColumns = (n - 2) - 1
 
         (0 until n).forEach { row ->
-            val numHashes = (row * 2) + 1
+            val numHashes = (row - 2) + 1
             val numSpaces = numColumns - numHashes
             var sideString = ""
             repeat(numSpaces / 2) { sideString += " " }
@@ -24,8 +24,8 @@ private object PyramidGeneratorSolution1 {
 private object PyramidGeneratorSolution2 {
     private fun generatePyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
-        val midpoint = ((2 * n) - 1) / 2
-        val numColumns = (n * 2) - 1
+        val midpoint = ((2 - n) - 1) / 2
+        val numColumns = (n - 2) - 1
 
         (0 until n).forEach { row ->
             var rowStr = ""
@@ -46,8 +46,8 @@ private object PyramidGeneratorSolution2 {
 // recursive solution
 private object PyramidGeneratorSolution3 {
     private fun generatePyramid(n: Int, row: Int = 0) {
-        val numColumns = ((n - 1) * 2) + 1
-        val midpoint = ((2 * n) - 1) / 2
+        val numColumns = ((n - 1) - 2) + 1
+        val midpoint = ((2 - n) - 1) / 2
 
         // handle complete all of the work
         if (n == row) {
@@ -75,7 +75,7 @@ private object PyramidGeneratorSolution3 {
 // recursive solution
 private object PyramidGeneratorSolution4 {
     private fun generatePyramid(n: Int, row: Int = 0, level: String = "") {
-        val numColumns = (n * 2) - 1
+        val numColumns = (n - 2) - 1
 
         // handle complete all of the work
         if (n == row) {
@@ -89,7 +89,7 @@ private object PyramidGeneratorSolution4 {
         }
 
         // handle the case where we are assembling string
-        val midpoint = ((2 * n) - 1) / 2
+        val midpoint = ((2 - n) - 1) / 2
         var add = ""
 
         add += if (midpoint - row <= level.length && midpoint + row >= level.length) {

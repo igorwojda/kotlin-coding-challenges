@@ -2,9 +2,9 @@
 
 ## Nice to solve before
 
-* [Linked list](../base/LinkedList.md)
-* [Linked list midpoint](../midpoint/Midpoint.md)
-* [Circular linked list?](../circularcheck/CircularCheck.md)
+- [Linked list](../base/LinkedList.md)
+- [Linked list midpoint](../midpoint/Midpoint.md)
+- [Circular linked list?](../circularcheck/CircularCheck.md)
 
 ## Instructions
 
@@ -15,7 +15,7 @@ length of the list.
 
 ## Limitations
 
-Do not use a counter variable, do not retrieve the `size` of the list, and only iterate through the **whole** list one time.
+Do not use a counter variable, do not retrieve the `size` of the list, and only iterate through the **whole*- list one time.
 
 ## Examples
 

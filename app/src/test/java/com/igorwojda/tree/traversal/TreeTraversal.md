@@ -9,9 +9,9 @@ can have unlimited number of children).
 
 ### 1. Breath First traversal (BF traversal)
 
-* **Description**: Implement breath-first traversal - traversal, where we visit every node on a level before going to a lower
+- **Description**: Implement breath-first traversal - traversal, where we visit every node on a level before going to a lower
   level.
-* **Test**: `breath first traverse`
+- **Test**: `breath first traverse`
 
 Example:
 
@@ -19,9 +19,9 @@ Example:
 
 ### 2. Depth First traversal (DF traversal)
 
-* **Description**: Implement depth-first traversal - traversal, where we visit node and then all of it's children before visiting next
+- **Description**: Implement depth-first traversal - traversal, where we visit node and then all of it's children before visiting next
   node.
-* **Test**: `depth first traverse`
+- **Test**: `depth first traverse`
 
 Example:
 ![depth_first_traversal.svg](misc/depth_first_traversal.svg)
