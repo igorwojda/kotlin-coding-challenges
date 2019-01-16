@@ -9,16 +9,26 @@ spiral - starting top left corner and then go right, down, left, up, right...
 
 ## Examples
 
+Example 1
+
 ```
 generateSpiralMatrix(2)
    [[1, 2],
    [4, 3]]
+```
 
+Example 2
+
+```
 generateSpiralMatrix(3)
    [[1, 2, 3],
    [8, 9, 4],
    [7, 6, 5]]
+```
 
+Example 3
+
+```
 generateSpiralMatrix(4)
    [[1,   2,  3, 4],
    [12, 13, 14, 5],

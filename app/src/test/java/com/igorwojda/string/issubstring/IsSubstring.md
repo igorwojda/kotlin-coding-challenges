@@ -21,7 +21,6 @@ isSubstring("go home", "ome") // true
 isSubstring("go home", "me") // true
 
 isSubstring("go home", "abc") // false
-
 ```
 
 ## Hints

@@ -12,7 +12,9 @@ Consider capital letters to be the same as lower case.
 
 ```
 anagrams('rail safety', 'fairy tales') --> True
+
 anagrams('RAIL! SAFETY!', 'fairy tales') --> True
+
 anagrams('Hi there', 'Bye there') --> False
 ```
 
