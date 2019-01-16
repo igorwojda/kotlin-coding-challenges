@@ -154,7 +154,7 @@ be persistent over time. Take your time before you take a look at the presented 
 - [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
 - [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
 
-# Referencessss
+# References
 
 ## Articles
 
