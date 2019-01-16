@@ -134,7 +134,7 @@ be persistent over time. Take your time before you take a look at the presented 
 - [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
 - [Is substring](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 - [Min sub-list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
-- 
+
 **Commander**
 - [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
 - [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
@@ -154,7 +154,7 @@ be persistent over time. Take your time before you take a look at the presented 
 - [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
 - [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
 
-# References
+# Referencessss
 
 ## Articles
 
