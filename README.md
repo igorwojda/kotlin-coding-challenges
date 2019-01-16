@@ -8,9 +8,9 @@ and will help you to get new job by passing [whiteboard coding](https://www.quor
 ## Puzzle structure
 
 Each puzzle is located in separate package and it contains 3 files ([screen](./misc/image/SampleTask.png)):
-* `Puzzle.md` - description of the puzzle
-* `Puzzle.kt` - contains empty method/class where puzzle should be solved and a set of tests to run
-* `PuzzleSolution.kt` - file that contains one or more puzzle solutions (encapsulated in Kotlin `object` just to avoid conflicts with
+- `Puzzle.md` - description of the puzzle
+- `Puzzle.kt` - contains empty method/class where puzzle should be solved and a set of tests to run
+- `PuzzleSolution.kt` - file that contains one or more puzzle solutions (encapsulated in Kotlin `object` just to avoid conflicts with
   other coding puzzles)
 
 # Solutions
@@ -55,10 +55,10 @@ In 1945 Hungarian mathematician
 [George Pólya](https://en.wikipedia.org/wiki/George_P%C3%B3lya), [described](https://en.wikipedia.org/wiki/How_to_Solve_It) famous method of
 problem solving:
 
-* First, we have to [understand](https://en.wikipedia.org/wiki/Understanding) the [problem](https://en.wikipedia.org/wiki/Problem)
-* After understanding [make a plan](https://en.wikipedia.org/wiki/Plan)
-* Carry out the plan. [Look back](https://en.wikipedia.org/wiki/Review)
-* [Look back ](https://en.wikipedia.org/wiki/Review) on your work.
+- First, we have to [understand](https://en.wikipedia.org/wiki/Understanding) the [problem](https://en.wikipedia.org/wiki/Problem)
+- After understanding [make a plan](https://en.wikipedia.org/wiki/Plan)
+- Carry out the plan. [Look back](https://en.wikipedia.org/wiki/Review)
+- [Look back ](https://en.wikipedia.org/wiki/Review) on your work.
   [How could it be better?](https://en.wikipedia.org/wiki/Scientific_method)
 
 We can translate this method into more concrete steps.
@@ -96,84 +96,84 @@ have better understanding of the problem. To succeed you need to practice often,
 be persistent over time. Take your time before you take a look at the presented solution. Good luck!
 
 **New in Town**
-* [Capitalize sentence](app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
-* [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
-* [Add up to](app/src/test/java/com/igorwojda/int/addupto/AddUpTo.md)
-* [Count up and down](app/src/test/java/com/igorwojda/various/countupanddown/CountUpAndDown.md)
-* [Get all pairs](app/src/test/java/com/igorwojda/various/getallpairs/GetAllPairs.md)
-* [List count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
+- [Capitalize sentence](app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
+- [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
+- [Add up to](app/src/test/java/com/igorwojda/int/addupto/AddUpTo.md)
+- [Count up and down](app/src/test/java/com/igorwojda/various/countupanddown/CountUpAndDown.md)
+- [Get all pairs](app/src/test/java/com/igorwojda/various/getallpairs/GetAllPairs.md)
+- [List count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
 
 **Apprentice**
-* [Palindrome](app/src/test/java/com/igorwojda/string/palindrome/basic/Palindrome.md)
-* [Tolerant palindrome](app/src/test/java/com/igorwojda/string/palindrome/tolerant/TolerantPalindrome.md)
-* [Anagram](app/src/test/java/com/igorwojda/string/anagram/Anagram.md)
-* [Max occurring char](app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md)
-* [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
-* [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
-* [Int reversal](app/src/test/java/com/igorwojda/int/reverse/Reverse.md)
+- [Palindrome](app/src/test/java/com/igorwojda/string/palindrome/basic/Palindrome.md)
+- [Tolerant palindrome](app/src/test/java/com/igorwojda/string/palindrome/tolerant/TolerantPalindrome.md)
+- [Anagram](app/src/test/java/com/igorwojda/string/anagram/Anagram.md)
+- [Max occurring char](app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md)
+- [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
+- [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
+- [Int reversal](app/src/test/java/com/igorwojda/int/reverse/Reverse.md)
 
 **Warrior**
-* [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
-* [Generic queue](app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
-* [Combine two queues](app/src/test/java/com/igorwojda/queue/weave/Weave.md)
-* [Two stack queue](app/src/test/java/com/igorwojda/queue/twostack/TwoStackQueue.md)
-* [Int stack](app/src/test/java/com/igorwojda/stack/int/IntStack.md)
-* [Generic stack](app/src/test/java/com/igorwojda/stack/generic/GenericStack.md)
-* [Bubble sort](app/src/test/java/com/igorwojda/list/bubblesort/BubbleSort.md)
-* [Selection sort](app/src/test/java/com/igorwojda/list/selectionsort/SelectionSort.md)
-* [Square equals](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
-* [Sum zero](app/src/test/java/com/igorwojda/list/sumzero/SumZero.md)
-* [Max sub-list list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
-* [Digit frequency](app/src/test/java/com/igorwojda/int/digitfrequency/DigitFrequency.md)
-* [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedparams/GetDuplicatedArguments.md)
-* [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
-* [Is substring](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
+- [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
+- [Generic queue](app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
+- [Combine two queues](app/src/test/java/com/igorwojda/queue/weave/Weave.md)
+- [Two stack queue](app/src/test/java/com/igorwojda/queue/twostack/TwoStackQueue.md)
+- [Int stack](app/src/test/java/com/igorwojda/stack/int/IntStack.md)
+- [Generic stack](app/src/test/java/com/igorwojda/stack/generic/GenericStack.md)
+- [Bubble sort](app/src/test/java/com/igorwojda/list/bubblesort/BubbleSort.md)
+- [Selection sort](app/src/test/java/com/igorwojda/list/selectionsort/SelectionSort.md)
+- [Square equals](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
+- [Sum zero](app/src/test/java/com/igorwojda/list/sumzero/SumZero.md)
+- [Max sub-list list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
+- [Digit frequency](app/src/test/java/com/igorwojda/int/digitfrequency/DigitFrequency.md)
+- [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedparams/GetDuplicatedArguments.md)
+- [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
+- [Is substring](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 
 **Commander**
-* [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
-* [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
-* [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
-* [Circular linked list?](app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
-* [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
-* [Tree traversal](app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
-* [Tree level width](app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
-* [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
-* [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
-* [Merge sort](app/src/test/java/com/igorwojda/list/mergesort/MergeSort.md)
-* [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
-* [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
-* [Fibonacci](app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md)
-* [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
-* [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
-* [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
-* [Factorial](app/src/test/java/com/igorwojda/various/factorial/Factorial.md)
-* [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
-* [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
+- [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
+- [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
+- [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
+- [Circular linked list?](app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
+- [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
+- [Tree traversal](app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
+- [Tree level width](app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
+- [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
+- [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
+- [Merge sort](app/src/test/java/com/igorwojda/list/mergesort/MergeSort.md)
+- [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
+- [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
+- [Fibonacci](app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md)
+- [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
+- [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
+- [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
+- [Factorial](app/src/test/java/com/igorwojda/various/factorial/Factorial.md)
+- [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
+- [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
 
 # References
 
 ## Articles
 
-* [Data structures explained](https://medium.com/basecs/tagged/data-structures) series
+- [Data structures explained](https://medium.com/basecs/tagged/data-structures) series
 
 ## Books
 
-* [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
-* [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
+- [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
+- [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
 
 ## Video courses
 
-* [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/)
-* [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
-* [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms/)
+- [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/)
+- [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
+- [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms/)
 
 ## Coding problems websites
 
-* [HackerRank](https://www.hackerrank.com/)
-* [CoderByte](https://coderbyte.com/challenges)
-* [CodeChef](https://www.codechef.com/problems/school)
-* [LeetCode](https://leetcode.com/problemset/all)
-* [GeeksForGeeks](https://www.geeksforgeeks.org)
+- [HackerRank](https://www.hackerrank.com/)
+- [CoderByte](https://coderbyte.com/challenges)
+- [CodeChef](https://www.codechef.com/problems/school)
+- [LeetCode](https://leetcode.com/problemset/all)
+- [GeeksForGeeks](https://www.geeksforgeeks.org)
 
 # Contribute
 
@@ -182,8 +182,8 @@ please create PR or open a new issue.
 
 ## Contributors
 
-* [Alan Evans](https://github.com/alanevansbc)
-* [Norbert Kiesel](https://github.com/nkiesel)
+- [Alan Evans](https://github.com/alanevansbc)
+- [Norbert Kiesel](https://github.com/nkiesel)
 
 # Follow me
 

@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-* [Palindrome](../basic/Palindrome.md)
+- [Palindrome](../basic/Palindrome.md)
 
 ## Instructions
 
