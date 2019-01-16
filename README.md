@@ -1,9 +1,10 @@
 # Kotlin coding puzzles
 
 This repository contains a set of [programming puzzles](#kotlin-programing-puzzles) that meant to be solved using
-[Kotlin](https://kotlinlang.org/) language (no worries hints, solutions and tests that will verify your solution are here as well). Purpose
-of this repository is to help you to practice deliberately and develop strong problem-solving skills. This will make you better programmer
-and will help you to get new job by passing [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
+[Kotlin](https://kotlinlang.org/) language (no worries hints, solutions and tests that will verify your solution are
+here as well). Purpose of this repository is to help you to practice deliberately and develop strong problem-solving
+skills. This will make you better programmer and will help you to get new job by passing
+[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
 ## Puzzle structure
 
@@ -158,7 +159,7 @@ be persistent over time. Take your time before you take a look at the presented 
 
 ## Books
 
-- [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=ZKQA82B0MSD2GYPCCZYQ)
+- [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
 - [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
 
 ## Video courses
