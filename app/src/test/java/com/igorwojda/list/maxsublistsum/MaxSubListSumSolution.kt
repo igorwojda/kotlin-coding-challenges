@@ -1,7 +1,8 @@
 package com.igorwojda.list.maxsublistsum
 
 // Time Complexity: O(n)
-// Use "sliding window" - store sum in single variable and witch each iteration add (current item)
+// Space Complexity: O(1)
+// Use "sliding window" - store sum in single variable and with each iteration add (current item)
 // and remove (first item before current sub-list)
 private object OptimalSolution1 {
     private fun maxSubListSum(list: List<Int>, n: Int): Int? {

@@ -7,6 +7,15 @@ private fun maxSubListSum(list: List<Int>, n: Int): Int? {
     return null
 }
 
+private fun max(i1: Int?, i2: Int?): Int? {
+    return when {
+        i1 != null && i2 != null -> Math.max(i1, i2)
+        i1 != null && i2 == null -> i1
+        i1 == null && i2 != null -> i2
+        else -> null
+    }
+}
+
 class MaxSubListTest {
     @Test
     fun `max sublist sum for list 4, 2, 7 and n 2 `() {
