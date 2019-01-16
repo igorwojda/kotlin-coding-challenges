@@ -5,7 +5,15 @@ This repository contains a set of [programming puzzles](#kotlin-programing-puzzl
 of this repository is to help you to practice deliberately and develop strong problem-solving skills. This will make you better programmer
 and will help you to get new job by passing [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
-## Solutions
+## Puzzle structure
+
+Each puzzle is located in separate package and it contains 3 files ([screen](./misc/image/SampleTask.png)):
+* `Puzzle.md` - description of the puzzle
+* `Puzzle.kt` - contains empty method/class where puzzle should be solved and a set of tests to run
+* `PuzzleSolution.kt` - file that contains one or more puzzle solutions (encapsulated in Kotlin `object` just to avoid conflicts with
+  other coding puzzles)
+
+# Solutions
 
 The repository contains one or more solutions for any given puzzle, however, keep in mind that each puzzle will usually have more than one
 solution. Even simple puzzle like [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md) can be solved in
@@ -15,7 +23,7 @@ complexity and later we look at code readability.
 
 # How do I start?
 
-## Opening this project
+## Open the project
 
 This repository contains [Android Studio](https://developer.android.com/studio/) project. We can quickly open the project simply
 by checking out this the project from git repository.
@@ -25,21 +33,13 @@ by checking out this the project from git repository.
 3. Import project by using Android Studio menu: `File -> New -> Project From Version Control -> Git`
 4. Enter Repository URL `https://github.com/igorwojda/kotlin-coding-puzzle.git`  and click `clone`
 5. Navigate to [app/src/test/java/com/igorwojda](app/src/test/java/com/igorwojda/) folder in `Project` view or
-   [app/java/com (test)/igorwojda](app/src/test/java/com/igorwojda/) in `Android` view in project panel.
-6. Optionally install [Markdown Navigator](https://plugins.jetbrains.com/plugin/7896-markdown-navigator) plugin for Android studio to have
-   nice preview of markdown files (files containing puzzles description)
+   [app/java/com (test)/igorwojda](app/src/test/java/com/igorwojda/) in `Tests`/`Android` view in project panel.
+6. Optionally install [Markdown Navigator](https://plugins.jetbrains.com/plugin/7896-markdown-navigator) plugin for Android Studio to have
+   nice preview of markdown files containing puzzles description.
 
 **Info**: If you can't run tests after opening the project please restart Android Studio.
 
-## Puzzle structure
-
-Each puzzle is located in separate package and it contains 3 files ([screen](./misc/image/SampleTask.png)):
-* `Puzzle.md` - description of the puzzle
-* `Puzzle.kt` - contains empty method/class where puzzle should be solved and a set of tests to run
-* `PuzzleSolution.kt` - file that contains one or more puzzle solutions (encapsulated in Kotlin `object` just to avoid conflicts with
-  other coding puzzles)
-
-## Running tests
+# Run tests
 
 Open `Puzzle.kt` file for any puzzle. Locate class with `Test` suffix (`PuzzleTest`). Click on the green green arrow close to line number
 to run one or more tests in the class ([screen](./misc/image/RunTest.png)). After running the test you can rerun the last configuration using
