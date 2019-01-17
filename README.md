@@ -21,12 +21,12 @@ solutions using
 ([Big O notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)) to
 determine space/time complexity and we look at code readability.
 
-# How do I start?
+## How do I start?
 
 1. [Checkout the and open the project](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Checkout-and-open-the-project) 
 1. [Solve puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Solving-coding-chalenges)
 
-## Kotlin programing puzzles
+# Coding puzzles
 
 Puzzles are segregated by different difficulty. Some puzzle may contain a reference to puzzles that should be solved before to
 have better understanding of the problem. To succeed you need to practice often, repeat same puzzles multiple times and
