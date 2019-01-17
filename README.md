@@ -42,7 +42,7 @@ be persistent over time. Take your time before you take a look at the presented 
 - [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
 - [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
 - [Factorial](app/src/test/java/com/igorwojda/various/factorial/Factorial.md)
-- 
+
 **Apprentice**
 - [Palindrome](app/src/test/java/com/igorwojda/string/palindrome/basic/Palindrome.md)
 - [Tolerant palindrome](app/src/test/java/com/igorwojda/string/palindrome/tolerant/TolerantPalindrome.md)
