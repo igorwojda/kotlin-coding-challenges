@@ -28,7 +28,9 @@ private object OptimalSolution1 {
 }
 
 // Time complexity: O(n+m)
-// Space complexity: ??? (definitely more than O(1))
+// Space complexity: O(n*n)
+// number of iterations is bounded by the length of the first string
+// and String#drop requires copying the entire remaining string
 // Recursive solution
 private object Solution {
     private fun isSubstring(first: String, second: String): Boolean {
