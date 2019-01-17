@@ -105,7 +105,10 @@ be persistent over time. Take your time before you take a look at the presented 
 - [Count up and down](app/src/test/java/com/igorwojda/various/countupanddown/CountUpAndDown.md)
 - [Get all pairs](app/src/test/java/com/igorwojda/various/getallpairs/GetAllPairs.md)
 - [List count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
-
+- [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
+- [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
+- [Factorial](app/src/test/java/com/igorwojda/various/factorial/Factorial.md)
+- 
 **Apprentice**
 - [Palindrome](app/src/test/java/com/igorwojda/string/palindrome/basic/Palindrome.md)
 - [Tolerant palindrome](app/src/test/java/com/igorwojda/string/palindrome/tolerant/TolerantPalindrome.md)
@@ -116,8 +119,10 @@ be persistent over time. Take your time before you take a look at the presented 
 - [Int reversal](app/src/test/java/com/igorwojda/int/reverse/Reverse.md)
 - [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
 - [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
+- [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
 
-**Warrior**
+**Warrior** 
+- [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
 - [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
 - [Generic queue](app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
 - [Combine two queues](app/src/test/java/com/igorwojda/queue/weave/Weave.md)
@@ -128,31 +133,26 @@ be persistent over time. Take your time before you take a look at the presented 
 - [Selection sort](app/src/test/java/com/igorwojda/list/selectionsort/SelectionSort.md)
 - [Square equals](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
 - [Sum zero](app/src/test/java/com/igorwojda/list/sumzero/SumZero.md)
-- [Max sub-list list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
 - [Digit frequency](app/src/test/java/com/igorwojda/int/digitfrequency/DigitFrequency.md)
 - [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedparams/GetDuplicatedArguments.md)
 - [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
 - [Is substring](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
-- [Min sub-list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
-- 
+- [Tree traversal](app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
+- [Tree level width](app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
+- [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
+- [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
+
 **Commander**
 - [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
 - [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
 - [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
 - [Circular linked list?](app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
 - [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
-- [Tree traversal](app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
-- [Tree level width](app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
-- [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
-- [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
 - [Merge sort](app/src/test/java/com/igorwojda/list/mergesort/MergeSort.md)
 - [Fibonacci](app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md)
 - [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
-- [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
-- [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
-- [Factorial](app/src/test/java/com/igorwojda/various/factorial/Factorial.md)
-- [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
-- [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
+- [Max sub-list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
+- [Min sub-list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
 
 # References
 
