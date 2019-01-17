@@ -10,8 +10,8 @@ skills. This will make you better programmer and will help you to get new job by
 
 Each puzzle is located in separate package and it contains of 3 files ([screen](./misc/image/SampleTask.png)):
 - `Puzzle.md` - description of the task.
-- `Puzzle.kt` - empty method/class where puzzle should be solved. This file also contains a set of 
-- [JUnit](https://junit.org/junit4/) tests.
+- `Puzzle.kt` - empty method/class where puzzle should be solved. This file also contains a set of
+  [JUnit](https://junit.org/junit4/) tests.
 - `PuzzleSolution.kt` - file that contains solutions. 
 
 Keep in mind that each puzzle will usually have more than one solution. Even simple puzzle like
@@ -115,8 +115,9 @@ be persistent over time. Take your time before you take a look at the presented 
 
 # Contribute
 
-If you think something is incorrect, you have found a new puzzle, have a better solution or simply you want to [add new puzzle](/misc/wiki/adding_new_puzzle.md)
-please create PR or open a new issue.
+If you think something is incorrect, you have found a new puzzle, have a better solution or simply you want to
+[add new puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle) please create PR or open a
+new issue.
 
 ## Contributors
 
