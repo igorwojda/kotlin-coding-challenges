@@ -4,26 +4,19 @@ import org.amshove.kluent.shouldEqual
 import org.amshove.kluent.shouldThrow
 import org.junit.Test
 
-private fun factorial(n: Long): Long {
-    return 0L
+private fun factorial(n: Int): Int {
+    return 0
 }
 
 class RecursiveFactorial {
     @Test
-    fun `factorial -1 should throw exception`() {
-        val func = { factorial(-1) }
-        func shouldThrow IllegalArgumentException::class
+    fun `factorial 3 should equal 6`() {
+        factorial(3) shouldEqual 6
     }
 
     @Test
-    fun `factorial 21 should throw exception`() {
-        val func = { factorial(21) }
-        func shouldThrow IllegalArgumentException::class
-    }
-
-    @Test
-    fun `factorial 0 should equal 1`() {
-        factorial(0) shouldEqual 1
+    fun `factorial 5 should equal 120`() {
+        factorial(5) shouldEqual 120
     }
 
     @Test
