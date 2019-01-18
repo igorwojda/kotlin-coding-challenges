@@ -23,8 +23,6 @@ determine space/time complexity and we look at code readability.
 
 ## How do I start?
 1. [Checkout the and open the project](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Checkout-and-open-the-project) 
-
-
 1. [Solve puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Solving-coding-chalenges)
 
 # Let's solve some puzzles
