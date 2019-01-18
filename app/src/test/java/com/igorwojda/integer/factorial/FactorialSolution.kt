@@ -1,4 +1,4 @@
-package com.igorwojda.various.factorial
+package com.igorwojda.integer.factorial
 
 // iterative solution
 private object FactorialSolution2 {

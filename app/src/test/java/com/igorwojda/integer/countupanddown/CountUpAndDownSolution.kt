@@ -1,4 +1,4 @@
-package com.igorwojda.various.countupanddown
+package com.igorwojda.integer.countupanddown
 
 private object CountUpAndDownSolution {
     private fun countUpAndDown(n: Int): List<Int> {

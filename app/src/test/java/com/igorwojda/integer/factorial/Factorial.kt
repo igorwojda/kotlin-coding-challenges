@@ -1,7 +1,6 @@
-package com.igorwojda.various.factorial
+package com.igorwojda.integer.factorial
 
 import org.amshove.kluent.shouldEqual
-import org.amshove.kluent.shouldThrow
 import org.junit.Test
 
 private fun factorial(n: Int): Int {

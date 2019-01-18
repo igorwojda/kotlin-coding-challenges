@@ -1,4 +1,4 @@
-package com.igorwojda.various.countupanddown
+package com.igorwojda.integer.countupanddown
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

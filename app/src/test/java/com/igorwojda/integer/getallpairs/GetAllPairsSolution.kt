@@ -1,4 +1,4 @@
-package com.igorwojda.various.getallpairs
+package com.igorwojda.integer.getallpairs
 
 private object GetAllPairsSolution {
     private fun getAllPairs(n: Int): MutableList<Pair<Int, Int>> {
