@@ -1,4 +1,4 @@
-package com.igorwojda.int.reverse
+package com.igorwojda.integer.reverse
 
 import kotlin.math.sign
 

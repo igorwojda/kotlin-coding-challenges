@@ -1,4 +1,4 @@
-package com.igorwojda.various.getallpairs
+package com.igorwojda.integer.getallpairs
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

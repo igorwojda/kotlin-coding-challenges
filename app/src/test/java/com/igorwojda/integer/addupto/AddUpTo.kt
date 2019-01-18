@@ -1,4 +1,4 @@
-package com.igorwojda.int.addupto
+package com.igorwojda.integer.addupto
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

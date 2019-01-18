@@ -1,4 +1,4 @@
-package com.igorwojda.int.digitfrequency
+package com.igorwojda.integer.digitfrequency
 
 // Time complexity: O(n)
 // Generate digit frequency map for each integer and compare them

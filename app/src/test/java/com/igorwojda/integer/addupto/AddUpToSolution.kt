@@ -1,4 +1,4 @@
-package com.igorwojda.int.addupto
+package com.igorwojda.integer.addupto
 
 private object AddUpToSolution1 {
     private fun addUpTo(n: Int): Int {

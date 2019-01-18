@@ -1,4 +1,4 @@
-package com.igorwojda.int.digitfrequency
+package com.igorwojda.integer.digitfrequency
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
