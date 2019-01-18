@@ -2,18 +2,14 @@
 
 ## Instructions
 
-Given positive long `n` implement a function, which returns a [factorial](https://en.wikipedia.org/wiki/Factorial). Factorial is number that
-is created by multiplying all whole numbers from our chosen number `n` down to 1.
+Given positive integer `n` implement a function, which returns a [factorial](https://en.wikipedia.org/wiki/Factorial).
+Factorial (of positive integer) is number that is created by multiplying all numbers from 1 to `n`.
 
 [Puzzle files](.)
 
 ## Examples
 
 ```
-factorial(-1) // "Underflow error in factorial"
-
-factorial(20) // "Overflow error in factorial"
-
 factorial(1) // 1
 
 factorial(2) // 2

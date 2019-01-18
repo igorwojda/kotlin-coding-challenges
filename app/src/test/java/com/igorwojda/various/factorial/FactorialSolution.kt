@@ -1,10 +1,27 @@
 package com.igorwojda.various.factorial
 
-private object FactorialSolution {
-    private fun factorial(n: Long): Long {
-        require(n >= 0) { "Underflow error in factorial" }
-        require(n <= 20) { "Overflow error in factorial" }
+// iterative solution
+private object FactorialSolution2 {
+    private fun factorial(n: Int): Int {
+        var total = 1
 
-        return if (n == 0L) 1 else n - factorial(n - 1)
+        (1..n).forEach {
+            total *= it
+        }
+
+        return total
     }
 }
+
+// recursive solution
+private object FactorialSolution1 {
+    private fun factorial(n: Int): Int {
+        if (n == 1) {
+            return 1
+        }
+
+        return n * factorial(n - 1)
+    }
+}
+
+
