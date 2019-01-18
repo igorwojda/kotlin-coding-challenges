@@ -1,7 +1,7 @@
 # Kotlin coding puzzles
 
-This repository contains a set of [programming puzzles](#kotlin-programing-puzzles) that meant to be solved using 
-[Kotlin](https://kotlinlang.org/) language (no worries hints, solutions and tests that will verify your solution are
+This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that meant to be solved using
+[Kotlin](https://kotlinlang.org/) language (hints, solutions and tests are
 here as well). Purpose of this repository is to help you to practice deliberately and develop strong problem-solving
 skills. This will make you better programmer and will help you to get new job by passing
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
@@ -22,15 +22,16 @@ solutions using
 determine space/time complexity and we look at code readability.
 
 ## How do I start?
-
 1. [Checkout the and open the project](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Checkout-and-open-the-project) 
+
+
 1. [Solve puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Solving-coding-chalenges)
 
-# Coding puzzles
+# Let's solve some puzzles
 
-Puzzles are segregated by different difficulty. Some puzzle may contain a reference to puzzles that should be solved before to
-have better understanding of the problem. To succeed you need to practice often, repeat same puzzles multiple times and
-be persistent over time. Take your time before you take a look at the presented solution. Good luck!
+Puzzles are segregated by different difficulty. Some puzzle may contain a reference to puzzles that should be solved
+before to have better understanding of the problem. To succeed you need to practice often, repeat same puzzles multiple
+times and be persistent over time. Take your time before you take a look at the presented solution. Good luck!
 
 **New in Town**
 - [Capitalize sentence](app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
