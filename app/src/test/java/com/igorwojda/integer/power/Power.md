@@ -1,4 +1,4 @@
-# Puzzle name
+# Power
 
 ## Instructions
 
