@@ -23,5 +23,3 @@ private object FactorialSolution1 {
         return n * factorial(n - 1)
     }
 }
-
-

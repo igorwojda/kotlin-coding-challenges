@@ -3,7 +3,7 @@ package com.igorwojda.string.issubstring
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-fun isSubstring(first:String, second:String): Boolean {
+fun isSubstring(first: String, second: String): Boolean {
     return false
 }
 

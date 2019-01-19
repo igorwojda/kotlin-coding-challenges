@@ -34,15 +34,15 @@ private object OptimalSolution1 {
 // Recursive solution
 private object Solution {
     private fun isSubstring(first: String, second: String): Boolean {
-        if(second.length > first.length) {
+        if (second.length > first.length) {
             return false
         }
 
-        if(second.isEmpty()) {
+        if (second.isEmpty()) {
             return true
         }
 
-        return if(first.first() == second.first()) {
+        return if (first.first() == second.first()) {
             isSubstring(first.drop(1), second.drop(1))
         } else {
             isSubstring(first.drop(1), second)

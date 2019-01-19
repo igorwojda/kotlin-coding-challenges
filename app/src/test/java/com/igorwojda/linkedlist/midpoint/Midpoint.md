@@ -46,7 +46,7 @@ midpoint(l).data // 'b'
 
 <details>
 <summary>Hint 1</summary>
-We should use more then one variable to store values that are retrieved during iteration (two pointer solution)
+Use more then one variable to store values that are retrieved during iteration (double pointer solution)
 </details>
 
 <details>
