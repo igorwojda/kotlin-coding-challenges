@@ -1,4 +1,4 @@
-# Binary Search Tree (validate)
+# Binary Tree (validate)
 
 ## Nice to solve before
 [Binary search tree](../insert/Insert.md)
@@ -27,9 +27,9 @@ isValidSearchBinaryTree(tree) // true
 
 <details>
 <summary>Hint 1</summary>
-We should use recursion
+Use recursion
 </details>
 
 <summary>Hint 2</summary>
-We should also pass `min` and `max` to `isValidSearchBinaryTree` method
+Pass `min` and `max` to `isValidSearchBinaryTree` method
 </details>
