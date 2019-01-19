@@ -9,6 +9,11 @@ private fun factorial(n: Int): Int {
 
 class RecursiveFactorial {
     @Test
+    fun `factorial 0 should equal 1`() {
+        factorial(0) shouldEqual 1
+    }
+
+    @Test
     fun `factorial 3 should equal 6`() {
         factorial(3) shouldEqual 6
     }
