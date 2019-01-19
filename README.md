@@ -40,6 +40,7 @@ times and be persistent over time. Take your time before you take a look at the 
 - [List count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
 - [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
 - [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
+- [Power](app/src/test/java/com/igorwojda/integer/power/Power.md)
 - [Factorial](app/src/test/java/com/igorwojda/integer/factorial/Factorial.md)
 
 **Apprentice**
