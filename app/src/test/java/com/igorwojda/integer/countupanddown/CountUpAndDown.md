@@ -4,7 +4,7 @@
 
 Given positive integer `n` implement a function which returns a list containing all steps up from `0` to `n` and down to `0`.
 
-[Puzzle files](.)
+[Puzzle](CountUpAndDown.kt) | [Solution](CountUpAndDownSolution.kt)
 
 ## Examples
 

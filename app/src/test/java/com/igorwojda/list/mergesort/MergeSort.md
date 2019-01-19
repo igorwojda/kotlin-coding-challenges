@@ -10,7 +10,7 @@ Algorithm:
 3. Split lists until each list has single element (a list containing one element is considered sorted)
 4. Merge sub-lists to produce new sorted sub-lists until there is only one sub-list remaining. This will be the sorted list.
 
-[Puzzle files](.)
+[Puzzle](MergeSort.kt) | [Solution](MergeSortSolution.kt)
 
 ## Examples
 

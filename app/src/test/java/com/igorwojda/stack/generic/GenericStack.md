@@ -15,7 +15,7 @@ Adding to the stack should store an element until it is removed. First element a
 This is [generic](https://kotlinlang.org/docs/reference/generics.html) venison of the stack which means we must define data type for the
 stack (`IntStack<String>`).
 
-[Puzzle files](.)
+[Puzzle](GenericStack.kt) | [Solution](GenericStackSolution.kt)
 
 ## Examples
 

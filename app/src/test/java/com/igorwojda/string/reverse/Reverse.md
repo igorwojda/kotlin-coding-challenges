@@ -4,7 +4,7 @@
 
 Given a `String` implement a function which returns a reversed copy of that string.
 
-[Puzzle files](.)
+[Puzzle](Reverse.kt) | [Solution](ReverseSolution.kt)
 
 ## Limitations:
 

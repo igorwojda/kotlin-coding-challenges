@@ -13,7 +13,7 @@ We are using version of linked list that implements Kotlin
 [Iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interface, so we can use `forEach` instead
 of `while` loop.
 
-[Puzzle files](.)
+[Puzzle](Midpoint.kt) | [Solution](MidpointSolution.kt)
 
 ## Limitations
 

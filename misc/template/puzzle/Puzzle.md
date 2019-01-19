@@ -6,7 +6,7 @@
 
 ???
 
-[Puzzle files](.)
+[Puzzle](.kt) | [Solution](.kt)
 
 ## Limitations
 

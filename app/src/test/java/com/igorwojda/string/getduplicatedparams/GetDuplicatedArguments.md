@@ -5,7 +5,7 @@
 Given variable number of arguments (strings) checks whether there are any duplicates among the arguments and return
 list of all unique duplicates. If no params arguments are passes return empty list.
 
-[Puzzle files](.)
+[Puzzle](GetDuplicatedArguments.kt) | [Solution](GetDuplicatedArgumentsSolution.kt)
 
 ## Examples
 

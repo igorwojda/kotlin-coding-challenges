@@ -16,7 +16,7 @@ Adding to the queue should store an element until it is removed. First element a
 This is [generic](https://kotlinlang.org/docs/reference/generics.html) venison of the queue which means we must define data type for the
 queue (`IntQueue<String>`).
 
-[Puzzle files](.)
+[Puzzle](GenericQueue.kt) | [Solution](GenericQueueSolution.kt)
 
 ## Examples
 

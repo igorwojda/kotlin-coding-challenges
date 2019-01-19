@@ -4,7 +4,7 @@
 
 Given two sorted list of integers implement a which function counts the unique values.
 
-[Puzzle files](.)
+[Puzzle](CountUniqueValues.kt) | [Solution](CountUniqueValuesSolution.kt)
 
 ## Examples
 

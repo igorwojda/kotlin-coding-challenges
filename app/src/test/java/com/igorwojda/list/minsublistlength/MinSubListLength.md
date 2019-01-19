@@ -7,7 +7,7 @@ where sum all all elements is equal or greater than `n`
 
 You can use helper `min` function to deal with Kotlin nullability.
 
-[Puzzle files](.)
+[Puzzle](MinSubListLength.kt) | [Solution](MinSubListLengthSolution.kt)
 
 ## Examples
 

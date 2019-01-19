@@ -4,7 +4,7 @@
 
 Given list of integers and positive integer `n` implement the function which returns product of all numbers in the list.
 
-[Puzzle files](.)
+[Puzzle](Product.kt) | [Solution](ProductSolution.kt)
 
 ## Examples
 
