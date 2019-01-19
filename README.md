@@ -42,6 +42,7 @@ times and be persistent over time. Take your time before you take a look at the 
 - [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
 - [Power](app/src/test/java/com/igorwojda/integer/power/Power.md)
 - [Factorial](app/src/test/java/com/igorwojda/integer/factorial/Factorial.md)
+- [Product](app/src/test/java/com/igorwojda/list/product/Product.md)
 
 **Apprentice**
 - [Palindrome](app/src/test/java/com/igorwojda/string/palindrome/basic/Palindrome.md)

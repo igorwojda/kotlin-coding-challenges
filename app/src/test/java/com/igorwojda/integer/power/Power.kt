@@ -3,7 +3,7 @@ package com.igorwojda.integer.power
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-fun power(base: Int, exponent: Int): Int {
+private fun power(base: Int, exponent: Int): Int {
     return 0
 }
 

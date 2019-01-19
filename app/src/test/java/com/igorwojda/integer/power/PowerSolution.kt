@@ -1,8 +1,8 @@
-package com.igorwojda.puzzle
+package com.igorwojda.integer.power
 
 // Recursive solution
 private object Solution {
-    fun power(base: Int, exponent: Int): Int {
+    private fun power(base: Int, exponent: Int): Int {
         println("$base, $exponent")
         if (exponent == 1) {
             return base
