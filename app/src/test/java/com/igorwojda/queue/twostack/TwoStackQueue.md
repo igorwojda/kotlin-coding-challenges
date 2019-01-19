@@ -14,7 +14,7 @@ inside of the 'Queue' class.The queue should be a class with methods:
 - `peek` method - returns last element (the one that should be returned) without removing it from the queue
 - `isEmpty` method - return `true` if queue is empty, otherwise return `false`
 
-[Puzzle files](.)
+[Puzzle](TwoStackQueue.kt) | [Solution](TwoStackQueueSolution.kt)
 
 ## Examples
 

@@ -1,10 +1,10 @@
-# Sentence capitalisation
+# Capitalize sentence
 
 ## Instructions
 
 Given string implement a function which capitalizes first letter of every word.
 
-[Puzzle files](.)
+[Puzzle](CapitalizeSentence.kt) | [Solution](CapitalizeSentencetSolution.kt)
 
 ## Examples
 

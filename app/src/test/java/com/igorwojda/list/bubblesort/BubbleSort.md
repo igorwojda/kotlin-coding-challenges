@@ -9,7 +9,7 @@ Starting from the beginning of the list, compare every adjacent pair, swap their
 is smaller than the former one). After each iteration, one less element (the last one) is needed to be compared until there are no more
 elements left to be compared.
 
-[Puzzle files](.)
+[Puzzle](BubbleSort.kt) | [Solution](BubbleSortSolution.kt)
 
 ## Examples
 

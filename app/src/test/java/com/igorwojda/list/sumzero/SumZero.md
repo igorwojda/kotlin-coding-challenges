@@ -5,7 +5,7 @@
 Given sorted list of integers implement a function which finds the first pair where the sum equals to `0`. Return an pair that includes both
 values that sum to zero or null if a pair does not exist.
 
-[Puzzle files](.)
+[Puzzle](SumZero.kt) | [Solution](SumZeroSolution.kt)
 
 ## Examples
 

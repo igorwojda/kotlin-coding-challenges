@@ -10,7 +10,7 @@ Implement a [stack](https://en.wikipedia.org/wiki/Stack) data structure. The sta
 Adding to the stack should store an element until it is removed. First element added to a stack will be the last that is removed (FILO). For
 simplicity we can assume that IntQueue will only accept `Int` as it's element type.
 
-[Puzzle files](.)
+[Puzzle](IntStack.kt) | [Solution](IntStackSolution.kt)
 
 ## Examples
 

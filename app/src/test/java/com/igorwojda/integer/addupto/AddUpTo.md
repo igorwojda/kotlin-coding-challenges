@@ -3,7 +3,7 @@
 ## Instructions
 Given positive integer `n` implement a function which calculates sum of all numbers from `1` up to (and including) number `n`.
 
-[Puzzle files](.)
+[Puzzle](AddUpTo.kt) | [Solution](AddUpToSolution.kt)
 
 ## Examples
 

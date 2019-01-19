@@ -5,7 +5,7 @@
 Given positive integer `n` implement a function which returns a list representing all numbers from `n` to `1`. If `n` value is zero then
 empty list should be returned.
 
-[Puzzle files](.)
+[Puzzle](PrintNumber.kt) | [Solution](PrintNumberSolution.kt)
 
 ## Examples
 

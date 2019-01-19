@@ -11,7 +11,7 @@ Implement a [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) da
 Adding to the queue should store an element until it is removed. First element added to a queue will be the first that is removed (FIFO).
 For simplicity we can assume that IntQueue will only accept `Int` as it's element type.
 
-[Puzzle files](.)
+[Puzzle](IntQueue.kt) | [Solution](IntQueueSolution.kt)
 
 ## Examples
 

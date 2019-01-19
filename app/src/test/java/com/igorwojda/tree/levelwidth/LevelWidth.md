@@ -7,7 +7,7 @@
 
 Given the root node of a tree, return an array where each element is the width of the tree at each level.
 
-[Puzzle files](.)
+[Puzzle](LevelWidth.kt) | [Solution](LevelWidthSolution.kt)
 
 ## Examples
 

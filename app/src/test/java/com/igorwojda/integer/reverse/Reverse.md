@@ -4,7 +4,7 @@
 
 Given an integer `n`, return an integer that is the reverse ordering of digits.
 
-[Puzzle files](.)
+[Puzzle](Reverse.kt) | [Solution](ReverseSolution.kt)
 
 ## Examples
 

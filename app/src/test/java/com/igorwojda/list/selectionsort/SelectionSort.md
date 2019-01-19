@@ -7,7 +7,7 @@ Sort list of numbers from lowest number to greatest number using [selection sort
 Algorithm: Sort an list by repeatedly finding the minimum element (ascending order) from unsorted part and putting it at the beginning of
 the list.
 
-[Puzzle files](.)
+[Puzzle](SelectionSort.kt) | [Solution](SelectionSortSolution.kt)
 
 ## Examples
 
