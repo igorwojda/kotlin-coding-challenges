@@ -16,6 +16,9 @@ private object FactorialSolution2 {
 // recursive solution
 private object FactorialSolution1 {
     private fun factorial(n: Int): Int {
+        if (n == 0) {
+            return 1
+        }
         if (n == 1) {
             return 1
         }
