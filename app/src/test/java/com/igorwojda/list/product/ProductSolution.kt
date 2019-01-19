@@ -3,7 +3,7 @@ package com.igorwojda.list.product
 // Kotlin idiomatic solution
 private object Solution1 {
     private fun product(list: List<Int>): Int {
-        return list.reduce { acc, i -> acc * i }
+        return list.reduce { accumulated, current -> accumulated * current }
     }
 }
 
