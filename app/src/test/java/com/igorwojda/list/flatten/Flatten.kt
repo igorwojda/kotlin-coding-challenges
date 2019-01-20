@@ -4,24 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 fun flatten(list: List<*>): List<*> {
-    val result = mutableListOf<Any?>()
-
-    fun helper(any: Any?) {
-        if (any is List<*>) {
-            if (any.isEmpty()) {
-                result.add(null)
-            } else {
-                helper(any.first())
-                helper(any.drop(1))
-            }
-        } else {
-            result.add(any)
-        }
-    }
-
-    helper(list)
-
-    return result.filter { it != null }
+    return emptyList<Any>()
 }
 
 class FlattenTest {

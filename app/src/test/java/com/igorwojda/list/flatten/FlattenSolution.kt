@@ -4,20 +4,13 @@ private object Solution {
     fun flatten(list: List<*>): List<*> {
         val result = mutableListOf<Any?>()
 
-        fun helper(any: Any?) {
-            if (any is List<*>) {
-                if (any.isEmpty()) {
-                    result.add(null)
-                } else {
-                    helper(any.first())
-                    helper(any.drop(1))
-                }
+        list.forEach {
+            if (it is List<*>) {
+                result.addAll(flatten(it))
             } else {
-                result.add(any)
+                result.add(it)
             }
         }
-
-        helper(list)
 
         return result.filter { it != null }
     }
