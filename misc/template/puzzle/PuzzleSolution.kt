@@ -2,12 +2,12 @@ package com.igorwojda.puzzle
 
 // Time complexity:
 // ???
-private object OptimalSolution {
+private object Solution1 {
 
 }
 
 // Time complexity:
 // ???
-private object NaiveSolution {
+private object Solution2 {
 
 }

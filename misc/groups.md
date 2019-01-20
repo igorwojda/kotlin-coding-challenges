@@ -31,3 +31,4 @@ return type (eg. change `List<Int>` to `MutableList<Int>`).
 - [Get odd](../app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
 - [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md) 
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
+- [Flatten](../app/src/test/java/com/igorwojda/list/flatten/Flatten.md)

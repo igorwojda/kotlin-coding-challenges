@@ -80,6 +80,8 @@ times and be persistent over time. Take your time before you take a look at the 
 - [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
 - [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
 - [Any Callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.kt)
+- [Flatten](app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
+  
 
 **Commander**
 - [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
