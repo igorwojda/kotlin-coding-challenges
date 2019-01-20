@@ -32,7 +32,7 @@ private object OptimalSolution1 {
 // Space complexity: ??, but more than O(1)
 // Number of iterations (n) is bounded by the length of the first string
 // and String.drop requires copying the entire remaining string (on it's own it has O(m) complexity)
-// String of 5 chars, needs 5 iterations at most and 15 character copied (5+4+3+2+1=15)
+// First of 5 chars, needs 5 iterations at most and 15 character copied (5+4+3+2+1=15). Second is copied less often.
 //
 // Recursive solution
 private object RecursiveSolution1 {
