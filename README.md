@@ -79,6 +79,7 @@ times and be persistent over time. Take your time before you take a look at the 
 - [Tree level width](app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
 - [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
 - [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
+- [Any Callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.kt)
 
 **Commander**
 - [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
