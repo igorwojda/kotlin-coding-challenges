@@ -36,6 +36,7 @@ times and be persistent over time. Take your time before you take a look at the 
 - [Capitalize sentence](app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
 - [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
 - [Add up to](app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
+- [Count down](app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
 - [Count up and down](app/src/test/java/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
 - [Get all pairs](app/src/test/java/com/igorwojda/integer/getallpairs/GetAllPairs.md)
 - [List count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
@@ -86,7 +87,7 @@ times and be persistent over time. Take your time before you take a look at the 
 - [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
 - [Merge sort](app/src/test/java/com/igorwojda/list/mergesort/MergeSort.md)
 - [Fibonacci](app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md)
-- [Fibonacci add recursive cache](app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
+- [Fibonacci with recursive cache](app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
 - [Max sub-list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
 - [Min sub-list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
 
