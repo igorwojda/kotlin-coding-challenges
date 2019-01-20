@@ -5,16 +5,14 @@ private object CircularCheckSolution {
         var slowPointer = list.first
         var fastPointer = list.head
 
-        list.forEach {
-            slowPointer = slowPointer?.next
-            fastPointer = fastPointer?.next?.next
+        while (fastPointer != null) {
+            list.forEach {
+                slowPointer = slowPointer?.next
+                fastPointer = fastPointer?.next?.next
 
-            if (fastPointer == null) {
-                return false
-            }
-
-            if (slowPointer == fastPointer) {
-                return true
+                if (fastPointer != null && slowPointer == fastPointer) {
+                    return true
+                }
             }
         }
 
