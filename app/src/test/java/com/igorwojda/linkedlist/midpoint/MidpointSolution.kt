@@ -2,15 +2,15 @@ import com.igorwojda.linkedlist.base.LinkedListSolutionExtended
 
 private object MidpointSolution {
     private fun midpoint(list: LinkedListSolutionExtended.LinkedList<Char>): LinkedListSolutionExtended.Node<Char>? {
-        var slow = list.first
-        var fast = list.first
+        var slowPointer = list.first
+        var fastpointer = list.first
 
         list.forEach {
-            if (fast?.next?.next == null) {
-                return slow
+            if (fastpointer?.next?.next == null) {
+                return slowPointer
             }
-            slow = slow?.next
-            fast = fast?.next?.next
+            slowPointer = slowPointer?.next
+            fastpointer = fastpointer?.next?.next
         }
 
         return null

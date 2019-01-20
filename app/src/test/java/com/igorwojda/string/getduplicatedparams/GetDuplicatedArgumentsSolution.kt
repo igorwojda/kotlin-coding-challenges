@@ -1,7 +1,7 @@
 package com.igorwojda.string.getduplicatedparams
 
 // Time complexity: O(n)
-// determine the frequency of each argument and then filter arguments with frequency > 1
+// Determine the frequency of each argument and then filter arguments with frequency > 1
 private object OptimalSolution1 {
     fun getDuplicatedParams(vararg strings: String): List<String>? = strings
         .groupingBy { it }
@@ -11,21 +11,21 @@ private object OptimalSolution1 {
 }
 
 // Time complexity: O(n)
-// use double pointers
+// Optimal solution using double pointer.
 private object OptimalSolution2 {
     fun getDuplicatedParams(vararg strings: String): List<String>? {
-        var currentIndex = 0
-        var nextIndex = 1
+        var pointer1 = 0
+        var pointer2 = 1
         val result = mutableSetOf<String>()
         val sortedList = strings.sorted()
 
         for (it in 0 until sortedList.lastIndex) {
-            if (sortedList[currentIndex] == sortedList[nextIndex]) {
-                result.add(sortedList[currentIndex])
+            if (sortedList[pointer1] == sortedList[pointer2]) {
+                result.add(sortedList[pointer1])
             }
 
-            currentIndex++
-            nextIndex++
+            pointer1++
+            pointer2++
         }
 
         return result.toList()
