@@ -4,8 +4,9 @@
 
 ## Instructions
 
-Given two strings implement a function which determines whether the characters in the second string is a substring of
-the characters in the first string (the same order).
+Given two strings implement a function which determines whether the characters in the `second` string is a substring of
+the characters in the `first` string (check if `second` string exists as continuous/unbroken chain of characters the
+`first` string).
 
 [Puzzle](IsSubstring.kt) | [Solution](IsSubstringSolution.kt)
 
