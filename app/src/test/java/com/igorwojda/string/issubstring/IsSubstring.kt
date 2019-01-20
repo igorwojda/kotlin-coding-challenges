@@ -9,37 +9,37 @@ private fun isSubstring(first: String, second: String): Boolean {
 
 class PuzzleTest {
     @Test
-    fun `first 'abc' and second 'abz' should returns false`() {
+    fun `first 'abc' and second 'abz' returns false`() {
         isSubstring("abc", "abz") shouldEqual false
     }
 
     @Test
-    fun `first 'abc' and second 'bc' should return true`() {
+    fun `first 'abc' and second 'bc' return true`() {
         isSubstring("abc", "bc") shouldEqual true
     }
 
     @Test
-    fun `first '"Redactor"' and second 'Red' should return true`() {
+    fun `first '"Redactor"' and second 'Red' return true`() {
         isSubstring("Redactor", "Red") shouldEqual true
     }
 
     @Test
-    fun `first 'Here you are' and second 'you' should return true`() {
+    fun `first 'Here you are' and second 'you' return true`() {
         isSubstring("Here you are", "you") shouldEqual true
     }
 
     @Test
-    fun `first 'and everything' and second 'nothing' should return false`() {
+    fun `first 'and everything' and second 'nothing' return false`() {
         isSubstring("and everything", "nothing") shouldEqual false
     }
 
     @Test
-    fun `first empty and second empty should return true`() {
+    fun `first empty and second empty return true`() {
         isSubstring("", "") shouldEqual true
     }
 
     @Test
-    fun `first empty and second 'a' should return false`() {
+    fun `first empty and second 'a' return false`() {
         isSubstring("", "a") shouldEqual false
     }
 }
