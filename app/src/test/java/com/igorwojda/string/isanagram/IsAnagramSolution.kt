@@ -1,7 +1,7 @@
 package com.igorwojda.string.isanagram
 
-private object AnagramSolution {
-    private fun anagrams(str1: String, str2: String): Boolean {
+private object IsAnagramSolution {
+    private fun isAanagram(str1: String, str2: String): Boolean {
         val charFrequency1 = getCharFrequency(str1)
         val charFrequency2 = getCharFrequency(str2)
 
