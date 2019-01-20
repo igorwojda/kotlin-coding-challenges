@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Given two integers implement a function which determines if they tah the same frequency of digits.
+Given two integers implement a function which determines if they have the same frequency of digits.
 
 [Puzzle](DigitFrequency.kt) | [Solution](DigitFrequencySolution.kt)
 
