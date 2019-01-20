@@ -4,11 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun reverse(str: String): String {
-    if (str.isEmpty()) {
-        return str
-    }
-
-    return reverse(str.drop(1)) + str.first()
+    return str
 }
 
 class StringReverseTest {
