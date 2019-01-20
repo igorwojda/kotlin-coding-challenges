@@ -1,8 +1,8 @@
-# Tolerant palindrome
+# Is tolerant palindrome
 
 ## Nice to solve before
 
-- [Palindrome](../basic/Palindrome.md)
+- [Palindrome](../basic/IsPalindrome.md)
 
 ## Instructions
 
@@ -10,7 +10,7 @@ Given a string, return true if the string is a palindrome or false if it is not.
 reversed. Include spaces and punctuation in determining if the string is a palindrome. In this exercise we will allows one bad character.
 Our string will be (tolerant) palindrome if after removing one character string is a palindrome.
 
-[Puzzle](TolerantPalindrome.kt) | [Solution](TolerantPalindromeSolution.kt)
+[Puzzle](IsTolerantPalindrome.kt) | [Solution](IsTolerantPalindromeSolution.kt)
 
 ## Examples
 
@@ -21,4 +21,3 @@ tolerantPalindrome("abb#a") == true
 
 tolerantPalindrome("abcdefg") == false
 ```
-

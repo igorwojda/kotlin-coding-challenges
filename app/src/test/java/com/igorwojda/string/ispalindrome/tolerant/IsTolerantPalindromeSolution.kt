@@ -1,4 +1,4 @@
-package com.igorwojda.string.palindrome.tolerant
+package com.igorwojda.string.ispalindrome.tolerant
 
 // iterative solution
 private fun tolerantPalindromeSolution1(str: String): Boolean {

@@ -1,4 +1,4 @@
-package com.igorwojda.string.palindrome.tolerant
+package com.igorwojda.string.ispalindrome.tolerant
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
