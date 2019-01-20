@@ -9,32 +9,47 @@ private fun isSubstring(str: String, subStr: String): Boolean {
 
 class IsSubstringTest {
     @Test
-    fun `substring is at the beginning`() {
+    fun `abd not in abcd`() {
+        isSubstring("abcd", "abd") shouldEqual false
+    }
+
+    @Test
+    fun `e not in abcd`() {
+        isSubstring("abcd", "e") shouldEqual false
+    }
+
+    @Test
+    fun `ab in abd`() {
         isSubstring("abc", "ab") shouldEqual true
     }
 
     @Test
-    fun `substring us at the end`() {
+    fun `bc in abc`() {
         isSubstring("abc", "bc") shouldEqual true
     }
 
     @Test
-    fun `substring is in the middle`() {
+    fun `abc in ababc`() {
+        isSubstring("ababc", "abc") shouldEqual true
+    }
+
+    @Test
+    fun `cd in abcdef`() {
         isSubstring("abcdef", "cd") shouldEqual true
     }
 
     @Test
-    fun `substring is empty`() {
+    fun `empty sub-string not in abc`() {
         isSubstring("abc", "") shouldEqual false
     }
 
     @Test
-    fun `string is empty`() {
+    fun `abc not in empty string`() {
         isSubstring("", "abc") shouldEqual false
     }
 
     @Test
-    fun `first string and substring are empty`() {
+    fun `empty sub-string not in empt ystring`() {
         isSubstring("", "") shouldEqual false
     }
 }
