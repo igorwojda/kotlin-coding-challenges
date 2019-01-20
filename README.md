@@ -39,7 +39,7 @@ times and be persistent over time. Take your time before you take a look at the 
 - [Get odd](app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
 - [Count down](app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
 - [Count up and down](app/src/test/java/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
-- [Get all pairs](app/src/test/java/com/igorwojda/integer/getallpairs/GetAllPairs.md)
+- [Generate all pairs](app/src/test/java/com/igorwojda/integer/generateallpairs/GenerateAllPairs.md)
 - [List count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
 - [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
 - [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
