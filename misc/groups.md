@@ -1,4 +1,7 @@
 **Double pointer** 
+
+List of problems that can be solved using double pointer solution.
+
 - [SumZero](../app/src/test/java/com/igorwojda/list/sumzero/SumZero.md)
 - [PairAverage](../app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
 - [IsSubstring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
@@ -11,6 +14,9 @@
 - [MinSubListLength](../app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
 
 **Recursion** 
+
+List of problems that can be solved using recursive solution.
+
 - [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
 - [Get odd](../app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
 - [Any Callback](../app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.kt)
@@ -24,11 +30,12 @@
   
 **Recursion with helper function** 
 
-Helpful we want to solve problem in recursive way, but we don't want to change client API by changing method signature
-of the ordinal method eg. we don't want to add new parameters (additional data required for recursive call) or change
-return type (eg. change `List<Int>` to `MutableList<Int>`).
+
+
+Helper function is useful when we want to solve problem in recursive way, but we don't want to change client
+API by changing method signature of the ordinal method eg. we don't want to add new parameters (additional data required
+for recursive call) or change return type (eg. change `List<Int>` to `MutableList<Int>`).
 
 - [Get odd](../app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
 - [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md) 
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
-- [Flatten](../app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
