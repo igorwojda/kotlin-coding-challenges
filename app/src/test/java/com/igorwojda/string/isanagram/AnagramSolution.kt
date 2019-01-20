@@ -1,4 +1,4 @@
-package com.igorwojda.string.anagram
+package com.igorwojda.string.isanagram
 
 private object AnagramSolution {
     private fun anagrams(str1: String, str2: String): Boolean {
