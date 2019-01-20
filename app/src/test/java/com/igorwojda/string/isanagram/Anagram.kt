@@ -1,4 +1,4 @@
-package com.igorwojda.string.anagram
+package com.igorwojda.string.isanagram
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
