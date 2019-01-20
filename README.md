@@ -36,6 +36,7 @@ times and be persistent over time. Take your time before you take a look at the 
 - [Capitalize sentence](app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
 - [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
 - [Add up to](app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
+- [Get odd](app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
 - [Count down](app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
 - [Count up and down](app/src/test/java/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
 - [Get all pairs](app/src/test/java/com/igorwojda/integer/getallpairs/GetAllPairs.md)

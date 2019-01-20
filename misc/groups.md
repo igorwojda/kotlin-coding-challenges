@@ -12,6 +12,7 @@
 
 **Recursion** 
 - [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
+- [Get odd](../app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
 - [Power](../app/src/test/java/com/igorwojda/integer/power/Power.md)
 - [Binary Search Tree (validate)](../app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
 - [Fibonacci](../app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.kt) 
@@ -19,3 +20,6 @@
 - [Add up to](../app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
 - [Power](../app/src/test/java/com/igorwojda/integer/power/Power.md)
   
+**Recursion with helper function**
+- [Get odd](../app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
+-  [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)

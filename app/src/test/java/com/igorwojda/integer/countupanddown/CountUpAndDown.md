@@ -1,5 +1,9 @@
 # Count up and down
 
+## Nice to solve before
+
+[Count down](../countdown/CountDown.md)
+
 ## Instructions
 
 Given positive integer `n` implement a function which returns a list containing all steps up from `0` to `n` and down to `0`.
