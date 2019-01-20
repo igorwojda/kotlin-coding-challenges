@@ -12,15 +12,15 @@ private object CountDownSolution {
 private object CountDownSolution2 {
     private fun countDown(n: Int): List<Int> {
         // We want to keep return type unchanged while implementing recursive solution, so we will
-        // use helper recursive function.
-        return countDownRecursive(n).toList()
-    }
+        // use helper method defied inside countDown function.
+        fun helper(n: Int): MutableList<Int> {
+            if (n == 0) {
+                return mutableListOf(0)
+            }
 
-    private fun countDownRecursive(n: Int): MutableList<Int> {
-        if (n == 0) {
-            return mutableListOf(0)
+            return mutableListOf(n).also { it.addAll(countDown(n - 1)) }
         }
 
-        return mutableListOf(n).also { it.addAll(countDown(n - 1)) }
+        return helper(n).toList()
     }
 }
