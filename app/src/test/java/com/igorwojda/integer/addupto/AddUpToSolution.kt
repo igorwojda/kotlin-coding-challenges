@@ -44,5 +44,3 @@ private object AddUpToSolution5 {
         return total
     }
 }
-
-

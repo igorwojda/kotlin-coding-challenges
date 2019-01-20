@@ -1,9 +1,9 @@
-package com.igorwojda.integer.countupanddown
+package com.igorwojda.integer.countdown
 
-//Kotlin idiomatic solution
+// Kotlin idiomatic solution
 private object CountDownSolution {
     private fun countDown(n: Int): List<Int> {
-        //Create a range and convert it to a list
+        // Create a range and convert it to a list
         return (n downTo 0).toList()
     }
 }

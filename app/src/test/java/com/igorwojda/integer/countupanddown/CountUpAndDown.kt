@@ -7,7 +7,6 @@ private fun countUpAndDown(n: Int): List<Int> {
     return emptyList()
 }
 
-
 class CountUpAndDownTest {
     @Test
     fun `count up and down 0`() {
