@@ -109,13 +109,19 @@ times and be persistent over time. Take your time before you take a look at the 
 - [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
 - [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms/)
 
-## Coding problems websites
+## More Coding
+
+### Websites
 
 - [HackerRank](https://www.hackerrank.com/)
 - [CoderByte](https://coderbyte.com/challenges)
 - [CodeChef](https://www.codechef.com/problems/school)
 - [LeetCode](https://leetcode.com/problemset/all)
 - [GeeksForGeeks](https://www.geeksforgeeks.org)
+
+## Coding problem challenges
+- [Code Google Com Codejam Past challenges](https://code.google.com/codejam/past-contests)
+- [Advent of code past events](https://adventofcode.com/2018/events)
 
 # Contribute
 
