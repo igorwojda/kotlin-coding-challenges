@@ -7,7 +7,7 @@ private fun isValidSearchBinaryTree(node: Node<Int>): Boolean {
     return false
 }
 
-class PuzzleTest {
+class IsValidSearchBinaryTreeTest {
     @Test
     fun `Validate recognizes a valid BST`() {
         // -- -------Tree------------

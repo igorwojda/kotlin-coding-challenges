@@ -5,19 +5,19 @@ package com.igorwojda.string.issubstring
 //
 // Optimal solution using double pointer.
 private object OptimalSolution1 {
-    private fun isSubstring(first: String, second: String): Boolean {
-        if (first.isEmpty() && second.isEmpty()) return true
-        if (first.length <= second.length) return false
+    private fun isSubstring(str: String, subStr: String): Boolean {
+        if (str.isEmpty() || subStr.isEmpty()) return false
+        if (str.length <= subStr.length) return false
 
         var pointer1 = 0
         var pointer2 = 0
 
-        while (pointer1 <= first.lastIndex) {
-            if (first[pointer1] == second[pointer2]) {
+        while (pointer1 <= str.lastIndex) {
+            if (str[pointer1] == subStr[pointer2]) {
                 pointer2++
             }
 
-            if (pointer2 == second.length) {
+            if (pointer2 == subStr.length) {
                 return true
             }
 
@@ -36,19 +36,27 @@ private object OptimalSolution1 {
 //
 // Recursive solution
 private object RecursiveSolution1 {
-    private fun isSubstring(first: String, second: String): Boolean {
-        if (second.length > first.length) {
+    private fun isSubstring(str: String, subStr: String): Boolean {
+        if (subStr.length > str.length) {
             return false
         }
 
-        if (second.isEmpty()) {
-            return true
+        if (str.isEmpty() || subStr.isEmpty()) {
+            return false
         }
 
-        return if (first.first() == second.first()) {
-            isSubstring(first.drop(1), second.drop(1))
+        return if (str.first() == subStr.first()) {
+            val localStr = str.drop(1)
+            val localSubStr = subStr.drop(1)
+
+            if (localStr.first() == localSubStr.first()) {
+                true
+            } else {
+                isSubstring(localStr, localSubStr.drop(1))
+            }
+
         } else {
-            isSubstring(first.drop(1), second)
+            isSubstring(str.drop(1), subStr)
         }
     }
 }
@@ -59,37 +67,35 @@ private object RecursiveSolution1 {
 //
 // Recursive solution
 
-private object RecursiveSolution2 {
-    private fun isSubstring(first: String, second: String): Boolean {
-        if (second.isEmpty()) {
-            return true
-        }
-
-        fun helper(first: String, second: String, firstPointer1: Int = 0, secondPointer2: Int = 0): Boolean {
-            if (firstPointer1 > first.lastIndex) {
-                return false
-            }
-
-            return if (first[firstPointer1] == second[secondPointer2]) {
-                val p1 = firstPointer1 + 1
-                val p2 = secondPointer2 + 1
-
-                if (p1 > first.lastIndex || p2 > second.lastIndex) {
-                    return true
-                } else {
-                    helper(first, second, p1, p2)
-                }
-            } else {
-                val p1 = firstPointer1 + 1
-
-                if (p1 > first.lastIndex) {
-                    return false
-                } else {
-                    helper(first, second, p1, secondPointer2)
-                }
-            }
-        }
-
-        return helper(first, second)
+private fun isSubstring(str: String, subStr: String): Boolean {
+    if (str.isEmpty() || subStr.isEmpty()) {
+        return false
     }
+
+    fun helper(first: String, second: String, firstPointer1: Int = 0, secondPointer2: Int = 0): Boolean {
+        if (firstPointer1 > first.lastIndex) {
+            return false
+        }
+
+        return if (first[firstPointer1] == second[secondPointer2]) {
+            val localPointer1 = firstPointer1 + 1
+            val localPointer2 = secondPointer2 + 1
+
+            if (localPointer1 > first.lastIndex || localPointer2 > second.lastIndex) {
+                return true
+            } else {
+                helper(first, second, localPointer1, localPointer2)
+            }
+        } else {
+            val p1 = firstPointer1 + 1
+
+            if (p1 > first.lastIndex) {
+                return false
+            } else {
+                helper(first, second, p1, secondPointer2)
+            }
+        }
+    }
+
+    return helper(str, subStr)
 }

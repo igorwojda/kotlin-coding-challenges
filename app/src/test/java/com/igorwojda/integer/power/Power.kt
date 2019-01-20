@@ -7,7 +7,7 @@ private fun power(base: Int, exponent: Int): Int {
     return 0
 }
 
-class PuzzleTest {
+class PowerTest {
     @Test
     fun `power 2^1 returns 2`() {
         power(2, 1) shouldEqual 2

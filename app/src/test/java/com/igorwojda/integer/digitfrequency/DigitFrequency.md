@@ -1,4 +1,4 @@
-# Digit frequency name
+# Digit frequency
 
 ## Instructions
 

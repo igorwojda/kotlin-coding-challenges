@@ -7,7 +7,7 @@ private fun product(list: List<Int>): Int {
     return 0
 }
 
-class PuzzleTest {
+class ProductTest {
     @Test
     fun `product 0 returns 0`() {
         product(listOf(0)) shouldEqual 0
