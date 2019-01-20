@@ -5,11 +5,17 @@
 ## Instructions
 
 Given list containing items (integer, lists, sub-lists) implement **recursive** function which returns list with all
-values flattened.
+values flattened. This function mimics behaviour of Kotlin build in 
+[flatten](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/flatten.html) function.
 
 [Puzzle](Flatten.kt) | [Solution](FlattenSolution.kt)
 
-Example 1
+## Limitations
+
+Don't use Kotlin build in [flatten](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/flatten.html) 
+function.
+
+## Examples
 
 ```
 flatten(listOf(1)) // 1
