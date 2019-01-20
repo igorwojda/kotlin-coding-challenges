@@ -21,12 +21,12 @@ inline fun <K, V> MutableMap<K, V>.incrementExisting(key: K, value: V) {
 
 class TargetAverageTest {
     @Test
-    fun `empty list should return false`() {
+    fun `empty list return false`() {
         hasAverage(listOf(), 1.0) shouldEqual false
     }
 
     @Test
-    fun `list size 1 should return false`() {
+    fun `list size 1 return false`() {
         hasAverage(listOf(1), 1.0) shouldEqual false
     }
 

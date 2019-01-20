@@ -9,17 +9,17 @@ private fun sumZero(list: List<Int>): Pair<Int, Int>? {
 
 class SumZeroTest {
     @Test
-    fun `sumZero empty list should return null`() {
+    fun `sumZero empty list return null`() {
         sumZero(listOf()) shouldEqual null
     }
 
     @Test
-    fun `sumZero 1,2 should return null`() {
+    fun `sumZero 1, 2 return null`() {
         sumZero(listOf(1, 2)) shouldEqual null
     }
 
     @Test
-    fun `sumZero 1,2, 4, 7 should return null`() {
+    fun `sumZero 1, 2, 4, 7 return null`() {
         sumZero(listOf(1, 2, 4, 7)) shouldEqual null
     }
 
