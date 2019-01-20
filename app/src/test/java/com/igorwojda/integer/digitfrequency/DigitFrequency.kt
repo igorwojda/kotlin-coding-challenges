@@ -7,7 +7,7 @@ private fun equalDigitFrequency(i1: Int, i2: Int): Boolean {
     return false
 }
 
-class PuzzleTest {
+class DigitFrequencyTest {
     @Test
     fun `"789" and "897" have the same digit frequency`() {
         equalDigitFrequency(789, 897) shouldEqual true

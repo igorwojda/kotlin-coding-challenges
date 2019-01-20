@@ -3,43 +3,38 @@ package com.igorwojda.string.issubstring
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun isSubstring(first: String, second: String): Boolean {
+private fun isSubstring(str: String, subStr: String): Boolean {
     return false
 }
 
-class PuzzleTest {
+class IsSubstringTest {
     @Test
-    fun `first 'abc' and second 'abz' returns false`() {
-        isSubstring("abc", "abz") shouldEqual false
+    fun `substring is at the beginning`() {
+        isSubstring("abc", "ab") shouldEqual true
     }
 
     @Test
-    fun `first 'abc' and second 'bc' return true`() {
+    fun `substring us at the end`() {
         isSubstring("abc", "bc") shouldEqual true
     }
 
     @Test
-    fun `first '"Redactor"' and second 'Red' return true`() {
-        isSubstring("Redactor", "Red") shouldEqual true
+    fun `substring is in the middle`() {
+        isSubstring("abcdef", "cd") shouldEqual true
     }
 
     @Test
-    fun `first 'Here you are' and second 'you' return true`() {
-        isSubstring("Here you are", "you") shouldEqual true
+    fun `substring is empty`() {
+        isSubstring("abc", "") shouldEqual false
     }
 
     @Test
-    fun `first 'and everything' and second 'nothing' return false`() {
-        isSubstring("and everything", "nothing") shouldEqual false
+    fun `string is empty`() {
+        isSubstring("", "abc") shouldEqual false
     }
 
     @Test
-    fun `first empty and second empty return true`() {
-        isSubstring("", "") shouldEqual true
-    }
-
-    @Test
-    fun `first empty and second 'a' return false`() {
-        isSubstring("", "a") shouldEqual false
+    fun `first string and substring are empty`() {
+        isSubstring("", "") shouldEqual false
     }
 }
