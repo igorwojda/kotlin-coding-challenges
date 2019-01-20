@@ -54,7 +54,6 @@ private object RecursiveSolution1 {
             } else {
                 isSubstring(localStr, localSubStr.drop(1))
             }
-
         } else {
             isSubstring(str.drop(1), subStr)
         }
