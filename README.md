@@ -48,8 +48,8 @@ times and be persistent over time. Take your time before you take a look at the 
 - [Product](app/src/test/java/com/igorwojda/list/product/Product.md)
 
 **Apprentice**
-- [Palindrome](app/src/test/java/com/igorwojda/string/palindrome/basic/Palindrome.md)
-- [Tolerant palindrome](app/src/test/java/com/igorwojda/string/palindrome/tolerant/TolerantPalindrome.md)
+- [Is palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/basic/IsPalindrome.md)
+- [Is tolerant palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/tolerant/IsTolerantPalindrome.md)
 - [Anagram](app/src/test/java/com/igorwojda/string/anagram/Anagram.md)
 - [Max occurring char](app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md)
 - [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
