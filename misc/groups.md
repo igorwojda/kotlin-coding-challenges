@@ -19,7 +19,14 @@
 - [Fibonacci with recursive cache](../app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
 - [Add up to](../app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
 - [Power](../app/src/test/java/com/igorwojda/integer/power/Power.md)
+- [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
   
-**Recursion with helper function**
+**Recursion with helper function** 
+
+Helpful we want to solve problem in recursive way, but we don't want to change client API by changing method signature
+of the ordinal method eg. we don't want to add new parameters (additional data required for recursive call) or change
+return type (eg. change `List<Int>` to `MutableList<Int>`).
+
 - [Get odd](../app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
--  [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
+- [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md) 
+- [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
