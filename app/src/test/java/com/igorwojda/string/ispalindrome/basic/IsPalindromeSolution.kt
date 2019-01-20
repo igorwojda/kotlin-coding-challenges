@@ -1,4 +1,4 @@
-package com.igorwojda.string.palindrome.basic
+package com.igorwojda.string.ispalindrome.basic
 
 // string reverse
 private object PalindromeSolution1 {
