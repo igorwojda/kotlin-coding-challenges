@@ -3,25 +3,25 @@ package com.igorwojda.string.issubstring
 // Time complexity: O(n+m)
 // Space complexity: O(1)
 //
-// Double pointer solution
+// Optimal solution using double pointer.
 private object OptimalSolution1 {
     private fun isSubstring(first: String, second: String): Boolean {
         if (first.isEmpty() && second.isEmpty()) return true
         if (first.length <= second.length) return false
 
-        var i = 0
-        var j = 0
+        var pointer1 = 0
+        var pointer2 = 0
 
-        while (i <= first.lastIndex) {
-            if (first[i] == second[j]) {
-                j++
+        while (pointer1 <= first.lastIndex) {
+            if (first[pointer1] == second[pointer2]) {
+                pointer2++
             }
 
-            if (j == second.length) {
+            if (pointer2 == second.length) {
                 return true
             }
 
-            i++
+            pointer1++
         }
 
         return false

@@ -1,26 +1,26 @@
 package com.igorwojda.list.sumzero
 
 private object SumZeroSolution1 {
-    // Optimal solution
+    // Optimal solution using double pointer.
     // Time complexity: O(n)
     fun sumZero(list: List<Int>): Pair<Int, Int>? {
         if (list.isEmpty()) {
             return null
         }
 
-        var leftIndex = 0
-        var rightIndex = list.lastIndex
+        var pointer1 = 0
+        var pointer2 = list.lastIndex
 
         // declare loop
-        while (leftIndex != rightIndex) {
-            val leftElement = list[leftIndex]
-            val rightElement = list[rightIndex]
+        while (pointer1 != pointer2) {
+            val leftElement = list[pointer1]
+            val rightElement = list[pointer2]
             val sum = leftElement + rightElement
 
             when {
                 sum == 0 -> return Pair(leftElement, rightElement)
-                sum > 0 -> rightIndex--
-                sum < 0 -> leftIndex++
+                sum > 0 -> pointer2--
+                sum < 0 -> pointer1++
             }
         }
 
@@ -29,7 +29,7 @@ private object SumZeroSolution1 {
 }
 
 private object SumZeroSolution2 {
-    // Naive solution
+    // Naive solution using nested loop.
     // Time complexity: O(n^2)
     fun sumZero(list: List<Int>): Pair<Int, Int>? {
         list.forEachIndexed { index, element1 ->

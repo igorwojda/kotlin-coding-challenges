@@ -2,18 +2,18 @@ import com.igorwojda.linkedlist.base.LinkedListSolutionExtended
 
 private object CircularCheckSolution {
     private fun circularCheck(list: LinkedListSolutionExtended.LinkedList<Char>): Boolean {
-        var slow = list.first
-        var fast = list.head
+        var slowPointer = list.first
+        var fastPointer = list.head
 
         list.forEach {
-            slow = slow?.next
-            fast = fast?.next?.next
+            slowPointer = slowPointer?.next
+            fastPointer = fastPointer?.next?.next
 
-            if (fast == null) {
+            if (fastPointer == null) {
                 return false
             }
 
-            if (slow == fast) {
+            if (slowPointer == fastPointer) {
                 return true
             }
         }

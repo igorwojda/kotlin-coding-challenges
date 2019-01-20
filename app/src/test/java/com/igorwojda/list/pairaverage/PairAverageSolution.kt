@@ -1,23 +1,23 @@
 package com.igorwojda.list.pairaverage
 
 // Time complexity: O(n)
-// Double pointer solution
+// Optimal solution using double pointer.
 private object OptimalSolution {
     fun hasAverage(list: List<Int>, average: Double): Boolean {
         if (list.size < 2) {
             return false
         }
 
-        var leftIndex = 0
-        var rightIndex = list.lastIndex
+        var pointer1 = 0
+        var pointer2 = list.lastIndex
 
-        while (leftIndex != rightIndex) {
-            val pairAvg: Double = (list[leftIndex].toDouble() + list[rightIndex].toDouble()) / 2
+        while (pointer1 != pointer2) {
+            val pairAvg: Double = (list[pointer1].toDouble() + list[pointer2].toDouble()) / 2
 
             when {
                 pairAvg == average -> return true
-                pairAvg < average -> leftIndex++
-                pairAvg > average -> rightIndex--
+                pairAvg < average -> pointer1++
+                pairAvg > average -> pointer2--
             }
         }
 
