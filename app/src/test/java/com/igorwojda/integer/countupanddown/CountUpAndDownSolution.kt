@@ -3,10 +3,10 @@ package com.igorwojda.integer.countupanddown
 // Create two lists and add them
 private object CountUpAndDownSolution1 {
     private fun countUpAndDown(n: Int): List<Int> {
-        //Create first list containing integers from 0 to n
+        // Create first list containing integers from 0 to n
         val upList = (0..n).toMutableList()
 
-        //Create second list containing integers from n -1 to 0
+        // Create second list containing integers from n -1 to 0
         val downList = ((n - 1) downTo 0).toList()
 
         // Join lists
