@@ -13,12 +13,12 @@ private object SumZeroSolution1 {
 
         // declare loop
         while (pointer1 != pointer2) {
-            val leftElement = list[pointer1]
-            val rightElement = list[pointer2]
-            val sum = leftElement + rightElement
+            val element1 = list[pointer1]
+            val element2 = list[pointer2]
+            val sum = element1 + element2
 
             when {
-                sum == 0 -> return Pair(leftElement, rightElement)
+                sum == 0 -> return Pair(element1, element2)
                 sum > 0 -> pointer2--
                 sum < 0 -> pointer1++
             }
