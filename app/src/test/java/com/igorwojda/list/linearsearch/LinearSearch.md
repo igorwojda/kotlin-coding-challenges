@@ -8,7 +8,8 @@ Given list of strings and a string return index of th value in the list or `-1` 
 
 ## Limitations
 
-Don't use Kotlin build-in `indexOf` method.
+Don't use any Kotlin build-in methods that are directly returning index of element like `indexOf` / `lastIndexOf` /
+`indexOfFirst` / `indexOfLast`, etc.
 
 ## Examples
 
