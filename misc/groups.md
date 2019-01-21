@@ -27,10 +27,9 @@ List of problems that can be solved using recursive solution.
 - [Add up to](../app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
 - [Power](../app/src/test/java/com/igorwojda/integer/power/Power.md)
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
+- [Capitalize first](../app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.kt)
   
 **Recursion with helper function** 
-
-
 
 Helper function is useful when we want to solve problem in recursive way, but we don't want to change client
 API by changing method signature of the ordinal method eg. we don't want to add new parameters (additional data required

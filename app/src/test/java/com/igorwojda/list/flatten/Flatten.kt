@@ -23,7 +23,6 @@ class FlattenTest {
         flatten(listOf(1, listOf(2, listOf(3), emptyList<Any>()))) shouldEqual listOf(1, 2, 3)
     }
 
-
     @Test
     fun `flatter test 4`() {
         flatten(listOf(1, listOf(2, listOf<Any>(emptyList<Any>())), listOf(3))) shouldEqual listOf(1, 2, 3)
