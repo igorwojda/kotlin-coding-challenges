@@ -1,10 +1,10 @@
 # Kotlin coding puzzles
 
 This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that meant to be solved using
-[Kotlin](https://kotlinlang.org/) language (hints, solutions and tests are
-here as well). Purpose of this repository is to help you to practice deliberately and develop strong problem-solving
-skills. This will make you better programmer and will help you to get new job by passing
-[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
+[Kotlin](https://kotlinlang.org/) language (hints, solutions and tests are here as well). Purpose of this repository is
+to help you to practice deliberately and develop strong problem-solving skills. This will help you become better
+programmer and improve you chance of getting new job, by passing
+[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interview.
 
 ## Puzzle structure
 
