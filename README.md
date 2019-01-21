@@ -54,7 +54,7 @@ your time before you take a look at the presented solution. **Good luck!**
 **Apprentice**
 - [Is palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/basic/IsPalindrome.md)
 - [Is tolerant palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/tolerant/IsTolerantPalindrome.md)
-- [Is Anagram](app/src/test/java/com/igorwojda/string/isanagram/IsAnagram.md)
+- [Is anagram](app/src/test/java/com/igorwojda/string/isanagram/IsAnagram.md)
 - [Max occurring char](app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md)
 - [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
 - [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
@@ -78,12 +78,12 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Digit frequency](app/src/test/java/com/igorwojda/integer/digitfrequency/DigitFrequency.md)
 - [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
 - [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
-- [Is substring](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
+- [Is sub string](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 - [Tree traversal](app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
 - [Tree level width](app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
-- [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
-- [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
-- [Any Callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.md)
+- [Binary search tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
+- [Binary search tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
+- [Any callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.md)
 - [Flatten](app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
   
 
@@ -91,13 +91,13 @@ your time before you take a look at the presented solution. **Good luck!**
 - [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
 - [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
 - [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
-- [Circular linked list?](app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
+- [Circular check](app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
 - [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
 - [Merge sort](app/src/test/java/com/igorwojda/list/mergesort/MergeSort.md)
 - [Fibonacci](app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md)
 - [Fibonacci with recursive cache](app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
-- [Max sub-list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
-- [Min sub-list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
+- [Max sub list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
+- [Min sub list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
 
 # References
 
