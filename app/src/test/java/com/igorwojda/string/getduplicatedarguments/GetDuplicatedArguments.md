@@ -2,8 +2,8 @@
 
 ## Instructions
 
-Given variable number of arguments (strings) checks whether there are any duplicates among the arguments and return
-list of all unique duplicates. If no params arguments are passes return empty list.
+Given variable number of arguments (list of strings) checks whether there are any duplicates among the arguments and
+return list of all unique duplicates. If no arguments are passes return empty list.
 
 [Puzzle](GetDuplicatedArguments.kt) | [Solution](GetDuplicatedArgumentsSolution.kt)
 
