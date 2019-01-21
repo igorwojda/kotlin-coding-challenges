@@ -1,7 +1,15 @@
 package com.igorwojda.string.capitalizesentence
 
-private object capitalizeSolution1 {
-    private fun capitalize(str: String): String {
+// Kotlin idiomatic solution
+private object Solution1 {
+    private fun capitalizeSentence(str: String): String {
+        return str.split(" ").joinToString(" ") { it.capitalize() }
+    }
+}
+
+// Iterative solution
+private object Solution2 {
+    private fun capitalizeSentence(str: String): String {
         val words = mutableListOf<String>()
 
         str.split(" ").forEach {
@@ -9,11 +17,5 @@ private object capitalizeSolution1 {
         }
 
         return words.joinToString(" ")
-    }
-}
-
-private object capitalizeSolution2 {
-    private fun capitalize(str: String): String {
-        return str.split(" ").joinToString(" ") { it.capitalize() }
     }
 }
