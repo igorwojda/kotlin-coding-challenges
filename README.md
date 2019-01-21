@@ -28,16 +28,18 @@ determine space/time complexity and we look at code readability.
 
 # Let's solve some puzzles
 
-Puzzles are segregated by different difficulty. Some puzzle may contain a reference to puzzles that should be solved
-before to have better understanding of the problem. To succeed you need to practice often, repeat same puzzles multiple
-times and be persistent over time. Take your time before you take a look at the presented solution. Good luck!
+Puzzles below are segregated by different difficulty. If you want to solve puzzles by problem type, please check this
+[section](misc/ProblemGroups.md).
+
+Some puzzle may contain a reference to other puzzles that should be solved before to have better understanding of the
+problem. To succeed you need to practice often, repeat same puzzles multiple times and be persistent over time. Take
+your time before you take a look at the presented solution. **Good luck!**
 
 **New in Town**
 - [Capitalize sentence](app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
 - [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
 - [Add up to](app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
 - [Linear search](app/src/test/java/com/igorwojda/list/linearsearch/LinearSearch.md)
-- [LinearSearch.kt](app/src/test/java/com/igorwojda/list/linearsearch/LinearSearch.kt)
 - [Count down](app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
 - [Count up and down](app/src/test/java/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
 - [Generate all pairs](app/src/test/java/com/igorwojda/integer/generateallpairs/GenerateAllPairs.md)
@@ -47,7 +49,7 @@ times and be persistent over time. Take your time before you take a look at the 
 - [Power](app/src/test/java/com/igorwojda/integer/power/Power.md)
 - [Factorial](app/src/test/java/com/igorwojda/integer/factorial/Factorial.md)
 - [Product](app/src/test/java/com/igorwojda/list/product/Product.md)
-- [Capitalize first](app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.kt)
+- [Capitalize first](app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
 
 **Apprentice**
 - [Is palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/basic/IsPalindrome.md)
@@ -81,7 +83,7 @@ times and be persistent over time. Take your time before you take a look at the 
 - [Tree level width](app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
 - [Binary Search Tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
 - [Binary Search Tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
-- [Any Callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.kt)
+- [Any Callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.md)
 - [Flatten](app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
   
 
