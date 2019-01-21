@@ -1,4 +1,9 @@
-**Double pointer** 
+# Problems groups
+
+This section contains **subset** of puzzles that are grouped by type of solution (recursive, double pointer etc.) and
+type of problem (searching, sorting etc.).
+
+## Double pointer 
 
 List of problems that can be solved using double pointer solution.
 
@@ -9,11 +14,11 @@ List of problems that can be solved using double pointer solution.
 - [Midpoint](../app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
 - [CircularCheck](../app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
 
-**Sliding window** 
+## Sliding window 
 - [MaxSubListSum](../app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md) 
 - [MinSubListLength](../app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
 
-**Recursion** 
+## Recursion 
 
 List of problems that can be solved using recursive solution.
 
@@ -29,7 +34,7 @@ List of problems that can be solved using recursive solution.
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 - [Capitalize first](../app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.kt)
   
-**Recursion with helper function** 
+### Recursion with helper function 
 
 Helper function is useful when we want to solve problem in recursive way, but we don't want to change client
 API by changing method signature of the ordinal method eg. we don't want to add new parameters (additional data required
@@ -39,7 +44,12 @@ for recursive call) or change return type (eg. change `List<Int>` to `MutableLis
 - [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md) 
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 
+## Search algorithms
+- [Linear search](../app/src/test/java/com/igorwojda/list/linearsearch/LinearSearch.md)
 
-
+## Sort algorithms
+- [Bubble sort](../app/src/test/java/com/igorwojda/list/bubblesort/BubbleSort.md)
+- [Merge sort](../app/src/test/java/com/igorwojda/list/mergesort/MergeSort.md)
+- [Selection sort](../app/src/test/java/com/igorwojda/list/selectionsort/SelectionSort.md)
 
 
