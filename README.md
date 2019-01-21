@@ -76,7 +76,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Square equals](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
 - [Sum zero](app/src/test/java/com/igorwojda/list/sumzero/SumZero.md)
 - [Digit frequency](app/src/test/java/com/igorwojda/integer/digitfrequency/DigitFrequency.md)
-- [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedparams/GetDuplicatedArguments.md)
+- [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
 - [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
 - [Is substring](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 - [Tree traversal](app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
