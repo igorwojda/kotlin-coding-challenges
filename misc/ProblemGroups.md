@@ -52,6 +52,7 @@ complexity from `O(n^2)` to `O(n)`.
 - [Max occurring char](../app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md) 
 - [Get duplicated arguments](../app/src/test/java/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
 - [Subtract](../app/src/test/java/com/igorwojda/list/subtract/Subtract.md)
+- [Repeated Character](../app/src/test/java/com/igorwojda/string/repeated/RepeatedCharacter.kt)
 
 ## Sliding window 
 

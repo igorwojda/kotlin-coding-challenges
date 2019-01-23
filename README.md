@@ -62,6 +62,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
 - [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
 - [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
+- [Repeated Character](app/src/test/java/com/igorwojda/string/repeated/RepeatedCharacter.kt)
 
 **Warrior** 
 - [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
