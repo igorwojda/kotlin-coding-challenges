@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Given list of positive integers and positive integer `n` implement the function which finds minimum length of sub-list
+Given list of positive integers and positive integer `n` implement a function which finds minimum length of sub-list
 where sum all all elements is equal or greater than `n`
 
 You can use helper `min` function to deal with Kotlin nullability.

@@ -2,8 +2,7 @@
 
 ## Instructions
 
-Given list of strings implement the **recursive** function which will capitalize first letter of each string in the
-list.
+Given list of strings implement a **recursive** function which will capitalize first letter of each string in the list.
 
 [Puzzle](CapitalizeFirst.kt) | [Solution](CapitalizeFirstSolution.kt)
 
