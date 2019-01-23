@@ -4,7 +4,14 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun isAnagram(str1: String, str2: String): Boolean {
-    return false
+    return getCharFrequency(str1) == getCharFrequency(str2)
+}
+
+private fun getCharFrequency(str: String): Map<Char, Int> {
+    return str.toLowerCase()
+        .filter { it.isLetterOrDigit() }
+        .groupingBy { it }
+        .eachCount()
 }
 
 class AnagramTest {
