@@ -22,7 +22,9 @@ squareEquals(listOf(1, 2, 3), listOf(9, 1)) // false (does not have square of 2)
 squareEquals(listOf(1, 2, 1), listOf(4, 1, 4)) // false (frequency must be the same)
 ```
 
+## Hints
+
 <details>
 <summary>Hint 1</summary>
-Use frequency counter
+Use frequency counter.
 </details>

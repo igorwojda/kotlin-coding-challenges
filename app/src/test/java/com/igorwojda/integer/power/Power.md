@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Given positive integer `base` and positive integer `exponent` implement the function which calculates power of base of
+Given positive integer `base` and positive integer `exponent` implement a function which calculates power of base of
 exponent. This function should mimic functionality of `Math.pow`.
 
 [Puzzle](Power.kt) | [Solution](PowerSolution.kt)
