@@ -99,13 +99,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Min sub list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
 - [Subtract](app/src/test/java/com/igorwojda/list/subtract/Subtract.md)
 
-# References
-
-## Articles
-
-- [Data structures explained](https://medium.com/basecs/tagged/data-structures) series
-
-# Even more coding challenges
+# More coding challenges
 
 ## Websites
 
