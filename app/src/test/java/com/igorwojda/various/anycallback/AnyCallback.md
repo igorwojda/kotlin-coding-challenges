@@ -7,8 +7,8 @@
 
 ## Instructions
 
-Given list of integers and callback implement the **recursive** function which returns `true` if simple value in the
-list passed to callback returns `true`, otherwise return `false`.
+Given list of integers and callback implement a **recursive** function which returns `true` if simple value in the list
+passed to callback returns `true`, otherwise return `false`.
 
 [Puzzle](AnyCallback.kt) | [Solution](AnyCallbackSolution.kt)
 
