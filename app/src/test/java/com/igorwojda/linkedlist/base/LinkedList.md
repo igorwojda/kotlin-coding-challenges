@@ -2,24 +2,25 @@
 
 ### Instructions
 
-Implement [LinkedList](https://en.wikipedia.org/wiki/Linked_list) data structure. This is quite big puzzle, so we will split it into
-multiple generateSteps (multiple methods and properties that we have to implement).
+Implement [LinkedList](https://en.wikipedia.org/wiki/Linked_list) data structure. This is quite big puzzle, so we will
+split it into multiple generateSteps (multiple methods and properties that we have to implement).
 
-We also want to handle various edge cases, because we are assuming that developer using our class many do certain mistakes. That's why each
-step has one or more tests associated with it. Tests are commented out default, so before staring each step we will have to enable all tests
-related to given step by uncommenting it. To quickly uncomment the test select all lines containing test method and press `Cmd + /` keys
-(`Comment with line Comment` action).
+We also want to handle various edge cases, because we are assuming that  developer using our class many do certain
+mistakes. That's why each step has one or more tests associated with it. Tests are commented out default, so before
+staring each step we will have to enable all tests related to given step by uncommenting it. To quickly uncomment the
+test select all lines containing test method and press `Cmd + /` keys (`Comment with line Comment` action).
 
 
 ## Basic steps
 
-Solution for basics generateSteps is available in the `LinkedListSolutionBasic` object ([LinkedListSolution.kt](LinkedListSolution.kt) file).
+Solution for basics generateSteps is available in the `LinkedListSolutionBasic` object
+([LinkedListSolution.kt](LinkedListSolution.kt) file).
 
 ### 1. constructor `LinkedList<E>()`
 
-- **Description**: Create a class to represent a linked list. When created, a linked list should have no head node associated with it. The
-  `LinkedList` instance will have one property, `head`, which is a reference to the first node of the linked list. By default `head` should
-  be `null`.
+- **Description**: Create a class to represent a linked list. When created, a linked list should have no head node
+  associated with it. The `LinkedList` instance will have one property, `head`, which is a reference to the first node
+  of the linked list. By default `head` should be `null`.
 - **Test**: `when list is created head node is null`
 
 Example:
@@ -31,8 +32,8 @@ list.head // null
 
 ### 2. `insertFirst(data: E)` method
 
-- **Description**: Creates a Node from argument `data` and assigns the resulting node to the `head` property. Make sure to handle the
-  case in which the linked list already has a node assigned to the `head` property.
+- **Description**: Creates a Node from argument `data` and assigns the resulting node to the `head` property. Make sure
+  to handle the case in which the linked list already has a node assigned to the `head` property.
 - **Test**: `append a node to the start of the list`
 
 Example:
@@ -195,7 +196,8 @@ list.getAt(1) // 'a'
 
 ### 12. `insertAt(data: E, index: Int)` method
 
-- **Description**: 	Create an insert a node at provided index. If index is out of bounds, add the node to the end of the list.
+- **Description**: Create an insert a node at provided index. If index is out of bounds, add the node to the end of the
+  list.
 - **Tests**: `insert a new node with data at the 0 index when the list is empty`,
   `insert a new node with data at the 0 index when the list has elements`,
   `inserts a new node with data at a middle index`,
@@ -215,12 +217,14 @@ list.getAt(1) // 'H'
 
 ## Extra steps
 
-Solution for extended generateSteps is available in the `LinkedListSolutionExtended` object ([LinkedListSolution.kt](LinkedListSolution.kt) file).
+Solution for extended generateSteps is available in the `LinkedListSolutionExtended` object
+([LinkedListSolution.kt](LinkedListSolution.kt) file).
 
 ### 13. Update internal implementation
 
-If you haven't done it already it's a good time to refactor the `LinkedList` class. We can improve internal implementations without changing
-the external API. Methods `insertFirst`/`insertLast`/`removeFirst`/`removeLast`/`first`/`last` can be refactored by using `insertAt`/
+If you haven't done it already it's a good time to refactor the `LinkedList` class. We can improve internal
+implementations without changing the external API. Methods
+`insertFirst`/`insertLast`/`removeFirst`/`removeLast`/`first`/`last` can be refactored by using `insertAt`/
 `removeAt`/`getAt` methods (with appropriate) parameters.
 - **Tests**: No new tests here, just makes sure all the previous tests are passing.
 
@@ -228,8 +232,8 @@ the external API. Methods `insertFirst`/`insertLast`/`removeFirst`/`removeLast`/
 
 - **Description**: Allows to iterate over list of items using t Kotlin
   [Iterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html) and
-  [Iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interfaces. This allows to use many Kotlin
-  extensions for `Iterable` interface such as `forEach`, `filter`, `sumBy`, `map` etc.
+  [Iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interfaces. This
+  allows to use many Kotlin extensions for `Iterable` interface such as `forEach`, `filter`, `sumBy`, `map` etc.
 - **Tests**: `sum all the nodes`
 
 Example 1:
@@ -260,7 +264,8 @@ list.sumBy { it.data } // 10
 
 ### 15. Add plus operator overloading
 
-Implement [operator overloading](https://kotlinlang.org/docs/reference/operator-overloading.html) to easily add two lists lists.
+Implement [operator overloading](https://kotlinlang.org/docs/reference/operator-overloading.html) to easily add two
+lists lists.
 
 - **Tests*- `add two empty lists`, `add two lists`
 

@@ -10,8 +10,8 @@ Return the 'middle' node of a linked list. If the list has an even number of ele
 the node at the end of the first half of the list.
 
 We are using version of linked list that implements Kotlin
-[Iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interface, so we can use `forEach` instead
-of `while` loop.
+[Iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interface, so we can
+use `forEach` instead of `while` loop.
 
 [Puzzle](Midpoint.kt) | [Solution](MidpointSolution.kt)
 

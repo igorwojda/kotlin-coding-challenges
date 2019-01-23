@@ -8,7 +8,8 @@ Algorithm:
 1. Find middle point
 2. Split unsorted list into two lists (using middle point)
 3. Split lists until each list has single element (a list containing one element is considered sorted)
-4. Merge sub-lists to produce new sorted sub-lists until there is only one sub-list remaining. This will be the sorted list.
+4. Merge sub-lists to produce new sorted sub-lists until there is only one sub-list remaining. This will be the sorted
+   list.
 
 [Puzzle](MergeSort.kt) | [Solution](MergeSortSolution.kt)
 

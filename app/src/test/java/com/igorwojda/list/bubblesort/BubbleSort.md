@@ -2,12 +2,12 @@
 
 ## Instructions
 
-Sort list of numbers from lowest number to greatest number using [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort).
+Sort list of numbers from lowest number to greatest number using
+[bubble sort](https://en.wikipedia.org/wiki/Bubble_sort).
 
-Algorithm:
-Starting from the beginning of the list, compare every adjacent pair, swap their position if they are not in the right order (the latter one
-is smaller than the former one). After each iteration, one less element (the last one) is needed to be compared until there are no more
-elements left to be compared.
+Algorithm: Starting from the beginning of the list, compare every adjacent pair, swap their position if they are not in
+the right order (the latter one is smaller than the former one). After each iteration, one less element (the last one)
+is needed to be compared until there are no more elements left to be compared.
 
 [Puzzle](BubbleSort.kt) | [Solution](BubbleSortSolution.kt)
 
@@ -31,7 +31,8 @@ Sort `[5, 1, 4, 2, 8]`
 [1, 2, 4, 5, 8] -> [1, 2, 4, 5, 8]
 ```
 
-Now, the list is already sorted, but the algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted
+Now, the list is already sorted, but the algorithm does not know if it is completed. The algorithm needs one whole pass
+without any swap to know it is sorted
 
 **Third Pass**
 ```

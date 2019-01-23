@@ -8,14 +8,15 @@
 
 ## Instructions
 
-Given a linked list, return the element n positions from the last node in the list. Assume that `endIndex` will always be less than the
-length of the list.
+Given a linked list, return the element n positions from the last node in the list. Assume that `endIndex` will always
+be less than the length of the list.
 
 [Puzzle](FromLast.kt) | [Solution](FromLastSolution.kt)
 
 ## Limitations
 
-Do not use a counter variable, do not retrieve the `size` of the list, and only iterate through the **whole*- list one time.
+Do not use a counter variable, do not retrieve the `size` of the list, and only iterate through the **whole*- list one
+time.
 
 ## Examples
 
