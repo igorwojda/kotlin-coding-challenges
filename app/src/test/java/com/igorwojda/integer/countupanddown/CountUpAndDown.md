@@ -6,7 +6,8 @@
 
 ## Instructions
 
-Given positive integer `n` implement a function which returns a list containing all steps up from `0` to `n` and down to `0`.
+Given positive integer `n` implement a function which returns a list containing all steps up from `0` to `n` and down to
+`0`.
 
 [Puzzle](CountUpAndDown.kt) | [Solution](CountUpAndDownSolution.kt)
 
