@@ -51,6 +51,7 @@ complexity from `O(n^2)` to `O(n)`.
 - [Digit frequency](../app/src/test/java/com/igorwojda/integer/digitfrequency/DigitFrequency.md)
 - [Max occurring char](../app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md) 
 - [Get duplicated arguments](../app/src/test/java/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
+- [Subtract](../app/src/test/java/com/igorwojda/list/subtract/Subtract.md)
 
 ## Sliding window 
 
