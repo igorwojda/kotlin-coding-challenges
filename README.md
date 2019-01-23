@@ -97,18 +97,20 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Fibonacci](app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md)
 - [Fibonacci with recursive cache](app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
 - [Max sub list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
-- [Min sub list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
+- [MinSubListLength.md](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
 
-# References
+# Even more coding challenges
 
-## Articles
+## Websites
 
-- [Data structures explained](https://medium.com/basecs/tagged/data-structures) series
-
-## Books
-
-- [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
-- [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
+- [HackerRank](https://www.hackerrank.com/)
+- [Code Google Com Codejam](https://code.google.com/codejam/past-contests)
+- [Advent of code](https://adventofcode.com/2018/events)
+- [Project euler](https://projecteuler.net/archives)
+- [GeeksForGeeks](https://www.geeksforgeeks.org)
+- [CoderByte](https://coderbyte.com/challenges)
+- [CodeChef](https://www.codechef.com/problems/school)
+- [LeetCode](https://leetcode.com/problemset/all)
 
 ## Video courses
 
@@ -116,24 +118,19 @@ your time before you take a look at the presented solution. **Good luck!**
 - [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
 - [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms/)
 
-## More Coding
+## Books
 
-### Websites
+- [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
+- [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
 
-- [HackerRank](https://www.hackerrank.com/)
-- [CoderByte](https://coderbyte.com/challenges)
-- [CodeChef](https://www.codechef.com/problems/school)
-- [LeetCode](https://leetcode.com/problemset/all)
-- [GeeksForGeeks](https://www.geeksforgeeks.org)
+## Articles
 
-## Coding problem challenges
-- [Code Google Com Codejam Past challenges](https://code.google.com/codejam/past-contests)
-- [Advent of code past events](https://adventofcode.com/2018/events)
+- [Data structures explained](https://medium.com/basecs/tagged/data-structures) series
 
 # Contribute
 
-If you think something is incorrect, you have found a new puzzle, have a better solution or simply you want to
-[add new puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle) please create PR or open a
+If you think something is incorrect, have a better solution, give feedback or simply you want to
+[add new coding puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle) just create PR or open a
 new issue.
 
 ## Contributors
