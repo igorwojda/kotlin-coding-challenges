@@ -1,7 +1,7 @@
 package com.igorwojda.linkedlist.fromlast
 
-import com.igorwojda.linkedlist.base.LinkedListSolutionExtended.LinkedList
-import com.igorwojda.linkedlist.base.LinkedListSolutionExtended.Node
+import com.igorwojda.linkedlist.base.Solution2.LinkedList
+import com.igorwojda.linkedlist.base.Solution2.Node
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
