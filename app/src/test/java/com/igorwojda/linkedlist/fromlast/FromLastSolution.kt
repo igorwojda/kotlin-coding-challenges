@@ -1,10 +1,13 @@
 package com.igorwojda.linkedlist.fromlast
 
+import com.igorwojda.linkedlist.base.Solution2.LinkedList
+import com.igorwojda.linkedlist.base.Solution2.Node
+
 private object Solution {
     private fun fromLast(
-        list: LinkedListSolutionExtended.LinkedList<Char>,
+        list: LinkedList<Char>,
         endIndex: Int
-    ): LinkedListSolutionExtended.Node<Char>? {
+    ): Node<Char>? {
         var slow = list.first
         var fast = list.first
 

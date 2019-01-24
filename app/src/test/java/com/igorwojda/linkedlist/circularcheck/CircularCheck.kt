@@ -1,5 +1,7 @@
 package com.igorwojda.linkedlist.circularcheck
 
+import com.igorwojda.linkedlist.base.Solution2.LinkedList
+import com.igorwojda.linkedlist.base.Solution2.Node
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
