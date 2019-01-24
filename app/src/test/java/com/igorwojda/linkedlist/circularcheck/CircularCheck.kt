@@ -1,5 +1,5 @@
-import com.igorwojda.linkedlist.base.LinkedListSolutionExtended.LinkedList
-import com.igorwojda.linkedlist.base.LinkedListSolutionExtended.Node
+package com.igorwojda.linkedlist.circularcheck
+
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 

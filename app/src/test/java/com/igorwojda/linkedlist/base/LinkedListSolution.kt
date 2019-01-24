@@ -1,6 +1,7 @@
 package com.igorwojda.linkedlist.base
 
-private object LinkedListSolutionBasic {
+// Basic solution
+private object Solution1 {
     private class LinkedList<E> {
         var head: Node<E>? = null
 
@@ -117,7 +118,8 @@ private object LinkedListSolutionBasic {
     )
 }
 
-object LinkedListSolutionExtended {
+// Extended solution
+object Solution2 {
     class LinkedList<E> : Iterable<Node<E>> {
         var head: Node<E>? = null
 

@@ -2,7 +2,7 @@ package com.igorwojda.queue.twostack
 
 import com.igorwojda.queue.int.IntStackSolution.IntStack
 
-private object TwoStackQueueSolution {
+private object Solution {
     private class IntQueue {
         val stackPrimary = IntStack()
         val stackTemporary = IntStack()

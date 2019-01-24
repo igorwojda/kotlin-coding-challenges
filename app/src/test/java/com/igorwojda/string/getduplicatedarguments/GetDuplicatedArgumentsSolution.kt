@@ -2,7 +2,7 @@ package com.igorwojda.string.getduplicatedarguments
 
 // Time complexity: O(n)
 // Determine the frequency of each argument and then filter arguments with frequency > 1
-private object OptimalSolution1 {
+private object Solution1 {
     fun getDuplicatedArguments(vararg strings: String): List<String>? = strings
         .groupingBy { it }
         .eachCount()
@@ -12,7 +12,7 @@ private object OptimalSolution1 {
 
 // Time complexity: O(n)
 // Optimal solution using double pointer.
-private object OptimalSolution2 {
+private object Solution2 {
     fun getDuplicatedArguments(vararg strings: String): List<String>? {
         var pointer1 = 0
         var pointer2 = 1
@@ -34,7 +34,7 @@ private object OptimalSolution2 {
 
 // Time complexity: O(n^2)
 // Loop through all arguments and compare given argument with all other arguments.
-private object NaiveSolution {
+private object Solution3 {
     fun getDuplicatedArguments(vararg strings: String): List<String>? {
         val result = mutableSetOf<String>()
 

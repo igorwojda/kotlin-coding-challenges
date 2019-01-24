@@ -1,7 +1,7 @@
 package com.igorwojda.integer.countupanddown
 
 // Create two lists and add them
-private object CountUpAndDownSolution1 {
+private object Solution1 {
     private fun countUpAndDown(n: Int): List<Int> {
         // Create first list containing integers from 0 to n
         val upList = (0..n).toMutableList()
@@ -15,7 +15,7 @@ private object CountUpAndDownSolution1 {
 }
 
 // Calculate element value from element position
-private object CountUpAndDownSolution2 {
+private object Solution2 {
     private fun countUpAndDown(n: Int): List<Int> {
         val size = (n * 2) + 1
 

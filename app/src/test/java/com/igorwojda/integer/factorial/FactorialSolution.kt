@@ -1,7 +1,7 @@
 package com.igorwojda.integer.factorial
 
 // iterative solution
-private object FactorialSolution2 {
+private object Solution1 {
     private fun factorial(n: Int): Int {
         var total = 1
 
@@ -14,7 +14,7 @@ private object FactorialSolution2 {
 }
 
 // recursive solution
-private object FactorialSolution1 {
+private object Solution2 {
     private fun factorial(n: Int): Int {
         if (n == 0) {
             return 1

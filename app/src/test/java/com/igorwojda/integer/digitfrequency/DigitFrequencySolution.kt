@@ -2,7 +2,7 @@ package com.igorwojda.integer.digitfrequency
 
 // Time complexity: O(n)
 // Generate digit frequency map for each integer and compare them
-private object OptimalSolution {
+private object Solution1 {
     private fun equalDigitFrequency(i1: Int, i2: Int): Boolean {
         val i1Str = i1.toString()
         val i2Str = i2.toString()
@@ -20,7 +20,7 @@ private object OptimalSolution {
 // Time complexity: O(n^2)
 // Loop through each character of first integer and look for this character in another integer. If character if found
 // remove it from second integer to make sure that character frequency match.
-private object NaiveSolution {
+private object Solution2 {
     private fun equalDigitFrequency(i1: Int, i2: Int): Boolean {
         val i1Str = i1.toString().toList()
         val i2Str = i2.toString().toMutableList()

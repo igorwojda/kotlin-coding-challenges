@@ -1,7 +1,10 @@
-import com.igorwojda.linkedlist.base.LinkedListSolutionExtended
+package com.igorwojda.linkedlist.circularcheck
 
-private object CircularCheckSolution {
-    private fun circularCheck(list: LinkedListSolutionExtended.LinkedList<Char>): Boolean {
+import com.igorwojda.linkedlist.base.Solution2
+
+
+private object Solution {
+    private fun circularCheck(list: Solution2.LinkedList<Char>): Boolean {
         var slowPointer = list.first
         var fastPointer = list.head
 

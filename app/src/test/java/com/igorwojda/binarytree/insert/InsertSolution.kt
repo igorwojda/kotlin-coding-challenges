@@ -1,6 +1,6 @@
 package com.igorwojda.binarytree.insert
 
-private object InsertSolution {
+private object Solution {
     private data class Node<E : Comparable<E>>(
         var data: E,
         var left: Node<E>? = null,

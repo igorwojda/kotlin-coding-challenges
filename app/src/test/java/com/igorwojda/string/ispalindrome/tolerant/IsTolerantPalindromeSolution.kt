@@ -1,8 +1,8 @@
 package com.igorwojda.string.ispalindrome.tolerant
 
 // iterative solution
-private object IsPalindromeSolution1 {
-    private fun IsTolerantPalindromeSolution1(str: String): Boolean {
+private object Solution1 {
+    private fun isTolerantPalindrome(str: String): Boolean {
         var characterRemoved = false
 
         str.forEachIndexed { index, c ->
@@ -29,13 +29,13 @@ private object IsPalindromeSolution1 {
     }
 }
 // recursive solution
-private object IsPalindromeSolution2 {
-    private fun tolerantPalindromeSolution2(str: String, characterRemoved: Boolean = false): Boolean {
+private object Solution2 {
+    private fun isTolerantPalindrome(str: String, characterRemoved: Boolean = false): Boolean {
         return if (str.isEmpty() || str.length == 1) {
             true
         } else {
             if (str.first() == str.last()) {
-                tolerantPalindromeSolution2(
+                isTolerantPalindrome(
                     str.substring(1 until str.lastIndex),
                     characterRemoved
                 )
@@ -48,11 +48,11 @@ private object IsPalindromeSolution2 {
                     }
 
                     println(str)
-                    val removeLeftResult = tolerantPalindromeSolution2(
+                    val removeLeftResult = isTolerantPalindrome(
                         str.substring(2 until str.lastIndex),
                         true
                     )
-                    val removeRightResult = tolerantPalindromeSolution2(
+                    val removeRightResult = isTolerantPalindrome(
                         str.substring(1 until str.lastIndex - 1),
                         true
                     )

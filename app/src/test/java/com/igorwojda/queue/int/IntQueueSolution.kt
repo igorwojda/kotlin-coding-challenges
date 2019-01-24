@@ -1,6 +1,6 @@
 package com.igorwojda.queue.int
 
-private object IntQueueSolution {
+private object Solution {
     private class IntQueue {
         private val list = mutableListOf<Int>()
 

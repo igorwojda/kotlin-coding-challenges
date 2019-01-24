@@ -3,7 +3,7 @@ package com.igorwojda.list.minsublistlength
 // Time complexity: O(n)
 // Space complexity O(n)
 // Use sliding window
-private object OptimalSolution {
+private object Solution1 {
     fun minSubListLength(list: List<Int>, sum: Int): Int {
         var total = 0
         var start = 0
@@ -43,7 +43,7 @@ private object OptimalSolution {
 
 // Time complexity: O(n^2)
 // Loop through all the elements and then loop through all sublists
-private object NaiveSolution {
+private object Solution2 {
     fun minSubListLength(list: List<Int>, sum: Int): Int {
         return 0
     }

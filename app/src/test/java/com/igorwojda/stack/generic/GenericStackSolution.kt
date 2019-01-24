@@ -1,6 +1,6 @@
 package com.igorwojda.stack.generic
 
-private object GenericStackSolution {
+private object Solution {
     private class GenericStack<E> {
         val list = mutableListOf<E>()
 

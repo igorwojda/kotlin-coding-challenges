@@ -1,7 +1,7 @@
 package com.igorwojda.integer.countdown
 
 // Kotlin idiomatic solution
-private object CountDownSolution {
+private object Solution {
     private fun countDown(n: Int): List<Int> {
         // Create a range and convert it to a list
         return (n downTo 0).toList()
@@ -9,7 +9,7 @@ private object CountDownSolution {
 }
 
 // Recursive solution
-private object CountDownSolution2 {
+private object Solution2 {
     private fun countDown(n: Int): List<Int> {
         // We want to keep return type unchanged while implementing recursive solution, so we will
         // use helper method defied inside countDown function.

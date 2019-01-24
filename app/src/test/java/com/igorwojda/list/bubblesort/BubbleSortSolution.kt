@@ -1,6 +1,6 @@
 package com.igorwojda.list.bubblesort
 
-private object BubbleSortSolution {
+private object Solution {
     private fun bubbleSort(list: List<Int>): List<Number> {
         val sorted = list.toMutableList()
 

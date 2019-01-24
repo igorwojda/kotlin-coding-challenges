@@ -1,6 +1,6 @@
 package com.igorwojda.string.isanagram
 
-private object IsAnagramSolution {
+private object Solution {
     private fun isAnagram(str1: String, str2: String): Boolean {
         return getCharFrequency(str1) == getCharFrequency(str2)
     }

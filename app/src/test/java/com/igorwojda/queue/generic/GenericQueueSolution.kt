@@ -1,6 +1,6 @@
 package com.igorwojda.queue.generic
 
-private object GenericQueueSolution {
+private object Solution {
     private class GenericQueue<E> {
         private val list = mutableListOf<E>()
 
