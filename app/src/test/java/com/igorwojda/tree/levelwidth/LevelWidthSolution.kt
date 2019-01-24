@@ -1,7 +1,7 @@
 package com.igorwojda.tree.levelwidth
 
-object LevelWidthSolution {
-    private object LevelWidthSolution1 {
+object Solution {
+    private object Solution1 {
         // Index counter solution
         private fun levelWidth(tree: Node): List<Int> {
             val result = mutableListOf<Int>()
@@ -29,7 +29,7 @@ object LevelWidthSolution {
         }
     }
 
-    private object LevelWidthSolution2 {
+    private object Solution2 {
         // Counters array solution
         private fun levelWidth(tree: Node): List<Int> {
             val rowSeparator = null

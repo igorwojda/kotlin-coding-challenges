@@ -1,8 +1,6 @@
 package com.igorwojda.linkedlist.fromlast
 
-import com.igorwojda.linkedlist.base.LinkedListSolutionExtended
-
-private object FromLastSolution {
+private object Solution {
     private fun fromLast(
         list: LinkedListSolutionExtended.LinkedList<Char>,
         endIndex: Int

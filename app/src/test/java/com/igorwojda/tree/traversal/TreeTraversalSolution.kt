@@ -1,6 +1,6 @@
 package com.igorwojda.tree.traversal
 
-private object TreeTraversalSolution {
+private object Solution {
     private class Node(val data: String, val children: MutableList<Node> = mutableListOf()) {
         fun add(data: String) {
             add(Node(data))

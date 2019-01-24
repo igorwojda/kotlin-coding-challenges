@@ -1,6 +1,6 @@
 package com.igorwojda.string.maxchar
 
-private object MaxOccurrentCharSolution1 {
+private object Solution1 {
     private fun maxOccurrentChar(str: String): Char? {
         val map = mutableMapOf<Char, Int>()
 
@@ -14,7 +14,7 @@ private object MaxOccurrentCharSolution1 {
 
 // Recursive optimal approach:
 // Time complexity: O(n)
-private object MaxOccurrentCharSolution2 {
+private object Solution2 {
     private fun recurringChar(str: String): Char? {
         val set = mutableSetOf<Char>()
 
@@ -32,7 +32,7 @@ private object MaxOccurrentCharSolution2 {
 
 // Recursive naive approach
 // Time complexity: O(n^2)
-private object MaxOccurrentCharSolution3 {
+private object Solution3 {
     private fun recurringChar(str: String): Char? {
         str.forEachIndexed { index, c ->
             str.substring(index + 1).forEach {

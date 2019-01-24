@@ -1,6 +1,6 @@
 package com.igorwojda.queue.weave
 
-private object WeaveSolution {
+private object Solution {
     class GenericQueue<E> {
         private val list = mutableListOf<E>()
 

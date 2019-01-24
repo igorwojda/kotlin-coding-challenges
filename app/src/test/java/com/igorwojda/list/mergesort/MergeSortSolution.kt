@@ -1,6 +1,6 @@
 package com.igorwojda.list.mergesort
 
-private object MergeSortSolution {
+private object Solution {
     private fun mergeSort(list: List<Int>): List<Int> {
         if (list.size == 1) {
             return list

@@ -1,6 +1,6 @@
 package com.igorwojda.various.printnumber.basic
 
-private object PrintNumberSolution {
+private object Solution {
     private fun printNumber(n: Int): List<Int> {
         val list = mutableListOf<Int>()
 

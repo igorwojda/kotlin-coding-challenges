@@ -1,6 +1,6 @@
 package com.igorwojda.various.spiralmatrixgenerator
 
-private object SpiralMatrixGeneratorSolution {
+private object Solution {
     private fun generateSpiralMatrix(n: Int): List<MutableList<Int?>> {
         val list = MutableList(n) {
             MutableList<Int?>(n) { null }

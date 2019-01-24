@@ -1,14 +1,14 @@
 package com.igorwojda.string.reverse
 
 // Kotlin idiomatic way
-private object ReverseSolution1 {
+private object Solution1 {
     private fun reverse(str: String): String {
         return str.reversed()
     }
 }
 
 // Iterative approach
-private object ReverseSolution2 {
+private object Solution2 {
     private fun reverse(str: String): String {
         var reversed = ""
         str.forEach {
@@ -28,7 +28,7 @@ private fun reverse(str: String): String {
 }
 
 // Kotlin fold
-private object ReverseSolution3 {
+private object Solution3 {
     private fun reverse(str: String): String {
         return str.foldRight("") { char, reversed -> reversed + char }
     }

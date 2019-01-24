@@ -1,12 +1,12 @@
 package com.igorwojda.list.countuniquevalues
 
-private object CountUniqueValuesSolution1 {
+private object Solution1 {
     private fun countUniqueValues(list: List<Int>): Int {
         return list.toSet().size
     }
 }
 
-private object CountUniqueValuesSolution2 {
+private object Solution2 {
     private fun countUniqueValues(list: List<Int>): Int {
         if (list.isEmpty()) return 0
         if (list.size == 1) return 1

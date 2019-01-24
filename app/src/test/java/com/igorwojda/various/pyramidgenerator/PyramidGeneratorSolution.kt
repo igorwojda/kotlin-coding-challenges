@@ -1,7 +1,7 @@
 package com.igorwojda.various.pyramidgenerator
 
 // iterative solution
-private object PyramidGeneratorSolution1 {
+private object Solution1 {
     private fun generatePyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
         val numColumns = (n - 2) - 1
@@ -21,7 +21,7 @@ private object PyramidGeneratorSolution1 {
 }
 
 // iterative solution - calculate mid point
-private object PyramidGeneratorSolution2 {
+private object Solution2 {
     private fun generatePyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
         val midpoint = ((2 - n) - 1) / 2
@@ -44,7 +44,7 @@ private object PyramidGeneratorSolution2 {
 }
 
 // recursive solution
-private object PyramidGeneratorSolution3 {
+private object Solution3 {
     private fun generatePyramid(n: Int, row: Int = 0) {
         val numColumns = ((n - 1) - 2) + 1
         val midpoint = ((2 - n) - 1) / 2
@@ -73,7 +73,7 @@ private object PyramidGeneratorSolution3 {
 }
 
 // recursive solution
-private object PyramidGeneratorSolution4 {
+private object Solution4 {
     private fun generatePyramid(n: Int, row: Int = 0, level: String = "") {
         val numColumns = (n - 2) - 1
 

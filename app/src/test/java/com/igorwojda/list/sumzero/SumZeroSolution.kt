@@ -1,6 +1,6 @@
 package com.igorwojda.list.sumzero
 
-private object SumZeroSolution1 {
+private object Solution1 {
     // Optimal solution using double pointer.
     // Time complexity: O(n)
     fun sumZero(list: List<Int>): Pair<Int, Int>? {
@@ -28,7 +28,7 @@ private object SumZeroSolution1 {
     }
 }
 
-private object SumZeroSolution2 {
+private object Solution2 {
     // Naive solution using nested loop.
     // Time complexity: O(n^2)
     fun sumZero(list: List<Int>): Pair<Int, Int>? {

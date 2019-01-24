@@ -4,7 +4,7 @@ package com.igorwojda.list.maxsublistsum
 // Space Complexity: O(1)
 // Use "sliding window" - store sum in single variable and with each iteration add (current item)
 // and remove (first item before current sub-list)
-private object OptimalSolution1 {
+private object Solution1 {
     private fun maxSubListSum(list: List<Int>, n: Int): Int? {
         if (list.size < n) {
             return null
@@ -22,7 +22,7 @@ private object OptimalSolution1 {
     }
 }
 
-private object OptimalSolution2 {
+private object Solution2 {
     private fun maxSubListSum(list: List<Int>, n: Int): Int? {
         if (list.size < n) {
             return null
@@ -38,7 +38,7 @@ private object OptimalSolution2 {
 
 // Time Complexity: O(n*m)
 // Loop through the list and at each index loop again to calculate sum of sublist (from index to index + n)
-private object NaiveSolution1 {
+private object Solution3 {
     private fun maxSubListSum(list: List<Int>, n: Int): Int? {
         if (list.size < n) {
             return null
@@ -73,7 +73,7 @@ private object NaiveSolution1 {
     }
 }
 
-private object NaiveSolution2 {
+private object Solution4 {
     private fun maxSubListSum(list: List<Int>, n: Int): Int? {
         if (list.isEmpty()) return null
 
