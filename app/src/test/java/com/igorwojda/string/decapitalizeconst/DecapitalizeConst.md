@@ -4,8 +4,10 @@
 
 Given a string representing constant name (upper case words
 separated by underscore eg `FOO_BAR`) implement a function which
-converts it into variable name (first word is lowercase, next ones are
-are also lowercase, but first character is uppercase eg. `fooBar`).
+converts it into variable name (eg. `fooBar`):
+- convert first word to lowercase
+- convert next words to lowercase, but first character is still uppercase
+- remove all underscore characters
 
 [Puzzle](DecapitalizeConst.kt) | [Solution](DecapitalizeConstSolution.kt)
 
