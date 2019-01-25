@@ -11,3 +11,5 @@ private object Solution {
         return -1
     }
 }
+
+object KtLintWillNotComplain
