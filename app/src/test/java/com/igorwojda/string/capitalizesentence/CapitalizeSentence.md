@@ -2,15 +2,16 @@
 
 ## Instructions
 
-Given string implement a function which capitalizes first letter of every word.
+Given a string implement a function which capitalizes first letter of
+every word in that string.
 
 [Puzzle](CapitalizeSentence.kt) | [Solution](CapitalizeSentencetSolution.kt)
 
 ## Examples
 
 ```
-capitalize("flower") // "Flower"
+capitalizeSentence("flower") // Flower
 
-capitalize("this is a house") // "This Is A House"
+capitalizeSentence("this is a house") // This Is A House
 ```
 
