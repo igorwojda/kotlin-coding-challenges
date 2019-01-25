@@ -3,28 +3,33 @@ package com.igorwojda.string.vowels
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-fun vowels(str: String): Int {
+private fun vowels(str: String): Int {
     return 0
 }
 
 class VowelsTest {
     @Test
-    fun `returns the number of vowels used in "aeiouy"`() {
+    fun `"aeiouy" has 6 vovels`() {
         vowels("aeiouy") shouldEqual 6
     }
 
     @Test
-    fun `returns the number of vowels used in "AEIOUY" when they are capitalized`() {
+    fun `"AEIOUY" has 6 vovels`() {
         vowels("AEIOUY") shouldEqual 6
     }
 
     @Test
-    fun `returns the number of vowels used in "abcdefghijklmnopqrstuvwxyz"`() {
+    fun `"abcdefghijklmnopqrstuvwxyz" has 6 vovels`() {
         vowels("abcdefghijklmnopqrstuvwxyz") shouldEqual 6
     }
 
     @Test
-    fun `returns the number of vowels used in "bcdfghjkl`() {
+    fun `"bcadfaghijkl" has 3 vovels`() {
+        vowels("bcadfaghijkl") shouldEqual 3
+    }
+
+    @Test
+    fun `"bcdfghjkl" has 0 vovels`() {
         vowels("bcdfghjkl") shouldEqual 0
     }
 }

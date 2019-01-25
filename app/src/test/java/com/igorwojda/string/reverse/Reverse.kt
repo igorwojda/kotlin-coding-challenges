@@ -9,12 +9,12 @@ private fun reverse(str: String): String {
 
 class StringReverseTest {
     @Test
-    fun `Reverse reverses a string 1`() {
+    fun `Reverse of "abcd" is "dcba"`() {
         reverse("abcd") shouldEqual "dcba"
     }
 
     @Test
-    fun `Reverse reverses a string 2`() {
-        reverse("  abcd") shouldEqual "dcba  "
+    fun `Reverse of "aabbccdd" is "ccbbaadd"`() {
+        reverse("aabbccdd") shouldEqual "ddccbbaa"
     }
 }
