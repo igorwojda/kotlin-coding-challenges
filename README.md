@@ -50,6 +50,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Factorial](app/src/test/java/com/igorwojda/integer/factorial/Factorial.md)
 - [Product](app/src/test/java/com/igorwojda/list/product/Product.md)
 - [Capitalize first](app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
+- [Decapitalize const](app/src/test/java/com/igorwojda/string/decapitalizeconst/DecapitalizeConst.md)
 
 **Apprentice**
 - [Is palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/basic/IsPalindrome.md)
