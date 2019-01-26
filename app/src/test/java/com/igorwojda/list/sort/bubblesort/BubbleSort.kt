@@ -1,4 +1,4 @@
-package com.igorwojda.list.bubblesort
+package com.igorwojda.list.sort.bubblesort
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

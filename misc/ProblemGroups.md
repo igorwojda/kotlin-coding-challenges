@@ -63,13 +63,13 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 ## Search algorithms
 
-- [Linear search](../app/src/test/java/com/igorwojda/list/linearsearch/LinearSearch.md)
-- [Binary search](../app/src/test/java/com/igorwojda/list/binarysearch/BinarySearch.md)
+- [Linear search](../app/src/test/java/com/igorwojda/list/search/linearsearch/LinearSearch.md)
+- [Binary search](../app/src/test/java/com/igorwojda/list/search/binarysearch/BinarySearch.md)
 
 ## Sort algorithms
 
-- [Bubble sort](../app/src/test/java/com/igorwojda/list/bubblesort/BubbleSort.md)
-- [Merge sort](../app/src/test/java/com/igorwojda/list/mergesort/MergeSort.md)
-- [Selection sort](../app/src/test/java/com/igorwojda/list/selectionsort/SelectionSort.md)
+- [Bubble sort](../app/src/test/java/com/igorwojda/list/sort/bubblesort/BubbleSort.md)
+- [Merge sort](../app/src/test/java/com/igorwojda/list/sort/mergesort/MergeSort.md)
+- [Selection sort](../app/src/test/java/com/igorwojda/list/sort/selectionsort/SelectionSort.md)
 
 

@@ -1,4 +1,4 @@
-package com.igorwojda.list.binarysearch
+package com.igorwojda.list.search.binarysearch
 
 // Time complexity:
 // Worst-case performance: O(log n)

@@ -1,4 +1,4 @@
-package com.igorwojda.list.selectionsort
+package com.igorwojda.list.sort.selectionsort
 
 private object SelectionSortSolution {
     private fun selectionSort(list: List<Int>): List<Number> {

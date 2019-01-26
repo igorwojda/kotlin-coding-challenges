@@ -1,4 +1,4 @@
-package com.igorwojda.list.binarysearch
+package com.igorwojda.list.search.binarysearch
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
