@@ -4,22 +4,23 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun mergeSort(list: List<Int>): List<Int> {
+
+    // Merge two sorted lists into one sorted list
+    fun helper(left: List<Int>, right: List<Int>): MutableList<Int> {
+        return mutableListOf()
+    }
+
     return list
 }
 
-// Merge two sorted lists into one sorted list
-private fun merge(left: List<Int>, right: List<Int>): MutableList<Int> {
-    return mutableListOf()
-}
-
 class MergeSortTest {
-    companion object {
-        val LIST = listOf(5, 1, 4, 2)
-        val SORTED_LIST = listOf(1, 2, 4, 5)
+    @Test
+    fun `merge sort 5, 1, 4, 2`() {
+        mergeSort(listOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 3, 4)
     }
 
     @Test
-    fun `merge sort test`() {
-        mergeSort(LIST) shouldEqual SORTED_LIST
+    fun `merge sort 17, 4, 12, 19, 80, 75, 16`() {
+        mergeSort(listOf(17, 4, 12, 19, 80, 75, 16)) shouldEqual listOf(4, 12, 16, 17, 19, 75, 80)
     }
 }
