@@ -25,3 +25,5 @@ private object Solution {
         return sorted
     }
 }
+
+private object KtLintWillNotComplain

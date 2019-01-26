@@ -15,3 +15,5 @@ private object Solution {
         fun isEmpty() = list.isEmpty()
     }
 }
+
+private object KtLintWillNotComplain

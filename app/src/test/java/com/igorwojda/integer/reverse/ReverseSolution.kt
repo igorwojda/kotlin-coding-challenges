@@ -8,3 +8,5 @@ private object Solution {
         return reverse.toInt() * i.sign
     }
 }
+
+private object KtLintWillNotComplain

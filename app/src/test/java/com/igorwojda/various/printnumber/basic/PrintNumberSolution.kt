@@ -14,3 +14,5 @@ private object Solution {
         return list
     }
 }
+
+private object KtLintWillNotComplain

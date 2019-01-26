@@ -19,3 +19,5 @@ private object Solution {
         return null
     }
 }
+
+private object KtLintWillNotComplain

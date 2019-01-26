@@ -30,3 +30,5 @@ private object Solution {
         }
     }
 }
+
+private object KtLintWillNotComplain

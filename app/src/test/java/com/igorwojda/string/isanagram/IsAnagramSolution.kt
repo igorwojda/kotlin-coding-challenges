@@ -12,3 +12,5 @@ private object Solution {
             .eachCount()
     }
 }
+
+private object KtLintWillNotComplain

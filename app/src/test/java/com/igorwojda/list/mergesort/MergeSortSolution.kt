@@ -34,3 +34,5 @@ private object Solution {
         return result
     }
 }
+
+private object KtLintWillNotComplain

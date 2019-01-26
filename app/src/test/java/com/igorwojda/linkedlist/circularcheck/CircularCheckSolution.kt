@@ -101,3 +101,5 @@ private object Solution {
         var next: Node<T>? = null
     )
 }
+
+private object KtLintWillNotComplain

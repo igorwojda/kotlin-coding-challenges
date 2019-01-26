@@ -64,3 +64,5 @@ private object Solution {
 
     private enum class MatrixDirection { UP, DOWN, LEFT, RIGHT }
 }
+
+private object KtLintWillNotComplain
