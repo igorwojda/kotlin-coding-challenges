@@ -8,6 +8,34 @@ element in the list or `-1` if element was not found. Use
 
 [Puzzle](BinarySearch.kt) | [Solution](BinarySearchSolution.kt)
 
+**aa**
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+
+## Algorithm
+We ignore half of the elements after each loop.
+
+- Compare element with the middle element.
+- If element matches with middle element, we return the middle element
+index.
+- Else If element is greater than the mid element, then element can
+only lie in right half sub-list after the mid element. So we deal only
+with right half.
+- Else (x is smaller) deal only with the left half.
+
+```
+Searching for C in [A, B, C, D, E, F, G, H, I, J, K, L, M, O, P]
+
+[A, B, C, D, E, F, G, H, I, J, K, L, M, O, P]
+ L                    M                    R
+
+[A, B, C, D, E, F, G, H, I, J, K, L, M, O, P]
+ L        M        R
+
+[A, B, C, D, E, F, G, H, I, J, K, L, M, O, P]
+L   M  R
+```
+
 ## Examples
 
 ```
