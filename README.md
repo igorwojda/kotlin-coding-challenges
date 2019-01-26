@@ -104,7 +104,7 @@ your time before you take a look at the presented solution. **Good luck!**
 
 # More coding challenges
 
-## Websites
+## More codding challenges
 
 - [HackerRank](https://www.hackerrank.com/)
 - [Code Google Com Codejam](https://code.google.com/codejam/past-contests)
@@ -128,7 +128,8 @@ your time before you take a look at the presented solution. **Good luck!**
 
 ## Articles
 
-- [Data structures explained](https://medium.com/basecs/tagged/data-structures) series
+- [Data structures explained](https://medium.com/basecs/tagged/data-structures) - great description of various data structures
+- [Sorting algorytms animations](https://www.toptal.com/developers/sorting-algorithms) - visualisation of most popular sorting algorithms
 
 # Contribute
 
