@@ -51,6 +51,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Product](app/src/test/java/com/igorwojda/list/product/Product.md)
 - [Capitalize first](app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
 - [Decapitalize const](app/src/test/java/com/igorwojda/string/decapitalizeconst/DecapitalizeConst.md)
+- [Longest word](app/src/test/java/com/igorwojda/string/longestword/LongestWord.md)
 
 **Apprentice**
 - [Is palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/basic/IsPalindrome.md)
