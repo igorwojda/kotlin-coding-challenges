@@ -3,18 +3,18 @@ package com.igorwojda.list.sort.bubblesort
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun selectionSort(list: List<Int>): List<Number> {
+private fun bubbleSort(list: List<Int>): List<Number> {
     return list
 }
 
 class BubbleSortTest {
-    companion object {
-        val LIST = listOf(5, 1, 4, 2, 8)
-        val SORTED_LIST = listOf(1, 2, 4, 5, 8)
+    @Test
+    fun `bubble sort 5, 1, 4, 2`() {
+        bubbleSort(listOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 3, 4)
     }
 
     @Test
-    fun `bubble sort test`() {
-        selectionSort(LIST) shouldEqual SORTED_LIST
+    fun `bubble sort 17, 4, 12, 19, 80, 75, 16`() {
+        bubbleSort(listOf(17, 4, 12, 19, 80, 75, 16)) shouldEqual listOf(4, 12, 16, 17, 19, 75, 80)
     }
 }
