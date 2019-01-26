@@ -86,6 +86,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Binary search tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
 - [Any callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.md)
 - [Flatten](app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
+- [Binary search](app/src/test/java/com/igorwojda/list/binarysearch/BinarySearch.md)
 
 **Commander**
 - [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)

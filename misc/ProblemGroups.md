@@ -64,6 +64,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 ## Search algorithms
 
 - [Linear search](../app/src/test/java/com/igorwojda/list/linearsearch/LinearSearch.md)
+- [Binary search](../app/src/test/java/com/igorwojda/list/binarysearch/BinarySearch.md)
 
 ## Sort algorithms
 
