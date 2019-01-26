@@ -1,4 +1,4 @@
-package com.igorwojda.list.linearsearch
+package com.igorwojda.list.search.linearsearch
 
 // Time complexity: O(n)
 private object Solution {

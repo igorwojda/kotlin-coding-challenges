@@ -1,4 +1,4 @@
-package com.igorwojda.list.linearsearch
+package com.igorwojda.list.search.linearsearch
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

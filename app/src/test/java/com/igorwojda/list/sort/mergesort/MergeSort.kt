@@ -1,4 +1,4 @@
-package com.igorwojda.list.mergesort
+package com.igorwojda.list.sort.mergesort
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

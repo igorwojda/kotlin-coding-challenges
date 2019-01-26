@@ -1,4 +1,4 @@
-package com.igorwojda.list.selectionsort
+package com.igorwojda.list.sort.selectionsort
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

@@ -1,4 +1,4 @@
-package com.igorwojda.list.bubblesort
+package com.igorwojda.list.sort.bubblesort
 
 private object Solution {
     private fun bubbleSort(list: List<Int>): List<Number> {

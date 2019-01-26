@@ -1,4 +1,4 @@
-package com.igorwojda.list.mergesort
+package com.igorwojda.list.sort.mergesort
 
 private object Solution {
     private fun mergeSort(list: List<Int>): List<Int> {
