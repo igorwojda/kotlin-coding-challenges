@@ -11,10 +11,7 @@ private fun binarySearch(list: List<Char>, element: Char): Int {
 class BinarySearchTest {
     @Test
     fun `index of A in A, B, C is 0`() {
-        binarySearch(
-            listOf('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'O', 'P'),
-            'C'
-        ) shouldEqual 2
+        binarySearch(listOf('A', 'B', 'C'), 'A') shouldEqual 0
     }
 
     @Test
