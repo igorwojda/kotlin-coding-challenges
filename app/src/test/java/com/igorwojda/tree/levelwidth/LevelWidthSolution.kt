@@ -69,3 +69,5 @@ object Solution {
         }
     }
 }
+
+private object KtLintWillNotComplain

@@ -21,3 +21,5 @@ private object Solution {
         return slow
     }
 }
+
+private object KtLintWillNotComplain

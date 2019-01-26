@@ -17,4 +17,4 @@ private object Solution {
     }
 }
 
-object KtLintWillNotComplain
+private object KtLintWillNotComplain

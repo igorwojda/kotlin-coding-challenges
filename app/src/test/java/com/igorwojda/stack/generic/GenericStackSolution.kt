@@ -13,3 +13,5 @@ private object Solution {
         fun peek() = list.lastOrNull()
     }
 }
+
+private object KtLintWillNotComplain
