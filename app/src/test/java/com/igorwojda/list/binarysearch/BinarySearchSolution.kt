@@ -6,28 +6,25 @@ package com.igorwojda.list.binarysearch
 // Average performance: O(log n)
 private object Solution {
     private fun binarySearch(list: List<Char>, element: Char): Int {
-
-        fun getMiddle(left: Int, right: Int) = Math.floor((right + left).toDouble() / 2).toInt()
-
         var left = 0
-        var right = list.lastIndex
-        var middle = getMiddle(left, right)
+        var right = list.size - 1
+        while (left <= right) {
+            val middle = (right + left) / 2
 
-        while (list[middle] != element && left <= right) {
-            if (element < list[middle]) {
-                right = middle - 1
-            } else {
+            // Check if x is present at mid
+            if (list[middle] == element)
+                return middle
+
+            // If x greater, ignore left half
+            if (list[middle] < element)
                 left = middle + 1
-            }
-
-            middle = getMiddle(left, right)
+            else
+                right = middle - 1// If x is smaller, ignore right half
         }
 
-        return if (list[middle] == element) {
-            middle
-        } else {
-            -1
-        }
+        // if we reach here, then element was
+        // not present
+        return -1
     }
 }
 
