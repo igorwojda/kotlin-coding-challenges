@@ -8,13 +8,13 @@ private fun selectionSort(list: List<Int>): List<Number> {
 }
 
 class SelectionSortTest {
-    companion object {
-        val LIST = listOf(5, 1, 4, 2, 8)
-        val SORTED_LIST = listOf(1, 2, 4, 5, 8)
+    @Test
+    fun `selection sort 5, 1, 4, 2`() {
+        selectionSort(listOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 3, 4)
     }
 
     @Test
-    fun `selection sort test`() {
-        selectionSort(LIST) shouldEqual SORTED_LIST
+    fun `selection sort 17, 4, 12, 19, 80, 75, 16`() {
+        selectionSort(listOf(17, 4, 12, 19, 80, 75, 16)) shouldEqual listOf(4, 12, 16, 17, 19, 75, 80)
     }
 }
