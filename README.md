@@ -111,8 +111,7 @@ your time before you take a look at the presented solution. **Good luck!**
 
 - [GeeksForGeeks](https://practice.geeksforgeeks.org) - data structures / algorithms / company interview problems.
 - [CoderByte](https://coderbyte.com/challenges) - data structures / algorithms / company interview problems segregated
-  by difficulty. They offer premium membership which gives you official
-  step-by-step solutions, user solutions and more challenger.
+  by difficulty. They offer premium membership which gives you official step-by-step solutions and user solutions.
 - [HackerRank](https://www.hackerrank.com/dashboard) - data structures / algorithms / mathematics.
 - [Project euler](https://projecteuler.net/archives) - More complex challenges, usually related to mathematics. The have
   already 600+ problems and a new code challenge is available very week or two. You will probably have to discuss
