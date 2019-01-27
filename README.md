@@ -109,18 +109,20 @@ your time before you take a look at the presented solution. **Good luck!**
 
 ## More codding challenges
 
-- [GeeksForGeeks](https://practice.geeksforgeeks.org) - data structures / algorithms / company interview problems.
-- [CoderByte](https://coderbyte.com/challenges) - data structures / algorithms / company interview problems segregated
-  by difficulty. They offer premium membership which gives you official step-by-step solutions and user solutions.
-- [HackerRank](https://www.hackerrank.com/dashboard) - data structures / algorithms / mathematics.
-- [Project euler](https://projecteuler.net/archives) - More complex challenges, usually related to mathematics. The have
-  already 600+ problems and a new code challenge is available very week or two. You will probably have to discuss
-  problem with community because solutions are not on the website.
+- [GeeksForGeeks](https://practice.geeksforgeeks.org) - large and nicely segregated set of problems.
+- [HackerRank](https://www.hackerrank.com/dashboard) - large set of problems and additional interview problems for
+  business.
+- [Project euler](https://projecteuler.net/archives) - more complex challenges, usually related to mathematics. Site
+  already contains 600+ problems and a new code challenge is available very week or two. You will probably have to
+  discuss problem with community because solutions are not on the website.
+- [Advent of code](https://adventofcode.com/2018/events) - one month of various programing problems released daily at
+  the end of the year. Fortunately archive of past events is still there.
 - [Code Google Com Codejam](https://code.google.com/codejam/past-contests) - Google Code Jam, calls on programmers
-  around the world to solve challenging, algorithmic puzzles against the clock. FObtusely they publish all the past
-  problems on their website.
-- [Advent of code](https://adventofcode.com/2018/events) - one months of various programing tasks at the end of each
-  year released day by day during the advent. Archive of old problems is still there.
+  around the world to solve challenging, algorithmic puzzles against the clock. They publish all the past problems on
+  their website.
+- [CoderByte](https://coderbyte.com/challenges) - 200+ challenges, data structures / algorithms / company interview
+  problems segregated by difficulty. Unfortunately most of them is only available for premium users. Premium gives you
+  access to premium step-by-step solutions and user solutions.
 - [CodeChef](https://www.codechef.com/problems/school) - contains set of programming problems segregated by difficulty.
 - [LeetCode](https://leetcode.com/problemset/all) - data structures / algorithms / company interview problems segregated
   by difficulty.
