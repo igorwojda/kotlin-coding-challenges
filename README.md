@@ -89,6 +89,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Any callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.md)
 - [Flatten](app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
 - [Binary search](app/src/test/java/com/igorwojda/list/search/binarysearch/BinarySearch.md)
+- [Surrounded letter](app/src/test/java/com/igorwojda/string/surroundedletter/SurroundedLetter.md)
 
 **Commander**
 - [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
