@@ -146,7 +146,8 @@ your time before you take a look at the presented solution. **Good luck!**
 ## Articles
 
 - [Data structures explained](https://medium.com/basecs/tagged/data-structures) - great description of various data structures
-- [Sorting algorytms animations](https://www.toptal.com/developers/sorting-algorithms) - visualisation of most popular sorting algorithms
+- [Big-O Cheat Sheet](http://bigocheatsheet.com/)
+- [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms) - visualisation of most popular sorting algorithms
 
 ## Coding interview repositories
 - [Coding Interview University](https://github.com/jwasham/coding-interview-university)

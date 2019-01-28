@@ -72,5 +72,3 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Merge sort](../app/src/test/java/com/igorwojda/list/sort/mergesort/MergeSort.md)
 - [Selection sort](../app/src/test/java/com/igorwojda/list/sort/selectionsort/SelectionSort.md)
 - [Insertion sort](../app/src/test/java/com/igorwojda/list/sort/insertionsort/InsertionSort.md)
-
-
