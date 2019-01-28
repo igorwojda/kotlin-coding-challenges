@@ -141,7 +141,9 @@ your time before you take a look at the presented solution. **Good luck!**
 ## Books
 
 - [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
-- [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
+- [Algorithms, 4th Edition](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/)
+- [Introduction to Algorithms, 3rd Edition (The MIT Press)](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/)
+- [More books...](https://www.quora.com/What-are-the-best-books-on-algorithms-and-data-structures)
 
 ## Articles
 
