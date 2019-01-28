@@ -1,9 +1,8 @@
 package com.igorwojda.list.search.binarysearch
 
-// Time complexity:
-// Worst-case performance: O(log n)
-// Best-case performance: O(1)
-// Average performance: O(log n)
+// Time complexity (Best): Ω(1)
+// Time complexity (Average): Θ(log(n))
+// Time complexity(Worst): O(log(n))
 private object Solution {
     private fun binarySearch(list: List<Char>, element: Char): Int {
         var left = 0

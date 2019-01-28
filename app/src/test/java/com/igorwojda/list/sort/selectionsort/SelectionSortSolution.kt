@@ -1,5 +1,9 @@
 package com.igorwojda.list.sort.selectionsort
 
+// Time complexity (Best): Ω(n^2)
+// Time complexity (Average): Θ(n^2)
+// Time complexity (Worst): O(n^2)
+// Space complexity: O(1)
 private object SelectionSortSolution {
     private fun selectionSort(list: List<Int>): List<Number> {
         val sorted = list.toMutableList()
