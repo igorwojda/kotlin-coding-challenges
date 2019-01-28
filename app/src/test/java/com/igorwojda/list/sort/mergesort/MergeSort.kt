@@ -16,7 +16,7 @@ private fun mergeSort(list: List<Int>): List<Int> {
 class MergeSortTest {
     @Test
     fun `merge sort 5, 1, 4, 2`() {
-        mergeSort(listOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 3, 4)
+        mergeSort(listOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 4, 5)
     }
 
     @Test
