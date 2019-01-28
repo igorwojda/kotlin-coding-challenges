@@ -1,4 +1,4 @@
-package com.igorwojda.string.repeated
+package com.igorwojda.string.hasrepeatedcharacter
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

@@ -5,7 +5,7 @@
 Given a string implement a function which returns `true` if string contains at least one repeated character, otherwise
 it returns `false`.
 
-[Puzzle](RepeatedCharacter.kt) | [Solution](RepeatedCharacterSolution.kt)
+[Puzzle](HasRepeatedCharacter.kt) | [Solution](HasRepeatedCharacterSolution.kt)
 
 ## Examples
 

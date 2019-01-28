@@ -63,7 +63,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
 - [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
 - [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
-- [Repeated Character](app/src/test/java/com/igorwojda/string/repeated/RepeatedCharacter.kt)
+- [Repeated Character](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedCharacter.md)
 
 **Warrior** 
 - [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
@@ -133,9 +133,9 @@ your time before you take a look at the presented solution. **Good luck!**
 
 # Contribute
 
-If you think something is incorrect, have a better solution, give feedback or simply you want to
-[add new coding puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle) just create PR or open a
-new issue.
+If you think something is sdfds sdf ds fsd fds fds fds fds ds dsincorrect, have a better solution, give feedback or
+simply you want to [add new coding puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle)
+just create PR or open a new issue.
 
 ## Contributors
 
