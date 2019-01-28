@@ -145,11 +145,14 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Introduction to Algorithms, 3rd Edition (The MIT Press)](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/)
 - [More books...](https://www.quora.com/What-are-the-best-books-on-algorithms-and-data-structures)
 
-## Articles
+## Websites
 
-- [Data structures explained](https://medium.com/basecs/tagged/data-structures) - great description of various data structures
+- [VisuAlgo](https://visualgo.net/en) - visualizes data structures and algorithms through animations
+  algorithms
+- [Data structures explained](https://medium.com/basecs/tagged/data-structures) - description of various data structures
 - [Big-O Cheat Sheet](http://bigocheatsheet.com/)
-- [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms) - visualisation of most popular sorting algorithms
+- [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms) - visually compares most popular
+  sorting algorithms using animations
 
 ## Coding interview repositories
 - [Coding Interview University](https://github.com/jwasham/coding-interview-university)
