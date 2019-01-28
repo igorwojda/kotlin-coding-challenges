@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Given a `String` implement a function which returns a reversed copy of that string.
+Given a string implement a function which returns a reversed copy of that string.
 
 [Puzzle](Reverse.kt) | [Solution](ReverseSolution.kt)
 

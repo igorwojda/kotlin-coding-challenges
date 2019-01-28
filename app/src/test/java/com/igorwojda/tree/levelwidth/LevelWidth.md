@@ -12,7 +12,6 @@ Given the root node of a tree, return an array where each element is the width o
 ## Examples
 
 ```
-Given:
     A
   / |  \
 B   C   D

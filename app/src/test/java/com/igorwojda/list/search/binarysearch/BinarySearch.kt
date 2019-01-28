@@ -3,7 +3,6 @@ package com.igorwojda.list.search.binarysearch
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-
 private fun binarySearch(list: List<Char>, element: Char): Int {
     return -1
 }
