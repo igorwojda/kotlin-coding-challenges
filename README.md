@@ -1,9 +1,9 @@
 # Kotlin coding puzzles
 
-This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that meant to be solved using
-[Kotlin](https://kotlinlang.org/) language (hints, solutions and tests are here as well). Purpose of this repository is
-to help you to practice deliberately and develop strong problem-solving skills. This will help you become better
-programmer and improve you chance of getting new job, by passing
+This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that are solved using
+[Kotlin](https://kotlinlang.org/) language (hints, solutions tests and [useful links](#useful-links) are here as well).
+Purpose of this repository is to help you to practice and develop strong problem-solving skills. This will help you to
+become better programmer and improve you chance of getting new job, by passing
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interview.
 
 ## Puzzle structure
@@ -51,6 +51,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Product](app/src/test/java/com/igorwojda/list/product/Product.md)
 - [Capitalize first](app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
 - [Decapitalize const](app/src/test/java/com/igorwojda/string/decapitalizeconst/DecapitalizeConst.md)
+- [Longest word](app/src/test/java/com/igorwojda/string/longestword/LongestWord.md)
 
 **Apprentice**
 - [Is palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/basic/IsPalindrome.md)
@@ -63,6 +64,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
 - [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
 - [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
+- [Caesar Cipher](app/src/test/java/com/igorwojda/string/caesarcipher/CaesarCipher.md)
 - [Repeated Character](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedCharacter.md)
 
 **Warrior** 
@@ -87,6 +89,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Any callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.md)
 - [Flatten](app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
 - [Binary search](app/src/test/java/com/igorwojda/list/search/binarysearch/BinarySearch.md)
+- [Surrounded letter](app/src/test/java/com/igorwojda/string/surroundedletter/SurroundedLetter.md)
 
 **Commander**
 - [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
@@ -102,24 +105,37 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Min sub list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
 - [Subtract](app/src/test/java/com/igorwojda/list/subtract/Subtract.md)
 
-# More coding challenges
+# Useful links
 
 ## More codding challenges
 
-- [HackerRank](https://www.hackerrank.com/)
-- [Code Google Com Codejam](https://code.google.com/codejam/past-contests)
-- [Advent of code](https://adventofcode.com/2018/events)
-- [Project euler](https://projecteuler.net/archives)
-- [GeeksForGeeks](https://www.geeksforgeeks.org)
-- [CoderByte](https://coderbyte.com/challenges)
-- [CodeChef](https://www.codechef.com/problems/school)
-- [LeetCode](https://leetcode.com/problemset/all)
+- [GeeksForGeeks](https://practice.geeksforgeeks.org) - data structures / algorithms / company interview problems.
+- [CoderByte](https://coderbyte.com/challenges) - data structures / algorithms / company interview problems segregated
+  by difficulty. They offer premium membership which gives you official step-by-step solutions and user solutions.
+- [HackerRank](https://www.hackerrank.com/dashboard) - data structures / algorithms / mathematics.
+- [Project euler](https://projecteuler.net/archives) - More complex challenges, usually related to mathematics. The have
+  already 600+ problems and a new code challenge is available very week or two. You will probably have to discuss
+  problem with community because solutions are not on the website.
+- [Code Google Com Codejam](https://code.google.com/codejam/past-contests) - Google Code Jam, calls on programmers
+  around the world to solve challenging, algorithmic puzzles against the clock. FObtusely they publish all the past
+  problems on their website.
+- [Advent of code](https://adventofcode.com/2018/events) - one months of various programing tasks at the end of each
+  year released day by day during the advent. Archive of old problems is still there.
+- [CodeChef](https://www.codechef.com/problems/school) - contains set of programming problems segregated by difficulty.
+- [LeetCode](https://leetcode.com/problemset/all) - data structures / algorithms / company interview problems segregated
+  by difficulty.
+- [Code Forces](http://codeforces.com/problemset) - list of programming puzzles is smaller than other websites, but you
+  will still have plenty problems to solve.
+- [Spoj](https://www.spoj.com/problems/classical) - list of programming puzzles is smaller than other websites, but you
+  will still have plenty problems to solve.
 
 ## Video courses
 
 - [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/)
 - [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
 - [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms/)
+- [Learning Algorithms in JavaScript from Scratch](https://www.udemy.com/learning-algorithms-in-javascript-from-scratch/)
+- [Data Structures and Algorithms Deep Dive Using Java](https://www.udemy.com/data-structures-and-algorithms-deep-dive-using-java/)
 
 ## Books
 
@@ -130,6 +146,12 @@ your time before you take a look at the presented solution. **Good luck!**
 
 - [Data structures explained](https://medium.com/basecs/tagged/data-structures) - great description of various data structures
 - [Sorting algorytms animations](https://www.toptal.com/developers/sorting-algorithms) - visualisation of most popular sorting algorithms
+
+## Coding interview repositories
+- [Coding Interview University](https://github.com/jwasham/coding-interview-university)
+- [Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
+- [Google Interview University](https://github.com/P1xt/google-interview-university)
+- [Interviews](https://github.com/kdn251/interviews)
 
 # Contribute
 
