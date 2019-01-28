@@ -1,6 +1,5 @@
-package com.igorwojda.string.repeated
+package com.igorwojda.string.hasrepeatedcharacter
 
-// Recursive optimal approach:
 // Time complexity: O(n)
 private object Solution {
     private fun hasRepeatedCharacter(str: String): Boolean {
