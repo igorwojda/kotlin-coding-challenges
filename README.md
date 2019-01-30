@@ -65,7 +65,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
 - [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
 - [Caesar Cipher](app/src/test/java/com/igorwojda/string/caesarcipher/CaesarCipher.md)
-- [Has repeated character](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedCharacter.md)
+- [Has repeated char](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedChar.md)
 
 **Warrior** 
 - [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)

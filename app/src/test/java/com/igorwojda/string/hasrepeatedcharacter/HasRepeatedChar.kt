@@ -3,23 +3,23 @@ package com.igorwojda.string.hasrepeatedcharacter
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun hasRepeatedCharacter(str: String): Boolean {
+private fun hasRepeatedChar(str: String): Boolean {
     return false
 }
 
 class RepeatedCharacterTest {
     @Test
     fun `"abc" don't have repeated character`() {
-        hasRepeatedCharacter("abc") shouldEqual false
+        hasRepeatedChar("abc") shouldEqual false
     }
 
     @Test
     fun `"aabc" has repeated character`() {
-        hasRepeatedCharacter("aabc") shouldEqual true
+        hasRepeatedChar("aabc") shouldEqual true
     }
 
     @Test
     fun `"aabcc" has repeated character`() {
-        hasRepeatedCharacter("aabcc") shouldEqual true
+        hasRepeatedChar("aabcc") shouldEqual true
     }
 }
