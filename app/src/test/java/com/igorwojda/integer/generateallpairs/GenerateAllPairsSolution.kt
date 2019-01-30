@@ -1,7 +1,7 @@
 package com.igorwojda.integer.generateallpairs
 
 private object Solution {
-    private fun getAllPairs(n: Int): MutableList<Pair<Int, Int>> {
+    private fun getAllPairs(n: Int): List<Pair<Int, Int>> {
         val result = mutableListOf<Pair<Int, Int>>()
 
         (0..n).forEach { i ->
