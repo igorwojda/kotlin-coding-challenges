@@ -156,6 +156,7 @@ your time before you take a look at the presented solution. **Good luck!**
   sorting algorithms using animations.
 - [Big-O Reference](http://bigoref.com/) - summarizes the complexities in terms of space and time (Big-O) of the most
   important algorithms and operations in common data structures.
+- [Big-O poster](https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf)
 - [Big-O Cheat Sheet](http://bigocheatsheet.com/) - covers the space and time Big-O complexities of common algorithms
 
 ## Coding interview repositories
