@@ -64,8 +64,8 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
 - [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
 - [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
-- [Repeated Character](app/src/test/java/com/igorwojda/string/repeated/RepeatedCharacter.kt)
 - [Caesar Cipher](app/src/test/java/com/igorwojda/string/caesarcipher/CaesarCipher.md)
+- [Repeated Character](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedCharacter.md)
 
 **Warrior** 
 - [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
@@ -89,7 +89,8 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Any callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.md)
 - [Flatten](app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
 - [Binary search](app/src/test/java/com/igorwojda/list/search/binarysearch/BinarySearch.md)
-- [Surrounded letter](app/src/test/java/com/igorwojda/string/surroundedletter/SurroundedLetter.md)
+- [Surrounded letter](app/src/test/java/com/igorwojda/string/surroundedletter/SurroundedLetter.md) 
+- [Insertion sort](app/src/test/java/com/igorwojda/list/sort/insertionsort/InsertionSort.md)
 
 **Commander**
 - [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
@@ -142,12 +143,18 @@ your time before you take a look at the presented solution. **Good luck!**
 ## Books
 
 - [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
-- [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
+- [Algorithms, 4th Edition](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/)
+- [Introduction to Algorithms, 3rd Edition (The MIT Press)](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/)
+- [More books...](https://www.quora.com/What-are-the-best-books-on-algorithms-and-data-structures)
 
-## Articles
+## Websites
 
-- [Data structures explained](https://medium.com/basecs/tagged/data-structures) - great description of various data structures
-- [Sorting algorytms animations](https://www.toptal.com/developers/sorting-algorithms) - visualisation of most popular sorting algorithms
+- [VisuAlgo](https://visualgo.net/en) - visualizes data structures and algorithms through animations
+  algorithms
+- [Data structures explained](https://medium.com/basecs/tagged/data-structures) - description of various data structures
+- [Big-O Cheat Sheet](http://bigocheatsheet.com/)
+- [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms) - visually compares most popular
+  sorting algorithms using animations
 
 ## Coding interview repositories
 - [Coding Interview University](https://github.com/jwasham/coding-interview-university)
@@ -157,9 +164,9 @@ your time before you take a look at the presented solution. **Good luck!**
 
 # Contribute
 
-If you think something is incorrect, have a better solution, give feedback or simply you want to
-[add new coding puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle) just create PR or open a
-new issue.
+If you think something is sdfds sdf ds fsd fds fds fds fds ds dsincorrect, have a better solution, give feedback or
+simply you want to [add new coding puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle)
+just create PR or open a new issue.
 
 ## Contributors
 
