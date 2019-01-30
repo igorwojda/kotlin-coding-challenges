@@ -3,9 +3,8 @@ package com.igorwojda.integer.generateallpairs
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun getAllPairs(n: Int): MutableList<Pair<Int, Int>> {
-    return mutableListOf()
-    'a'.isLetter()
+private fun getAllPairs(n: Int): List<Pair<Int, Int>> {
+    return emptyList()
 }
 
 class GetAllPairsTest {
