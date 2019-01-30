@@ -10,7 +10,7 @@ private fun bubbleSort(list: List<Int>): List<Number> {
 class BubbleSortTest {
     @Test
     fun `bubble sort 5, 1, 4, 2`() {
-        bubbleSort(listOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 3, 4)
+        bubbleSort(listOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 4, 5)
     }
 
     @Test

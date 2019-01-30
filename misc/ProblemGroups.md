@@ -9,15 +9,15 @@ List of problems that can be solved using [recursion](https://en.wikipedia.org/w
 
 - [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
 - [Get odd](../app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
-- [Any callback](../app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.kt)
+- [Any callback](../app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.md)
 - [Power](../app/src/test/java/com/igorwojda/integer/power/Power.md)
 - [Binary search tree (validate)](../app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
-- [Fibonacci](../app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.kt) 
+- [Fibonacci](../app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md) 
 - [Fibonacci with recursive cache](../app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
 - [Add up to](../app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
 - [Power](../app/src/test/java/com/igorwojda/integer/power/Power.md)
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
-- [Capitalize first](../app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.kt)
+- [Capitalize first](../app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
   
 ### Recursion with helper function 
 
@@ -52,7 +52,7 @@ complexity from `O(n^2)` to `O(n)`.
 - [Max occurring char](../app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md) 
 - [Get duplicated arguments](../app/src/test/java/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
 - [Subtract](../app/src/test/java/com/igorwojda/list/subtract/Subtract.md)
-- [Repeated Character](../app/src/test/java/com/igorwojda/string/repeated/RepeatedCharacter.kt)
+- [Repeated Character](../app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedCharacter.md)
 
 ## Sliding window 
 
@@ -71,5 +71,4 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Bubble sort](../app/src/test/java/com/igorwojda/list/sort/bubblesort/BubbleSort.md)
 - [Merge sort](../app/src/test/java/com/igorwojda/list/sort/mergesort/MergeSort.md)
 - [Selection sort](../app/src/test/java/com/igorwojda/list/sort/selectionsort/SelectionSort.md)
-
-
+- [Insertion sort](../app/src/test/java/com/igorwojda/list/sort/insertionsort/InsertionSort.md)

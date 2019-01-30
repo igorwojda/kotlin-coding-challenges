@@ -4,19 +4,19 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun mergeSort(list: List<Int>): List<Int> {
-
-    // Merge two sorted lists into one sorted list
-    fun helper(left: List<Int>, right: List<Int>): MutableList<Int> {
-        return mutableListOf()
+    // Take two sorted lists and merge them together into one sorted list
+    fun merge(left: MutableList<Int>, right: MutableList<Int>): MutableList<Int> {
+        val result = mutableListOf<Int>()
+        return result
     }
 
-    return list
+    return emptyList()
 }
 
 class MergeSortTest {
     @Test
     fun `merge sort 5, 1, 4, 2`() {
-        mergeSort(listOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 3, 4)
+        mergeSort(listOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 4, 5)
     }
 
     @Test
