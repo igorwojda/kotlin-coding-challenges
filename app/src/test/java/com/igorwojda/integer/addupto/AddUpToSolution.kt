@@ -3,12 +3,19 @@ package com.igorwojda.integer.addupto
 // Kotlin idiomatic solution
 private object Solution1 {
     private fun addUpTo(n: Int): Int {
+        return (1..n).sum()
+    }
+}
+
+// Kotlin idiomatic solution
+private object Solution2 {
+    private fun addUpTo(n: Int): Int {
         return (0..n).fold(0) { accumulated, current -> accumulated + current }
     }
 }
 
 // Recursive solution
-private object Solution2 {
+private object Solution3 {
     private fun addUpTo(n: Int): Int {
         if (n == 1) {
             return 1
@@ -19,14 +26,14 @@ private object Solution2 {
 }
 
 // Mathematical formula
-private object Solution3 {
+private object Solution4 {
     private fun addUpTo(n: Int): Int {
         return n * (n + 1) / 2
     }
 }
 
 // Iterative solution
-private object Solution4 {
+private object Solution5 {
     private fun addUpTo(n: Int): Int {
         var total = 0
 
@@ -37,17 +44,10 @@ private object Solution4 {
 }
 
 // Iterative solution
-private object Solution5 {
+private object Solution6 {
     private fun addUpTo(n: Int): Int {
         var total = 0
         repeat(n + 1) { total += it }
         return total
-    }
-}
-
-// Kotlin idiomatic solution
-private object Solution6 {
-    private fun addUpTo(n: Int): Int {
-        return (1..n).sum()
     }
 }
