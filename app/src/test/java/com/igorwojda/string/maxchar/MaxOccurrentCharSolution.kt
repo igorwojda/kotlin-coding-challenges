@@ -45,3 +45,13 @@ private object Solution3 {
         return null
     }
 }
+
+// Kotlin idiomatic solution
+private object Solution4 {
+    private fun maxOccurrentChar(str: String): Char? {
+        return str.toCharArray()
+        .groupBy { it }
+        .maxBy { it.value.size }
+        ?.key
+    }
+}
