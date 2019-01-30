@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun maxOccurrentChar(str: String): Char? {
-    return 'z'
+    return null
 }
 
 class StringMaxCharTest {

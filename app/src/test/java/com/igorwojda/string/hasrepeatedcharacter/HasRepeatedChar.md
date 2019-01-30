@@ -1,11 +1,11 @@
-# Has repeated character
+# Has repeated char
 
 ## Instructions
 
 Given a string implement a function which returns `true` if string contains at least one repeated character, otherwise
 it returns `false`.
 
-[Puzzle](HasRepeatedCharacter.kt) | [Solution](HasRepeatedCharacterSolution.kt)
+[Puzzle](HasRepeatedChar.kt) | [Solution](HasRepeatedCharSolution.kt)
 
 ## Examples
 
