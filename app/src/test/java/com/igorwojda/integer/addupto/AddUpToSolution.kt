@@ -44,3 +44,10 @@ private object Solution5 {
         return total
     }
 }
+
+// Kotlin idiomatic solution
+private object Solution6 {
+    private fun addUpTo(n: Int): Int {
+        return (1..n).sum()
+    }
+}
