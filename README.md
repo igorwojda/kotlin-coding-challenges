@@ -172,6 +172,8 @@ just create PR or open a new issue.
 
 - [Alan Evans](https://github.com/alanevansbc)
 - [Norbert Kiesel](https://github.com/nkiesel)
+- [David Mozano](https://github.com/mozano)
+- [Yannis Barbakadze](https://github.com/yannisbarbakadze)
 
 # Follow me
 
