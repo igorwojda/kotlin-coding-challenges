@@ -65,7 +65,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
 - [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
 - [Caesar Cipher](app/src/test/java/com/igorwojda/string/caesarcipher/CaesarCipher.md)
-- [Repeated Character](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedCharacter.md)
+- [Has repeated character](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedCharacter.md)
 
 **Warrior** 
 - [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
@@ -152,9 +152,11 @@ your time before you take a look at the presented solution. **Good luck!**
 - [VisuAlgo](https://visualgo.net/en) - visualizes data structures and algorithms through animations algorithms.
 - [Data structures explained](https://medium.com/basecs/tagged/data-structures) - description of various data
   structures.
-- [Big-O Cheat Sheet](http://bigocheatsheet.com/) - algorithms nad data structure operations complexity cheat sheet.
 - [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms) - visually compares most popular
   sorting algorithms using animations.
+- [Big-O Reference](http://bigoref.com/) - summarizes the complexities in terms of space and time (Big-O) of the most
+  important algorithms and operations in common data structures.
+- [Big-O Cheat Sheet](http://bigocheatsheet.com/) - covers the space and time Big-O complexities of common algorithms
 
 ## Coding interview repositories
 - [Coding Interview University](https://github.com/jwasham/coding-interview-university)
