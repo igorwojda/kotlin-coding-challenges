@@ -149,12 +149,12 @@ your time before you take a look at the presented solution. **Good luck!**
 
 ## Websites
 
-- [VisuAlgo](https://visualgo.net/en) - visualizes data structures and algorithms through animations
-  algorithms
-- [Data structures explained](https://medium.com/basecs/tagged/data-structures) - description of various data structures
-- [Big-O Cheat Sheet](http://bigocheatsheet.com/)
+- [VisuAlgo](https://visualgo.net/en) - visualizes data structures and algorithms through animations algorithms.
+- [Data structures explained](https://medium.com/basecs/tagged/data-structures) - description of various data
+  structures.
+- [Big-O Cheat Sheet](http://bigocheatsheet.com/) - algorithms nad data structure operations complexity cheat sheet.
 - [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms) - visually compares most popular
-  sorting algorithms using animations
+  sorting algorithms using animations.
 
 ## Coding interview repositories
 - [Coding Interview University](https://github.com/jwasham/coding-interview-university)
