@@ -1,4 +1,4 @@
-# Repeated chars
+# Has repeated character
 
 ## Instructions
 
