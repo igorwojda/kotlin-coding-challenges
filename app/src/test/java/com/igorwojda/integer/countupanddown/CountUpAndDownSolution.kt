@@ -27,3 +27,15 @@ private object Solution2 {
         }
     }
 }
+
+// Returns a new list containing all the elements of an iterable plus the elements of another
+private object Solucion3 {
+    private fun countUpAndDown(n: Int): List<Int> {
+        // (0 until n) returns a range from 0 to (n - 1)
+        // (n downTo 0) returns a range from n to 0
+        // "+" operator is the same as doing upIntRange.plus(downIntRange),
+        // which returns a list containing all elements of the original collection
+        // and then all elements of the given elements collection.
+        return (0 until n) + (n downTo 0)
+    }
+}
