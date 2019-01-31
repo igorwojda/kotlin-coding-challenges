@@ -29,7 +29,7 @@ determine space/time complexity and we look at code readability.
 # Let's solve some puzzles
 
 Puzzles below are segregated by different difficulty. Repository also contains puzzles grouped by
-[problem type](misc/PuzzleGroups.md) and [problem add order](misc/PuzzleOrder.md) .
+[problem type](misc/PuzzleGroups.md) and [problem add order](misc/PuzzleOrder.md).
 
 Some puzzle may contain a reference to other puzzles that should be solved before to have better understanding of the
 problem. To succeed you need to practice often, repeat same puzzles multiple times and be persistent over time. Take
@@ -157,8 +157,8 @@ your time before you take a look at the presented solution. **Good luck!**
   sorting algorithms using animations.
 - [Big-O Reference](http://bigoref.com/) - summarizes the complexities in terms of space and time (Big-O) of the most
   important algorithms and operations in common data structures.
-- [Big-O poster](https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf)
-- [Big-O Cheat Sheet](http://bigocheatsheet.com/) - covers the space and time Big-O complexities of common algorithms
+- [Big-O poster](https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf) - good reference for you wall wall.
+- [Big-O Cheat Sheet](http://bigocheatsheet.com/) - covers the space and time Big-O complexities of common algorithms.
 
 ## Coding interview repositories
 - [Coding Interview University](https://github.com/jwasham/coding-interview-university)
@@ -168,7 +168,7 @@ your time before you take a look at the presented solution. **Good luck!**
 
 # Contribute
 
-If you think something is sdfds sdf ds fsd fds fds fds fds ds dsincorrect, have a better solution, give feedback or
+If you think something is incorrect, have a better solution, give feedback or
 simply you want to [add new coding puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle)
 just create PR or open a new issue.
 
