@@ -1,4 +1,4 @@
-package com.igorwojda.various.stepsgenerator
+package com.igorwojda.integer.stepsgenerator
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

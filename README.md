@@ -45,8 +45,8 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Count up and down](app/src/test/java/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
 - [Generate all pairs](app/src/test/java/com/igorwojda/integer/generateallpairs/GenerateAllPairs.md)
 - [List count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
-- [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
-- [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
+- [Print number](app/src/test/java/com/igorwojda/integer/printnumber/basic/PrintNumber.md)
+- [Print number with steps](app/src/test/java/com/igorwojda/integer/printnumber/steps/PrintNumberWithSteps.md)
 - [Power](app/src/test/java/com/igorwojda/integer/power/Power.md)
 - [Factorial](app/src/test/java/com/igorwojda/integer/factorial/Factorial.md)
 - [Product](app/src/test/java/com/igorwojda/list/product/Product.md)
@@ -62,14 +62,14 @@ your time before you take a look at the presented solution. **Good luck!**
 - [String reverse](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
 - [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
 - [Int reverse](app/src/test/java/com/igorwojda/integer/reverse/Reverse.md)
-- [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
-- [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
-- [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
+- [Pyramid generator](app/src/test/java/com/igorwojda/integer/pyramidgenerator/PyramidGenerator.md)
+- [Steps generator](app/src/test/java/com/igorwojda/integer/stepsgenerator/StepsGenerator.md)
+- [Fizz Buzz](app/src/test/java/com/igorwojda/integer/fizzbuzz/FizzBuzz.md)
 - [Caesar Cipher](app/src/test/java/com/igorwojda/string/caesarcipher/CaesarCipher.md)
 - [Has repeated char](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedChar.md)
 
 **Warrior** 
-- [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
+- [Spiral matrix generator](app/src/test/java/com/igorwojda/integer/spiralmatrixgenerator/SpiralMatrixGenerator.md)
 - [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
 - [Generic queue](app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
 - [Combine queues](app/src/test/java/com/igorwojda/queue/combine/Combine.md)
@@ -96,13 +96,13 @@ your time before you take a look at the presented solution. **Good luck!**
 **Commander**
 - [List chunk](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
 - [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
-- [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)u
+- [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
 - [Circular check](app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
 - [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
 - [Is sub string](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 - [Merge sort](app/src/test/java/com/igorwojda/list/sort/mergesort/MergeSort.md)
-- [Fibonacci](app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md)
-- [Fibonacci with recursive cache](app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
+- [Fibonacci](app/src/test/java/com/igorwojda/integer/fibonacci/basic/Fibonacci.md)
+- [Fibonacci with recursive cache](app/src/test/java/com/igorwojda/integer/fibonacci/recursivecached/FibonacciRecursiveCached.md)
 - [Max sub list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
 - [Min sub list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
 - [Subtract](app/src/test/java/com/igorwojda/list/subtract/Subtract.md)
@@ -135,17 +135,17 @@ your time before you take a look at the presented solution. **Good luck!**
 
 ## Video courses
 
-- [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/)
-- [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
-- [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms/)
+- [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass)
+- [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure)
+- [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms)
 - [Learning Algorithms in JavaScript from Scratch](https://www.udemy.com/learning-algorithms-in-javascript-from-scratch/)
-- [Data Structures and Algorithms Deep Dive Using Java](https://www.udemy.com/data-structures-and-algorithms-deep-dive-using-java/)
+- [Data Structures and Algorithms Deep Dive Using Java](https://www.udemy.com/data-structures-and-algorithms-deep-dive-using-java)
 
 ## Books
 
-- [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
-- [Algorithms, 4th Edition](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/)
-- [Introduction to Algorithms, 3rd Edition (The MIT Press)](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/)
+- [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850)
+- [Algorithms, 4th Edition](https://www.amazon.co.uk/Algorithms-Robert-Sedgewick/dp/032157351X)
+- [Introduction to Algorithms, 3rd Edition (The MIT Press)](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 - [More books...](https://www.quora.com/What-are-the-best-books-on-algorithms-and-data-structures)
 
 ## Websites
@@ -183,4 +183,5 @@ just create PR or open a new issue.
 
 ![avatar.png](misc/image/avatar.png)
 
-[Twitter](https://twitter.com/igorwojda) | [Medium](https://medium.com/@igorwojda) | [Linkedin](https://www.linkedin.com/in/igorwojda/)
+[Twitter](https://twitter.com/igorwojda) | [Medium](https://medium.com/@igorwojda) |
+[Linkedin](https://www.linkedin.com/in/igorwojda)

@@ -1,4 +1,4 @@
-package com.igorwojda.various.pyramidgenerator
+package com.igorwojda.integer.pyramidgenerator
 
 // iterative solution
 private object Solution1 {

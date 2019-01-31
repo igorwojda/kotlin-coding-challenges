@@ -1,4 +1,4 @@
-package com.igorwojda.various.printnumber.steps
+package com.igorwojda.integer.printnumber.steps
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

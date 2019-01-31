@@ -1,4 +1,4 @@
-package com.igorwojda.various.fibonacci.recursivecached
+package com.igorwojda.integer.fibonacci.recursivecached
 
 private object Solution {
     private data class MethodCache(val n: Int, val result: Int)

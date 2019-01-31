@@ -1,4 +1,4 @@
-package com.igorwojda.various.fizzbuzz
+package com.igorwojda.integer.fizzbuzz
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

@@ -1,4 +1,4 @@
-package com.igorwojda.various.fibonacci.basic
+package com.igorwojda.integer.fibonacci.basic
 
 // iterative solution
 private object Solution1 {

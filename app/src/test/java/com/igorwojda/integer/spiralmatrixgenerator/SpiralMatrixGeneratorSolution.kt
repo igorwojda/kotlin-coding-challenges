@@ -1,4 +1,4 @@
-package com.igorwojda.various.spiralmatrixgenerator
+package com.igorwojda.integer.spiralmatrixgenerator
 
 private object Solution {
     private fun generateSpiralMatrix(n: Int): List<MutableList<Int?>> {
