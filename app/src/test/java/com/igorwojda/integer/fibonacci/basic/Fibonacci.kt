@@ -1,4 +1,4 @@
-package com.igorwojda.various.fibonacci.basic
+package com.igorwojda.integer.fibonacci.basic
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

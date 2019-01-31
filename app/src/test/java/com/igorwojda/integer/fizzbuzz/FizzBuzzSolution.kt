@@ -1,4 +1,4 @@
-package com.igorwojda.various.fizzbuzz
+package com.igorwojda.integer.fizzbuzz
 
 private object Solution {
     private fun fizzBuzz(n: Int): List<String> {

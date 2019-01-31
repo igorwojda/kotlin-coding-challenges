@@ -1,4 +1,4 @@
-package com.igorwojda.various.spiralmatrixgenerator
+package com.igorwojda.integer.spiralmatrixgenerator
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

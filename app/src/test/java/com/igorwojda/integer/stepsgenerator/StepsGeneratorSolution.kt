@@ -1,4 +1,4 @@
-package com.igorwojda.various.stepsgenerator
+package com.igorwojda.integer.stepsgenerator
 
 // Kotlin repeat function
 private object Solution1 {

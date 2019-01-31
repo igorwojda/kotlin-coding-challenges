@@ -1,4 +1,4 @@
-package com.igorwojda.various.printnumber.basic
+package com.igorwojda.integer.printnumber.basic
 
 private object Solution {
     private fun printNumber(n: Int): List<Int> {

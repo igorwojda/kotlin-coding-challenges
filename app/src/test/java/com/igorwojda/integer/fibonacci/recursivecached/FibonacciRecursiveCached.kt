@@ -1,4 +1,4 @@
-package com.igorwojda.various.fibonacci.recursivecached
+package com.igorwojda.integer.fibonacci.recursivecached
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

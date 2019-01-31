@@ -1,4 +1,4 @@
-package com.igorwojda.various.printnumber.steps
+package com.igorwojda.integer.printnumber.steps
 
 private object Solution {
     private fun printNumber(n: Int, step: Int = 1): List<Int> {
