@@ -29,7 +29,7 @@ determine space/time complexity and we look at code readability.
 # Let's solve some puzzles
 
 Puzzles below are segregated by different difficulty. Repository also contains puzzles grouped by
-[problem type](misc/PuzzleGroups.md) and [Problems order](misc/PuzzleOrder.md) .
+[problem type](misc/PuzzleGroups.md) and [problem add order](misc/PuzzleOrder.md) .
 
 Some puzzle may contain a reference to other puzzles that should be solved before to have better understanding of the
 problem. To succeed you need to practice often, repeat same puzzles multiple times and be persistent over time. Take
