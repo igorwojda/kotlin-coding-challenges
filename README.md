@@ -28,8 +28,8 @@ determine space/time complexity and we look at code readability.
 
 # Let's solve some puzzles
 
-Puzzles below are segregated by different difficulty. If you want to solve puzzles by problem type, please check this
-[section](misc/ProblemGroups.md).
+Puzzles below are segregated by different difficulty. Repository also contains puzzles grouped by
+[problem type](misc/PuzzleGroups.md) and [Problems order](misc/PuzzleOrder.md) .
 
 Some puzzle may contain a reference to other puzzles that should be solved before to have better understanding of the
 problem. To succeed you need to practice often, repeat same puzzles multiple times and be persistent over time. Take
@@ -37,6 +37,7 @@ your time before you take a look at the presented solution. **Good luck!**
 
 **New in Town**
 - [Capitalize sentence](app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
+- [Get odd numbers](app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
 - [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
 - [Add up to](app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
 - [Linear search](app/src/test/java/com/igorwojda/list/search/linearsearch/LinearSearch.md)
@@ -58,9 +59,9 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Is tolerant palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/tolerant/IsTolerantPalindrome.md)
 - [Is anagram](app/src/test/java/com/igorwojda/string/isanagram/IsAnagram.md)
 - [Max occurring char](app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md)
-- [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
+- [String reverse](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
 - [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
-- [Int reversal](app/src/test/java/com/igorwojda/integer/reverse/Reverse.md)
+- [Int reverse](app/src/test/java/com/igorwojda/integer/reverse/Reverse.md)
 - [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
 - [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
 - [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
@@ -71,7 +72,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
 - [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
 - [Generic queue](app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
-- [Combine two queues](app/src/test/java/com/igorwojda/queue/weave/Weave.md)
+- [Combine queues](app/src/test/java/com/igorwojda/queue/combine/Combine.md)
 - [Two stack queue](app/src/test/java/com/igorwojda/queue/twostack/TwoStackQueue.md)
 - [Int stack](app/src/test/java/com/igorwojda/stack/int/IntStack.md)
 - [Generic stack](app/src/test/java/com/igorwojda/stack/generic/GenericStack.md)
@@ -93,7 +94,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Insertion sort](app/src/test/java/com/igorwojda/list/sort/insertionsort/InsertionSort.md)
 
 **Commander**
-- [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
+- [List chunk](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
 - [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
 - [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)u
 - [Circular check](app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
