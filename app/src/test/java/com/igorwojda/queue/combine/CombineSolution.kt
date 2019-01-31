@@ -1,4 +1,4 @@
-package com.igorwojda.queue.weave
+package com.igorwojda.queue.combine
 
 private object Solution {
     class GenericQueue<E> {
@@ -13,7 +13,7 @@ private object Solution {
         fun peek() = list.firstOrNull()
     }
 
-    fun weave(q1: GenericQueue<*>, q2: GenericQueue<*>): GenericQueue<*> {
+    fun combine(q1: GenericQueue<*>, q2: GenericQueue<*>): GenericQueue<*> {
         val result = GenericQueue<Any>()
 
         while (true) {

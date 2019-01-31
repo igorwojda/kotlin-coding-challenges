@@ -1,13 +1,13 @@
-package com.igorwojda.queue.weave
+package com.igorwojda.queue.combine
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun weave(q1: GenericQueue<*>, q2: GenericQueue<*>): GenericQueue<*> {
+private fun combine(q1: GenericQueue<*>, q2: GenericQueue<*>): GenericQueue<*> {
     return GenericQueue<Any>()
 }
 
-class WeaveTest {
+class CombineTest {
     @Test
     fun `can add elements to a queue`() {
         GenericQueue<Int>().apply { add(1) }
@@ -70,7 +70,7 @@ class WeaveTest {
             add("four")
         }
 
-        weave(one, two).also {
+        combine(one, two).also {
             it.remove() shouldEqual 1
             it.remove() shouldEqual "one"
             it.remove() shouldEqual 2
@@ -101,7 +101,7 @@ class WeaveTest {
             add("four")
         }
 
-        weave(one, two).apply {
+        combine(one, two).apply {
             remove() shouldEqual 1
             remove() shouldEqual "one"
             remove() shouldEqual 2
@@ -134,7 +134,7 @@ class WeaveTest {
             add("six")
         }
 
-        weave(one, two).apply {
+        combine(one, two).apply {
             remove() shouldEqual 1
             remove() shouldEqual "one"
             remove() shouldEqual 2
