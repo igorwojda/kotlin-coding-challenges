@@ -92,6 +92,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Binary search](app/src/test/java/com/igorwojda/list/search/binarysearch/BinarySearch.md)
 - [Surrounded letter](app/src/test/java/com/igorwojda/string/surroundedletter/SurroundedLetter.md) 
 - [Insertion sort](app/src/test/java/com/igorwojda/list/sort/insertionsort/InsertionSort.md)
+- [Quick sort](app/src/test/java/com/igorwojda/list/sort/quicksort/QuickSort.md)
 
 **Commander**
 - [List chunk](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
