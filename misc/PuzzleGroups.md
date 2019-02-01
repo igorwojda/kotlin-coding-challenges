@@ -1,7 +1,7 @@
 # Problems groups
 
 This section contains **subset** of puzzles that are grouped by type of solution (recursive, double pointer etc.) or
-type of problem (searching, sorting etc.).
+type of problem (searching, sorting etc.). One puzzle may fit int outfile groups.
 
 ## Recursion 
 
@@ -18,6 +18,8 @@ List of problems that can be solved using [recursion](https://en.wikipedia.org/w
 - [Power](../app/src/test/java/com/igorwojda/integer/power/Power.md)
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 - [Capitalize first](../app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
+- [Merge sort](../app/src/test/java/com/igorwojda/list/sort/mergesort/MergeSort.md)
+- [Quick sort](../app/src/test/java/com/igorwojda/list/sort/quicksort/QuickSort.md)
   
 ### Recursion with helper function 
 
@@ -77,6 +79,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Quick sort](../app/src/test/java/com/igorwojda/list/sort/quicksort/QuickSort.md)
 
 ### Other list puzzles
+
 - [Capitalize First](../app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
 - [List count unique values](../app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
 - [Flatten](../app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
@@ -90,16 +93,19 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Sum zero](../app/src/test/java/com/igorwojda/list/sumzero/SumZero.md) 
 
 ## Linked List
+
 - [Linked list](../app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
 - [Circular linked list?](../app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
 - [Take n-th element from last](../app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
 - [Linked list midpoint](../app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
 
 ## Binary tree
+
 - [Binary Search Tree (insert)](../app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
 - [Binary Tree (validate)](../app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
 
 ## Integer
+
 - [Add up to](../app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
 - [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
 - [Count up and down](../app/src/test/java/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
@@ -119,6 +125,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Steps generator](../app/src/test/java/com/igorwojda/integer/stepsgenerator/StepsGenerator.md)
 
 ## String
+
 - [Caesar Cipher](../app/src/test/java/com/igorwojda/string/caesarcipher/CaesarCipher.md)
 - [Capitalize sentence](../app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
 - [Decapitalize const](../app/src/test/java/com/igorwojda/string/decapitalizeconst/DecapitalizeConst.md)
@@ -135,14 +142,17 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Find the vowels](../app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
 
 ## Range
+
 - [Contains range?](../app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
 
 ## Queue
+
 - [Generic queue](../app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
 - [Int queue](../app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
 - [Two stack queue](../app/src/test/java/com/igorwojda/queue/twostack/TwoStackQueue.md)
 - [Combine two queues](../app/src/test/java/com/igorwojda/queue/combine/Combine.md)
 
 ## Tree
+
 - [Tree level width](../app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
 - [Tree](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
