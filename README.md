@@ -2,8 +2,8 @@
 
 This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that are solved using
 [Kotlin](https://kotlinlang.org/) language (hints, solutions tests and [useful links](#useful-links) are here as well).
-Purpose of this repository is to help you to practice and develop strong problem-solving skills. This will help you to
-become better programmer and improve you chance of getting new job, by passing
+Purpose of this repository is to help you to practice coding and develop strong problem-solving skills. This will help
+you to become better programmer and improve you chance of getting a new job, by passing
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interview.
 
 ## Puzzle structure
@@ -158,7 +158,8 @@ your time before you take a look at the presented solution. **Good luck!**
   sorting algorithms using animations.
 - [Big-O Reference](http://bigoref.com/) - summarizes the complexities in terms of space and time (Big-O) of the most
   important algorithms and operations in common data structures.
-- [Big-O poster](https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf) - good reference for you wall wall.
+- [Big-O poster](https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf) - time/space complexity poster to
+  print ant put on the wall.
 - [Big-O Cheat Sheet](http://bigocheatsheet.com/) - covers the space and time Big-O complexities of common algorithms.
 
 ## Coding interview repositories
