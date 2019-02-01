@@ -27,3 +27,5 @@ private object SelectionSortSolution {
         return sorted
     }
 }
+
+object KtLintWillNotComplain

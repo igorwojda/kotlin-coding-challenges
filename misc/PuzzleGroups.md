@@ -74,7 +74,8 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Merge sort](../app/src/test/java/com/igorwojda/list/sort/mergesort/MergeSort.md)
 - [Selection sort](../app/src/test/java/com/igorwojda/list/sort/selectionsort/SelectionSort.md)
 - [Insertion sort](../app/src/test/java/com/igorwojda/list/sort/insertionsort/InsertionSort.md)
-- 
+- [Quick sort](../app/src/test/java/com/igorwojda/list/sort/quicksort/QuickSort.md)
+
 ### Other list puzzles
 - [Capitalize First](../app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
 - [List count unique values](../app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
