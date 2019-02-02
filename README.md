@@ -2,8 +2,8 @@
 
 This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that are solved using
 [Kotlin](https://kotlinlang.org/) language (hints, solutions tests and [useful links](#useful-links) are here as well).
-Purpose of this repository is to help you to practice and develop strong problem-solving skills. This will help you to
-become better programmer and improve you chance of getting new job, by passing
+Purpose of this repository is to help you to practice coding and develop strong problem-solving skills. This will help
+you to become better programmer and improve you chance of getting a new job, by passing
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interview.
 
 ## Puzzle structure
@@ -28,8 +28,8 @@ determine space/time complexity and we look at code readability.
 
 # Let's solve some puzzles
 
-Puzzles below are segregated by different difficulty. If you want to solve puzzles by problem type, please check this
-[section](misc/ProblemGroups.md).
+Puzzles below are segregated by different difficulty. Repository also contains puzzles grouped by
+[problem type](misc/PuzzleGroups.md) and [problem add order](misc/PuzzleOrder.md).
 
 Some puzzle may contain a reference to other puzzles that should be solved before to have better understanding of the
 problem. To succeed you need to practice often, repeat same puzzles multiple times and be persistent over time. Take
@@ -37,6 +37,7 @@ your time before you take a look at the presented solution. **Good luck!**
 
 **New in Town**
 - [Capitalize sentence](app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
+- [Get odd numbers](app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
 - [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
 - [Add up to](app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
 - [Linear search](app/src/test/java/com/igorwojda/list/search/linearsearch/LinearSearch.md)
@@ -44,8 +45,8 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Count up and down](app/src/test/java/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
 - [Generate all pairs](app/src/test/java/com/igorwojda/integer/generateallpairs/GenerateAllPairs.md)
 - [List count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
-- [Print number](app/src/test/java/com/igorwojda/various/printnumber/basic/PrintNumber.md)
-- [Print number with steps](app/src/test/java/com/igorwojda/various/printnumber/steps/PrintNumberWithSteps.md)
+- [Print number](app/src/test/java/com/igorwojda/integer/printnumber/basic/PrintNumber.md)
+- [Print number with steps](app/src/test/java/com/igorwojda/integer/printnumber/steps/PrintNumberWithSteps.md)
 - [Power](app/src/test/java/com/igorwojda/integer/power/Power.md)
 - [Factorial](app/src/test/java/com/igorwojda/integer/factorial/Factorial.md)
 - [Product](app/src/test/java/com/igorwojda/list/product/Product.md)
@@ -58,20 +59,20 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Is tolerant palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/tolerant/IsTolerantPalindrome.md)
 - [Is anagram](app/src/test/java/com/igorwojda/string/isanagram/IsAnagram.md)
 - [Max occurring char](app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md)
-- [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
+- [String reverse](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
 - [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
-- [Int reversal](app/src/test/java/com/igorwojda/integer/reverse/Reverse.md)
-- [Pyramid generator](app/src/test/java/com/igorwojda/various/pyramidgenerator/PyramidGenerator.md)
-- [Steps generator](app/src/test/java/com/igorwojda/various/stepsgenerator/StepsGenerator.md)
-- [Fizz Buzz](app/src/test/java/com/igorwojda/various/fizzbuzz/FizzBuzz.md)
+- [Int reverse](app/src/test/java/com/igorwojda/integer/reverse/Reverse.md)
+- [Pyramid generator](app/src/test/java/com/igorwojda/integer/pyramidgenerator/PyramidGenerator.md)
+- [Steps generator](app/src/test/java/com/igorwojda/integer/stepsgenerator/StepsGenerator.md)
+- [Fizz Buzz](app/src/test/java/com/igorwojda/integer/fizzbuzz/FizzBuzz.md)
 - [Caesar Cipher](app/src/test/java/com/igorwojda/string/caesarcipher/CaesarCipher.md)
-- [Repeated Character](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedCharacter.md)
+- [Has repeated char](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedChar.md)
 
 **Warrior** 
-- [Spiral matrix generator](app/src/test/java/com/igorwojda/various/spiralmatrixgenerator/SpiralMatrixGenerator.md)
+- [Spiral matrix generator](app/src/test/java/com/igorwojda/integer/spiralmatrixgenerator/SpiralMatrixGenerator.md)
 - [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
 - [Generic queue](app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
-- [Combine two queues](app/src/test/java/com/igorwojda/queue/weave/Weave.md)
+- [Combine queues](app/src/test/java/com/igorwojda/queue/combine/Combine.md)
 - [Two stack queue](app/src/test/java/com/igorwojda/queue/twostack/TwoStackQueue.md)
 - [Int stack](app/src/test/java/com/igorwojda/stack/int/IntStack.md)
 - [Generic stack](app/src/test/java/com/igorwojda/stack/generic/GenericStack.md)
@@ -91,17 +92,18 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Binary search](app/src/test/java/com/igorwojda/list/search/binarysearch/BinarySearch.md)
 - [Surrounded letter](app/src/test/java/com/igorwojda/string/surroundedletter/SurroundedLetter.md) 
 - [Insertion sort](app/src/test/java/com/igorwojda/list/sort/insertionsort/InsertionSort.md)
+- [Quick sort](app/src/test/java/com/igorwojda/list/sort/quicksort/QuickSort.md)
 
 **Commander**
-- [List chunking](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
+- [List chunk](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
 - [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
-- [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)u
+- [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
 - [Circular check](app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
 - [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
 - [Is sub string](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 - [Merge sort](app/src/test/java/com/igorwojda/list/sort/mergesort/MergeSort.md)
-- [Fibonacci](app/src/test/java/com/igorwojda/various/fibonacci/basic/Fibonacci.md)
-- [Fibonacci with recursive cache](app/src/test/java/com/igorwojda/various/fibonacci/recursivecached/FibonacciRecursiveCached.md)
+- [Fibonacci](app/src/test/java/com/igorwojda/integer/fibonacci/basic/Fibonacci.md)
+- [Fibonacci with recursive cache](app/src/test/java/com/igorwojda/integer/fibonacci/recursivecached/FibonacciRecursiveCached.md)
 - [Max sub list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
 - [Min sub list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
 - [Subtract](app/src/test/java/com/igorwojda/list/subtract/Subtract.md)
@@ -134,17 +136,17 @@ your time before you take a look at the presented solution. **Good luck!**
 
 ## Video courses
 
-- [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/)
-- [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
-- [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms/)
+- [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass)
+- [The Coding Interview Bootcamp Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure)
+- [Master the Coding Interview Data Structures + Algorithms](https://www.udemy.com/master-the-coding-interview-data-structures-algorithms)
 - [Learning Algorithms in JavaScript from Scratch](https://www.udemy.com/learning-algorithms-in-javascript-from-scratch/)
-- [Data Structures and Algorithms Deep Dive Using Java](https://www.udemy.com/data-structures-and-algorithms-deep-dive-using-java/)
+- [Data Structures and Algorithms Deep Dive Using Java](https://www.udemy.com/data-structures-and-algorithms-deep-dive-using-java)
 
 ## Books
 
-- [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
-- [Algorithms, 4th Edition](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/)
-- [Introduction to Algorithms, 3rd Edition (The MIT Press)](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/)
+- [Cracking the Coding Interview, 6th Edition](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850)
+- [Algorithms, 4th Edition](https://www.amazon.co.uk/Algorithms-Robert-Sedgewick/dp/032157351X)
+- [Introduction to Algorithms, 3rd Edition (The MIT Press)](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 - [More books...](https://www.quora.com/What-are-the-best-books-on-algorithms-and-data-structures)
 
 ## Websites
@@ -152,9 +154,13 @@ your time before you take a look at the presented solution. **Good luck!**
 - [VisuAlgo](https://visualgo.net/en) - visualizes data structures and algorithms through animations algorithms.
 - [Data structures explained](https://medium.com/basecs/tagged/data-structures) - description of various data
   structures.
-- [Big-O Cheat Sheet](http://bigocheatsheet.com/) - algorithms nad data structure operations complexity cheat sheet.
 - [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms) - visually compares most popular
   sorting algorithms using animations.
+- [Big-O Reference](http://bigoref.com/) - summarizes the complexities in terms of space and time (Big-O) of the most
+  important algorithms and operations in common data structures.
+- [Big-O poster](https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf) - time/space complexity poster to
+  print ant put on the wall.
+- [Big-O Cheat Sheet](http://bigocheatsheet.com/) - covers the space and time Big-O complexities of common algorithms.
 
 ## Coding interview repositories
 - [Coding Interview University](https://github.com/jwasham/coding-interview-university)
@@ -164,7 +170,7 @@ your time before you take a look at the presented solution. **Good luck!**
 
 # Contribute
 
-If you think something is sdfds sdf ds fsd fds fds fds fds ds dsincorrect, have a better solution, give feedback or
+If you think something is incorrect, have a better solution, give feedback or
 simply you want to [add new coding puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle)
 just create PR or open a new issue.
 
@@ -179,4 +185,5 @@ just create PR or open a new issue.
 
 ![avatar.png](misc/image/avatar.png)
 
-[Twitter](https://twitter.com/igorwojda) | [Medium](https://medium.com/@igorwojda) | [Linkedin](https://www.linkedin.com/in/igorwojda/)
+[Twitter](https://twitter.com/igorwojda) | [Medium](https://medium.com/@igorwojda) |
+[Linkedin](https://www.linkedin.com/in/igorwojda)
