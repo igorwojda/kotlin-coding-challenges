@@ -10,7 +10,18 @@ private object Solution1 {
     }
 }
 
+// Kotlin idiomatic solution
 private object Solution2 {
+    private fun maxOccurrentChar(str: String): Char? {
+        return str.toList()
+            .groupingBy { it }
+            .eachCount()
+            .maxBy { it.value }
+            ?.key
+    }
+}
+
+private object Solution3 {
     private fun maxOccurrentChar(str: String): Char? {
         val map = mutableMapOf<Char, Int>()
 
@@ -24,7 +35,7 @@ private object Solution2 {
 
 // Recursive optimal approach:
 // Time complexity: O(n)
-private object Solution3 {
+private object Solution4 {
     private fun recurringChar(str: String): Char? {
         val set = mutableSetOf<Char>()
 
@@ -42,7 +53,7 @@ private object Solution3 {
 
 // Recursive naive approach
 // Time complexity: O(n^2)
-private object Solution4 {
+private object Solution5 {
     private fun recurringChar(str: String): Char? {
         str.forEachIndexed { index, c ->
             str.substring(index + 1).forEach {
@@ -55,4 +66,3 @@ private object Solution4 {
         return null
     }
 }
-

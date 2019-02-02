@@ -1,4 +1,4 @@
-# Puzzle name
+# Flatten
 
 ## Nice to solve before
 
