@@ -8,7 +8,7 @@
 
 Given a list of integers return a list that contains only odd integers (only integers which are not a multiple of `2`).
 
-[Puzzle](GetOdd.kt) | [Solution](GetOdd.kt)
+[Puzzle](GetOdd.kt) | [Solution](GetOddSolution.kt)
 
 ## Examples
 
