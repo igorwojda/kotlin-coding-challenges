@@ -19,7 +19,7 @@ class CountUniqueValuesTest {
     }
 
     @Test
-    fun `countUniqueValues 3, 3, 3, 3, 2 return 2`() {
+    fun `countUniqueValues 3, 3, 3, 3, 5 return 2`() {
         countUniqueValues(listOf(3, 3, 3, 3, 5)) shouldEqual 2
     }
 
