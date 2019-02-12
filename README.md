@@ -44,7 +44,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Count down](app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
 - [Count up and down](app/src/test/java/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
 - [Generate all pairs](app/src/test/java/com/igorwojda/integer/generateallpairs/GenerateAllPairs.md)
-- [List count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
+- [Count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
 - [Print number](app/src/test/java/com/igorwojda/integer/printnumber/basic/PrintNumber.md)
 - [Print number with steps](app/src/test/java/com/igorwojda/integer/printnumber/steps/PrintNumberWithSteps.md)
 - [Power](app/src/test/java/com/igorwojda/integer/power/Power.md)
