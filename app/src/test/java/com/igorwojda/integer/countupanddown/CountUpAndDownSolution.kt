@@ -14,12 +14,9 @@ private object Solution1 {
     }
 }
 
-// Returns a new list by combining two iterables
+// Returns a new list combining one collection of numbers from 0 to n-1 and another with numbers from n to 0
 private object Solution2 {
     private fun countUpAndDown(n: Int): List<Int> {
-        // (0 until n) returns a range from 0 to (n - 1)
-        // (n downTo 0) returns a range from n to 0
-        // "+" operator combines both collections
         return (0 until n) + (n downTo 0)
     }
 }
