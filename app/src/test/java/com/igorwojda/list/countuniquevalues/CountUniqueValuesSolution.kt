@@ -8,6 +8,12 @@ private object Solution1 {
 
 private object Solution2 {
     private fun countUniqueValues(list: List<Int>): Int {
+        return list.distinct().size
+    }
+}
+
+private object Solution3 {
+    private fun countUniqueValues(list: List<Int>): Int {
         if (list.isEmpty()) return 0
         if (list.size == 1) return 1
 
