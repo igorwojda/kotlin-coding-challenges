@@ -43,6 +43,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Linear search](app/src/test/java/com/igorwojda/list/search/linearsearch/LinearSearch.md)
 - [Count down](app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
 - [Count up and down](app/src/test/java/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
+- [Format train route](app/src/test/java/com/igorwojda/list/formattrainroute/FormatTrainRoute.md)
 - [Generate all pairs](app/src/test/java/com/igorwojda/integer/generateallpairs/GenerateAllPairs.md)
 - [Count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
 - [Print number](app/src/test/java/com/igorwojda/integer/printnumber/basic/PrintNumber.md)

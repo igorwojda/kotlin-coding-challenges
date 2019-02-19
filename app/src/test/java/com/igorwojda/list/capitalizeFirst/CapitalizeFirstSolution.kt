@@ -1,7 +1,7 @@
 package com.igorwojda.list.capitalizeFirst
 
 // Recursive solution
-private object Solution1 {
+private object Solution {
     private fun capitalizeFirst(list: List<String>): List<String> {
         if (list.size == 1) {
             return list.map { it.capitalize() }

@@ -68,6 +68,4 @@ This section contains all puzzles in order in which they where added to reposito
 62. [Caesar Cipher](../app/src/test/java/com/igorwojda/string/caesarcipher/CaesarCipher.md)
 63. [Surrounded letter](../app/src/test/java/com/igorwojda/string/surroundedletter/SurroundedLetter.md)
 64. [Quick sort](../app/src/test/java/com/igorwojda/list/sort/quicksort/QuickSort.md)
-
-
-
+65. [Format train route](../app/src/test/java/com/igorwojda/list/formattrainroute/FormatTrainRoute.md)
