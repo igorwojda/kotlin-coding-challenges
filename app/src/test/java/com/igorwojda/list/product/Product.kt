@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun product(list: List<Int>): Int {
-    return 0
+    return -1
 }
 
 class ProductTest {

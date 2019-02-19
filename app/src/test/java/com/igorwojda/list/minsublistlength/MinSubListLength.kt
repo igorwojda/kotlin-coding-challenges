@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 fun minSubListLength(list: List<Int>, sum: Int): Int {
-    return 0
+    return -1
 }
 
 private fun min(i1: Int?, i2: Int?): Int? {
