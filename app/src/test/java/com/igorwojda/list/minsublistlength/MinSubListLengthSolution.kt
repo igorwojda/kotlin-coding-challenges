@@ -41,10 +41,4 @@ private object Solution1 {
     }
 }
 
-// Time complexity: O(n^2)
-// Loop through all the elements and then loop through all sublists
-private object Solution2 {
-    fun minSubListLength(list: List<Int>, sum: Int): Int {
-        return 0
-    }
-}
+private object KtLintWillNotComplain

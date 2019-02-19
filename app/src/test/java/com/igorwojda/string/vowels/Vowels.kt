@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun vowels(str: String): Int {
-    return 0
+    return -1
 }
 
 class VowelsTest {
