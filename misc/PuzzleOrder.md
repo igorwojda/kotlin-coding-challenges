@@ -46,7 +46,7 @@ This section contains all puzzles in order in which they where added to reposito
 40. [Square equals](../app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
 41. [Sum zero](../app/src/test/java/com/igorwojda/list/sumzero/SumZero.md)
 42. [Add up to](../app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
-43. [List count unique values](../app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
+43. [Count unique values](../app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
 44. [Max sub list sum](../app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
 45. [Get duplicated arguments](../app/src/test/java/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
 46. [Find pair with target average](../app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)

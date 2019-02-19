@@ -28,9 +28,9 @@ private object Solution1 {
     }
 }
 
+// Naive solution using nested loop
+// Time complexity: O(n^2)
 private object Solution2 {
-    // Naive solution using nested loop.
-    // Time complexity: O(n^2)
     fun sumZero(list: List<Int>): Pair<Int, Int>? {
         list.forEachIndexed { index, element1 ->
             (index..list.lastIndex).forEach { index2 ->

@@ -48,6 +48,7 @@ loops which decreases complexity from `O(n^2)` to `O(n)`.
 Problems solved by counting occurrence of element. We use frequency counter instead of nested loops which decreases
 complexity from `O(n^2)` to `O(n)`.
 
+- [Count unique values](../app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
 - [Is anagram](../app/src/test/java/com/igorwojda/string/isanagram/IsAnagram.md)
 - [Square equals](../app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
 - [Digit frequency](../app/src/test/java/com/igorwojda/integer/digitfrequency/DigitFrequency.md)
@@ -81,7 +82,6 @@ We use sliding window instead of nested loops which decreases complexity from `O
 ### Other list puzzles
 
 - [Capitalize First](../app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
-- [List count unique values](../app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
 - [Flatten](../app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
 - [List chunking](../app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
 - [Max sub-list sum](../app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)

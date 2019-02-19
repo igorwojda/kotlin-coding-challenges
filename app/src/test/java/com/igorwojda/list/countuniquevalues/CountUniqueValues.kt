@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun countUniqueValues(list: List<Int>): Int {
-    return -1
+    return list.groupingBy { it }.eachCount().size
 }
 
 class CountUniqueValuesTest {
@@ -24,8 +24,8 @@ class CountUniqueValuesTest {
     }
 
     @Test
-    fun `countUniqueValues 5, 5, 6, 7 returns 3`() {
-        countUniqueValues(listOf(5, 5, 6, 7)) shouldEqual 3
+    fun `countUniqueValues 5, 5, 6, 7, 5 returns 3`() {
+        countUniqueValues(listOf(5, 5, 6, 7, 5)) shouldEqual 3
     }
 
     @Test
