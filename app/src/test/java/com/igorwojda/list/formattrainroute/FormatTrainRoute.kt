@@ -23,4 +23,10 @@ class TrainRouteTest {
         val list = listOf("Luton", "Harpenden", "London")
         formatTrainRoute(list) shouldEqual "Train is calling at Luton, Harpenden and London"
     }
+
+    @Test
+    fun `formatTrainRoute list "Luton", "Harpenden", "St Albans", "London"`() {
+        val list = listOf("Luton", "Harpenden", "St Albans", "London")
+        formatTrainRoute(list) shouldEqual "Train is calling at Luton, Harpenden, St Albans and London"
+    }
 }
