@@ -1,13 +1,13 @@
-package com.igorwojda.linkedlist.base
+package com.igorwojda.linkedlist.singly.base
 
-private class LinkedList<E>
+private class SinglyLinkedList<E>
 
 private class Node<T>(
     val data: T,
     val next: Node<T>? = null
 )
 
-class LinkedListTest {
+class SinglyLinkedListTest {
 //    @Test
 //    fun `when list is created head node is null`() {
 //        LinkedList<Int>().apply {

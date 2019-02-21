@@ -1,4 +1,4 @@
-# Linked list
+# Singly linked list
 
 ### Instructions
 
@@ -14,7 +14,7 @@ test select all lines containing test method and press `Cmd + /` keys (`Comment 
 ## Basic steps
 
 Solution for basics generateSteps is available in the `LinkedListSolutionBasic` object
-([LinkedListSolution.kt](LinkedListSolution.kt) file).
+([LinkedListSolution.kt](SinglyLinkedListSolution.kt) file).
 
 ### 1. constructor `LinkedList<E>()`
 
@@ -218,7 +218,7 @@ list.getAt(1) // 'H'
 ## Extra steps
 
 Solution for extended generateSteps is available in the `LinkedListSolutionExtended` object
-([LinkedListSolution.kt](LinkedListSolution.kt) file).
+([LinkedListSolution.kt](SinglyLinkedListSolution.kt) file).
 
 ### 13. Update internal implementation
 

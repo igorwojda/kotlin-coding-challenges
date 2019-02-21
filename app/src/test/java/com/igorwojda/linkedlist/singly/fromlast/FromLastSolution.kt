@@ -1,11 +1,11 @@
-package com.igorwojda.linkedlist.fromlast
+package com.igorwojda.linkedlist.singly.fromlast
 
-import com.igorwojda.linkedlist.base.Solution2.LinkedList
-import com.igorwojda.linkedlist.base.Solution2.Node
+import com.igorwojda.linkedlist.singly.base.Solution2.Node
+import com.igorwojda.linkedlist.singly.base.Solution2.SinglyLinkedList
 
 private object Solution {
     private fun fromLast(
-        list: LinkedList<Char>,
+        list: SinglyLinkedList<Char>,
         endIndex: Int
     ): Node<Char>? {
         var slow = list.first

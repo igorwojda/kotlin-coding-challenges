@@ -1,8 +1,8 @@
-package com.igorwojda.linkedlist.base
+package com.igorwojda.linkedlist.singly.base
 
 // Basic solution
 private object Solution1 {
-    private class LinkedList<E> {
+    private class SinglyLinkedList<E> {
         var head: Node<E>? = null
 
         val first: Node<E>?
@@ -120,7 +120,7 @@ private object Solution1 {
 
 // Extended solution
 object Solution2 {
-    class LinkedList<E> : Iterable<Node<E>> {
+    class SinglyLinkedList<E> : Iterable<Node<E>> {
         var head: Node<E>? = null
 
         val first: Node<E>?
@@ -215,8 +215,8 @@ object Solution2 {
             }
         }
 
-        operator fun plus(linkedList: LinkedList<E>): LinkedList<E> {
-            val result = LinkedList<E>()
+        operator fun plus(linkedList: SinglyLinkedList<E>): SinglyLinkedList<E> {
+            val result = SinglyLinkedList<E>()
             forEach { result.insertLast(it.data) }
             linkedList.forEach { result.insertLast(it.data) }
             return result
