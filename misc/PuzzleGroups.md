@@ -40,8 +40,8 @@ loops which decreases complexity from `O(n^2)` to `O(n)`.
 - [Pair average](../app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 - [Get duplicated arguments](../app/src/test/java/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
-- [Midpoint](../app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
-- [Circular check](../app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
+- [Midpoint](../app/src/test/java/com/igorwojda/linkedlist/singly/midpoint/Midpoint.md)
+- [Circular check](../app/src/test/java/com/igorwojda/linkedlist/singly/circularcheck/CircularCheck.md)
 
 ## Frequency counter
 
@@ -94,10 +94,10 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 ## Linked List
 
-- [Linked list](../app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
-- [Circular linked list?](../app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
-- [Take n-th element from last](../app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
-- [Linked list midpoint](../app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
+- [Singly linked list](../app/src/test/java/com/igorwojda/linkedlist/singly/base/SinglyLinkedList.md)
+- [Circular linked list?](../app/src/test/java/com/igorwojda/linkedlist/singly/circularcheck/CircularCheck.md)
+- [Take n-th element from last](../app/src/test/java/com/igorwojda/linkedlist/singly/fromlast/FromLast.md)
+- [Midpoint](../app/src/test/java/com/igorwojda/linkedlist/singly/midpoint/Midpoint.md)
 
 ## Binary tree
 

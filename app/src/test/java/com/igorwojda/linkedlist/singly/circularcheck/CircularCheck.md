@@ -1,8 +1,8 @@
-# Circular linked list?
+# Circular singly linked list
 
 ## Nice to solve before
 
-[Linked List](../base/LinkedList.md)
+[Singly linked List](../base/SinglyLinkedList.md)
 
 ## Instructions
 
@@ -15,7 +15,7 @@ Given a linked list, return true if the list is circular, false if it is not.
 Example 1
 
 ```
-val l = new List();
+val l = new SinglyLinkedList();
 val a = new Node('a');
 val b = new Node('b');
 val c = new Node('c');

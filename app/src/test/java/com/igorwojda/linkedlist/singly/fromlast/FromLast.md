@@ -2,9 +2,9 @@
 
 ## Nice to solve before
 
-- [Linked list](../base/LinkedList.md)
-- [Linked list midpoint](../midpoint/Midpoint.md)
-- [Circular linked list?](../circularcheck/CircularCheck.md)
+- [Singly linked list](../base/SinglyLinkedList.md)
+- [Midpoint](../midpoint/Midpoint.md)
+- [Circular check](../circularcheck/CircularCheck.md)
 
 ## Instructions
 

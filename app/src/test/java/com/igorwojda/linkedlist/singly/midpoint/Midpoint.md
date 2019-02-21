@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-[Linked List.kt](../base/LinkedList.kt)
+[Linked List.kt](../base/SinglyLinkedList.kt)
 
 ## Instructions
 

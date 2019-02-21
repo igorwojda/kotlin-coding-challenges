@@ -97,10 +97,10 @@ your time before you take a look at the presented solution. **Good luck!**
 
 **Commander**
 - [List chunk](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
-- [Linked list](app/src/test/java/com/igorwojda/linkedlist/base/LinkedList.md)
-- [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/midpoint/Midpoint.md)
-- [Circular check](app/src/test/java/com/igorwojda/linkedlist/circularcheck/CircularCheck.md)
-- [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/fromlast/FromLast.md)
+- [Singly linked list](app/src/test/java/com/igorwojda/linkedlist/singly/base/SinglyLinkedList.md)
+- [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/singly/midpoint/Midpoint.md)
+- [Circular check](app/src/test/java/com/igorwojda/linkedlist/singly/circularcheck/CircularCheck.md)
+- [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/singly/fromlast/FromLast.md)
 - [Is sub string](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 - [Merge sort](app/src/test/java/com/igorwojda/list/sort/mergesort/MergeSort.md)
 - [Fibonacci](app/src/test/java/com/igorwojda/integer/fibonacci/basic/Fibonacci.md)

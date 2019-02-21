@@ -1,4 +1,4 @@
-package com.igorwojda.linkedlist.circularcheck
+package com.igorwojda.linkedlist.singly.circularcheck
 
 private object Solution {
     private fun circularCheck(list: LinkedList<Char>): Boolean {
