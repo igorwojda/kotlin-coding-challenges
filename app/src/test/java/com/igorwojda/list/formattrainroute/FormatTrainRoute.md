@@ -17,5 +17,5 @@ formatTrainRoute(listOf("Luton")) // "Train is calling at Luton"
 
 formatTrainRoute(listOf("Luton", "Harpenden")) // "Train is calling at Luton and Harpenden"
 
-formatTrainRoute(listOf("Luton", "Harpenden", "London")) // "Train is calling at  Luton, Harpenden and London"
+formatTrainRoute(listOf("Luton", "Harpenden", "London")) // "Train is calling at Luton, Harpenden and London"
 ```
