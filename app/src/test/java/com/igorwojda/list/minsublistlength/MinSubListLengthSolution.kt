@@ -41,4 +41,39 @@ private object Solution1 {
     }
 }
 
+// Time complexity: O(n^2)
+// Loop through all the elements and then loop through all sublists
+private object Solution2 {
+    fun minSubListLength(list: List<Int>, sum: Int): Int {
+        var minListLength: Int? = null
+
+        repeat(list.size) { index ->
+            var subListSum = 0
+            var numItems = 0
+            val subList = list.subList(index, list.size)
+
+            for (item in subList) {
+                subListSum += item
+                numItems++
+
+                if (subListSum >= sum) {
+                    minListLength = min(minListLength, numItems)
+                    break
+                }
+            }
+        }
+
+        return minListLength ?: 0
+    }
+
+    private fun min(i1: Int?, i2: Int?): Int? {
+        return when {
+            i1 != null && i2 != null -> Math.min(i1, i2)
+            i1 != null && i2 == null -> i1
+            i1 == null && i2 != null -> i2
+            else -> null
+        }
+    }
+}
+
 private object KtLintWillNotComplain
