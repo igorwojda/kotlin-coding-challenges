@@ -82,6 +82,16 @@ class RadixSortTest {
     }
 
     @Test
+    fun `radix sort 7`() {
+        radixSort(mutableListOf(7)) shouldEqual listOf(7)
+    }
+
+    @Test
+    fun `radix sort empty list 9, 3`() {
+        radixSort(mutableListOf(9, 3)) shouldEqual listOf(3, 9)
+    }
+
+    @Test
     fun `radix sort 5, 1, 4, 2`() {
         radixSort(mutableListOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 4, 5)
     }

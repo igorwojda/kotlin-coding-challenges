@@ -20,6 +20,16 @@ class MergeSortTest {
     }
 
     @Test
+    fun `merge sort 7`() {
+        mergeSort(mutableListOf(7)) shouldEqual listOf(7)
+    }
+
+    @Test
+    fun `merge sort empty list 9, 3`() {
+        mergeSort(mutableListOf(9, 3)) shouldEqual listOf(3, 9)
+    }
+
+    @Test
     fun `merge sort 5, 1, 4, 2`() {
         mergeSort(mutableListOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 4, 5)
     }
