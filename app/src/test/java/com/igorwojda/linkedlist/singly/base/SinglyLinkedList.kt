@@ -1,23 +1,29 @@
 package com.igorwojda.linkedlist.singly.base
 
-private class SinglyLinkedList<E>
+private class SinglyLinkedList<E> : Iterable<Node<E>> {
 
-private class Node<T>(
+    override fun iterator(): Iterator<Node<E>> {
+        TODO("not implemented")
+    }
+
+}
+
+private data class Node<T>(
     val data: T,
-    val next: Node<T>? = null
+    var next: Node<T>? = null
 )
 
-class SinglyLinkedListTest {
+class SinglySinglyLinkedListTest {
 //    @Test
 //    fun `when list is created head node is null`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            head shouldEqual null
 //        }
 //    }
 //
 //    @Test
 //    fun `append a node to the start of the list`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            insertFirst(1)
 //            head?.data shouldEqual 1
 //            insertFirst(2)
@@ -27,7 +33,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `return the number of items in the linked list`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            size shouldEqual 0
 //            insertFirst(1)
 //            insertFirst(1)
@@ -39,7 +45,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `return the first element`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            insertFirst(1)
 //            first?.data shouldEqual 1
 //            insertFirst(2)
@@ -49,7 +55,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `return the last element`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            insertFirst(2)
 //            last?.data shouldEqual 2
 //            last?.next shouldEqual null
@@ -61,7 +67,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `empty the list`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            size shouldEqual 0
 //            insertFirst(1)
 //            insertFirst(1)
@@ -74,9 +80,8 @@ class SinglyLinkedListTest {
 //    }
 //
 //    @Test
-//
 //    fun `remove the first node when the list has a size of one`() {
-//        LinkedList<String>().apply {
+//        SinglyLinkedList<String>().apply {
 //            insertFirst("a")
 //            removeFirst()
 //            size shouldEqual 0
@@ -86,7 +91,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove the first node when the list has a size of three`() {
-//        LinkedList<String>().apply {
+//        SinglyLinkedList<String>().apply {
 //            insertFirst("c")
 //            insertFirst("b")
 //            insertFirst("a")
@@ -101,14 +106,14 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove the last node when list is empty`() {
-//        LinkedList<Any>().apply {
+//        SinglyLinkedList<Any>().apply {
 //            removeLast()
 //        }
 //    }
 //
 //    @Test
 //    fun `remove the last node when list is length 1`() {
-//        LinkedList<String>().apply {
+//        SinglyLinkedList<String>().apply {
 //            insertFirst("a")
 //            removeLast()
 //            head shouldEqual null
@@ -117,7 +122,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove the last node when list is length 2`() {
-//        LinkedList<String>().apply {
+//        SinglyLinkedList<String>().apply {
 //            insertFirst("b")
 //            insertFirst("a")
 //            removeLast()
@@ -128,7 +133,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove the last node when list is length 3`() {
-//        LinkedList<String>().apply {
+//        SinglyLinkedList<String>().apply {
 //            insertFirst("c")
 //            insertFirst("b")
 //            insertFirst("a")
@@ -140,7 +145,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `add to the end of the list`() {
-//        val l = LinkedList<String>()
+//        val l = SinglyLinkedList<String>()
 //        l.insertFirst("a")
 //        l.insertLast("b")
 //        l.size shouldEqual 2
@@ -149,7 +154,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `return the node at given index`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            getAt(10) shouldEqual null
 //
 //            insertLast(1)
@@ -165,8 +170,60 @@ class SinglyLinkedListTest {
 //    }
 //
 //    @Test
+//    fun `set node data at index 0`() {
+//        SinglyLinkedList<String>().apply {
+//            insertLast("a")
+//            insertLast("b")
+//            insertLast("c")
+//            setAt("new", 0)
+//            getAt(0)?.data shouldEqual "new"
+//            getAt(1)?.data shouldEqual "b"
+//            getAt(2)?.data shouldEqual "c"
+//        }
+//    }
+//
+//    @Test
+//    fun `set node data at index 1`() {
+//        SinglyLinkedList<String>().apply {
+//            insertLast("a")
+//            insertLast("b")
+//            insertLast("c")
+//            setAt("new", 1)
+//            getAt(0)?.data shouldEqual "a"
+//            getAt(1)?.data shouldEqual "new"
+//            getAt(2)?.data shouldEqual "c"
+//        }
+//    }
+//
+//    @Test
+//    fun `set node data at index 2`() {
+//        SinglyLinkedList<String>().apply {
+//            insertLast("a")
+//            insertLast("b")
+//            insertLast("c")
+//            setAt("new", 2)
+//            getAt(0)?.data shouldEqual "a"
+//            getAt(1)?.data shouldEqual "b"
+//            getAt(2)?.data shouldEqual "new"
+//        }
+//    }
+//
+//    @Test
+//    fun `set node data at non existing index`() {
+//        SinglyLinkedList<String>().apply {
+//            insertLast("a")
+//            insertLast("b")
+//            insertLast("c")
+//            setAt("new", 3)
+//            getAt(0)?.data shouldEqual "a"
+//            getAt(1)?.data shouldEqual "b"
+//            getAt(2)?.data shouldEqual "c"
+//        }
+//    }
+//
+//    @Test
 //    fun `remove from empty list`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            removeAt(0)
 //            removeAt(1)
 //            removeAt(2)
@@ -175,7 +232,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove with index out of bounds`() {
-//        LinkedList<String>().apply {
+//        SinglyLinkedList<String>().apply {
 //            insertFirst("a")
 //            removeAt(1)
 //        }
@@ -183,7 +240,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove the first node`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            insertLast(1)
 //            insertLast(2)
 //            insertLast(3)
@@ -195,8 +252,8 @@ class SinglyLinkedListTest {
 //    }
 //
 //    @Test
-//    fun `remove the node at the given index`() {
-//        LinkedList<Int>().apply {
+//    fun `remove the node at given index`() {
+//        SinglyLinkedList<Int>().apply {
 //            insertLast(1)
 //            insertLast(2)
 //            insertLast(3)
@@ -209,7 +266,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove the last node`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            insertLast(1)
 //            insertLast(2)
 //            insertLast(3)
@@ -221,16 +278,16 @@ class SinglyLinkedListTest {
 //    }
 //
 //    @Test
-//    fun `insert a new node with data at the 0 index when the list is empty`() {
-//        LinkedList<String>().apply {
+//    fun `insert a new node with data at index 0 when the list is empty`() {
+//        SinglyLinkedList<String>().apply {
 //            insertAt("hi", 0)
 //            first?.data shouldEqual "hi"
 //        }
 //    }
 //
 //    @Test
-//    fun `insert a new node with data at the 0 index when the list has elements`() {
-//        LinkedList<String>().apply {
+//    fun `insert a new node with data at index 0 when the list has elements`() {
+//        SinglyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertLast("c")
@@ -244,7 +301,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `insert a new node with data at a middle index`() {
-//        LinkedList<String>().apply {
+//        SinglyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertLast("c")
@@ -260,7 +317,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `inserts a new node with data at a last index`() {
-//        LinkedList<String>().apply {
+//        SinglyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertAt("hi", 2)
@@ -272,7 +329,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `insert a new node when index is out of bounds`() {
-//        LinkedList<String>().apply {
+//        SinglyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertAt("hi", 30)
@@ -285,7 +342,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `sum all the nodes`() {
-//        LinkedList<Int>().apply {
+//        SinglyLinkedList<Int>().apply {
 //            insertLast(1)
 //            insertLast(2)
 //            insertLast(3)
@@ -297,8 +354,8 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `add two empty lists`() {
-//        val l1 = LinkedList<Int>()
-//        val l2 = LinkedList<Int>()
+//        val l1 = SinglyLinkedList<Int>()
+//        val l2 = SinglyLinkedList<Int>()
 //        val result = l1 + l2
 //
 //        result.size shouldEqual 0
@@ -306,12 +363,12 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `add two lists`() {
-//        val l1 = LinkedList<Int>().apply {
+//        val l1 = SinglyLinkedList<Int>().apply {
 //            insertLast(1)
 //            insertLast(2)
 //            insertLast(3)
 //        }
-//        val l2 = LinkedList<Int>().apply {
+//        val l2 = SinglyLinkedList<Int>().apply {
 //            insertLast(4)
 //            insertLast(5)
 //            insertLast(6)
