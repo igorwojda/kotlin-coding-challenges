@@ -7,6 +7,14 @@ private object Solution1 {
 }
 
 private object Solution2 {
+    private fun printNumber(n: Int): List<Int> =
+        when (n) {
+            0 -> listOf()
+            else -> listOf(n) + printNumber(n - 1)
+        }
+}
+
+private object Solution3 {
     private fun printNumber(n: Int): List<Int> {
         val list = mutableListOf<Int>()
 
