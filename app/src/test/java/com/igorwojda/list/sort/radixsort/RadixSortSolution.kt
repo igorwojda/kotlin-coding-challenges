@@ -41,9 +41,15 @@ private object Solution {
         return str.getOrElse(rightIndex) { '0' }
     }
 
-    private val Int.digitCount get() = this.toString().length
+    // This is mathematical alternative to this.toString().length witch has better performance
+    private val Int.digitCount: Int
+        get() = when (this) {
+            0 -> 1
+            else -> Math.log10(Math.abs(this.toDouble())).toInt() + 1
+        }
 
-    private fun maxDigits(list: List<Int>): Int = list.maxBy { it.digitCount }?.digitCount ?: 0
+
+    private fun maxDigits(list: List<Int>) = list.map { it.digitCount }.max() ?: 0
 }
 
 object KtLintWillNotComplain

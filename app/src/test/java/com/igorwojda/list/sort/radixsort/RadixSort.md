@@ -2,8 +2,8 @@
 
 ## Instructions
 
-Sort list of numbers from lowest number to greatest number using
-[radix sort](https://en.wikipedia.org/wiki/Radix_sort).
+Sort list of numbers from lowest number to greatest number using [radix sort](https://en.wikipedia.org/wiki/Radix_sort).
+Algorithm needs to support only positive integers.
 
 [Puzzle](RadixSort.kt) | [Solution](RadixSortSolution.kt)
 
