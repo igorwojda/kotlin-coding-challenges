@@ -9,6 +9,11 @@ private fun selectionSort(list: List<Int>): List<Number> {
 
 class SelectionSortTest {
     @Test
+    fun `selection sort empty list`() {
+        selectionSort(mutableListOf()) shouldEqual listOf()
+    }
+
+    @Test
     fun `selection sort 5, 1, 4, 2`() {
         selectionSort(mutableListOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 4, 5)
     }

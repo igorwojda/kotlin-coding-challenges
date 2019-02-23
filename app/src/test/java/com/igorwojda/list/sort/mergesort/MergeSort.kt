@@ -15,6 +15,11 @@ private fun mergeSort(list: List<Int>): List<Int> {
 
 class MergeSortTest {
     @Test
+    fun `merge sort empty list`() {
+        mergeSort(mutableListOf()) shouldEqual listOf()
+    }
+
+    @Test
     fun `merge sort 5, 1, 4, 2`() {
         mergeSort(mutableListOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 4, 5)
     }
