@@ -9,7 +9,7 @@ private object Solution1 {
 private object Solution2 {
     private fun printNumber(n: Int): List<Int> =
         when (n) {
-            0 -> listOf()
+            0 -> emptyList()
             else -> listOf(n) + printNumber(n - 1)
         }
 }
@@ -19,7 +19,7 @@ private object Solution3 {
         val list = mutableListOf<Int>()
 
         if (n == 0) {
-            return listOf()
+            return emptyList()
         } else {
             list.add(n)
         }
