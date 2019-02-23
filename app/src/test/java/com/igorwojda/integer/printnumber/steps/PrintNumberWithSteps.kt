@@ -4,7 +4,12 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun printNumber(n: Int, step: Int = 1): List<Int> {
-    return listOf()
+    fun printNumberRec(n: Int): List<Int> =
+        when {
+            n <= 0 -> emptyList()
+            else -> listOf(n) + printNumberRec(n - step)
+        }
+    return printNumberRec(n)
 }
 
 class RecursivePrintNumberWithSteps {
