@@ -78,6 +78,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Selection sort](../app/src/test/java/com/igorwojda/list/sort/selectionsort/SelectionSort.md)
 - [Insertion sort](../app/src/test/java/com/igorwojda/list/sort/insertionsort/InsertionSort.md)
 - [Quick sort](../app/src/test/java/com/igorwojda/list/sort/quicksort/QuickSort.md)
+- [Radix sort](../app/src/test/java/com/igorwojda/list/sort/radixsort/RadixSort.md)
 
 ### Other list puzzles
 
