@@ -12,7 +12,7 @@ private data class Node<T>(
     var next: Node<T>? = null
 )
 
-class SinglySinglyLinkedListTest {
+class SinglyLinkedListTest {
 //    @Test
 //    fun `when list is created head node is null`() {
 //        SinglyLinkedList<Int>().apply {
