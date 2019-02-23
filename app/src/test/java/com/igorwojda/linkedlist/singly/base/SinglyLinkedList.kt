@@ -5,7 +5,6 @@ private class SinglyLinkedList<E> : Iterable<Node<E>> {
     override fun iterator(): Iterator<Node<E>> {
         TODO("not implemented")
     }
-
 }
 
 private data class Node<T>(

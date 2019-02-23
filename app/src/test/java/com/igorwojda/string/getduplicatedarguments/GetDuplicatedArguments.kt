@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 fun getDuplicatedArguments(vararg strings: String): List<String>? {
-    return null
+    TODO("not implemented")
 }
 
 class CheckDuplicatedParamsTest {

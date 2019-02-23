@@ -6,7 +6,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun fromLast(list: SinglyLinkedList<Char>, endIndex: Int): Node<Char>? {
-    return null
+    TODO("not implemented")
 }
 
 class FromLastTest {

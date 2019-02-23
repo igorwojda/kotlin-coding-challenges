@@ -6,11 +6,10 @@ import org.junit.Test
 private fun mergeSort(list: List<Int>): List<Int> {
     // Take two sorted lists and merge them together into one sorted list
     fun merge(left: MutableList<Int>, right: MutableList<Int>): MutableList<Int> {
-        val result = mutableListOf<Int>()
-        return result
+        TODO("not implemented")
     }
 
-    return emptyList()
+    TODO("not implemented")
 }
 
 class MergeSortTest {

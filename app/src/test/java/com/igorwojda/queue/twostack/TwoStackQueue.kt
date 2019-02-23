@@ -6,15 +6,20 @@ import org.junit.Test
 
 private class TwoStackQueue {
     val stackPrimary = IntStack()
+
     val stackTemporary = IntStack()
 
-    fun add(element: Int) {}
+    fun add(element: Int) {
+        TODO("not implemented")
+    }
 
-    fun remove(): Int? = 0
+    fun remove(): Int? = TODO("not implemented")
 
-    fun peek(): Int? = 0
+    fun peek(): Int? = TODO("not implemented")
 
-    fun isEmpty() = false
+    fun isEmpty(): Boolean {
+        TODO("not implemented")
+    }
 }
 
 class TwoStackQueueTest {

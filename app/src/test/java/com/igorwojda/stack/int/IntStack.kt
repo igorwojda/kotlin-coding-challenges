@@ -6,11 +6,17 @@ import org.junit.Test
 private class IntStack {
     val list = mutableListOf<Int>()
 
-    fun push(element: Int) {}
+    fun push(element: Int) {
+        TODO("not implemented")
+    }
 
-    fun pop() = 0
+    fun pop(): Int {
+        TODO("not implemented")
+    }
 
-    fun peek() = 0
+    fun peek(): Int {
+        TODO("not implemented")
+    }
 }
 
 class IntStackTest {

@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun getSubtraction(list1: List<String>, list2: List<String>): List<String> {
-    return emptyList()
+    TODO("not implemented")
 }
 
 class SubtractTest {

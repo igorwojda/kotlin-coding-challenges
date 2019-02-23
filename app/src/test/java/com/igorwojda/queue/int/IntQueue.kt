@@ -5,13 +5,14 @@ import org.junit.Test
 
 private class IntQueue {
     fun add(i: Int) {
+        TODO("not implemented")
     }
 
-    fun remove(): Int? = 0
+    fun remove(): Int? = TODO("not implemented")
 
-    fun peek(): Int? = 0
+    fun peek(): Int? = TODO("not implemented")
 
-    fun isEmpty(): Boolean = false
+    fun isEmpty(): Boolean = TODO("not implemented")
 }
 
 class IntQueueTest {

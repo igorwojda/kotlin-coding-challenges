@@ -7,7 +7,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun midpoint(list: Solution.SinglyLinkedList<Char>): Node<Char>? {
-    return null
+    TODO("not implemented")
 }
 
 class MidpointTest {
