@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun quickSort(list: MutableList<Int>, left: Int = 0, right: Int = list.lastIndex): List<Number> {
-    return emptyList()
+    TODO("not implemented")
 }
 
 private fun <T> MutableList<T>.swap(index1: Int, index2: Int) {

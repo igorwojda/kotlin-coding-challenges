@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun filterOdd(list: List<Int>): List<Int> {
-    return emptyList()
+    TODO("not implemented")
 }
 
 class GetOddNumbersTest {

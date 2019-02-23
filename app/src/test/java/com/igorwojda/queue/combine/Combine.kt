@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun combine(q1: GenericQueue<*>, q2: GenericQueue<*>): GenericQueue<*> {
-    return GenericQueue<Any>()
+    TODO("not implemented")
 }
 
 class CombineTest {

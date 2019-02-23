@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun formatTrainRoute(stations: List<String>): String {
-    return ""
+    TODO("not implemented")
 }
 
 class TrainRouteTest {

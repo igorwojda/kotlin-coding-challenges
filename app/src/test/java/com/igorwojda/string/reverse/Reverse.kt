@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun reverse(str: String): String {
-    return str
+    TODO("not implemented")
 }
 
 class StringReverseTest {
