@@ -1,18 +1,19 @@
 package com.igorwojda.linkedlist.singly.midpoint
 
-import com.igorwojda.linkedlist.singly.base.Solution2.Node
-import com.igorwojda.linkedlist.singly.base.Solution2.SinglyLinkedList
+import com.igorwojda.linkedlist.singly.base.Solution
+import com.igorwojda.linkedlist.singly.base.Solution.Node
+import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun midpoint(list: SinglyLinkedList<Char>): Node<Char>? {
+private fun midpoint(list: Solution.SinglyLinkedList<Char>): Node<Char>? {
     return null
 }
 
 class MidpointTest {
     @Test
     fun `midpoint of list with 0 elements`() {
-        SinglyLinkedList<Char>().apply {
+        Solution.SinglyLinkedList<Char>().apply {
             midpoint(this)?.data shouldEqual null
         }
     }

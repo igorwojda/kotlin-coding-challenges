@@ -215,11 +215,6 @@ list.insertAt('H', 1)
 list.getAt(1) // 'H'
 ```
 
-## Extra steps
-
-Solution for extended generateSteps is available in the `LinkedListSolutionExtended` object
-([LinkedListSolution.kt](SinglyLinkedListSolution.kt) file).
-
 ### 13. Update internal implementation
 
 If you haven't done it already it's a good time to refactor the `LinkedList` class. We can improve internal
