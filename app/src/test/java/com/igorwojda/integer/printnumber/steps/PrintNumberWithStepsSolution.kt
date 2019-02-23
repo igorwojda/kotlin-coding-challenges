@@ -7,6 +7,17 @@ private object Solution1 {
 
 private object Solution2 {
     private fun printNumber(n: Int, step: Int = 1): List<Int> {
+        fun printNumberRec(n: Int): List<Int> =
+            when {
+                n <= 0 -> emptyList()
+                else -> listOf(n) + printNumberRec(n - step)
+            }
+        return printNumberRec(n)
+    }
+}
+
+private object Solution3 {
+    private fun printNumber(n: Int, step: Int = 1): List<Int> {
         val list = mutableListOf<Int>()
 
         if (n <= 0) {
