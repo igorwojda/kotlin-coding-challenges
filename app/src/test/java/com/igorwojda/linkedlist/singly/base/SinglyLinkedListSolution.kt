@@ -101,7 +101,7 @@ object Solution {
             val result = SinglyLinkedList<E>()
             forEach { result.insertLast(it.data) }
             linkedList.forEach { result.insertLast(it.data) }
-            return result
+            return SinglyLinkedList()
         }
     }
 

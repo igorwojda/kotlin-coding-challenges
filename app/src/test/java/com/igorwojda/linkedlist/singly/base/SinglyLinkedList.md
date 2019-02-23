@@ -146,7 +146,7 @@ list.getLast() // of 'b'
 
 ### 9. `insertLast(data: E)` method
 
-- **Description**: Inserts a node with provided data at the end of the chain.
+- **Description**: Inserts a node with given data at the end of the chain.
 - **Test**: `add to the end of the list`
 
 Example:
@@ -161,7 +161,7 @@ list.getLast() // 'C'
 
 ### 10. `getAt(index: Int)` method
 
-- **Description**: 	Returns the node at the provided index.
+- **Description**: 	Returns the node at the given index.
 - **Test**: `return the node at given index`
 
 Example:
@@ -174,14 +174,30 @@ list.insertFirst('c')
 list.getAt(1) // 'b'
 ```
 
-### 11. `removeAt(index: Int)` method
+### 11. `setAt()` method
 
-- **Description**: 	Removes node at the provided index.
-- **Tests**: `remove from empty list`,
-  `remove with index out of bounds`,
-  `remove the first node`,
-  `remove the node at the given index`,
-  `remove the last node`
+- **Description**: Set the value at given index.
+- **Test**: `set node data at index 0`, `set node data at the index 1`, `set node data at the index 2`, `set node data
+  at non existing index`
+
+Example:
+
+```
+val list = LinkedList<Char>()
+list.insertLast("a")
+list.insertLast("b")
+list.insertLast("c")
+list.setAt("new", 1)
+list.getAt(0) // "a"
+list.getAt(1) // "new"
+list.getAt(2) // "c"
+```
+
+### 12. `removeAt(index: Int)` method
+
+- **Description**: 	Removes node at the given index.
+- **Tests**: `remove from empty list`, `remove with index out of bounds`, `remove the first node`, `remove the node at
+  given index`, `remove the last node`
 
 Example:
 
@@ -194,15 +210,13 @@ list.removeAt(1)
 list.getAt(1) // 'a'
 ```
 
-### 12. `insertAt(data: E, index: Int)` method
+### 13. `insertAt(data: E, index: Int)` method
 
-- **Description**: Create an insert a node at provided index. If index is out of bounds, add the node to the end of the
+- **Description**: Create an insert a node at given index. If index is out of bounds, add the node to the end of the
   list.
-- **Tests**: `insert a new node with data at the 0 index when the list is empty`,
-  `insert a new node with data at the 0 index when the list has elements`,
-  `inserts a new node with data at a middle index`,
-  `insert a new node with data at a last index`,
-  `insert a new node when index is out of bounds`
+- **Tests**: `insert a new node with data at the 0 index 0 when the list is empty`, `insert a new node with data at
+  index 0 when the list has elements`, `inserts a new node with data at a middle index`, `insert a new node with data at
+  a last index`, `insert a new node when index is out of bounds`
 
 Example:
 
@@ -215,7 +229,7 @@ list.insertAt('H', 1)
 list.getAt(1) // 'H'
 ```
 
-### 13. Update internal implementation
+### 14. Update internal implementation
 
 If you haven't done it already it's a good time to refactor the `LinkedList` class. We can improve internal
 implementations without changing the external API. Methods
@@ -223,7 +237,7 @@ implementations without changing the external API. Methods
 `removeAt`/`getAt` methods (with appropriate) parameters.
 - **Tests**: No new tests here, just makes sure all the previous tests are passing.
 
-### 14. Kotlin `Iterator` interface
+### 15. Kotlin `Iterator` interface
 
 - **Description**: Allows to iterate over list of items using t Kotlin
   [Iterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html) and
@@ -257,7 +271,7 @@ list.insertLast(4)
 list.sumBy { it.data } // 10
 ```
 
-### 15. Add plus operator overloading
+### 16. Add plus operator overloading
 
 Implement [operator overloading](https://kotlinlang.org/docs/reference/operator-overloading.html) to easily add two
 lists lists.
