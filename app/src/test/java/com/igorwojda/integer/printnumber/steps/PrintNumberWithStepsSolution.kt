@@ -1,6 +1,11 @@
 package com.igorwojda.integer.printnumber.steps
 
-private object Solution {
+private object Solution1 {
+    private fun printNumber(n: Int, step: Int = 1): List<Int> =
+        (n downTo 1 step step).toList()
+}
+
+private object Solution2 {
     private fun printNumber(n: Int, step: Int = 1): List<Int> {
         val list = mutableListOf<Int>()
 
