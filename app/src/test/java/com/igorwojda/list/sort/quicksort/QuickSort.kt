@@ -15,6 +15,11 @@ private fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
 
 class QuickSortTest {
     @Test
+    fun `quick sort empty list`() {
+        quickSort(mutableListOf()) shouldEqual listOf()
+    }
+
+    @Test
     fun `quick sort 5, 1, 4, 2`() {
         quickSort(mutableListOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 4, 5)
     }

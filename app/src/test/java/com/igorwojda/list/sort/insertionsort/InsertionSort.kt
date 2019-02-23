@@ -9,6 +9,11 @@ private fun insertionSort(list: MutableList<Int>): List<Int> {
 
 class InsertionSortTest {
     @Test
+    fun `insertion sort empty list`() {
+        insertionSort(mutableListOf()) shouldEqual listOf()
+    }
+
+    @Test
     fun `insertion sort 5, 1, 4, 2`() {
         insertionSort(mutableListOf(5, 1, 4, 2)) shouldEqual listOf(1, 2, 4, 5)
     }
