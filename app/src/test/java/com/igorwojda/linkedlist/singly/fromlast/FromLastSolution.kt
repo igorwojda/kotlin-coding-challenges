@@ -4,10 +4,7 @@ import com.igorwojda.linkedlist.singly.base.Solution.Node
 import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
 
 private object Solution {
-    private fun fromLast(
-        list: SinglyLinkedList<Char>,
-        endIndex: Int
-    ): Node<Char>? {
+    private fun fromLast(list: SinglyLinkedList<Char>, endIndex: Int): Node<Char>? {
         var slow = list.first
         var fast = list.first
 
