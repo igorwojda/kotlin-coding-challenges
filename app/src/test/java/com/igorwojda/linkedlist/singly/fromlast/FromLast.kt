@@ -1,19 +1,18 @@
 package com.igorwojda.linkedlist.singly.fromlast
 
-import com.igorwojda.linkedlist.singly.base.Solution
 import com.igorwojda.linkedlist.singly.base.Solution.Node
 import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun fromLast(list: Solution.SinglyLinkedList<Char>, endIndex: Int): Node<Char>? {
+private fun fromLast(list: SinglyLinkedList<Char>, endIndex: Int): Node<Char>? {
     return null
 }
 
 class FromLastTest {
     @Test
     fun `returns the node 0 elements from the end`() {
-        Solution.SinglyLinkedList<Char>().apply {
+        SinglyLinkedList<Char>().apply {
             insertLast('a')
             insertLast('b')
 
@@ -23,7 +22,7 @@ class FromLastTest {
 
     @Test
     fun `returns the node 1 elements from the end`() {
-        Solution.SinglyLinkedList<Char>().apply {
+        SinglyLinkedList<Char>().apply {
             insertLast('a')
             insertLast('b')
 

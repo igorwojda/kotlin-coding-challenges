@@ -13,7 +13,7 @@ private fun midpoint(list: Solution.SinglyLinkedList<Char>): Node<Char>? {
 class MidpointTest {
     @Test
     fun `midpoint of list with 0 elements`() {
-        Solution.SinglyLinkedList<Char>().apply {
+        SinglyLinkedList<Char>().apply {
             midpoint(this)?.data shouldEqual null
         }
     }
