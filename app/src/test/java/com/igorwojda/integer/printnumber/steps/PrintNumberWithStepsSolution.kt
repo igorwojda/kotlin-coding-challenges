@@ -21,7 +21,7 @@ private object Solution3 {
         val list = mutableListOf<Int>()
 
         if (n <= 0) {
-            return listOf()
+            return emptyList()
         } else {
             list.add(n)
         }
