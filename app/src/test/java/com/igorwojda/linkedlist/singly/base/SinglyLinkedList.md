@@ -18,10 +18,12 @@ Solution for basics generateSteps is available in the `LinkedListSolutionBasic` 
 
 ### 1. constructor `LinkedList<E>()`
 
-- **Description**: Create a class to represent a linked list. When created, a linked list should have no head node
-  associated with it. The `LinkedList` instance will have one property, `head`, which is a reference to the first node
-  of the linked list. By default `head` should be `null`.
-- **Test**: `when list is created head node is null`
+Create a class to represent a linked list. When created, a linked list should have no head node associated with it. The
+`LinkedList` instance will have one property, `head`, which is a reference to the first node of the linked list. By
+default `head` should be `null`.
+
+Tests: 
+- `when list is created head node is null`
 
 Example:
 
@@ -32,9 +34,11 @@ list.head // null
 
 ### 2. `insertFirst(data: E)` method
 
-- **Description**: Creates a Node from argument `data` and assigns the resulting node to the `head` property. Make sure
-  to handle the case in which the linked list already has a node assigned to the `head` property.
-- **Test**: `append a node to the start of the list`
+Creates a Node from argument `data` and assigns the resulting node to the `head` property. Make sure to handle the case
+in which the linked list already has a node assigned to the `head` property.
+
+Tests: 
+- `append a node to the start of the list`
 
 Example:
 
@@ -52,8 +56,10 @@ list.insertFirst('Hi There') // List has one node
 
 ### 3. `size` property
 
-- **Description**: Returns the number of nodes in the linked list.
-- **Test**: `return the number of items in the linked list`
+Returns the number of nodes in the linked list.
+
+Tests: 
+- `return the number of items in the linked list`
 
 Example:
 
@@ -67,8 +73,10 @@ list.size() // 3
 
 ### 4. `first: Node` property
 
-- **Description**: Returns the first node of the linked list.
-- **Test**: `return the first element`
+Returns the first node of the linked list.
+
+Tests: 
+- `return the first element`
 
 Example:
 
@@ -81,8 +89,10 @@ list.getFirst() // 'a'
 
 ### 5 `last: Node` property
 
-- **Description**: Returns the last node of the linked list
-- **Test**: `return the last element`
+Returns the last node of the linked list
+
+Tests: 
+- `return the last element`
 
 Example:
 
@@ -95,8 +105,10 @@ list.getLast() // 'a'
 
 ### 6. `clear()` method
 
-- **Description**: Empties the linked list of any nodes.
-- **Test**: `empty out the list`
+Empties the linked list of any nodes.
+
+Tests: 
+- `empty out the list`
 
 Example:
 
@@ -110,9 +122,11 @@ list.size() // 0
 
 ### 7. `removeFirst()` method
 
-- **Description**: 	Removes only the first node of the linked list. The list's head should now be the second element.
-- **Tests**: `remove the first node when the list has a size of one`,
-  `remove the first node when the list has a size of three`
+Removes only the first node of the linked list. The list's head should now be the second element.
+
+Tests: 
+- `remove the first node when the list has a size of one`,
+- `remove the first node when the list has a size of three`
 
 Example:
 
@@ -126,11 +140,13 @@ list.getFirst() // 'a'
 
 ### 8. `removeLast()` method
 
-- **Description**: removes the last node of the chain.
-- **Tests**: `remove the last node when list is empty`,
-  `remove the last node when list is length 1`,
-  `remove the last node when list is length 2`,
-  `remove the last node when list is length 3`
+Removes the last node of the chain.
+
+Tests: 
+- `remove the last node when list is empty`,
+- `remove the last node when list is length 1`,
+- `remove the last node when list is length 2`,
+- `remove the last node when list is length 3`
 
 Example:
 
@@ -146,8 +162,10 @@ list.getLast() // of 'b'
 
 ### 9. `insertLast(data: E)` method
 
-- **Description**: Inserts a node with given data at the end of the chain.
-- **Test**: `add to the end of the list`
+Inserts a node with given data at the end of the chain.
+
+Tests: 
+- `add to the end of the list`
 
 Example:
 
@@ -161,8 +179,10 @@ list.getLast() // 'C'
 
 ### 10. `getAt(index: Int)` method
 
-- **Description**: 	Returns the node at the given index.
-- **Test**: `return the node at given index`
+Returns the node at the given index.
+ 
+Tests:
+- `return the node at given index`
 
 Example:
 
@@ -176,9 +196,13 @@ list.getAt(1) // 'b'
 
 ### 11. `setAt()` method
 
-- **Description**: Set the value at given index.
-- **Test**: `set node data at index 0`, `set node data at the index 1`, `set node data at the index 2`, `set node data
-  at non existing index`
+Set the value at given index.
+
+Tests: 
+- `set node data at index 0`
+- `set node data at the index 1`
+- `set node data at the index 2`
+- `set node data at non existing index`
 
 Example:
 
@@ -195,9 +219,14 @@ list.getAt(2) // "c"
 
 ### 12. `removeAt(index: Int)` method
 
-- **Description**: 	Removes node at the given index.
-- **Tests**: `remove from empty list`, `remove with index out of bounds`, `remove the first node`, `remove the node at
-  given index`, `remove the last node`
+Removes node at the given index.
+    
+Tests: 
+- `remove from empty list`
+- `remove with index out of bounds`
+- `remove the first node`
+- `remove the node at given index`
+- `remove the last node`
 
 Example:
 
@@ -212,11 +241,14 @@ list.getAt(1) // 'a'
 
 ### 13. `insertAt(data: E, index: Int)` method
 
-- **Description**: Create an insert a node at given index. If index is out of bounds, add the node to the end of the
-  list.
-- **Tests**: `insert a new node with data at the 0 index 0 when the list is empty`, `insert a new node with data at
-  index 0 when the list has elements`, `inserts a new node with data at a middle index`, `insert a new node with data at
-  a last index`, `insert a new node when index is out of bounds`
+Create an insert a node at given index. If index is out of bounds, add the node to the end of the list. 
+
+Tests: 
+- `insert a new node with data at the 0 index 0 when the list is empty`
+- `insert a new node with data at index 0when the list has elements`
+- `inserts a new node with data at a middle index`
+- `insert a new node with data at a last index`
+- `insert a new node when index is out of bounds`
 
 Example:
 
@@ -232,18 +264,22 @@ list.getAt(1) // 'H'
 ### 14. Update internal implementation
 
 If you haven't done it already it's a good time to refactor the `LinkedList` class. We can improve internal
-implementations without changing the external API. Methods
+implementations without changing the external API. Methods 
 `insertFirst`/`insertLast`/`removeFirst`/`removeLast`/`first`/`last` can be refactored by using `insertAt`/
 `removeAt`/`getAt` methods (with appropriate) parameters.
-- **Tests**: No new tests here, just makes sure all the previous tests are passing.
+
+Tests: 
+- No new tests here, just makes sure all the previous tests are passing.
 
 ### 15. Kotlin `Iterator` interface
 
-- **Description**: Allows to iterate over list of items using t Kotlin
+Allows to iterate over list of items using t Kotlin
   [Iterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html) and
   [Iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interfaces. This
   allows to use many Kotlin extensions for `Iterable` interface such as `forEach`, `filter`, `sumBy`, `map` etc.
-- **Tests**: `sum all the nodes`
+  
+Tests: 
+- `sum all the nodes`
 
 Example 1:
 
@@ -276,7 +312,8 @@ list.sumBy { it.data } // 10
 Implement [operator overloading](https://kotlinlang.org/docs/reference/operator-overloading.html) to easily add two
 lists lists.
 
-- **Tests*- `add two empty lists`, `add two lists`
+Tests
+- `add two empty lists`, `add two lists`
 
 
 ```
