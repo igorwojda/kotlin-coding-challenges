@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Given list of integers and positive integer `n` implement a function which returns product of all numbers in the list.
+Given a list of integers implement a function which returns the product of all numbers in the list.
 
 [Puzzle](Product.kt) | [Solution](ProductSolution.kt)
 
