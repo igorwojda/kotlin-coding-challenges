@@ -13,8 +13,17 @@ private object Solution1 {
     }
 }
 
-// recursive solution
+// another iterative solution
 private object Solution2 {
+    private fun factorial(n: Int): Int =
+        when (n) {
+            0 -> 1
+            else -> (n downTo 1).reduce { acc, it -> acc * it }
+        }
+}
+
+// recursive solution
+private object Solution3 {
     private fun factorial(n: Int): Int =
         when (n) {
             0, 1 -> 1
@@ -23,7 +32,7 @@ private object Solution2 {
 }
 
 // Tail-recursive solution
-private object Solution3 {
+private object Solution4 {
     private fun factorial(n: Int): Int {
         fun fact(n: Int, acc: Int = 1): Int =
             when (n) {
