@@ -22,3 +22,14 @@ private object Solution2 {
         }
 }
 
+// Tail-recursive solution
+private object Solution3 {
+    private fun factorial(n: Int): Int {
+        fun fact(n: Int, acc: Int = 1): Int =
+            when (n) {
+                0, 1 -> acc
+                else -> fact(n - 1, acc * n)
+            }
+        return fact(n)
+    }
+}
