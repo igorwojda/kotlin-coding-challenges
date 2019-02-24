@@ -15,14 +15,10 @@ private object Solution1 {
 
 // recursive solution
 private object Solution2 {
-    private fun factorial(n: Int): Int {
-        if (n == 0) {
-            return 1
+    private fun factorial(n: Int): Int =
+        when (n) {
+            0, 1 -> 1
+            else -> n * factorial(n - 1)
         }
-        if (n == 1) {
-            return 1
-        }
-
-        return n * factorial(n - 1)
-    }
 }
+
