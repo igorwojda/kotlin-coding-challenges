@@ -93,12 +93,15 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [List subtract](../app/src/test/java/com/igorwojda/list/subtract/Subtract.md)
 - [Sum zero](../app/src/test/java/com/igorwojda/list/sumzero/SumZero.md) 
 
-## Linked List
+## Singly Linked List
 
 - [Singly linked list](../app/src/test/java/com/igorwojda/linkedlist/singly/base/SinglyLinkedList.md)
 - [Circular linked list?](../app/src/test/java/com/igorwojda/linkedlist/singly/circularcheck/CircularCheck.md)
 - [Take n-th element from last](../app/src/test/java/com/igorwojda/linkedlist/singly/fromlast/FromLast.md)
 - [Midpoint](../app/src/test/java/com/igorwojda/linkedlist/singly/midpoint/Midpoint.md)
+
+## Doubly Linked List
+- [Doubly linked list](../app/src/test/java/com/igorwojda/linkedlist/doubly/base/DoublyLinkedList.md)
 
 ## Binary tree
 

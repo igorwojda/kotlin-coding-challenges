@@ -1,6 +1,5 @@
 package com.igorwojda.linkedlist.singly.base
 
-// Basic solution
 object Solution {
     class SinglyLinkedList<E> : Iterable<Node<E>> {
         var head: Node<E>? = null
@@ -60,20 +59,24 @@ object Solution {
             }
         }
 
+        fun setAt(data: E, index: Int) {
+            getAt(index)?.data = data
+        }
+
         fun getAt(index: Int): Node<E>? {
             if (head == null) {
                 return null
             }
 
             var node = head
-            var counter = 0
+            var count = 0
 
             while (node != null) {
-                if (counter == index) {
+                if (count == index) {
                     return node
                 }
 
-                counter++
+                count++
                 node = node.next
             }
 
@@ -101,12 +104,12 @@ object Solution {
             val result = SinglyLinkedList<E>()
             forEach { result.insertLast(it.data) }
             linkedList.forEach { result.insertLast(it.data) }
-            return SinglyLinkedList()
+            return result
         }
     }
 
     data class Node<T>(
-        val data: T,
+        var data: T,
         var next: Node<T>? = null
     )
 }
