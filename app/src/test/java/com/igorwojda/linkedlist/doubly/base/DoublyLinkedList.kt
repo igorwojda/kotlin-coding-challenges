@@ -1,35 +1,39 @@
-package com.igorwojda.linkedlist.singly.base
+package com.igorwojda.linkedlist.doubly.base
 
-private class SinglyLinkedList<E> {
+private class DoublyLinkedList<E> {
     // implement
 }
 
 private data class Node<T>(
     var data: T,
+    var prev: Node<T>? = null,
     var next: Node<T>? = null
 )
 
-class SinglyLinkedListTest {
+class DoublyLinkedListTest {
 //    @Test
 //    fun `when list is created head node is null`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            head shouldEqual null
 //        }
 //    }
 //
 //    @Test
 //    fun `append a node to the start of the list`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            insertFirst(1)
 //            head?.data shouldEqual 1
+//            head?.next shouldEqual null
 //            insertFirst(2)
 //            head?.data shouldEqual 2
+//            head?.next?.prev shouldEqual head
+//            head?.next?.data shouldEqual 1
 //        }
 //    }
 //
 //    @Test
 //    fun `return the number of items in the linked list`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            size shouldEqual 0
 //            insertFirst(1)
 //            insertFirst(1)
@@ -41,7 +45,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `return the first element`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            insertFirst(1)
 //            first?.data shouldEqual 1
 //            insertFirst(2)
@@ -51,7 +55,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `return the last element`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            insertFirst(2)
 //            last?.data shouldEqual 2
 //            last?.next shouldEqual null
@@ -63,7 +67,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `empty the list`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            size shouldEqual 0
 //            insertFirst(1)
 //            insertFirst(1)
@@ -77,7 +81,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove the first node when the list has a size of one`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertFirst("a")
 //            removeFirst()
 //            size shouldEqual 0
@@ -87,29 +91,31 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove the first node when the list has a size of three`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertFirst("c")
 //            insertFirst("b")
 //            insertFirst("a")
 //            removeFirst()
 //            size shouldEqual 2
 //            first?.data shouldEqual "b"
+//            first?.prev shouldEqual null
 //            removeFirst()
 //            size shouldEqual 1
 //            first?.data shouldEqual "c"
+//            first?.prev shouldEqual null
 //        }
 //    }
 //
 //    @Test
 //    fun `remove the last node when list is empty`() {
-//        SinglyLinkedList<Any>().apply {
+//        DoublyLinkedList<Any>().apply {
 //            removeLast()
 //        }
 //    }
 //
 //    @Test
 //    fun `remove the last node when list is length 1`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertFirst("a")
 //            removeLast()
 //            head shouldEqual null
@@ -118,40 +124,47 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove the last node when list is length 2`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertFirst("b")
 //            insertFirst("a")
 //            removeLast()
 //            size shouldEqual 1
 //            head?.data shouldEqual "a"
+//            last?.next shouldEqual null
 //        }
 //    }
 //
 //    @Test
 //    fun `remove the last node when list is length 3`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertFirst("c")
 //            insertFirst("b")
 //            insertFirst("a")
 //            removeLast()
 //            size shouldEqual 2
 //            last?.data shouldEqual "b"
+//            last?.next shouldEqual null
 //        }
 //    }
 //
 //    @Test
 //    fun `add to the end of the list`() {
-//        SinglyLinkedList<String>().apply {
-//            insertFirst("a")
+//        DoublyLinkedList<String>().apply {
+//            insertLast("a")
+//            size shouldEqual 1
+//            head?.data shouldEqual "a"
+//
 //            insertLast("b")
 //            size shouldEqual 2
 //            last?.data shouldEqual "b"
+//            last?.prev?.data shouldEqual "a"
+//            head?.data shouldEqual "a"
 //        }
 //    }
 //
 //    @Test
 //    fun `return the node at given index`() {
-//        SinglyLinkedList<Char>().apply {
+//        DoublyLinkedList<Char>().apply {
 //            getAt(10) shouldEqual null
 //
 //            insertLast('A')
@@ -169,7 +182,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `set node data at index 0`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertLast("c")
@@ -182,7 +195,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `set node data at index 1`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertLast("c")
@@ -195,7 +208,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `set node data at index 2`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertLast("c")
@@ -208,7 +221,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `set node data at non existing index`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertLast("c")
@@ -221,7 +234,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove from empty list`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            removeAt(0)
 //            removeAt(1)
 //            removeAt(2)
@@ -230,7 +243,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove with index out of bounds`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertFirst("a")
 //            removeAt(1)
 //        }
@@ -238,7 +251,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `remove the first node`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            insertLast(1)
 //            insertLast(2)
 //            insertLast(3)
@@ -246,52 +259,72 @@ class SinglyLinkedListTest {
 //            getAt(0)?.data shouldEqual 1
 //            removeAt(0)
 //            getAt(0)?.data shouldEqual 2
+//            getAt(0)?.prev shouldEqual null
+//            getAt(0)?.next?.data shouldEqual 3
+//            getAt(1)?.data shouldEqual 3
 //        }
 //    }
 //
 //    @Test
 //    fun `remove the node at given index`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            insertLast(1)
 //            insertLast(2)
 //            insertLast(3)
 //            insertLast(4)
 //            getAt(1)?.data shouldEqual 2
 //            removeAt(1)
+//            getAt(0)?.data shouldEqual 1
+//            getAt(0)?.next?.data shouldEqual 3
 //            getAt(1)?.data shouldEqual 3
+//            getAt(1)?.prev?.data shouldEqual 1
+//            getAt(1)?.next?.data shouldEqual 4
+//            getAt(2)?.data shouldEqual 4
+//            getAt(2)?.prev?.data shouldEqual 3
+//
 //        }
 //    }
 //
 //    @Test
 //    fun `remove the last node`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            insertLast(1)
 //            insertLast(2)
 //            insertLast(3)
 //            insertLast(4)
 //            getAt(3)?.data shouldEqual 4
 //            removeAt(3)
+//            getAt(1)?.data shouldEqual 2
+//            getAt(1)?.next?.data shouldEqual 3
+//            getAt(2)?.data shouldEqual 3
+//            getAt(2)?.next shouldEqual null
+//            getAt(2)?.prev?.data shouldEqual 2
 //            getAt(3) shouldEqual null
 //        }
 //    }
 //
 //    @Test
 //    fun `insert a new node with data at index 0 when the list is empty`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertAt("hi", 0)
 //            first?.data shouldEqual "hi"
+//            first?.prev shouldEqual null
+//            first?.next shouldEqual null
 //        }
 //    }
 //
 //    @Test
 //    fun `insert a new node with data at index 0 when the list has elements`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertLast("c")
 //            insertAt("hi", 0)
 //            getAt(0)?.data shouldEqual "hi"
+//            getAt(0)?.prev shouldEqual null
+//            getAt(0)?.next?.data shouldEqual "a"
 //            getAt(1)?.data shouldEqual "a"
+//            getAt(1)?.prev?.data shouldEqual "hi"
 //            getAt(2)?.data shouldEqual "b"
 //            getAt(3)?.data shouldEqual "c"
 //        }
@@ -299,7 +332,7 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `insert a new node with data at a middle index`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertLast("c")
@@ -307,7 +340,11 @@ class SinglyLinkedListTest {
 //            insertAt("hi", 2)
 //            getAt(0)?.data shouldEqual "a"
 //            getAt(1)?.data shouldEqual "b"
+//            getAt(1)?.next?.data shouldEqual "hi"
+//            getAt(2)?.prev?.data shouldEqual "b"
 //            getAt(2)?.data shouldEqual "hi"
+//            getAt(2)?.next?.data shouldEqual "c"
+//            getAt(3)?.prev?.data shouldEqual "hi"
 //            getAt(3)?.data shouldEqual "c"
 //            getAt(4)?.data shouldEqual "d"
 //        }
@@ -315,32 +352,37 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `inserts a new node with data at a last index`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertAt("hi", 2)
 //            getAt(0)?.data shouldEqual "a"
 //            getAt(1)?.data shouldEqual "b"
+//            getAt(1)?.next?.data shouldEqual "hi"
+//            getAt(2)?.prev?.data shouldEqual "b"
 //            getAt(2)?.data shouldEqual "hi"
+//            getAt(2)?.next?.data shouldEqual null
 //        }
 //    }
 //
 //    @Test
 //    fun `insert a new node when index is out of bounds`() {
-//        SinglyLinkedList<String>().apply {
+//        DoublyLinkedList<String>().apply {
 //            insertLast("a")
 //            insertLast("b")
 //            insertAt("hi", 30)
 //
 //            getAt(0)?.data shouldEqual "a"
 //            getAt(1)?.data shouldEqual "b"
+//            getAt(1)?.next?.data shouldEqual "hi"
 //            getAt(2)?.data shouldEqual "hi"
+//            getAt(2)?.prev?.data shouldEqual "b"
 //        }
 //    }
 //
 //    @Test
 //    fun `sum all the nodes`() {
-//        SinglyLinkedList<Int>().apply {
+//        DoublyLinkedList<Int>().apply {
 //            insertLast(1)
 //            insertLast(2)
 //            insertLast(3)
@@ -352,8 +394,8 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `add two empty lists`() {
-//        val l1 = SinglyLinkedList<Int>()
-//        val l2 = SinglyLinkedList<Int>()
+//        val l1 = DoublyLinkedList<Int>()
+//        val l2 = DoublyLinkedList<Int>()
 //        val result = l1 + l2
 //
 //        result.size shouldEqual 0
@@ -361,12 +403,12 @@ class SinglyLinkedListTest {
 //
 //    @Test
 //    fun `add two lists`() {
-//        val l1 = SinglyLinkedList<Int>().apply {
+//        val l1 = DoublyLinkedList<Int>().apply {
 //            insertLast(1)
 //            insertLast(2)
 //            insertLast(3)
 //        }
-//        val l2 = SinglyLinkedList<Int>().apply {
+//        val l2 = DoublyLinkedList<Int>().apply {
 //            insertLast(4)
 //            insertLast(5)
 //            insertLast(6)
