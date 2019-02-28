@@ -1,7 +1,19 @@
 package com.igorwojda.list.capitalizeFirst
 
-// Recursive solution
+// Kotlin idiomatic solution
 private object Solution1 {
+    private fun capitalizeFirst(list: List<String>): List<String> =
+        list.map { it.capitalize() }
+}
+
+private object Solution2 {
+    private fun capitalizeFirst(list: List<String>): List<String> =
+        if (list.isEmpty()) emptyList()
+        else listOf(list.first().capitalize()) + capitalizeFirst(list.drop(1))
+}
+
+// Recursive solution
+private object Solution3 {
     private fun capitalizeFirst(list: List<String>): List<String> {
         if (list.size == 1) {
             return list.map { it.capitalize() }
@@ -11,15 +23,3 @@ private object Solution1 {
     }
 }
 
-private object Solution2 {
-    private fun capitalizeFirst(list: List<String>): List<String> =
-        if (list.isEmpty()) emptyList()
-        else listOf(list.first().capitalize()) + capitalizeFirst(list.drop(1))
-}
-
-private object Solution3 {
-    private fun capitalizeFirst(list: List<String>): List<String> =
-        list.map { it.capitalize() }
-}
-
-private object KtLintWillNotComplain
