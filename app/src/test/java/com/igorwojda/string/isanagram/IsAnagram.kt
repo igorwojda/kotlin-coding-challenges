@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun isAnagram(str1: String, str2: String): Boolean {
-    return false
+    TODO("not implemented")
 }
 
 class AnagramTest {
