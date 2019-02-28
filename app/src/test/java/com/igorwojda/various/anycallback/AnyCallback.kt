@@ -4,11 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun anyCallback(list: List<Int>, callback: (Int) -> Boolean): Boolean {
-    if (list.size == 1) {
-        return callback(list.first())
-    }
-
-    return callback(list.first()) || anyCallback(list.drop(1), callback)
+    TODO("not implemented")
 }
 
 class AnyCallbackTest {

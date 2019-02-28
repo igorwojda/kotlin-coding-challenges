@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 fun flatten(list: List<*>): List<*> {
-    return emptyList<Any>()
+    TODO("not implemented")
 }
 
 class FlattenTest {

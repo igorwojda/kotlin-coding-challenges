@@ -1,12 +1,12 @@
 package com.igorwojda.linkedlist.singly.fromlast
 
-import com.igorwojda.linkedlist.singly.base.Solution2.Node
-import com.igorwojda.linkedlist.singly.base.Solution2.SinglyLinkedList
+import com.igorwojda.linkedlist.singly.base.Solution.Node
+import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun fromLast(list: SinglyLinkedList<Char>, endIndex: Int): Node<Char>? {
-    return null
+    TODO("not implemented")
 }
 
 class FromLastTest {

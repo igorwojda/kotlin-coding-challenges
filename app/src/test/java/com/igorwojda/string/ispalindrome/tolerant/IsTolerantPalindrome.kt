@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun isTolerantPalindrome(str: String, characterRemoved: Boolean = false): Boolean {
-    return false
+    TODO("not implemented")
 }
 
 class IsTolerantPalindromeTest {

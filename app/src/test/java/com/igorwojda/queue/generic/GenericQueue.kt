@@ -4,13 +4,17 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private class GenericQueue<E> {
-    fun add(element: E) {}
+    fun add(element: E) {
+        TODO("not implemented")
+    }
 
-    fun remove(): E? = null
+    fun remove(): E? = TODO("not implemented")
 
-    fun peek(): E? = null
+    fun peek(): E? = TODO("not implemented")
 
-    fun isEmpty() = false
+    fun isEmpty(): Boolean {
+        TODO("not implemented")
+    }
 }
 
 class GenericIntQueueTest {
