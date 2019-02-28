@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun encodeCaesarCipher(str: String, shift: Int): String {
-    return str
+    TODO("not implemented")
 }
 
 class CaesarCipherTest {

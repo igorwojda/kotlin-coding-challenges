@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun surroundedLetter(str: String): Boolean {
-    return false
+    TODO("not implemented")
 }
 
 class CaesarCipherTest {

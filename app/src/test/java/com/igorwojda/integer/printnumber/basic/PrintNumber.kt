@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun printNumber(n: Int): List<Int> {
-    return listOf()
+    TODO("not implemented")
 }
 
 class RecursivePrintNumber {

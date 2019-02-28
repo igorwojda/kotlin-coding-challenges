@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 fun hasAverage(list: List<Int>, average: Double): Boolean {
-    return false
+    TODO("not implemented")
 }
 
 private fun <E> MutableList<E>.aaa2(a: E) {
