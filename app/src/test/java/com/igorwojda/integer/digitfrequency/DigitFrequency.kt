@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun equalDigitFrequency(i1: Int, i2: Int): Boolean {
-    return false
+    TODO("not implemented")
 }
 
 class DigitFrequencyTest {

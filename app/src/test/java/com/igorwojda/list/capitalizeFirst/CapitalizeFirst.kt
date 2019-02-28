@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun capitalizeFirst(list: List<String>): List<String> {
-    return emptyList()
+    TODO("not implemented")
 }
 
 class CapitalizeFirstTest {

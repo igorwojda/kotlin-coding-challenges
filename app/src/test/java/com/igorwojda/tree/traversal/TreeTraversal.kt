@@ -17,11 +17,11 @@ private class Node(val data: String, val children: MutableList<Node> = mutableLi
     }
 
     fun traverseBF(): List<String> {
-        return emptyList()
+        TODO("not implemented")
     }
 
     fun traverseDF(): List<String> {
-        return emptyList()
+        TODO("not implemented")
     }
 }
 

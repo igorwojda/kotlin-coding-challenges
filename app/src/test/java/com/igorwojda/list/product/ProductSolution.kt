@@ -17,3 +17,16 @@ private object Solution2 {
         return list.first() * product(list.drop(1))
     }
 }
+
+// Tail-recursive solution
+private object Solution3 {
+    private fun product(list: List<Int>): Int {
+        fun prod(acc: Int, list: List<Int>): Int {
+            if (list.isEmpty()) {
+                return acc
+            }
+            return prod(acc * list.first(), list.drop(1))
+        }
+        return prod(1, list)
+    }
+}

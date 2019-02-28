@@ -1,8 +1,12 @@
-# Singly linked list
+# Doubly linked list
+
+## Nice to solve before
+
+[Singly linked List](../../singly/base/SinglyLinkedList.md)
 
 ### Instructions
 
-Implement [singly linked list](https://en.wikipedia.org/wiki/Linked_list) data structure. This is quite big puzzle, so
+Implement [doubly linked list](https://en.wikipedia.org/wiki/Doubly_linked_list) data structure. This is quite big puzzle, so
 we will split it into multiple multiple methods and properties that we will implement one my one.
 
 We also want to handle various edge cases, because we are assuming that developer using our class many do certain
@@ -10,12 +14,12 @@ mistakes. That's why each step has one or more tests associated with it. Tests a
 staring each step we will have to enable all tests related to given step by uncommenting it. To quickly uncomment the
 test select all lines containing test method and press `Cmd + /` keys (`Comment with line Comment` action).
 
-[Puzzle](SinglyLinkedList.kt) | [Solution](SinglyLinkedListSolution.kt)
+[Puzzle](DoublyLinkedList.kt) | [Solution](DoublyLinkedListSolution.kt)
 
-### 1. constructor `SinglyLinkedList<E>()`
+### 1. constructor `DoublyLinkedList<E>()`
 
 Create a class to represent a linked list. When created, a linked list should have no head node associated with it. The
-`SinglyLinkedList` instance will have one property, `head`, which is a reference to the first node of the linked list. By
+`DoublyLinkedList` instance will have one property, `head`, which is a reference to the first node of the linked list. By
 default `head` should be `null`.
 
 Tests: 
@@ -24,7 +28,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Any>()
+val list = DoublyLinkedList<Any>()
 list.head // null
 ```
 
@@ -39,14 +43,14 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<String>()
+val list = DoublyLinkedList<String>()
 list.insertFirst('Hi There') // List has one node
 ```
 
 Example:
 
 ```
-val list = SinglyLinkedList<String>()
+val list = DoublyLinkedList<String>()
 list.insertFirst('Hi There') // List has one node
 ```
 
@@ -60,7 +64,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
@@ -77,7 +81,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.getFirst() // 'a'
@@ -93,7 +97,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.getLast() // 'a'
@@ -109,7 +113,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.clear()
@@ -127,7 +131,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.removeFirst()
@@ -147,7 +151,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.removeLast()
@@ -166,7 +170,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertLast('c')
@@ -183,7 +187,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
@@ -203,7 +207,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertLast("a")
 list.insertLast("b")
 list.insertLast("c")
@@ -227,7 +231,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
@@ -249,7 +253,7 @@ Tests:
 Example:
 
 ```
-val list = SinglyLinkedList<Char>()
+val list = DoublyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
 list.insertFirst('c')
@@ -270,7 +274,7 @@ Tests:
 Example 1:
 
 ```
-val list = SinglyLinkedList<Int>()
+val list = DoublyLinkedList<Int>()
 
 list.insertLast(1)
 list.insertLast(2)
@@ -283,7 +287,7 @@ list.forEach { print(node) } // 1234
 Example 2:
 
 ```
-val list = SinglyLinkedList()
+val list = DoublyLinkedList()
 
 list.insertLast(1)
 list.insertLast(2)
@@ -303,11 +307,11 @@ Tests
 
 
 ```
-val list1 = SinglyLinkedList<Int>()
+val list1 = DoublyLinkedList<Int>()
 list1.insertLast(1)
 list1.insertLast(2)
 
-val list2 = SinglyLinkedList<Int>()
+val list2 = DoublyLinkedList<Int>()
 list2.insertLast(3)
 list2.insertLast(4)
 list2.insertLast(5)

@@ -1,12 +1,13 @@
 package com.igorwojda.linkedlist.singly.midpoint
 
-import com.igorwojda.linkedlist.singly.base.Solution2.Node
-import com.igorwojda.linkedlist.singly.base.Solution2.SinglyLinkedList
+import com.igorwojda.linkedlist.singly.base.Solution
+import com.igorwojda.linkedlist.singly.base.Solution.Node
+import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun midpoint(list: SinglyLinkedList<Char>): Node<Char>? {
-    return null
+private fun midpoint(list: Solution.SinglyLinkedList<Char>): Node<Char>? {
+    TODO("not implemented")
 }
 
 class MidpointTest {

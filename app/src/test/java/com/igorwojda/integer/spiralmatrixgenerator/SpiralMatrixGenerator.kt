@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun generateSpiralMatrix(n: Int): List<MutableList<Int?>> {
-    return listOf()
+    TODO("not implemented")
 }
 
 class SpiralMatrixGeneratorTest {
