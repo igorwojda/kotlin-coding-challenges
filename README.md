@@ -71,11 +71,9 @@ your time before you take a look at the presented solution. **Good luck!**
 
 **Warrior** 
 - [Spiral matrix generator](app/src/test/java/com/igorwojda/integer/spiralmatrixgenerator/SpiralMatrixGenerator.md)
-- [Int queue](app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
-- [Generic queue](app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
+- [Queue](app/src/test/java/com/igorwojda/queue/basic/Queue.md)
 - [Combine queues](app/src/test/java/com/igorwojda/queue/combine/Combine.md)
-- [Two stack queue](app/src/test/java/com/igorwojda/queue/twostack/TwoStackQueue.md)
-- [Generic stack](app/src/test/java/com/igorwojda/stack/basic/Stack.md)
+- [Stack](app/src/test/java/com/igorwojda/stack/basic/Stack.md)
 - [Bubble sort](app/src/test/java/com/igorwojda/list/sort/bubblesort/BubbleSort.md)
 - [Selection sort](app/src/test/java/com/igorwojda/list/sort/selectionsort/SelectionSort.md)
 - [Square equals](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)

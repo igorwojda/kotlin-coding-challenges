@@ -152,9 +152,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 ## Queue
 
-- [Generic queue](../app/src/test/java/com/igorwojda/queue/generic/GenericQueue.md)
-- [Int queue](../app/src/test/java/com/igorwojda/queue/int/IntQueue.md)
-- [Two stack queue](../app/src/test/java/com/igorwojda/queue/twostack/TwoStackQueue.md)
+- [Queue](../app/src/test/java/com/igorwojda/queue/basic/Queue.md)
 - [Combine two queues](../app/src/test/java/com/igorwojda/queue/combine/Combine.md)
 
 ## Tree
