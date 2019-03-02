@@ -1,4 +1,4 @@
-package com.igorwojda.stack.generic
+package com.igorwojda.stack.basic
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

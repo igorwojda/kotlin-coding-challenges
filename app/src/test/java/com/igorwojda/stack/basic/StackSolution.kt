@@ -1,4 +1,4 @@
-package com.igorwojda.stack.generic
+package com.igorwojda.stack.basic
 
 /*
 LinkedList based implementation
