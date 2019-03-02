@@ -1,6 +1,14 @@
 package com.igorwojda.queue.basic
 
-// Linked List based implementation
+/*
+Linked List based implementation
+
+Time complexity:
+Insertion: O(1)
+Removal: O(1)
+Searching: O(n)
+Access: O(n)
+*/
 private object Solution1 {
     private class Queue<E> {
         var size = 0
@@ -57,9 +65,16 @@ list (cheap). If we would add new element to the end of the array (cheap) we wou
 beginning (expensive). Because of that the list based implementation can't be efficient. We could use linked list
 based implementation instead.
 
-Solution time complexity:
-Insertion: O(1)
+
+Time complexity (add at the beginning and remove from the end):
+Insertion: O(n)
 Removal: O(1)
+Searching: O(n)
+Access: O(n)
+
+Solution time complexity (add at the end and remove from the beginning):
+Insertion: O(1)
+Removal: O(n)
 Searching: O(n)
 Access: O(n)
 */
