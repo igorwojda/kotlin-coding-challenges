@@ -1,6 +1,14 @@
 package com.igorwojda.stack.generic
 
-// LinkedList based implementation
+/*
+LinkedList based implementation
+
+Time complexity:
+Insertion: O(1)
+Removal: O(1)
+Searching: O(n)
+Access: O(n)
+*/
 private object Solution1 {
     private class GenericStack<E> {
         private var first: Node<E>? = null
@@ -44,6 +52,12 @@ Option B - add to the beginning, remove from the end:
 Bad idea to add elements at the beginning:
 Insert at the beginning O(n)
 Remove at the beginning O(n) - we have to re-index all the other elements in the array
+
+Solution time complexity:
+Insertion: O(1)
+Removal: O(1)
+Searching: O(n)
+Access: O(n)
 */
 
 private object Solution2 {
