@@ -2,16 +2,15 @@ package com.igorwojda.stack.basic
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
-import java.util.Stack
 
-private class GenericStack<E> {
-    val size: Int = TODO("not implemented")
+private class Stack<E> {
+    var size = 0
 
-    fun push(element: E) {
+    fun add(element: E) {
         TODO("not implemented")
     }
 
-    fun pop(): E? {
+    fun remove(): E? {
         TODO("not implemented")
     }
 
@@ -28,39 +27,39 @@ class StackTest {
     @Test
     fun `stack can add and remove items`() {
         Stack<Int>().apply {
-            push(1)
-            pop() shouldEqual 1
-            push(2)
-            pop() shouldEqual 2
+            add(1)
+            remove() shouldEqual 1
+            add(2)
+            remove() shouldEqual 2
         }
     }
 
     @Test
     fun `stack can follows first in, last out`() {
         Stack<Int>().apply {
-            push(1)
-            push(2)
-            push(3)
-            pop() shouldEqual 3
-            pop() shouldEqual 2
-            pop() shouldEqual 1
+            add(1)
+            add(2)
+            add(3)
+            remove() shouldEqual 3
+            remove() shouldEqual 2
+            remove() shouldEqual 1
         }
     }
 
     @Test
-    fun `peek returns the first element but does not pop it`() {
+    fun `peek returns the first element but does not remove it`() {
         Stack<Char>().apply {
-            push('A')
-            push('B')
-            push('C')
+            add('A')
+            add('B')
+            add('C')
             peek() shouldEqual 'C'
-            pop() shouldEqual 'C'
+            remove() shouldEqual 'C'
             peek() shouldEqual 'B'
-            pop() shouldEqual 'B'
+            remove() shouldEqual 'B'
             peek() shouldEqual 'A'
-            pop() shouldEqual 'A'
+            remove() shouldEqual 'A'
             peek() shouldEqual null
-            pop() shouldEqual null
+            remove() shouldEqual null
         }
     }
 
@@ -74,15 +73,15 @@ class StackTest {
     @Test
     fun `stack is empty after removing all items`() {
         Stack<Char>().apply {
-            push('A')
-            push('B')
-            push('C')
+            add('A')
+            add('B')
+            add('C')
             peek()
-            pop()
+            remove()
             peek()
-            pop()
+            remove()
             peek()
-            pop()
+            remove()
 
             isEmpty() shouldEqual true
         }
@@ -91,11 +90,11 @@ class StackTest {
     @Test
     fun `stack with items is not empty`() {
         Stack<Char>().apply {
-            push('A')
+            add('A')
             isEmpty() shouldEqual false
-            push('B')
+            add('B')
             isEmpty() shouldEqual false
-            push('C')
+            add('C')
             isEmpty() shouldEqual false
         }
     }
@@ -105,22 +104,22 @@ class StackTest {
         Stack<Char>().apply {
             size shouldEqual 0
 
-            push('A')
+            add('A')
             size shouldEqual 1
 
-            push('B')
+            add('B')
             size shouldEqual 2
 
-            push('C')
+            add('C')
             size shouldEqual 3
 
-            pop()
+            remove()
             size shouldEqual 2
 
-            pop()
+            remove()
             size shouldEqual 1
 
-            pop()
+            remove()
             size shouldEqual 0
         }
     }

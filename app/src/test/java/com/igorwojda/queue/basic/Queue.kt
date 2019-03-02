@@ -1,9 +1,12 @@
-package com.igorwojda.queue.generic
+package com.igorwojda.queue.basic
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private class GenericQueue<E> {
+private class Queue<E> {
+    var size = 0
+        private set
+
     fun add(element: E) {
         TODO("not implemented")
     }
@@ -17,20 +20,20 @@ private class GenericQueue<E> {
     }
 }
 
-class GenericIntQueueTest {
+class QueueTest {
     @Test
     fun `can add elements to a queue`() {
-        GenericQueue<Int>().apply { add(1) }
+        Queue<Int>().apply { add(1) }
     }
 
     @Test
     fun `can remove elements from empty queue`() {
-        GenericQueue<Int>().apply { remove() shouldEqual null }
+        Queue<Int>().apply { remove() shouldEqual null }
     }
 
     @Test
     fun `can remove elements from a queue`() {
-        GenericQueue<String>().apply {
+        Queue<String>().apply {
             add("ABC")
             remove()
         }
@@ -38,7 +41,7 @@ class GenericIntQueueTest {
 
     @Test
     fun `order of elements is maintained`() {
-        GenericQueue<Char>().apply {
+        Queue<Char>().apply {
             add('A')
             add('B')
             add('C')
@@ -51,7 +54,7 @@ class GenericIntQueueTest {
 
     @Test
     fun `peek returns, but does not remove element`() {
-        GenericQueue<Int>().apply {
+        Queue<Int>().apply {
             add(1)
             add(2)
             peek() shouldEqual 1
@@ -66,14 +69,39 @@ class GenericIntQueueTest {
 
     @Test
     fun `isEmpty returns true`() {
-        GenericQueue<Int>().isEmpty() shouldEqual true
+        Queue<Int>().isEmpty() shouldEqual true
     }
 
     @Test
     fun `isEmpty returns false`() {
-        GenericQueue<Int>().apply {
+        Queue<Int>().apply {
             add(1)
             isEmpty() shouldEqual false
+        }
+    }
+
+    @Test
+    fun `queue has correct size`() {
+        Queue<Char>().apply {
+            size shouldEqual 0
+
+            add('A')
+            size shouldEqual 1
+
+            add('B')
+            size shouldEqual 2
+
+            add('C')
+            size shouldEqual 3
+
+            remove()
+            size shouldEqual 2
+
+            remove()
+            size shouldEqual 1
+
+            remove()
+            size shouldEqual 0
         }
     }
 }

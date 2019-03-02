@@ -1,7 +1,7 @@
 package com.igorwojda.queue.combine
 
 private object Solution {
-    class GenericQueue<E> {
+    class Queue<E> {
         private val list = mutableListOf<E>()
 
         fun add(element: E) {
@@ -13,8 +13,8 @@ private object Solution {
         fun peek() = list.firstOrNull()
     }
 
-    fun combine(q1: GenericQueue<*>, q2: GenericQueue<*>): GenericQueue<*> {
-        val result = GenericQueue<Any>()
+    fun combine(q1: Queue<*>, q2: Queue<*>): Queue<*> {
+        val result = Queue<Any>()
 
         while (true) {
             q1.remove()?.let { result.add(it) }

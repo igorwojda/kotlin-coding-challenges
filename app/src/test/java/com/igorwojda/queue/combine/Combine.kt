@@ -3,24 +3,38 @@ package com.igorwojda.queue.combine
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun combine(q1: GenericQueue<*>, q2: GenericQueue<*>): GenericQueue<*> {
+private fun combine(q1: Queue<*>, q2: Queue<*>): Queue<*> {
     TODO("not implemented")
+}
+
+private class Queue<E> {
+    private val list = mutableListOf<E>()
+
+    fun add(element: E) {
+        list.add(element)
+    }
+
+    fun remove() = if (list.isEmpty()) null else list.removeAt(0)
+
+    fun peek() = list.firstOrNull()
+
+    fun isEmpty() = list.isEmpty()
 }
 
 class CombineTest {
     @Test
     fun `can add elements to a queue`() {
-        GenericQueue<Int>().apply { add(1) }
+        Queue<Int>().apply { add(1) }
     }
 
     @Test
     fun `can remove elements from empty queue`() {
-        GenericQueue<Int>().apply { remove() shouldEqual null }
+        Queue<Int>().apply { remove() shouldEqual null }
     }
 
     @Test
     fun `can remove elements from a queue`() {
-        GenericQueue<String>().apply {
+        Queue<String>().apply {
             add("ABC")
             remove()
         }
@@ -28,7 +42,7 @@ class CombineTest {
 
     @Test
     fun `order of elements is maintained`() {
-        GenericQueue<Char>().apply {
+        Queue<Char>().apply {
             add('A')
             add('B')
             add('C')
@@ -41,7 +55,7 @@ class CombineTest {
 
     @Test
     fun `peek returns, but does not remove element`() {
-        GenericQueue<Int>().apply {
+        Queue<Int>().apply {
             add(1)
             add(2)
             peek() shouldEqual 1
@@ -56,14 +70,14 @@ class CombineTest {
 
     @Test
     fun `weave can combine two queues wit the same length`() {
-        val one = GenericQueue<Int>().apply {
+        val one = Queue<Int>().apply {
             add(1)
             add(2)
             add(3)
             add(4)
         }
 
-        val two = GenericQueue<String>().apply {
+        val two = Queue<String>().apply {
             add("one")
             add("two")
             add("three")
@@ -85,7 +99,7 @@ class CombineTest {
 
     @Test
     fun `weave can combine two queues with different length - first queue is longer`() {
-        val one = GenericQueue<Int>().apply {
+        val one = Queue<Int>().apply {
             add(1)
             add(2)
             add(3)
@@ -94,7 +108,7 @@ class CombineTest {
             add(6)
         }
 
-        val two = GenericQueue<String>().apply {
+        val two = Queue<String>().apply {
             add("one")
             add("two")
             add("three")
@@ -118,14 +132,14 @@ class CombineTest {
 
     @Test
     fun `weave can combine two queues with different length - second queue is longer`() {
-        val one = GenericQueue<Int>().apply {
+        val one = Queue<Int>().apply {
             add(1)
             add(2)
             add(3)
             add(4)
         }
 
-        val two = GenericQueue<String>().apply {
+        val two = Queue<String>().apply {
             add("one")
             add("two")
             add("three")
@@ -148,18 +162,4 @@ class CombineTest {
             remove() shouldEqual null
         }
     }
-}
-
-private class GenericQueue<E> {
-    private val list = mutableListOf<E>()
-
-    fun add(element: E) {
-        list.add(element)
-    }
-
-    fun remove() = if (list.isEmpty()) null else list.removeAt(0)
-
-    fun peek() = list.firstOrNull()
-
-    fun isEmpty() = list.isEmpty()
 }

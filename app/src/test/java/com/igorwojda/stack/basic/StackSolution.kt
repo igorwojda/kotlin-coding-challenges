@@ -16,7 +16,7 @@ private object Solution1 {
         var size = 0
             private set
 
-        fun push(element: E) {
+        fun add(element: E) {
             val node = Node(element)
 
             if (first == null) {
@@ -29,7 +29,7 @@ private object Solution1 {
             size++
         }
 
-        fun pop(): E? {
+        fun remove(): E? {
             val node = first
             first = first?.next
             size--
@@ -57,7 +57,7 @@ Remove at the end O(1)
 Option B - add to the beginning, remove from the end:
 Bad idea to add elements at the beginning:
 Insert at the beginning O(n)
-Remove at the beginning O(n) - we have to re-index all the other elements in the array
+Remove at the beginning O(n) - we have to re-index all the other elements in the list
 
 Solution time complexity:
 Insertion: O(1)
@@ -65,21 +65,20 @@ Removal: O(1)
 Searching: O(n)
 Access: O(n)
 */
-
 private object Solution2 {
     private class Stack<E> {
-        val list = mutableListOf<E>()
+        private val list = mutableListOf<E>()
 
-        fun push(element: E) {
+        val size get() = list.size
+
+        fun add(element: E) {
             list.add(element)
         }
 
-        fun pop() = if (list.isEmpty()) null else list.removeAt(list.lastIndex)
+        fun remove() = if (list.isEmpty()) null else list.removeAt(list.lastIndex)
 
         fun peek() = list.lastOrNull()
 
         fun isEmpty() = list.isEmpty()
-
-        val size = list.size
     }
 }
