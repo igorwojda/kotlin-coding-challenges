@@ -10,11 +10,15 @@ private class GenericStack<E> {
         TODO("not implemented")
     }
 
-    fun pop(): Int {
+    fun pop(): E? {
         TODO("not implemented")
     }
 
-    fun peek(): Int {
+    fun peek(): E? {
+        TODO("not implemented")
+    }
+
+    fun isEmpty(): Boolean {
         TODO("not implemented")
     }
 }
@@ -54,6 +58,42 @@ class GenericIntStackTest {
             pop() shouldEqual 'B'
             peek() shouldEqual 'A'
             pop() shouldEqual 'A'
+        }
+    }
+
+    @Test
+    fun `newly created stack is empty`() {
+        GenericStack<Char>().apply {
+            isEmpty() shouldEqual true
+        }
+    }
+
+    @Test
+    fun `stack is empty after removing all items`() {
+        GenericStack<Char>().apply {
+            push('A')
+            push('B')
+            push('C')
+            peek()
+            pop()
+            peek()
+            pop()
+            peek()
+            pop()
+
+            isEmpty() shouldEqual true
+        }
+    }
+
+    @Test
+    fun `stack with items is not empty`() {
+        GenericStack<Char>().apply {
+            push('A')
+            isEmpty() shouldEqual false
+            push('B')
+            isEmpty() shouldEqual false
+            push('C')
+            isEmpty() shouldEqual false
         }
     }
 }
