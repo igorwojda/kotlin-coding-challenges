@@ -1,11 +1,11 @@
 package com.igorwojda.queue.twostack
 
-import com.igorwojda.queue.int.IntStackSolution.IntStack
+import java.util.Stack
 
 private object Solution {
     private class IntQueue {
-        val stackPrimary = IntStack()
-        val stackTemporary = IntStack()
+        val stackPrimary = Stack<Int>()
+        val stackTemporary = Stack<Int>()
 
         fun add(element: Int) {
             stackPrimary.push(element)

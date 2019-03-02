@@ -1,13 +1,13 @@
 package com.igorwojda.queue.twostack
 
-import com.igorwojda.queue.int.IntStackSolution.IntStack
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
+import java.util.Stack
 
 private class TwoStackQueue {
-    val stackPrimary = IntStack()
+    val stackPrimary = Stack<Int>()
 
-    val stackTemporary = IntStack()
+    val stackTemporary = Stack<Int>()
 
     fun add(element: Int) {
         TODO("not implemented")

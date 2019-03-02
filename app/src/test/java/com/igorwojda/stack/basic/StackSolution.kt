@@ -10,8 +10,11 @@ Searching: O(n)
 Access: O(n)
 */
 private object Solution1 {
-    private class GenericStack<E> {
+    private class Stack<E> {
         private var first: Node<E>? = null
+
+        var size = 0
+            private set
 
         fun push(element: E) {
             val node = Node(element)
@@ -22,11 +25,14 @@ private object Solution1 {
                 node.next = first
                 first = node
             }
+
+            size++
         }
 
         fun pop(): E? {
             val node = first
             first = first?.next
+            size--
             return node?.data
         }
 
@@ -61,7 +67,7 @@ Access: O(n)
 */
 
 private object Solution2 {
-    private class GenericStack<E> {
+    private class Stack<E> {
         val list = mutableListOf<E>()
 
         fun push(element: E) {
@@ -73,5 +79,7 @@ private object Solution2 {
         fun peek() = list.lastOrNull()
 
         fun isEmpty() = list.isEmpty()
+
+        val size = list.size
     }
 }

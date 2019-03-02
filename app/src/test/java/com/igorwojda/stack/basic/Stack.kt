@@ -2,9 +2,10 @@ package com.igorwojda.stack.basic
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
+import java.util.Stack
 
 private class GenericStack<E> {
-    val list = mutableListOf<E>()
+    val size: Int = TODO("not implemented")
 
     fun push(element: E) {
         TODO("not implemented")
@@ -23,10 +24,10 @@ private class GenericStack<E> {
     }
 }
 
-class GenericIntStackTest {
+class StackTest {
     @Test
     fun `stack can add and remove items`() {
-        GenericStack<Int>().apply {
+        Stack<Int>().apply {
             push(1)
             pop() shouldEqual 1
             push(2)
@@ -36,7 +37,7 @@ class GenericIntStackTest {
 
     @Test
     fun `stack can follows first in, last out`() {
-        GenericStack<Int>().apply {
+        Stack<Int>().apply {
             push(1)
             push(2)
             push(3)
@@ -48,7 +49,7 @@ class GenericIntStackTest {
 
     @Test
     fun `peek returns the first element but does not pop it`() {
-        GenericStack<Char>().apply {
+        Stack<Char>().apply {
             push('A')
             push('B')
             push('C')
@@ -58,19 +59,21 @@ class GenericIntStackTest {
             pop() shouldEqual 'B'
             peek() shouldEqual 'A'
             pop() shouldEqual 'A'
+            peek() shouldEqual null
+            pop() shouldEqual null
         }
     }
 
     @Test
     fun `newly created stack is empty`() {
-        GenericStack<Char>().apply {
+        Stack<Char>().apply {
             isEmpty() shouldEqual true
         }
     }
 
     @Test
     fun `stack is empty after removing all items`() {
-        GenericStack<Char>().apply {
+        Stack<Char>().apply {
             push('A')
             push('B')
             push('C')
@@ -87,13 +90,38 @@ class GenericIntStackTest {
 
     @Test
     fun `stack with items is not empty`() {
-        GenericStack<Char>().apply {
+        Stack<Char>().apply {
             push('A')
             isEmpty() shouldEqual false
             push('B')
             isEmpty() shouldEqual false
             push('C')
             isEmpty() shouldEqual false
+        }
+    }
+
+    @Test
+    fun `stack has correct size`() {
+        Stack<Char>().apply {
+            size shouldEqual 0
+
+            push('A')
+            size shouldEqual 1
+
+            push('B')
+            size shouldEqual 2
+
+            push('C')
+            size shouldEqual 3
+
+            pop()
+            size shouldEqual 2
+
+            pop()
+            size shouldEqual 1
+
+            pop()
+            size shouldEqual 0
         }
     }
 }

@@ -22,4 +22,3 @@ private object Solution3 {
         return list.take(1).map { it.capitalize() } + capitalizeFirst(list.drop(1))
     }
 }
-
