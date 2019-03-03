@@ -1,4 +1,4 @@
-# Max occureent char
+# Max occurrent char
 
 ## Instructions
 
