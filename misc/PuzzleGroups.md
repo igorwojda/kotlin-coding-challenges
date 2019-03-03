@@ -157,5 +157,6 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 ## Tree
 
+- [Binary search tree](../app/src/test/java/com/igorwojda/tree/binarysearchtree/BinarySearchTree.md)
 - [Tree level width](../app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
 - [Tree](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
