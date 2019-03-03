@@ -8,11 +8,11 @@ you to become better programmer and improve you chance of getting a new job, by 
 
 ## Puzzle structure
 
-Each puzzle is located in separate package and it contains of 3 files ([screen](./misc/image/SampleTask.png)):
+Each puzzle is located in separate package and it contains of 3 main files ([screen](./misc/image/SampleTask.png)):
 - `Puzzle.md` - description of the task.
-- `Puzzle.kt` - empty method/class where puzzle should be solved. This file also contains a set of
-  [JUnit](https://junit.org/junit4/) tests.
-- `PuzzleSolution.kt` - file that contains solutions. 
+- `Puzzle.kt` - empty method/class where puzzle should be solved. This file also contains helper methods and a set of
+  [JUnit](https://junit.org/junit4/) tests which verifies if task was solved correctly.
+- `PuzzleSolution.kt` - file that contains one or more solutions.
 
 Keep in mind that each puzzle will usually have more than one solution. Even simple puzzle like
 [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md) can be solved in
