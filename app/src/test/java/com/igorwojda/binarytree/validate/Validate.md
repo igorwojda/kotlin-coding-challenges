@@ -1,6 +1,7 @@
 # Binary Tree (validate)
 
 ## Nice to solve before
+
 [Binary search tree](../insert/Insert.md)
 
 ## Instructions

@@ -1,6 +1,7 @@
 # Tree level width
 
 ## Nice to solve before
+
 [Tree traversal](../traversal/TreeTraversal.md)
 
 ## Instructions
