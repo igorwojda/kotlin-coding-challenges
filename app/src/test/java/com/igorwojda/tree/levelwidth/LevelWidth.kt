@@ -10,7 +10,7 @@ private fun levelWidth(tree: Node): List<Int> {
 class LevelWidthTest {
     @Test
     fun `levelWidth returns 1, 2`() {
-        // -- -------Tree------------
+        // ----------Tree------------
         //
         //           A
         //         /   \
@@ -27,7 +27,7 @@ class LevelWidthTest {
 
     @Test
     fun `levelWidth returns 1, 3, 2`() {
-        // -- -------Tree------------
+        // ----------Tree------------
         //
         //           A
         //         / | \

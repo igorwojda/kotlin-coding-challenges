@@ -81,6 +81,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Digit frequency](app/src/test/java/com/igorwojda/integer/digitfrequency/DigitFrequency.md)
 - [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
 - [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
+- [Binary search tree](app/src/test/java/com/igorwojda/tree/binarysearchtree/BinarySearchTree.md)
 - [Tree traversal](app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
 - [Tree level width](app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
 - [Binary search tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
