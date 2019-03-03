@@ -30,6 +30,7 @@ for recursive call) or change return type (eg. change `List<Int>` to `MutableLis
 - [Get odd](../app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
 - [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md) 
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
+- [Tree traversal](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
 
 ## Double pointer 
 
@@ -154,6 +155,12 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 - [Queue](../app/src/test/java/com/igorwojda/queue/basic/Queue.md)
 - [Combine two queues](../app/src/test/java/com/igorwojda/queue/combine/Combine.md)
+- [Tree traversal](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
+
+## Stack
+
+- [Stack](../app/src/test/java/com/igorwojda/stack/basic/Stack.md)
+- [Tree traversal](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
 
 ## Tree
 

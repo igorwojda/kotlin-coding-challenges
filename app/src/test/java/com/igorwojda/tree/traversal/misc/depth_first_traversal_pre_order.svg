@@ -5,9 +5,9 @@
         xmlns:dc="http://purl.org/dc/elements/1.1/"
         xmlns:cc="http://creativecommons.org/ns#"
         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns="http://www.w3.org/2000/svg"
         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-        xmlns="http://www.w3.org/2000/svg"
         width="336.25092"
         height="286.6962"
         id="svg3953"
@@ -726,9 +726,4 @@
        d="m -141.42858,122.70478 c 0,2.95867 -2.39847,5.35714 -5.35714,5.35714 -2.95867,0 -5.35714,-2.39847 -5.35714,-5.35714 0,-2.95867 2.39847,-5.35714 5.35714,-5.35714 2.95867,0 5.35714,2.39847 5.35714,5.35714 z"
        transform="translate(625.80308,183.68838)" />
   </g>
-</svg
-        xmlns:dc="http://purl.org/dc/elements/1.1/"
-        xmlns:cc="http://creativecommons.org/ns#"
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+</svg>
