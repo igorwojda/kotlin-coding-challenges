@@ -51,10 +51,46 @@ class BinarySearchTreeTest {
             root?.data shouldEqual 6
             root?.left?.data shouldEqual 3
             root?.left?.left?.data shouldEqual 1
+            root?.left?.left?.left shouldEqual null
+            root?.left?.left?.right shouldEqual null
             root?.left?.right?.data shouldEqual 5
+            root?.left?.right?.left shouldEqual null
+            root?.left?.right?.right shouldEqual null
             root?.right?.data shouldEqual 8
             root?.right?.left?.data shouldEqual 7
+            root?.right?.left?.left shouldEqual null
+            root?.right?.left?.right shouldEqual null
             root?.right?.right?.data shouldEqual 9
+            root?.right?.right?.left shouldEqual null
+            root?.right?.right?.right shouldEqual null
+        }
+    }
+
+    @Test
+    fun `duplicated value is not added`() {
+        // ----------Tree------------
+        //
+        //           6
+        //         /   \
+        //        3     8
+        //
+        // --------------------------
+
+        BinarySearchTree<Int>().apply {
+            add(6)
+            add(3)
+            add(8)
+            add(6)
+            add(3)
+            add(8)
+
+            root?.data shouldEqual 6
+            root?.left?.data shouldEqual 3
+            root?.left?.left shouldEqual null
+            root?.left?.right shouldEqual null
+            root?.right?.data shouldEqual 8
+            root?.right?.left shouldEqual null
+            root?.right?.right shouldEqual null
         }
     }
 
