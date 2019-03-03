@@ -69,4 +69,5 @@ This section contains all puzzles in order in which they where added to reposito
 63. [Radix sort](../app/src/test/java/com/igorwojda/list/sort/radixsort/RadixSort.md)
 64. [Doubly linked list](../app/src/test/java/com/igorwojda/linkedlist/doubly/base/DoublyLinkedList.md)
 65. [Binary search tree](../app/src/test/java/com/igorwojda/tree/binarysearchtree/BinarySearchTree.md)
+66. [Max binary heap](../app/src/test/java/com/igorwojda/heap/maxbinaryheap/MaxBinaryHeap.md)
     
