@@ -6,7 +6,7 @@
 
 ## Instructions
 
-Given the root node of a tree, return an array where each element is the width of the tree at each level.
+Given the root node of a tree, return an list where each element is the width of the tree at each level.
 
 [Puzzle](LevelWidth.kt) | [Solution](LevelWidthSolution.kt)
 
