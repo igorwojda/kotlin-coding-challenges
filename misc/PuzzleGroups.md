@@ -162,6 +162,10 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Stack](../app/src/test/java/com/igorwojda/stack/basic/Stack.md)
 - [Tree traversal](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
 
+## Heap
+
+- [Max binary heap](../app/src/test/java/com/igorwojda/heap/maxbinaryheap/MaxBinaryHeap.md)
+
 ## Tree
 
 - [Binary search tree](../app/src/test/java/com/igorwojda/tree/binarysearchtree/BinarySearchTree.md)
