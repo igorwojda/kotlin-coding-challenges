@@ -153,8 +153,8 @@ your time before you take a look at the presented solution. **Good luck!**
 
 ## Websites
 
-- [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards) - listing of companies (or teams) 
-  that don't do "whiteboard" interviews
+- [Hiring without whiteboards](https://github.com/poteto/hiring-without-whiteboards) - listing of companies (or teams)
+  that don't do "whiteboard" interviews.
 - [VisuAlgo](https://visualgo.net/en) - visualizes data structures and algorithms through animations algorithms.
 - [Data structures explained](https://medium.com/basecs/tagged/data-structures) - description of various data
   structures.
