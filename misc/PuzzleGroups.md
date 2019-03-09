@@ -30,7 +30,7 @@ for recursive call) or change return type (eg. change `List<Int>` to `MutableLis
 - [Get odd](../app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
 - [Count down](../app/src/test/java/com/igorwojda/integer/countdown/CountDown.md) 
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
-- [Tree traversal](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
+- [Tree traversal](../app/src/test/java/com/igorwojda/tree/classic/traversal/TreeTraversal.md)
 
 ## Double pointer 
 
@@ -155,19 +155,19 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 - [Queue](../app/src/test/java/com/igorwojda/queue/basic/Queue.md)
 - [Combine two queues](../app/src/test/java/com/igorwojda/queue/combine/Combine.md)
-- [Tree traversal](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
+- [Tree traversal](../app/src/test/java/com/igorwojda/tree/classic/traversal/TreeTraversal.md)
 
 ## Stack
 
 - [Stack](../app/src/test/java/com/igorwojda/stack/basic/Stack.md)
-- [Tree traversal](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
+- [Tree traversal](../app/src/test/java/com/igorwojda/tree/classic/traversal/TreeTraversal.md)
 
 ## Heap
 
-- [Max binary heap](../app/src/test/java/com/igorwojda/heap/maxbinaryheap/MaxBinaryHeap.md)
+- [Max binary heap](../app/src/test/java/com/igorwojda/tree/heap/maxbinaryheap/MaxBinaryHeap.md)
 
 ## Tree
 
 - [Binary search tree](../app/src/test/java/com/igorwojda/tree/binarysearchtree/BinarySearchTree.md)
-- [Tree level width](../app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
-- [Tree](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
+- [Tree level width](../app/src/test/java/com/igorwojda/tree/classic/levelwidth/LevelWidth.md)
+- [Tree](../app/src/test/java/com/igorwojda/tree/classic/traversal/TreeTraversal.md)

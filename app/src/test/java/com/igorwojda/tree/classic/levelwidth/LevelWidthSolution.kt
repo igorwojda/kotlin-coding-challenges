@@ -1,4 +1,4 @@
-package com.igorwojda.tree.levelwidth
+package com.igorwojda.tree.classic.levelwidth
 
 object Solution1 {
     private object Solution1 {

@@ -1,4 +1,4 @@
-package com.igorwojda.heap.maxbinaryheap
+package com.igorwojda.tree.heap.maxbinaryheap
 
 object Solution {
     private class MaxBinaryHeap<E : Comparable<E>> {

@@ -82,8 +82,8 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
 - [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
 - [Binary search tree](app/src/test/java/com/igorwojda/tree/binarysearchtree/BinarySearchTree.md)
-- [Tree traversal](app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
-- [Tree level width](app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
+- [Tree traversal](app/src/test/java/com/igorwojda/tree/classic/traversal/TreeTraversal.md)
+- [Tree level width](app/src/test/java/com/igorwojda/tree/classic/levelwidth/LevelWidth.md)
 - [Binary search tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
 - [Binary search tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
 - [Any callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.md)
@@ -94,7 +94,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Quick sort](app/src/test/java/com/igorwojda/list/sort/quicksort/QuickSort.md)
 - [Radix sort](app/src/test/java/com/igorwojda/list/sort/radixsort/RadixSort.md)
 - [Doubly linked list](app/src/test/java/com/igorwojda/linkedlist/doubly/base/DoublyLinkedList.md)
-- [Max binary heap](app/src/test/java/com/igorwojda/heap/maxbinaryheap/MaxBinaryHeap.md)
+- [Max binary heap](app/src/test/java/com/igorwojda/tree/heap/maxbinaryheap/MaxBinaryHeap.md)
 
 **Commander**
 - [List chunk](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)

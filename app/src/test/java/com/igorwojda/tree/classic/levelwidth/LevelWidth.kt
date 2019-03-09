@@ -1,4 +1,4 @@
-package com.igorwojda.tree.levelwidth
+package com.igorwojda.tree.classic.levelwidth
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
