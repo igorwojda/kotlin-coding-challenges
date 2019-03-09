@@ -94,6 +94,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Quick sort](app/src/test/java/com/igorwojda/list/sort/quicksort/QuickSort.md)
 - [Radix sort](app/src/test/java/com/igorwojda/list/sort/radixsort/RadixSort.md)
 - [Doubly linked list](app/src/test/java/com/igorwojda/linkedlist/doubly/base/DoublyLinkedList.md)
+- [Max binary heap](app/src/test/java/com/igorwojda/heap/maxbinaryheap/MaxBinaryHeap.md)
 
 **Commander**
 - [List chunk](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
@@ -152,8 +153,8 @@ your time before you take a look at the presented solution. **Good luck!**
 
 ## Websites
 
-- [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards) - listing of companies (or teams) 
-  that don't do "whiteboard" interviews
+- [Hiring without whiteboards](https://github.com/poteto/hiring-without-whiteboards) - listing of companies (or teams)
+  that don't do "whiteboard" interviews.
 - [VisuAlgo](https://visualgo.net/en) - visualizes data structures and algorithms through animations algorithms.
 - [Data structures explained](https://medium.com/basecs/tagged/data-structures) - description of various data
   structures.
