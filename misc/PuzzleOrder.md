@@ -30,8 +30,8 @@ This section contains all puzzles in order in which they where added to reposito
 24. [Singly linked list](../app/src/test/java/com/igorwojda/linkedlist/singly/base/SinglyLinkedList.md)
 25. [Midpoint](../app/src/test/java/com/igorwojda/linkedlist/singly/midpoint/Midpoint.md)
 26. [Circular check](../app/src/test/java/com/igorwojda/linkedlist/singly/circularcheck/CircularCheck.md)
-27. [Tree traversal](../app/src/test/java/com/igorwojda/tree/traversal/TreeTraversal.md)
-28. [Tree level width](../app/src/test/java/com/igorwojda/tree/levelwidth/LevelWidth.md)
+27. [Tree traversal](../app/src/test/java/com/igorwojda/tree/classic/traversal/TreeTraversal.md)
+28. [Tree level width](../app/src/test/java/com/igorwojda/tree/classic/levelwidth/LevelWidth.md)
 29. [Binary search tree (insert)](../app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
 30. [Binary search tree (validate)](../app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
 31. [Bubble sort](../app/src/test/java/com/igorwojda/list/sort/bubblesort/BubbleSort.md)
@@ -69,5 +69,5 @@ This section contains all puzzles in order in which they where added to reposito
 63. [Radix sort](../app/src/test/java/com/igorwojda/list/sort/radixsort/RadixSort.md)
 64. [Doubly linked list](../app/src/test/java/com/igorwojda/linkedlist/doubly/base/DoublyLinkedList.md)
 65. [Binary search tree](../app/src/test/java/com/igorwojda/tree/binarysearchtree/BinarySearchTree.md)
-66. [Max binary heap](../app/src/test/java/com/igorwojda/heap/maxbinaryheap/MaxBinaryHeap.md)
+66. [Max binary heap](../app/src/test/java/com/igorwojda/tree/heap/maxbinaryheap/MaxBinaryHeap.md)
     

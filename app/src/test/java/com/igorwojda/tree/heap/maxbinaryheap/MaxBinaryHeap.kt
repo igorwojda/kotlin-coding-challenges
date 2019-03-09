@@ -1,4 +1,4 @@
-package com.igorwojda.heap.maxbinaryheap
+package com.igorwojda.tree.heap.maxbinaryheap
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
