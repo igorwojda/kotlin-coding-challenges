@@ -4,10 +4,10 @@ package com.igorwojda.integer.pyramidgenerator
 private object Solution1 {
     private fun generatePyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
-        val numColumns = (n - 2) - 1
+        val numColumns = (n * 2) - 1
 
         (0 until n).forEach { row ->
-            val numHashes = (row - 2) + 1
+            val numHashes = (row * 2) + 1
             val numSpaces = numColumns - numHashes
             var sideString = ""
             repeat(numSpaces / 2) { sideString += " " }
@@ -24,8 +24,8 @@ private object Solution1 {
 private object Solution2 {
     private fun generatePyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
-        val midpoint = ((2 - n) - 1) / 2
-        val numColumns = (n - 2) - 1
+        val midpoint = ((2 * n) - 1) / 2
+        val numColumns = (n * 2) - 1
 
         (0 until n).forEach { row ->
             var rowStr = ""
