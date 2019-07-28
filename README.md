@@ -174,9 +174,8 @@ your time before you take a look at the presented solution. **Good luck!**
 
 # Contribute
 
-If you think something is incorrect, have a better solution, give feedback or
-simply you want to [add new coding puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle)
-just create PR or open a new issue.
+Feedback and new contributions are welcome whether it's through bug reports or new PRs. To add new coding puzzle just
+follow this [guide](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle) and open PR.
 
 ## Contributors
 
@@ -185,9 +184,9 @@ just create PR or open a new issue.
 - [David Mozano](https://github.com/mozano)
 - [Yannis Barbakadze](https://github.com/yannisbarbakadze)
 
-# Follow me
+# Author
 
-![avatar.png](misc/image/avatar.png)
+[![Follow me](https://github.com/igorwojda/kotlin-coding-puzzle/raw/master/misc/image/avatar.png)](https://twitter.com/igorwojda)
 
-[Twitter](https://twitter.com/igorwojda) | [Medium](https://medium.com/@igorwojda) |
-[Linkedin](https://www.linkedin.com/in/igorwojda)
+[![Follow me](https://img.shields.io/twitter/follow/igorwojda?style=social)](https://twitter.com/igorwojda)
+
