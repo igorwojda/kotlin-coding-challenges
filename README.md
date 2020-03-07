@@ -3,7 +3,7 @@
 This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that are solved using
 [Kotlin](https://kotlinlang.org/) language (hints, solutions tests and [useful links](#useful-links) are here as well).
 Purpose of this repository is to help you to practice coding and develop strong problem-solving skills. This will help
-you to become better programmer and improve you chance of getting a new job, by passing
+you to become better programmer and improve your chance of getting a new job, by passing
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interview.
 
 ## Puzzle structure
