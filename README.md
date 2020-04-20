@@ -3,18 +3,18 @@
 This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that are solved using
 [Kotlin](https://kotlinlang.org/) language (hints, solutions tests and [useful links](#useful-links) are here as well).
 Purpose of this repository is to help you to practice coding and develop strong problem-solving skills. This will help
-you to become better programmer and improve you chance of getting a new job, by passing
-[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interview.
+you to become a better programmer and improve your chance of getting a new job by passing
+[whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
 ## Puzzle structure
 
-Each puzzle is located in separate package and it contains of 3 main files ([screen](./misc/image/SampleTask.png)):
+Each puzzle is located in separate package and it contains 3 main files ([screen](./misc/image/SampleTask.png)):
 - `Puzzle.md` - description of the task.
 - `Puzzle.kt` - empty method/class where puzzle should be solved. This file also contains helper methods and a set of
   [JUnit](https://junit.org/junit4/) tests which verifies if task was solved correctly.
 - `PuzzleSolution.kt` - file that contains one or more solutions.
 
-Keep in mind that each puzzle will usually have more than one solution. Even simple puzzle like
+Keep in mind that each puzzle will usually have more than one solution. Even simple puzzles like
 [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md) can be solved in
 [10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually, we compare various
 solutions using
@@ -28,11 +28,11 @@ determine space/time complexity and we look at code readability.
 
 # Let's solve some puzzles
 
-Puzzles below are segregated by different difficulty. Repository also contains puzzles grouped by
+Puzzles below are segregated by different difficulties. The repository also contains puzzles grouped by
 [problem type](misc/PuzzleGroups.md) and [problem add order](misc/PuzzleOrder.md).
 
-Some puzzle may contain a reference to other puzzles that should be solved before to have better understanding of the
-problem. To succeed you need to practice often, repeat same puzzles multiple times and be persistent over time. Take
+Some puzzles may contain a reference to other puzzles that should be solved before to have a better understanding of the
+problem. To succeed you need to practice often, repeat the same puzzles multiple times and be persistent over time. Take
 your time before you take a look at the presented solution. **Good luck!**
 
 **New in Town**
