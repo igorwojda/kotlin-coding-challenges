@@ -1,18 +1,18 @@
 # Kotlin coding puzzles
 
-This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that are solved using
+This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that are solved using the
 [Kotlin](https://kotlinlang.org/) language (hints, solutions tests and [useful links](#useful-links) are here as well).
-Purpose of this repository is to help you to practice coding and develop strong problem-solving skills. This will help
+The purpose of this repository is to help you to practice coding and develop strong problem-solving skills. This will help
 you to become a better programmer and improve your chance of getting a new job by passing
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
 ## Puzzle structure
 
 Each puzzle is located in separate package and it contains 3 main files ([screen](./misc/image/SampleTask.png)):
-- `Puzzle.md` - description of the task.
-- `Puzzle.kt` - empty method/class where puzzle should be solved. This file also contains helper methods and a set of
-  [JUnit](https://junit.org/junit4/) tests which verifies if task was solved correctly.
-- `PuzzleSolution.kt` - file that contains one or more solutions.
+- `Puzzle.md` - the task description.
+- `Puzzle.kt` - an empty method/class where puzzle should be solved. This file also contains helper methods and a set of
+  [JUnit](https://junit.org/junit4/) tests which verify that task was solved correctly.
+- `PuzzleSolution.kt` - a file containing one or more solutions.
 
 Keep in mind that each puzzle will usually have more than one solution. Even simple puzzles like
 [String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md) can be solved in
@@ -22,8 +22,8 @@ solutions using
 determine space/time complexity and we look at code readability.
 
 ## How do I start?
-1. [Checkout the and open the project](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Checkout-and-open-the-project) 
-2. [Solve puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Solving-coding-chalenges)
+1. [Checkout and open the project](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Checkout-and-open-the-project) 
+2. [Solve the puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Solving-coding-chalenges)
 3. [Run the tests](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Running-tests)
 
 # Let's solve some puzzles
@@ -112,29 +112,29 @@ your time before you take a look at the presented solution. **Good luck!**
 
 # Useful links
 
-## More codding challenges
+## More coding challenges
 
 - [GeeksForGeeks](https://practice.geeksforgeeks.org) - large and nicely segregated set of problems.
 - [HackerRank](https://www.hackerrank.com/dashboard) - large set of problems and additional interview problems for
   business.
-- [Project euler](https://projecteuler.net/archives) - more complex challenges, usually related to mathematics. Site
+- [Project Euler](https://projecteuler.net/archives) - more complex challenges, usually related to mathematics. The site
   already contains 600+ problems and a new code challenge is available very week or two. You will probably have to
-  discuss problem with community because solutions are not on the website.
+  discuss the problem with the community because solutions are not on the website.
 - [Advent of code](https://adventofcode.com/2018/events) - one month of various programing problems released daily at
   the end of the year. Fortunately archive of past events is still there.
 - [Code Google Com Codejam](https://code.google.com/codejam/past-contests) - Google Code Jam, calls on programmers
   around the world to solve challenging, algorithmic puzzles against the clock. They publish all the past problems on
   their website.
 - [CoderByte](https://coderbyte.com/challenges) - 200+ challenges, data structures / algorithms / company interview
-  problems segregated by difficulty. Unfortunately most of them is only available for premium users. Premium gives you
+  problems segregated by difficulty. Unfortunately most of them are only available for premium users. Premium gives you
   access to premium step-by-step solutions and user solutions.
 - [CodeChef](https://www.codechef.com/problems/school) - contains set of programming problems segregated by difficulty.
 - [LeetCode](https://leetcode.com/problemset/all) - data structures / algorithms / company interview problems segregated
   by difficulty.
 - [Code Forces](http://codeforces.com/problemset) - list of programming puzzles is smaller than other websites, but you
-  will still have plenty problems to solve.
+  will still have plenty of problems to solve.
 - [Spoj](https://www.spoj.com/problems/classical) - list of programming puzzles is smaller than other websites, but you
-  will still have plenty problems to solve.
+  will still have plenty of problems to solve.
 
 ## Video courses
 
