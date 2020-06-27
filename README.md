@@ -117,7 +117,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [GeeksForGeeks](https://practice.geeksforgeeks.org) - large and nicely segregated set of problems.
 - [HackerRank](https://www.hackerrank.com/dashboard) - large set of problems and additional interview problems for
   business.
-- [Project euler](https://projecteuler.net/archives) - more complex challenges, usually related to mathematics. Site
+- [Project Euler](https://projecteuler.net/archives) - more complex challenges, usually related to mathematics. Site
   already contains 600+ problems and a new code challenge is available very week or two. You will probably have to
   discuss problem with community because solutions are not on the website.
 - [Advent of code](https://adventofcode.com/2018/events) - one month of various programing problems released daily at
@@ -133,8 +133,12 @@ your time before you take a look at the presented solution. **Good luck!**
   by difficulty.
 - [Code Forces](http://codeforces.com/problemset) - list of programming puzzles is smaller than other websites, but you
   will still have plenty problems to solve.
-- [Spoj](https://www.spoj.com/problems/classical) - list of programming puzzles is smaller than other websites, but you
+- [Shpere](https://www.spoj.com/problems/classical) - list of programming puzzles is smaller than other websites, but you
   will still have plenty problems to solve.
+- [CodeWars](https://www.codewars.com/) - improve your skills by training with others on real code challenges
+- [Topcoder](https://www.topcoder.com/) - list of programming puzzles
+- [Codingame](https://www.codingame.com/) - learn how to solve problems by programming games
+- [Exercism](https://exercism.io/) - code practice and mentorship for everyone
 
 ## Video courses
 
