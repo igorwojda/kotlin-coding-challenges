@@ -112,7 +112,7 @@ your time before you take a look at the presented solution. **Good luck!**
 
 # Useful links
 
-## More codding challenges
+## More coding challenges
 
 - [GeeksForGeeks](https://practice.geeksforgeeks.org) - large and nicely segregated set of problems.
 - [HackerRank](https://www.hackerrank.com/dashboard) - large set of problems and additional interview problems for
