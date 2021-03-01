@@ -1,8 +1,6 @@
 package com.igorwojda.integer.factorial
 
-import org.junit.Test
-
-§
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun factorial(n: Int): Int {
