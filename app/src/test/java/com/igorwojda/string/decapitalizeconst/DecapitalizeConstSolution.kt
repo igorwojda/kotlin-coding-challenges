@@ -1,7 +1,15 @@
 package com.igorwojda.string.decapitalizeconst
 
 // Kotlin idiomatic solution
-private object Solution {
+private object Solution1 {
+  private fun decapitalizeConst(str: String): String {
+    val subsStringsList = str.split("_").map { it.toLowerCase().capitalize() }
+    return subsStringsList.joinToString("").decapitalize()
+  }
+}
+
+// Another Approach
+private object Solution2 {
     private fun decapitalizeConst(str: String): String? {
         val words = str.split("_").filter { it.isNotEmpty() }
 
@@ -16,5 +24,6 @@ private object Solution {
         }.joinToString(separator = "")
     }
 }
+
 
 private object KtLintWillNotComplain
