@@ -1,10 +1,17 @@
 package com.igorwojda.string.issubstring
 
+//Kotlin Idiomatic Approach
+private object Solution1 {
+    private fun isSubstring(str: String, subStr: String): Boolean {
+        return str.contains(subStr) && str.isNotEmpty() && subStr.isNotEmpty()
+    }
+}
+
 // Time complexity: O(n+m)
 // Space complexity: O(1)
 //
 // Optimal solution using double pointer.
-private object Solution1 {
+private object Solution2 {
     private fun isSubstring(str: String, subStr: String): Boolean {
         if (str.isEmpty() || subStr.isEmpty()) return false
         if (str.length <= subStr.length) return false
@@ -35,7 +42,7 @@ private object Solution1 {
 // First of 5 chars, needs 5 iterations at most and 15 character copied (5+4+3+2+1=15). Second is copied less often.
 //
 // Recursive solution
-private object Solution2 {
+private object Solution3 {
     private fun isSubstring(str: String, subStr: String): Boolean {
         if (subStr.length > str.length) {
             return false
