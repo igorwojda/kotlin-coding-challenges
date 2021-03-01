@@ -18,13 +18,13 @@ Example 1
 
 ```
 val callback:((Int) -> Boolean) = { it > 3 }
-anyCallback(listOf(1, 2, 3, 4), callback) shouldEqual true
+anyCallback(listOf(1, 2, 3, 4), callback) shouldBeEqualTo true
 ```
 
 Example 2
 
 ```
 val callback:((Int) -> Boolean) = { it > 3 }
-anyCallback(listOf(1, 2, 3), callback) shouldEqual false
+anyCallback(listOf(1, 2, 3), callback) shouldBeEqualTo false
 ```
 

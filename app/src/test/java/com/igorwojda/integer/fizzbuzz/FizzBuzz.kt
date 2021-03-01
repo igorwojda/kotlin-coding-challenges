@@ -1,6 +1,6 @@
 package com.igorwojda.integer.fizzbuzz
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun fizzBuzz(n: Int): List<String> {
@@ -11,7 +11,7 @@ class FizzBuzzTest {
 
     @Test
     fun `Calling fizzbuzz with "5" returns list with 5 items`() {
-        fizzBuzz(5) shouldEqual listOf("1", "2", "Fizz", "4", "Buzz")
+        fizzBuzz(5) shouldBeEqualTo listOf("1", "2", "Fizz", "4", "Buzz")
     }
 
     @Test
@@ -23,6 +23,6 @@ class FizzBuzzTest {
             "13", "14", "FizzBuzz", "16"
         )
 
-        fizzBuzz(16) shouldEqual list
+        fizzBuzz(16) shouldBeEqualTo list
     }
 }

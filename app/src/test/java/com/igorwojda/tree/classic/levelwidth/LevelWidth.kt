@@ -1,6 +1,6 @@
 package com.igorwojda.tree.classic.levelwidth
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun levelWidth(tree: Node): List<Int> {
@@ -22,7 +22,7 @@ class LevelWidthTest {
         root.add("B")
         root.add("C")
 
-        levelWidth(root) shouldEqual listOf(1, 2)
+        levelWidth(root) shouldBeEqualTo listOf(1, 2)
     }
 
     @Test
@@ -46,7 +46,7 @@ class LevelWidthTest {
         nodeB.add("E")
         nodeD.add("F")
 
-        levelWidth(root) shouldEqual listOf(1, 3, 2)
+        levelWidth(root) shouldBeEqualTo listOf(1, 3, 2)
     }
 
     @Test
@@ -71,7 +71,7 @@ class LevelWidthTest {
         nodeB.add("D")
         nodeC.add("E")
 
-        levelWidth(root) shouldEqual listOf(1, 1, 2, 1)
+        levelWidth(root) shouldBeEqualTo listOf(1, 1, 2, 1)
     }
 }
 

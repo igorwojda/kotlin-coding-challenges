@@ -1,6 +1,6 @@
 package com.igorwojda.string.hasrepeatedcharacter
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun hasRepeatedChar(str: String): Boolean {
@@ -10,16 +10,16 @@ private fun hasRepeatedChar(str: String): Boolean {
 class RepeatedCharacterTest {
     @Test
     fun `"abc" don't have repeated character`() {
-        hasRepeatedChar("abc") shouldEqual false
+        hasRepeatedChar("abc") shouldBeEqualTo false
     }
 
     @Test
     fun `"aabc" has repeated character`() {
-        hasRepeatedChar("aabc") shouldEqual true
+        hasRepeatedChar("aabc") shouldBeEqualTo true
     }
 
     @Test
     fun `"aabcc" has repeated character`() {
-        hasRepeatedChar("aabcc") shouldEqual true
+        hasRepeatedChar("aabcc") shouldBeEqualTo true
     }
 }

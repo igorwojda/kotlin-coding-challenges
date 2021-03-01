@@ -1,6 +1,6 @@
 package com.igorwojda.stack.basic
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private class Stack<E> {
@@ -28,9 +28,9 @@ class StackTest {
     fun `stack can add and remove items`() {
         Stack<Int>().apply {
             add(1)
-            remove() shouldEqual 1
+            remove() shouldBeEqualTo 1
             add(2)
-            remove() shouldEqual 2
+            remove() shouldBeEqualTo 2
         }
     }
 
@@ -40,9 +40,9 @@ class StackTest {
             add(1)
             add(2)
             add(3)
-            remove() shouldEqual 3
-            remove() shouldEqual 2
-            remove() shouldEqual 1
+            remove() shouldBeEqualTo 3
+            remove() shouldBeEqualTo 2
+            remove() shouldBeEqualTo 1
         }
     }
 
@@ -52,21 +52,21 @@ class StackTest {
             add('A')
             add('B')
             add('C')
-            peek() shouldEqual 'C'
-            remove() shouldEqual 'C'
-            peek() shouldEqual 'B'
-            remove() shouldEqual 'B'
-            peek() shouldEqual 'A'
-            remove() shouldEqual 'A'
-            peek() shouldEqual null
-            remove() shouldEqual null
+            peek() shouldBeEqualTo 'C'
+            remove() shouldBeEqualTo 'C'
+            peek() shouldBeEqualTo 'B'
+            remove() shouldBeEqualTo 'B'
+            peek() shouldBeEqualTo 'A'
+            remove() shouldBeEqualTo 'A'
+            peek() shouldBeEqualTo null
+            remove() shouldBeEqualTo null
         }
     }
 
     @Test
     fun `newly created stack is empty`() {
         Stack<Char>().apply {
-            isEmpty() shouldEqual true
+            isEmpty() shouldBeEqualTo true
         }
     }
 
@@ -83,7 +83,7 @@ class StackTest {
             peek()
             remove()
 
-            isEmpty() shouldEqual true
+            isEmpty() shouldBeEqualTo true
         }
     }
 
@@ -91,36 +91,36 @@ class StackTest {
     fun `stack with items is not empty`() {
         Stack<Char>().apply {
             add('A')
-            isEmpty() shouldEqual false
+            isEmpty() shouldBeEqualTo false
             add('B')
-            isEmpty() shouldEqual false
+            isEmpty() shouldBeEqualTo false
             add('C')
-            isEmpty() shouldEqual false
+            isEmpty() shouldBeEqualTo false
         }
     }
 
     @Test
     fun `stack has correct size`() {
         Stack<Char>().apply {
-            size shouldEqual 0
+            size shouldBeEqualTo 0
 
             add('A')
-            size shouldEqual 1
+            size shouldBeEqualTo 1
 
             add('B')
-            size shouldEqual 2
+            size shouldBeEqualTo 2
 
             add('C')
-            size shouldEqual 3
+            size shouldBeEqualTo 3
 
             remove()
-            size shouldEqual 2
+            size shouldBeEqualTo 2
 
             remove()
-            size shouldEqual 1
+            size shouldBeEqualTo 1
 
             remove()
-            size shouldEqual 0
+            size shouldBeEqualTo 0
         }
     }
 }

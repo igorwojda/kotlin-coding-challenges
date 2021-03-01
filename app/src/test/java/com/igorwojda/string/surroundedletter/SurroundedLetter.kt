@@ -1,6 +1,6 @@
 package com.igorwojda.string.surroundedletter
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun surroundedLetter(str: String): Boolean {
@@ -10,56 +10,56 @@ private fun surroundedLetter(str: String): Boolean {
 class CaesarCipherTest {
     @Test
     fun `"a" return "false"`() {
-        surroundedLetter("a") shouldEqual false
+        surroundedLetter("a") shouldBeEqualTo false
     }
 
     @Test
     fun `"+a+" return "true"`() {
-        surroundedLetter("+a+") shouldEqual true
+        surroundedLetter("+a+") shouldBeEqualTo true
     }
 
     @Test
     fun `"a+" return "false"`() {
-        surroundedLetter("a+") shouldEqual false
+        surroundedLetter("a+") shouldBeEqualTo false
     }
 
     @Test
     fun `"+a" return "false"`() {
-        surroundedLetter("+a") shouldEqual false
+        surroundedLetter("+a") shouldBeEqualTo false
     }
 
     @Test
     fun `"+a+b+" return "true"`() {
-        surroundedLetter("+a+b+") shouldEqual true
+        surroundedLetter("+a+b+") shouldBeEqualTo true
     }
 
     @Test
     fun `"+a++b+" return "true"`() {
-        surroundedLetter("+a++b+") shouldEqual true
+        surroundedLetter("+a++b+") shouldBeEqualTo true
     }
 
     @Test
     fun `"+ab+" return "false"`() {
-        surroundedLetter("+ab+") shouldEqual false
+        surroundedLetter("+ab+") shouldBeEqualTo false
     }
 
     @Test
     fun `"a+b+" return "false"`() {
-        surroundedLetter("a+b+") shouldEqual false
+        surroundedLetter("a+b+") shouldBeEqualTo false
     }
 
     @Test
     fun `"+a+b" return "false"`() {
-        surroundedLetter("+a+b") shouldEqual false
+        surroundedLetter("+a+b") shouldBeEqualTo false
     }
 
     @Test
     fun `"+a+b+++c++d+e++" return "true"`() {
-        surroundedLetter("+a+b+++c++d+e++") shouldEqual true
+        surroundedLetter("+a+b+++c++d+e++") shouldBeEqualTo true
     }
 
     @Test
     fun `"+++a+d++de++e++" return "false"`() {
-        surroundedLetter("+a+d++de++e+") shouldEqual false
+        surroundedLetter("+a+d++de++e+") shouldBeEqualTo false
     }
 }

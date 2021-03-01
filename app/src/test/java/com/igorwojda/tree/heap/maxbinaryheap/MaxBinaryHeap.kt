@@ -1,6 +1,6 @@
 package com.igorwojda.tree.heap.maxbinaryheap
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private class MaxBinaryHeap<E : Comparable<E>> {
@@ -50,13 +50,13 @@ class MaxBinaryHeapTest {
             //
             // --------------------------
 
-            items[0] shouldEqual 9
-            items[1] shouldEqual 7
-            items[2] shouldEqual 6
-            items[3] shouldEqual 3
-            items[4] shouldEqual 2
-            items[5] shouldEqual 4
-            items.size shouldEqual 6
+            items[0] shouldBeEqualTo 9
+            items[1] shouldBeEqualTo 7
+            items[2] shouldBeEqualTo 6
+            items[3] shouldBeEqualTo 3
+            items[4] shouldBeEqualTo 2
+            items[5] shouldBeEqualTo 4
+            items.size shouldBeEqualTo 6
         }
     }
 
@@ -92,14 +92,14 @@ class MaxBinaryHeapTest {
             //
             // --------------------------
 
-            items[0] shouldEqual 9
-            items[1] shouldEqual 7
-            items[2] shouldEqual 8
-            items[3] shouldEqual 3
-            items[4] shouldEqual 2
-            items[5] shouldEqual 4
-            items[6] shouldEqual 6
-            items.size shouldEqual 7
+            items[0] shouldBeEqualTo 9
+            items[1] shouldBeEqualTo 7
+            items[2] shouldBeEqualTo 8
+            items[3] shouldBeEqualTo 3
+            items[4] shouldBeEqualTo 2
+            items[5] shouldBeEqualTo 4
+            items[6] shouldBeEqualTo 6
+            items.size shouldBeEqualTo 7
         }
     }
 
@@ -135,14 +135,14 @@ class MaxBinaryHeapTest {
             //
             // --------------------------
 
-            items[0] shouldEqual 12
-            items[1] shouldEqual 7
-            items[2] shouldEqual 9
-            items[3] shouldEqual 3
-            items[4] shouldEqual 2
-            items[5] shouldEqual 4
-            items[6] shouldEqual 6
-            items.size shouldEqual 7
+            items[0] shouldBeEqualTo 12
+            items[1] shouldBeEqualTo 7
+            items[2] shouldBeEqualTo 9
+            items[3] shouldBeEqualTo 3
+            items[4] shouldBeEqualTo 2
+            items[5] shouldBeEqualTo 4
+            items[6] shouldBeEqualTo 6
+            items.size shouldBeEqualTo 7
         }
     }
 
@@ -166,7 +166,7 @@ class MaxBinaryHeapTest {
             //
             // --------------------------
 
-            removeMax() shouldEqual 9
+            removeMax() shouldBeEqualTo 9
 
             // ----------Heap------------
             //
@@ -178,12 +178,12 @@ class MaxBinaryHeapTest {
             //
             // --------------------------
 
-            items[0] shouldEqual 7
-            items[1] shouldEqual 4
-            items[2] shouldEqual 6
-            items[3] shouldEqual 3
-            items[4] shouldEqual 2
-            items.size shouldEqual 5
+            items[0] shouldBeEqualTo 7
+            items[1] shouldBeEqualTo 4
+            items[2] shouldBeEqualTo 6
+            items[3] shouldBeEqualTo 3
+            items[4] shouldBeEqualTo 2
+            items.size shouldBeEqualTo 5
         }
     }
 
@@ -207,7 +207,7 @@ class MaxBinaryHeapTest {
             //
             // --------------------------
 
-            removeMax() shouldEqual 8
+            removeMax() shouldBeEqualTo 8
 
             // ----------Heap------------
             //
@@ -219,12 +219,12 @@ class MaxBinaryHeapTest {
             //
             // --------------------------
 
-            items[0] shouldEqual 7
-            items[1] shouldEqual 4
-            items[2] shouldEqual 6
-            items[3] shouldEqual 3
-            items[4] shouldEqual 2
-            items.size shouldEqual 5
+            items[0] shouldBeEqualTo 7
+            items[1] shouldBeEqualTo 4
+            items[2] shouldBeEqualTo 6
+            items[3] shouldBeEqualTo 3
+            items[4] shouldBeEqualTo 2
+            items.size shouldBeEqualTo 5
         }
     }
 
@@ -243,7 +243,7 @@ class MaxBinaryHeapTest {
             //
             // --------------------------
 
-            removeMax() shouldEqual 8
+            removeMax() shouldBeEqualTo 8
 
             // ----------Heap------------
             //
@@ -253,11 +253,11 @@ class MaxBinaryHeapTest {
             //
             // --------------------------
 
-            items[0] shouldEqual 7
-            items[1] shouldEqual 6
-            items.size shouldEqual 2
+            items[0] shouldBeEqualTo 7
+            items[1] shouldBeEqualTo 6
+            items.size shouldBeEqualTo 2
 
-            removeMax() shouldEqual 7
+            removeMax() shouldBeEqualTo 7
 
             // ----------Heap------------
             //
@@ -265,11 +265,11 @@ class MaxBinaryHeapTest {
             //
             // --------------------------
 
-            items[0] shouldEqual 6
-            items.size shouldEqual 1
+            items[0] shouldBeEqualTo 6
+            items.size shouldBeEqualTo 1
 
-            removeMax() shouldEqual 6
-            items.size shouldEqual 0
+            removeMax() shouldBeEqualTo 6
+            items.size shouldBeEqualTo 0
         }
     }
 }

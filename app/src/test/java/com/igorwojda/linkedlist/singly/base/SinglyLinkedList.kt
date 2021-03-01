@@ -13,7 +13,7 @@ class SinglyLinkedListTest {
 //    @Test
 //    fun `when list is created head node is null`() {
 //        SinglyLinkedList<Int>().apply {
-//            head shouldEqual null
+//            head shouldBeEqualTo null
 //        }
 //    }
 //
@@ -21,21 +21,21 @@ class SinglyLinkedListTest {
 //    fun `append a node to the start of the list`() {
 //        SinglyLinkedList<Int>().apply {
 //            insertFirst(1)
-//            head?.data shouldEqual 1
+//            head?.data shouldBeEqualTo 1
 //            insertFirst(2)
-//            head?.data shouldEqual 2
+//            head?.data shouldBeEqualTo 2
 //        }
 //    }
 //
 //    @Test
 //    fun `return the number of items in the linked list`() {
 //        SinglyLinkedList<Int>().apply {
-//            size shouldEqual 0
+//            size shouldBeEqualTo 0
 //            insertFirst(1)
 //            insertFirst(1)
 //            insertFirst(1)
 //            insertFirst(1)
-//            size shouldEqual 4
+//            size shouldBeEqualTo 4
 //        }
 //    }
 //
@@ -43,9 +43,9 @@ class SinglyLinkedListTest {
 //    fun `return the first element`() {
 //        SinglyLinkedList<Int>().apply {
 //            insertFirst(1)
-//            first?.data shouldEqual 1
+//            first?.data shouldBeEqualTo 1
 //            insertFirst(2)
-//            first?.data shouldEqual 2
+//            first?.data shouldBeEqualTo 2
 //        }
 //    }
 //
@@ -53,25 +53,25 @@ class SinglyLinkedListTest {
 //    fun `return the last element`() {
 //        SinglyLinkedList<Int>().apply {
 //            insertFirst(2)
-//            last?.data shouldEqual 2
-//            last?.next shouldEqual null
+//            last?.data shouldBeEqualTo 2
+//            last?.next shouldBeEqualTo null
 //            insertFirst(1)
-//            last?.data shouldEqual 2
-//            last?.next shouldEqual null
+//            last?.data shouldBeEqualTo 2
+//            last?.next shouldBeEqualTo null
 //        }
 //    }
 //
 //    @Test
 //    fun `empty the list`() {
 //        SinglyLinkedList<Int>().apply {
-//            size shouldEqual 0
+//            size shouldBeEqualTo 0
 //            insertFirst(1)
 //            insertFirst(1)
 //            insertFirst(1)
 //            insertFirst(1)
-//            size shouldEqual 4
+//            size shouldBeEqualTo 4
 //            clear()
-//            size shouldEqual 0
+//            size shouldBeEqualTo 0
 //        }
 //    }
 //
@@ -80,8 +80,8 @@ class SinglyLinkedListTest {
 //        SinglyLinkedList<String>().apply {
 //            insertFirst("a")
 //            removeFirst()
-//            size shouldEqual 0
-//            first shouldEqual null
+//            size shouldBeEqualTo 0
+//            first shouldBeEqualTo null
 //        }
 //    }
 //
@@ -92,11 +92,11 @@ class SinglyLinkedListTest {
 //            insertFirst("b")
 //            insertFirst("a")
 //            removeFirst()
-//            size shouldEqual 2
-//            first?.data shouldEqual "b"
+//            size shouldBeEqualTo 2
+//            first?.data shouldBeEqualTo "b"
 //            removeFirst()
-//            size shouldEqual 1
-//            first?.data shouldEqual "c"
+//            size shouldBeEqualTo 1
+//            first?.data shouldBeEqualTo "c"
 //        }
 //    }
 //
@@ -112,7 +112,7 @@ class SinglyLinkedListTest {
 //        SinglyLinkedList<String>().apply {
 //            insertFirst("a")
 //            removeLast()
-//            head shouldEqual null
+//            head shouldBeEqualTo null
 //        }
 //    }
 //
@@ -122,8 +122,8 @@ class SinglyLinkedListTest {
 //            insertFirst("b")
 //            insertFirst("a")
 //            removeLast()
-//            size shouldEqual 1
-//            head?.data shouldEqual "a"
+//            size shouldBeEqualTo 1
+//            head?.data shouldBeEqualTo "a"
 //        }
 //    }
 //
@@ -134,8 +134,8 @@ class SinglyLinkedListTest {
 //            insertFirst("b")
 //            insertFirst("a")
 //            removeLast()
-//            size shouldEqual 2
-//            last?.data shouldEqual "b"
+//            size shouldBeEqualTo 2
+//            last?.data shouldBeEqualTo "b"
 //        }
 //    }
 //
@@ -144,26 +144,26 @@ class SinglyLinkedListTest {
 //        SinglyLinkedList<String>().apply {
 //            insertFirst("a")
 //            insertLast("b")
-//            size shouldEqual 2
-//            last?.data shouldEqual "b"
+//            size shouldBeEqualTo 2
+//            last?.data shouldBeEqualTo "b"
 //        }
 //    }
 //
 //    @Test
 //    fun `return the node at given index`() {
 //        SinglyLinkedList<Char>().apply {
-//            getAt(10) shouldEqual null
+//            getAt(10) shouldBeEqualTo null
 //
 //            insertLast('A')
 //            insertLast('B')
 //            insertLast('C')
 //            insertLast('D')
 //
-//            getAt(0)?.data shouldEqual 'A'
-//            getAt(1)?.data shouldEqual 'B'
-//            getAt(2)?.data shouldEqual 'C'
-//            getAt(3)?.data shouldEqual 'D'
-//            getAt(4)?.data shouldEqual null
+//            getAt(0)?.data shouldBeEqualTo 'A'
+//            getAt(1)?.data shouldBeEqualTo 'B'
+//            getAt(2)?.data shouldBeEqualTo 'C'
+//            getAt(3)?.data shouldBeEqualTo 'D'
+//            getAt(4)?.data shouldBeEqualTo null
 //        }
 //    }
 //
@@ -174,9 +174,9 @@ class SinglyLinkedListTest {
 //            insertLast("b")
 //            insertLast("c")
 //            setAt("new", 0)
-//            getAt(0)?.data shouldEqual "new"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "c"
+//            getAt(0)?.data shouldBeEqualTo "new"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "c"
 //        }
 //    }
 //
@@ -187,9 +187,9 @@ class SinglyLinkedListTest {
 //            insertLast("b")
 //            insertLast("c")
 //            setAt("new", 1)
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "new"
-//            getAt(2)?.data shouldEqual "c"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "new"
+//            getAt(2)?.data shouldBeEqualTo "c"
 //        }
 //    }
 //
@@ -200,9 +200,9 @@ class SinglyLinkedListTest {
 //            insertLast("b")
 //            insertLast("c")
 //            setAt("new", 2)
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "new"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "new"
 //        }
 //    }
 //
@@ -213,9 +213,9 @@ class SinglyLinkedListTest {
 //            insertLast("b")
 //            insertLast("c")
 //            setAt("new", 3)
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "c"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "c"
 //        }
 //    }
 //
@@ -243,9 +243,9 @@ class SinglyLinkedListTest {
 //            insertLast(2)
 //            insertLast(3)
 //            insertLast(4)
-//            getAt(0)?.data shouldEqual 1
+//            getAt(0)?.data shouldBeEqualTo 1
 //            removeAt(0)
-//            getAt(0)?.data shouldEqual 2
+//            getAt(0)?.data shouldBeEqualTo 2
 //        }
 //    }
 //
@@ -256,9 +256,9 @@ class SinglyLinkedListTest {
 //            insertLast(2)
 //            insertLast(3)
 //            insertLast(4)
-//            getAt(1)?.data shouldEqual 2
+//            getAt(1)?.data shouldBeEqualTo 2
 //            removeAt(1)
-//            getAt(1)?.data shouldEqual 3
+//            getAt(1)?.data shouldBeEqualTo 3
 //        }
 //    }
 //
@@ -269,9 +269,9 @@ class SinglyLinkedListTest {
 //            insertLast(2)
 //            insertLast(3)
 //            insertLast(4)
-//            getAt(3)?.data shouldEqual 4
+//            getAt(3)?.data shouldBeEqualTo 4
 //            removeAt(3)
-//            getAt(3) shouldEqual null
+//            getAt(3) shouldBeEqualTo null
 //        }
 //    }
 //
@@ -279,7 +279,7 @@ class SinglyLinkedListTest {
 //    fun `insert a new node with data at index 0 when the list is empty`() {
 //        SinglyLinkedList<String>().apply {
 //            insertAt("hi", 0)
-//            first?.data shouldEqual "hi"
+//            first?.data shouldBeEqualTo "hi"
 //        }
 //    }
 //
@@ -290,10 +290,10 @@ class SinglyLinkedListTest {
 //            insertLast("b")
 //            insertLast("c")
 //            insertAt("hi", 0)
-//            getAt(0)?.data shouldEqual "hi"
-//            getAt(1)?.data shouldEqual "a"
-//            getAt(2)?.data shouldEqual "b"
-//            getAt(3)?.data shouldEqual "c"
+//            getAt(0)?.data shouldBeEqualTo "hi"
+//            getAt(1)?.data shouldBeEqualTo "a"
+//            getAt(2)?.data shouldBeEqualTo "b"
+//            getAt(3)?.data shouldBeEqualTo "c"
 //        }
 //    }
 //
@@ -305,11 +305,11 @@ class SinglyLinkedListTest {
 //            insertLast("c")
 //            insertLast("d")
 //            insertAt("hi", 2)
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "hi"
-//            getAt(3)?.data shouldEqual "c"
-//            getAt(4)?.data shouldEqual "d"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "hi"
+//            getAt(3)?.data shouldBeEqualTo "c"
+//            getAt(4)?.data shouldBeEqualTo "d"
 //        }
 //    }
 //
@@ -319,9 +319,9 @@ class SinglyLinkedListTest {
 //            insertLast("a")
 //            insertLast("b")
 //            insertAt("hi", 2)
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "hi"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "hi"
 //        }
 //    }
 //
@@ -332,9 +332,9 @@ class SinglyLinkedListTest {
 //            insertLast("b")
 //            insertAt("hi", 30)
 //
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "hi"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "hi"
 //        }
 //    }
 //
@@ -346,7 +346,7 @@ class SinglyLinkedListTest {
 //            insertLast(3)
 //            insertLast(4)
 //
-//            sumBy { it.data } shouldEqual 10
+//            sumBy { it.data } shouldBeEqualTo 10
 //        }
 //    }
 //
@@ -356,7 +356,7 @@ class SinglyLinkedListTest {
 //        val l2 = SinglyLinkedList<Int>()
 //        val result = l1 + l2
 //
-//        result.size shouldEqual 0
+//        result.size shouldBeEqualTo 0
 //    }
 //
 //    @Test
@@ -375,14 +375,14 @@ class SinglyLinkedListTest {
 //        val result = l1 + l2
 //
 //        result.apply {
-//            size shouldEqual 7
-//            getAt(0)?.data shouldEqual 1
-//            getAt(1)?.data shouldEqual 2
-//            getAt(2)?.data shouldEqual 3
-//            getAt(3)?.data shouldEqual 4
-//            getAt(4)?.data shouldEqual 5
-//            getAt(5)?.data shouldEqual 6
-//            getAt(6)?.data shouldEqual 7
+//            size shouldBeEqualTo 7
+//            getAt(0)?.data shouldBeEqualTo 1
+//            getAt(1)?.data shouldBeEqualTo 2
+//            getAt(2)?.data shouldBeEqualTo 3
+//            getAt(3)?.data shouldBeEqualTo 4
+//            getAt(4)?.data shouldBeEqualTo 5
+//            getAt(5)?.data shouldBeEqualTo 6
+//            getAt(6)?.data shouldBeEqualTo 7
 //        }
 //    }
 }

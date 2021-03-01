@@ -1,6 +1,6 @@
 package com.igorwojda.queue.combine
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun combine(q1: Queue<*>, q2: Queue<*>): Queue<*> {
@@ -29,7 +29,7 @@ class CombineTest {
 
     @Test
     fun `can remove elements from empty queue`() {
-        Queue<Int>().apply { remove() shouldEqual null }
+        Queue<Int>().apply { remove() shouldBeEqualTo null }
     }
 
     @Test
@@ -46,10 +46,10 @@ class CombineTest {
             add('A')
             add('B')
             add('C')
-            remove() shouldEqual 'A'
-            remove() shouldEqual 'B'
-            remove() shouldEqual 'C'
-            remove() shouldEqual null
+            remove() shouldBeEqualTo 'A'
+            remove() shouldBeEqualTo 'B'
+            remove() shouldBeEqualTo 'C'
+            remove() shouldBeEqualTo null
         }
     }
 
@@ -58,13 +58,13 @@ class CombineTest {
         Queue<Int>().apply {
             add(1)
             add(2)
-            peek() shouldEqual 1
-            peek() shouldEqual 1
-            remove() shouldEqual 1
-            peek() shouldEqual 2
-            remove() shouldEqual 2
-            peek() shouldEqual null
-            remove() shouldEqual null
+            peek() shouldBeEqualTo 1
+            peek() shouldBeEqualTo 1
+            remove() shouldBeEqualTo 1
+            peek() shouldBeEqualTo 2
+            remove() shouldBeEqualTo 2
+            peek() shouldBeEqualTo null
+            remove() shouldBeEqualTo null
         }
     }
 
@@ -85,15 +85,15 @@ class CombineTest {
         }
 
         combine(one, two).also {
-            it.remove() shouldEqual 1
-            it.remove() shouldEqual "one"
-            it.remove() shouldEqual 2
-            it.remove() shouldEqual "two"
-            it.remove() shouldEqual 3
-            it.remove() shouldEqual "three"
-            it.remove() shouldEqual 4
-            it.remove() shouldEqual "four"
-            it.remove() shouldEqual null
+            it.remove() shouldBeEqualTo 1
+            it.remove() shouldBeEqualTo "one"
+            it.remove() shouldBeEqualTo 2
+            it.remove() shouldBeEqualTo "two"
+            it.remove() shouldBeEqualTo 3
+            it.remove() shouldBeEqualTo "three"
+            it.remove() shouldBeEqualTo 4
+            it.remove() shouldBeEqualTo "four"
+            it.remove() shouldBeEqualTo null
         }
     }
 
@@ -116,17 +116,17 @@ class CombineTest {
         }
 
         combine(one, two).apply {
-            remove() shouldEqual 1
-            remove() shouldEqual "one"
-            remove() shouldEqual 2
-            remove() shouldEqual "two"
-            remove() shouldEqual 3
-            remove() shouldEqual "three"
-            remove() shouldEqual 4
-            remove() shouldEqual "four"
-            remove() shouldEqual 5
-            remove() shouldEqual 6
-            remove() shouldEqual null
+            remove() shouldBeEqualTo 1
+            remove() shouldBeEqualTo "one"
+            remove() shouldBeEqualTo 2
+            remove() shouldBeEqualTo "two"
+            remove() shouldBeEqualTo 3
+            remove() shouldBeEqualTo "three"
+            remove() shouldBeEqualTo 4
+            remove() shouldBeEqualTo "four"
+            remove() shouldBeEqualTo 5
+            remove() shouldBeEqualTo 6
+            remove() shouldBeEqualTo null
         }
     }
 
@@ -149,17 +149,17 @@ class CombineTest {
         }
 
         combine(one, two).apply {
-            remove() shouldEqual 1
-            remove() shouldEqual "one"
-            remove() shouldEqual 2
-            remove() shouldEqual "two"
-            remove() shouldEqual 3
-            remove() shouldEqual "three"
-            remove() shouldEqual 4
-            remove() shouldEqual "four"
-            remove() shouldEqual "five"
-            remove() shouldEqual "six"
-            remove() shouldEqual null
+            remove() shouldBeEqualTo 1
+            remove() shouldBeEqualTo "one"
+            remove() shouldBeEqualTo 2
+            remove() shouldBeEqualTo "two"
+            remove() shouldBeEqualTo 3
+            remove() shouldBeEqualTo "three"
+            remove() shouldBeEqualTo 4
+            remove() shouldBeEqualTo "four"
+            remove() shouldBeEqualTo "five"
+            remove() shouldBeEqualTo "six"
+            remove() shouldBeEqualTo null
         }
     }
 }

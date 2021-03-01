@@ -1,6 +1,6 @@
 package com.igorwojda.tree.classic.traversal
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private class BinarySearchTree<E : Comparable<E>> {
@@ -123,37 +123,107 @@ private class Queue<E> {
 class TreeTest {
     @Test
     fun `traverse breath first`() {
-        getTree().traverseBreathFirst() shouldEqual listOf('F', 'B', 'G', 'A', 'D', 'I', 'C', 'E', 'H')
+        getTree().traverseBreathFirst() shouldBeEqualTo listOf(
+            'F',
+            'B',
+            'G',
+            'A',
+            'D',
+            'I',
+            'C',
+            'E',
+            'H'
+        )
     }
 
     @Test
     fun `traverse depth first pre order`() {
-        getTree().traverseDepthFirstPreOrder() shouldEqual listOf('F', 'B', 'A', 'D', 'C', 'E', 'G', 'I', 'H')
+        getTree().traverseDepthFirstPreOrder() shouldBeEqualTo listOf(
+            'F',
+            'B',
+            'A',
+            'D',
+            'C',
+            'E',
+            'G',
+            'I',
+            'H'
+        )
     }
 
     @Test
     fun `traverse depth first in order`() {
-        getTree().traverseDepthFirstInOrder() shouldEqual listOf('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I')
+        getTree().traverseDepthFirstInOrder() shouldBeEqualTo listOf(
+            'A',
+            'B',
+            'C',
+            'D',
+            'E',
+            'F',
+            'G',
+            'H',
+            'I'
+        )
     }
 
     @Test
     fun `traverse depth first post order`() {
-        getTree().traverseDepthFirstPostOrder() shouldEqual listOf('A', 'C', 'E', 'D', 'B', 'H', 'I', 'G', 'F')
+        getTree().traverseDepthFirstPostOrder() shouldBeEqualTo listOf(
+            'A',
+            'C',
+            'E',
+            'D',
+            'B',
+            'H',
+            'I',
+            'G',
+            'F'
+        )
     }
 
     @Test
     fun `traverse depth first pre order reversed`() {
-        getTree().traverseDepthFirstPreOrderReversed() shouldEqual listOf('F', 'G', 'I', 'H', 'B', 'D', 'E', 'C', 'A')
+        getTree().traverseDepthFirstPreOrderReversed() shouldBeEqualTo listOf(
+            'F',
+            'G',
+            'I',
+            'H',
+            'B',
+            'D',
+            'E',
+            'C',
+            'A'
+        )
     }
 
     @Test
     fun `traverse depth first in order reversed`() {
-        getTree().traverseDepthFirstInOrderReversed() shouldEqual listOf('I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A')
+        getTree().traverseDepthFirstInOrderReversed() shouldBeEqualTo listOf(
+            'I',
+            'H',
+            'G',
+            'F',
+            'E',
+            'D',
+            'C',
+            'B',
+            'A'
+        )
     }
 
     @Test
     fun `traverse depth first post order reverse`() {
-        getTree().traverseDepthFirstPostOrderReverse() shouldEqual listOf('H', 'I', 'G', 'E', 'C', 'D', 'A', 'B', 'F')
+        getTree().traverseDepthFirstPostOrderReverse() shouldBeEqualTo listOf(
+            'H',
+            'I',
+            'G',
+            'E',
+            'C',
+            'D',
+            'A',
+            'B',
+            'F'
+        )
     }
 
     // ---------Tree------------

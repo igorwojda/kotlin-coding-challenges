@@ -1,6 +1,6 @@
 package com.igorwojda.binarytree.insert
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private data class Node<E : Comparable<E>>(
@@ -35,9 +35,9 @@ class BinarySearchTreeTest {
         node.insert(15)
         node.insert(17)
 
-        node.left?.data shouldEqual 5
-        node.right?.data shouldEqual 15
-        node.right?.right?.data shouldEqual 17
+        node.left?.data shouldBeEqualTo 5
+        node.right?.data shouldBeEqualTo 15
+        node.right?.right?.data shouldBeEqualTo 17
     }
 
     @Test
@@ -61,7 +61,7 @@ class BinarySearchTreeTest {
         node.insert(-5)
         node.insert(3)
 
-        node.contains(3) shouldEqual true
+        node.contains(3) shouldBeEqualTo true
     }
 
     @Test
@@ -85,6 +85,6 @@ class BinarySearchTreeTest {
         node.insert(-5)
         node.insert(3)
 
-        node.contains(9999) shouldEqual false
+        node.contains(9999) shouldBeEqualTo false
     }
 }

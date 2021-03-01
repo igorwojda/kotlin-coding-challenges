@@ -313,11 +313,11 @@ list2.insertLast(4)
 list2.insertLast(5)
 
 
-list.size shouldEqual 5
-list.getAt(0)?.data shouldEqual 1
-list.getAt(1)?.data shouldEqual 2
-list.getAt(2)?.data shouldEqual 3
-list.getAt(3)?.data shouldEqual 4
-list.getAt(4)?.data shouldEqual 5
+list.size shouldBeEqualTo 5
+list.getAt(0)?.data shouldBeEqualTo 1
+list.getAt(1)?.data shouldBeEqualTo 2
+list.getAt(2)?.data shouldBeEqualTo 3
+list.getAt(3)?.data shouldBeEqualTo 4
+list.getAt(4)?.data shouldBeEqualTo 5
 ```
 

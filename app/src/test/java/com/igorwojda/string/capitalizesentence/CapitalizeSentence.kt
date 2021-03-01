@@ -1,6 +1,6 @@
 package com.igorwojda.string.capitalizesentence
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun capitalizeSentence(str: String): String {
@@ -10,11 +10,11 @@ private fun capitalizeSentence(str: String): String {
 class CapitalizeSentenceTest {
     @Test
     fun `"flower" is capitalized to "Flower"`() {
-        capitalizeSentence("flower") shouldEqual "Flower"
+        capitalizeSentence("flower") shouldBeEqualTo "Flower"
     }
 
     @Test
     fun `"this is a house" is capitalised to "This Is A House"`() {
-        capitalizeSentence("this is a house") shouldEqual "This Is A House"
+        capitalizeSentence("this is a house") shouldBeEqualTo "This Is A House"
     }
 }

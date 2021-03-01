@@ -3,7 +3,7 @@ package com.igorwojda.linkedlist.singly.midpoint
 import com.igorwojda.linkedlist.singly.base.Solution
 import com.igorwojda.linkedlist.singly.base.Solution.Node
 import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun midpoint(list: Solution.SinglyLinkedList<Char>): Node<Char>? {
@@ -14,7 +14,7 @@ class MidpointTest {
     @Test
     fun `midpoint of list with 0 elements`() {
         SinglyLinkedList<Char>().apply {
-            midpoint(this)?.data shouldEqual null
+            midpoint(this)?.data shouldBeEqualTo null
         }
     }
 
@@ -25,7 +25,7 @@ class MidpointTest {
             insertLast('b')
             insertLast('c')
 
-            midpoint(this)?.data shouldEqual 'b'
+            midpoint(this)?.data shouldBeEqualTo 'b'
         }
     }
 
@@ -38,7 +38,7 @@ class MidpointTest {
             insertLast('d')
             insertLast('e')
 
-            midpoint(this)?.data shouldEqual 'c'
+            midpoint(this)?.data shouldBeEqualTo 'c'
         }
     }
 
@@ -48,7 +48,7 @@ class MidpointTest {
             insertLast('a')
             insertLast('b')
 
-            midpoint(this)?.data shouldEqual 'a'
+            midpoint(this)?.data shouldBeEqualTo 'a'
         }
     }
 
@@ -60,7 +60,7 @@ class MidpointTest {
             insertLast('c')
             insertLast('d')
 
-            midpoint(this)?.data shouldEqual 'b'
+            midpoint(this)?.data shouldBeEqualTo 'b'
         }
     }
 }

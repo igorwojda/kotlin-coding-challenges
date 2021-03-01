@@ -1,6 +1,6 @@
 package com.igorwojda.queue.basic
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private class Queue<E> {
@@ -28,7 +28,7 @@ class QueueTest {
 
     @Test
     fun `can remove elements from empty queue`() {
-        Queue<Int>().apply { remove() shouldEqual null }
+        Queue<Int>().apply { remove() shouldBeEqualTo null }
     }
 
     @Test
@@ -45,10 +45,10 @@ class QueueTest {
             add('A')
             add('B')
             add('C')
-            remove() shouldEqual 'A'
-            remove() shouldEqual 'B'
-            remove() shouldEqual 'C'
-            remove() shouldEqual null
+            remove() shouldBeEqualTo 'A'
+            remove() shouldBeEqualTo 'B'
+            remove() shouldBeEqualTo 'C'
+            remove() shouldBeEqualTo null
         }
     }
 
@@ -57,51 +57,51 @@ class QueueTest {
         Queue<Int>().apply {
             add(1)
             add(2)
-            peek() shouldEqual 1
-            peek() shouldEqual 1
-            remove() shouldEqual 1
-            peek() shouldEqual 2
-            remove() shouldEqual 2
-            peek() shouldEqual null
-            remove() shouldEqual null
+            peek() shouldBeEqualTo 1
+            peek() shouldBeEqualTo 1
+            remove() shouldBeEqualTo 1
+            peek() shouldBeEqualTo 2
+            remove() shouldBeEqualTo 2
+            peek() shouldBeEqualTo null
+            remove() shouldBeEqualTo null
         }
     }
 
     @Test
     fun `isEmpty returns true`() {
-        Queue<Int>().isEmpty() shouldEqual true
+        Queue<Int>().isEmpty() shouldBeEqualTo true
     }
 
     @Test
     fun `isEmpty returns false`() {
         Queue<Int>().apply {
             add(1)
-            isEmpty() shouldEqual false
+            isEmpty() shouldBeEqualTo false
         }
     }
 
     @Test
     fun `queue has correct size`() {
         Queue<Char>().apply {
-            size shouldEqual 0
+            size shouldBeEqualTo 0
 
             add('A')
-            size shouldEqual 1
+            size shouldBeEqualTo 1
 
             add('B')
-            size shouldEqual 2
+            size shouldBeEqualTo 2
 
             add('C')
-            size shouldEqual 3
+            size shouldBeEqualTo 3
 
             remove()
-            size shouldEqual 2
+            size shouldBeEqualTo 2
 
             remove()
-            size shouldEqual 1
+            size shouldBeEqualTo 1
 
             remove()
-            size shouldEqual 0
+            size shouldBeEqualTo 0
         }
     }
 }

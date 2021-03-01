@@ -28,8 +28,8 @@ l.insertLast('c')
 l.insertLast('d')
 l.insertLast('e')
 
-fromLast(l, 0)?.data shouldEqual 'e'
-fromLast(l, 3)?.data shouldEqual 'b'
+fromLast(l, 0)?.data shouldBeEqualTo 'e'
+fromLast(l, 3)?.data shouldBeEqualTo 'b'
 ```
 
 ## Hints

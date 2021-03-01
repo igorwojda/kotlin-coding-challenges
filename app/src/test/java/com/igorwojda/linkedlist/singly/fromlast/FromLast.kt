@@ -2,7 +2,7 @@ package com.igorwojda.linkedlist.singly.fromlast
 
 import com.igorwojda.linkedlist.singly.base.Solution.Node
 import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun fromLast(list: SinglyLinkedList<Char>, endIndex: Int): Node<Char>? {
@@ -16,7 +16,7 @@ class FromLastTest {
             insertLast('a')
             insertLast('b')
 
-            fromLast(this, 0)?.data shouldEqual 'b'
+            fromLast(this, 0)?.data shouldBeEqualTo 'b'
         }
     }
 
@@ -26,7 +26,7 @@ class FromLastTest {
             insertLast('a')
             insertLast('b')
 
-            fromLast(this, 1)?.data shouldEqual 'a'
+            fromLast(this, 1)?.data shouldBeEqualTo 'a'
         }
     }
 
@@ -39,7 +39,7 @@ class FromLastTest {
             insertLast('d')
             insertLast('e')
 
-            fromLast(this, 3)?.data shouldEqual 'b'
+            fromLast(this, 3)?.data shouldBeEqualTo 'b'
         }
     }
 }

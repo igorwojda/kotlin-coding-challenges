@@ -14,7 +14,7 @@ class DoublyLinkedListTest {
 //    @Test
 //    fun `when list is created head node is null`() {
 //        DoublyLinkedList<Int>().apply {
-//            head shouldEqual null
+//            head shouldBeEqualTo null
 //        }
 //    }
 //
@@ -22,24 +22,24 @@ class DoublyLinkedListTest {
 //    fun `append a node to the start of the list`() {
 //        DoublyLinkedList<Int>().apply {
 //            insertFirst(1)
-//            head?.data shouldEqual 1
-//            head?.next shouldEqual null
+//            head?.data shouldBeEqualTo 1
+//            head?.next shouldBeEqualTo null
 //            insertFirst(2)
-//            head?.data shouldEqual 2
-//            head?.next?.prev shouldEqual head
-//            head?.next?.data shouldEqual 1
+//            head?.data shouldBeEqualTo 2
+//            head?.next?.prev shouldBeEqualTo head
+//            head?.next?.data shouldBeEqualTo 1
 //        }
 //    }
 //
 //    @Test
 //    fun `return the number of items in the linked list`() {
 //        DoublyLinkedList<Int>().apply {
-//            size shouldEqual 0
+//            size shouldBeEqualTo 0
 //            insertFirst(1)
 //            insertFirst(1)
 //            insertFirst(1)
 //            insertFirst(1)
-//            size shouldEqual 4
+//            size shouldBeEqualTo 4
 //        }
 //    }
 //
@@ -47,9 +47,9 @@ class DoublyLinkedListTest {
 //    fun `return the first element`() {
 //        DoublyLinkedList<Int>().apply {
 //            insertFirst(1)
-//            first?.data shouldEqual 1
+//            first?.data shouldBeEqualTo 1
 //            insertFirst(2)
-//            first?.data shouldEqual 2
+//            first?.data shouldBeEqualTo 2
 //        }
 //    }
 //
@@ -57,25 +57,25 @@ class DoublyLinkedListTest {
 //    fun `return the last element`() {
 //        DoublyLinkedList<Int>().apply {
 //            insertFirst(2)
-//            last?.data shouldEqual 2
-//            last?.next shouldEqual null
+//            last?.data shouldBeEqualTo 2
+//            last?.next shouldBeEqualTo null
 //            insertFirst(1)
-//            last?.data shouldEqual 2
-//            last?.next shouldEqual null
+//            last?.data shouldBeEqualTo 2
+//            last?.next shouldBeEqualTo null
 //        }
 //    }
 //
 //    @Test
 //    fun `empty the list`() {
 //        DoublyLinkedList<Int>().apply {
-//            size shouldEqual 0
+//            size shouldBeEqualTo 0
 //            insertFirst(1)
 //            insertFirst(1)
 //            insertFirst(1)
 //            insertFirst(1)
-//            size shouldEqual 4
+//            size shouldBeEqualTo 4
 //            clear()
-//            size shouldEqual 0
+//            size shouldBeEqualTo 0
 //        }
 //    }
 //
@@ -84,8 +84,8 @@ class DoublyLinkedListTest {
 //        DoublyLinkedList<String>().apply {
 //            insertFirst("a")
 //            removeFirst()
-//            size shouldEqual 0
-//            first shouldEqual null
+//            size shouldBeEqualTo 0
+//            first shouldBeEqualTo null
 //        }
 //    }
 //
@@ -96,13 +96,13 @@ class DoublyLinkedListTest {
 //            insertFirst("b")
 //            insertFirst("a")
 //            removeFirst()
-//            size shouldEqual 2
-//            first?.data shouldEqual "b"
-//            first?.prev shouldEqual null
+//            size shouldBeEqualTo 2
+//            first?.data shouldBeEqualTo "b"
+//            first?.prev shouldBeEqualTo null
 //            removeFirst()
-//            size shouldEqual 1
-//            first?.data shouldEqual "c"
-//            first?.prev shouldEqual null
+//            size shouldBeEqualTo 1
+//            first?.data shouldBeEqualTo "c"
+//            first?.prev shouldBeEqualTo null
 //        }
 //    }
 //
@@ -118,7 +118,7 @@ class DoublyLinkedListTest {
 //        DoublyLinkedList<String>().apply {
 //            insertFirst("a")
 //            removeLast()
-//            head shouldEqual null
+//            head shouldBeEqualTo null
 //        }
 //    }
 //
@@ -128,9 +128,9 @@ class DoublyLinkedListTest {
 //            insertFirst("b")
 //            insertFirst("a")
 //            removeLast()
-//            size shouldEqual 1
-//            head?.data shouldEqual "a"
-//            last?.next shouldEqual null
+//            size shouldBeEqualTo 1
+//            head?.data shouldBeEqualTo "a"
+//            last?.next shouldBeEqualTo null
 //        }
 //    }
 //
@@ -141,9 +141,9 @@ class DoublyLinkedListTest {
 //            insertFirst("b")
 //            insertFirst("a")
 //            removeLast()
-//            size shouldEqual 2
-//            last?.data shouldEqual "b"
-//            last?.next shouldEqual null
+//            size shouldBeEqualTo 2
+//            last?.data shouldBeEqualTo "b"
+//            last?.next shouldBeEqualTo null
 //        }
 //    }
 //
@@ -151,32 +151,32 @@ class DoublyLinkedListTest {
 //    fun `add to the end of the list`() {
 //        DoublyLinkedList<String>().apply {
 //            insertLast("a")
-//            size shouldEqual 1
-//            head?.data shouldEqual "a"
+//            size shouldBeEqualTo 1
+//            head?.data shouldBeEqualTo "a"
 //
 //            insertLast("b")
-//            size shouldEqual 2
-//            last?.data shouldEqual "b"
-//            last?.prev?.data shouldEqual "a"
-//            head?.data shouldEqual "a"
+//            size shouldBeEqualTo 2
+//            last?.data shouldBeEqualTo "b"
+//            last?.prev?.data shouldBeEqualTo "a"
+//            head?.data shouldBeEqualTo "a"
 //        }
 //    }
 //
 //    @Test
 //    fun `return the node at given index`() {
 //        DoublyLinkedList<Char>().apply {
-//            getAt(10) shouldEqual null
+//            getAt(10) shouldBeEqualTo null
 //
 //            insertLast('A')
 //            insertLast('B')
 //            insertLast('C')
 //            insertLast('D')
 //
-//            getAt(0)?.data shouldEqual 'A'
-//            getAt(1)?.data shouldEqual 'B'
-//            getAt(2)?.data shouldEqual 'C'
-//            getAt(3)?.data shouldEqual 'D'
-//            getAt(4)?.data shouldEqual null
+//            getAt(0)?.data shouldBeEqualTo 'A'
+//            getAt(1)?.data shouldBeEqualTo 'B'
+//            getAt(2)?.data shouldBeEqualTo 'C'
+//            getAt(3)?.data shouldBeEqualTo 'D'
+//            getAt(4)?.data shouldBeEqualTo null
 //        }
 //    }
 //
@@ -187,9 +187,9 @@ class DoublyLinkedListTest {
 //            insertLast("b")
 //            insertLast("c")
 //            setAt("new", 0)
-//            getAt(0)?.data shouldEqual "new"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "c"
+//            getAt(0)?.data shouldBeEqualTo "new"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "c"
 //        }
 //    }
 //
@@ -200,9 +200,9 @@ class DoublyLinkedListTest {
 //            insertLast("b")
 //            insertLast("c")
 //            setAt("new", 1)
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "new"
-//            getAt(2)?.data shouldEqual "c"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "new"
+//            getAt(2)?.data shouldBeEqualTo "c"
 //        }
 //    }
 //
@@ -213,9 +213,9 @@ class DoublyLinkedListTest {
 //            insertLast("b")
 //            insertLast("c")
 //            setAt("new", 2)
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "new"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "new"
 //        }
 //    }
 //
@@ -226,9 +226,9 @@ class DoublyLinkedListTest {
 //            insertLast("b")
 //            insertLast("c")
 //            setAt("new", 3)
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "c"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "c"
 //        }
 //    }
 //
@@ -256,12 +256,12 @@ class DoublyLinkedListTest {
 //            insertLast(2)
 //            insertLast(3)
 //            insertLast(4)
-//            getAt(0)?.data shouldEqual 1
+//            getAt(0)?.data shouldBeEqualTo 1
 //            removeAt(0)
-//            getAt(0)?.data shouldEqual 2
-//            getAt(0)?.prev shouldEqual null
-//            getAt(0)?.next?.data shouldEqual 3
-//            getAt(1)?.data shouldEqual 3
+//            getAt(0)?.data shouldBeEqualTo 2
+//            getAt(0)?.prev shouldBeEqualTo null
+//            getAt(0)?.next?.data shouldBeEqualTo 3
+//            getAt(1)?.data shouldBeEqualTo 3
 //        }
 //    }
 //
@@ -272,15 +272,15 @@ class DoublyLinkedListTest {
 //            insertLast(2)
 //            insertLast(3)
 //            insertLast(4)
-//            getAt(1)?.data shouldEqual 2
+//            getAt(1)?.data shouldBeEqualTo 2
 //            removeAt(1)
-//            getAt(0)?.data shouldEqual 1
-//            getAt(0)?.next?.data shouldEqual 3
-//            getAt(1)?.data shouldEqual 3
-//            getAt(1)?.prev?.data shouldEqual 1
-//            getAt(1)?.next?.data shouldEqual 4
-//            getAt(2)?.data shouldEqual 4
-//            getAt(2)?.prev?.data shouldEqual 3
+//            getAt(0)?.data shouldBeEqualTo 1
+//            getAt(0)?.next?.data shouldBeEqualTo 3
+//            getAt(1)?.data shouldBeEqualTo 3
+//            getAt(1)?.prev?.data shouldBeEqualTo 1
+//            getAt(1)?.next?.data shouldBeEqualTo 4
+//            getAt(2)?.data shouldBeEqualTo 4
+//            getAt(2)?.prev?.data shouldBeEqualTo 3
 //
 //        }
 //    }
@@ -292,14 +292,14 @@ class DoublyLinkedListTest {
 //            insertLast(2)
 //            insertLast(3)
 //            insertLast(4)
-//            getAt(3)?.data shouldEqual 4
+//            getAt(3)?.data shouldBeEqualTo 4
 //            removeAt(3)
-//            getAt(1)?.data shouldEqual 2
-//            getAt(1)?.next?.data shouldEqual 3
-//            getAt(2)?.data shouldEqual 3
-//            getAt(2)?.next shouldEqual null
-//            getAt(2)?.prev?.data shouldEqual 2
-//            getAt(3) shouldEqual null
+//            getAt(1)?.data shouldBeEqualTo 2
+//            getAt(1)?.next?.data shouldBeEqualTo 3
+//            getAt(2)?.data shouldBeEqualTo 3
+//            getAt(2)?.next shouldBeEqualTo null
+//            getAt(2)?.prev?.data shouldBeEqualTo 2
+//            getAt(3) shouldBeEqualTo null
 //        }
 //    }
 //
@@ -307,9 +307,9 @@ class DoublyLinkedListTest {
 //    fun `insert a new node with data at index 0 when the list is empty`() {
 //        DoublyLinkedList<String>().apply {
 //            insertAt("hi", 0)
-//            first?.data shouldEqual "hi"
-//            first?.prev shouldEqual null
-//            first?.next shouldEqual null
+//            first?.data shouldBeEqualTo "hi"
+//            first?.prev shouldBeEqualTo null
+//            first?.next shouldBeEqualTo null
 //        }
 //    }
 //
@@ -320,13 +320,13 @@ class DoublyLinkedListTest {
 //            insertLast("b")
 //            insertLast("c")
 //            insertAt("hi", 0)
-//            getAt(0)?.data shouldEqual "hi"
-//            getAt(0)?.prev shouldEqual null
-//            getAt(0)?.next?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "a"
-//            getAt(1)?.prev?.data shouldEqual "hi"
-//            getAt(2)?.data shouldEqual "b"
-//            getAt(3)?.data shouldEqual "c"
+//            getAt(0)?.data shouldBeEqualTo "hi"
+//            getAt(0)?.prev shouldBeEqualTo null
+//            getAt(0)?.next?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "a"
+//            getAt(1)?.prev?.data shouldBeEqualTo "hi"
+//            getAt(2)?.data shouldBeEqualTo "b"
+//            getAt(3)?.data shouldBeEqualTo "c"
 //        }
 //    }
 //
@@ -338,15 +338,15 @@ class DoublyLinkedListTest {
 //            insertLast("c")
 //            insertLast("d")
 //            insertAt("hi", 2)
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(1)?.next?.data shouldEqual "hi"
-//            getAt(2)?.prev?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "hi"
-//            getAt(2)?.next?.data shouldEqual "c"
-//            getAt(3)?.prev?.data shouldEqual "hi"
-//            getAt(3)?.data shouldEqual "c"
-//            getAt(4)?.data shouldEqual "d"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(1)?.next?.data shouldBeEqualTo "hi"
+//            getAt(2)?.prev?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "hi"
+//            getAt(2)?.next?.data shouldBeEqualTo "c"
+//            getAt(3)?.prev?.data shouldBeEqualTo "hi"
+//            getAt(3)?.data shouldBeEqualTo "c"
+//            getAt(4)?.data shouldBeEqualTo "d"
 //        }
 //    }
 //
@@ -356,12 +356,12 @@ class DoublyLinkedListTest {
 //            insertLast("a")
 //            insertLast("b")
 //            insertAt("hi", 2)
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(1)?.next?.data shouldEqual "hi"
-//            getAt(2)?.prev?.data shouldEqual "b"
-//            getAt(2)?.data shouldEqual "hi"
-//            getAt(2)?.next?.data shouldEqual null
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(1)?.next?.data shouldBeEqualTo "hi"
+//            getAt(2)?.prev?.data shouldBeEqualTo "b"
+//            getAt(2)?.data shouldBeEqualTo "hi"
+//            getAt(2)?.next?.data shouldBeEqualTo null
 //        }
 //    }
 //
@@ -372,11 +372,11 @@ class DoublyLinkedListTest {
 //            insertLast("b")
 //            insertAt("hi", 30)
 //
-//            getAt(0)?.data shouldEqual "a"
-//            getAt(1)?.data shouldEqual "b"
-//            getAt(1)?.next?.data shouldEqual "hi"
-//            getAt(2)?.data shouldEqual "hi"
-//            getAt(2)?.prev?.data shouldEqual "b"
+//            getAt(0)?.data shouldBeEqualTo "a"
+//            getAt(1)?.data shouldBeEqualTo "b"
+//            getAt(1)?.next?.data shouldBeEqualTo "hi"
+//            getAt(2)?.data shouldBeEqualTo "hi"
+//            getAt(2)?.prev?.data shouldBeEqualTo "b"
 //        }
 //    }
 //
@@ -388,7 +388,7 @@ class DoublyLinkedListTest {
 //            insertLast(3)
 //            insertLast(4)
 //
-//            sumBy { it.data } shouldEqual 10
+//            sumBy { it.data } shouldBeEqualTo 10
 //        }
 //    }
 //
@@ -398,7 +398,7 @@ class DoublyLinkedListTest {
 //        val l2 = DoublyLinkedList<Int>()
 //        val result = l1 + l2
 //
-//        result.size shouldEqual 0
+//        result.size shouldBeEqualTo 0
 //    }
 //
 //    @Test
@@ -417,14 +417,14 @@ class DoublyLinkedListTest {
 //        val result = l1 + l2
 //
 //        result.apply {
-//            size shouldEqual 7
-//            getAt(0)?.data shouldEqual 1
-//            getAt(1)?.data shouldEqual 2
-//            getAt(2)?.data shouldEqual 3
-//            getAt(3)?.data shouldEqual 4
-//            getAt(4)?.data shouldEqual 5
-//            getAt(5)?.data shouldEqual 6
-//            getAt(6)?.data shouldEqual 7
+//            size shouldBeEqualTo 7
+//            getAt(0)?.data shouldBeEqualTo 1
+//            getAt(1)?.data shouldBeEqualTo 2
+//            getAt(2)?.data shouldBeEqualTo 3
+//            getAt(3)?.data shouldBeEqualTo 4
+//            getAt(4)?.data shouldBeEqualTo 5
+//            getAt(5)?.data shouldBeEqualTo 6
+//            getAt(6)?.data shouldBeEqualTo 7
 //        }
 //    }
 }

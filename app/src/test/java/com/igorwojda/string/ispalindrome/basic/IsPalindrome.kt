@@ -1,6 +1,6 @@
 package com.igorwojda.string.ispalindrome.basic
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun isPalindrome(str: String): Boolean {
@@ -11,36 +11,36 @@ class IsPalindromeTest {
 
     @Test
     fun `"aba" is a palindrome`() {
-        isPalindrome("aba") shouldEqual true
+        isPalindrome("aba") shouldBeEqualTo true
     }
 
     @Test
     fun `" aba" is not a palindrome`() {
-        isPalindrome(" aba") shouldEqual false
+        isPalindrome(" aba") shouldBeEqualTo false
     }
 
     @Test
     fun `"aba " is not a palindrome`() {
-        isPalindrome("aba ") shouldEqual false
+        isPalindrome("aba ") shouldBeEqualTo false
     }
 
     @Test
     fun `"greetings" is not a palindrome`() {
-        isPalindrome("greetings") shouldEqual false
+        isPalindrome("greetings") shouldBeEqualTo false
     }
 
     @Test
     fun `"1000000001" a palindrome`() {
-        isPalindrome("1000000001") shouldEqual true
+        isPalindrome("1000000001") shouldBeEqualTo true
     }
 
     @Test
     fun `"Fish hsif" is not a palindrome`() {
-        isPalindrome("Fish hsif") shouldEqual false
+        isPalindrome("Fish hsif") shouldBeEqualTo false
     }
 
     @Test
     fun `"pennep" a palindrome`() {
-        isPalindrome("pennep") shouldEqual true
+        isPalindrome("pennep") shouldBeEqualTo true
     }
 }

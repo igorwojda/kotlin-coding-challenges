@@ -1,6 +1,6 @@
 package com.igorwojda.integer.generateallpairs
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private fun getAllPairs(n: Int): List<Pair<Int, Int>> {
@@ -10,12 +10,12 @@ private fun getAllPairs(n: Int): List<Pair<Int, Int>> {
 class GetAllPairsTest {
     @Test
     fun `get all pairs 0`() {
-        getAllPairs(0) shouldEqual listOf(0 to 0)
+        getAllPairs(0) shouldBeEqualTo listOf(0 to 0)
     }
 
     @Test
     fun `get all pairs 1`() {
-        getAllPairs(1) shouldEqual listOf(
+        getAllPairs(1) shouldBeEqualTo listOf(
             0 to 0,
             0 to 1,
             1 to 0,
@@ -25,7 +25,7 @@ class GetAllPairsTest {
 
     @Test
     fun `get all pairs 2`() {
-        getAllPairs(2) shouldEqual listOf(
+        getAllPairs(2) shouldBeEqualTo listOf(
             0 to 0,
             0 to 1,
             0 to 2,

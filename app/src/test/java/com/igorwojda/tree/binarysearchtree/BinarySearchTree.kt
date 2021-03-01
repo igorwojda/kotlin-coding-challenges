@@ -1,6 +1,6 @@
 package com.igorwojda.tree.binarysearchtree
 
-import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
 private class BinarySearchTree<E : Comparable<E>> {
@@ -48,21 +48,21 @@ class BinarySearchTreeTest {
             add(1)
             add(9)
 
-            root?.data shouldEqual 6
-            root?.left?.data shouldEqual 3
-            root?.left?.left?.data shouldEqual 1
-            root?.left?.left?.left shouldEqual null
-            root?.left?.left?.right shouldEqual null
-            root?.left?.right?.data shouldEqual 5
-            root?.left?.right?.left shouldEqual null
-            root?.left?.right?.right shouldEqual null
-            root?.right?.data shouldEqual 8
-            root?.right?.left?.data shouldEqual 7
-            root?.right?.left?.left shouldEqual null
-            root?.right?.left?.right shouldEqual null
-            root?.right?.right?.data shouldEqual 9
-            root?.right?.right?.left shouldEqual null
-            root?.right?.right?.right shouldEqual null
+            root?.data shouldBeEqualTo 6
+            root?.left?.data shouldBeEqualTo 3
+            root?.left?.left?.data shouldBeEqualTo 1
+            root?.left?.left?.left shouldBeEqualTo null
+            root?.left?.left?.right shouldBeEqualTo null
+            root?.left?.right?.data shouldBeEqualTo 5
+            root?.left?.right?.left shouldBeEqualTo null
+            root?.left?.right?.right shouldBeEqualTo null
+            root?.right?.data shouldBeEqualTo 8
+            root?.right?.left?.data shouldBeEqualTo 7
+            root?.right?.left?.left shouldBeEqualTo null
+            root?.right?.left?.right shouldBeEqualTo null
+            root?.right?.right?.data shouldBeEqualTo 9
+            root?.right?.right?.left shouldBeEqualTo null
+            root?.right?.right?.right shouldBeEqualTo null
         }
     }
 
@@ -84,13 +84,13 @@ class BinarySearchTreeTest {
             add(3)
             add(8)
 
-            root?.data shouldEqual 6
-            root?.left?.data shouldEqual 3
-            root?.left?.left shouldEqual null
-            root?.left?.right shouldEqual null
-            root?.right?.data shouldEqual 8
-            root?.right?.left shouldEqual null
-            root?.right?.right shouldEqual null
+            root?.data shouldBeEqualTo 6
+            root?.left?.data shouldBeEqualTo 3
+            root?.left?.left shouldBeEqualTo null
+            root?.left?.right shouldBeEqualTo null
+            root?.right?.data shouldBeEqualTo 8
+            root?.right?.left shouldBeEqualTo null
+            root?.right?.right shouldBeEqualTo null
         }
     }
 
@@ -115,14 +115,14 @@ class BinarySearchTreeTest {
             add(1)
             add(9)
 
-            contains(6) shouldEqual true
-            contains(3) shouldEqual true
-            contains(8) shouldEqual true
-            contains(5) shouldEqual true
-            contains(7) shouldEqual true
-            contains(1) shouldEqual true
-            contains(9) shouldEqual true
-            contains(100) shouldEqual false
+            contains(6) shouldBeEqualTo true
+            contains(3) shouldBeEqualTo true
+            contains(8) shouldBeEqualTo true
+            contains(5) shouldBeEqualTo true
+            contains(7) shouldBeEqualTo true
+            contains(1) shouldBeEqualTo true
+            contains(9) shouldBeEqualTo true
+            contains(100) shouldBeEqualTo false
         }
     }
 }
