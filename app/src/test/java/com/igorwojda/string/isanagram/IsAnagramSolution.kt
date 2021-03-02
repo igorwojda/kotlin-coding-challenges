@@ -13,6 +13,18 @@ private object Solution2 {
         return getCharFrequency(str1) == getCharFrequency(str2)
     }
 
+    private fun getCharFrequency(str: String): Map<Char, List<Char>> {
+        return str.toLowerCase()
+            .filter { it.isLetterOrDigit() }
+            .groupBy { it }
+    }
+}
+
+private object Solution3 {
+    private fun isAnagram(str1: String, str2: String): Boolean {
+        return getCharFrequency(str1) == getCharFrequency(str2)
+    }
+
     private fun getCharFrequency(str: String): Map<Char, Int> {
         return str.toLowerCase()
             .filter { it.isLetterOrDigit() }
