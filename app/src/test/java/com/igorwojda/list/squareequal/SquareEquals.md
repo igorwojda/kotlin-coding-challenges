@@ -1,4 +1,4 @@
-# Square compare
+# Square equals
 
 ## Instructions
 
