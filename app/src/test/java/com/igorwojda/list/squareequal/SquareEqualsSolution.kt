@@ -8,8 +8,7 @@ private object Solution1 {
             return false
         }
 
-        val frequencyCounter1 = list.map { it * it }
-            .groupBy { it }
+        val frequencyCounter1 = list.map { it * it }.groupBy { it }
 
         val frequencyCounter2 = squared.groupBy { it }
 
@@ -19,8 +18,8 @@ private object Solution1 {
 
 private object Solution2 {
     // Time complexity: O(n^2)
-    // Loop through first list and look for value square in the second list. If square if found remove it from
-    // second list to make sure that item frequency match.
+    // Loop through first list and look for value square in the second list. If square if found
+    // remove it from second list to make sure that item frequency match.
     private fun squareEquals(list: List<Int>, squared: List<Int>): Boolean {
         val mutableList2 = squared.toMutableList()
 
