@@ -1,5 +1,7 @@
 package com.igorwojda.list.maxsublistsum
 
+import kotlin.math.max
+
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 // Use "sliding window" - store sum in single variable and with each iteration add (current item)
@@ -15,7 +17,7 @@ private object Solution1 {
 
         (n..list.lastIndex).forEach { index ->
             tempSum = tempSum - list[index - n] + list[index]
-            maxSum = Math.max(maxSum, tempSum)
+            maxSum = max(maxSum, tempSum)
         }
 
         return maxSum
@@ -65,7 +67,7 @@ private object Solution3 {
 
     private fun max(i1: Int?, i2: Int?): Int? {
         return when {
-            i1 != null && i2 != null -> Math.max(i1, i2)
+            i1 != null && i2 != null -> max(i1, i2)
             i1 != null && i2 == null -> i1
             i1 == null && i2 != null -> i2
             else -> null
@@ -79,6 +81,6 @@ private object Solution4 {
 
         return (0..list.size - n)
             .map { i -> list.subList(i, i + n).sum() }
-            .max()
+            .maxOrNull()
     }
 }

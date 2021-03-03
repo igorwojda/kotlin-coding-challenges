@@ -2,6 +2,7 @@ package com.igorwojda.list.maxsublistsum
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
+import kotlin.math.max
 
 private fun maxSubListSum(list: List<Int>, n: Int): Int? {
     TODO("not implemented")
@@ -9,7 +10,7 @@ private fun maxSubListSum(list: List<Int>, n: Int): Int? {
 
 private fun max(i1: Int?, i2: Int?): Int? {
     return when {
-        i1 != null && i2 != null -> Math.max(i1, i2)
+        i1 != null && i2 != null -> max(i1, i2)
         i1 != null && i2 == null -> i1
         i1 == null && i2 != null -> i2
         else -> null

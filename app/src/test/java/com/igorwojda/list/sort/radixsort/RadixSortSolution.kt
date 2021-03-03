@@ -48,7 +48,7 @@ private object Solution {
             else -> Math.log10(Math.abs(this.toDouble())).toInt() + 1
         }
 
-    private fun maxDigits(list: List<Int>) = list.map { it.digitCount }.max() ?: 0
+    private fun maxDigits(list: List<Int>) = list.map { it.digitCount }.maxOrNull() ?: 0
 }
 
 object KtLintWillNotComplain
