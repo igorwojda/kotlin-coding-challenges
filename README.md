@@ -187,7 +187,7 @@ follow this [guide](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Addin
 
 # Author
 
-[![Follow me](https://github.com/igorwojda/kotlin-coding-puzzle/raw/master/misc/image/avatar.png)](https://twitter.com/igorwojda)
+[![Follow me](https://github.com/igorwojda/kotlin-coding-puzzle/raw/main/misc/image/avatar.png)](https://twitter.com/igorwojda)
 
 [![Follow me](https://img.shields.io/twitter/follow/igorwojda?style=social)](https://twitter.com/igorwojda)
 
