@@ -10,6 +10,28 @@ private object Solution1 {
 // iterative, double pointer solution
 private object Solution2 {
     private fun isPalindrome(str: String): Boolean {
+        var leftIndex = 0
+        var rightIndex = str.lastIndex
+
+        while (leftIndex <= rightIndex) {
+            val leftValue = str[leftIndex]
+            val rightValue = str[rightIndex]
+
+            if (leftValue != rightValue) {
+                return false
+            }
+
+            leftIndex++
+            rightIndex--
+        }
+
+        return true
+    }
+}
+
+// iterative, double pointer solution
+private object Solution3 {
+    private fun isPalindrome(str: String): Boolean {
         str.forEachIndexed { index, char ->
             val rightIndex = str.lastIndex - index
 
@@ -25,7 +47,7 @@ private object Solution2 {
 }
 
 // recursive solution
-private object Solution3 {
+private object Solution4 {
     private fun isPalindrome(str: String): Boolean {
         return if (str.isEmpty() || str.length == 1) {
             true
