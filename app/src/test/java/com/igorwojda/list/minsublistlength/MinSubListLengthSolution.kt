@@ -4,20 +4,20 @@ package com.igorwojda.list.minsublistlength
 // Space complexity O(n)
 // Use sliding window
 private object Solution1 {
-    fun minSubListLength(list: List<Int>, sum: Int): Int {
+    fun minSubListLength(list: List<Int>, numElements: Int): Int {
         var total = 0
         var start = 0
         var end = 0
         var minLen: Int? = null
 
         while (start < list.size) {
-            // if current window doesn't add up to the given sum then move the window to right
-            if (total < sum && end < list.size) {
+            // if current window doesn't add up to the given numElements then move the window to right
+            if (total < numElements && end < list.size) {
                 total += list[end]
                 end++
             }
-            // if current window adds up to at least the sum given then we can shrink the window
-            else if (total >= sum) {
+            // if current window adds up to at least the numElements given then we can shrink the window
+            else if (total >= numElements) {
                 minLen = min(minLen, end - start)
                 total -= list[start]
                 start++
@@ -44,7 +44,7 @@ private object Solution1 {
 // Time complexity: O(n^2)
 // Loop through all the elements and then loop through all sublists
 private object Solution2 {
-    fun minSubListLength(list: List<Int>, sum: Int): Int {
+    fun minSubListLength(list: List<Int>, numElements: Int): Int {
         var minListLength: Int? = null
 
         repeat(list.size) { index ->
@@ -56,7 +56,7 @@ private object Solution2 {
                 subListSum += item
                 numItems++
 
-                if (subListSum >= sum) {
+                if (subListSum >= numElements) {
                     minListLength = min(minListLength, numItems)
                     break
                 }

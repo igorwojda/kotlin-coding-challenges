@@ -3,7 +3,7 @@ package com.igorwojda.list.minsublistlength
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 
-fun minSubListLength(list: List<Int>, sum: Int): Int {
+fun minSubListLength(list: List<Int>, numElements: Int): Int {
     TODO("not implemented")
 }
 
