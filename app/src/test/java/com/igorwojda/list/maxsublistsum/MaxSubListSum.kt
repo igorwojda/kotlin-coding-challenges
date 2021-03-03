@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Test
 import kotlin.math.max
 
-private fun maxSubListSum(list: List<Int>, n: Int): Int? {
+private fun maxSubListSum(list: List<Int>, numElements: Int): Int? {
     TODO("not implemented")
 }
 

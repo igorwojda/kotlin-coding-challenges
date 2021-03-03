@@ -7,16 +7,16 @@ import kotlin.math.max
 // Use "sliding window" - store sum in single variable and with each iteration add (current item)
 // and remove (first item before current sub-list)
 private object Solution1 {
-    private fun maxSubListSum(list: List<Int>, n: Int): Int? {
-        if (list.size < n) {
+    private fun maxSubListSum(list: List<Int>, numElements: Int): Int? {
+        if (list.size < numElements) {
             return null
         }
 
-        var maxSum = list.take(n).sum()
+        var maxSum = list.take(numElements).sum()
         var tempSum = maxSum
 
-        (n..list.lastIndex).forEach { index ->
-            tempSum = tempSum - list[index - n] + list[index]
+        (numElements..list.lastIndex).forEach { index ->
+            tempSum = tempSum - list[index - numElements] + list[index]
             maxSum = max(maxSum, tempSum)
         }
 
@@ -25,13 +25,13 @@ private object Solution1 {
 }
 
 private object Solution2 {
-    private fun maxSubListSum(list: List<Int>, n: Int): Int? {
-        if (list.size < n) {
+    private fun maxSubListSum(list: List<Int>, numElements: Int): Int? {
+        if (list.size < numElements) {
             return null
         }
 
         return list.foldIndexed(0 to 0) { i, (sum, max), next ->
-            (sum + next - (list.getOrNull(i - n) ?: 0)).let {
+            (sum + next - (list.getOrNull(i - numElements) ?: 0)).let {
                 it to if (it > max) it else max
             }
         }.second
@@ -41,17 +41,17 @@ private object Solution2 {
 // Time Complexity: O(n*m)
 // Loop through the list and at each index loop again to calculate sum of sublist (from index to index + n)
 private object Solution3 {
-    private fun maxSubListSum(list: List<Int>, n: Int): Int? {
-        if (list.size < n) {
+    private fun maxSubListSum(list: List<Int>, numElements: Int): Int? {
+        if (list.size < numElements) {
             return null
         }
 
         var maxSum: Int? = null
 
-        for (i in 0..list.size - n) {
+        for (i in 0..list.size - numElements) {
             var tempSum: Int? = null
 
-            for (j in i until (i + n)) {
+            for (j in i until (i + numElements)) {
                 if (tempSum == null) {
                     tempSum = list[j]
                 } else {
@@ -76,11 +76,11 @@ private object Solution3 {
 }
 
 private object Solution4 {
-    private fun maxSubListSum(list: List<Int>, n: Int): Int? {
+    private fun maxSubListSum(list: List<Int>, numElements: Int): Int? {
         if (list.isEmpty()) return null
 
-        return (0..list.size - n)
-            .map { i -> list.subList(i, i + n).sum() }
+        return (0..list.size - numElements)
+            .map { i -> list.subList(i, i + numElements).sum() }
             .maxOrNull()
     }
 }
