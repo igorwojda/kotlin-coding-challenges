@@ -139,6 +139,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Is anagram](../app/src/test/java/com/igorwojda/string/isanagram/IsAnagram.md)
 - [Is palindrome](../app/src/test/java/com/igorwojda/string/ispalindrome/basic/IsPalindrome.md)
 - [Is tolerant palindrome](../app/src/test/java/com/igorwojda/string/ispalindrome/tolerant/IsTolerantPalindrome.md)
+- [Is permutation palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/permutation/IsPermutationPalindrome.md)
 - [Is substring](../app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
 - [Longest word](../app/src/test/java/com/igorwojda/string/longestword/LongestWord.md)
 - [Max occurrent char](../app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md)

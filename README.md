@@ -58,6 +58,7 @@ your time before you take a look at the presented solution. **Good luck!**
 **Apprentice**
 - [Is palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/basic/IsPalindrome.md)
 - [Is tolerant palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/tolerant/IsTolerantPalindrome.md)
+- [Is permutation palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/permutation/IsPermutationPalindrome.md)
 - [Is anagram](app/src/test/java/com/igorwojda/string/isanagram/IsAnagram.md)
 - [Max occurring char](app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md)
 - [String reverse](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)

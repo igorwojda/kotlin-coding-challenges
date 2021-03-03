@@ -70,4 +70,4 @@ This section contains all puzzles in order in which they where added to reposito
 64. [Doubly linked list](../app/src/test/java/com/igorwojda/linkedlist/doubly/base/DoublyLinkedList.md)
 65. [Binary search tree](../app/src/test/java/com/igorwojda/tree/binarysearchtree/BinarySearchTree.md)
 66. [Max binary heap](../app/src/test/java/com/igorwojda/tree/heap/maxbinaryheap/MaxBinaryHeap.md)
-    
+67. [Is permutation palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/permutation/IsPermutationPalindrome.md)
