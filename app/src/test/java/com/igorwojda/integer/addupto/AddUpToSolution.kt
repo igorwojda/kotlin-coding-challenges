@@ -25,6 +25,7 @@ private object Solution3 {
     }
 }
 
+// Time Complexity: O(1)
 // Mathematical formula
 private object Solution4 {
     private fun addUpTo(n: Int): Int {
@@ -32,6 +33,7 @@ private object Solution4 {
     }
 }
 
+// Time Complexity: O(n)
 // Iterative solution
 private object Solution5 {
     private fun addUpTo(n: Int): Int {
