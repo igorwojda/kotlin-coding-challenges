@@ -9,22 +9,24 @@ you to become a better programmer and improve your chance of getting a new job b
 ## Puzzle structure
 
 Each puzzle is located in separate package and it contains 3 main files ([screen](./misc/image/SampleTask.png)):
-- `Puzzle.md` - the task description.
+- `desc.md` - the task description.
 - `Puzzle.kt` - an empty method/class where puzzle should be solved. This file also contains helper methods and a set of
   [JUnit](https://junit.org/junit4/) tests which verify that task was solved correctly.
-- `PuzzleSolution.kt` - a file containing one or more solutions.
+- `Solution.kt` - a file containing one or more solutions.
 
 Keep in mind that each puzzle will usually have more than one solution. Even simple puzzles like
-[String reversal](app/src/test/java/com/igorwojda/string/reverse/Reverse.md) can be solved in
+[String reversal](src/test/kotlin/com/igorwojda/string/reverse/Reverse.md) can be solved in
 [10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually, we compare various
 solutions using
 ([Big O notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)) to
 determine space/time complexity and we look at code readability.
 
 ## How do I start?
-1. [Checkout and open the project](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Checkout-and-open-the-project) 
-2. [Solve the puzzle](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Solving-coding-chalenges)
-3. [Run the tests](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Running-tests)
+
+1. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+2. Import project by using IntelliJ IDEA menu: `File | New | Project From Version Control | Git`
+3. Choose a puzzle and code the [solution](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Solving-coding-chalenges)
+4. [Run the tests](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Running-tests) to verify your solution
 
 # Let's solve some puzzles
 
@@ -36,80 +38,84 @@ problem. To succeed you need to practice often, repeat the same puzzles multiple
 your time before you take a look at the presented solution. **Good luck!**
 
 **New in Town**
-- [Capitalize sentence](app/src/test/java/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
-- [Get odd numbers](app/src/test/java/com/igorwojda/integer/getodd/GetOdd.md)
-- [Range contains range?](app/src/test/java/com/igorwojda/range/containsrange/ContainsRange.md)
-- [Add up to](app/src/test/java/com/igorwojda/integer/addupto/AddUpTo.md)
-- [Linear search](app/src/test/java/com/igorwojda/list/search/linearsearch/LinearSearch.md)
-- [Count down](app/src/test/java/com/igorwojda/integer/countdown/CountDown.md)
-- [Count up and down](app/src/test/java/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
-- [Format train route](app/src/test/java/com/igorwojda/list/formattrainroute/FormatTrainRoute.md)
-- [Generate all pairs](app/src/test/java/com/igorwojda/integer/generateallpairs/GenerateAllPairs.md)
-- [Count unique values](app/src/test/java/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
-- [Print number](app/src/test/java/com/igorwojda/integer/printnumber/basic/PrintNumber.md)
-- [Print number with steps](app/src/test/java/com/igorwojda/integer/printnumber/steps/PrintNumberWithSteps.md)
-- [Power](app/src/test/java/com/igorwojda/integer/power/Power.md)
-- [Factorial](app/src/test/java/com/igorwojda/integer/factorial/Factorial.md)
-- [Product](app/src/test/java/com/igorwojda/list/product/Product.md)
-- [Capitalize first](app/src/test/java/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
-- [Decapitalize const](app/src/test/java/com/igorwojda/string/decapitalizeconst/DecapitalizeConst.md)
-- [Longest word](app/src/test/java/com/igorwojda/string/longestword/LongestWord.md)
+
+- [Capitalize sentence](src/test/kotlin/com/igorwojda/string/capitalizesentence/CapitalizeSentence.md)
+- [Get odd numbers](src/test/kotlin/com/igorwojda/integer/getodd/GetOdd.md)
+- [Range contains range?](src/test/kotlin/com/igorwojda/range/containsrange/ContainsRange.md)
+- [Add up to](src/test/kotlin/com/igorwojda/integer/addupto/AddUpTo.md)
+- [Linear search](src/test/kotlin/com/igorwojda/list/search/linearsearch/LinearSearch.md)
+- [Count down](src/test/kotlin/com/igorwojda/integer/countdown/CountDown.md)
+- [Count up and down](src/test/kotlin/com/igorwojda/integer/countupanddown/CountUpAndDown.md)
+- [Format train route](src/test/kotlin/com/igorwojda/list/formattrainroute/FormatTrainRoute.md)
+- [Generate all pairs](src/test/kotlin/com/igorwojda/integer/generateallpairs/GenerateAllPairs.md)
+- [Count unique values](src/test/kotlin/com/igorwojda/list/countuniquevalues/CountUniqueValues.md)
+- [Print number](src/test/kotlin/com/igorwojda/integer/printnumber/basic/PrintNumber.md)
+- [Print number with steps](src/test/kotlin/com/igorwojda/integer/printnumber/steps/PrintNumberWithSteps.md)
+- [Power](src/test/kotlin/com/igorwojda/integer/power/Power.md)
+- [Factorial](src/test/kotlin/com/igorwojda/integer/factorial/Factorial.md)
+- [Product](src/test/kotlin/com/igorwojda/list/product/Product.md)
+- [Capitalize first](src/test/kotlin/com/igorwojda/list/capitalizeFirst/CapitalizeFirst.md)
+- [Decapitalize const](src/test/kotlin/com/igorwojda/string/decapitalizeconst/DecapitalizeConst.md)
+- [Longest word](src/test/kotlin/com/igorwojda/string/longestword/LongestWord.md)
 
 **Apprentice**
-- [Is palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/basic/IsPalindrome.md)
-- [Is tolerant palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/tolerant/IsTolerantPalindrome.md)
-- [Is permutation palindrome](app/src/test/java/com/igorwojda/string/ispalindrome/permutation/IsPermutationPalindrome.md)
-- [Is anagram](app/src/test/java/com/igorwojda/string/isanagram/IsAnagram.md)
-- [Max occurring char](app/src/test/java/com/igorwojda/string/maxchar/MaxOccurrentChar.md)
-- [String reverse](app/src/test/java/com/igorwojda/string/reverse/Reverse.md)
-- [Find the vowels](app/src/test/java/com/igorwojda/string/vowels/Vowels.md)
-- [Int reverse](app/src/test/java/com/igorwojda/integer/reverse/Reverse.md)
-- [Pyramid generator](app/src/test/java/com/igorwojda/integer/pyramidgenerator/PyramidGenerator.md)
-- [Steps generator](app/src/test/java/com/igorwojda/integer/stepsgenerator/StepsGenerator.md)
-- [Fizz Buzz](app/src/test/java/com/igorwojda/integer/fizzbuzz/FizzBuzz.md)
-- [Caesar Cipher](app/src/test/java/com/igorwojda/string/caesarcipher/CaesarCipher.md)
-- [Has repeated char](app/src/test/java/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedChar.md)
+
+- [Is palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/basic/IsPalindrome.md)
+- [Is tolerant palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/tolerant/IsTolerantPalindrome.md)
+- [Is permutation palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/permutation/IsPermutationPalindrome.md)
+- [Is anagram](src/test/kotlin/com/igorwojda/string/isanagram/IsAnagram.md)
+- [Max occurring char](src/test/kotlin/com/igorwojda/string/maxchar/MaxOccurrentChar.md)
+- [String reverse](src/test/kotlin/com/igorwojda/string/reverse/Reverse.md)
+- [Find the vowels](src/test/kotlin/com/igorwojda/string/vowels/Vowels.md)
+- [Int reverse](src/test/kotlin/com/igorwojda/integer/reverse/Reverse.md)
+- [Pyramid generator](src/test/kotlin/com/igorwojda/integer/pyramidgenerator/PyramidGenerator.md)
+- [Steps generator](src/test/kotlin/com/igorwojda/integer/stepsgenerator/StepsGenerator.md)
+- [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz/FizzBuzz.md)
+- [Caesar Cipher](src/test/kotlin/com/igorwojda/string/caesarcipher/CaesarCipher.md)
+- [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter/HasRepeatedChar.md)
 
 **Warrior** 
-- [Spiral matrix generator](app/src/test/java/com/igorwojda/integer/spiralmatrixgenerator/SpiralMatrixGenerator.md)
-- [Queue](app/src/test/java/com/igorwojda/queue/basic/Queue.md)
-- [Combine queues](app/src/test/java/com/igorwojda/queue/combine/Combine.md)
-- [Stack](app/src/test/java/com/igorwojda/stack/basic/Stack.md)
-- [Bubble sort](app/src/test/java/com/igorwojda/list/sort/bubblesort/BubbleSort.md)
-- [Selection sort](app/src/test/java/com/igorwojda/list/sort/selectionsort/SelectionSort.md)
-- [Square equals](app/src/test/java/com/igorwojda/list/squareequal/SquareEquals.md)
-- [Sum zero](app/src/test/java/com/igorwojda/list/sumzero/SumZero.md)
-- [Digit frequency](app/src/test/java/com/igorwojda/integer/digitfrequency/DigitFrequency.md)
-- [Get duplicated arguments](app/src/test/java/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
-- [Find pair with target average](app/src/test/java/com/igorwojda/list/pairaverage/PairAverage.md)
-- [Binary search tree](app/src/test/java/com/igorwojda/tree/binarysearchtree/BinarySearchTree.md)
-- [Tree traversal](app/src/test/java/com/igorwojda/tree/classic/traversal/TreeTraversal.md)
-- [Tree level width](app/src/test/java/com/igorwojda/tree/classic/levelwidth/LevelWidth.md)
-- [Binary search tree (insert)](app/src/test/java/com/igorwojda/binarytree/insert/Insert.md)
-- [Binary search tree (validate)](app/src/test/java/com/igorwojda/binarytree/validate/Validate.md)
-- [Any callback](app/src/test/java/com/igorwojda/various/anycallback/AnyCallback.md)
-- [Flatten](app/src/test/java/com/igorwojda/list/flatten/Flatten.md)
-- [Binary search](app/src/test/java/com/igorwojda/list/search/binarysearch/BinarySearch.md)
-- [Surrounded letter](app/src/test/java/com/igorwojda/string/surroundedletter/SurroundedLetter.md) 
-- [Insertion sort](app/src/test/java/com/igorwojda/list/sort/insertionsort/InsertionSort.md)
-- [Quick sort](app/src/test/java/com/igorwojda/list/sort/quicksort/QuickSort.md)
-- [Radix sort](app/src/test/java/com/igorwojda/list/sort/radixsort/RadixSort.md)
-- [Doubly linked list](app/src/test/java/com/igorwojda/linkedlist/doubly/base/DoublyLinkedList.md)
-- [Max binary heap](app/src/test/java/com/igorwojda/tree/heap/maxbinaryheap/MaxBinaryHeap.md)
+
+- [Spiral matrix generator](src/test/kotlin/com/igorwojda/integer/spiralmatrixgenerator/SpiralMatrixGenerator.md)
+- [Queue](src/test/kotlin/com/igorwojda/queue/basic/Queue.md)
+- [Combine queues](src/test/kotlin/com/igorwojda/queue/combine/Combine.md)
+- [Stack](src/test/kotlin/com/igorwojda/stack/basic/Stack.md)
+- [Bubble sort](src/test/kotlin/com/igorwojda/list/sort/bubblesort/BubbleSort.md)
+- [Selection sort](src/test/kotlin/com/igorwojda/list/sort/selectionsort/SelectionSort.md)
+- [Square equals](src/test/kotlin/com/igorwojda/list/squareequal/SquareEquals.md)
+- [Sum zero](src/test/kotlin/com/igorwojda/list/sumzero/SumZero.md)
+- [Digit frequency](src/test/kotlin/com/igorwojda/integer/digitfrequency/DigitFrequency.md)
+- [Get duplicated arguments](src/test/kotlin/com/igorwojda/string/getduplicatedarguments/GetDuplicatedArguments.md)
+- [Find pair with target average](src/test/kotlin/com/igorwojda/list/pairaverage/PairAverage.md)
+- [Binary search tree](src/test/kotlin/com/igorwojda/tree/binarysearchtree/BinarySearchTree.md)
+- [Tree traversal](src/test/kotlin/com/igorwojda/tree/classic/traversal/TreeTraversal.md)
+- [Tree level width](src/test/kotlin/com/igorwojda/tree/classic/levelwidth/LevelWidth.md)
+- [Binary search tree (insert)](src/test/kotlin/com/igorwojda/binarytree/insert/Insert.md)
+- [Binary search tree (validate)](src/test/kotlin/com/igorwojda/binarytree/validate/Validate.md)
+- [Any callback](src/test/kotlin/com/igorwojda/various/anycallback/AnyCallback.md)
+- [Flatten](src/test/kotlin/com/igorwojda/list/flatten/Flatten.md)
+- [Binary search](src/test/kotlin/com/igorwojda/list/search/binarysearch/BinarySearch.md)
+- [Surrounded letter](src/test/kotlin/com/igorwojda/string/surroundedletter/SurroundedLetter.md)
+- [Insertion sort](src/test/kotlin/com/igorwojda/list/sort/insertionsort/InsertionSort.md)
+- [Quick sort](src/test/kotlin/com/igorwojda/list/sort/quicksort/QuickSort.md)
+- [Radix sort](src/test/kotlin/com/igorwojda/list/sort/radixsort/RadixSort.md)
+- [Doubly linked list](src/test/kotlin/com/igorwojda/linkedlist/doubly/base/DoublyLinkedList.md)
+- [Max binary heap](src/test/kotlin/com/igorwojda/tree/heap/maxbinaryheap/MaxBinaryHeap.md)
 
 **Commander**
-- [List chunk](app/src/test/java/com/igorwojda/list/listchunk/ListChunk.md)
-- [Singly linked list](app/src/test/java/com/igorwojda/linkedlist/singly/base/SinglyLinkedList.md)
-- [Linked list midpoint](app/src/test/java/com/igorwojda/linkedlist/singly/midpoint/Midpoint.md)
-- [Circular check](app/src/test/java/com/igorwojda/linkedlist/singly/circularcheck/CircularCheck.md)
-- [Linked list take n-th element from last](app/src/test/java/com/igorwojda/linkedlist/singly/fromlast/FromLast.md)
-- [Is sub string](app/src/test/java/com/igorwojda/string/issubstring/IsSubstring.md)
-- [Merge sort](app/src/test/java/com/igorwojda/list/sort/mergesort/MergeSort.md)
-- [Fibonacci](app/src/test/java/com/igorwojda/integer/fibonacci/basic/Fibonacci.md)
-- [Fibonacci with recursive cache](app/src/test/java/com/igorwojda/integer/fibonacci/recursivecached/FibonacciRecursiveCached.md)
-- [Max sub list sum](app/src/test/java/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
-- [Min sub list length](app/src/test/java/com/igorwojda/list/minsublistlength/MinSubListLength.md)
-- [Subtract](app/src/test/java/com/igorwojda/list/subtract/Subtract.md)
+
+- [List chunk](src/test/kotlin/com/igorwojda/list/listchunk/ListChunk.md)
+- [Singly linked list](src/test/kotlin/com/igorwojda/linkedlist/singly/base/SinglyLinkedList.md)
+- [Linked list midpoint](src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint/Midpoint.md)
+- [Circular check](src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck/CircularCheck.md)
+- [Linked list take n-th element from last](src/test/kotlin/com/igorwojda/linkedlist/singly/fromlast/FromLast.md)
+- [Is sub string](src/test/kotlin/com/igorwojda/string/issubstring/IsSubstring.md)
+- [Merge sort](src/test/kotlin/com/igorwojda/list/sort/mergesort/MergeSort.md)
+- [Fibonacci](src/test/kotlin/com/igorwojda/integer/fibonacci/basic/Fibonacci.md)
+- [Fibonacci with recursive cache](src/test/kotlin/com/igorwojda/integer/fibonacci/recursivecached/FibonacciRecursiveCached.md)
+- [Max sub list sum](src/test/kotlin/com/igorwojda/list/maxsublistsum/MaxSubListSum.md)
+- [Min sub list length](src/test/kotlin/com/igorwojda/list/minsublistlength/MinSubListLength.md)
+- [Subtract](src/test/kotlin/com/igorwojda/list/subtract/Subtract.md)
 
 # Useful links
 
