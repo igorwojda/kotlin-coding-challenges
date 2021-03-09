@@ -6,7 +6,7 @@
 
 ???
 
-[Puzzle](.kt) | [Solution](.kt)
+[challange](challange.kt) | [solution](solution.kt)
 
 ## Limitations
 
