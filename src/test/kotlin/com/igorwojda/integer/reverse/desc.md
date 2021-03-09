@@ -4,7 +4,7 @@
 
 Given an integer `n`, return an integer that is the reverse ordering of digits.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

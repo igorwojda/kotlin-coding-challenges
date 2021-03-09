@@ -4,7 +4,7 @@
 
 Implement [binary search tree (BST)](https://en.wikipedia.org/wiki/Binary_search_tree).
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

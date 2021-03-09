@@ -4,7 +4,7 @@
 
 Given positive integer `n` implement a function which returns a list containing all steps from `n` to `0`.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

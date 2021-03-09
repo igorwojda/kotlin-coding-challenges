@@ -15,7 +15,7 @@ to obtain second list (what elements needs to be removed from first list so it i
 may be more than one element with the same value. For simplicity we assume that input is always correct (it is always
 possible to remove values from first list to form second list).
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

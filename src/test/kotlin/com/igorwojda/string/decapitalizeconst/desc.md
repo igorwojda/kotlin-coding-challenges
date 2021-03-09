@@ -9,7 +9,7 @@ converts it into variable name (eg. `fooBar`):
 - convert next words to lowercase, but first character is still uppercase
 - remove all underscore characters
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

@@ -10,7 +10,7 @@ Given a string, return true if the input string is an a permutation of palindrom
 
 Palindromes are strings that form the same word if it is reversed.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

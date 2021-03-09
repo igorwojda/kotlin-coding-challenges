@@ -11,7 +11,7 @@ Algorithm:
 4. Merge sub-lists to produce new sorted sub-lists until there is only one sub-list remaining. This will be the sorted
    list.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

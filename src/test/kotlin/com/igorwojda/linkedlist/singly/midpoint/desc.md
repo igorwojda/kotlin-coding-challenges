@@ -13,7 +13,7 @@ We are using version of linked list that implements Kotlin
 [Iterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html) interface, so we can
 use `forEach` instead of `while` loop.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Limitations
 

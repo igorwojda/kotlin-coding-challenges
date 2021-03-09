@@ -4,7 +4,7 @@
 
 Given list of strings implement a **recursive** function which will capitalize first letter of each string in the list.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

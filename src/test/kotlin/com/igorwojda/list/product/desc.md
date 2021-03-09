@@ -4,7 +4,7 @@
 
 Given a list of integers implement a function which returns the product of all numbers in the list.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

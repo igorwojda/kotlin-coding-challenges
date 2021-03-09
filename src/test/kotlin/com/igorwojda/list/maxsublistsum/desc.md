@@ -8,7 +8,7 @@ elements in the `list` (sum of `n` digits next to another that have the largest 
 
 You can use helper `max` function to deal with Kotlin nullability.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

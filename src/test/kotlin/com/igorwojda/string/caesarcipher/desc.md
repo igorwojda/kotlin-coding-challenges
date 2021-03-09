@@ -6,7 +6,7 @@ Given a string and integer `shift` implement a function which shifts each charac
 [cesar cipher](https://cryptii.com/pipes/caesar-cipher)) eg. if shift is `1` then `a` becomes `b`, `c` becomes`d`, `z`
 became `a` etc. Allowed input is string containing only lowercase characters from alphabet `abcdefghijklmnopqrstuvwxyz`.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

@@ -5,7 +5,7 @@
 Given sorted list of integers and target average implement a function which determine if there is a pair of values in
 the list where their average equals target average.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

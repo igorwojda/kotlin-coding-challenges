@@ -8,7 +8,7 @@
 
 Given the root node of a tree, return an list where each element is the width of the tree at each level.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

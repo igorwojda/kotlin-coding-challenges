@@ -7,7 +7,7 @@
 Given list containing items (integer, lists, sub-lists) implement **recursive** function which returns list with all
 values flattened. This function mimics behaviour of Kotlin build in ` flatten` method.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Limitations
 

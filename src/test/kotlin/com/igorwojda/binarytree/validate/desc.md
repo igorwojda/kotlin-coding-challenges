@@ -14,7 +14,7 @@ Requirements that are always true for any given node in `Binary Search Tree`:
 - left node value is always less then the value of parent node
 - right node value is always greater than parent node value
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

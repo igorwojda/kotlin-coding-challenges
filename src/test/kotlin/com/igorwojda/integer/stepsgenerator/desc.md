@@ -5,7 +5,7 @@
 Given a positive integer `n` implement a function which returns a list representing the generated steps with `n` levels
 using the `#` character. Make sure the step has appropriate number of spaces on the right hand side!
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

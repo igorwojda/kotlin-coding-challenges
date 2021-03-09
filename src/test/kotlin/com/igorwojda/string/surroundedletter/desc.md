@@ -6,7 +6,7 @@ Given a string containing letters and `+` characters implement a function which 
 is surrounded by `+` character. There may be more than one `+` character between letters (`+a++b+`) and letters may be
 surrounded by the same `+` character (`+a+b+`).
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

@@ -6,7 +6,7 @@ Given positive integer `n` implement a function which returns a list numbers fro
 contain word `Fizz` instead of the number and for the multiples of five list should contain word `Buzz`. For numbers which are multiples of
 both three and five list should contain `FizzBuzz` word.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

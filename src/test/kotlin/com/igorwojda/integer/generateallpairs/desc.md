@@ -5,7 +5,7 @@
 Given positive Int `n` implement a function which returns a list of containing pairs with all combinations of numbers
 from `0` to `n`.
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 

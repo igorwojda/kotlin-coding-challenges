@@ -13,4 +13,4 @@ Algorithm:
 - Recursively repeat the process for left partition (element on the left side of pivot) and right partition (element on
   the right side of the pivot)
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)

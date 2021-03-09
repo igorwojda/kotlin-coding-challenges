@@ -7,7 +7,7 @@ have from `0` to `2` children. Parent nodes are always larger than child nodes, 
 smaller than a parents. Heap always have to be filled from "left side" meaning that we can add children to new level
 only if current level is full (each parent from previous level have two children).
 
-[challange](challange.kt) | [solution](solution.kt)
+[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
 
 ## Examples
 
