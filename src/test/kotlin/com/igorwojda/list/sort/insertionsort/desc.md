@@ -12,5 +12,5 @@ Sort list of numbers from lowest number to greatest number using
 - Continue to next element and if it is in the incorrect order, iterate through "sorted portion" to place element at
   correct position.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 

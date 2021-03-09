@@ -4,7 +4,7 @@
 
 Given a sorted list of integers implement a function which counts the unique values.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

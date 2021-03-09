@@ -5,7 +5,7 @@
 Given integer `n` implement a function which generates a spiral numbers matrix (size `n` x `n`). Numbers in matrix are
 placed according to spiral - starting top left corner and then go right, down, left, up, right...
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

@@ -2,11 +2,11 @@
 
 ## Instructions
 
-Given list of **sorted** elements and a element return index of that
-element in the list or `-1` if element was not found. Use
+Given list of **sorted** elements and a element return index of that element in the list or `-1` if element was not
+found. Use
 [binary search](https://www.youtube.com/watch?v=T2sFYY-fT5o) algorithm.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Algorithm
 We ignore half of the elements after each loop.

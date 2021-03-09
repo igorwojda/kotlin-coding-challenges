@@ -20,7 +20,7 @@ them:
 - Linked list
 - Two Stacks
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

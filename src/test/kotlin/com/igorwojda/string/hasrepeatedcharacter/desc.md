@@ -5,7 +5,7 @@
 Given a string implement a function which returns `true` if string contains at least one repeated character, otherwise
 it returns `false`.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

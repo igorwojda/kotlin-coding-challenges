@@ -4,7 +4,7 @@
 
 Given an list and chunk size, divide the list into multiple sub lists where each sub-list is of length of chunk size.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

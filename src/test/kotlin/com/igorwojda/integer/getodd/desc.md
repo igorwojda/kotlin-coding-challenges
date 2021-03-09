@@ -8,7 +8,7 @@
 
 Given a list of integers return a list that contains only odd integers (only integers which are not a multiple of `2`).
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

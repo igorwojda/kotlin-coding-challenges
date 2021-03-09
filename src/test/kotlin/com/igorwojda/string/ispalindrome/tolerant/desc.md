@@ -11,7 +11,7 @@ same word if it is reversed. Include spaces and punctuation in determining if th
 exercise we will allows one bad character. Our string will be (tolerant) palindrome if after removing one character
 string is a palindrome.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

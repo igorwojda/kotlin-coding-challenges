@@ -4,7 +4,7 @@
 
 Given two integers implement a function which determines if they have the same frequency of digits.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

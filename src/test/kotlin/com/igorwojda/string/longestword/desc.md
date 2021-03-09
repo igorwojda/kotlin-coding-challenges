@@ -6,7 +6,7 @@ Given a string implement a function which returns longest word in that string. I
 the same length, return the first longest word from the string. Ignore punctuation. Input string can't be empty or blank
 sering.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

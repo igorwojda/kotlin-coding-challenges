@@ -5,7 +5,7 @@
 Sort list of numbers from lowest number to greatest number using [radix sort](https://en.wikipedia.org/wiki/Radix_sort).
 Algorithm needs to support only positive integers.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Steps
 

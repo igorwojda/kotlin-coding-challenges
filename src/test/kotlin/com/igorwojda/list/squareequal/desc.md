@@ -6,7 +6,7 @@ Given two lists of integers implement a function which returns `true` if every v
 corresponding value squared in the second list. The frequency of values must be the same eg. if there are two values in
 first list, two exactly two squared values must exist in second list.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

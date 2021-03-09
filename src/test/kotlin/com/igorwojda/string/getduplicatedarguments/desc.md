@@ -5,7 +5,7 @@
 Given variable number of arguments (list of strings) checks whether there are any duplicates among the arguments and
 return list of all unique duplicates. If no arguments are passes return empty list.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

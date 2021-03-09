@@ -2,9 +2,9 @@
 
 ## Instructions
 
-Given list of strings and a string return index of th value in the list or `-1` if value was not found. 
+Given list of strings and a string return index of th value in the list or `-1` if value was not found.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Limitations
 

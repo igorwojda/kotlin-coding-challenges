@@ -8,7 +8,7 @@ Given list of strings representing train station names implement a function whic
 - If list contains single tran station name then return `Train is calling at stationName`
 - If list contains multiple train station names then return comma separated station names, but pre-last and last names are  sepateted separated by `and`
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

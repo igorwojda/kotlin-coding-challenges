@@ -8,7 +8,7 @@ Sort list of numbers from lowest number to greatest number using
 Algorithm: Sort an list by repeatedly finding the minimum element (ascending order) from unsorted part and putting it at
 the beginning of the list.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

@@ -4,7 +4,7 @@
 
 Given a string implement a function which returns a reversed copy of that string.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Limitations:
 

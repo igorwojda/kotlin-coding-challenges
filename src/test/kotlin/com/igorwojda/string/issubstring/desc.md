@@ -8,7 +8,7 @@ Given two strings implement a function which determines whether the characters i
 the characters in the `first` string (check if `second` string exists as continuous/unbroken chain of characters the
 `first` string).
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Limitations
 

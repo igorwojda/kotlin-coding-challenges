@@ -4,7 +4,7 @@
 Given positive integer `n` implement a function which calculates sum of all numbers from `1` up to (and including)
 number `n`.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

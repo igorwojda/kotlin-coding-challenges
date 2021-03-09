@@ -2,11 +2,11 @@
 
 ## Instructions
 
-Given string implement a function, which returns the number of vowels
-used in a string. Vowels are the characters `a`, `e` `i`, `o`, `u` and
+Given string implement a function, which returns the number of vowels used in a string. Vowels are the characters `a`
+, `e` `i`, `o`, `u` and
 `y`.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

@@ -10,7 +10,7 @@ mistakes. That's why each step has one or more tests associated with it. Tests a
 staring each step we will have to enable all tests related to given step by uncommenting it. To quickly uncomment the
 test select all lines containing test method and press `Cmd + /` keys (`Comment with line Comment` action).
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ### 1. constructor `SinglyLinkedList<E>()`
 

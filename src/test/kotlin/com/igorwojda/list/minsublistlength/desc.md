@@ -7,7 +7,7 @@ where sum all elements is equal or greater than `n`
 
 You can use helper `min` function to deal with Kotlin nullability.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

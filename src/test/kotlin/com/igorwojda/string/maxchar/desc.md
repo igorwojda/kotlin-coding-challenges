@@ -4,7 +4,7 @@
 
 Given a string implement a function which returns the character that is most commonly used in that string.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 ## Examples
 

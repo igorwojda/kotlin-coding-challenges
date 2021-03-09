@@ -21,9 +21,9 @@ identical arguments), so its execution takes a long time. Store arguments of eac
 private data class MethodCache(val n: Int, val result: Int)
 ```
 
-If the function is called again with the same arguments, return the precomputed result rather than running the
-function again.
+If the function is called again with the same arguments, return the precomputed result rather than running the function
+again.
 
-[[challenge](challenge) | [solution](solution.kt)]([challenge](challenge) | [solution](solution.kt).kt) | [solution](solution.kt)
+[challenge](challenge.kt) | [solution](solution.kt)
 
 
