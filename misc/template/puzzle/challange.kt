@@ -10,6 +10,6 @@ private fun puzzle() {
 private class Test {
     @Test
     fun `simple test`() {
-        "value" shouldBeEqualTo "value"
+        "result" shouldBeEqualTo "expected"
     }
 }
