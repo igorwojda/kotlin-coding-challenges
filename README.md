@@ -135,9 +135,6 @@ time. Take your time before you take a look at the presented solution. **Good lu
   discuss the problem with the community because solutions are not on the website.
 - [Advent of code](https://adventofcode.com/2018/events) - one month of various programing problems released daily at
   the end of the year. Fortunately archive of past events is still there.
-- [Code Google Com Codejam](https://code.google.com/codejam/past-contests) - Google Code Jam, calls on programmers
-  around the world to solve challenging, algorithmic challenges against the clock. They publish all the past problems on
-  their website.
 - [CoderByte](https://coderbyte.com/challenges) - 200+ challenges, data structures / algorithms / company interview
   problems segregated by difficulty. Unfortunately most of them are only available for premium users. Premium gives you
   access to premium step-by-step solutions and user solutions.
