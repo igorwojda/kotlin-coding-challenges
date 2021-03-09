@@ -3,7 +3,7 @@ package com.igorwojda.matrix.findrectangle
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun findRectangle(image: List<List<Int>>): List<Int?> {
+private fun findRectangle(image: List<List<Int>>): List<Int>? {
     TODO("not implemented")
 }
 
