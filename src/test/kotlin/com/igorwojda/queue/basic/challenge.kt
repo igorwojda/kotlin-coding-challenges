@@ -11,9 +11,9 @@ private class Queue<E> {
         TODO("not implemented")
     }
 
-    fun remove(): E? = TODO("not implemented")
+    fun remove(): E = TODO("not implemented")
 
-    fun peek(): E? = TODO("not implemented")
+    fun peek(): E = TODO("not implemented")
 
     fun isEmpty(): Boolean {
         TODO("not implemented")
@@ -101,6 +101,15 @@ private class Test {
             size shouldBeEqualTo 1
 
             remove()
+            size shouldBeEqualTo 0
+        }
+    }
+
+    @Test
+    fun `remove item from empty queue`() {
+        Queue<Int>().apply {
+            remove()
+
             size shouldBeEqualTo 0
         }
     }

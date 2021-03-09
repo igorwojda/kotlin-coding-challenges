@@ -30,6 +30,8 @@ private object Solution1 {
         }
 
         fun remove(): E? {
+            if (size == 0) return null
+
             val node = first
             first = first?.next
             size--

@@ -123,4 +123,13 @@ private class Test {
             size shouldBeEqualTo 0
         }
     }
+
+    @Test
+    fun `remove item from empty stack`() {
+        Stack<Char>().apply {
+            remove()
+
+            size shouldBeEqualTo 0
+        }
+    }
 }
