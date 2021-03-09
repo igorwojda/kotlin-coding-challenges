@@ -1,7 +1,7 @@
 package com.igorwojda.linkedlist.singly.midpoint
 
-import com.igorwojda.linkedlist.singly.base.Solution.Node
-import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
+import com.igorwojda.linkedlist.singly.base.Solution1.Node
+import com.igorwojda.linkedlist.singly.base.Solution1.SinglyLinkedList
 
 private object Solution1 {
     private fun midpoint(list: SinglyLinkedList<Char>): Node<Char>? {
@@ -21,3 +21,6 @@ private object Solution1 {
 }
 
 private object KtLintWillNotComplain
+
+
+// list.forEach

@@ -1,12 +1,11 @@
 package com.igorwojda.linkedlist.singly.midpoint
 
-import com.igorwojda.linkedlist.singly.base.Solution
-import com.igorwojda.linkedlist.singly.base.Solution.Node
-import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
+import com.igorwojda.linkedlist.singly.base.Solution1.Node
+import com.igorwojda.linkedlist.singly.base.Solution1.SinglyLinkedList
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun midpoint(list: Solution.SinglyLinkedList<Char>): Node<Char>? {
+private fun midpoint(list: SinglyLinkedList<Char>): Node<Char>? {
     TODO("not implemented")
 }
 

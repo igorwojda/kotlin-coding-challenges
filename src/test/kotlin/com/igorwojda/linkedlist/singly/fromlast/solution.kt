@@ -1,7 +1,7 @@
 package com.igorwojda.linkedlist.singly.fromlast
 
-import com.igorwojda.linkedlist.singly.base.Solution.Node
-import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
+import com.igorwojda.linkedlist.singly.base.Solution1.Node
+import com.igorwojda.linkedlist.singly.base.Solution1.SinglyLinkedList
 
 private object Solution1 {
     private fun fromLast(list: SinglyLinkedList<Char>, endIndex: Int): Node<Char>? {

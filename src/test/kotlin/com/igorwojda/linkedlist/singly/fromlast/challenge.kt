@@ -1,7 +1,7 @@
 package com.igorwojda.linkedlist.singly.fromlast
 
-import com.igorwojda.linkedlist.singly.base.Solution.Node
-import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
+import com.igorwojda.linkedlist.singly.base.Solution1.Node
+import com.igorwojda.linkedlist.singly.base.Solution1.SinglyLinkedList
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 

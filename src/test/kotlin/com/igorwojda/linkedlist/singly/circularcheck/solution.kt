@@ -1,6 +1,6 @@
 package com.igorwojda.linkedlist.singly.circularcheck
 
-import com.igorwojda.linkedlist.singly.base.Solution.SinglyLinkedList
+import com.igorwojda.linkedlist.singly.base.Solution1.SinglyLinkedList
 
 private object Solution1 {
     private fun circularCheck(list: SinglyLinkedList<Char>): Boolean {
