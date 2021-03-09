@@ -12,7 +12,7 @@ Given a list of integers return a list that contains only odd integers (only int
 
 ## Examples
 
-```
+```kotlin
 getOdd(listOf(1, 2, 3)) // 1, 3
 
 getOdd(listOf(4, 6, 8, 7, 9)) // 7, 9

@@ -10,7 +10,7 @@ factorial of `3` (`3!`) is equal to `6` (`3 * 2 * 1`)
 
 ## Examples
 
-```
+```kotlin
 factorial(1) // 1
 
 factorial(2) // 2

@@ -10,7 +10,7 @@ surrounded by the same `+` character (`+a+b+`).
 
 ## Examples
 
-```
+```kotlin
 surroundedLetter("+a+") // true
 
 surroundedLetter("+ab+") // false

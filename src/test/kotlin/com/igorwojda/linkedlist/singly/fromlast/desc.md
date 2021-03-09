@@ -20,7 +20,7 @@ time.
 
 ## Examples
 
-```
+```kotlin
 val l = LinkedList<Char>()
 l.insertLast('a')
 l.insertLast('b')

@@ -10,7 +10,7 @@ used in a string. Vowels are the characters `a`, `e` `i`, `o`, `u` and
 
 ## Examples
 
-```
+```kotlin
 vowels('Hi There!') // 3
 
 vowels('Why do you ask?') // 4

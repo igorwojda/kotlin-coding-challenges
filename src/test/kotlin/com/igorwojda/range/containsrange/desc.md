@@ -8,7 +8,7 @@ Given two ranges implement a function which checks if range1 contains range2.
 
 ## Examples
 
-```
+```kotlin
 containsRange(5..7, 5..7) // true
 
 containsRange(1..12, 5..7) // true

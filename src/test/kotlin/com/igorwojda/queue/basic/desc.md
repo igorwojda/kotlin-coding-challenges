@@ -26,7 +26,7 @@ them:
 
 Example 1
 
-```
+```kotlin
 val q = Queue<Int>()
 q.add(1)
 q.remove() // 1
@@ -35,7 +35,7 @@ q.remove() // null
 
 Example 2
 
-```
+```kotlin
 val q = Queue<Char>()
 q.isEmpty() // true
 q.add('A')

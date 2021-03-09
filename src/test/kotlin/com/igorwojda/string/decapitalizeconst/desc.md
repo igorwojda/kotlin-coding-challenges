@@ -13,7 +13,7 @@ converts it into variable name (eg. `fooBar`):
 
 ## Examples
 
-```
+```kotlin
 decapitalizeConst("FOO") // foo
 
 decapitalizeConst("FOO_BAR") // fooBar

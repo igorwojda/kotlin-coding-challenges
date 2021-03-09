@@ -14,7 +14,7 @@ Palindromes are strings that form the same word if it is reversed.
 
 ## Examples
 
-```
+```kotlin
 permutationPalindrome("gikig") == true
 
 permutationPalindrome("ookvk") == true

@@ -26,13 +26,13 @@
 
 Example 1
 
-```
+```kotlin
 
 ```
 
 Example 2
 
-```
+```kotlin
 
 ```
 

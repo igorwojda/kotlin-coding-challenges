@@ -9,7 +9,7 @@ return list of all unique duplicates. If no arguments are passes return empty li
 
 ## Examples
 
-```
+```kotlin
 getDuplicatedParams("a", "b", "c") //empty list
 
 getDuplicatedParams("a", "b", "c", "a") // [a]

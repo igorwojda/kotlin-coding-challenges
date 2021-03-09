@@ -23,7 +23,7 @@ Do not use a counter variable, do not retrieve the `size` of the list, and only 
 
 Example 1
 
-```
+```kotlin
 val l = new LinkedList()
 l.insertLast('a')
 l.insertLast('b')
@@ -33,7 +33,7 @@ midpoint(l).data // 'b'
 
 Example 2
 
-```
+```kotlin
 val l = new LinkedList()
 l.insertLast('a')
 l.insertLast('b')

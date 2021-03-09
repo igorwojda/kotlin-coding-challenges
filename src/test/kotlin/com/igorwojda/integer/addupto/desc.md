@@ -8,7 +8,7 @@ number `n`.
 
 ## Examples
 
-```
+```kotlin
 addUpTo(1) // 1
 
 addUpTo(2) // 3

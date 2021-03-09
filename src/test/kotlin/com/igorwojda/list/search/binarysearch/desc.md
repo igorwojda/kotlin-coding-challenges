@@ -23,7 +23,7 @@ Example 1
 
 Search for `C` in `[A, B, C, D, E, F, G, H, I, J, K, L, M, O, P]`
 
-```
+```kotlin
 
 [A, B, C, D, E, F, G, H, I, J, K, L, M, O, P] // (left = A, middle = H, right = P)
 [A, B, C, D, E, F, G, H, I, J, K, L, M, O, P] // (left = A, middle = D, right = G)
@@ -32,7 +32,7 @@ Search for `C` in `[A, B, C, D, E, F, G, H, I, J, K, L, M, O, P]`
 
 Example 2
 
-```
+```kotlin
 binarySearch(listOf('A', 'B', 'C'), 'A') // 0
 
 binarySearch(listOf('A', 'B', 'C'), 'B') // 1

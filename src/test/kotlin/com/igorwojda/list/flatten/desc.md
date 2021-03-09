@@ -16,7 +16,7 @@ function.
 
 ## Examples
 
-```
+```kotlin
 flatten(listOf(1)) // 1
 
 flatten(listOf(1), listOf(listOf(2))) // 1, 2

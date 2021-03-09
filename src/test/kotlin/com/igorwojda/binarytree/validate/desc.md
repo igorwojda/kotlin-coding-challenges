@@ -18,7 +18,7 @@ Requirements that are always true for any given node in `Binary Search Tree`:
 
 ## Examples
 
-```
+```kotlin
 val tree = Node(2)
 tree.insert(10)
 isValidSearchBinaryTree(tree) // true

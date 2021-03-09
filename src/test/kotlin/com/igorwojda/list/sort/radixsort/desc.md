@@ -17,7 +17,7 @@ algorithm implementation.
 Implement extension function `Int.getDigitAt(index:Int)` which will return character at given index or `0` if given index
 is garter than last index.
 
-```
+```kotlin
 123.getDigitAt(0) // '1'
 123.getDigitAt(1) // '2'
 123.getDigitAt(2) // '3'
@@ -37,7 +37,7 @@ After implementing this extension all tests prefixed with `getDigitAt at` must p
 Implement extension property `Int.digitCount` which will return character at given index or `0` if given index is garter
 than last index.
 
-```
+```kotlin
 1.digitCount // 1
 123.digitCount // 3
 12345.digitCount // 5
@@ -53,7 +53,7 @@ After implementing this extension all tests prefixed with `digitCount` must pass
 Implement a function which will take a list of integer as a param and return maximum number of digits for single
 integer in that list. numbers.
 
-```
+```kotlin
 mostDigits(listOf(1, 2, 4)) // 1
 mostDigits(listOf(1, 25, 42, 7, 9)) // 2
 mostDigits(listOf(1, 25, 42, 77898, 1)) // 5

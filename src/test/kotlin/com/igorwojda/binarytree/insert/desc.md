@@ -19,7 +19,7 @@ Requirements that are always true for any given node in `Binary Search Tree`:
 
 Example 1
 
-```
+```kotlin
 val tree = Node(1)
 tree.insert(4)
 tree.insert(2)
@@ -33,7 +33,7 @@ tree.insert(2)
 
 Example 2
 
-```
+```kotlin
 val tree = Node(1)
 tree.insert(4)
 tree.insert(2)

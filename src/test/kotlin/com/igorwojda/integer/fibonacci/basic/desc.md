@@ -9,7 +9,7 @@ the fibonacci sequence.
 
 ## Example
 
-```
+```kotlin
 fibonacci(1) // 1
 
 fibonacci(2) // 1

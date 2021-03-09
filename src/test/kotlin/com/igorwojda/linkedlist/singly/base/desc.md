@@ -23,7 +23,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Any>()
 list.head // null
 ```
@@ -38,14 +38,14 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<String>()
 list.insertFirst('Hi There') // List has one node
 ```
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<String>()
 list.insertFirst('Hi There') // List has one node
 ```
@@ -59,7 +59,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
@@ -76,7 +76,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
@@ -92,7 +92,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
@@ -108,7 +108,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
@@ -126,7 +126,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
@@ -146,7 +146,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
@@ -165,7 +165,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
@@ -182,7 +182,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
@@ -202,7 +202,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertLast("a")
 list.insertLast("b")
@@ -226,7 +226,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
@@ -248,7 +248,7 @@ Tests:
 
 Example:
 
-```
+```kotlin
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
@@ -269,7 +269,7 @@ Tests:
 
 Example 1:
 
-```
+```kotlin
 val list = SinglyLinkedList<Int>()
 
 list.insertLast(1)
@@ -282,7 +282,7 @@ list.forEach { print(node) } // 1234
 
 Example 2:
 
-```
+```kotlin
 val list = SinglyLinkedList()
 
 list.insertLast(1)
@@ -302,7 +302,7 @@ Tests
 - `add two empty lists`, `add two lists`
 
 
-```
+```kotlin
 val list1 = SinglyLinkedList<Int>()
 list1.insertLast(1)
 list1.insertLast(2)

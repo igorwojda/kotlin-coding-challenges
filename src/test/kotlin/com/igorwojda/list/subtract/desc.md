@@ -19,7 +19,7 @@ possible to remove values from first list to form second list).
 
 ## Examples
 
-```
+```kotlin
 getSubtraction(listOf("A", "B", "C"), listOf("A")) // "B", "C"
 
 getSubtraction(listOf("A", "B", "C"), listOf("A", "B")) // "C"

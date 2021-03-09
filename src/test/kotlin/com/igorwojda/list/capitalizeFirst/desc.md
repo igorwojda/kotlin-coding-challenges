@@ -8,7 +8,7 @@ Given list of strings implement a **recursive** function which will capitalize f
 
 ## Examples
 
-```
+```kotlin
 capitalizeFirst(listOf("igor")) // listOf("Igor")
 
 capitalizeFirst(listOf("igor", "wojda")) // listOf("Igor", "Wojda")

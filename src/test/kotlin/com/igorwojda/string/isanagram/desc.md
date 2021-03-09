@@ -10,7 +10,7 @@ consider characters, not spaces or punctuation. Consider capital letters to be t
 
 ## Examples
 
-```
+```kotlin
 anagrams('rail safety', 'fairy tales') --> True
 
 anagrams('RAIL! SAFETY!', 'fairy tales') --> True

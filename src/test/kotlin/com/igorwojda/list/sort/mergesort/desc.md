@@ -17,7 +17,7 @@ Algorithm:
 
 Sort `[5, 1, 4, 2]`
 
-```
+```kotlin
           [5, 1, 4, 2] Split
        [5, 1]      [4, 2] Split
      [5]    [1]   [4]    [2] All lists are sorted

@@ -9,7 +9,7 @@ using the `#` character. Make sure the step has appropriate number of spaces on 
 
 ## Examples
 
-```
+```kotlin
 steps(2)
     '# '
     '##'

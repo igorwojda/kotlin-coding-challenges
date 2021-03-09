@@ -16,14 +16,14 @@ passed to callback returns `true`, otherwise return `false`.
 
 Example 1
 
-```
+```kotlin
 val callback:((Int) -> Boolean) = { it > 3 }
 anyCallback(listOf(1, 2, 3, 4), callback) shouldBeEqualTo true
 ```
 
 Example 2
 
-```
+```kotlin
 val callback:((Int) -> Boolean) = { it > 3 }
 anyCallback(listOf(1, 2, 3), callback) shouldBeEqualTo false
 ```

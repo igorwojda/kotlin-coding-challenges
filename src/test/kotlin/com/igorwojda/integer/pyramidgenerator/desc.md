@@ -10,7 +10,7 @@ generatePyramid has spaces on both the left and right hand sides.
 
 ## Examples
 
-```
+```kotlin
 pyramid(1)
     '#'
 

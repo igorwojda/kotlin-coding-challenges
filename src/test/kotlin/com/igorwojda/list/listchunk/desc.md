@@ -8,7 +8,7 @@ Given an list and chunk size, divide the list into multiple sub lists where each
 
 ## Examples
 
-```
+```kotlin
 chunk([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]]
 
 chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]

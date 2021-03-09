@@ -11,7 +11,7 @@ placed according to spiral - starting top left corner and then go right, down, l
 
 Example 1
 
-```
+```kotlin
 generateSpiralMatrix(2)
    [[1, 2],
    [4, 3]]
@@ -19,7 +19,7 @@ generateSpiralMatrix(2)
 
 Example 2
 
-```
+```kotlin
 generateSpiralMatrix(3)
    [[1, 2, 3],
    [8, 9, 4],
@@ -28,7 +28,7 @@ generateSpiralMatrix(3)
 
 Example 3
 
-```
+```kotlin
 generateSpiralMatrix(4)
    [[1,   2,  3, 4],
    [12, 13, 14, 5],

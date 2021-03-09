@@ -8,7 +8,7 @@ Given an integer `n`, return an integer that is the reverse ordering of digits.
 
 ## Examples
 
-```
+```kotlin
 reverseInt(15) // 51
 
 reverseInt(981) // 189

@@ -9,7 +9,7 @@ the list where their average equals target average.
 
 ## Examples
 
-```
+```kotlin
 hasAverage(listOf(), 1.0) // false
 
 hasAverage(listOf(3, 4, 7, 9), 6.5) // true

@@ -11,7 +11,7 @@ into the new one. Take into consideration the fact that both queues may be of di
 
 ## Examples
 
-```
+```kotlin
 val queueOne = new Queue()
 queueOne.add(1)
 queueOne.add(2)

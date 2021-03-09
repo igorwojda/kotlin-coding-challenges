@@ -8,7 +8,7 @@ Given a string implement a function which returns the character that is most com
 
 ## Examples
 
-```
+```kotlin
 maxChar("abcccccccd") // "c"
 
 maxChar("apple 1231111") // "1"

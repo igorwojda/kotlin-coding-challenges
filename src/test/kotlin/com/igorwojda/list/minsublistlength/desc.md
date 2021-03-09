@@ -11,7 +11,7 @@ You can use helper `min` function to deal with Kotlin nullability.
 
 ## Examples
 
-```
+```kotlin
 minSubListLength(listOf(1, 3, 4), 5) // 2 (smallest sub-list [3, 4])
 
 minSubListLength(listOf(1, 2, 11, 5, 9, 4, 6), 22) // 3 (smallest sub-list [11, 5, 9])

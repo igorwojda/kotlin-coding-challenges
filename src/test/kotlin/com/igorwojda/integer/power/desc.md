@@ -9,7 +9,7 @@ exponent. This function should mimic functionality of `Math.pow`.
 
 ## Examples
 
-```
+```kotlin
 power(2, 1) // 1
 
 power(2, 2) // 4

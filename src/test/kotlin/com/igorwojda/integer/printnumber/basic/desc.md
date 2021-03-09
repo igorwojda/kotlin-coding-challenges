@@ -9,7 +9,7 @@ value is zero then empty list should be returned.
 
 ## Examples
 
-```
+```kotlin
 printNumber(0) // []
 
 printNumber(2) // [2, 1]

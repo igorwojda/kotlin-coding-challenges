@@ -10,7 +10,7 @@ first list, two exactly two squared values must exist in second list.
 
 ## Examples
 
-```
+```kotlin
 squareEquals(listOf(2), listOf(4)) // true
 
 squareEquals(listOf(1, 2, 3), listOf(9, 1, 4)) // true

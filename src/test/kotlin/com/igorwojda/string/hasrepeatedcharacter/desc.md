@@ -9,7 +9,7 @@ it returns `false`.
 
 ## Examples
 
-```
+```kotlin
 hasRepeatedCharacter("abc") // false"
 
 hasRepeatedCharacter("aabc") // true

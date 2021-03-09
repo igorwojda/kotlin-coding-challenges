@@ -18,7 +18,7 @@ is needed to be compared until there are no more elements left to be compared.
 Sort `[5, 1, 4, 2, 8]`
 
 **First Pass**
- ```
+ ```kotlin
 [5, 1, 4, 2, 8] -> [1, 5, 4, 2, 8] Compares the first two elements, and swap since 5 > 1
 [1, 5, 4, 2, 8] -> [1, 4, 5, 2, 8] Swap since 5 > 4 
 [1, 4, 5, 2, 8] -> [1, 4, 2, 5, 8] Swap since 5 > 2 
@@ -26,7 +26,7 @@ Sort `[5, 1, 4, 2, 8]`
 ```
 
 **Second Pass**
-```
+```kotlin
 [1, 4, 2, 5, 8] -> [1, 4, 2, 5, 8] 
 [1, 4, 2, 5, 8] -> [1, 2, 4, 5, 8] Swap since 4 > 2 
 [1, 2, 4, 5, 8] -> [1, 2, 4, 5, 8] 
@@ -37,7 +37,7 @@ Now, the list is already sorted, but the algorithm does not know if it is comple
 without any swap to know it is sorted
 
 **Third Pass**
-```
+```kotlin
 [1, 2, 4, 5, 8] -> [1, 2, 4, 5, 8] 
 [1, 2, 4, 5, 8] -> [1, 2, 4, 5, 8] 
 [1, 2, 4, 5, 8] -> [1, 2, 4, 5, 8] 

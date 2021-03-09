@@ -9,7 +9,7 @@ same word if it is reversed. Include spaces and punctuation in determining if th
 
 ## Examples
 
-```
+```kotlin
 palindrome("abba") // true
 
 palindrome("abcdefg") // false

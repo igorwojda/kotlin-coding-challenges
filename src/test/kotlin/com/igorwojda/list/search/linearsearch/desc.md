@@ -13,7 +13,7 @@ Don't use any Kotlin build-in methods that are directly returning index of eleme
 
 ## Examples
 
-```
+```kotlin
 getIndex(listOf("A", "B", "C"), "A") // 0
 
 getIndex(listOf("A", "B", "C"), "B") // 1

@@ -15,7 +15,7 @@ string is a palindrome.
 
 ## Examples
 
-```
+```kotlin
 tolerantPalindrome("abba") == true
 
 tolerantPalindrome("abb#a") == true

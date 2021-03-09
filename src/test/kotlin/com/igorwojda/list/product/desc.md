@@ -8,7 +8,7 @@ Given a list of integers implement a function which returns the product of all n
 
 ## Examples
 
-```
+```kotlin
 product(listOf(1, 2)) // 2
 
 product(listOf(1, 2, 4)) // 8

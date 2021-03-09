@@ -8,7 +8,7 @@ Implement [binary search tree (BST)](https://en.wikipedia.org/wiki/Binary_search
 
 ## Examples
 
-```
+```kotlin
 //----------Tree------------
 //
 //           6

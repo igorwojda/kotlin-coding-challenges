@@ -10,7 +10,7 @@ became `a` etc. Allowed input is string containing only lowercase characters fro
 
 ## Examples
 
-```
+```kotlin
 encodeCaesarCipher("abc", 1) // bcd
 
 encodeCaesarCipher("abc", 3) // def

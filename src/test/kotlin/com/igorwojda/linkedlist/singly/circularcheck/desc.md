@@ -14,7 +14,7 @@ Given a linked list, return true if the list is circular, false if it is not.
 
 Example 1
 
-```
+```kotlin
 val l = new SinglyLinkedList();
 val a = new Node('a');
 val b = new Node('b');
@@ -28,7 +28,7 @@ circular(l) // true
 
 Example 2
 
-```
+```kotlin
 val l = new List();
 val a = new Node('a');
 circular(l) // false

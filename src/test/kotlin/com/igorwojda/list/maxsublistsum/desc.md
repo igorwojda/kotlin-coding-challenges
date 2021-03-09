@@ -12,7 +12,7 @@ You can use helper `max` function to deal with Kotlin nullability.
 
 ## Examples
 
-```
+```kotlin
 maxSubListSum(listOf<Int>(), 3) // null
 
 maxSubListSum(listOf(4, 2, 7), 2) // 9

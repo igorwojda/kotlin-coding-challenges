@@ -12,7 +12,7 @@ Given list of strings representing train station names implement a function whic
 
 ## Examples
 
-```
+```kotlin
 formatTrainRoute(listOf("Luton")) // "Train is calling at Luton"
 
 formatTrainRoute(listOf("Luton", "Harpenden")) // "Train is calling at Luton and Harpenden"

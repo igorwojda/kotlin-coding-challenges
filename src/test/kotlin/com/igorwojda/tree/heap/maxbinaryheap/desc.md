@@ -11,7 +11,7 @@ only if current level is full (each parent from previous level have two children
 
 ## Examples
 
-```
+```kotlin
 // ----------Heap------------
 //
 //           9

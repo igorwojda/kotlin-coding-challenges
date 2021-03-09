@@ -3,7 +3,7 @@
 ## Instructions
 
 Below function returns out the n-th entry in the [fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number) series.
-```
+```kotlin
 private fun fibonacciSequenceRecursiveCached(n: Int): Int {
     if (n < 2) {
         return n
@@ -17,7 +17,7 @@ However due to recursion this function has exponential complexity (function is c
 identical arguments), so its execution takes a long time. Store arguments of each call along with the result using
 `MethodCache` class.
 
-```
+```kotlin
 private data class MethodCache(val n: Int, val result: Int)
 ```
 

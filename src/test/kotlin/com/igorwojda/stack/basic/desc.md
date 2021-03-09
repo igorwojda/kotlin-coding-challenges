@@ -21,7 +21,7 @@ them:
 
 ## Examples
 
-```
+```kotlin
 val s = new Stack()
 s.add(1)
 s.add(2)

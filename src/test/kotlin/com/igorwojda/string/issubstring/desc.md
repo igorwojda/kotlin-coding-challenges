@@ -16,7 +16,7 @@ Don't use `String.contains` method.
 
 ## Examples
 
-```
+```kotlin
 isSubstring("go home", "ome") // true
 
 isSubstring("go home", "me") // true

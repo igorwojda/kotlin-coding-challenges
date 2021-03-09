@@ -9,7 +9,7 @@ Given positive integer `n` and integer `step` implement a function which returns
 
 ## Examples
 
-```
+```kotlin
 printNumber(0, 1) // []
 
 printNumber(6, 1) // [6, 5, 4, 3, 2, 1]

@@ -10,7 +10,7 @@ sering.
 
 ## Examples
 
-```
+```kotlin
 longestWord("big flower") // flower
 
 longestWord("this is a house") // house
