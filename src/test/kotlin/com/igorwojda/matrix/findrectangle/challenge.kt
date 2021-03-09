@@ -74,7 +74,7 @@ private class Test {
     }
 
     @Test
-    fun `find rectangle in image 6`() {
+    fun `find rectangle in image that has no background`() {
         val image = listOf(
             listOf(0)
         )
