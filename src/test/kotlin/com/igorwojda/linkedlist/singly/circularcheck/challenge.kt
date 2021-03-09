@@ -9,7 +9,7 @@ private fun circularCheck(list: SinglyLinkedList<Char>): Boolean {
     TODO("not implemented")
 }
 
-class CircularTest {
+private class Test {
     @Test
     fun `circular detects circular linked lists`() {
         val l = SinglyLinkedList<Char>()

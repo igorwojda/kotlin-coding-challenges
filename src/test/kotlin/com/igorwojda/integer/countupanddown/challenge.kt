@@ -7,7 +7,7 @@ private fun countUpAndDown(n: Int): List<Int> {
     TODO("not implemented")
 }
 
-class CountUpAndDownTest {
+private class Test {
     @Test
     fun `count up and down 0`() {
         countUpAndDown(0) shouldBeEqualTo listOf(0)

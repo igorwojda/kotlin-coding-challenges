@@ -7,7 +7,7 @@ private fun maxOccurrentChar(str: String): Char? {
     TODO("not implemented")
 }
 
-class StringMaxCharTest {
+private class Test {
     @Test
     fun `Don't find a char in empty string`() {
         maxOccurrentChar("") shouldBeEqualTo null

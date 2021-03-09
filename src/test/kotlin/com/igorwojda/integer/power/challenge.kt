@@ -7,7 +7,7 @@ private fun power(base: Int, exponent: Int): Int {
     TODO("not implemented")
 }
 
-class PowerTest {
+private class Test {
     @Test
     fun `power 2^1 returns 2`() {
         power(2, 1) shouldBeEqualTo 2

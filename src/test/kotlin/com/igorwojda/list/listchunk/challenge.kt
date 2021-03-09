@@ -7,7 +7,7 @@ private fun chunk(list: List<Int>, size: Int): List<List<Int>> {
     TODO("not implemented")
 }
 
-class ListChunkTest {
+private class Test {
     @Test
     fun `chunk divides an list of 10 elements with chunk size 2`() {
         val list = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)

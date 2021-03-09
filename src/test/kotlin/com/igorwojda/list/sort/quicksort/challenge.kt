@@ -13,7 +13,7 @@ private fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
     this[index2] = tmp
 }
 
-class QuickSortTest {
+private class Test {
     @Test
     fun `quick sort empty list`() {
         quickSort(mutableListOf()) shouldBeEqualTo listOf()

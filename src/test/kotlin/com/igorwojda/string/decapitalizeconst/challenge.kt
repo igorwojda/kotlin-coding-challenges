@@ -7,7 +7,7 @@ private fun decapitalizeConst(str: String): String {
     TODO("not implemented")
 }
 
-class DecapitalizeConstTest {
+private class Test {
     @Test
     fun `"FOOBAR" return null`() {
         decapitalizeConst("FOOBAR") shouldBeEqualTo "foobar"

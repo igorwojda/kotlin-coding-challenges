@@ -15,7 +15,7 @@ private val Int.digitCount get() = -1
 
 private fun maxDigits(list: List<Int>): Int = -1
 
-class RadixSortTest {
+private class Test {
     @Test
     fun `getDigitAt at 0 for 123 is 1`() {
         123.getDigitAt(0) shouldBeEqualTo '3'

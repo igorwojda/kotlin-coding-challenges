@@ -7,7 +7,7 @@ private fun isPermutationPalindrome(str: String): Boolean {
     TODO("not implemented")
 }
 
-class IsPermutationPalindromeTest {
+private class Test {
     @Test
     fun `"gikig" is a palindrome`() {
         isPermutationPalindrome("gikig") shouldBeEqualTo true

@@ -7,7 +7,7 @@ private fun capitalizeSentence(str: String): String {
     TODO("not implemented")
 }
 
-class CapitalizeSentenceTest {
+private class Test {
     @Test
     fun `"flower" is capitalized to "Flower"`() {
         capitalizeSentence("flower") shouldBeEqualTo "Flower"

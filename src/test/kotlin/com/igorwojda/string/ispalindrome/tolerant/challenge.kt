@@ -7,7 +7,7 @@ private fun isTolerantPalindrome(str: String, characterRemoved: Boolean = false)
     TODO("not implemented")
 }
 
-class IsTolerantPalindromeTest {
+private class Test {
     @Test
     fun `"aba" is a palindrome`() {
         isTolerantPalindrome("aba") shouldBeEqualTo true

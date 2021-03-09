@@ -7,7 +7,7 @@ fun flatten(list: List<*>): List<*> {
     TODO("not implemented")
 }
 
-class FlattenTest {
+private class Test {
     @Test
     fun `flatten test 1`() {
         flatten(listOf(1)) shouldBeEqualTo listOf(1)

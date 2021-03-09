@@ -7,7 +7,7 @@ private fun containsRange(range1: IntRange, range2: IntRange): Boolean {
     TODO("not implemented")
 }
 
-class ContainsRangeTest {
+private class Test {
     @Test
     fun `5-7 range contains 5-7`() {
         containsRange(5..7, 5..7) shouldBeEqualTo true

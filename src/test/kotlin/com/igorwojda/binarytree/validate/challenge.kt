@@ -7,7 +7,7 @@ private fun isValidSearchBinaryTree(node: Node<Int>): Boolean {
     TODO("not implemented")
 }
 
-class IsValidSearchBinaryTreeTest {
+private class Test {
     @Test
     fun `Validate recognizes a valid BST`() {
         // -- -------Tree------------

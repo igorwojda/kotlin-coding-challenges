@@ -15,7 +15,7 @@ private fun fibonacciSequenceRecursiveCached(n: Int, methodCache: MutableList<Me
 
 private data class MethodCache(val n: Int, val result: Int)
 
-class FibonacciSeriesRecursiveMethodCacheTest {
+private class Test {
     @Test
     fun `calculates correct fib value for 0`() {
         fibonacciSequenceRecursiveCached(0) shouldBeEqualTo 0

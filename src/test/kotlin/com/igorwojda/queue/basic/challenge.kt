@@ -20,7 +20,7 @@ private class Queue<E> {
     }
 }
 
-class QueueTest {
+private class Test {
     @Test
     fun `can add elements to a queue`() {
         Queue<Int>().apply { add(1) }

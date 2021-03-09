@@ -7,7 +7,7 @@ private fun filterOdd(list: List<Int>): List<Int> {
     TODO("not implemented")
 }
 
-class GetOddNumbersTest {
+private class Test {
     @Test
     fun `empty list returns empty list`() {
         filterOdd(listOf()) shouldBeEqualTo emptyList()

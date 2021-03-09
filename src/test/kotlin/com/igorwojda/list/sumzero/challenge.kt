@@ -7,7 +7,7 @@ private fun sumZero(list: List<Int>): Pair<Int, Int>? {
     TODO("not implemented")
 }
 
-class SumZeroTest {
+private class Test {
     @Test
     fun `sumZero empty list return null`() {
         sumZero(listOf()) shouldBeEqualTo null

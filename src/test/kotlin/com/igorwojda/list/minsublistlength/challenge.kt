@@ -16,7 +16,7 @@ private fun min(i1: Int?, i2: Int?): Int? {
     }
 }
 
-class MinSubListLengthTest {
+private class Test {
     @Test
     fun `min sub list sum empty list and 7 returns 0`() {
         minSubListLength(listOf(), 7) shouldBeEqualTo 0

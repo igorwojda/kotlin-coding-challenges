@@ -1,4 +1,4 @@
-package com.igorwojda.puzzle
+package com.igorwojda.matrix.findimage
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test

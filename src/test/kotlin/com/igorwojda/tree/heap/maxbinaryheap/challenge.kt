@@ -29,7 +29,7 @@ private class MaxBinaryHeap<E : Comparable<E>> {
     }
 }
 
-class MaxBinaryHeapTest {
+private class Test {
     @Test
     fun `build valid max binary heap`() {
         MaxBinaryHeap<Int>().apply {

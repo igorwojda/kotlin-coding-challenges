@@ -7,7 +7,7 @@ private fun insertionSort(list: MutableList<Int>): List<Int> {
     TODO("not implemented")
 }
 
-class InsertionSortTest {
+private class Test {
     @Test
     fun `insertion sort empty list`() {
         insertionSort(mutableListOf()) shouldBeEqualTo listOf()

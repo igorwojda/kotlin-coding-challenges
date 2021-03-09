@@ -7,7 +7,7 @@ fun generateSteps(n: Int): List<String> {
     TODO("not implemented")
 }
 
-class StepsTest {
+private class Test {
     @Test
     fun `steps n = 1`() {
         val result = generateSteps(1)

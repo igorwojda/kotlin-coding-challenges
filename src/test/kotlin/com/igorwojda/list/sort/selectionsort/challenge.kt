@@ -7,7 +7,7 @@ private fun selectionSort(list: List<Int>): List<Number> {
     return list
 }
 
-class SelectionSortTest {
+private class Test {
     @Test
     fun `selection sort empty list`() {
         selectionSort(mutableListOf()) shouldBeEqualTo listOf()

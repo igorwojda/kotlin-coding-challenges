@@ -7,7 +7,7 @@ private fun isPalindrome(str: String): Boolean {
     TODO("not implemented")
 }
 
-class IsPalindromeTest {
+private class Test {
 
     @Test
     fun `"aba" is a palindrome`() {

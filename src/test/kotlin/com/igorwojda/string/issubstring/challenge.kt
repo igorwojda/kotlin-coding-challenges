@@ -7,7 +7,7 @@ private fun isSubstring(str: String, subStr: String): Boolean {
     TODO("not implemented")
 }
 
-class IsSubstringTest {
+private class Test {
     @Test
     fun `abd not in abcd`() {
         isSubstring("abcd", "abd") shouldBeEqualTo false

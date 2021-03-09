@@ -7,7 +7,7 @@ private fun bubbleSort(list: List<Int>): List<Number> {
     TODO("not implemented")
 }
 
-class BubbleSortTest {
+private class Test {
     @Test
     fun `bubble sort empty list`() {
         bubbleSort(mutableListOf()) shouldBeEqualTo listOf()

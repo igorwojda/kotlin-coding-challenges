@@ -17,7 +17,7 @@ private fun max(i1: Int?, i2: Int?): Int? {
     }
 }
 
-class MaxSubListTest {
+private class Test {
     @Test
     fun `max sublist sum for list 4, 2, 7 and n 2 `() {
         maxSubListSum(listOf(4, 2, 7), 2) shouldBeEqualTo 9

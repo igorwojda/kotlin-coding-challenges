@@ -7,7 +7,7 @@ private fun equalDigitFrequency(i1: Int, i2: Int): Boolean {
     TODO("not implemented")
 }
 
-class DigitFrequencyTest {
+private class Test {
     @Test
     fun `"789" and "897" have the same digit frequency`() {
         equalDigitFrequency(789, 897) shouldBeEqualTo true

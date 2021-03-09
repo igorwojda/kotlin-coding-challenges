@@ -7,7 +7,7 @@ private fun reverse(str: String): String {
     TODO("not implemented")
 }
 
-class StringReverseTest {
+private class Test {
     @Test
     fun `Reverse of "abcd" is "dcba"`() {
         reverse("abcd") shouldBeEqualTo "dcba"

@@ -7,7 +7,7 @@ private fun squareEquals(list: List<Int>, squared: List<Int>): Boolean {
     TODO("not implemented")
 }
 
-class SquareEqualsTest {
+private class Test {
     @Test
     fun `square 2 equal square 4`() {
         squareEquals(listOf(2), listOf(4)) shouldBeEqualTo true

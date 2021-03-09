@@ -7,7 +7,7 @@ private fun isAnagram(str1: String, str2: String): Boolean {
     TODO("not implemented")
 }
 
-class AnagramTest {
+private class Test {
     @Test
     fun `"rail safety" is an anagram of "fairy tales"`() {
         isAnagram("rail safety", "fairy tales") shouldBeEqualTo true

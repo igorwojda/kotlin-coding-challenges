@@ -7,7 +7,7 @@ private fun anyCallback(list: List<Int>, callback: (Int) -> Boolean): Boolean {
     TODO("not implemented")
 }
 
-class AnyCallbackTest {
+private class Test {
     @Test
     fun `any callback returns true`() {
         val callback: ((Int) -> Boolean) = { it > 3 }

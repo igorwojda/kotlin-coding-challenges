@@ -7,7 +7,7 @@ private fun countUniqueValues(list: List<Int>): Int {
     TODO("not implemented")
 }
 
-class CountUniqueValuesTest {
+private class Test {
     @Test
     fun `countUniqueValues empty list return 0`() {
         countUniqueValues(listOf()) shouldBeEqualTo 0

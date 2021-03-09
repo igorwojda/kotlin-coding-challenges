@@ -7,7 +7,7 @@ private fun getAllPairs(n: Int): List<Pair<Int, Int>> {
     TODO("not implemented")
 }
 
-class GetAllPairsTest {
+private class Test {
     @Test
     fun `get all pairs 0`() {
         getAllPairs(0) shouldBeEqualTo listOf(0 to 0)

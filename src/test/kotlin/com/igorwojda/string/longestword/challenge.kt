@@ -7,7 +7,7 @@ private fun longestWord(str: String): String {
     TODO("not implemented")
 }
 
-class LongestWordTest {
+private class Test {
     @Test
     fun `"flower" return "flower"`() {
         longestWord("flower") shouldBeEqualTo "flower"

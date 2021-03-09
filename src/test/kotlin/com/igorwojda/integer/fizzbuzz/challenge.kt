@@ -7,7 +7,7 @@ private fun fizzBuzz(n: Int): List<String> {
     TODO("not implemented")
 }
 
-class FizzBuzzTest {
+private class Test {
 
     @Test
     fun `Calling fizzbuzz with "5" returns list with 5 items`() {

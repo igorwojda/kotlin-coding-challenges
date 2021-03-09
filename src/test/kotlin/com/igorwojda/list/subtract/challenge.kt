@@ -7,7 +7,7 @@ private fun getSubtraction(list1: List<String>, list2: List<String>): List<Strin
     TODO("not implemented")
 }
 
-class SubtractTest {
+private class Test {
     @Test
     fun `A, B, C and B ,C returns A`() {
         getSubtraction(listOf("A", "B", "C"), listOf("B", "C")) shouldBeEqualTo listOf("A")

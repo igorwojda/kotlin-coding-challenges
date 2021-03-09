@@ -7,7 +7,7 @@ private fun generateSpiralMatrix(n: Int): List<MutableList<Int?>> {
     TODO("not implemented")
 }
 
-class SpiralMatrixGeneratorTest {
+private class Test {
     @Test
     fun `generateSpiralMatrix generates a 2x2 matrix`() {
         val matrix = generateSpiralMatrix(2)

@@ -26,7 +26,7 @@ private data class BinaryNode<E : Comparable<E>>(
     var right: BinaryNode<E>? = null
 )
 
-class BinarySearchTreeTest {
+private class Test {
     @Test
     fun `build valid binary search tree`() {
         // ----------Tree------------

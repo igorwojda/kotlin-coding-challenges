@@ -10,7 +10,7 @@ private fun midpoint(list: Solution.SinglyLinkedList<Char>): Node<Char>? {
     TODO("not implemented")
 }
 
-class MidpointTest {
+private class Test {
     @Test
     fun `midpoint of list with 0 elements`() {
         SinglyLinkedList<Char>().apply {

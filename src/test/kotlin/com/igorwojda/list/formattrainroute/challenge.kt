@@ -7,7 +7,7 @@ private fun formatTrainRoute(stations: List<String>): String {
     TODO("not implemented")
 }
 
-class TrainRouteTest {
+private class Test {
     @Test
     fun `formatTrainRoute list "Luton"`() {
         formatTrainRoute(listOf("Luton")) shouldBeEqualTo "Train is calling at Luton"
@@ -15,12 +15,7 @@ class TrainRouteTest {
 
     @Test
     fun `formatTrainRoute list "Luton", "Harpenden"`() {
-        formatTrainRoute(
-            listOf(
-                "Luton",
-                "Harpenden"
-            )
-        ) shouldBeEqualTo "Train is calling at Luton and Harpenden"
+        formatTrainRoute(listOf("Luton", "Harpenden")) shouldBeEqualTo "Train is calling at Luton and Harpenden"
     }
 
     @Test

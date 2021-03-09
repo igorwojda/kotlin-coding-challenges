@@ -7,7 +7,7 @@ private fun surroundedLetter(str: String): Boolean {
     TODO("not implemented")
 }
 
-class CaesarCipherTest {
+private class Test {
     @Test
     fun `"a" return "false"`() {
         surroundedLetter("a") shouldBeEqualTo false

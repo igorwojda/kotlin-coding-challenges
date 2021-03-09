@@ -7,7 +7,7 @@ private fun countDown(n: Int): List<Int> {
     TODO("not implemented")
 }
 
-class CountDownTest {
+private class Test {
     @Test
     fun `count down 0`() {
         countDown(0) shouldBeEqualTo listOf(0)

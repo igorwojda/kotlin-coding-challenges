@@ -7,7 +7,7 @@ private fun reverseInt(i: Int): Int {
     TODO("not implemented")
 }
 
-class ReverseIntTest {
+private class Test {
     @Test
     fun `ReverseInt handles 0 as an input`() {
         reverseInt(0) shouldBeEqualTo 0

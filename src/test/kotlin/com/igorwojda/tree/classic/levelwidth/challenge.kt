@@ -7,7 +7,7 @@ private fun levelWidth(tree: Node): List<Int> {
     TODO("not implemented")
 }
 
-class LevelWidthTest {
+private class Test {
     @Test
     fun `levelWidth returns 1, 2`() {
         // ----------Tree------------

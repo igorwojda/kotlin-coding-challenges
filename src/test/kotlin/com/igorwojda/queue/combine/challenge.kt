@@ -21,7 +21,7 @@ private class Queue<E> {
     fun isEmpty() = list.isEmpty()
 }
 
-class CombineTest {
+private class Test {
     @Test
     fun `can add elements to a queue`() {
         Queue<Int>().apply { add(1) }

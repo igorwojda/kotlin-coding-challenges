@@ -10,7 +10,7 @@ private data class Node<T>(
     var next: Node<T>? = null
 )
 
-class DoublyLinkedListTest {
+private class Test {
 //    @Test
 //    fun `when list is created head node is null`() {
 //        DoublyLinkedList<Int>().apply {

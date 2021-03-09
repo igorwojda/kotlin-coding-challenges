@@ -7,7 +7,7 @@ fun getDuplicatedArguments(vararg strings: String): List<String>? {
     TODO("not implemented")
 }
 
-class CheckDuplicatedParamsTest {
+private class Test {
     @Test
     fun `a, b, c returns empty list`() {
         getDuplicatedArguments("a", "b", "c") shouldBeEqualTo listOf()

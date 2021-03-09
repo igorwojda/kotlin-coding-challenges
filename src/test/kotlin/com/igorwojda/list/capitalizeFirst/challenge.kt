@@ -7,7 +7,7 @@ private fun capitalizeFirst(list: List<String>): List<String> {
     TODO("not implemented")
 }
 
-class CapitalizeFirstTest {
+private class Test {
     @Test
     fun `capitalize list with one string`() {
         capitalizeFirst(listOf("igor")) shouldBeEqualTo listOf("Igor")

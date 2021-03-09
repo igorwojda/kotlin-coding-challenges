@@ -7,7 +7,7 @@ private fun encodeCaesarCipher(str: String, shift: Int): String {
     TODO("not implemented")
 }
 
-class CaesarCipherTest {
+private class Test {
     @Test
     fun `"abc" with shift 1 return "bcd"`() {
         encodeCaesarCipher("abc", 1) shouldBeEqualTo "bcd"

@@ -7,7 +7,7 @@ private fun getIndex(list: List<String>, str: String): Int {
     TODO("not implemented")
 }
 
-class LinearSearchTest {
+private class Test {
     @Test
     fun `index of 'A' in 'A, B, C' is 0`() {
         getIndex(listOf("A", "B", "C"), "A") shouldBeEqualTo 0

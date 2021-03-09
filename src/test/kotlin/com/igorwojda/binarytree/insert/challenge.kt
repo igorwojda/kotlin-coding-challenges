@@ -17,7 +17,7 @@ private data class Node<E : Comparable<E>>(
     }
 }
 
-class BinarySearchTreeTest {
+private class Test {
     @Test
     fun `can insert correctly`() {
         // -- -------Tree------------

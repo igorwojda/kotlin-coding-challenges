@@ -9,7 +9,7 @@ private fun fromLast(list: SinglyLinkedList<Char>, endIndex: Int): Node<Char>? {
     TODO("not implemented")
 }
 
-class FromLastTest {
+private class Test {
     @Test
     fun `returns the node 0 elements from the end`() {
         SinglyLinkedList<Char>().apply {

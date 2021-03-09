@@ -23,7 +23,7 @@ private class Stack<E> {
     }
 }
 
-class StackTest {
+private class Test {
     @Test
     fun `stack can add and remove items`() {
         Stack<Int>().apply {

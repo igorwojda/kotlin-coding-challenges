@@ -7,7 +7,7 @@ private fun product(list: List<Int>): Int {
     TODO("not implemented")
 }
 
-class ProductTest {
+private class Test {
     @Test
     fun `product 0 returns 0`() {
         product(listOf(0)) shouldBeEqualTo 0

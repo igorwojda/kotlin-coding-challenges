@@ -120,7 +120,7 @@ private class Queue<E> {
     val size get() = list.size
 }
 
-class TreeTest {
+private class Test {
     @Test
     fun `traverse breath first`() {
         getTree().traverseBreathFirst() shouldBeEqualTo listOf(

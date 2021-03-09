@@ -12,7 +12,7 @@ private fun mergeSort(list: List<Int>): List<Int> {
     TODO("not implemented")
 }
 
-class MergeSortTest {
+private class Test {
     @Test
     fun `merge sort empty list`() {
         mergeSort(mutableListOf()) shouldBeEqualTo listOf()

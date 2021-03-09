@@ -7,7 +7,7 @@ private fun fibonacci(n: Int): Int {
     TODO("not implemented")
 }
 
-class FibonacciSeriesTest {
+private class Test {
     @Test
     fun `calculates correct fib value for 0`() {
         fibonacci(0) shouldBeEqualTo 0

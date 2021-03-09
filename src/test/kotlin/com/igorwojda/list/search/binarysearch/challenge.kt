@@ -7,7 +7,7 @@ private fun binarySearch(list: List<Char>, element: Char): Int {
     TODO("not implemented")
 }
 
-class BinarySearchTest {
+private class Test {
     @Test
     fun `index of A in A, B, C is 0`() {
         binarySearch(listOf('A', 'B', 'C'), 'A') shouldBeEqualTo 0

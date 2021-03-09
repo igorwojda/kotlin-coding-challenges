@@ -7,7 +7,7 @@ private fun vowels(str: String): Int {
     TODO("not implemented")
 }
 
-class VowelsTest {
+private class Test {
     @Test
     fun `"aeiouy" has 6 vovels`() {
         vowels("aeiouy") shouldBeEqualTo 6

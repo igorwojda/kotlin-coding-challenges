@@ -7,7 +7,7 @@ private fun hasRepeatedChar(str: String): Boolean {
     TODO("not implemented")
 }
 
-class RepeatedCharacterTest {
+private class Test {
     @Test
     fun `"abc" don't have repeated character`() {
         hasRepeatedChar("abc") shouldBeEqualTo false

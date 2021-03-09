@@ -19,7 +19,7 @@ inline fun <K, V> MutableMap<K, V>.incrementExisting(key: K, value: V) {
     put(key, value)
 }
 
-class TargetAverageTest {
+private class Test {
     @Test
     fun `empty list return false`() {
         hasAverage(listOf(), 1.0) shouldBeEqualTo false

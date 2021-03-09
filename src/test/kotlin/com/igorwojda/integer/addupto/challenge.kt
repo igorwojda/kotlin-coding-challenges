@@ -7,7 +7,7 @@ private fun addUpTo(n: Int): Int {
     TODO("not implemented")
 }
 
-class AddUpToTest {
+private class Test {
     @Test
     fun `add up to 1`() {
         addUpTo(1) shouldBeEqualTo 1

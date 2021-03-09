@@ -7,7 +7,7 @@ fun generatePyramid(n: Int): List<String> {
     TODO("not implemented")
 }
 
-class PyramidGeneratorTest {
+private class Test {
 
     @Test
     fun `pyramid n = 2`() {
