@@ -4,7 +4,7 @@ package com.igorwojda.list.sort.insertionsort
 // Time complexity (Average): Θ(n^2)
 // Time complexity (Worst): O(n^2)
 // Space complexity: O(1)
-private object Solution {
+private object Solution1 {
     private fun insertionSort(list: MutableList<Int>): List<Int> {
         (1..list.lastIndex).forEach { i ->
             var j = i - 1

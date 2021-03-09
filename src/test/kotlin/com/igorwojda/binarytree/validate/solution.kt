@@ -1,6 +1,6 @@
 package com.igorwojda.binarytree.validate
 
-private object Solution {
+private object Solution1 {
     private fun isValidSearchBinaryTree(node: Node<Int>, min: Int? = null, max: Int? = null): Boolean {
         if (min != null && node.data < min) {
             return false

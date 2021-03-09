@@ -1,6 +1,6 @@
 package com.igorwojda.linkedlist.singly.base
 
-object Solution {
+object Solution1 {
     class SinglyLinkedList<E> : Iterable<Node<E>> {
         var head: Node<E>? = null
 

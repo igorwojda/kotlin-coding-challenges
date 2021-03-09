@@ -1,6 +1,6 @@
 package com.igorwojda.queue.combine
 
-private object Solution {
+private object Solution1 {
     class Queue<E> {
         private val list = mutableListOf<E>()
 

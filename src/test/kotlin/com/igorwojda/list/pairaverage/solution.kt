@@ -2,7 +2,7 @@ package com.igorwojda.list.pairaverage
 
 // Time complexity: O(n)
 // Optimal solution using double pointer.
-private object Solution {
+private object Solution1 {
     fun hasAverage(list: List<Int>, average: Double): Boolean {
         if (list.size < 2) {
             return false

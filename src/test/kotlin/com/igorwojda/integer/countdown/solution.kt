@@ -1,7 +1,7 @@
 package com.igorwojda.integer.countdown
 
 // Kotlin idiomatic solution
-private object Solution {
+private object Solution1 {
     private fun countDown(n: Int): List<Int> {
         // Create a range and convert it to a list
         return (n downTo 0).toList()

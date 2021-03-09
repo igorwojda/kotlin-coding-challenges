@@ -1,6 +1,6 @@
 package com.igorwojda.list.flatten
 
-private object Solution {
+private object Solution1 {
     fun flatten(list: List<*>): List<*> {
         val result = mutableListOf<Any?>()
 

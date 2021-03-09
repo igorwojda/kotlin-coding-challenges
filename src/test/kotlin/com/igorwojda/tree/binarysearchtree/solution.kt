@@ -1,6 +1,6 @@
 package com.igorwojda.tree.binarysearchtree
 
-object Solution {
+object Solution1 {
     private class BinarySearchTree<E : Comparable<E>> {
         var root: BinaryNode<E>? = null
             private set

@@ -3,7 +3,7 @@ package com.igorwojda.list.search.binarysearch
 // Time complexity (Best): Ω(1)
 // Time complexity (Average): Θ(log(n))
 // Time complexity(Worst): O(log(n))
-private object Solution {
+private object Solution1 {
     private fun binarySearch(list: List<Char>, element: Char): Int {
         var left = 0
         var right = list.size - 1

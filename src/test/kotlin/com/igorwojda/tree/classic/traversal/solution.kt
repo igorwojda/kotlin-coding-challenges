@@ -1,6 +1,6 @@
 package com.igorwojda.tree.classic.traversal
 
-private object Solution {
+private object Solution1 {
     private class BinarySearchTree<E : Comparable<E>> {
         var root: BinaryNode<E>? = null
             private set

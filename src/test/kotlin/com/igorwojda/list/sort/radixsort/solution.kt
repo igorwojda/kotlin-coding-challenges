@@ -4,7 +4,7 @@ package com.igorwojda.list.sort.radixsort
 // Time complexity (Average): Θ(n^2)
 // Time complexity (Worst): O(n^2)
 // Space complexity: O(1)
-private object Solution {
+private object Solution1 {
     private fun radixSort(list: List<Int>): List<Number> {
         // create temp list
         val tempList = list.toMutableList()

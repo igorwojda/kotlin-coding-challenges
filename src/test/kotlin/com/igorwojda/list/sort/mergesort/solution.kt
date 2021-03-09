@@ -4,7 +4,7 @@ package com.igorwojda.list.sort.mergesort
 // Time complexity (Average): Θ(n log(n))
 // Time complexity (Worst): O(n log(n))
 // Space complexity: O(n)
-private object Solution {
+private object Solution1 {
     private fun mergeSort(list: List<Int>): List<Int> {
         if (list.size <= 1) return list
 

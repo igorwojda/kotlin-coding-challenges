@@ -1,6 +1,6 @@
 package com.igorwojda.string.caesarcipher
 
-private object Solution {
+private object Solution1 {
     private fun encodeCaesarCipher(str: String, shift: Int): String {
         val aCode = 'a'.toInt()
         val zCode = 'z'.toInt()

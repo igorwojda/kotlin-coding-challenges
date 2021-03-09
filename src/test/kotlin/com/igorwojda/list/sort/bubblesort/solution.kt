@@ -4,7 +4,7 @@ package com.igorwojda.list.sort.bubblesort
 // Time complexity (Average): Θ(n^2)
 // Time complexity (Worst): O(n^2)
 // Space complexity: O(1)
-private object Solution {
+private object Solution1 {
     private fun bubbleSort(list: List<Int>): List<Number> {
         val sorted = list.toMutableList()
 

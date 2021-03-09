@@ -1,6 +1,6 @@
 package com.igorwojda.linkedlist.doubly.base
 
-object Solution {
+object Solution1 {
     private class DoublyLinkedList<E> : Iterable<Node<E>> {
         var head: Node<E>? = null
 
