@@ -76,7 +76,7 @@ your time before you take a look at the presented solution. **Good luck!**
 
 **Warrior** 
 
-- [Spiral matrix generator](src/test/kotlin/com/igorwojda/integer/spiralmatrixgenerator/desc.md)
+- [Spiral matrix generator](src/test/kotlin/com/igorwojda/matrix/spiralmatrixgenerator/desc.md)
 - [Queue](src/test/kotlin/com/igorwojda/queue/basic/desc.md)
 - [Combine queues](src/test/kotlin/com/igorwojda/queue/combine/desc.md)
 - [Stack](src/test/kotlin/com/igorwojda/stack/basic/desc.md)
