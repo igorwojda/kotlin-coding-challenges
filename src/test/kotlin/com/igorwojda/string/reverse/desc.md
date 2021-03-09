@@ -12,7 +12,7 @@ Don't use Kotlin `String.reverse` function
 
 ## Examples
 
-```
+```kotlin
 reverse('apple') == 'leppa'
 
 reverse('hello') == 'olleh'
