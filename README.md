@@ -77,10 +77,12 @@ time. Take your time before you take a look at the presented solution. **Good lu
 - [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz/desc.md)
 - [Caesar Cipher](src/test/kotlin/com/igorwojda/string/caesarcipher/desc.md)
 - [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter/desc.md)
+- [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter/desc.md)
 
 **Warrior** 
 
 - [Spiral matrix generator](src/test/kotlin/com/igorwojda/matrix/spiralmatrixgenerator/desc.md)
+- [Find rectangle](src/test/kotlin/com/igorwojda/matrix/findrectangle/desc.md)
 - [Queue](src/test/kotlin/com/igorwojda/queue/basic/desc.md)
 - [Combine queues](src/test/kotlin/com/igorwojda/queue/combine/desc.md)
 - [Stack](src/test/kotlin/com/igorwojda/stack/basic/desc.md)

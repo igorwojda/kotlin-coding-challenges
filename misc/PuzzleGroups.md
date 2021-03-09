@@ -127,7 +127,6 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Print numbers with steps](../src/test/kotlin/com/igorwojda/integer/printnumber/steps/desc.md)
 - [Pyramid generator](../src/test/kotlin/com/igorwojda/integer/pyramidgenerator/desc.md)
 - [Reverse Int](../src/test/kotlin/com/igorwojda/integer/reverse/desc.md)
-- [Spiral matrix generator](../src/test/kotlin/com/igorwojda/integer/spiralmatrixgenerator/desc.md)
 - [Steps generator](../src/test/kotlin/com/igorwojda/integer/stepsgenerator/desc.md)
 
 ## String
@@ -148,6 +147,11 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Surrounded letter](../src/test/kotlin/com/igorwojda/string/surroundedletter/desc.md)
 - [Find the vowels](../src/test/kotlin/com/igorwojda/string/vowels/desc.md)
 - [Format train route](../src/test/kotlin/com/igorwojda/list/formattrainroute/desc.md)
+
+## Matrix
+
+- [Spiral matrix generator](../src/test/kotlin/com/igorwojda/integer/spiralmatrixgenerator/desc.md)
+- [Find rectangle](src/test/kotlin/com/igorwojda/matrix/findrectangle/desc.md)
 
 ## Range
 
