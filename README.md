@@ -1,20 +1,23 @@
-# Kotlin coding puzzles
+# Kotlin coding challenges
 
-This repository contains a set of [programming puzzles](#lets-solve-some-puzzles) that are solved using the
+This repository contains a set of [programming challenges](#lets-solve-some-challenges) that are solved using the
 [Kotlin](https://kotlinlang.org/) language (hints, solutions tests and [useful links](#useful-links) are here as well).
-The purpose of this repository is to help you to practice coding and develop strong problem-solving skills. This will help
-you to become a better programmer and improve your chance of getting a new job by passing
+The purpose of this repository is to help you to practice coding and develop strong problem-solving skills. This will
+help you to become a better programmer and improve your chance of getting a new job by passing
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
 
-## Puzzle structure
+## Challenge structure
 
-Each puzzle is located in separate package and it contains 3 main files ([screen](./misc/image/SampleTask.png)):
+Each challenge is located in separate package and it contains 3 main
+files ([screen](./misc/image/challenge-structure.png)):
+
 - `desc.md` - the task description.
-- `desc.kt` - an empty method/class where puzzle should be solved. This file also contains set of test and ocasionally helper methods.
+- `desc.kt` - an empty method/class where challenge should be solved. This file also contains set of test and
+  ocasionally helper methods.
   [JUnit](https://junit.org/junit4/) tests which verify that task was solved correctly.
 - `solution.kt` - a file containing one or more solutions.
 
-Keep in mind that each puzzle will usually have more than one solution. Even simple puzzles like
+Keep in mind that each challenge will usually have more than one solution. Even simple challenges like
 [String reversal](src/test/kotlin/com/igorwojda/string/reverse/desc.md) can be solved in
 [10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually, we compare various
 solutions using
@@ -25,17 +28,18 @@ determine space/time complexity and we look at code readability.
 
 1. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 2. Import project by using IntelliJ IDEA menu: `File | New | Project From Version Control | Git`
-3. Choose a puzzle and code the [solution](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Solving-coding-chalenges)
-4. [Run the tests](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Running-tests) to verify your solution
+3. Choose a challenge and code
+   the [solution](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Solving-coding-chalenges)
+4. [Run the tests](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Running-tests) to verify your solution
 
-# Let's solve some puzzles
+# Let's solve some challenges
 
-Puzzles below are segregated by different difficulties. The repository also contains puzzles grouped by
+Challenges below are segregated by different difficulties. The repository also contains challenges grouped by
 [problem type](misc/desc.md).
 
-Some puzzles may contain a reference to other puzzles that should be solved before to have a better understanding of the
-problem. To succeed you need to practice often, repeat the same puzzles multiple times and be persistent over time. Take
-your time before you take a look at the presented solution. **Good luck!**
+Some challenges may contain a reference to other challenges that should be solved before to have a better understanding
+of the problem. To succeed you need to practice often, repeat the same challenges multiple times and be persistent over
+time. Take your time before you take a look at the presented solution. **Good luck!**
 
 **New in Town**
 
@@ -130,7 +134,7 @@ your time before you take a look at the presented solution. **Good luck!**
 - [Advent of code](https://adventofcode.com/2018/events) - one month of various programing problems released daily at
   the end of the year. Fortunately archive of past events is still there.
 - [Code Google Com Codejam](https://code.google.com/codejam/past-contests) - Google Code Jam, calls on programmers
-  around the world to solve challenging, algorithmic puzzles against the clock. They publish all the past problems on
+  around the world to solve challenging, algorithmic challenges against the clock. They publish all the past problems on
   their website.
 - [CoderByte](https://coderbyte.com/challenges) - 200+ challenges, data structures / algorithms / company interview
   problems segregated by difficulty. Unfortunately most of them are only available for premium users. Premium gives you
@@ -138,10 +142,10 @@ your time before you take a look at the presented solution. **Good luck!**
 - [CodeChef](https://www.codechef.com/problems/school) - contains set of programming problems segregated by difficulty.
 - [LeetCode](https://leetcode.com/problemset/all) - data structures / algorithms / company interview problems segregated
   by difficulty.
-- [Code Forces](http://codeforces.com/problemset) - list of programming puzzles is smaller than other websites, but you
-  will still have plenty of problems to solve.
-- [Spoj](https://www.spoj.com/problems/classical) - list of programming puzzles is smaller than other websites, but you
-  will still have plenty of problems to solve.
+- [Code Forces](http://codeforces.com/problemset) - list of programming challenges is smaller than other websites, but
+  you will still have plenty of problems to solve.
+- [Spoj](https://www.spoj.com/problems/classical) - list of programming challenges is smaller than other websites, but
+  you will still have plenty of problems to solve.
 
 ## Video courses
 
@@ -182,7 +186,7 @@ your time before you take a look at the presented solution. **Good luck!**
 # Contribute
 
 Feedback and new contributions are welcome whether it's through bug reports or new PRs. To add new coding puzzle just
-follow this [guide](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Adding-a-new-puzzle) and open PR.
+follow this [guide](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Adding-a-new-puzzle) and open PR.
 
 ## Contributors
 
@@ -193,7 +197,7 @@ follow this [guide](https://github.com/igorwojda/kotlin-coding-puzzle/wiki/Addin
 
 # Author
 
-[![Follow me](https://github.com/igorwojda/kotlin-coding-puzzle/raw/main/misc/image/avatar.png)](https://twitter.com/igorwojda)
+[![Follow me](https://github.com/igorwojda/kotlin-coding-challenges/raw/main/misc/image/avatar.png)](https://twitter.com/igorwojda)
 
 [![Follow me](https://img.shields.io/twitter/follow/igorwojda?style=social)](https://twitter.com/igorwojda)
 
