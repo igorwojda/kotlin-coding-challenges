@@ -16,7 +16,7 @@ private object Solution1 {
             }
 
             result = fibonacciSequenceRecursiveCached(n - 1, methodCache) +
-                fibonacciSequenceRecursiveCached(n - 2, methodCache)
+                    fibonacciSequenceRecursiveCached(n - 2, methodCache)
             methodCache.add(MethodCache(n, result))
         }
 
