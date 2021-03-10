@@ -10,7 +10,7 @@ private fun challenge() {
 private class Test {
     @Test
     fun `simple test`() {
-        val result = challenge()
-        result shouldBeEqualTo "expected"
+        val actual = challenge()
+        actual shouldBeEqualTo "expected"
     }
 }

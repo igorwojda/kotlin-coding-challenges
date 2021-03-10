@@ -12,7 +12,7 @@ private object Solution1 {
             }
         }
 
-        return result.filter { it != null }
+        return result.filterNotNull()
     }
 }
 

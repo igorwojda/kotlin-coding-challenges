@@ -10,25 +10,25 @@ fun generateSteps(n: Int): List<String> {
 private class Test {
     @Test
     fun `steps n = 1`() {
-        val result = generateSteps(1)
-        result.size shouldBeEqualTo 1
-        result[0] shouldBeEqualTo "#"
+        val actual = generateSteps(1)
+        actual.size shouldBeEqualTo 1
+        actual[0] shouldBeEqualTo "#"
     }
 
     @Test
     fun `steps n = 2`() {
-        val result = generateSteps(2)
-        result.size shouldBeEqualTo 2
-        result[0] shouldBeEqualTo "# "
-        result[1] shouldBeEqualTo "##"
+        val actual = generateSteps(2)
+        actual.size shouldBeEqualTo 2
+        actual[0] shouldBeEqualTo "# "
+        actual[1] shouldBeEqualTo "##"
     }
 
     @Test
     fun `steps n = 3`() {
-        val result = generateSteps(3)
-        result.size shouldBeEqualTo 3
-        result[0] shouldBeEqualTo "#  "
-        result[1] shouldBeEqualTo "## "
-        result[2] shouldBeEqualTo "###"
+        val actual = generateSteps(3)
+        actual.size shouldBeEqualTo 3
+        actual[0] shouldBeEqualTo "#  "
+        actual[1] shouldBeEqualTo "## "
+        actual[2] shouldBeEqualTo "###"
     }
 }
