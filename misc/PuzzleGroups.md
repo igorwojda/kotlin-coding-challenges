@@ -93,6 +93,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Square compare](../src/test/kotlin/com/igorwojda/list/squareequal/desc.md)
 - [List subtract](../src/test/kotlin/com/igorwojda/list/subtract/desc.md)
 - [Sum zero](../src/test/kotlin/com/igorwojda/list/sumzero/desc.md)
+- [Coins](src/test/kotlin/com/igorwojda/list/coins/desc.md)
 
 ## Singly Linked List
 

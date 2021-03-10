@@ -122,6 +122,7 @@ time. Take your time before you take a look at the presented solution. **Good lu
 - [Max sub list sum](src/test/kotlin/com/igorwojda/list/maxsublistsum/desc.md)
 - [Min sub list length](src/test/kotlin/com/igorwojda/list/minsublistlength/desc.md)
 - [Subtract](src/test/kotlin/com/igorwojda/list/subtract/desc.md)
+- [Coins](src/test/kotlin/com/igorwojda/list/coins/desc.md)
 
 # Useful links
 
