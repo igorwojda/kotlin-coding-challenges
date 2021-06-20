@@ -19,7 +19,7 @@ private class Test {
     }
 
     @Test
-    fun `capitalize empty list`() {
+    fun `capitalize list with empty string`() {
         capitalizeFirst(listOf("")) shouldBeEqualTo listOf("")
     }
 

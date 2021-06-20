@@ -19,12 +19,12 @@ private class Test {
     }
 
     @Test
-    fun `"sows" is a palindrome`() {
+    fun `"sows" is not a palindrome`() {
         isPermutationPalindrome("sows") shouldBeEqualTo false
     }
 
     @Test
-    fun `"tami" is a palindrome`() {
+    fun `"tami" is not a palindrome`() {
         isPermutationPalindrome("tami") shouldBeEqualTo false
     }
 }
