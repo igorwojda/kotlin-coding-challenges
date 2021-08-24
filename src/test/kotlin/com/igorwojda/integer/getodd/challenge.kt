@@ -19,7 +19,7 @@ private class Test {
     }
 
     @Test
-    fun `2, 49, 2, 5, 4 returns 9, 5`() {
+    fun `2, 9, 2, 5, 4 returns 9, 5`() {
         filterOdd(listOf(2, 9, 2, 5, 4)) shouldBeEqualTo listOf(9, 5)
     }
 

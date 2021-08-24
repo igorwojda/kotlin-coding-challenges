@@ -9,7 +9,7 @@ private fun decapitalizeConst(str: String): String {
 
 private class Test {
     @Test
-    fun `"FOOBAR" return null`() {
+    fun `"FOOBAR" return foobar`() {
         decapitalizeConst("FOOBAR") shouldBeEqualTo "foobar"
     }
 

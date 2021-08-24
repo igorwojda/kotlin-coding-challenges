@@ -14,8 +14,8 @@ private class Test {
     }
 
     @Test
-    fun `"flower ig growing fast" return "growing"`() {
-        longestWord("flower ig growing fast") shouldBeEqualTo "growing"
+    fun `"flower is growing fast" return "growing"`() {
+        longestWord("flower is growing fast") shouldBeEqualTo "growing"
     }
 
     @Test

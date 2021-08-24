@@ -14,7 +14,7 @@ private class Test {
     }
 
     @Test
-    fun `Reverse of "aabbccdd" is "ccbbaadd"`() {
+    fun `Reverse of "aabbccdd" is "ddccbbaa"`() {
         reverse("aabbccdd") shouldBeEqualTo "ddccbbaa"
     }
 }

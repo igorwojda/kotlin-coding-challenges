@@ -15,7 +15,7 @@ encodeCaesarCipher("abc", 1) // bcd
 
 encodeCaesarCipher("abc", 3) // def
 
-encodeCaesarCipher("xyz", 1) // xya
+encodeCaesarCipher("xyz", 1) // yza
 ```
 
 ## Hints

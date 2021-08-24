@@ -15,7 +15,7 @@ private class Test {
     }
 
     @Test
-    fun `Calling fizzbuzz with 15 prints out the correct values`() {
+    fun `Calling fizzbuzz with 16 returns out the correct values`() {
 
         val list = listOf(
             "1", "2", "Fizz", "4", "Buzz", "Fizz",
