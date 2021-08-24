@@ -23,3 +23,10 @@ private object Solution2 {
         return counter
     }
 }
+
+// Regex
+private object Solution3 {
+    private fun vowels(str: String): Int {
+        return Regex("[aeiouy]").findAll(str.lowercase()).count()
+    }
+}
