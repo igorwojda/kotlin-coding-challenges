@@ -19,4 +19,20 @@ private object Solution1 {
     }
 }
 
+private object Solution2 {
+    private fun encodeCaesarCipher(str: String, shift: Int): String {
+        val alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+        var encoded = ""
+
+        str.forEach {
+            val indexInAlphabet = alphabet.indexOf(it)
+            val newIndex = (indexInAlphabet + shift) % alphabet.length
+            encoded += alphabet[newIndex]
+        }
+
+        return encoded
+    }
+}
+
 object KtLintWillNotComplain
