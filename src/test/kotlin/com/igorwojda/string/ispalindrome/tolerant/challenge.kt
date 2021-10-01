@@ -24,6 +24,26 @@ private class Test {
     }
 
     @Test
+    fun `"a!bcddcba" is a palindrome`() {
+        isTolerantPalindrome("a!bcddcba") shouldBeEqualTo true
+    }
+
+    @Test
+    fun `"abcddcb!a" is a palindrome`() {
+        isTolerantPalindrome("abcddcb!a") shouldBeEqualTo true
+    }
+
+    @Test
+    fun `"!a" is a palindrome`() {
+        isTolerantPalindrome("!a") shouldBeEqualTo true
+    }
+
+    @Test
+    fun `"a!" is a palindrome`() {
+        isTolerantPalindrome("a!") shouldBeEqualTo true
+    }
+
+    @Test
     fun `" aba" is a palindrome`() {
         isTolerantPalindrome(" aba") shouldBeEqualTo true
     }
