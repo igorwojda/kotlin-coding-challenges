@@ -44,7 +44,7 @@ time. Take your time before you take a look at the presented solution. **Good lu
 **New in Town**
 
 - [Capitalize sentence](src/test/kotlin/com/igorwojda/string/capitalizesentence/desc.md)
-- [Get odd numbers](src/test/kotlin/com/igorwojda/integer/getodd/desc.md)
+- [Get odd numbers](src/test/kotlin/com/igorwojda/integer/getodd/desc.md) - done
 - [Range contains range?](src/test/kotlin/com/igorwojda/range/containsrange/desc.md)
 - [Add up to](src/test/kotlin/com/igorwojda/integer/addupto/desc.md)
 - [Linear search](src/test/kotlin/com/igorwojda/list/search/linearsearch/desc.md)
