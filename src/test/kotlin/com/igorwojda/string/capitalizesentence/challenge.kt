@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun capitalizeSentence(str: String): String {
-    TODO("not implemented")
+    return str.split("\\s".toRegex()).reduce { acc, s ->acc +' '+s.capitalize() }.toString().capitalize()
 }
 
 private class Test {

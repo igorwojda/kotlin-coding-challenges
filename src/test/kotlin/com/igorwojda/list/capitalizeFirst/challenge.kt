@@ -4,7 +4,12 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun capitalizeFirst(list: List<String>): List<String> {
-    TODO("not implemented")
+    return if (list.isEmpty()) emptyList() else listOf(list[0].capitalize()) + capitalizeFirst(
+        list.subList(
+            1,
+            list.size
+        )
+    )
 }
 
 private class Test {

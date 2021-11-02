@@ -4,7 +4,16 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun countUniqueValues(list: List<Int>): Int {
-    TODO("not implemented")
+    if (list.isEmpty())
+        return 0
+    // In the requirement it is specified that the list is sorted, but it's not always the case
+    val sortedList = list.sorted()
+    var counter = 1
+    for (i in 0..sortedList.size - 2) {
+        if (sortedList[i] != sortedList[i + 1])
+            counter++
+    }
+    return counter
 }
 
 private class Test {

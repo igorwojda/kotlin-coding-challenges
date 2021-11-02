@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun filterOdd(list: List<Int>): List<Int> {
-    TODO("not implemented")
+    return list.filter { value -> value % 2 == 1 }
 }
 
 private class Test {
