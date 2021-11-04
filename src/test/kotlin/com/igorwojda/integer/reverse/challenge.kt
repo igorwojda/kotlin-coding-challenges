@@ -4,7 +4,13 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun reverseInt(i: Int): Int {
-    TODO("not implemented")
+    var power = 1
+    var reversed = 0
+    while (i / power != 0) {
+        reversed = reversed * 10 + (i % (power * 10) / power)
+        power *= 10
+    }
+    return reversed
 }
 
 private class Test {

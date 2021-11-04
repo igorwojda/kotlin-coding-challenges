@@ -4,7 +4,13 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 fun generatePyramid(n: Int): List<String> {
-    TODO("not implemented")
+    var currentLevel = if (n==2) n / 2 else (n - 1)
+    var pyramid = mutableListOf<String>()
+    for (i in 0 until n) {
+        pyramid.add(" ".repeat(currentLevel) + "#".repeat(i * 2 + 1) + " ".repeat(currentLevel))
+        currentLevel -= 1
+    }
+    return pyramid
 }
 
 private class Test {

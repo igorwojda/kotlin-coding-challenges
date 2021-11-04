@@ -4,7 +4,26 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun isAnagram(str1: String, str2: String): Boolean {
-    TODO("not implemented")
+    //                                  Can be replaced with .isLetter()
+    val string1 = (str1.toLowerCase().filter { c: Char -> c in 'a'..'z' })
+    val string2 = (str2.toLowerCase().filter { c: Char -> c in 'a'..'z' })
+    if (string1.length != string2.length)
+        return false
+    // Next 6 lines can be replaced with .groupBy()
+    val hash1 = hashMapOf<Char, Int>()
+    val hash2 = hashMapOf<Char, Int>()
+    for (i in string1.indices) {
+        hash1[string1[i]] = hash1.getOrDefault(string1[i], 0) + 1
+        hash2[string2[i]] = hash2.getOrDefault(string2[i], 0) + 1
+    }
+    // Can be replaced with hash1 == hash2
+    for (i in hash1.keys) {
+        if (!hash2.containsKey(i))
+            return false
+        if (hash2[i] != hash1[i])
+            return false
+    }
+    return true
 }
 
 private class Test {
