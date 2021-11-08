@@ -4,16 +4,7 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun maxOccurrentChar(str: String): Char? {
-    val frequency = str.filter{c->c.isLetterOrDigit()}.groupBy { it }
-    println(frequency)
-    if(frequency.isEmpty())
-        return null
-    var maxK:Char = frequency.keys.first()
-    for (k in frequency.keys){
-        if(frequency[k]?.size?:0>frequency[maxK]?.size?:0)
-            maxK=k
-    }
-    return maxK
+    TODO("not implemented")
 }
 
 private class Test {

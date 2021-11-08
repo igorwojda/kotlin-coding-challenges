@@ -16,7 +16,7 @@ private object Solution2 {
         return str.toList()
             .groupingBy { it }
             .eachCount()
-            .maxByOrNull { it.value }
+            .maxBy { it.value }
             ?.key
     }
 }

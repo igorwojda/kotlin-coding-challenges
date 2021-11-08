@@ -8,7 +8,6 @@ private object Solution1 {
         str.forEachIndexed { index, c ->
             var lastIndex = str.lastIndex - index
 
-            // Because of this, it only works when the error is no the "right" side of the palindrome
             if (characterRemoved) {
                 lastIndex--
             }
