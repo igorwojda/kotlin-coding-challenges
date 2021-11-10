@@ -4,7 +4,8 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun addUpTo(n: Int): Int {
-    TODO("not implemented")
+    // Gauss formula for consecutive numbers 1 + 2 + 3 + 4 + … + n == n x ( n + 1 ) : 2
+    return n*(n+1)/2
 }
 
 private class Test {
