@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun product(list: List<Int>): Int {
-    TODO("not implemented")
+    return list.reduce { accumulator, current -> accumulator * current }
 }
 
 private class Test {
