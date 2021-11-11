@@ -4,7 +4,11 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun product(list: List<Int>): Int {
-    return list.reduce { accumulator, current -> accumulator * current }
+    var product = 1
+    for (element in list) {
+        product *= element
+    }
+    return product
 }
 
 private class Test {
