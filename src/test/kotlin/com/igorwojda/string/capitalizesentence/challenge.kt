@@ -4,8 +4,8 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun capitalizeSentence(str: String): String {
-    return str.split(" ").joinToString(" ") { it.capitalize() }.trimEnd()
-}
+    return str.split(" ").joinToString(" "){ it.capitalize() }
+    }
 
 private class Test {
     @Test
