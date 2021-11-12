@@ -4,14 +4,15 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun longestWord(str: String): String {
-    // COPY-PASTE from AlexandruP implementation ... :(
-    var longest = ""
-    for (string in str.split("\\W".toRegex()))
-        if (string.length > longest.length) {
-            longest = string
+    val strSplit = str.split("\\W".toRegex())
+    var longestWord = ""
+    for (i in strSplit.indices) {
+        if (strSplit.get(i).length > longestWord.length) {
+            longestWord = strSplit.get(i)
         }
-    return longest
-}
+    }
+    return longestWord
+    }
 
 private class Test {
     @Test
