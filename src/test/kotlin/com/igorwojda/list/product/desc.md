@@ -20,5 +20,5 @@ product(listOf(2, 4, 10)) // 80
 
 <details>
 <summary>Hint 1</summary>
-You can user recursion
+You can use recursion
 </details>
