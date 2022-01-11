@@ -102,3 +102,21 @@ private object Solution4 {
         generatePyramid(n, row, level + add)
     }
 }
+
+// simplified iterative solution 
+private object Solution5 {
+    private fun generatePyramid(n:Int) {
+        val list = mutableListOf<String>()
+        val maxRowLen = n * 2 -1
+        
+        for(i in 1..n) {
+            val rowLen = i * 2 -1
+            
+            val sideString = " ".repeat((maxRowLen-rowLen)/2)
+            val hashString = "#".repeat(rowLen)
+            
+            list.add("$sideString$hashString$sideString")
+        }
+        return list 
+    }
+}
