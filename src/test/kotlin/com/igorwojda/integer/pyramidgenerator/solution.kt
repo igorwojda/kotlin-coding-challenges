@@ -105,7 +105,7 @@ private object Solution4 {
 
 // simplified iterative solution 
 private object Solution5 {
-    private fun generatePyramid(n:Int) {
+    private fun generatePyramid(n:Int): MutableList<String> {
         val list = mutableListOf<String>()
         val maxRowLen = n * 2 -1
         
