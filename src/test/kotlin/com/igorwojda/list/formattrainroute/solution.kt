@@ -2,19 +2,20 @@ package com.igorwojda.list.formattrainroute
 
 private object Solution1 {
     private fun formatTrainRoute(stations: List<String>): String {
-        val prefix = "Train is calling at "
+        var output = "Train is calling at "
 
-        if (stations.size == 1) {
-            return prefix + stations[0]
+        // Add commas between all but the last 2 stations.
+        val intermediateStations = stations.dropLast(1)
+            .joinToString { it }
+
+        // Add the "and" if there were intermediate stations.
+        if (intermediateStations.isNotEmpty()){
+            output = "$intermediateStations and "
         }
 
-        val lastStation = stations.takeLast(1)
-            .joinToString { it }
-
-        val followingStations = stations.dropLast(1)
-            .joinToString { it }
-
-        return "$prefix$followingStations and $lastStation"
+        // Append the final station.
+        output += stations.last()
+        return output
     }
 }
 
