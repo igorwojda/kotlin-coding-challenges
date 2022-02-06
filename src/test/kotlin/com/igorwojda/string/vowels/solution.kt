@@ -26,6 +26,7 @@ private object Solution2 {
 
 // Regex
 private object Solution3 {
+    @kotlin.ExperimentalStdlibApi
     private fun vowels(str: String): Int {
         return Regex("[aeiouy]").findAll(str.lowercase()).count()
     }
