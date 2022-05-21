@@ -114,4 +114,44 @@ object Solution1 {
     )
 }
 
-private object KtLintWillNotComplain
+object Solution2 {  // Just to be different with the implementation of ArrayDeque ;)
+    class SinglyLinkedList<E> : Iterable<Node<E>> {
+        private val deque: ArrayDeque<Node<E>> = ArrayDeque() // Kotlin standard library
+        val head: Node<E>? get() = deque.firstOrNull()
+        val size: Int get() = deque.size
+        val first: Node<E>? get() = head
+        val last: Node<E>? get() = deque.lastOrNull()
+        fun setAt(e: E, index: Int) = if (index in deque.indices) deque.set(index, Node(e, deque[index].next)) else null
+        fun getAt(index: Int): Node<E>? = deque.getOrNull(index)
+        fun insertFirst(e: E) = insertAt(e, 0)
+        fun insertLast(e: E) = insertAt(e, deque.size)
+        fun removeFirst() = removeAt(0)
+        fun removeLast() = removeAt(deque.lastIndex)
+        fun clear() = deque.clear()
+        inline fun sumBy(function: (Node<E>) -> Int): Int = sumOf(function)
+        override fun iterator(): Iterator<Node<E>> = deque.iterator()
+        operator fun plus(other: SinglyLinkedList<E>) = SinglyLinkedList<E>().also {
+            this@SinglyLinkedList.forEach { insertLast(it.data) }
+            other.forEach { insertLast(it.data) }
+        }
+        fun insertAt(e: E, index: Int) =
+            deque.getOrNull(index)?.let {
+                deque[index].let { deque.add(index, Node(e, it)) }
+            } ?: deque.add(Node(e, null))
+        fun removeAt(index: Int): Node<E>? =
+            deque.getOrNull(index)?.let {
+                deque.getOrNull(index - 1)
+                    ?.let {
+                        deque[index - 1] = deque.getOrNull(index + 1)
+                            ?.let { deque[index - 1].copy(next = it) }
+                            ?: let { deque[index - 1].copy(next = null) }
+                        deque.removeAt(index)
+                    }
+                    ?: deque.removeFirst()
+            }
+    }
+    data class Node<T>(
+        var data: T,
+        var next: Node<T>? = null
+    )
+}
