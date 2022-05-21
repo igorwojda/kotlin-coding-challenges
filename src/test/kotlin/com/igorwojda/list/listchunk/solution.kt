@@ -44,3 +44,7 @@ private object Solution3 {
         return chunks
     }
 }
+
+private object Solution4 {
+    private fun chunk(list: List<Int>, size: Int) = list.chunked(size)
+}
