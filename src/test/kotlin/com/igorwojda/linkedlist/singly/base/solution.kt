@@ -151,7 +151,7 @@ object Solution2 {  // Just to be different with the implementation of ArrayDequ
             }
     }
     data class Node<T>(
-        var data: T,
-        var next: Node<T>? = null
+        val data: T,
+        val next: Node<T>? = null
     )
 }
