@@ -195,13 +195,6 @@ time. Take your time before you take a look at the presented solution. **Good lu
 Feedback and new contributions are welcome whether it's through bug reports or new PRs. To add new coding puzzle just
 follow this [guide](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Adding-a-new-puzzle) and open PR.
 
-## Contributors
-
-- [Alan Evans](https://github.com/alanevansbc)
-- [Norbert Kiesel](https://github.com/nkiesel)
-- [David Mozano](https://github.com/mozano)
-- [Yannis Barbakadze](https://github.com/yannisbarbakadze)
-
 # Author
 
 [![Follow me](https://github.com/igorwojda/kotlin-coding-challenges/raw/main/misc/image/avatar.png)](https://twitter.com/igorwojda)
