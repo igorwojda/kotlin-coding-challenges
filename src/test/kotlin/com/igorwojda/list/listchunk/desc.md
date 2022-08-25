@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Given an list and chunk size, divide the list into multiple sub lists where each sub-list is of length of chunk size.
+Given a list and chunk size, divide the list into multiple sub lists where each sub-list is of length of chunk size.
 
 [challenge](challenge.kt) | [solution](solution.kt)
 

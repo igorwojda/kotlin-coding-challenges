@@ -4,28 +4,24 @@ package com.igorwojda.string.ispalindrome.tolerant
 private object Solution1 {
     private fun isTolerantPalindrome(str: String): Boolean {
         var characterRemoved = false
-
-        str.forEachIndexed { index, c ->
-            var lastIndex = str.lastIndex - index
-
-            if (characterRemoved) {
-                lastIndex--
-            }
-
-            if (index >= lastIndex) {
-                return true
-            }
-
-            if (c != str[lastIndex]) {
+        var leftIndex = 0
+        var rightIndex = str.lastIndex
+        while (leftIndex <= rightIndex) {
+            if (str[leftIndex] != str[rightIndex]) {
                 if (characterRemoved) {
                     return false
-                } else {
-                    characterRemoved = true
+                }
+                characterRemoved = true
+                when {
+                    str[leftIndex + 1] == str[rightIndex] -> leftIndex++
+                    str[leftIndex] == str[rightIndex - 1] -> rightIndex--
+                    else -> return false
                 }
             }
+            leftIndex++
+            rightIndex--
         }
-
-        return false
+        return true
     }
 }
 // recursive solution
@@ -75,6 +71,11 @@ private object Solution3 {
         val removeIndex = str.commonPrefixWith(revStr).length
         if (removeIndex + 1 > str.length) return false // reached end of string
         val reducedStr = str.removeRange(removeIndex, removeIndex + 1)
-        return isTolerantPalindrome(reducedStr, true)
+        return if (isTolerantPalindrome(reducedStr, true)) {
+            true
+        } else {
+            val reducedRevStr = revStr.removeRange(removeIndex, removeIndex + 1)
+            isTolerantPalindrome(reducedRevStr, true)
+        }
     }
 }

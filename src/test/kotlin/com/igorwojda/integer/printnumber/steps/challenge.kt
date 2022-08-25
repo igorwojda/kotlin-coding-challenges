@@ -19,12 +19,12 @@ class RecursivePrintNumberWithSteps {
     }
 
     @Test
-    fun `printNumber 3 step 2 return listOf(3, 2, 1)`() {
+    fun `printNumber 3 step 2 return listOf(3, 1)`() {
         printNumber(3, 2) shouldBeEqualTo listOf(3, 1)
     }
 
     @Test
-    fun `printNumber 11 step 3 return listOf(5, 4, 3, 2, 1)`() {
+    fun `printNumber 11 step 3 return listOf(1, 8, 5, 2)`() {
         printNumber(11, 3) shouldBeEqualTo listOf(11, 8, 5, 2)
     }
 }

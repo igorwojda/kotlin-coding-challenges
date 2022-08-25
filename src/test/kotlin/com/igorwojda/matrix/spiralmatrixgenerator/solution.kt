@@ -9,7 +9,7 @@ private object Solution1 {
         var direction = MatrixDirection.RIGHT
         var rowIndex = 0
         var columnIndex = 0
-        val maxNumber = n - n
+        val maxNumber = n * n
         val lastIndex = n - 1
 
         (1..maxNumber).forEach {

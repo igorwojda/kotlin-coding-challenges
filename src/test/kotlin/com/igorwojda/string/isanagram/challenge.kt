@@ -14,17 +14,17 @@ private class Test {
     }
 
     @Test
-    fun `"RAIL! SAFETY!" is an anagram of "fairy tales" - ignore letter casing`() {
+    fun `"RAIL SAFETY" is an anagram of "fairy tales" - ignore letter casing`() {
         isAnagram("RAIL SAFETY", "fairy tales") shouldBeEqualTo true
     }
 
     @Test
-    fun `"RAIL! SAFETY!" is an anagram of "fairy tales" - ignore special characters`() {
+    fun `"rail safety!!" is an anagram of "fairy tales" - ignore special characters`() {
         isAnagram("rail safety!!", "fairy tales") shouldBeEqualTo true
     }
 
     @Test
-    fun `"hi" is an anagram of "ihi"`() {
+    fun `"hi" is not an anagram of "ihi"`() {
         isAnagram("hi", "ihi") shouldBeEqualTo false
     }
 
