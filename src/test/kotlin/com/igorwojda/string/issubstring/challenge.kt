@@ -19,13 +19,33 @@ private class Test {
     }
 
     @Test
-    fun `ab in abd`() {
+    fun `ab in abc`() {
         isSubstring("abc", "ab") shouldBeEqualTo true
     }
 
     @Test
     fun `bc in abc`() {
         isSubstring("abc", "bc") shouldBeEqualTo true
+    }
+
+    @Test
+    fun `abc in abc`() {
+        isSubstring("abc", "abc") shouldBeEqualTo true
+    }
+
+    @Test
+    fun `abc in aaababcd`() {
+        isSubstring("aaababcd", "abc") shouldBeEqualTo true
+    }
+
+    @Test
+    fun `abc not in aaababab`() {
+        isSubstring("aaababab", "abc") shouldBeEqualTo false
+    }
+
+    @Test
+    fun `aab in aaab`() {
+        isSubstring("aaab", "aab") shouldBeEqualTo true
     }
 
     @Test
