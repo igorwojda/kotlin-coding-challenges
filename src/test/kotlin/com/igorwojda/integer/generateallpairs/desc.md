@@ -3,7 +3,7 @@
 ## Instructions
 
 Given positive Int `n` implement a function which returns a list of containing pairs with all combinations of numbers
-from `0` to `n`.
+from `0` to `n`. Use Kotlin [Pair](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/) class.
 
 [challenge](challenge.kt) | [solution](solution.kt)
 
