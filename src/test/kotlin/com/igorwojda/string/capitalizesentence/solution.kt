@@ -3,7 +3,11 @@ package com.igorwojda.string.capitalizesentence
 // Kotlin idiomatic solution
 private object Solution1 {
     private fun capitalizeSentence(str: String): String {
-        return str.split(" ").joinToString(" ") { it.capitalize() }
+        return str
+            .split(" ")
+            .joinToString(" ") { string ->
+                string.replaceFirstChar { it.uppercase() }
+            }
     }
 }
 
