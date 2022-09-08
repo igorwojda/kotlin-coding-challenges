@@ -13,7 +13,7 @@ private object Solution2 {
         val words = mutableListOf<String>()
 
         str.split(" ").forEach {
-            words.add(it[0].toUpperCase() + it.substring(1))
+            words.add(it[0].uppercase() + it.substring(1))
         }
 
         return words.joinToString(" ")
