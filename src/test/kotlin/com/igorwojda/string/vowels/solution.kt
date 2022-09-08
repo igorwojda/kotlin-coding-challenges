@@ -4,7 +4,7 @@ package com.igorwojda.string.vowels
 private object Solution1 {
     private fun vowels(str: String): Int {
         val vowels = listOf('a', 'e', 'i', 'o', 'u', 'y')
-        return str.count { it.lowercase() in vowels }
+        return str.count { it.lowercaseChar() in vowels }
     }
 }
 
@@ -15,7 +15,7 @@ private object Solution2 {
         var counter = 0
 
         str.forEach {
-            if (vowels.contains(it.lowercase())) {
+            if (vowels.contains(it.lowercaseChar())) {
                 counter++
             }
         }
