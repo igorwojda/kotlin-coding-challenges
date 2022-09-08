@@ -9,27 +9,27 @@ private fun vowels(str: String): Int {
 
 private class Test {
     @Test
-    fun `"aeiouy" has 6 vovels`() {
+    fun `'aeiouy' has 6 vovels`() {
         vowels("aeiouy") shouldBeEqualTo 6
     }
 
     @Test
-    fun `"AEIOUY" has 6 vovels`() {
+    fun `'AEIOUY' has 6 vovels`() {
         vowels("AEIOUY") shouldBeEqualTo 6
     }
 
     @Test
-    fun `"abcdefghijklmnopqrstuvwxyz" has 6 vovels`() {
+    fun `'abcdefghijklmnopqrstuvwxyz' has 6 vovels`() {
         vowels("abcdefghijklmnopqrstuvwxyz") shouldBeEqualTo 6
     }
 
     @Test
-    fun `"bcadfaghijkl" has 3 vovels`() {
+    fun `'bcadfaghijkl' has 3 vovels`() {
         vowels("bcadfaghijkl") shouldBeEqualTo 3
     }
 
     @Test
-    fun `"bcdfghjkl" has 0 vovels`() {
+    fun `'bcdfghjkl' has 0 vovels`() {
         vowels("bcdfghjkl") shouldBeEqualTo 0
     }
 }

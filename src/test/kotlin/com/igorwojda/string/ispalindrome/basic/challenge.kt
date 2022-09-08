@@ -10,37 +10,37 @@ private fun isPalindrome(str: String): Boolean {
 private class Test {
 
     @Test
-    fun `"aba" is a palindrome`() {
+    fun `'aba' is a palindrome`() {
         isPalindrome("aba") shouldBeEqualTo true
     }
 
     @Test
-    fun `" aba" is not a palindrome`() {
+    fun `' aba' is not a palindrome`() {
         isPalindrome(" aba") shouldBeEqualTo false
     }
 
     @Test
-    fun `"aba " is not a palindrome`() {
+    fun `'aba ' is not a palindrome`() {
         isPalindrome("aba ") shouldBeEqualTo false
     }
 
     @Test
-    fun `"greetings" is not a palindrome`() {
+    fun `'greetings' is not a palindrome`() {
         isPalindrome("greetings") shouldBeEqualTo false
     }
 
     @Test
-    fun `"1000000001" a palindrome`() {
+    fun `'1000000001' a palindrome`() {
         isPalindrome("1000000001") shouldBeEqualTo true
     }
 
     @Test
-    fun `"Fish hsif" is not a palindrome`() {
+    fun `'Fish hsif' is not a palindrome`() {
         isPalindrome("Fish hsif") shouldBeEqualTo false
     }
 
     @Test
-    fun `"pennep" a palindrome`() {
+    fun `'pennep' a palindrome`() {
         isPalindrome("pennep") shouldBeEqualTo true
     }
 }

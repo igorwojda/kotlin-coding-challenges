@@ -9,17 +9,17 @@ private fun hasRepeatedChar(str: String): Boolean {
 
 private class Test {
     @Test
-    fun `"abc" don't have repeated character`() {
+    fun `'abc' don't have repeated character`() {
         hasRepeatedChar("abc") shouldBeEqualTo false
     }
 
     @Test
-    fun `"aabc" has repeated character`() {
+    fun `'aabc' has repeated character`() {
         hasRepeatedChar("aabc") shouldBeEqualTo true
     }
 
     @Test
-    fun `"aabcc" has repeated character`() {
+    fun `'aabcc' has repeated character`() {
         hasRepeatedChar("aabcc") shouldBeEqualTo true
     }
 }

@@ -9,22 +9,22 @@ private fun isPermutationPalindrome(str: String): Boolean {
 
 private class Test {
     @Test
-    fun `"gikig" is a palindrome`() {
+    fun `'gikig' is a palindrome`() {
         isPermutationPalindrome("gikig") shouldBeEqualTo true
     }
 
     @Test
-    fun `"ookvk" is a palindrome`() {
+    fun `'ookvk' is a palindrome`() {
         isPermutationPalindrome("ookvk") shouldBeEqualTo true
     }
 
     @Test
-    fun `"sows" is not a palindrome`() {
+    fun `'sows' is not a palindrome`() {
         isPermutationPalindrome("sows") shouldBeEqualTo false
     }
 
     @Test
-    fun `"tami" is not a palindrome`() {
+    fun `'tami' is not a palindrome`() {
         isPermutationPalindrome("tami") shouldBeEqualTo false
     }
 }

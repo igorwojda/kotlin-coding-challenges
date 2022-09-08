@@ -9,27 +9,27 @@ private fun equalDigitFrequency(i1: Int, i2: Int): Boolean {
 
 private class Test {
     @Test
-    fun `"789" and "897" have the same digit frequency`() {
+    fun `'789' and '897' have the same digit frequency`() {
         equalDigitFrequency(789, 897) shouldBeEqualTo true
     }
 
     @Test
-    fun `"123445" and "451243" have the same digit frequency`() {
+    fun `'123445' and '451243' have the same digit frequency`() {
         equalDigitFrequency(123445, 451243) shouldBeEqualTo true
     }
 
     @Test
-    fun `"447" and "477" have different digit frequency"`() {
+    fun `'447' and '477' have different digit frequency`() {
         equalDigitFrequency(447, 477) shouldBeEqualTo false
     }
 
     @Test
-    fun `"578" and "0" have different digit frequency"`() {
+    fun `'578' and '0' have different digit frequency`() {
         equalDigitFrequency(578, 0) shouldBeEqualTo false
     }
 
     @Test
-    fun `"0" and "0" have the same digit frequency"`() {
+    fun `'0' and '0' have the same digit frequency`() {
         equalDigitFrequency(0, 0) shouldBeEqualTo true
     }
 }
