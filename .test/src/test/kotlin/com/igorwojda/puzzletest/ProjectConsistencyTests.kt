@@ -10,7 +10,7 @@ import kotlin.io.path.Path
 class ProjectConsistencyTests {
 
     @ParameterizedTest(name = "Puzzle file exists: {0}")
-    @MethodSource("getPuzzleDirectories")
+    @MethodSource("getPuzzleRequiredFilePaths")
     fun `Puzzle file exists`(puzzleFilePath: String) {
         val path = Path(puzzleFilePath)
         require(Files.exists(path)) { "Missing file $path" }
@@ -18,11 +18,10 @@ class ProjectConsistencyTests {
 
     companion object {
         @JvmStatic
-        fun getPuzzleDirectories() = PuzzleUtils
+        fun getPuzzleRequiredFilePaths() = PuzzleUtils
             .getPuzzleDirectories()
             .flatMap {
                 getProjectRequiredFiles(it)
-
             }
 
         private fun getProjectRequiredFiles(puzzleDirectory: File) = listOf(
