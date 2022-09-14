@@ -8,6 +8,7 @@ import org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment
 import org.jetbrains.kotlin.config.CompilerConfiguration
 import org.jetbrains.kotlin.idea.KotlinFileType
 import org.jetbrains.kotlin.psi.KtFile
+import java.io.File
 
 object KotlinParserUtils {
 
@@ -17,6 +18,16 @@ object KotlinParserUtils {
             CompilerConfiguration(),
             EnvironmentConfigFiles.JVM_CONFIG_FILES
         ).project
+    }
+
+    private fun getPuzzleFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): File {
+        val path = "${puzzleDirectoryPath.path}/${puzzleFile.fileName}"
+        return File(path)
+    }
+
+    fun getKtFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): KtFile {
+        val file = getPuzzleFile(puzzleDirectoryPath, puzzleFile)
+        return getKtFile(file.readText(), puzzleFile.fileName)
     }
 
     fun getKtFile(codeString: String, fileName: String) =
