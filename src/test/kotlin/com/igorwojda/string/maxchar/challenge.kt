@@ -14,17 +14,17 @@ private class Test {
     }
 
     @Test
-    fun `Finds char 'a' in string "a"`() {
+    fun `Finds char 'a' in string 'a'`() {
         maxOccurrentChar("a") shouldBeEqualTo 'a'
     }
 
     @Test
-    fun `Finds char 'a' in string "abcdefghijklmnaaaaa"`() {
+    fun `Finds char 'a' in string 'abcdefghijklmnaaaaa'`() {
         maxOccurrentChar("abcdefghijklmnaaaaa") shouldBeEqualTo 'a'
     }
 
     @Test
-    fun `Finds char '1' in string "ab1c1d1e1f1g1"`() {
+    fun `Finds char '1' in string 'ab1c1d1e1f1g1'`() {
         maxOccurrentChar("ab1c1d1e1f1g1") shouldBeEqualTo '1'
     }
 }
