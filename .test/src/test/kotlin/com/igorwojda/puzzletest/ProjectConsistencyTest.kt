@@ -7,7 +7,7 @@ import java.io.File
 import java.nio.file.Files
 import kotlin.io.path.Path
 
-class ProjectConsistencyTests {
+class ProjectConsistencyTest {
 
     @ParameterizedTest(name = "Puzzle file exists: {0}")
     @MethodSource("getPuzzleRequiredFilePaths")
