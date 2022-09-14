@@ -1,32 +1,29 @@
 package com.igorwojda.tree.classic.levelwidth
 
-private object Solution1 {
-    private object Solution1 {
-        // Index counter solution
-        private fun levelWidth(tree: Node): List<Int> {
-            val result = mutableListOf<Int>()
+object Solution1 {
+    private fun levelWidth(tree: Node): List<Int> {
+        val result = mutableListOf<Int>()
 
-            val nodes = mutableListOf(tree)
-            var levelCurrentNode = 0
-            var levelTotalNodes = 1
-            var nextLevelTotalNodes = 0
+        val nodes = mutableListOf(tree)
+        var levelCurrentNode = 0
+        var levelTotalNodes = 1
+        var nextLevelTotalNodes = 0
 
-            while (nodes.isNotEmpty()) {
-                val node = nodes.removeAt(0)
-                levelCurrentNode++
-                nodes.addAll(node.children)
-                nextLevelTotalNodes += node.children.size
+        while (nodes.isNotEmpty()) {
+            val node = nodes.removeAt(0)
+            levelCurrentNode++
+            nodes.addAll(node.children)
+            nextLevelTotalNodes += node.children.size
 
-                if (levelCurrentNode == levelTotalNodes) {
-                    result.add(levelTotalNodes)
-                    levelCurrentNode = 0
-                    levelTotalNodes = nextLevelTotalNodes
-                    nextLevelTotalNodes = 0
-                }
+            if (levelCurrentNode == levelTotalNodes) {
+                result.add(levelTotalNodes)
+                levelCurrentNode = 0
+                levelTotalNodes = nextLevelTotalNodes
+                nextLevelTotalNodes = 0
             }
-
-            return result
         }
+
+        return result
     }
 
     private class Node(val data: String, val children: MutableList<Node> = mutableListOf()) {
