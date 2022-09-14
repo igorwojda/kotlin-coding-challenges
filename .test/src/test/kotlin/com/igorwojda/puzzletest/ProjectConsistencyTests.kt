@@ -11,7 +11,7 @@ class ProjectConsistencyTests {
 
     @ParameterizedTest(name = "Puzzle file exists: {0}")
     @MethodSource("getPuzzleDirectories")
-    fun `check if puzzle contains desc md file`(puzzleFilePath: String) {
+    fun `Puzzle file exists`(puzzleFilePath: String) {
         val path = Path(puzzleFilePath)
         require(Files.exists(path)) { "Missing file $path" }
     }
