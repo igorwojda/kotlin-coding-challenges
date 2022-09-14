@@ -17,16 +17,21 @@ object PuzzleUtils {
      * Return list of project names
      */
     fun getPuzzleDirectories(): List<File> {
-        val puzzleDirectoryPath = "${repoRootDirectoryFile.path}/src/test"
-        val puzzleDirectory = File(puzzleDirectoryPath)
+        val path = "${repoRootDirectoryFile.path}/src/test"
+        val directory = File(path)
         val miscDirectoryName = "misc"
 
-        return puzzleDirectory
+        return directory
             .walk()
             .filter { it.isDirectory }
             .filter { it.name != miscDirectoryName }
             .filter { it.isHighLevelDirectory }
             .toList()
+    }
+
+    fun getGeneratedTestDirectory(): File {
+        val path = "${repoRootDirectoryFile.path}/.test/src/test/kotlin"
+        return File(path)
     }
 
     /**

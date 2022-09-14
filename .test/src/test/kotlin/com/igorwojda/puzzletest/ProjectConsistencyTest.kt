@@ -1,6 +1,7 @@
 package com.igorwojda.puzzletest
 
 import com.igorwojda.puzzletest.utils.PuzzleUtils
+import com.igorwojda.puzzletest.utils.SolutionFile
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
 import java.io.File
@@ -24,12 +25,10 @@ class ProjectConsistencyTest {
                 getProjectRequiredFiles(it)
             }
 
-        private fun getProjectRequiredFiles(puzzleDirectory: File) = listOf(
-            "desc.md",
-            "challenge.kt",
-            "solution.kt"
-        ).map {
-            "${puzzleDirectory.path}/$it"
-        }
+        private fun getProjectRequiredFiles(puzzleDirectory: File) = SolutionFile
+            .values()
+            .map {
+                "${puzzleDirectory.path}/${it.fileName}"
+            }
     }
 }

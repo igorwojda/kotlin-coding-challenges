@@ -1,6 +1,6 @@
 package com.igorwojda.tree.classic.levelwidth
 
-object Solution1 {
+private object Solution1 {
     private fun levelWidth(tree: Node): List<Int> {
         val result = mutableListOf<Int>()
 
