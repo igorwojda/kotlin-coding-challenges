@@ -7,7 +7,6 @@ private object Solution1 {
             .split(" ")
             .filterNot { it.isBlank() }
             .maxBy { it.length }
-            ?: ""
     }
 }
 
