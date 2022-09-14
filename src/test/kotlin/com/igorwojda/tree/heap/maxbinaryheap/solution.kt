@@ -1,6 +1,6 @@
 package com.igorwojda.tree.heap.maxbinaryheap
 
-object Solution1 {
+private object Solution1 {
     private class MaxBinaryHeap<E : Comparable<E>> {
         val items = mutableListOf<E>()
 

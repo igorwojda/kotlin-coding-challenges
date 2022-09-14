@@ -51,4 +51,4 @@ private object Solution1 {
     private fun maxDigits(list: List<Int>) = list.map { it.digitCount }.maxOrNull() ?: 0
 }
 
-object KtLintWillNotComplain
+private object KtLintWillNotComplain

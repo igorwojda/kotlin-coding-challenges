@@ -1,6 +1,6 @@
 package com.igorwojda.tree.classic.levelwidth
 
-object Solution1 {
+private object Solution1 {
     private object Solution1 {
         // Index counter solution
         private fun levelWidth(tree: Node): List<Int> {
