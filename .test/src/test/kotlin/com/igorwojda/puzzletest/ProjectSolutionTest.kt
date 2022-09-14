@@ -2,6 +2,14 @@ package com.igorwojda.puzzletest
 
 import com.igorwojda.puzzletest.utils.PuzzleUtils
 import com.igorwojda.puzzletest.utils.SolutionFile
+import com.intellij.openapi.util.Disposer
+import com.intellij.psi.PsiManager
+import com.intellij.testFramework.LightVirtualFile
+import org.jetbrains.kotlin.cli.jvm.compiler.EnvironmentConfigFiles
+import org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment
+import org.jetbrains.kotlin.config.CompilerConfiguration
+import org.jetbrains.kotlin.idea.KotlinFileType
+import org.jetbrains.kotlin.psi.KtFile
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
 import java.io.File
@@ -12,10 +20,10 @@ class ProjectSolutionTest {
     @MethodSource("getPuzzleDirectories")
     fun `Puzzle file exists`(puzzleDirectoryPath: File) {
         val solutions = getSolutions(puzzleDirectoryPath)
-        val challenge = getChallenge(puzzleDirectoryPath)
+        val challengeKtFile = getPuzzleKtFile(puzzleDirectoryPath, SolutionFile.CHALLENGE_KT)
 
         solutions.forEach { solution ->
-            writeTestFile(puzzleDirectoryPath, solution)
+//            writeTestFile(puzzleDirectoryPath, solution)
         }
 
         val a = 3
@@ -110,32 +118,35 @@ class ProjectSolutionTest {
         .replace(".", "/")
         .replaceFirst("package ", "")
 
+    private fun getPuzzleKtFile(puzzleDirectoryPath: File, solutionFile: SolutionFile): KtFile {
+        val file = getPuzzleFile(puzzleDirectoryPath, SolutionFile.CHALLENGE_KT)
+        return getKtFile(file.readText(), SolutionFile.CHALLENGE_KT.fileName)
+    }
+
+    private fun getKtFile(codeString: String, fileName: String) =
+        PsiManager.getInstance(project)
+            .findFile(
+                LightVirtualFile(fileName, KotlinFileType.INSTANCE, codeString)
+            ) as KtFile
+
     private fun getPuzzleFile(puzzleDirectoryPath: File, solutionFile: SolutionFile): File {
         val path = "${puzzleDirectoryPath.path}/${solutionFile.fileName}"
         return File(path)
     }
 
     companion object {
+        private val project by lazy {
+            KotlinCoreEnvironment.createForProduction(
+                Disposer.newDisposable(),
+                CompilerConfiguration(),
+                EnvironmentConfigFiles.JVM_CONFIG_FILES
+            ).project
+        }
+
         @JvmStatic
         fun getPuzzleDirectories() = PuzzleUtils
             .getPuzzleDirectories().take(1)
     }
-
-    /**
-     * Challenge is represented by list of lines (retrieved from Challenge.kt file).
-     */
-    private fun getChallenge(puzzleDirectoryPath: File): Challenge {
-        val file = getPuzzleFile(puzzleDirectoryPath, SolutionFile.CHALLENGE_KT)
-        val lines = file.readLines()
-        return Challenge(lines)
-    }
-}
-
-/**
- * Challenge is represented by list of lines (retrieved from Challenge.kt file).
- */
-class Challenge(val fileLines: List<String>) {
-
 }
 
 /**
