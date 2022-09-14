@@ -3,33 +3,39 @@ package com.igorwojda.string.maxchar
 // Kotlin idiomatic solution
 private object Solution1 {
     private fun maxOccurrentChar(str: String): Char? {
+        if (str.isBlank()) return null
+
         return str.toCharArray()
             .groupBy { it }
             .maxBy { it.value.size }
-            ?.key
+            .key
     }
 }
 
 // Kotlin idiomatic solution
 private object Solution2 {
     private fun maxOccurrentChar(str: String): Char? {
+        if (str.isBlank()) return null
+
         return str.toList()
             .groupingBy { it }
             .eachCount()
             .maxBy { it.value }
-            ?.key
+            .key
     }
 }
 
 private object Solution3 {
     private fun maxOccurrentChar(str: String): Char? {
+        if (str.isBlank()) return null
+        
         val map = mutableMapOf<Char, Int>()
 
         str.forEach {
             map[it] = (map[it] ?: 0) + 1
         }
 
-        return map.maxBy { it.value }?.key
+        return map.maxBy { it.value }.key
     }
 }
 
