@@ -1,7 +1,7 @@
 package com.igorwojda.puzzletest
 
-import com.igorwojda.puzzletest.utils.PuzzleUtils
-import com.igorwojda.puzzletest.utils.SolutionFile
+import com.igorwojda.puzzletest.utils.PuzzleFile
+import com.igorwojda.puzzletest.utils.TestUtils
 import com.intellij.openapi.util.Disposer
 import com.intellij.psi.PsiManager
 import com.intellij.testFramework.LightVirtualFile
@@ -20,7 +20,7 @@ class ProjectSolutionTest {
     @MethodSource("getPuzzleDirectories")
     fun `Puzzle file exists`(puzzleDirectoryPath: File) {
         val solutions = getSolutions(puzzleDirectoryPath)
-        val challengeKtFile = getPuzzleKtFile(puzzleDirectoryPath, SolutionFile.CHALLENGE_KT)
+        val challengeKtFile = getPuzzleKtFile(puzzleDirectoryPath, PuzzleFile.CHALLENGE_KT)
 
         solutions.forEach { solution ->
 //            writeTestFile(puzzleDirectoryPath, solution)
@@ -33,8 +33,8 @@ class ProjectSolutionTest {
      * Create a test files for a given puzzle by combining challenge file with available solutions
      */
     private fun writeTestFile(puzzleDirectoryPath: File, solution: Solution) {
-        val sourceChallengeFile = getPuzzleFile(puzzleDirectoryPath, SolutionFile.CHALLENGE_KT)
-        val generatedTestDirectory = PuzzleUtils.getGeneratedTestDirectory()
+        val sourceChallengeFile = getPuzzleFile(puzzleDirectoryPath, PuzzleFile.CHALLENGE_KT)
+        val generatedTestDirectory = TestUtils.generatedTestDirectory
         val testFileName = "Test${solution.name}"
 
         val targetChallengeDirectory = File("${generatedTestDirectory.path}/${solution.relativePath}/")
@@ -75,52 +75,28 @@ class ProjectSolutionTest {
      * Return list of available solutions.
      */
     private fun getSolutions(puzzleDirectoryPath: File): MutableList<Solution> {
-        val file = getPuzzleFile(puzzleDirectoryPath, SolutionFile.SOLUTIONS_KT)
+        val file = getPuzzleKtFile(puzzleDirectoryPath, PuzzleFile.SOLUTIONS_KT)
 
-        var objectFound = false
-        var solutionLines = mutableListOf<String>()
-        val solutions = mutableListOf<Solution>()
-        var curlyBracketsCount = 0
-        var relativePath = ""
 
-        file.forEachLine { line ->
-            if (relativePath.isEmpty()) {
-                relativePath = getPackagePath(line)
-            }
 
-            if (line.contains("object Solution")) {
-                if (objectFound) {
-                    throw RuntimeException("Object already found. Nested objects are not allowed for solutions.")
-                }
-
-                objectFound = true
-                solutionLines = mutableListOf()
-                curlyBracketsCount = 0
-            }
-
-            if (objectFound) {
-                solutionLines.add(line)
-                curlyBracketsCount += line.count { char -> char == '{' }
-                curlyBracketsCount -= line.count { char -> char == '}' }
-            }
-
-            if (curlyBracketsCount == 0 && objectFound) {
-                objectFound = false
-                val solution = Solution(solutionLines, relativePath)
-                solutions.add(solution)
-            }
-        }
-
-        return solutions
+        return mutableListOf()
     }
 
     private fun getPackagePath(packageLine: String) = packageLine
         .replace(".", "/")
         .replaceFirst("package ", "")
 
-    private fun getPuzzleKtFile(puzzleDirectoryPath: File, solutionFile: SolutionFile): KtFile {
-        val file = getPuzzleFile(puzzleDirectoryPath, SolutionFile.CHALLENGE_KT)
-        return getKtFile(file.readText(), SolutionFile.CHALLENGE_KT.fileName)
+    private fun getPuzzleKtFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): KtFile {
+        val file = getPuzzleFile(puzzleDirectoryPath, puzzleFile)
+        return getKtFile(file.readText(), puzzleFile.fileName)
+    }
+
+    private val project by lazy {
+        KotlinCoreEnvironment.createForProduction(
+            Disposer.newDisposable(),
+            CompilerConfiguration(),
+            EnvironmentConfigFiles.JVM_CONFIG_FILES
+        ).project
     }
 
     private fun getKtFile(codeString: String, fileName: String) =
@@ -129,22 +105,14 @@ class ProjectSolutionTest {
                 LightVirtualFile(fileName, KotlinFileType.INSTANCE, codeString)
             ) as KtFile
 
-    private fun getPuzzleFile(puzzleDirectoryPath: File, solutionFile: SolutionFile): File {
-        val path = "${puzzleDirectoryPath.path}/${solutionFile.fileName}"
+    private fun getPuzzleFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): File {
+        val path = "${puzzleDirectoryPath.path}/${puzzleFile.fileName}"
         return File(path)
     }
 
     companion object {
-        private val project by lazy {
-            KotlinCoreEnvironment.createForProduction(
-                Disposer.newDisposable(),
-                CompilerConfiguration(),
-                EnvironmentConfigFiles.JVM_CONFIG_FILES
-            ).project
-        }
-
         @JvmStatic
-        fun getPuzzleDirectories() = PuzzleUtils
+        fun getPuzzleDirectories() = TestUtils
             .getPuzzleDirectories().take(1)
     }
 }

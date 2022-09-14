@@ -1,7 +1,7 @@
 package com.igorwojda.puzzletest
 
-import com.igorwojda.puzzletest.utils.PuzzleUtils
-import com.igorwojda.puzzletest.utils.SolutionFile
+import com.igorwojda.puzzletest.utils.PuzzleFile
+import com.igorwojda.puzzletest.utils.TestUtils
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
 import java.io.File
@@ -19,13 +19,13 @@ class ProjectConsistencyTest {
 
     companion object {
         @JvmStatic
-        fun getPuzzleRequiredFilePaths() = PuzzleUtils
+        fun getPuzzleRequiredFilePaths() = TestUtils
             .getPuzzleDirectories()
             .flatMap {
                 getProjectRequiredFiles(it)
             }
 
-        private fun getProjectRequiredFiles(puzzleDirectory: File) = SolutionFile
+        private fun getProjectRequiredFiles(puzzleDirectory: File) = PuzzleFile
             .values()
             .map {
                 "${puzzleDirectory.path}/${it.fileName}"

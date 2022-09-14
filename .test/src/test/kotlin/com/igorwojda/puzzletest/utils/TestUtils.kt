@@ -2,7 +2,7 @@ package com.igorwojda.puzzletest.utils
 
 import java.io.File
 
-object PuzzleUtils {
+object TestUtils {
 
     /**
      * Return repository root directory File
@@ -29,10 +29,7 @@ object PuzzleUtils {
             .toList()
     }
 
-    fun getGeneratedTestDirectory(): File {
-        val path = "${repoRootDirectoryFile.path}/.test/src/test/kotlin/generated"
-        return File(path)
-    }
+    val generatedTestDirectory = File("${repoRootDirectoryFile.path}/.test/src/test/kotlin/generated")
 
     /**
      * Checks whatever or not directory is high level directory (puzzle grouping directory)
