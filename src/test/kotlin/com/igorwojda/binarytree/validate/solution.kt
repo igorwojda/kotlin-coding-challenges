@@ -5,22 +5,12 @@ private object Solution1 {
         if (min != null && node.data < min) {
             return false
         }
-
         if (max != null && node.data > max) {
             return false
         }
 
-        val leftNode = node.left
-        if (leftNode != null) {
-            return isValidSearchBinaryTree(leftNode, min, node.data)
-        }
-
-        val rightNode = node.right
-        if (rightNode != null) {
-            return isValidSearchBinaryTree(rightNode, node.data, max)
-        }
-
-        return true
+        return node.left?.let { isValidSearchBinaryTree(it, min, node.data) } ?: true &&
+            node.right?.let { isValidSearchBinaryTree(it, node.data, max) } ?: true
     }
 
     private data class Node<E : Comparable<E>>(
