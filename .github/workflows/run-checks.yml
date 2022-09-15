@@ -19,8 +19,9 @@ jobs:
       - name: Set up JDK 18
         uses: actions/setup-java@v3
         with:
-          java-version: 18
-
+          java-version: 17
+          distribution: 'zulu'
+                
       - uses: actions/cache@v2
         with:
           path: ~/.gradle
