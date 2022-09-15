@@ -140,7 +140,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Is anagram](../src/test/kotlin/com/igorwojda/string/isanagram/desc.md)
 - [Is palindrome](../src/test/kotlin/com/igorwojda/string/ispalindrome/basic/desc.md)
 - [Is tolerant palindrome](../src/test/kotlin/com/igorwojda/string/ispalindrome/tolerant/desc.md)
-- [Is permutation palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/permutation/desc.md)
+- [Is permutation palindrome](../src/test/kotlin/com/igorwojda/string/ispalindrome/permutation/desc.md)
 - [Is substring](../src/test/kotlin/com/igorwojda/string/issubstring/desc.md)
 - [Longest word](../src/test/kotlin/com/igorwojda/string/longestword/desc.md)
 - [Max occurrent char](../src/test/kotlin/com/igorwojda/string/maxchar/desc.md)
@@ -151,8 +151,8 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 ## Matrix
 
-- [Spiral matrix generator](../src/test/kotlin/com/igorwojda/integer/spiralmatrixgenerator/desc.md)
-- [Find rectangle](src/test/kotlin/com/igorwojda/matrix/findrectangle/desc.md)
+- [Spiral matrix generator](../src/test/kotlin/com/igorwojda/matrix/spiralmatrixgenerator/desc.md)
+- [Find rectangle](../src/test/kotlin/com/igorwojda/matrix/findrectangle/desc.md)
 
 ## Range
 
