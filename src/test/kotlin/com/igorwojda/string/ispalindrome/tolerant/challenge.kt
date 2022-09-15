@@ -3,7 +3,7 @@ package com.igorwojda.string.ispalindrome.tolerant
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun isTolerantPalindrome(str: String, characterRemoved: Boolean = false): Boolean {
+private fun isTolerantPalindrome(str: String): Boolean {
     TODO("not implemented")
 }
 
