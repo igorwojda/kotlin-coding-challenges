@@ -15,22 +15,22 @@ Given a linked list, return true if the list is circular, false if it is not.
 Example 1
 
 ```kotlin
-val l = new SinglyLinkedList();
-val a = new Node('a');
-val b = new Node('b');
-val c = new Node('c');
-l.head = a;
-a.next = b;
-b.next = c;
-c.next = b;
+val l = new SinglyLinkedList ()
+val a = new Node ('a')
+val b = new Node ('b')
+val c = new Node ('c')
+l.head = a
+a.next = b
+b.next = c
+c.next = b
 circular(l) // true
 ```
 
 Example 2
 
 ```kotlin
-val l = new List();
-val a = new Node('a');
+val l = new List ()
+val a = new Node ('a')
 circular(l) // false
 ```
 
