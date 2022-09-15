@@ -42,7 +42,7 @@ private object Solution3 {
 // Recursive optimal approach:
 // Time complexity: O(n)
 private object Solution4 {
-    private fun recurringChar(str: String): Char? {
+    private fun maxOccurrentChar(str: String): Char? {
         val set = mutableSetOf<Char>()
 
         str.forEach { char ->
@@ -60,7 +60,7 @@ private object Solution4 {
 // Recursive naive approach
 // Time complexity: O(n^2)
 private object Solution5 {
-    private fun recurringChar(str: String): Char? {
+    private fun maxOccurrentChar(str: String): Char? {
         str.forEachIndexed { index, c ->
             str.substring(index + 1).forEach {
                 if (c == it) {
