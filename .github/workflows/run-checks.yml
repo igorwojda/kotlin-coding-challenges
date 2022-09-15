@@ -40,7 +40,7 @@ jobs:
       - name: Run Generated Unit tests
         run: ./gradlew test --tests "generated.com.igorwojda.*"
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: unit-test-report
           path: ./**/build/reports/tests/
