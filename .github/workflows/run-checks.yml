@@ -21,7 +21,7 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu'
-                
+
       - uses: actions/cache@v2
         with:
           path: ~/.gradle
@@ -30,16 +30,16 @@ jobs:
             gradle-${{ hashFiles('gradle-checksums.txt') }}-
 
       - name: Run consistency Unit tests
-        run: cd .test && ./gradlew test -i
+        run: cd .test && ./gradlew test
 
       - name: Generate Unit tests
-        run: cd .test && ./gradlew generateTests -i
+        run: cd .test && ./gradlew generateTests
 
       - name: Navigate to root project
         run: cd .test
 
       - name: Run Generated Unit tests
-        run: ./gradlew test -i --tests "generated.com.igorwojda.*"
+        run: ./gradlew test --tests "generated.com.igorwojda.*"
 
       - uses: actions/upload-artifact@v3
         with:
