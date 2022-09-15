@@ -11,7 +11,7 @@ List of problems that can be solved using [recursion](https://en.wikipedia.org/w
 - [Get odd](../src/test/kotlin/com/igorwojda/integer/getodd/desc.md)
 - [Any callback](../src/test/kotlin/com/igorwojda/various/anycallback/desc.md)
 - [Power](../src/test/kotlin/com/igorwojda/integer/power/desc.md)
-- [Binary search tree (validate)](../src/test/kotlin/com/igorwojda/binarytree/validate/desc.md)
+- [Binary search tree (validate)](../src/test/kotlin/com/igorwojda/tree/binarytree/validate/desc.md)
 - [Fibonacci](../src/test/kotlin/com/igorwojda/integer/fibonacci/basic/desc.md)
 - [Fibonacci with recursive cache](../src/test/kotlin/com/igorwojda/integer/fibonacci/recursivecached/desc.md)
 - [Add up to](../src/test/kotlin/com/igorwojda/integer/addupto/desc.md)
@@ -108,8 +108,8 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 ## Binary tree
 
-- [Binary Search Tree (insert)](../src/test/kotlin/com/igorwojda/binarytree/insert/desc.md)
-- [Binary Tree (validate)](../src/test/kotlin/com/igorwojda/binarytree/validate/desc.md)
+- [Binary Search Tree (insert)](../src/test/kotlin/com/igorwojda/tree/binarytree/insert/desc.md)
+- [Binary Tree (validate)](../src/test/kotlin/com/igorwojda/tree/binarytree/validate/desc.md)
 
 ## Integer
 

@@ -1,4 +1,4 @@
-package com.igorwojda.binarytree.validate
+package com.igorwojda.tree.binarytree.validate
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.amshove.kluent.shouldEqual

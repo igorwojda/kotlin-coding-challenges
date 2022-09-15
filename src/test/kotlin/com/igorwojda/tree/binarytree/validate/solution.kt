@@ -1,6 +1,18 @@
-package com.igorwojda.binarytree.insert
+package com.igorwojda.tree.binarytree.validate
 
 private object Solution1 {
+    private fun isValidSearchBinaryTree(node: Node<Int>, min: Int? = null, max: Int? = null): Boolean {
+        if (min != null && node.data < min) {
+            return false
+        }
+        if (max != null && node.data > max) {
+            return false
+        }
+
+        return node.left?.let { isValidSearchBinaryTree(it, min, node.data) } ?: true &&
+            node.right?.let { isValidSearchBinaryTree(it, node.data, max) } ?: true
+    }
+
     private data class Node<E : Comparable<E>>(
         var data: E,
         var left: Node<E>? = null,
@@ -20,13 +32,6 @@ private object Solution1 {
                     right?.insert(e)
                 }
             }
-        }
-
-        fun contains(e: E): Boolean = when {
-            e == data -> true
-            e < data -> left?.contains(e) ?: false
-            e > data -> right?.contains(e) ?: false
-            else -> false
         }
     }
 }

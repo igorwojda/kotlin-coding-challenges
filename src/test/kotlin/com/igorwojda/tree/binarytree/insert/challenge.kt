@@ -1,4 +1,4 @@
-package com.igorwojda.binarytree.insert
+package com.igorwojda.tree.binarytree.insert
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
