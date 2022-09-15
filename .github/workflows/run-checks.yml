@@ -29,16 +29,16 @@ jobs:
           restore-keys: |
             gradle-${{ hashFiles('gradle-checksums.txt') }}-
 
-      - name: Run consistency Unit tests
+      - name: Verify project consistency
         run: cd .test && ./gradlew test
 
-      - name: Generate Unit tests
+      - name: Generate solutions tests
         run: cd .test && ./gradlew generateTests
 
       - name: Navigate to root project
         run: cd .test
 
-      - name: Run Generated Unit tests
+      - name: Run generated solution tests
         run: ./gradlew test --tests "generated.com.igorwojda.*"
 
       - uses: actions/upload-artifact@v3
