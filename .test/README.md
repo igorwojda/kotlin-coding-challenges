@@ -17,7 +17,7 @@ Verify consistency across various puzzles e.g. check puzzle naming and file stru
 
 ## Run
 
-Run all checks `./gradle test`
+Run all checks `./gradle generateTests`
 
 
 
