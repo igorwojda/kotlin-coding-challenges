@@ -16,7 +16,7 @@ This subproject generates a test suite for each puzzle by combining puzzle conta
 every puzzle solutions (`solution.kt` file).
 
 To generate tests run the `cd .test && ./gradlew generateTests && cd ..` command.
-Generated tests will be placed in the `\src\test\kotlin\generated` directory.
+Generated tests will be placed in the `src/test/kotlin/generated` directory.
 
 To run all generated tests use `./gradlew test --tests "generated.com.igorwojda.*"` command.
 `

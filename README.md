@@ -8,12 +8,13 @@ help you to become a better programmer and improve your chance of getting a new 
 
 ## Challenge structure
 
-Each challenge is located in separate package and it contains 3 main
+Each challenge is located in separate package, and it contains 3 main
 files ([screen](./misc/image/challenge-structure.png)):
 
 - `desc.md` - the task description.
-- `desc.kt` - an empty method/class where challenge should be solved. This file also contains set of test and
-  ocasionally helper methods.
+- `chellenge.kt` - file containing an empty method/class where challenge should be solved. This file also contains
+  set of test and occasionally helper methods. You can run all tests directly from this file (click green arrow next to
+  `Test` class).
   [JUnit](https://junit.org/junit4/) tests which verify that task was solved correctly.
 - `solution.kt` - a file containing one or more solutions.
 
@@ -28,18 +29,24 @@ determine space/time complexity and we look at code readability.
 
 1. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 2. Import project by using IntelliJ IDEA menu: `File | New | Project From Version Control | Git`
-3. Choose a challenge and code
-   the [solution](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Solving-coding-chalenges)
+3. Choose a challenge ([src\test\kotlin\com\igorwojda](src/test/kotlin/com/igorwojda) directory) and code
+   the solution
 4. [Run the tests](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Running-tests) to verify your solution
 
 # Let's solve some challenges
 
 Challenges below are segregated by different difficulties. The repository also contains challenges grouped by
-[problem type](misc/desc.md).
+[problem type](misc/PuzzleGroups.md).
 
 Some challenges may contain a reference to other challenges that should be solved before to have a better understanding
-of the problem. To succeed you need to practice often, repeat the same challenges multiple times and be persistent over
-time. Take your time before you take a look at the presented solution. **Good luck!**
+of the problem. Check the
+look at [problem-solving strategy](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Solving-coding-challenges)
+.
+
+Take your time before you view the presented solution. To succeed you need to practice often, repeat the same challenges
+multiple times and be persistent over time.
+
+**Good luck!**
 
 **New in Town**
 
