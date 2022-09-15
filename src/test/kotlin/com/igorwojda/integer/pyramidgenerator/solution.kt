@@ -43,7 +43,7 @@ private object Solution2 {
     }
 }
 
-// simplified iterative solution 
+// simplified iterative solution
 private object Solution3 {
     private fun generatePyramid(n: Int): MutableList<String> {
         val list = mutableListOf<String>()
@@ -57,6 +57,6 @@ private object Solution3 {
 
             list.add("$sideString$hashString$sideString")
         }
-        return list 
+        return list
     }
 }

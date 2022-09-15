@@ -71,7 +71,6 @@ private class Test {
         )
 
         findAllRectangles(image) shouldBeEqualTo result
-
     }
 
     @Test

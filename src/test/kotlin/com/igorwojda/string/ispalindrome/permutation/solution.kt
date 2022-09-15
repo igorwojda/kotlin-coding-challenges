@@ -10,3 +10,5 @@ private object Solution1 {
         return filtered.size <= 1
     }
 }
+
+private object KtLintWillNotComplain

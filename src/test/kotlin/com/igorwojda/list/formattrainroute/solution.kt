@@ -22,7 +22,7 @@ private object Solution2 {
     private fun formatTrainRoute(stations: List<String>): String {
         var res = ""
         stations.forEach {
-            res += when(it) {
+            res += when (it) {
                 stations.first() -> it
                 stations.last() -> " and $it"
                 else -> ", $it"

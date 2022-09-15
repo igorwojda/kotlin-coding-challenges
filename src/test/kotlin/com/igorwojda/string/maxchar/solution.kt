@@ -28,7 +28,7 @@ private object Solution2 {
 private object Solution3 {
     private fun maxOccurrentChar(str: String): Char? {
         if (str.isBlank()) return null
-        
+
         val map = mutableMapOf<Char, Int>()
 
         str.forEach {

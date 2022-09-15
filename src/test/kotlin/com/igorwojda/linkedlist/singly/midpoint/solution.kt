@@ -22,5 +22,4 @@ private object Solution1 {
 
 private object KtLintWillNotComplain
 
-
 // list.forEach

@@ -1,6 +1,6 @@
 package com.igorwojda.string.issubstring
 
-//Kotlin Idiomatic Approach
+// Kotlin Idiomatic Approach
 private object Solution1 {
     private fun isSubstring(str: String, subStr: String): Boolean {
         return str.contains(subStr) && str.isNotEmpty() && subStr.isNotEmpty()
@@ -26,8 +26,7 @@ private object Solution2 {
                 if (pointer2 == subStr.length) {
                     return true
                 }
-            }
-            else {
+            } else {
                 pointer1 = pointer1 - pointer2 + 1
                 pointer2 = 0
             }
