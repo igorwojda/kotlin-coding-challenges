@@ -27,10 +27,7 @@ object TestUtils {
             .filter { it.name != miscDirectoryName }
             .filter { it.isHighLevelDirectory }
             .toList()
-//            .take(1)
     }
-
-    val generatedTestDirectory = File("${repoRootDirectoryFile.path}/.test/src/test/kotlin/generated")
 
     /**
      * Checks whatever or not directory is high level directory (puzzle grouping directory)

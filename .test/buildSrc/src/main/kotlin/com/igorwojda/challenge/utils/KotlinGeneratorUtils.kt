@@ -96,7 +96,6 @@ object KotlinGeneratorUtils {
         return packageStr
     }
 
-
     private fun getSolutions(ktFile: KtFile) = ktFile
         .children
         .filterIsInstance<KtObjectDeclaration>()
