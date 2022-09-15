@@ -32,6 +32,9 @@ jobs:
       - name: Verify project consistency
         run: cd .test && ./gradlew test
 
+      - name: ktlint check
+        run: ./gradlew ktlintCheck
+
       - name: Generate solutions tests
         run: cd .test && ./gradlew generateTests
 
