@@ -29,16 +29,16 @@ jobs:
             gradle-${{ hashFiles('gradle-checksums.txt') }}-
 
       - name: Run consistency Unit tests
-        run: cd .test && ./gradlew test
+        run: cd .test && ./gradlew test -d
 
       - name: Generate Unit tests
-        run: cd .test && ./gradlew generateTests
+        run: cd .test && ./gradlew generateTests -d
 
       - name: Navigate to root project
         run: cd .test
 
       - name: Run Generated Unit tests
-        run: ./gradlew test --tests "generated.com.igorwojda.*"
+        run: ./gradlew test -d --tests "generated.com.igorwojda.*"
 
       - uses: actions/upload-artifact@v3
         with:
