@@ -19,7 +19,7 @@ class ProjectConsistencyTest {
 
     @ParameterizedTest(name = "chalenge file exists: {0}")
     @MethodSource("getChallengeRequiredFilePaths")
-    fun `chalenge file exists`(challengeFilePath: String) {
+    fun `challenge file exists`(challengeFilePath: String) {
         val path = Path(challengeFilePath)
         require(Files.exists(path)) { "Missing file $path" }
     }
