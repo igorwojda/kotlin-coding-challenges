@@ -9,7 +9,6 @@ object TestUtils {
      */
     private val repoRootDirectoryFile by lazy {
         val scriptDirectory = File("")
-        println(scriptDirectory.absolutePath)
         scriptDirectory.absoluteFile.parentFile
     }
 
