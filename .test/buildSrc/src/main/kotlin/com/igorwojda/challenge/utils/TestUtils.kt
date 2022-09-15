@@ -21,7 +21,8 @@ object TestUtils {
     {
         val testFiles = KotlinGeneratorUtils.getTestFiles(puzzleDirectoryPath)
 
-        testFiles.forEach {
+        testFiles
+            .forEach {
             createTestFile(puzzleDirectoryPath, it)
         }
     }
@@ -31,10 +32,17 @@ object TestUtils {
      */
     private fun createTestFile(puzzleDirectoryPath: File, testFile: TestFile) {
         println("Create test file")
-        val testDirectory = File("${puzzleDirectoryPath.path}/${testFile.relativePath}/")
+        println("puzzleDirectoryPath.path ${puzzleDirectoryPath.path}")
+
+        val generatedPuzzleDirecotryPath = puzzleDirectoryPath
+            .path
+            .replace("kotlin/com/igorwojda/","kotlin/generated/com/igorwojda/")
+
+        val testDirectory = File("$generatedPuzzleDirecotryPath/${testFile.relativePath}/")
         testDirectory.mkdirs()
 
         val targetChallengeFile = File("${testDirectory.path}/${testFile.fileName}")
+        println("targetChallengeFile.path ${targetChallengeFile.path}")
         targetChallengeFile.writeText(testFile.lines.joinToString(separator = "\n"))
     }
 
@@ -42,7 +50,7 @@ object TestUtils {
      * Return list of project names
      */
     private fun getPuzzleDirectories(project: Project): List<File> {
-        val path = "${project.rootDir.path}/../src/test"
+        val path = "${project.rootDir.path}/../src/test/kotlin/com/igorwojda"
         val directory = File(path)
         val miscDirectoryName = "misc"
 

@@ -27,7 +27,8 @@ object KotlinGeneratorUtils {
         solution: KtObjectDeclaration,
     ): TestFile {
 
-        val packageStr = getPackage(challengeKtFile, solution.name)
+        val solutionName = checkNotNull(solution.name) { "Solution name is null" }
+        val packageStr = getPackage(challengeKtFile, solutionName)
         val imports = getImports(solutionKtFile, challengeKtFile)
         val solutionMembers = getSolutionMembers(solution)
         val tests = getTests(challengeKtFile)
@@ -42,10 +43,10 @@ object KotlinGeneratorUtils {
             tests
         ).flatten()
 
-        val solutionName = getFileName(solution, puzzleName)
-        val relativePath = getRelativePath(challengeKtFile, solution.name)
+        val testrSolutionFileName = getFileName(solution, puzzleName)
+        val relativePath = solutionName.toLowerCase()
 
-        return TestFile(solutionName, relativePath, lines)
+        return TestFile(testrSolutionFileName, relativePath, lines)
     }
 
     private fun getPuzzleName(challengeKtFile: KtFile) =
@@ -77,7 +78,7 @@ object KotlinGeneratorUtils {
         .toSet()
         .toList()
 
-    private fun getPackage(ktFile: KtFile, solutionName: String?) =
+    private fun getPackage(ktFile: KtFile, solutionName: String) =
         "package generated.${ktFile.packageFqName}.$solutionName".toLowerCase()
 
     private fun getFileName(solution: KtObjectDeclaration, puzzleName: String): String {
@@ -85,16 +86,16 @@ object KotlinGeneratorUtils {
         return "Test_${puzzleName}_$solutionName.kt"
     }
 
-    private fun getRelativePath(ktFile: KtFile, solutionName: String?): String {
-        var packageStr = ktFile
-            .packageFqName
-            .toString()
-            .replace(".", "/")
-
-        packageStr += ".${solutionName}".toLowerCase()
-
-        return packageStr
-    }
+//    private fun getRelativePath(ktFile: KtFile, solutionName: String?): String {
+//        var packageStr = ktFile
+//            .packageFqName
+//            .toString()
+//            .replace(".", "/")
+//
+//        packageStr += ".${solutionName}".toLowerCase()
+//
+//        return packageStr
+//    }
 
     private fun getSolutions(ktFile: KtFile) = ktFile
         .children
