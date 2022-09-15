@@ -7,7 +7,7 @@ private fun factorial(n: Int): Int {
     TODO("not implemented")
 }
 
-class RecursiveFactorial {
+private class Test {
     @Test
     fun `factorial 0 should equal 1`() {
         factorial(0) shouldBeEqualTo 1

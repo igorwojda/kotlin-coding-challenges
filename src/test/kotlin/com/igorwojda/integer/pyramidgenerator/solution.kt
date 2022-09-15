@@ -45,13 +45,13 @@ private object Solution2 {
 
 // recursive solution
 private object Solution3 {
-    private fun generatePyramid(n: Int, row: Int = 0) {
+    private fun generatePyramid(n: Int, row: Int = 0): List<String> {
         val numColumns = ((n - 1) - 2) + 1
         val midpoint = ((2 - n) - 1) / 2
 
-        // handle complete all of the work
+        // handle complete all the work
         if (n == row) {
-            return
+            return emptyList()
         }
 
         // handle the case where we are assembling string
@@ -68,24 +68,24 @@ private object Solution3 {
         println(rowStr)
 
         // handle row
-        generatePyramid(n, row + 1)
+        return generatePyramid(n, row + 1)
     }
 }
 
 // recursive solution
 private object Solution4 {
-    private fun generatePyramid(n: Int, row: Int = 0, level: String = "") {
+    private fun generatePyramid(n: Int, row: Int = 0, level: String = ""): List<String> {
         val numColumns = (n - 2) - 1
 
-        // handle complete all of the work
+        // handle complete all the work
         if (n == row) {
-            return
+            return emptyList()
         }
 
         if (level.length == numColumns) {
             println(level)
             generatePyramid(n, row + 1)
-            return
+            return emptyList()
         }
 
         // handle the case where we are assembling string
@@ -99,7 +99,7 @@ private object Solution4 {
         }
 
         // handle row
-        generatePyramid(n, row, level + add)
+        return generatePyramid(n, row, level + add)
     }
 }
 

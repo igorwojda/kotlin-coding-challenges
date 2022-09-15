@@ -1,4 +1,4 @@
-package com.igorwojda.puzzletest.utils
+package com.igorwojda.challenge.utils
 
 import java.io.File
 
@@ -27,7 +27,7 @@ object TestUtils {
             .filter { it.name != miscDirectoryName }
             .filter { it.isHighLevelDirectory }
             .toList()
-            .take(1)
+//            .take(1)
     }
 
     val generatedTestDirectory = File("${repoRootDirectoryFile.path}/.test/src/test/kotlin/generated")

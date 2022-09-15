@@ -1,3 +1,4 @@
+import com.igorwojda.challenge.utils.TestUtils
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
@@ -17,7 +18,7 @@ dependencies {
 
 tasks.test {
 	useJUnitPlatform()
-	
+
 	testLogging {
 		events("failed")
 
@@ -28,5 +29,32 @@ tasks.test {
 
 tasks.withType<KotlinCompile>().configureEach {
 	kotlinOptions.jvmTarget = "11"
+}
+
+task("generateTests") {
+	group = "verification"
+
+	afterEvaluate {
+		TestUtils.generateTestFiles(project)
+	}
+
+//	afterEvaluate {
+//		// Filter modules with "lintDebug" task (non-Android modules do not have lintDebug task)
+//		val lintTasks = subprojects.mapNotNull { "${it.name}:lintDebug" }
+//
+//		// Get modules with "testDebugUnitTest" task (app module does not have it)
+//		val testTasks = subprojects.mapNotNull { "${it.name}:testDebugUnitTest" }
+//			.filter { it != "app:testDebugUnitTest" }
+//
+//		// All task dependencies
+//		val taskDependencies =
+//			mutableListOf("app:assembleAndroidTest", "ktlintCheck", "detekt").also {
+//				it.addAll(lintTasks)
+//				it.addAll(testTasks)
+//			}
+//
+//		// By defining Gradle dependency all dependent tasks will run before this "empty" task
+//		dependsOn(taskDependencies)
+//	}
 }
 

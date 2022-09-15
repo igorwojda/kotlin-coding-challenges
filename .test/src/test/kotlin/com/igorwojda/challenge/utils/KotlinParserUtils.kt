@@ -1,4 +1,4 @@
-package com.igorwojda.puzzletest.utils
+package com.igorwojda.challenge.utils
 
 import com.intellij.openapi.util.Disposer
 import com.intellij.psi.PsiManager
@@ -20,17 +20,18 @@ object KotlinParserUtils {
         ).project
     }
 
-    private fun getPuzzleFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): File {
+    fun getPuzzleFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): File {
         val path = "${puzzleDirectoryPath.path}/${puzzleFile.fileName}"
         return File(path)
     }
 
-    fun getKtFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): KtFile {
+    fun getPuzzleKtFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): KtFile {
         val file = getPuzzleFile(puzzleDirectoryPath, puzzleFile)
-        return getKtFile(file.readText(), puzzleFile.fileName)
+        val fullFileName = "${puzzleDirectoryPath.path}/${puzzleFile.fileName}"
+        return getPuzzleKtFile(file.readText(), fullFileName)
     }
 
-    fun getKtFile(codeString: String, fileName: String) =
+    private fun getPuzzleKtFile(codeString: String, fileName: String) =
         PsiManager.getInstance(project)
             .findFile(
                 LightVirtualFile(fileName, KotlinFileType.INSTANCE, codeString)

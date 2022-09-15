@@ -27,22 +27,22 @@ private object Solution2 {
 
 // recursive solution
 private object Solution3 {
-    private fun generateSteps(n: Int, row: Int = 0, stair: String = "") {
-        // handle complete all of the work
+    private fun generateSteps(n: Int, row: Int = 0, stair: String = ""): MutableList<String> {
+        // handle complete all the work
         if (n == row) {
-            return
+            return mutableListOf()
         }
 
         // handle end of the row
         if (n == stair.length) {
             generateSteps(n, row + 1)
-            return
+            return mutableListOf()
         }
 
         // handle the case where we are assembling stare string
         val char = if (stair.length <= row) '#' else ' '
         val currentStar = stair + char
 
-        generateSteps(n, row, currentStar)
+        return generateSteps(n, row, currentStar)
     }
 }

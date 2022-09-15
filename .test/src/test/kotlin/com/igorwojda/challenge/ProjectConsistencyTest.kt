@@ -1,8 +1,8 @@
-package com.igorwojda.puzzletest
+package com.igorwojda.challenge
 
-import com.igorwojda.puzzletest.utils.KotlinParserUtils
-import com.igorwojda.puzzletest.utils.PuzzleFile
-import com.igorwojda.puzzletest.utils.TestUtils
+import com.igorwojda.challenge.utils.KotlinParserUtils
+import com.igorwojda.challenge.utils.PuzzleFile
+import com.igorwojda.challenge.utils.TestUtils
 import org.amshove.kluent.shouldBeEqualTo
 import org.amshove.kluent.shouldBeGreaterOrEqualTo
 import org.jetbrains.kotlin.psi.KtClass
@@ -73,24 +73,20 @@ class ProjectConsistencyTest {
         @JvmStatic
         fun getSolutionFiles() = TestUtils
             .getPuzzleDirectories()
-            .map { KotlinParserUtils.getKtFile(it, PuzzleFile.SOLUTIONS_KT) }
+            .map { KotlinParserUtils.getPuzzleKtFile(it, PuzzleFile.SOLUTIONS_KT) }
 
         @JvmStatic
         fun getChallenge() = TestUtils
             .getPuzzleDirectories()
-            .map { KotlinParserUtils.getKtFile(it, PuzzleFile.CHALLENGE_KT) }
+            .map { KotlinParserUtils.getPuzzleKtFile(it, PuzzleFile.CHALLENGE_KT) }
 
         @JvmStatic
         fun getPuzzleRequiredFilePaths() = TestUtils
             .getPuzzleDirectories()
-            .flatMap {
-                getProjectRequiredFiles(it)
-            }
+            .flatMap { getProjectRequiredFiles(it) }
 
         private fun getProjectRequiredFiles(puzzleDirectory: File) = PuzzleFile
             .values()
-            .map {
-                "${puzzleDirectory.path}/${it.fileName}"
-            }
+            .map { "${puzzleDirectory.path}/${it.fileName}" }
     }
 }

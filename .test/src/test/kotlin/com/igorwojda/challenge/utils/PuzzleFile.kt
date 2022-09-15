@@ -1,4 +1,4 @@
-package com.igorwojda.puzzletest.utils
+package com.igorwojda.challenge.utils
 
 enum class PuzzleFile(val fileName: String) {
     SOLUTIONS_KT("solution.kt"),
