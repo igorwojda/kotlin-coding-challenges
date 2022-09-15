@@ -15,7 +15,7 @@ object TestUtils {
     /**
      * Return list of project names
      */
-    fun getPuzzleDirectories(): List<File> {
+    fun getChellengeDirectories(): List<File> {
         val path = "${repoRootDirectoryFile.path}/src/test/kotlin/com/igorwojda"
         val directory = File(path)
         val miscDirectoryName = "misc"
@@ -29,7 +29,7 @@ object TestUtils {
     }
 
     /**
-     * Checks whatever or not directory is high level directory (puzzle grouping directory)
+     * Checks whatever or not directory is high level directory (challenge grouping directory)
      */
     private val File.isHighLevelDirectory get() = this.isDirectory && this.listFiles().none { it.isDirectory }
 }

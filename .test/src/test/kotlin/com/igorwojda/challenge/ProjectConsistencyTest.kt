@@ -1,7 +1,6 @@
 package com.igorwojda.challenge
 
 import com.igorwojda.challenge.utils.KotlinParserUtils
-import com.igorwojda.challenge.utils.PuzzleFile
 import com.igorwojda.challenge.utils.TestUtils
 import org.amshove.kluent.shouldBeEqualTo
 import org.amshove.kluent.shouldBeGreaterOrEqualTo
@@ -17,10 +16,10 @@ import kotlin.io.path.Path
 
 class ProjectConsistencyTest {
 
-    @ParameterizedTest(name = "Puzzle file exists: {0}")
-    @MethodSource("getPuzzleRequiredFilePaths")
-    fun `Puzzle file exists`(puzzleFilePath: String) {
-        val path = Path(puzzleFilePath)
+    @ParameterizedTest(name = "chalenge file exists: {0}")
+    @MethodSource("getChallengeRequiredFilePaths")
+    fun `chalenge file exists`(challengeFilePath: String) {
+        val path = Path(challengeFilePath)
         require(Files.exists(path)) { "Missing file $path" }
     }
 
@@ -69,21 +68,21 @@ class ProjectConsistencyTest {
     companion object {
         @JvmStatic
         fun getSolutionFiles() = TestUtils
-            .getPuzzleDirectories()
-            .map { KotlinParserUtils.getPuzzleKtFile(it, PuzzleFile.SOLUTIONS_KT) }
+            .getChallengeDirectories()
+            .map { KotlinParserUtils.getChallengeKtFile(it, ChallengeFile.SOLUTIONS_KT) }
 
         @JvmStatic
         fun getChallenge() = TestUtils
-            .getPuzzleDirectories()
-            .map { KotlinParserUtils.getPuzzleKtFile(it, PuzzleFile.CHALLENGE_KT) }
+            .getChallengeDirectories()
+            .map { KotlinParserUtils.getChallengeKtFile(it, ChallengeFile.CHALLENGE_KT) }
 
         @JvmStatic
-        fun getPuzzleRequiredFilePaths() = TestUtils
-            .getPuzzleDirectories()
+        fun getChallengeRequiredFilePaths() = TestUtils
+            .getChallengeDirectories()
             .flatMap { getProjectRequiredFiles(it) }
 
-        private fun getProjectRequiredFiles(puzzleDirectory: File) = PuzzleFile
+        private fun getProjectRequiredFiles(challengeDirectory: File) = ChallengeFile
             .values()
-            .map { "${puzzleDirectory.path}/${it.fileName}" }
+            .map { "${challengeDirectory.path}/${it.fileName}" }
     }
 }

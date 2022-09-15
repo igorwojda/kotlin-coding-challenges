@@ -1,4 +1,4 @@
-# Puzzle name
+# Challenge name
 
 ## Nice to solve before
 

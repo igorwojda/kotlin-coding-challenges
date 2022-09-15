@@ -99,7 +99,7 @@ private data class BinaryNode<E : Comparable<E>>(
 
 /*
 We can use queue as helper class to implement breath first traversal. This is not most optimal queue implementation,
-however it's enough for this task. Check "Queue puzzle" solution for more details and more efficient queue
+however it's enough for this task. Check "Queue challenge" solution for more details and more efficient queue
 implementation.
 */
 private class Queue<E> {

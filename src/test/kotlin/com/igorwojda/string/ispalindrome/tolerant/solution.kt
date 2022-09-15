@@ -43,7 +43,6 @@ private object Solution2 {
                         return true
                     }
 
-                    println(str)
                     val removeLeftResult = isTolerantPalindrome(
                         str.substring(2 until str.lastIndex),
                         true

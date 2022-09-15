@@ -8,20 +8,22 @@ import org.jetbrains.kotlin.psi.KtObjectDeclaration
 import java.io.File
 
 object KotlinGeneratorUtils {
-    fun getTestFiles(puzzleDirectoryPath: File): List<TestFile> {
-        val challengeKtFile = KotlinParserUtils.getPuzzleKtFile(puzzleDirectoryPath, PuzzleFile.CHALLENGE_KT)
-        val solutionKtFile = KotlinParserUtils.getPuzzleKtFile(puzzleDirectoryPath, PuzzleFile.SOLUTIONS_KT)
-        val puzzleName = getPuzzleName(challengeKtFile)
+    fun getTestFiles(challengeDirectoryPath: File): List<TestFile> {
+        val challengeKtFile =
+            KotlinParserUtils.getChallengeKtFile(challengeDirectoryPath, ChallengeFile.CHALLENGE_KT)
+        val solutionKtFile =
+            KotlinParserUtils.getChallengeKtFile(challengeDirectoryPath, ChallengeFile.SOLUTIONS_KT)
+        val challengeName = getChallengeName(challengeKtFile)
 
         val solutions = getSolutions(solutionKtFile)
 
         return solutions.map {
-            getTestFile(puzzleName, challengeKtFile, solutionKtFile, it)
+            getTestFile(challengeName, challengeKtFile, solutionKtFile, it)
         }
     }
 
     private fun getTestFile(
-        puzzleName: String,
+        challengeName: String,
         challengeKtFile: KtFile,
         solutionKtFile: KtFile,
         solution: KtObjectDeclaration,
@@ -43,13 +45,13 @@ object KotlinGeneratorUtils {
             tests
         ).flatten()
 
-        val testrSolutionFileName = getFileName(solution, puzzleName)
+        val testrSolutionFileName = getFileName(solution, challengeName)
         val relativePath = solutionName.toLowerCase()
 
         return TestFile(testrSolutionFileName, relativePath, lines)
     }
 
-    private fun getPuzzleName(challengeKtFile: KtFile) =
+    private fun getChallengeName(challengeKtFile: KtFile) =
         challengeKtFile
             .packageFqName
             .toString()
@@ -81,9 +83,9 @@ object KotlinGeneratorUtils {
     private fun getPackage(ktFile: KtFile, solutionName: String) =
         "package generated.${ktFile.packageFqName}.$solutionName".toLowerCase()
 
-    private fun getFileName(solution: KtObjectDeclaration, puzzleName: String): String {
+    private fun getFileName(solution: KtObjectDeclaration, challengeName: String): String {
         val solutionName = checkNotNull(solution.name) { "Solution name is null" }
-        return "Test_${puzzleName}_$solutionName.kt"
+        return "Test_${challengeName}_$solutionName.kt"
     }
 
     private fun getSolutions(ktFile: KtFile) = ktFile
