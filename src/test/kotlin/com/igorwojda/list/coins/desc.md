@@ -14,7 +14,7 @@ Example 1
 ```kotlin
 getCoins(4, listOf(1, 2, 3)) // 4
 
-Waysto make 4 with those denominations :
+Ways to make 4 with those denominations :
 1¢, 1¢, 1¢, 1¢
 1¢, 1¢, 2¢
 1¢, 3¢
