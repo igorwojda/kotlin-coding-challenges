@@ -28,14 +28,11 @@ jobs:
           restore-keys: |
             gradle-${{ hashFiles('gradle-checksums.txt') }}-
 
-      - name: Navigate to subproject
-        run: cd .test
-
       - name: Run consistency Unit tests
-        run: ./gradlew test
+        run: cd .test && ./gradlew test
 
       - name: Generate Unit tests
-        run: ./gradlew generateTests
+        run: cd .test && ./gradlew generateTests
 
       - name: Navigate to root project
         run: cd .test
