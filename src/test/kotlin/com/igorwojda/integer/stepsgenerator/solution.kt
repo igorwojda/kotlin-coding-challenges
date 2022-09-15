@@ -24,25 +24,3 @@ private object Solution2 {
         return list
     }
 }
-
-// recursive solution
-private object Solution3 {
-    private fun generateSteps(n: Int, row: Int = 0, stair: String = ""): MutableList<String> {
-        // handle complete all the work
-        if (n == row) {
-            return mutableListOf()
-        }
-
-        // handle end of the row
-        if (n == stair.length) {
-            generateSteps(n, row + 1)
-            return mutableListOf()
-        }
-
-        // handle the case where we are assembling stare string
-        val char = if (stair.length <= row) '#' else ' '
-        val currentStar = stair + char
-
-        return generateSteps(n, row, currentStar)
-    }
-}

@@ -43,78 +43,18 @@ private object Solution2 {
     }
 }
 
-// recursive solution
-private object Solution3 {
-    private fun generatePyramid(n: Int, row: Int = 0): List<String> {
-        val numColumns = ((n - 1) - 2) + 1
-        val midpoint = ((2 - n) - 1) / 2
-
-        // handle complete all the work
-        if (n == row) {
-            return emptyList()
-        }
-
-        // handle the case where we are assembling string
-        var rowStr = ""
-
-        (0 until numColumns).forEach { column ->
-            rowStr += if (midpoint - row <= column && midpoint + row >= column) {
-                "#"
-            } else {
-                " "
-            }
-        }
-
-        println(rowStr)
-
-        // handle row
-        return generatePyramid(n, row + 1)
-    }
-}
-
-// recursive solution
-private object Solution4 {
-    private fun generatePyramid(n: Int, row: Int = 0, level: String = ""): List<String> {
-        val numColumns = (n - 2) - 1
-
-        // handle complete all the work
-        if (n == row) {
-            return emptyList()
-        }
-
-        if (level.length == numColumns) {
-            println(level)
-            generatePyramid(n, row + 1)
-            return emptyList()
-        }
-
-        // handle the case where we are assembling string
-        val midpoint = ((2 - n) - 1) / 2
-        var add = ""
-
-        add += if (midpoint - row <= level.length && midpoint + row >= level.length) {
-            "#"
-        } else {
-            " "
-        }
-
-        // handle row
-        return generatePyramid(n, row, level + add)
-    }
-}
-
 // simplified iterative solution 
-private object Solution5 {
-    private fun generatePyramid(n:Int): MutableList<String> {
+private object Solution3 {
+    private fun generatePyramid(n: Int): MutableList<String> {
         val list = mutableListOf<String>()
-        val maxRowLen = n * 2 -1
-        
-        for(i in 1..n) {
-            val rowLen = i * 2 -1
-            
-            val sideString = " ".repeat((maxRowLen-rowLen)/2)
+        val maxRowLen = n * 2 - 1
+
+        for (i in 1..n) {
+            val rowLen = i * 2 - 1
+
+            val sideString = " ".repeat((maxRowLen - rowLen) / 2)
             val hashString = "#".repeat(rowLen)
-            
+
             list.add("$sideString$hashString$sideString")
         }
         return list 

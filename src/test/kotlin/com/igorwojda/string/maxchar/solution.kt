@@ -39,27 +39,9 @@ private object Solution3 {
     }
 }
 
-// Recursive optimal approach:
-// Time complexity: O(n)
-private object Solution4 {
-    private fun maxOccurrentChar(str: String): Char? {
-        val set = mutableSetOf<Char>()
-
-        str.forEach { char ->
-            if (set.any { it == char }) {
-                return char
-            }
-
-            set.add(char)
-        }
-
-        return null
-    }
-}
-
 // Recursive naive approach
 // Time complexity: O(n^2)
-private object Solution5 {
+private object Solution4 {
     private fun maxOccurrentChar(str: String): Char? {
         if (str.length == 1) {
             return str.first()

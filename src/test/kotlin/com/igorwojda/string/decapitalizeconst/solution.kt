@@ -21,7 +21,7 @@ private object Solution2 {
     private fun decapitalizeConst(str: String): String? {
         val words = str.split("_").filter { it.isNotEmpty() }
 
-        if (words.size <= 1) return null
+        if (words.size == 1) return words.first().lowercase()
 
         return words.mapIndexed { index, word ->
             if (index == 0) {

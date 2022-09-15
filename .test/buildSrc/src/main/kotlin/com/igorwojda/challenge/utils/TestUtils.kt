@@ -43,6 +43,7 @@ object TestUtils {
 
         val targetChallengeFile = File("${testDirectory.path}/${testFile.fileName}")
         println("targetChallengeFile.path ${targetChallengeFile.path}")
+
         targetChallengeFile.writeText(testFile.lines.joinToString(separator = "\n"))
     }
 
