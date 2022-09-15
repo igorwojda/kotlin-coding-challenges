@@ -1,5 +1,6 @@
 package com.igorwojda.challenge
 
+import com.igorwojda.challenge.utils.ChallengeFile
 import com.igorwojda.challenge.utils.KotlinParserUtils
 import com.igorwojda.challenge.utils.TestUtils
 import org.amshove.kluent.shouldBeEqualTo
@@ -68,17 +69,17 @@ class ProjectConsistencyTest {
     companion object {
         @JvmStatic
         fun getSolutionFiles() = TestUtils
-            .getChallengeDirectories()
+            .getChellengeDirectories()
             .map { KotlinParserUtils.getChallengeKtFile(it, ChallengeFile.SOLUTIONS_KT) }
 
         @JvmStatic
         fun getChallenge() = TestUtils
-            .getChallengeDirectories()
+            .getChellengeDirectories()
             .map { KotlinParserUtils.getChallengeKtFile(it, ChallengeFile.CHALLENGE_KT) }
 
         @JvmStatic
         fun getChallengeRequiredFilePaths() = TestUtils
-            .getChallengeDirectories()
+            .getChellengeDirectories()
             .flatMap { getProjectRequiredFiles(it) }
 
         private fun getProjectRequiredFiles(challengeDirectory: File) = ChallengeFile
