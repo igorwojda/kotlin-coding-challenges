@@ -30,7 +30,7 @@ object PuzzleUtils {
     }
 
     fun getGeneratedTestDirectory(): File {
-        val path = "${repoRootDirectoryFile.path}/.test/src/test/kotlin"
+        val path = "${repoRootDirectoryFile.path}/.test/src/test/kotlin/generated"
         return File(path)
     }
 
