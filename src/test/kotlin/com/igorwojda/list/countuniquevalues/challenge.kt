@@ -24,8 +24,8 @@ private class Test {
     }
 
     @Test
-    fun `countUniqueValues 5, 5, 6, 7, 5 returns 3`() {
-        countUniqueValues(listOf(5, 5, 6, 7, 5)) shouldBeEqualTo 3
+    fun `countUniqueValues 5, 5, 6, 7, 7 returns 3`() {
+        countUniqueValues(listOf(5, 5, 6, 7, 7)) shouldBeEqualTo 3
     }
 
     @Test
