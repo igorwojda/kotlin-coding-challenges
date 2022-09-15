@@ -1,8 +1,8 @@
-name: run unit test
+name: run checks
 
 on:
   push:
-    branches: [ main ] # Just in case main was not up to date while merging PR
+    branches: [ main ] # Just in case main was not up-to-date while merging PR
   pull_request:
     types: [ opened, synchronize ]
 
@@ -28,11 +28,20 @@ jobs:
           restore-keys: |
             gradle-${{ hashFiles('gradle-checksums.txt') }}-
 
-      - name: Generate tests
-        run: cd .test && ./gradlew generateTests && cd..
+      - name: Navigate to subproject
+        run: cd .test
 
-      - name: Run Unit tests
+      - name: Run consistency Unit tests
         run: ./gradlew test
+
+      - name: Generate Unit tests
+        run: ./gradlew generateTests
+
+      - name: Navigate to root project
+        run: cd .test
+
+      - name: Run Generated Unit tests
+        run: ./gradlew test --tests "generated.com.igorwojda.*"
 
       - uses: actions/upload-artifact@v2
         with:
