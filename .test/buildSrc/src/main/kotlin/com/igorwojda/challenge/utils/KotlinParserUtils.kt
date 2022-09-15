@@ -19,18 +19,18 @@ object KotlinParserUtils {
         ).project
     }
 
-    fun getPuzzleFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): File {
-        val path = "${puzzleDirectoryPath.path}/${puzzleFile.fileName}"
+    fun getChallengeFile(challengeDirectoryPath: File, ChallengeFile: ChallengeFile): File {
+        val path = "${challengeDirectoryPath.path}/${ChallengeFile.fileName}"
         return File(path)
     }
 
-    fun getPuzzleKtFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): KtFile {
-        val file = getPuzzleFile(puzzleDirectoryPath, puzzleFile)
-        val fullFileName = "${puzzleDirectoryPath.path}/${puzzleFile.fileName}"
-        return getPuzzleKtFile(file.readText(), fullFileName)
+    fun getChallengeKtFile(challengeDirectoryPath: File, ChallengeFile: ChallengeFile): KtFile {
+        val file = getChallengeFile(challengeDirectoryPath, ChallengeFile)
+        val fullFileName = "${challengeDirectoryPath.path}/${ChallengeFile.fileName}"
+        return getChallengeKtFile(file.readText(), fullFileName)
     }
 
-    private fun getPuzzleKtFile(codeString: String, fileName: String) =
+    private fun getChallengeKtFile(codeString: String, fileName: String) =
         PsiManager.getInstance(project)
             .findFile(
                 LightVirtualFile(fileName, KotlinFileType.INSTANCE, codeString)

@@ -36,7 +36,7 @@ determine space/time complexity and we look at code readability.
 # Let's solve some challenges
 
 Challenges below are segregated by different difficulties. The repository also contains challenges grouped by
-[problem type](misc/PuzzleGroups.md).
+[problem type](misc/ChallengeGroups.md).
 
 Some challenges may contain a reference to other challenges that should be solved before to have a better understanding
 of the problem. Check the
@@ -199,8 +199,8 @@ multiple times and be persistent over time.
 
 # Contribute
 
-Feedback and new contributions are welcome whether it's through bug reports or new PRs. To add new coding puzzle just
-follow this [guide](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Adding-a-new-puzzle) and open PR.
+Feedback and new contributions are welcome whether it's through bug reports or new PRs. To add new coding challenge just
+follow this [guide](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Adding-a-new-challenge) and open PR.
 
 # Author
 

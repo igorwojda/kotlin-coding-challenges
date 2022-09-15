@@ -1,4 +1,4 @@
-package com.igorwojda.puzzle
+package com.igorwojda.challenge
 
 // Time complexity:
 // ???

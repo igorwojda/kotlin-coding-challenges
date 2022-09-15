@@ -1,7 +1,7 @@
 # Problems groups
 
-This section contains **subset** of puzzles that are grouped by type of solution (recursive, double pointer etc.) or
-type of problem (searching, sorting etc.). One puzzle may fit int outfile groups.
+This section contains **subset** of challenges that are grouped by type of solution (recursive, double pointer etc.) or
+type of problem (searching, sorting etc.). One challenge may fit int outfile groups.
 
 ## Recursion 
 
@@ -81,7 +81,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Quick sort](../src/test/kotlin/com/igorwojda/list/sort/quicksort/desc.md)
 - [Radix sort](../src/test/kotlin/com/igorwojda/list/sort/radixsort/desc.md)
 
-### Other list puzzles
+### Other list challenges
 
 - [Capitalize First](../src/test/kotlin/com/igorwojda/list/capitalizeFirst/desc.md)
 - [Flatten](../src/test/kotlin/com/igorwojda/list/flatten/desc.md)

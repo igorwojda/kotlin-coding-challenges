@@ -6,27 +6,27 @@ import java.io.File
 object TestUtils {
 
     fun generateTestFiles(project: Project) {
-        getPuzzleDirectories(project).forEach {
+        getChallengeDirectories(project).forEach {
             generateTestFiles(it)
         }
     }
 
     /**
-     * Generate test files for a given puzzle by combining challenge file with available solutions
+     * Generate test files for a given challenge by combining challenge file with available solutions
      */
-    private fun generateTestFiles(puzzleDirectoryPath: File) {
-        val generatedPuzzleDirecotryPath = puzzleDirectoryPath
+    private fun generateTestFiles(challengeDirectoryPath: File) {
+        val generatedChallengeDirecotryPath = challengeDirectoryPath
             .path
             .replace("kotlin/com/igorwojda/", "kotlin/generated/com/igorwojda/")
 
         // May be already pre-cached by CI
-        deleteDirectory(File(generatedPuzzleDirecotryPath))
+        deleteDirectory(File(generatedChallengeDirecotryPath))
 
-        val testFiles = KotlinGeneratorUtils.getTestFiles(puzzleDirectoryPath)
+        val testFiles = KotlinGeneratorUtils.getTestFiles(challengeDirectoryPath)
 
         testFiles
             .forEach {
-                createTestFile(generatedPuzzleDirecotryPath, it)
+                createTestFile(generatedChallengeDirecotryPath, it)
             }
     }
 
@@ -47,10 +47,10 @@ object TestUtils {
     }
 
     /**
-     * Create a test files for a given puzzle
+     * Create a test files for a given challenge
      */
-    private fun createTestFile(generatedPuzzleDirecotryPath: String, testFile: TestFile) {
-        val testDirectory = File("$generatedPuzzleDirecotryPath/${testFile.relativePath}/")
+    private fun createTestFile(generatedChallengeDirecotryPath: String, testFile: TestFile) {
+        val testDirectory = File("$generatedChallengeDirecotryPath/${testFile.relativePath}/")
         testDirectory.mkdirs()
 
         val targetChallengeFile = File("${testDirectory.path}/${testFile.fileName}")
@@ -60,7 +60,7 @@ object TestUtils {
     /**
      * Return list of project names
      */
-    private fun getPuzzleDirectories(project: Project): List<File> {
+    private fun getChallengeDirectories(project: Project): List<File> {
         val path = "${project.rootDir.path}/../src/test/kotlin/com/igorwojda"
         val directory = File(path)
         val miscDirectoryName = "misc"
@@ -74,7 +74,7 @@ object TestUtils {
     }
 
     /**
-     * Checks whatever or not directory is high level directory (puzzle grouping directory)
+     * Checks whatever or not directory is high level directory (challenge grouping directory)
      */
     private val File.isHighLevelDirectory get() = this.isDirectory && this.listFiles().none { it.isDirectory }
 }
