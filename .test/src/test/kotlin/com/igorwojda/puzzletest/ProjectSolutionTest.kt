@@ -12,6 +12,7 @@ class ProjectSolutionTest {
     @MethodSource("getPuzzleDirectories")
     fun `Puzzle file exists`(puzzleDirectoryPath: File) {
         val solutions = getSolutions(puzzleDirectoryPath)
+        val challenge = getChallenge(puzzleDirectoryPath)
 
         solutions.forEach { solution ->
             writeTestFile(puzzleDirectoryPath, solution)
@@ -63,10 +64,10 @@ class ProjectSolutionTest {
     }
 
     /**
-     * Return list of solutions. Each solution item is an "object Solution" represented by list of lines.
+     * Return list of available solutions.
      */
     private fun getSolutions(puzzleDirectoryPath: File): MutableList<Solution> {
-        val solutionsFile = getPuzzleFile(puzzleDirectoryPath, SolutionFile.SOLUTIONS_KT)
+        val file = getPuzzleFile(puzzleDirectoryPath, SolutionFile.SOLUTIONS_KT)
 
         var objectFound = false
         var solutionLines = mutableListOf<String>()
@@ -74,14 +75,14 @@ class ProjectSolutionTest {
         var curlyBracketsCount = 0
         var relativePath = ""
 
-        solutionsFile.forEachLine { line ->
-            if(relativePath.isEmpty()) {
+        file.forEachLine { line ->
+            if (relativePath.isEmpty()) {
                 relativePath = getPackagePath(line)
             }
 
             if (line.contains("object Solution")) {
                 if (objectFound) {
-                    throw RuntimeException("Object already found. Nested objects are not allowed.")
+                    throw RuntimeException("Object already found. Nested objects are not allowed for solutions.")
                 }
 
                 objectFound = true
@@ -119,9 +120,28 @@ class ProjectSolutionTest {
         fun getPuzzleDirectories() = PuzzleUtils
             .getPuzzleDirectories().take(1)
     }
+
+    /**
+     * Challenge is represented by list of lines (retrieved from Challenge.kt file).
+     */
+    private fun getChallenge(puzzleDirectoryPath: File): Challenge {
+        val file = getPuzzleFile(puzzleDirectoryPath, SolutionFile.CHALLENGE_KT)
+        val lines = file.readLines()
+        return Challenge(lines)
+    }
 }
 
-class Solution(fileLines: MutableList<String>, val relativePath: String) {
+/**
+ * Challenge is represented by list of lines (retrieved from Challenge.kt file).
+ */
+class Challenge(val fileLines: List<String>) {
+
+}
+
+/**
+ * Solution is represented by list of lines (retrieved from Solutions.kt file).
+ */
+class Solution(fileLines: List<String>, val relativePath: String) {
 
     val lines = fileLines
         .drop(1)
