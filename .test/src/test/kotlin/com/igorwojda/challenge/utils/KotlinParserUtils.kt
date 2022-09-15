@@ -20,7 +20,7 @@ object KotlinParserUtils {
         ).project
     }
 
-    fun getPuzzleFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): File {
+    private fun getPuzzleFile(puzzleDirectoryPath: File, puzzleFile: PuzzleFile): File {
         val path = "${puzzleDirectoryPath.path}/${puzzleFile.fileName}"
         return File(path)
     }

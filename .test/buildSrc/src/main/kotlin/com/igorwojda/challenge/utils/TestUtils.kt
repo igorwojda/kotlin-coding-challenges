@@ -6,9 +6,6 @@ import java.io.File
 object TestUtils {
 
     fun generateTestFiles(project: Project) {
-        println("generateTestFiles")
-        println("getPuzzleDirectories() ${getPuzzleDirectories(project)}")
-
         getPuzzleDirectories(project).forEach {
             generateTestFiles(it)
         }
@@ -31,9 +28,6 @@ object TestUtils {
      * Create a test files for a given puzzle
      */
     private fun createTestFile(puzzleDirectoryPath: File, testFile: TestFile) {
-        println("Create test file")
-        println("puzzleDirectoryPath.path ${puzzleDirectoryPath.path}")
-
         val generatedPuzzleDirecotryPath = puzzleDirectoryPath
             .path
             .replace("kotlin/com/igorwojda/","kotlin/generated/com/igorwojda/")

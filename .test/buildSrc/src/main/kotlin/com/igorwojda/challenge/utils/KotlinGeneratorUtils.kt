@@ -86,17 +86,6 @@ object KotlinGeneratorUtils {
         return "Test_${puzzleName}_$solutionName.kt"
     }
 
-//    private fun getRelativePath(ktFile: KtFile, solutionName: String?): String {
-//        var packageStr = ktFile
-//            .packageFqName
-//            .toString()
-//            .replace(".", "/")
-//
-//        packageStr += ".${solutionName}".toLowerCase()
-//
-//        return packageStr
-//    }
-
     private fun getSolutions(ktFile: KtFile) = ktFile
         .children
         .filterIsInstance<KtObjectDeclaration>()

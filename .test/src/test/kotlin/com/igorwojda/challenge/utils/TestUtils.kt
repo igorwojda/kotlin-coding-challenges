@@ -17,7 +17,7 @@ object TestUtils {
      * Return list of project names
      */
     fun getPuzzleDirectories(): List<File> {
-        val path = "${repoRootDirectoryFile.path}/src/test"
+        val path = "${repoRootDirectoryFile.path}/src/test/kotlin/com/igorwojda"
         val directory = File(path)
         val miscDirectoryName = "misc"
 

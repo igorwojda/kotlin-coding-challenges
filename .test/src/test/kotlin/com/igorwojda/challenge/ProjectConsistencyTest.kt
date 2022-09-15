@@ -7,7 +7,6 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.amshove.kluent.shouldBeGreaterOrEqualTo
 import org.jetbrains.kotlin.psi.KtClass
 import org.jetbrains.kotlin.psi.KtFile
-import org.jetbrains.kotlin.psi.KtNamedFunction
 import org.jetbrains.kotlin.psi.KtObjectDeclaration
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
@@ -25,45 +24,43 @@ class ProjectConsistencyTest {
         require(Files.exists(path)) { "Missing file $path" }
     }
 
-    @ParameterizedTest(name = "Verify challenge kt file top level items: {0}")
+    @ParameterizedTest(name = "solution kt file has solution objects: {0}")
     @MethodSource("getSolutionFiles")
     fun `solution kt file has solution objects`(ktFile: KtFile) {
         // given
-        val solutions = ktFile.children.filterIsInstance<KtObjectDeclaration>()
+        val solutions = ktFile
+            .children
+            .filterIsInstance<KtObjectDeclaration>()
 
         // then
         solutions.size shouldBeGreaterOrEqualTo 1
     }
 
-    @ParameterizedTest(name = "Verify challenge kt file top level items: {0}")
+    @ParameterizedTest(name = "solution kt file has solution objects with correct names: {0}")
     @MethodSource("getSolutionFiles")
     fun `solution kt file has solution objects with correct names`(ktFile: KtFile) {
         // given
-        val solutionNames = ktFile.children.filterIsInstance<KtObjectDeclaration>().map { it.name ?: ""}
+        val solutionNames = ktFile
+            .children
+            .filterIsInstance<KtObjectDeclaration>()
+            .map { it.name ?: "" }
+            .filterNot { it == "KtLintWillNotComplain" }
 
         // then
         solutionNames.forEach {
             if (!it.startsWith("Solution")) {
-               throw AssertionFailedError("Solution object name does not contains 'Solution' prefix $it")
+                throw AssertionFailedError("Solution object name does not contains 'Solution' prefix $it")
             }
         }
     }
 
-    @ParameterizedTest(name = "Verify challenge kt file top level items: {0}")
-    @MethodSource("getChallenge")
-    fun `challenge kt file has one top level function`(ktFile: KtFile) {
-        // given
-        val functions = ktFile.children.filterIsInstance<KtNamedFunction>()
-
-        // then
-        functions.size shouldBeEqualTo 1
-    }
-
-    @ParameterizedTest(name = "Verify challenge kt file top level items: {0}")
+    @ParameterizedTest(name = "challenge kt file has one at most one top level Test class: {0}")
     @MethodSource("getChallenge")
     fun `challenge kt file has one top level Test class`(ktFile: KtFile) {
         // given
-        val classes = ktFile.children.filterIsInstance<KtClass>().filter { it.name == "Test" }
+        val classes = ktFile
+            .children
+            .filterIsInstance<KtClass>().filter { it.name == "Test" }
 
         // then
         classes.size shouldBeEqualTo 1
