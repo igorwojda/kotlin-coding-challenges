@@ -1,8 +1,19 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+buildscript {
+	repositories {
+		maven("https://plugins.gradle.org/m2/")
+	}
+
+	dependencies {
+		classpath("com.adarshr:gradle-test-logger-plugin:3.2.0")
+	}
+}
+
 plugins {
 	kotlin("jvm") version "1.7.10"
+	id("com.adarshr.test-logger") version "3.2.0"
 }
 
 repositories {
@@ -34,5 +45,5 @@ tasks.test {
 }
 
 tasks.withType<KotlinCompile>().configureEach {
-	kotlinOptions.jvmTarget = "1.8"
+	kotlinOptions.jvmTarget = "11"
 }
