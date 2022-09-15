@@ -61,6 +61,10 @@ private object Solution4 {
 // Time complexity: O(n^2)
 private object Solution5 {
     private fun maxOccurrentChar(str: String): Char? {
+        if (str.length == 1) {
+            return str.first()
+        }
+
         str.forEachIndexed { index, c ->
             str.substring(index + 1).forEach {
                 if (c == it) {
