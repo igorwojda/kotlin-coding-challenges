@@ -6,8 +6,8 @@
 
 ### Instructions
 
-Implement [doubly linked list](https://en.wikipedia.org/wiki/Doubly_linked_list) data structure. This is quite big puzzle, so
-we will split it into multiple multiple methods and properties that we will implement one my one.
+Implement [doubly linked list](https://en.wikipedia.org/wiki/Doubly_linked_list) data structure. This is quite big
+challenge, so we will split it into multiple multiple methods and properties that we will implement one my one.
 
 We also want to handle various edge cases, because we are assuming that developer using our class many do certain
 mistakes. That's why each step has one or more tests associated with it. Tests are commented out default, so before
