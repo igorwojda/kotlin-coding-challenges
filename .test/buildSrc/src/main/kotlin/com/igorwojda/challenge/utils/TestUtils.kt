@@ -14,24 +14,42 @@ object TestUtils {
     /**
      * Generate test files for a given puzzle by combining challenge file with available solutions
      */
-    private fun generateTestFiles(puzzleDirectoryPath: File)
-    {
+    private fun generateTestFiles(puzzleDirectoryPath: File) {
+        val generatedPuzzleDirecotryPath = puzzleDirectoryPath
+            .path
+            .replace("kotlin/com/igorwojda/", "kotlin/generated/com/igorwojda/")
+
+        // May be already pre-cached by CI
+        deleteDirectory(File(generatedPuzzleDirecotryPath))
+
         val testFiles = KotlinGeneratorUtils.getTestFiles(puzzleDirectoryPath)
 
         testFiles
             .forEach {
-            createTestFile(puzzleDirectoryPath, it)
+                createTestFile(generatedPuzzleDirecotryPath, it)
+            }
+    }
+
+    private fun deleteDirectory(directory: File) {
+        if (directory.isDirectory) {
+            val files = directory.listFiles()
+
+            // if the directory contains any file
+            if (files != null) {
+                for (file in files) {
+
+                    // recursive call if the subdirectory is non-empty
+                    deleteDirectory(file)
+                }
+            }
         }
+        directory.delete()
     }
 
     /**
      * Create a test files for a given puzzle
      */
-    private fun createTestFile(puzzleDirectoryPath: File, testFile: TestFile) {
-        val generatedPuzzleDirecotryPath = puzzleDirectoryPath
-            .path
-            .replace("kotlin/com/igorwojda/","kotlin/generated/com/igorwojda/")
-
+    private fun createTestFile(generatedPuzzleDirecotryPath: String, testFile: TestFile) {
         val testDirectory = File("$generatedPuzzleDirecotryPath/${testFile.relativePath}/")
         testDirectory.mkdirs()
 
