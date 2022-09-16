@@ -1,5 +1,7 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jlleitschuh.gradle.ktlint.KtlintExtension
+import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 
 plugins {
     kotlin("jvm") version "1.7.10"
@@ -27,12 +29,23 @@ sourceSets {
 
 tasks.test {
     useJUnitPlatform()
-	
+
     testLogging {
         events("failed")
 
         // log full stacktrace of failed test (assertion library descriptive error)
         exceptionFormat = TestExceptionFormat.FULL
+    }
+}
+
+configure<KtlintExtension> {
+    reporters {
+        reporter(ReporterType.PLAIN)
+        reporter(ReporterType.CHECKSTYLE)
+    }
+
+    filter {
+        exclude("**/generated/**")
     }
 }
 
