@@ -13,12 +13,12 @@ empty placeholder for a user-coded solution. Since the placeholder is non-implem
 all tests in the root project will fail by design.
 
 This subproject generates a test suite for each challenge by combining challenge container (`challenge.kt` file) with
-every challenge solutions (`solution.kt` file).
+every solution present in the `solution.kt` file.
 
 To generate tests run the `cd .test && ./gradlew generateTests && cd ..` command.
 Generated tests will be placed in the `src/test/kotlin/generated` directory.
 
-To run all generated tests use `./gradlew test --tests "generated.com.igorwojda.*"` command.
+To run only generated tests use `./gradlew test --tests "generated.com.igorwojda.*"` command.
 `
 
 
