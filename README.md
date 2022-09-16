@@ -12,7 +12,7 @@ Each challenge is located in separate package, and it contains 3 main
 files ([screen](./misc/image/challenge-structure.png)):
 
 - `desc.md` - the task description.
-- `chellenge.kt` - file containing an empty method/class where challenge should be solved. This file also contains
+- `challenge.kt` - file containing an empty method/class where challenge should be solved. This file also contains
   set of test and occasionally helper methods. You can run all tests directly from this file (click green arrow next to
   `Test` class).
   [JUnit](https://junit.org/junit4/) tests which verify that task was solved correctly.
