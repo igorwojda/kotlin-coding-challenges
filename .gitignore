@@ -43,4 +43,5 @@ captures/
 # Google Services (e.g. APIs or Firebase)
 google-services.json
 
+#MacOS DS_Store
 .DS_Store
