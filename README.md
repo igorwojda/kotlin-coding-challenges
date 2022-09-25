@@ -139,7 +139,9 @@ multiple times and be persistent over time.
 - [GeeksForGeeks](https://practice.geeksforgeeks.org/explore) - large and nicely segregated set of problems.
 - [HackerRank](https://www.hackerrank.com/dashboard) - large set of problems and additional interview problems for
   business.
-- [TopCoder](https://www.topcoder.com/challenge) - platforms for competitive programming online.
+- [LeetCode](https://leetcode.com/problemset/all) - data structures / algorithms / company interview problems segregated
+  by difficulty.
+- [Exercism](https://exercism.io/) - coding challenge website that offers MANY challenges spanning over 60 programming languages.
 - [Project Euler](https://projecteuler.net/archives) - more complex challenges, usually related to mathematics. The site
   already contains 600+ problems and a new code challenge is available very week or two. You will probably have to
   discuss the problem with the community because solutions are not on the website.
@@ -149,13 +151,10 @@ multiple times and be persistent over time.
   problems segregated by difficulty. Unfortunately most of them are only available for premium users. Premium gives you
   access to premium step-by-step solutions and user solutions.
 - [CodeChef](https://www.codechef.com/problems/school) - contains set of programming problems segregated by difficulty.
-- [LeetCode](https://leetcode.com/problemset/all) - data structures / algorithms / company interview problems segregated
-  by difficulty.
 - [Code Forces](http://codeforces.com/problemset) - list of programming challenges is smaller than other websites, but
   you will still have plenty of problems to solve.
 - [Spoj](https://www.spoj.com/problems/classical) - list of programming challenges is smaller than other websites, but
   you will still have plenty of problems to solve.
-- [Exercism](https://exercism.io/) - coding challenge website that offers 3100+ challenges spanning 52 different programming languages.
 
 ### Game challanges
 - [CodeWars](https://www.codewars.com/) - solve visuial challanges by writing code for the.
