@@ -9,5 +9,5 @@ repositories {
 
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-compiler:1.7.10")
+    implementation("org.jetbrains.kotlin:kotlin-compiler:1.7.20")
 }
