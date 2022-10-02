@@ -35,3 +35,10 @@ private object Solution3 {
         return helper(n).toList()
     }
 }
+
+// Kotlin idiomatic solution
+private object Solution4 {
+    private fun countDown(n: Int): List<Int> {
+        return List(n + 1) { n - it }
+    }
+}
