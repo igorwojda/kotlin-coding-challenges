@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-[Singly linked List](../base/SinglyLinkedList.md)
+[Singly linked List](../base/desc.md)
 
 ## Instructions
 

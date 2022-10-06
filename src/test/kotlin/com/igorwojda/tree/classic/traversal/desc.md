@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-[Queue](../../queue/basic/Queue.md)
+[Queue](../../../queue/basic/desc.md)
 
 ## Instructions
 

@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-[Tree traversal](../traversal/TreeTraversal.md)
+[Tree traversal](../traversal/desc.md)
 
 ## Instructions
 

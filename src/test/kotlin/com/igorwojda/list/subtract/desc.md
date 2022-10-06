@@ -2,11 +2,11 @@
 
 ## Nice to solve before
 
-- [Is anagram](../../string/isanagram/IsAnagram.md)
-- [Square equals](../squareequal/SquareEquals.md)
-- [Digit frequency](../../integer/digitfrequency/DigitFrequency.md)
-- [Max occurring char](../../string/maxchar/MaxOccurrentChar.md) 
-- [Get duplicated arguments](../../string/getduplicatedarguments/GetDuplicatedArguments.md)
+- [Is anagram](../../string/isanagram/desc.md)
+- [Square equals](../squareequal/desc.md)
+- [Digit frequency](../../integer/digitfrequency/desc.md)
+- [Max occurring char](../../string/maxchar/desc.md)
+- [Get duplicated arguments](../../string/getduplicatedarguments/desc.md)
 
 ## Instructions
 

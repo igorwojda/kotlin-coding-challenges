@@ -2,8 +2,8 @@
 
 ## Nice to solve before
 
-- [Count down](../../integer/countdown/CountDown.md)
-- [Get odd](../../integer/getodd/GetOdd.md)
+- [Count down](../../integer/countdown/desc.md)
+- [Get odd](../../integer/getodd/desc.md)
 
 ## Instructions
 
