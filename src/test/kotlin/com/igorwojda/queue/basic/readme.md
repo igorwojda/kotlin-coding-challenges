@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-[Stack](../../stack/basic/desc.md)
+[Stack](../../stack/basic/readme.md)
 
 ## Instructions
 

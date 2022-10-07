@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-[Tree traversal](../traversal/desc.md)
+[Tree traversal](../traversal/readme.md)
 
 ## Instructions
 

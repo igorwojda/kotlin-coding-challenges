@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-[Singly linked List](../base/desc.md)
+[Singly linked List](../base/readme.md)
 
 ## Instructions
 

@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-[Count down](../countdown/desc.md)
+[Count down](../countdown/readme.md)
 
 ## Instructions
 

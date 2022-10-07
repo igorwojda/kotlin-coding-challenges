@@ -2,9 +2,9 @@
 
 ## Nice to solve before
 
-- [Singly linked list](../base/desc.md)
-- [Midpoint](../midpoint/desc.md)
-- [Circular check](../circularcheck/desc.md)
+- [Singly linked list](../base/readme.md)
+- [Midpoint](../midpoint/readme.md)
+- [Circular check](../circularcheck/readme.md)
 
 ## Instructions
 

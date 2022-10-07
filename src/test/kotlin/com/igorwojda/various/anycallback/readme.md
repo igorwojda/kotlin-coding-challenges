@@ -2,8 +2,8 @@
 
 ## Nice to solve before
 
-- [Count down](../../integer/countdown/desc.md)
-- [Get odd](../../integer/getodd/desc.md)
+- [Count down](../../integer/countdown/readme.md)
+- [Get odd](../../integer/getodd/readme.md)
 
 ## Instructions
 

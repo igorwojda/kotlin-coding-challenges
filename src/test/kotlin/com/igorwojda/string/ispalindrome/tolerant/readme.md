@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-- [Palindrome](../basic/desc.md)
+- [Palindrome](../basic/readme.md)
 
 ## Instructions
 

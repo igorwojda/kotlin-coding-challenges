@@ -11,7 +11,7 @@ help you to become a better programmer and improve your chance of getting a new 
 Each challenge is located in separate package, and it contains 3 main
 files ([screen](./misc/image/challenge-structure.png)):
 
-- `desc.md` - the task description.
+- `readme.md` - the task description.
 - `challenge.kt` - file containing an empty method/class where challenge should be solved. This file also contains
   set of test and occasionally helper methods. You can run all tests directly from this file (click green arrow next to
   `Test` class).
@@ -19,7 +19,7 @@ files ([screen](./misc/image/challenge-structure.png)):
 - `solution.kt` - a file containing one or more solutions.
 
 Keep in mind that each challenge will usually have more than one solution. Even simple challenges like
-[String reversal](src/test/kotlin/com/igorwojda/string/reverse/desc.md) can be solved in
+[String reversal](src/test/kotlin/com/igorwojda/string/reverse/readme.md) can be solved in
 [10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually, we compare various
 solutions using
 ([Big O notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)) to
@@ -50,85 +50,85 @@ multiple times and be persistent over time.
 
 **New in Town**
 
-- [Capitalize sentence](src/test/kotlin/com/igorwojda/string/capitalizesentence/desc.md)
-- [Get odd numbers](src/test/kotlin/com/igorwojda/integer/getodd/desc.md)
-- [Range contains range?](src/test/kotlin/com/igorwojda/range/containsrange/desc.md)
-- [Add up to](src/test/kotlin/com/igorwojda/integer/addupto/desc.md)
-- [Linear search](src/test/kotlin/com/igorwojda/list/search/linearsearch/desc.md)
-- [Count down](src/test/kotlin/com/igorwojda/integer/countdown/desc.md)
-- [Count up and down](src/test/kotlin/com/igorwojda/integer/countupanddown/desc.md)
-- [Format train route](src/test/kotlin/com/igorwojda/list/formattrainroute/desc.md)
-- [Generate all pairs](src/test/kotlin/com/igorwojda/integer/generateallpairs/desc.md)
-- [Count unique values](src/test/kotlin/com/igorwojda/list/countuniquevalues/desc.md)
-- [Print number](src/test/kotlin/com/igorwojda/integer/printnumber/basic/desc.md)
-- [Print number with steps](src/test/kotlin/com/igorwojda/integer/printnumber/steps/desc.md)
-- [Power](src/test/kotlin/com/igorwojda/integer/power/desc.md)
-- [Factorial](src/test/kotlin/com/igorwojda/integer/factorial/desc.md)
-- [Product](src/test/kotlin/com/igorwojda/list/product/desc.md)
-- [Capitalize first](src/test/kotlin/com/igorwojda/list/capitalizeFirst/desc.md)
-- [Decapitalize const](src/test/kotlin/com/igorwojda/string/decapitalizeconst/desc.md)
-- [Longest word](src/test/kotlin/com/igorwojda/string/longestword/desc.md)
+- [Capitalize sentence](src/test/kotlin/com/igorwojda/string/capitalizesentence/readme.md)
+- [Get odd numbers](src/test/kotlin/com/igorwojda/integer/getodd/readme.md)
+- [Range contains range?](src/test/kotlin/com/igorwojda/range/containsrange/readme.md)
+- [Add up to](src/test/kotlin/com/igorwojda/integer/addupto/readme.md)
+- [Linear search](src/test/kotlin/com/igorwojda/list/search/linearsearch/readme.md)
+- [Count down](src/test/kotlin/com/igorwojda/integer/countdown/readme.md)
+- [Count up and down](src/test/kotlin/com/igorwojda/integer/countupanddown/readme.md)
+- [Format train route](src/test/kotlin/com/igorwojda/list/formattrainroute/readme.md)
+- [Generate all pairs](src/test/kotlin/com/igorwojda/integer/generateallpairs/readme.md)
+- [Count unique values](src/test/kotlin/com/igorwojda/list/countuniquevalues/readme.md)
+- [Print number](src/test/kotlin/com/igorwojda/integer/printnumber/basic/readme.md)
+- [Print number with steps](src/test/kotlin/com/igorwojda/integer/printnumber/steps/readme.md)
+- [Power](src/test/kotlin/com/igorwojda/integer/power/readme.md)
+- [Factorial](src/test/kotlin/com/igorwojda/integer/factorial/readme.md)
+- [Product](src/test/kotlin/com/igorwojda/list/product/readme.md)
+- [Capitalize first](src/test/kotlin/com/igorwojda/list/capitalizeFirst/readme.md)
+- [Decapitalize const](src/test/kotlin/com/igorwojda/string/decapitalizeconst/readme.md)
+- [Longest word](src/test/kotlin/com/igorwojda/string/longestword/readme.md)
 
 **Apprentice**
 
-- [Is palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/basic/desc.md)
-- [Is tolerant palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/tolerant/desc.md)
-- [Is permutation palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/permutation/desc.md)
-- [Is anagram](src/test/kotlin/com/igorwojda/string/isanagram/desc.md)
-- [Max occurring char](src/test/kotlin/com/igorwojda/string/maxchar/desc.md)
-- [String reverse](src/test/kotlin/com/igorwojda/string/reverse/desc.md)
-- [Find the vowels](src/test/kotlin/com/igorwojda/string/vowels/desc.md)
-- [Int reverse](src/test/kotlin/com/igorwojda/integer/reverse/desc.md)
-- [Pyramid generator](src/test/kotlin/com/igorwojda/integer/pyramidgenerator/desc.md)
-- [Steps generator](src/test/kotlin/com/igorwojda/integer/stepsgenerator/desc.md)
-- [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz/desc.md)
-- [Caesar Cipher](src/test/kotlin/com/igorwojda/string/caesarcipher/desc.md)
-- [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter/desc.md)
+- [Is palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/basic/readme.md)
+- [Is tolerant palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/tolerant/readme.md)
+- [Is permutation palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/permutation/readme.md)
+- [Is anagram](src/test/kotlin/com/igorwojda/string/isanagram/readme.md)
+- [Max occurring char](src/test/kotlin/com/igorwojda/string/maxchar/readme.md)
+- [String reverse](src/test/kotlin/com/igorwojda/string/reverse/readme.md)
+- [Find the vowels](src/test/kotlin/com/igorwojda/string/vowels/readme.md)
+- [Int reverse](src/test/kotlin/com/igorwojda/integer/reverse/readme.md)
+- [Pyramid generator](src/test/kotlin/com/igorwojda/integer/pyramidgenerator/readme.md)
+- [Steps generator](src/test/kotlin/com/igorwojda/integer/stepsgenerator/readme.md)
+- [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz/readme.md)
+- [Caesar Cipher](src/test/kotlin/com/igorwojda/string/caesarcipher/readme.md)
+- [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter/readme.md)
 
 **Warrior** 
 
-- [Spiral matrix generator](src/test/kotlin/com/igorwojda/matrix/spiralmatrixgenerator/desc.md)
-- [Find rectangle](src/test/kotlin/com/igorwojda/matrix/findrectangle/desc.md)
-- [Queue](src/test/kotlin/com/igorwojda/queue/basic/desc.md)
-- [Combine queues](src/test/kotlin/com/igorwojda/queue/combine/desc.md)
-- [Stack](src/test/kotlin/com/igorwojda/stack/basic/desc.md)
-- [Bubble sort](src/test/kotlin/com/igorwojda/list/sort/bubblesort/desc.md)
-- [Selection sort](src/test/kotlin/com/igorwojda/list/sort/selectionsort/desc.md)
-- [Square equals](src/test/kotlin/com/igorwojda/list/squareequal/desc.md)
-- [Sum zero](src/test/kotlin/com/igorwojda/list/sumzero/desc.md)
-- [Digit frequency](src/test/kotlin/com/igorwojda/integer/digitfrequency/desc.md)
-- [Get duplicated arguments](src/test/kotlin/com/igorwojda/string/getduplicatedarguments/desc.md)
-- [Find pair with target average](src/test/kotlin/com/igorwojda/list/pairaverage/desc.md)
-- [Binary search tree](src/test/kotlin/com/igorwojda/tree/binarysearchtree/desc.md)
-- [Tree traversal](src/test/kotlin/com/igorwojda/tree/classic/traversal/desc.md)
-- [Tree level width](src/test/kotlin/com/igorwojda/tree/classic/levelwidth/desc.md)
-- [Binary search tree (insert)](src/test/kotlin/com/igorwojda/tree/binarytree/insert/desc.md)
-- [Binary search tree (validate)](src/test/kotlin/com/igorwojda/tree/binarytree/validate/desc.md)
-- [Any callback](src/test/kotlin/com/igorwojda/various/anycallback/desc.md)
-- [Flatten](src/test/kotlin/com/igorwojda/list/flatten/desc.md)
-- [Binary search](src/test/kotlin/com/igorwojda/list/search/binarysearch/desc.md)
-- [Surrounded letter](src/test/kotlin/com/igorwojda/string/surroundedletter/desc.md)
-- [Insertion sort](src/test/kotlin/com/igorwojda/list/sort/insertionsort/desc.md)
-- [Quick sort](src/test/kotlin/com/igorwojda/list/sort/quicksort/desc.md)
-- [Radix sort](src/test/kotlin/com/igorwojda/list/sort/radixsort/desc.md)
-- [Doubly linked list](src/test/kotlin/com/igorwojda/linkedlist/doubly/base/desc.md)
-- [Max binary heap](src/test/kotlin/com/igorwojda/tree/heap/maxbinaryheap/desc.md)
+- [Spiral matrix generator](src/test/kotlin/com/igorwojda/matrix/spiralmatrixgenerator/readme.md)
+- [Find rectangle](src/test/kotlin/com/igorwojda/matrix/findrectangle/readme.md)
+- [Queue](src/test/kotlin/com/igorwojda/queue/basic/readme.md)
+- [Combine queues](src/test/kotlin/com/igorwojda/queue/combine/readme.md)
+- [Stack](src/test/kotlin/com/igorwojda/stack/basic/readme.md)
+- [Bubble sort](src/test/kotlin/com/igorwojda/list/sort/bubblesort/readme.md)
+- [Selection sort](src/test/kotlin/com/igorwojda/list/sort/selectionsort/readme.md)
+- [Square equals](src/test/kotlin/com/igorwojda/list/squareequal/readme.md)
+- [Sum zero](src/test/kotlin/com/igorwojda/list/sumzero/readme.md)
+- [Digit frequency](src/test/kotlin/com/igorwojda/integer/digitfrequency/readme.md)
+- [Get duplicated arguments](src/test/kotlin/com/igorwojda/string/getduplicatedarguments/readme.md)
+- [Find pair with target average](src/test/kotlin/com/igorwojda/list/pairaverage/readme.md)
+- [Binary search tree](src/test/kotlin/com/igorwojda/tree/binarysearchtree/readme.md)
+- [Tree traversal](src/test/kotlin/com/igorwojda/tree/classic/traversal/readme.md)
+- [Tree level width](src/test/kotlin/com/igorwojda/tree/classic/levelwidth/readme.md)
+- [Binary search tree (insert)](src/test/kotlin/com/igorwojda/tree/binarytree/insert/readme.md)
+- [Binary search tree (validate)](src/test/kotlin/com/igorwojda/tree/binarytree/validate/readme.md)
+- [Any callback](src/test/kotlin/com/igorwojda/various/anycallback/readme.md)
+- [Flatten](src/test/kotlin/com/igorwojda/list/flatten/readme.md)
+- [Binary search](src/test/kotlin/com/igorwojda/list/search/binarysearch/readme.md)
+- [Surrounded letter](src/test/kotlin/com/igorwojda/string/surroundedletter/readme.md)
+- [Insertion sort](src/test/kotlin/com/igorwojda/list/sort/insertionsort/readme.md)
+- [Quick sort](src/test/kotlin/com/igorwojda/list/sort/quicksort/readme.md)
+- [Radix sort](src/test/kotlin/com/igorwojda/list/sort/radixsort/readme.md)
+- [Doubly linked list](src/test/kotlin/com/igorwojda/linkedlist/doubly/base/readme.md)
+- [Max binary heap](src/test/kotlin/com/igorwojda/tree/heap/maxbinaryheap/readme.md)
 
 **Commander**
 
-- [List chunk](src/test/kotlin/com/igorwojda/list/listchunk/desc.md)
-- [Singly linked list](src/test/kotlin/com/igorwojda/linkedlist/singly/base/desc.md)
-- [Linked list midpoint](src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint/desc.md)
-- [Circular check](src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck/desc.md)
-- [Linked list take n-th element from last](src/test/kotlin/com/igorwojda/linkedlist/singly/fromlast/desc.md)
-- [Is sub string](src/test/kotlin/com/igorwojda/string/issubstring/desc.md)
-- [Merge sort](src/test/kotlin/com/igorwojda/list/sort/mergesort/desc.md)
-- [Fibonacci](src/test/kotlin/com/igorwojda/integer/fibonacci/basic/desc.md)
-- [Fibonacci with recursive cache](src/test/kotlin/com/igorwojda/integer/fibonacci/recursivecached/desc.md)
-- [Max sub list sum](src/test/kotlin/com/igorwojda/list/maxsublistsum/desc.md)
-- [Min sub list length](src/test/kotlin/com/igorwojda/list/minsublistlength/desc.md)
-- [Subtract](src/test/kotlin/com/igorwojda/list/subtract/desc.md)
-- [Coins](src/test/kotlin/com/igorwojda/list/coins/desc.md)
+- [List chunk](src/test/kotlin/com/igorwojda/list/listchunk/readme.md)
+- [Singly linked list](src/test/kotlin/com/igorwojda/linkedlist/singly/base/readme.md)
+- [Linked list midpoint](src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint/readme.md)
+- [Circular check](src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck/readme.md)
+- [Linked list take n-th element from last](src/test/kotlin/com/igorwojda/linkedlist/singly/fromlast/readme.md)
+- [Is sub string](src/test/kotlin/com/igorwojda/string/issubstring/readme.md)
+- [Merge sort](src/test/kotlin/com/igorwojda/list/sort/mergesort/readme.md)
+- [Fibonacci](src/test/kotlin/com/igorwojda/integer/fibonacci/basic/readme.md)
+- [Fibonacci with recursive cache](src/test/kotlin/com/igorwojda/integer/fibonacci/recursivecached/readme.md)
+- [Max sub list sum](src/test/kotlin/com/igorwojda/list/maxsublistsum/readme.md)
+- [Min sub list length](src/test/kotlin/com/igorwojda/list/minsublistlength/readme.md)
+- [Subtract](src/test/kotlin/com/igorwojda/list/subtract/readme.md)
+- [Coins](src/test/kotlin/com/igorwojda/list/coins/readme.md)
 
 # Useful links
 
