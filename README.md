@@ -1,7 +1,8 @@
 # Kotlin coding challenges
 
-This repository contains a set of [programming challenges](#lets-solve-some-challenges) that are solved using the
+This repository contains a set of [programming challenges](#lets-solve-some-challenges) that are intended to be solved by using the
 [Kotlin](https://kotlinlang.org/) language (hints, solutions tests and [useful links](#useful-links) are here as well).
+
 The purpose of this repository is to help you to practice coding and develop strong problem-solving skills. This will
 help you to become a better programmer and improve your chance of getting a new job by passing
 [whiteboard coding](https://www.quora.com/What-is-whiteboard-coding) interviews.
