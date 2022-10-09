@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
-    testImplementation("org.amshove.kluent:kluent:1.68")
+    testImplementation("org.amshove.kluent:kluent:1.69")
     testImplementation("org.jetbrains.kotlin:kotlin-compiler:1.7.20")
 }
 
