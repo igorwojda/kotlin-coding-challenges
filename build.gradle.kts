@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
-    testImplementation("org.amshove.kluent:kluent:1.70")
+    testImplementation("org.amshove.kluent:kluent:1.71")
 }
 
 sourceSets {
