@@ -80,7 +80,7 @@ Example:
 val list = SinglyLinkedList<Char>()
 list.insertFirst('a')
 list.insertFirst('b')
-list.getFirst() // 'a'
+list.getFirst() // 'b'
 ```
 
 ### 5 `last: Node` property
