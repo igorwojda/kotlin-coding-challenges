@@ -31,15 +31,15 @@ object Solution1 {
             insertAt(data, size)
         }
 
-        fun insertAt(item: E, index: Int) {
+        fun insertAt(data: E, index: Int) {
             if (index == 0) {
-                head = Node(item, head)
+                head = Node(data, head)
             } else {
                 val nodeBeforeIndex = getAt(index - 1) ?: last
                 nodeBeforeIndex?.let {
                     val restOfList = nodeBeforeIndex.next
-                    it.next = Node(item, restOfList)
-                } ?: insertLast(item)
+                    it.next = Node(data, restOfList)
+                } ?: insertLast(data)
             }
         }
 
