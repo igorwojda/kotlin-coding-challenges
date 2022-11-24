@@ -339,6 +339,14 @@ private class Test {
 //    }
 //
 //    @Test
+//    fun `insert a new node to an empty list when index is out of bounds`() {
+//        SinglyLinkedList<Int>().apply {
+//            insertAt(1, 100)
+//            getAt(0)!!.data shouldBeEqualTo 1
+//        }
+//    }
+//
+//    @Test
 //    fun `sum all the nodes`() {
 //        SinglyLinkedList<Int>().apply {
 //            insertLast(1)
