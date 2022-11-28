@@ -4,7 +4,7 @@ import org.jlleitschuh.gradle.ktlint.KtlintExtension
 import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 
 plugins {
-    kotlin("jvm") version "1.7.21"
+    kotlin("jvm") version "1.7.22"
     id("com.adarshr.test-logger") version "3.2.0"
     id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
 }
