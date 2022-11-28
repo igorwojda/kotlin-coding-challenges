@@ -3,7 +3,7 @@ import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.21"
+    kotlin("jvm") version "1.7.22"
     id("com.adarshr.test-logger") version "3.2.0"
     id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
 }
@@ -15,7 +15,7 @@ repositories {
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
     testImplementation("org.amshove.kluent:kluent:1.72")
-    testImplementation("org.jetbrains.kotlin:kotlin-compiler:1.7.21")
+    testImplementation("org.jetbrains.kotlin:kotlin-compiler:1.7.22")
 }
 
 tasks.test {
