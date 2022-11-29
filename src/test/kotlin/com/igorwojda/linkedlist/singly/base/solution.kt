@@ -35,9 +35,11 @@ object Solution1 {
             if (index == 0) {
                 head = Node(data, head)
             } else {
-                val prevNode = getAt(index - 1) ?: last
-                val node = prevNode?.next
-                prevNode?.next = Node(data, node)
+                val nodeBeforeIndex = getAt(index - 1) ?: last
+                nodeBeforeIndex?.let {
+                    val restOfList = nodeBeforeIndex.next
+                    it.next = Node(data, restOfList)
+                } ?: insertLast(data)
             }
         }
 
