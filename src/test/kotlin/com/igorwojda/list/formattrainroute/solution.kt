@@ -32,4 +32,10 @@ private object Solution2 {
     }
 }
 
+private object Solution3 {
+    private fun formatTrainRoute(listOf: List<String>): String {
+         return ("Train is calling at$listOf").replace('[',' ').replace(']',' ')
+    }
+    
+}
 private object KtLintWillNotComplain
