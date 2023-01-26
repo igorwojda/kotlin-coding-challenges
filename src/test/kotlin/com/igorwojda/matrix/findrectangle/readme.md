@@ -25,3 +25,31 @@ val image = listOf(
 findRectangle(image)  // [0, 2, 1, 4]
 
 ```
+
+Example 2
+
+```kotlin
+val image = listOf(
+    listOf(1, 0, 0, 1, 1, 1),
+    listOf(1, 0, 0, 1, 1, 1),
+    listOf(1, 0, 0, 1, 1, 1)
+)
+
+findRectangle(image)  // [0, 1, 2, 2]
+
+```
+
+Example 3
+
+```kotlin
+val image = listOf(
+    listOf(1, 1, 1, 1, 1),
+    listOf(1, 1, 1, 0, 0),
+    listOf(1, 1, 1, 0, 0),
+    listOf(1, 1, 1, 0, 0),
+    listOf(1, 1, 1, 0, 0)
+)
+
+findRectangle(image)  // [1, 3, 4, 4]
+
+```
