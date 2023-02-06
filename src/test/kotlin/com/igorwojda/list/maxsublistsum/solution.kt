@@ -88,7 +88,5 @@ private object Solution4 {
 private object Solution5 {
     private fun maxSubListSum(list: List<Int>, numElements: Int) = list.windowed(numElements)
         .toMutableList()
-        .maxOfOrNull {
-            it.sum()
-        }
+        .maxOfOrNull { it.sum() }
 }
