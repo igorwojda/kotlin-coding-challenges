@@ -68,6 +68,14 @@ private object Solution3 {
     }
 }
 
+private object Solution4 {
+    private fun isSubstring(str: String, subStr: String) = str
+        .windowed(subStr.length)
+        .any {
+            it == subStr
+        }
+}
+
 // Time complexity: O(n*m)
 // Space complexity: O(1)
 // This recursive solution is faster than solution with String.drop because it uses double pointer
