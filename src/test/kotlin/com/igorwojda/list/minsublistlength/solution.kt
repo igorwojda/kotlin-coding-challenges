@@ -76,4 +76,30 @@ private object Solution2 {
     }
 }
 
+// Solution without use a private fun min
+private object Solution3 {
+    fun minSubListLength(list: List<Int>, sum: Int): Int {
+        if (list.isEmpty()) return 0
+
+        var length = 1
+
+        while (length < list.size + 1) {
+            val proposal = list.windowed(length)
+                .toMutableList()
+                .map { it.sum() }
+                .filter { it >= sum }
+
+            if (proposal.isNotEmpty()) {
+                break
+            } else {
+                length++
+            }
+        }
+
+        if (length > list.size) length = 0
+
+        return length
+    }
+}
+
 private object KtLintWillNotComplain
