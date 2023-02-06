@@ -74,9 +74,7 @@ private object Solution4 {
 
         return str
             .windowed(subStr.length)
-            .any {
-                it == subStr
-            }
+            .any { it == subStr }
     }
 }
 
