@@ -76,7 +76,7 @@ private object Solution2 {
     }
 }
 
-//solution without use a private fun min
+// Solution without use a private fun min
 private object Solution3 {
     fun minSubListLength(list: List<Int>, sum: Int): Int {
         if (list.isEmpty()) return 0
