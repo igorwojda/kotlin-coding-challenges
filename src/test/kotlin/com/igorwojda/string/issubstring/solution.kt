@@ -70,7 +70,7 @@ private object Solution3 {
 
 private object Solution4 {
     private fun isSubstring(str: String, subStr: String): Boolean {
-        if (subStr.isEmpty()) return true
+        if (subStr.isEmpty()) return false
 
         return str
             .windowed(subStr.length)
