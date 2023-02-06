@@ -60,7 +60,7 @@ private class Test {
 
     @Test
     fun `empty sub-string not in abc`() {
-        isSubstring("abc", "") shouldBeEqualTo false
+        isSubstring("abc", "") shouldBeEqualTo true
     }
 
     @Test
@@ -70,6 +70,6 @@ private class Test {
 
     @Test
     fun `empty sub-string not in empty string`() {
-        isSubstring("", "") shouldBeEqualTo false
+        isSubstring("", "") shouldBeEqualTo true
     }
 }
