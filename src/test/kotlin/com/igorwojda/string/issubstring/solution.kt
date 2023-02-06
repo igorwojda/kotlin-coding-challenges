@@ -13,7 +13,7 @@ private object Solution1 {
 // Optimal solution using double pointer.
 private object Solution2 {
     private fun isSubstring(str: String, subStr: String): Boolean {
-        if(subStr.isEmpty()) return true
+        if (subStr.isEmpty()) return true
         if (str.length < subStr.length) return false
 
         var pointer1 = 0
