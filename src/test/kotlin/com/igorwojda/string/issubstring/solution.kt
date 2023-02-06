@@ -3,7 +3,7 @@ package com.igorwojda.string.issubstring
 // Kotlin Idiomatic Approach
 private object Solution1 {
     private fun isSubstring(str: String, subStr: String): Boolean {
-        return str.contains(subStr) && str.isNotEmpty() && subStr.isNotEmpty()
+        return str.contains(subStr)
     }
 }
 
@@ -13,7 +13,7 @@ private object Solution1 {
 // Optimal solution using double pointer.
 private object Solution2 {
     private fun isSubstring(str: String, subStr: String): Boolean {
-        if (str.isEmpty() || subStr.isEmpty()) return false
+        if(subStr.isEmpty()) return true
         if (str.length < subStr.length) return false
 
         var pointer1 = 0
@@ -61,7 +61,7 @@ private object Solution3 {
             return false
         }
         if (str.isEmpty() || subStr.isEmpty()) {
-            return false
+            return true
         }
 
         return isExactMatch(str, subStr) || isSubstring(str.drop(1), subStr)
@@ -74,8 +74,8 @@ private object Solution3 {
 //
 // Recursive solution
 private fun isSubstring(str: String, subStr: String): Boolean {
-    if (str.isEmpty() || subStr.isEmpty()) {
-        return false
+    if (subStr.isEmpty()) {
+        return true
     }
 
     fun helper(first: String, second: String, firstPointer1: Int = 0, secondPointer2: Int = 0): Boolean {

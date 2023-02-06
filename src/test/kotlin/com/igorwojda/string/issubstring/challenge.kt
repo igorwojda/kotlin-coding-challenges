@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun isSubstring(str: String, subStr: String): Boolean {
-    TODO("not implemented")
+    TODO()
 }
 
 private class Test {
@@ -60,7 +60,7 @@ private class Test {
 
     @Test
     fun `empty sub-string not in abc`() {
-        isSubstring("abc", "") shouldBeEqualTo false
+        isSubstring("abc", "") shouldBeEqualTo true
     }
 
     @Test
@@ -69,7 +69,7 @@ private class Test {
     }
 
     @Test
-    fun `empty sub-string not in empt ystring`() {
-        isSubstring("", "") shouldBeEqualTo false
+    fun `empty sub-string not in empty string`() {
+        isSubstring("", "") shouldBeEqualTo true
     }
 }
