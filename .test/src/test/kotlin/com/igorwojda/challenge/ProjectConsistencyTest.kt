@@ -47,11 +47,8 @@ class ProjectConsistencyTest {
             .filterNot { it == "KtLintWillNotComplain" }
 
         // then
-        solutionNames.forEach {
-            if (!it.startsWith("Solution")) {
-                throw AssertionFailedError("Solution object name does not contains 'Solution' prefix $it")
-            }
-        }
+        val expected = List(solutionNames.size) { "Solution${it+1}" }
+        solutionNames shouldBeEqualTo expected
     }
 
     @ParameterizedTest(name = "challenge kt file has one at most one top level Test class: {0}")
