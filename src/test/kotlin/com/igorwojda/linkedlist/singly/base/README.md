@@ -69,9 +69,10 @@ list.size() // 3
 
 ### 4. `first: Node` property
 
-Returns the first node of the linked list.
+Returns the first node of the linked list (head).
 
-Tests: 
+Tests:
+
 - `return the first element`
 
 Example:
