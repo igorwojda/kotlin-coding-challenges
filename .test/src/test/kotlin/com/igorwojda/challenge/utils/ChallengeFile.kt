@@ -1,7 +1,7 @@
 package com.igorwojda.challenge.utils
 
 enum class ChallengeFile(val fileName: String) {
-    SOLUTIONS_KT("solution.kt"),
-    DESC_MD("readme.md"),
-    CHALLENGE_KT("challenge.kt"),
+    SOLUTIONS_KT("Solution.kt"),
+    DESC_MD("README.md"),
+    CHALLENGE_KT("Challenge.kt"),
 }
