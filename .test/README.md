@@ -2,24 +2,32 @@
 
 This subproject is designed to verify the root project. Checks are running with every PR.
 
-## Consistency Checks
-
-Verify consistency across various challenges e.g. check challenge naming and file structure.
-
 ## Solution Checks
+
+Verify correctness of the provided solutions.
 
 Every coding challenge in this repo consists of a container (`challenge.kt` file) that has tests and
 empty placeholder for a user-coded solution. Since the placeholder is non-implemented method
-all tests in the root project will fail by design.
+all tests in the root project will fail by design. This subproject allows to generate a test suite for each challenge
+by combining challenge container (`challenge.kt` file) with every solution present in the `solution.kt` file.
 
-This subproject generates a test suite for each challenge by combining challenge container (`challenge.kt` file) with
-every solution present in the `solution.kt` file.
+To generate tests go into `.test` subproject and run the `generateTests` command:
 
-To generate tests run the `cd .test && ./gradlew generateTests && cd ..` command.
-Generated tests will be placed in the `src/test/kotlin/generated` directory.
+```shell
+cd .test && ./gradlew generateTests
+````
 
-To run only generated tests use `./gradlew test --tests "generated.com.igorwojda.*"` command.
-`
+Generated tests will be placed in the `src/test/kotlin/generated` directory (root project).
+
+To run generated tests use `./gradlew test --tests "generated.com.igorwojda.*"` (root project).
+
+## Consistency Checks
+
+Verify consistency across various challenges such as file naming and file structure.
+
+To run checks go into `.test` subproject and run the `test` command:
+
+To run tests use `cd .test && ./gradlew test` command.
 
 
 
