@@ -68,6 +68,16 @@ private object Solution3 {
     }
 }
 
+private object Solution4 {
+    private fun isSubstring(str: String, subStr: String): Boolean {
+        if (subStr.isEmpty()) return true
+
+        return str
+            .windowed(subStr.length)
+            .any { it == subStr }
+    }
+}
+
 // Time complexity: O(n*m)
 // Space complexity: O(1)
 // This recursive solution is faster than solution with String.drop because it uses double pointer
@@ -91,6 +101,7 @@ private fun isSubstring(str: String, subStr: String): Boolean {
                 localPointer1 <= first.lastIndex && localPointer2 <= second.lastIndex -> {
                     helper(first, second, localPointer1, localPointer2)
                 }
+
                 localPointer2 <= second.lastIndex && localPointer1 > first.lastIndex -> false
                 else -> true
             }
