@@ -6,7 +6,21 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun circularCheck(list: SinglyLinkedList<Char>): Boolean {
-    TODO("not implemented")
+    var slowPointer = list.first
+    var fastPointer = list.first
+
+    while (fastPointer != null) {
+        list.forEach {
+            slowPointer = slowPointer?.next
+            fastPointer = fastPointer?.next?.next
+
+            if (fastPointer != null && slowPointer == fastPointer) {
+                return true
+            }
+        }
+    }
+
+    return false
 }
 
 private class Test {
