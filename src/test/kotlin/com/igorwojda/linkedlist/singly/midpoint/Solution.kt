@@ -8,7 +8,7 @@ private object Solution1 {
         var slowPointer = list.first
         var fastPointer = list.first
 
-        list.forEach {
+        repeat(list.count()) {
             if (fastPointer?.next?.next == null) {
                 return slowPointer
             }
