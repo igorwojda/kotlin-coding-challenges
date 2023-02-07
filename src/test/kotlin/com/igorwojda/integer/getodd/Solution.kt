@@ -10,7 +10,6 @@ private object Solution1 {
 // Recursive solution
 private object Solution2 {
     private fun filterOdd(list: List<Int>): List<Int> {
-
         if (list.isEmpty()) {
             return list
         }
