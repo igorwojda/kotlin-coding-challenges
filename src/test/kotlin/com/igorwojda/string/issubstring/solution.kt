@@ -1,17 +1,10 @@
 package com.igorwojda.string.issubstring
 
-// Kotlin Idiomatic Approach
-private object Solution1 {
-    private fun isSubstring(str: String, subStr: String): Boolean {
-        return str.contains(subStr)
-    }
-}
-
 // Time complexity: O(n*m)
 // Space complexity: O(1)
 //
 // Optimal solution using double pointer.
-private object Solution2 {
+private object Solution1 {
     private fun isSubstring(str: String, subStr: String): Boolean {
         if (subStr.isEmpty()) return true
         if (str.length < subStr.length) return false
@@ -43,7 +36,7 @@ private object Solution2 {
 // First of 5 chars, needs 5 iterations at most and 15 character copied (5+4+3+2+1=15). Second is copied less often.
 //
 // Recursive solution
-private object Solution3 {
+private object Solution2 {
     private fun isSubstring(str: String, subStr: String): Boolean {
         fun isExactMatch(str: String, subStr: String): Boolean {
             if (subStr.length > str.length) {
@@ -68,7 +61,7 @@ private object Solution3 {
     }
 }
 
-private object Solution4 {
+private object Solution3 {
     private fun isSubstring(str: String, subStr: String): Boolean {
         if (subStr.isEmpty()) return true
 
