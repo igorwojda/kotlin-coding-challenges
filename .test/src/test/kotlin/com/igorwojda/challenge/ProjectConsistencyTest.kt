@@ -10,7 +10,6 @@ import org.jetbrains.kotlin.psi.KtFile
 import org.jetbrains.kotlin.psi.KtObjectDeclaration
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
-import org.opentest4j.AssertionFailedError
 import java.io.File
 import java.nio.file.Files
 import kotlin.io.path.Path
@@ -47,7 +46,7 @@ class ProjectConsistencyTest {
             .filterNot { it == "KtLintWillNotComplain" }
 
         // then
-        val expected = List(solutionNames.size) { "Solution${it+1}" }
+        val expected = List(solutionNames.size) { "Solution${it + 1}" }
         solutionNames shouldBeEqualTo expected
     }
 
