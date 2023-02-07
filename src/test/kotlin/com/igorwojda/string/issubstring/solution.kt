@@ -61,7 +61,7 @@ private object Solution2 {
     }
 }
 
-private object Solution4 {
+private object Solution3 {
     private fun isSubstring(str: String, subStr: String): Boolean {
         if (subStr.isEmpty()) return true
 
