@@ -17,7 +17,7 @@ private object Solution1 {
 }
 
 // Another Approach
-private object Solution2 {
+private object Solution3 {
     private fun decapitalizeConst(str: String): String? {
         val words = str.split("_").filter { it.isNotEmpty() }
 
