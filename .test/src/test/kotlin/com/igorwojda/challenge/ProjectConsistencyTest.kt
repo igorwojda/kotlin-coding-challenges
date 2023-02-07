@@ -10,7 +10,6 @@ import org.jetbrains.kotlin.psi.KtFile
 import org.jetbrains.kotlin.psi.KtObjectDeclaration
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
-import org.opentest4j.AssertionFailedError
 import java.io.File
 import java.nio.file.Files
 import kotlin.io.path.Path
@@ -47,11 +46,8 @@ class ProjectConsistencyTest {
             .filterNot { it == "KtLintWillNotComplain" }
 
         // then
-        solutionNames.forEach {
-            if (!it.startsWith("Solution")) {
-                throw AssertionFailedError("Solution object name does not contains 'Solution' prefix $it")
-            }
-        }
+        val expected = List(solutionNames.size) { "Solution${it + 1}" }
+        solutionNames shouldBeEqualTo expected
     }
 
     @ParameterizedTest(name = "challenge kt file has one at most one top level Test class: {0}")
