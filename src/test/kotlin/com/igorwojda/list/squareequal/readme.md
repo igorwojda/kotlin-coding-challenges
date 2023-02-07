@@ -15,7 +15,7 @@ squareEquals(listOf(2), listOf(4)) // true
 
 squareEquals(listOf(1, 2, 3), listOf(9, 1, 4)) // true
 
-squareEquals(listOf(1, 2, 3), listOf(9, 1, 7)) // false (does not have square of 3)
+squareEquals(listOf(1, 2, 3), listOf(9, 1, 7)) // false (does not have square of 2)
 
 squareEquals(listOf(1, 2, 3), listOf(9, 1)) // false (does not have square of 2)
 
