@@ -3,7 +3,6 @@ package com.igorwojda.matrix.findrectangle
 // Time complexity: O(n*m)
 private object Solution1 {
     private fun findRectangle(image: List<List<Int>>): List<Int>? {
-
         // This helper function may be used with challange variation where multiple rectangles exists in the image
         fun getRectangleFromTopLeftCorner(rowIndex: Int, columnIndex: Int): List<Int> {
             // find right x coordinate
@@ -61,7 +60,7 @@ private object Solution2 {
         return if (top == null || bottom == null) {
             null
         } else {
-            // Smart cast does not work with inlined lambdas so we have to use non-null assertion operator
+            // Smart cast does not work with inlined lambdas, so we have to use non-null assertion operator
             // More: https://youtrack.jetbrains.com/issue/KT-7186
             listOf(top!!.first, top!!.second, bottom!!.first, bottom!!.second)
         }

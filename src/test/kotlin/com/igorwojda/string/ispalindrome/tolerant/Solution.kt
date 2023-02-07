@@ -24,7 +24,8 @@ private object Solution1 {
         return true
     }
 }
-// recursive solution
+
+// Recursive solution
 private object Solution2 {
     private fun isTolerantPalindrome(str: String, characterRemoved: Boolean = false): Boolean {
         return if (str.isEmpty() || str.length == 1) {
@@ -66,7 +67,7 @@ private object Solution3 {
         if (revStr == str) return true
         if (characterRemoved) return false
 
-        // Remove a single non matching character and re-compare
+        // Remove a single non-matching character and re-compare
         val removeIndex = str.commonPrefixWith(revStr).length
         if (removeIndex + 1 > str.length) return false // reached end of string
         val reducedStr = str.removeRange(removeIndex, removeIndex + 1)

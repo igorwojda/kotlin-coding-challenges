@@ -4,7 +4,7 @@ import kotlin.math.sign
 
 private object Solution1 {
     private fun reverseInt(i: Int): Int {
-        var reverse = i.toString().removePrefix("-").reversed()
+        val reverse = i.toString().removePrefix("-").reversed()
         return reverse.toInt() * i.sign
     }
 }

@@ -10,7 +10,6 @@ private object Solution1 {
         }
 
         fun removeMax(): E? {
-
             if (items.isEmpty()) return null
 
             if (items.size == 1) {
@@ -44,7 +43,6 @@ private object Solution1 {
             while ((items[elementIndex] < items[leftChildIndex]) ||
                 items[elementIndex] < items[rightChildIndex]
             ) {
-
                 elementIndex = if (rightChildIndex > items.lastIndex ||
                     items[leftChildIndex] > items[rightChildIndex]
                 ) {

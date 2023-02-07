@@ -12,13 +12,15 @@ private object Solution1 {
             val middle = (right + left) / 2
 
             // Check if x is present at mid
-            if (list[middle] == element)
+            if (list[middle] == element) {
                 return middle
+            }
 
-            if (list[middle] < element)
+            if (list[middle] < element) {
                 left = middle + 1 // x greater than middle, so ignore left half
-            else
+            } else {
                 right = middle - 1 // x greater than middle, so , ignore right half
+            }
         }
 
         // if we reach here, then element was

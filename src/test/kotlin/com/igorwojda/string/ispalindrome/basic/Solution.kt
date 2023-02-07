@@ -35,11 +35,13 @@ private object Solution3 {
         str.forEachIndexed { index, char ->
             val rightIndex = str.lastIndex - index
 
-            if (char != str[rightIndex])
+            if (char != str[rightIndex]) {
                 return false
+            }
 
-            if (index > rightIndex)
+            if (index > rightIndex) {
                 return true
+            }
         }
 
         return true

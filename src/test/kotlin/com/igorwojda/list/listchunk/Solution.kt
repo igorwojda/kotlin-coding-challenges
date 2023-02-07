@@ -21,7 +21,7 @@ private object Solution2 {
         val chunks = mutableListOf<List<Int>>()
 
         for (i in 0..list.lastIndex step size) {
-            var rightIndex = if (i + size < list.size) i + size else list.size
+            val rightIndex = if (i + size < list.size) i + size else list.size
             chunks.add(list.subList(i, rightIndex))
         }
 
@@ -35,7 +35,7 @@ private object Solution3 {
         val chunks = mutableListOf<List<Int>>()
 
         while (index <= list.lastIndex) {
-            var rightIndex = if (index + size < list.size) index + size else list.size
+            val rightIndex = if (index + size < list.size) index + size else list.size
             chunks.add(list.subList(index, rightIndex))
 
             index += size

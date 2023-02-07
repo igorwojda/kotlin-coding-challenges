@@ -3,7 +3,6 @@ package com.igorwojda.matrix.findallrectangles
 // Time complexity: O(n*m)
 private object Solution1 {
     private fun findAllRectangles(image: List<List<Int>>): MutableList<List<Int>> {
-
         fun getRectangleFromTopLeftCorner(rowIndex: Int, columnIndex: Int): List<Int> {
             // find right x coordinate
             var rightColumnIndex = columnIndex

@@ -96,9 +96,9 @@ object Solution1 {
             override fun hasNext() = node != null
 
             override fun next(): Node<E> {
-                val currentNode = node
+                val currentNode = node ?: throw NoSuchElementException("")
                 node = node?.next
-                return currentNode!!
+                return currentNode
             }
         }
 
