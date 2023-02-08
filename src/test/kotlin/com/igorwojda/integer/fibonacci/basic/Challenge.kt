@@ -34,7 +34,7 @@ private class Test {
     }
 
     @Test
-    fun `calculates correct fib value for 15`() {
+    fun `calculates correct fib value for 39`() {
         fibonacci(39) shouldBeEqualTo 63245986
     }
 }
