@@ -15,7 +15,6 @@ List of problems that can be solved using [recursion](https://en.wikipedia.org/w
 - [Fibonacci](../src/test/kotlin/com/igorwojda/integer/fibonacci/basic/README.md)
 - [Fibonacci with recursive cache](../src/test/kotlin/com/igorwojda/integer/fibonacci/recursivecached/README.md)
 - [Add up to](../src/test/kotlin/com/igorwojda/integer/addupto/README.md)
-- [Power](../src/test/kotlin/com/igorwojda/integer/power/README.md)
 - [Is substring](../src/test/kotlin/com/igorwojda/string/issubstring/README.md)
 - [Capitalize first](../src/test/kotlin/com/igorwojda/list/capitalizeFirst/README.md)
 - [Merge sort](../src/test/kotlin/com/igorwojda/list/sort/mergesort/README.md)
