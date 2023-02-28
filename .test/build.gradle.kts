@@ -34,3 +34,7 @@ task("generateTests") {
 
     TestUtils.generateTestFiles(project)
 }
+
+kotlin {
+    jvmToolchain(17)
+}
