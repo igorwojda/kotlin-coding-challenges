@@ -1,7 +1,6 @@
 package com.igorwojda.tree.binarytree.validate
 
 import org.amshove.kluent.shouldBeEqualTo
-import org.amshove.kluent.shouldEqual
 import org.junit.jupiter.api.Test
 
 private fun isValidSearchBinaryTree(node: Node<Int>): Boolean {
@@ -73,7 +72,7 @@ private class Test {
         node.insert(20)
         node.left?.left?.right = Node(999)
 
-        isValidSearchBinaryTree(node) shouldEqual false
+        isValidSearchBinaryTree(node) shouldBeEqualTo false
     }
 
     @Test
@@ -97,7 +96,7 @@ private class Test {
         node.insert(21)
         node.right?.right?.left = Node(999)
 
-        isValidSearchBinaryTree(node) shouldEqual false
+        isValidSearchBinaryTree(node) shouldBeEqualTo false
     }
 }
 

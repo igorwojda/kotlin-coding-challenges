@@ -13,7 +13,11 @@ private class Test {
         val list = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
         chunk(list, 2) shouldBeEqualTo listOf(
-            listOf(1, 2), listOf(3, 4), listOf(5, 6), listOf(7, 8), listOf(9, 10)
+            listOf(1, 2),
+            listOf(3, 4),
+            listOf(5, 6),
+            listOf(7, 8),
+            listOf(9, 10),
         )
     }
 
@@ -35,7 +39,7 @@ private class Test {
         chunk(list, 5) shouldBeEqualTo listOf(
             listOf(1, 2, 3, 4, 5),
             listOf(6, 7, 8, 9, 10),
-            listOf(11, 12, 13)
+            listOf(11, 12, 13),
         )
     }
 }

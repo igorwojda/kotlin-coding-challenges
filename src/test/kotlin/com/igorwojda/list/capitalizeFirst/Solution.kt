@@ -10,8 +10,11 @@ private object Solution1 {
 // Recursive solution
 private object Solution2 {
     private fun capitalizeFirst(list: List<String>): List<String> {
-        return if (list.isEmpty()) emptyList()
-        else listOf(list.first().replaceFirstChar { string -> string.uppercaseChar() }) + capitalizeFirst(list.drop(1))
+        return if (list.isEmpty()) {
+            emptyList()
+        } else {
+            listOf(list.first().replaceFirstChar { string -> string.uppercaseChar() }) + capitalizeFirst(list.drop(1))
+        }
     }
 }
 
