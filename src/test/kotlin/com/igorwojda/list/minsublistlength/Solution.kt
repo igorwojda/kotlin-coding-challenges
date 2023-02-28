@@ -4,7 +4,7 @@ package com.igorwojda.list.minsublistlength
 // Space complexity O(n)
 // Use sliding window
 private object Solution1 {
-    fun minSubListLength(list: List<Int>, sum: Int): Int {
+    fun minSubListLength(list: List<Int>, numElements: Int): Int {
         var total = 0
         var start = 0
         var end = 0
@@ -12,12 +12,12 @@ private object Solution1 {
 
         while (start < list.size) {
             // if current window doesn't add up to the given numElements then move the window to right
-            if (total < sum && end < list.size) {
+            if (total < numElements && end < list.size) {
                 total += list[end]
                 end++
             }
             // if current window adds up to at least the numElements given then we can shrink the window
-            else if (total >= sum) {
+            else if (total >= numElements) {
                 minLen = min(minLen, end - start)
                 total -= list[start]
                 start++
@@ -42,9 +42,9 @@ private object Solution1 {
 }
 
 // Time complexity: O(n^2)
-// Loop through all the elements and then loop through all sublists
+// Loop through all the elements and then loop through all sub lists
 private object Solution2 {
-    fun minSubListLength(list: List<Int>, sum: Int): Int {
+    fun minSubListLength(list: List<Int>, numElements: Int): Int {
         var minListLength: Int? = null
 
         repeat(list.size) { index ->
@@ -56,7 +56,7 @@ private object Solution2 {
                 subListSum += item
                 numItems++
 
-                if (subListSum >= sum) {
+                if (subListSum >= numElements) {
                     minListLength = min(minListLength, numItems)
                     break
                 }
@@ -78,7 +78,7 @@ private object Solution2 {
 
 // Solution without use a private fun min
 private object Solution3 {
-    fun minSubListLength(list: List<Int>, sum: Int): Int {
+    fun minSubListLength(list: List<Int>, numElements: Int): Int {
         if (list.isEmpty()) return 0
 
         var length = 1
@@ -87,7 +87,7 @@ private object Solution3 {
             val proposal = list.windowed(length)
                 .toMutableList()
                 .map { it.sum() }
-                .filter { it >= sum }
+                .filter { it >= numElements }
 
             if (proposal.isNotEmpty()) {
                 break
@@ -101,5 +101,3 @@ private object Solution3 {
         return length
     }
 }
-
-private object KtLintWillNotComplain
