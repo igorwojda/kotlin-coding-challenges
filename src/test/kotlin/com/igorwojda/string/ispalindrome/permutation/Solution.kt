@@ -11,4 +11,12 @@ private object Solution1 {
     }
 }
 
-private object KtLintWillNotComplain
+private object Solution2 {
+    private fun isPermutationPalindrome(str: String): Boolean {
+        return str
+            .groupBy { it }
+            .map { it.value }
+            .map { it.size }
+            .count { it % 2 == 1 } == 1
+    }
+}
