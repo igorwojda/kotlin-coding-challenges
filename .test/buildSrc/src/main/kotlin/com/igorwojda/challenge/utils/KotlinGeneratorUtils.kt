@@ -46,7 +46,7 @@ object KotlinGeneratorUtils {
         ).flatten()
 
         val testrSolutionFileName = getFileName(solution, challengeName)
-        val relativePath = solutionName.toLowerCase()
+        val relativePath = solutionName.lowercase()
 
         return TestFile(testrSolutionFileName, relativePath, lines)
     }
@@ -81,7 +81,7 @@ object KotlinGeneratorUtils {
         .toList()
 
     private fun getPackage(ktFile: KtFile, solutionName: String) =
-        "package generated.${ktFile.packageFqName}.$solutionName".toLowerCase()
+        "package generated.${ktFile.packageFqName}.$solutionName".lowercase()
 
     private fun getFileName(solution: KtObjectDeclaration, challengeName: String): String {
         val solutionName = checkNotNull(solution.name) { "Solution name is null" }
