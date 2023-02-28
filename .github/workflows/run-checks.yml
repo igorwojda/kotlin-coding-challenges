@@ -38,7 +38,7 @@ jobs:
       - name: ktlint check (root project)
         run: ./gradlew ktlintCheck
 
-      - name: Generate solutions tests
+      - name: Generate tests for every solution
         run: cd .test && ./gradlew generateTests
 
       - name: Navigate to root project
