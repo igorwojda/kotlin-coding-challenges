@@ -94,7 +94,7 @@ private class BinarySearchTree<E : Comparable<E>> {
 private data class BinaryNode<E : Comparable<E>>(
     val data: E,
     var left: BinaryNode<E>? = null,
-    var right: BinaryNode<E>? = null
+    var right: BinaryNode<E>? = null,
 )
 
 /*
@@ -132,7 +132,7 @@ private class Test {
             'I',
             'C',
             'E',
-            'H'
+            'H',
         )
     }
 
@@ -147,7 +147,7 @@ private class Test {
             'E',
             'G',
             'I',
-            'H'
+            'H',
         )
     }
 
@@ -162,7 +162,7 @@ private class Test {
             'F',
             'G',
             'H',
-            'I'
+            'I',
         )
     }
 
@@ -177,7 +177,7 @@ private class Test {
             'H',
             'I',
             'G',
-            'F'
+            'F',
         )
     }
 
@@ -192,7 +192,7 @@ private class Test {
             'D',
             'E',
             'C',
-            'A'
+            'A',
         )
     }
 
@@ -207,7 +207,7 @@ private class Test {
             'D',
             'C',
             'B',
-            'A'
+            'A',
         )
     }
 
@@ -222,7 +222,7 @@ private class Test {
             'D',
             'A',
             'B',
-            'F'
+            'F',
         )
     }
 

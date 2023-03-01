@@ -1,11 +1,11 @@
+
 import com.igorwojda.challenge.utils.TestUtils
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.8.10"
     id("com.adarshr.test-logger") version "3.2.0"
-    id("org.jlleitschuh.gradle.ktlint") version "11.1.0"
+    id("com.diffplug.spotless") version "6.15.0"
 }
 
 repositories {
@@ -29,12 +29,21 @@ tasks.test {
     }
 }
 
-tasks.withType<KotlinCompile>().configureEach {
-    kotlinOptions.jvmTarget = "11"
-}
-
 task("generateTests") {
     group = "verification"
 
     TestUtils.generateTestFiles(project)
+}
+
+kotlin {
+    jvmToolchain(17)
+}
+
+spotless {
+    kotlin {
+        ktlint()
+
+        indentWithSpaces()
+        endWithNewline()
+    }
 }

@@ -34,7 +34,7 @@ private object Solution2 {
             if (str.first() == str.last()) {
                 isTolerantPalindrome(
                     str.substring(1 until str.lastIndex),
-                    characterRemoved
+                    characterRemoved,
                 )
             } else {
                 if (characterRemoved) {
@@ -46,11 +46,11 @@ private object Solution2 {
 
                     val removeLeftResult = isTolerantPalindrome(
                         str.substring(2 until str.lastIndex),
-                        true
+                        true,
                     )
                     val removeRightResult = isTolerantPalindrome(
                         str.substring(1 until str.lastIndex - 1),
-                        true
+                        true,
                     )
 
                     return removeLeftResult || removeRightResult

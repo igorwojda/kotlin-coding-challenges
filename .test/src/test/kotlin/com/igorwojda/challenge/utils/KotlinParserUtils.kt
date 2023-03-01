@@ -16,7 +16,7 @@ object KotlinParserUtils {
         KotlinCoreEnvironment.createForProduction(
             Disposer.newDisposable(),
             CompilerConfiguration(),
-            EnvironmentConfigFiles.JVM_CONFIG_FILES
+            EnvironmentConfigFiles.JVM_CONFIG_FILES,
         ).project
     }
 
@@ -34,6 +34,6 @@ object KotlinParserUtils {
     private fun getChallengeKtFile(codeString: String, fileName: String) =
         PsiManager.getInstance(project)
             .findFile(
-                LightVirtualFile(fileName, KotlinFileType.INSTANCE, codeString)
+                LightVirtualFile(fileName, KotlinFileType.INSTANCE, codeString),
             ) as KtFile
 }

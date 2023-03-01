@@ -16,7 +16,7 @@ private object Solution1 {
     private data class Node<E : Comparable<E>>(
         var data: E,
         var left: Node<E>? = null,
-        var right: Node<E>? = null
+        var right: Node<E>? = null,
     ) {
         fun insert(e: E) {
             if (e < data) { // left node

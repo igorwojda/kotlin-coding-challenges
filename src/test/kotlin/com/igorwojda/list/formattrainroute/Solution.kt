@@ -31,5 +31,3 @@ private object Solution2 {
         return "Train is calling at $res"
     }
 }
-
-private object KtLintWillNotComplain

@@ -54,7 +54,7 @@ private class Test {
             3,
             2,
             1,
-            0
+            0,
         )
     }
 }

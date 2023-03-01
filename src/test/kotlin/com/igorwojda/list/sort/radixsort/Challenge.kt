@@ -104,7 +104,7 @@ private class Test {
             31,
             32,
             51,
-            74
+            74,
         )
     }
 

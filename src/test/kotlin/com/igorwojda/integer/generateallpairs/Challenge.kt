@@ -19,7 +19,7 @@ private class Test {
             0 to 0,
             0 to 1,
             1 to 0,
-            1 to 1
+            1 to 1,
         )
     }
 
@@ -34,7 +34,7 @@ private class Test {
             1 to 2,
             2 to 0,
             2 to 1,
-            2 to 2
+            2 to 2,
         )
     }
 }

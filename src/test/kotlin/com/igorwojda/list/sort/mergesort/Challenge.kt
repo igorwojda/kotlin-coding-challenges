@@ -43,7 +43,7 @@ private class Test {
             5,
             6,
             7,
-            8
+            8,
         )
     }
 
@@ -56,7 +56,7 @@ private class Test {
             17,
             19,
             75,
-            80
+            80,
         )
     }
 

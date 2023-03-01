@@ -32,7 +32,7 @@ private class Test {
     fun `B, Z, Z, G and B returns B, Z, Z`() {
         getSubtraction(listOf("B", "Z", "Z", "G"), listOf("Z", "Z")) shouldBeEqualTo listOf(
             "B",
-            "G"
+            "G",
         )
     }
 
@@ -40,7 +40,7 @@ private class Test {
     fun `G, D, D, D, A, A and D, A returns G, D, D, A`() {
         getSubtraction(
             listOf("G", "D", "D", "D", "A", "A"),
-            listOf("D", "A")
+            listOf("D", "A"),
         ) shouldBeEqualTo listOf("G", "D", "D", "A")
     }
 
@@ -51,7 +51,7 @@ private class Test {
             "H",
             "H",
             "B",
-            "B"
+            "B",
         )
     }
 }

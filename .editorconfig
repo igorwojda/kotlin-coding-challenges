@@ -1,0 +1,2 @@
+[*.{kt,kts}]
+ktlint_custom-rule-set_filename = disabled

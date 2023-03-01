@@ -7,7 +7,7 @@ private fun printNumber(n: Int): List<Int> {
     TODO("not implemented")
 }
 
-class Test {
+private class Test {
     @Test
     fun `printNumber 0 return listOf()`() {
         printNumber(0) shouldBeEqualTo listOf()

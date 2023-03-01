@@ -29,8 +29,8 @@ private class Test {
             listOf(
                 1,
                 listOf(2, listOf<Any>(emptyList<Any>())),
-                listOf(3)
-            )
+                listOf(3),
+            ),
         ) shouldBeEqualTo listOf(1, 2, 3)
     }
 
@@ -39,8 +39,8 @@ private class Test {
         flatten(
             listOf(
                 1,
-                listOf(2, listOf(3), listOf(4, listOf(listOf(5))))
-            )
+                listOf(2, listOf(3), listOf(4, listOf(listOf(5)))),
+            ),
         ) shouldBeEqualTo listOf(1, 2, 3, 4, 5)
     }
 }

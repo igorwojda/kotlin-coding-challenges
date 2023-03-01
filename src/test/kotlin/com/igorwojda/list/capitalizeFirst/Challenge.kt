@@ -28,7 +28,7 @@ private class Test {
         capitalizeFirst(listOf("what a", "beautiful", "morning")) shouldBeEqualTo listOf(
             "What a",
             "Beautiful",
-            "Morning"
+            "Morning",
         )
     }
 }
