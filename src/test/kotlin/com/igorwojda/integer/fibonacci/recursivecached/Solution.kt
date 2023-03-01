@@ -5,7 +5,7 @@ private object Solution1 {
 
     private fun fibonacciSequenceRecursiveCached(
         n: Int,
-        methodCache: MutableList<MethodCache> = mutableListOf()
+        methodCache: MutableList<MethodCache> = mutableListOf(),
     ): Int {
         var result = methodCache.firstOrNull { it.n == n }?.result
 

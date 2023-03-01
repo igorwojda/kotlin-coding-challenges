@@ -1,11 +1,9 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
-import org.jlleitschuh.gradle.ktlint.KtlintExtension
-import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 
 plugins {
     kotlin("jvm") version "1.8.10"
     id("com.adarshr.test-logger") version "3.2.0"
-    id("org.jlleitschuh.gradle.ktlint") version "11.2.0"
+    id("com.diffplug.spotless") version "6.15.0"
 }
 
 repositories {
@@ -41,13 +39,11 @@ kotlin {
     jvmToolchain(17)
 }
 
-configure<KtlintExtension> {
-    reporters {
-        reporter(ReporterType.PLAIN)
-        reporter(ReporterType.CHECKSTYLE)
-    }
+spotless {
+    kotlin {
+        ktlint()
 
-    filter {
-        exclude("**/generated/**")
+        indentWithSpaces()
+        endWithNewline()
     }
 }

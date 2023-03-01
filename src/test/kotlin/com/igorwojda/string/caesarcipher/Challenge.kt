@@ -17,7 +17,7 @@ private class Test {
     fun `'abcdefghijklmnopqrstuvwxyz' shift 1 returns 'bcdefghijklmnopqrstuvwxyza'`() {
         encodeCaesarCipher(
             "abcdefghijklmnopqrstuvwxyz",
-            1
+            1,
         ) shouldBeEqualTo "bcdefghijklmnopqrstuvwxyza"
     }
 
@@ -25,7 +25,7 @@ private class Test {
     fun `'abcdefghijklmnopqrstuvwxyz' shift 7 returns 'hijklmnopqrstuvwxyzabcdefg'`() {
         encodeCaesarCipher(
             "abcdefghijklmnopqrstuvwxyz",
-            7
+            7,
         ) shouldBeEqualTo "hijklmnopqrstuvwxyzabcdefg"
     }
 
@@ -33,7 +33,7 @@ private class Test {
     fun `'abcdefghijklmnopqrstuvwxyz' shift 50 returns 'yzabcdefghijklmnopqrstuvwx'`() {
         encodeCaesarCipher(
             "abcdefghijklmnopqrstuvwxyz",
-            50
+            50,
         ) shouldBeEqualTo "yzabcdefghijklmnopqrstuvwx"
     }
 }

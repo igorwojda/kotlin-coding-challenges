@@ -32,8 +32,8 @@ jobs:
       - name: Verify project consistency
         run: cd .test && ./gradlew test
 
-      - name: ktlint check (test project)
-        run: cd .test && ./gradlew ktlintCheck
+      - name: spotless check (test project)
+        run: cd .test && ./gradlew spotlessCheck
 
       - name: ktlint check (root project)
         run: ./gradlew ktlintCheck

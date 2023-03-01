@@ -15,7 +15,7 @@ private class Test {
             listOf(1, 1, 1, 1, 1, 1, 1),
             listOf(1, 1, 1, 0, 0, 0, 1),
             listOf(1, 1, 1, 0, 0, 0, 1),
-            listOf(1, 1, 1, 1, 1, 1, 1)
+            listOf(1, 1, 1, 1, 1, 1, 1),
         )
 
         findRectangle(image) shouldBeEqualTo listOf(2, 3, 3, 5)
@@ -28,7 +28,7 @@ private class Test {
             listOf(1, 1, 1, 1, 1, 1, 1),
             listOf(1, 1, 1, 1, 1, 1, 1),
             listOf(1, 1, 1, 1, 1, 1, 1),
-            listOf(1, 1, 1, 1, 1, 1, 0)
+            listOf(1, 1, 1, 1, 1, 1, 0),
         )
 
         findRectangle(image) shouldBeEqualTo listOf(4, 6, 4, 6)
@@ -41,7 +41,7 @@ private class Test {
             listOf(1, 1, 1, 1, 1, 1, 1),
             listOf(1, 1, 1, 1, 1, 1, 1),
             listOf(1, 1, 1, 1, 1, 0, 0),
-            listOf(1, 1, 1, 1, 1, 0, 0)
+            listOf(1, 1, 1, 1, 1, 0, 0),
         )
 
         findRectangle(image) shouldBeEqualTo listOf(3, 5, 4, 6)
@@ -54,7 +54,7 @@ private class Test {
             listOf(1, 1, 1, 1, 1, 1, 1),
             listOf(1, 1, 1, 1, 1, 1, 1),
             listOf(1, 1, 1, 1, 1, 1, 1),
-            listOf(1, 1, 1, 1, 1, 1, 1)
+            listOf(1, 1, 1, 1, 1, 1, 1),
         )
 
         findRectangle(image) shouldBeEqualTo listOf(0, 0, 0, 0)
@@ -67,7 +67,7 @@ private class Test {
             listOf(1, 1, 1, 1, 1, 1, 1),
             listOf(0, 0, 1, 1, 1, 1, 1),
             listOf(0, 0, 1, 1, 1, 1, 1),
-            listOf(1, 1, 1, 1, 1, 1, 1)
+            listOf(1, 1, 1, 1, 1, 1, 1),
         )
 
         findRectangle(image) shouldBeEqualTo listOf(2, 0, 3, 1)
@@ -76,7 +76,7 @@ private class Test {
     @Test
     fun `find rectangle in image that has no background`() {
         val image = listOf(
-            listOf(0)
+            listOf(0),
         )
 
         findRectangle(image) shouldBeEqualTo listOf(0, 0, 0, 0)

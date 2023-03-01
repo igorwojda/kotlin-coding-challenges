@@ -64,7 +64,7 @@ private object Solution1 {
     private data class BinaryNode<E : Comparable<E>>(
         val data: E,
         var left: BinaryNode<E>? = null,
-        var right: BinaryNode<E>? = null
+        var right: BinaryNode<E>? = null,
     )
 }
 

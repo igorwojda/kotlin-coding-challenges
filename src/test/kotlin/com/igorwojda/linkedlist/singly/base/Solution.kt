@@ -112,8 +112,7 @@ object Solution1 {
 
     data class Node<T>(
         var data: T,
-        var next: Node<T>? = null
+        var next: Node<T>? = null,
     )
 }
-
 private object KtLintWillNotComplain
