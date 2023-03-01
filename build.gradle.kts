@@ -41,7 +41,7 @@ kotlin {
 
 spotless {
     kotlin {
-        target("*/src/**/*.kt")
+        target("test/com/igorwojda/**/*.kt")
         ktlint()
 
         indentWithSpaces()
