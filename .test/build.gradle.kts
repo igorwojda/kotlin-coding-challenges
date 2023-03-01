@@ -41,10 +41,10 @@ kotlin {
 
 spotless {
     kotlin {
+        target("com/igorwojda/**/*.kt")
         ktlint()
 
         indentWithSpaces()
         endWithNewline()
     }
 }
-
