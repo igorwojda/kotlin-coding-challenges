@@ -35,8 +35,8 @@ jobs:
       - name: spotless check (test project)
         run: cd .test && ./gradlew spotlessCheck
 
-      - name: ktlint check (root project)
-        run: ./gradlew ktlintCheck
+      - name: spotless check (root project)
+        run: ./gradlew spotlessCheck
 
       - name: Generate tests for every solution
         run: cd .test && ./gradlew generateTests
