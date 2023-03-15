@@ -15,7 +15,7 @@ object TestUtils {
     /**
      * Return list of project names
      */
-    fun getChellengeDirectories(): List<File> {
+    fun challengeDirectories(): List<File> {
         val path = "${repoRootDirectoryFile.path}/src/test/kotlin/com/igorwojda"
         val directory = File(path)
         val miscDirectoryName = "misc"
