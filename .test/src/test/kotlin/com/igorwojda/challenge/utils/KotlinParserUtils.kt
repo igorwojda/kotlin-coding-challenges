@@ -20,14 +20,14 @@ object KotlinParserUtils {
         ).project
     }
 
-    private fun getChallengeFile(challengeDirectoryPath: File, chalengeFile: ChallengeFile): File {
-        val path = "${challengeDirectoryPath.path}/${chalengeFile.fileName}"
+    private fun getChallengeFile(challengeDirectoryPath: File, challengeFile: ChallengeFile): File {
+        val path = "${challengeDirectoryPath.path}/${challengeFile.fileName}"
         return File(path)
     }
 
-    fun getChallengeKtFile(pchallengeDirectoryPath: File, ChallengeFile: ChallengeFile): KtFile {
-        val file = getChallengeFile(pchallengeDirectoryPath, ChallengeFile)
-        val fullFileName = "${pchallengeDirectoryPath.path}/${ChallengeFile.fileName}"
+    fun getChallengeKtFile(challengeDirectoryPath: File, challengeFile: ChallengeFile): KtFile {
+        val file = getChallengeFile(challengeDirectoryPath, challengeFile)
+        val fullFileName = "${challengeDirectoryPath.path}/${challengeFile.fileName}"
         return getChallengeKtFile(file.readText(), fullFileName)
     }
 
