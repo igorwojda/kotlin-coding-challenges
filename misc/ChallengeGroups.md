@@ -84,7 +84,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 - [Capitalize First](../src/test/kotlin/com/igorwojda/list/capitalizeFirst/README.md)
 - [Flatten](../src/test/kotlin/com/igorwojda/list/flatten/README.md)
-- [List chunking](../src/test/kotlin/com/igorwojda/list/listchunk/README.md)
+- [Chunk](../src/test/kotlin/com/igorwojda/list/chunk/README.md)
 - [Max sub-list sum](../src/test/kotlin/com/igorwojda/list/maxsublistsum/README.md)
 - [Min sub-list length](../src/test/kotlin/com/igorwojda/list/minsublistlength/README.md)
 - [Find the pair with average](../src/test/kotlin/com/igorwojda/list/pairaverage/README.md)

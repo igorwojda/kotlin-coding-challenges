@@ -117,7 +117,7 @@ multiple times and be persistent over time.
 
 **Commander**
 
-- [List chunk](src/test/kotlin/com/igorwojda/list/listchunk)
+- [Chunk](src/test/kotlin/com/igorwojda/list/chunk)
 - [Singly linked list](src/test/kotlin/com/igorwojda/linkedlist/singly/base)
 - [Linked list midpoint](src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint)
 - [Circular check](src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck)
