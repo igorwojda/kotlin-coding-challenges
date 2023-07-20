@@ -114,6 +114,7 @@ multiple times and be persistent over time.
 - [Radix sort](src/test/kotlin/com/igorwojda/list/sort/radixsort)
 - [Doubly linked list](src/test/kotlin/com/igorwojda/linkedlist/doubly/base)
 - [Max binary heap](src/test/kotlin/com/igorwojda/tree/heap/maxbinaryheap)
+- [Add Numbers](src/test/kotlin/com/igorwojda/linkedlist/singly/addnumbers)
 
 **Expert**
 
