@@ -101,6 +101,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Circular linked list?](../src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck/README.md)
 - [Take n-th element from last](../src/test/kotlin/com/igorwojda/linkedlist/singly/fromlast/README.md)
 - [Midpoint](../src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint/README.md)
+- [Add Numbers](../src/test/kotlin/com/igorwojda/linkedlist/singly/addnumbers)
 
 ## Doubly Linked List
 
