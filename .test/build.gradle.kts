@@ -36,7 +36,7 @@ task("generateTests") {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(19)
 }
 
 spotless {
