@@ -1,34 +1,77 @@
 package com.igorwojda.list.medianoftwosorted
 
 // Time complexity: O(log (m+n))
-private object Solution1 {
-    fun medianOfSortedLists(nums1: IntArray, nums2: IntArray): Double {
-        val mergedArray = nums1.plus(nums2)
-        mergedArray.sort()
+private object Solution {
+    fun medianOfSortedLists(list1: List<Int>, list2: List<Int>): Double {
+        val totalSize = list1.size + list2.size
 
-        val median = if (mergedArray.size % 2 != 0) {
-            mergedArray[mergedArray.size / 2].toDouble()
-        } else {
-            (mergedArray[mergedArray.size / 2].toDouble() + mergedArray[mergedArray.size / 2 - 1].toDouble()) / 2
+        val lastIndex = (totalSize / 2)
+        var prevValue: Int? = null
+
+        var pointer1Index = 0
+        var pointer2Index = 0
+
+        (0..lastIndex).forEach {
+            val value1 = list1.getOrNull(pointer1Index)
+            val value2 = list2.getOrNull(pointer2Index)
+
+            val minValue = when {
+                value1 != null && value2 == null -> {
+                    pointer1Index++
+                    value1
+                }
+                value2 != null && value1 == null -> {
+                    pointer2Index++
+                    value2
+                }
+                value1!! < value2!! -> {
+                    pointer1Index++
+                    value1
+                }
+                else -> {
+                    pointer2Index++
+                    value2
+                }
+            }
+
+            if (it == lastIndex) {
+                val totalSizeIsOdd = totalSize % 2 != 0
+
+                return if (totalSizeIsOdd) {
+                    return minValue.toDouble()
+                } else {
+                    val localPrevValue = prevValue
+
+                    if (localPrevValue == null) {
+                        minValue.toDouble()
+                    } else {
+                        (localPrevValue + minValue) / 2.0
+                    }
+                }
+            }
+
+            prevValue = minValue
+            println("-----------")
         }
-        return median
+
+        return 0.0
     }
 }
 
 // Time complexity: O(n)
 // Space complexity O(n)
 private object Solution2 {
-    fun medianOfSortedLists(nums1: IntArray, nums2: IntArray): Double {
-        val mergedArray = nums1.plus(nums2)
-        mergedArray.sort()
+    fun medianOfSortedLists(list1: IntArray, list2: IntArray): Double {
+        val mergedList = list1
+            .plus(list2)
+            .sorted()
 
-        val median = if (mergedArray.size % 2 != 0) {
-            mergedArray[mergedArray.size / 2].toDouble()
+        val median = if (mergedList.size % 2 != 0) {
+            mergedList[mergedList.size / 2].toDouble()
         } else {
-            (mergedArray[mergedArray.size / 2].toDouble() + mergedArray[mergedArray.size / 2 - 1].toDouble()) / 2
+            (mergedList[mergedList.size / 2].toDouble() + mergedList[mergedList.size / 2 - 1].toDouble()) / 2
         }
+
         return median
     }
 }
-
-private object KtLintWillNotComplain
