@@ -1,4 +1,4 @@
-name: run checks
+name: Check
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     types: [ opened, synchronize ]
 
 jobs:
-  run:
+  check:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
