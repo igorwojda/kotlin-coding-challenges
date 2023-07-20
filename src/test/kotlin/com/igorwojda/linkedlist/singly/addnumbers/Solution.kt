@@ -1,6 +1,6 @@
 package com.igorwojda.linkedlist.singly.addnumbers
 
-object Solution1 {
+object Solution {
     private fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
         val n1 = getNumber(l1)
         val n2 = getNumber(l2)
