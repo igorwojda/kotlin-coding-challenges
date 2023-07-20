@@ -9,14 +9,14 @@ help you to become a better programmer and improve your chance of getting a new 
 
 ## Challenge structure
 
-Each challenge is located in separate package, and it contains 3 main
+Each challenge is located in a separate package, and it contains 3 main
 files ([screen](./misc/image/challenge-structure.png)):
 
 - `README.md` - the task description.
-- `Challenge.kt` - file containing an empty method/class where challenge should be solved. This file also contains
-  set of test and occasionally helper methods. You can run all tests directly from this file (click green arrow next to
+- `Challenge.kt` - file containing an empty method/class where the challenge should be solved. This file also contains
+  a set of tests and occasionally helper methods. You can run all tests directly from this file (click the green arrow next to
   `Test` class).
-  [JUnit](https://junit.org/junit4/) tests which verify that task was solved correctly.
+  [JUnit](https://junit.org/junit4/) tests which verify that the task was solved correctly.
 - `Solution.kt` - a file containing one or more solutions.
 
 Keep in mind that each challenge will usually have more than one solution. Even simple challenges like
@@ -29,14 +29,14 @@ determine space/time complexity, and we look at code readability.
 ## How do I start?
 
 1. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-2. Import project by using IntelliJ IDEA menu: `File | New | Project From Version Control | Git`
+2. Import the project by using the IntelliJ IDEA menu: `File | New | Project From Version Control | Git`
 3. Choose a challenge ([src\test\kotlin\com\igorwojda](src/test/kotlin/com/igorwojda) package) and code
    the solution in the `Challenge.kt` file
-4. [Run the tests](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Running-tests) in the `Challenge.kt` file to verify provided solution
+4. [Run the tests](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Running-tests) in the `Challenge.kt` file to verify the provided solution
 
 # Let's solve some challenges
 
-Challenges below are segregated by different difficulties. The repository also contains challenges grouped by
+The challenges below are segregated by different difficulties. The repository also contains challenges grouped by
 [problem type](misc/ChallengeGroups.md).
 
 Some challenges may contain a reference to other challenges that should be solved before to have a better understanding
@@ -140,28 +140,28 @@ multiple times and be persistent over time.
 ### Challenges
 
 - [GeeksForGeeks](https://practice.geeksforgeeks.org/explore) - large and nicely segregated set of problems.
-- [HackerRank](https://www.hackerrank.com/dashboard) - large set of problems and additional interview problems for
+- [HackerRank](https://www.hackerrank.com/dashboard) - a large set of problems and additional interview problems for
   business.
-- [LeetCode](https://leetcode.com/problemset/all) - data structures / algorithms / company interview problems segregated
+- [LeetCode](https://leetcode.com/problemset/all) - data structures/algorithms/company interview problems segregated
   by difficulty.
 - [Exercism](https://exercism.io/) - coding challenge website that offers MANY challenges spanning over 60 programming languages.
 - [Project Euler](https://projecteuler.net/archives) - more complex challenges, usually related to mathematics. The site
-  already contains 600+ problems and a new code challenge is available very week or two. You will probably have to
+  already contains 600+ problems and a new code challenge is available every week or two. You will probably have to
   discuss the problem with the community because solutions are not on the website.
-- [Advent of code](https://adventofcode.com/2018/events) - one month of various programing problems released daily at
-  the end of the year. Fortunately archive of past events is still there.
-- [CoderByte](https://coderbyte.com/challenges) - 200+ challenges, data structures / algorithms / company interview
-  problems segregated by difficulty. Unfortunately most of them are only available for premium users. Premium gives you
+- [Advent of code](https://adventofcode.com/2018/events) - one month of various programming problems released daily at
+  the end of the year. Fortunately, archive of past events is still there.
+- [CoderByte](https://coderbyte.com/challenges) - 200+ challenges, data structures/algorithms/company interview
+  problems segregated by difficulty. Unfortunately, most of them are only available for premium users. Premium gives you
   access to premium step-by-step solutions and user solutions.
-- [CodeChef](https://www.codechef.com/problems/school) - contains set of programming problems segregated by difficulty.
+- [CodeChef](https://www.codechef.com/problems/school) - contains a set of programming problems segregated by difficulty.
 - [Code Forces](http://codeforces.com/problemset) - list of programming challenges is smaller than other websites, but
   you will still have plenty of problems to solve.
 - [Spoj](https://www.spoj.com/problems/classical) - list of programming challenges is smaller than other websites, but
   you will still have plenty of problems to solve.
 
-### Game challanges
-- [CodeWars](https://www.codewars.com/) - solve visuial challanges by writing code for the.
-- [CodinGame](https://www.codingame.com/) - solve visuial challanges by writing code for the.
+### Game challenges
+- [CodeWars](https://www.codewars.com/) - solve visual challenges by writing code for the.
+- [CodinGame](https://www.codingame.com/) - solve visual challenges by writing code for the.
 
 ## Video courses
 
@@ -185,12 +185,12 @@ multiple times and be persistent over time.
 - [VisuAlgo](https://visualgo.net/en) - visualizes data structures and algorithms through animations algorithms.
 - [Data structures explained](https://medium.com/basecs/tagged/data-structures) - description of various data
   structures.
-- [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms) - visually compares most popular
+- [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms) - visually compares the most popular
   sorting algorithms using animations.
 - [Big-O Reference](http://bigoref.com/) - summarizes the complexities in terms of space and time (Big-O) of the most
   important algorithms and operations in common data structures.
 - [Big-O poster](https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf) - time/space complexity poster to
-  print ant put on the wall.
+  print and put on the wall.
 - [Big-O Cheat Sheet](http://bigocheatsheet.com/) - covers the space and time Big-O complexities of common algorithms.
 
 ## Coding interview repositories
@@ -201,7 +201,7 @@ multiple times and be persistent over time.
 
 # Contribute
 
-Feedback and new contributions are welcome whether it's through bug reports or new PRs. To add new coding challenge just
+Feedback and new contributions are welcome whether it's through bug reports or new PRs. To add new coding challenges just
 follow this [guide](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Adding-a-new-challenge) and open PR.
 
 # Author
