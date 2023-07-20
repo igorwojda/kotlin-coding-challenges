@@ -30,9 +30,9 @@ determine space/time complexity, and we look at code readability.
 
 1. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 2. Import project by using IntelliJ IDEA menu: `File | New | Project From Version Control | Git`
-3. Choose a challenge ([src\test\kotlin\com\igorwojda](src/test/kotlin/com/igorwojda) directory) and code
-   the solution
-4. [Run the tests](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Running-tests) to verify your solution
+3. Choose a challenge ([src\test\kotlin\com\igorwojda](src/test/kotlin/com/igorwojda) package) and code
+   the solution in the `Challenge.kt` file
+4. [Run the tests](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Running-tests) in the `Challenge.kt` file to verify provided solution
 
 # Let's solve some challenges
 
