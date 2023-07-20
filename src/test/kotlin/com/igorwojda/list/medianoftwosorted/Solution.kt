@@ -1,7 +1,7 @@
 package com.igorwojda.list.medianoftwosorted
 
 // Time complexity: O(log (m+n))
-private object Solution {
+private object Solution1 {
     fun medianOfSortedLists(list1: List<Int>, list2: List<Int>): Double {
         val totalSize = list1.size + list2.size
 
