@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun squareEquals(list: List<Int>, squared: List<Int>): Boolean {
-    TODO("not implemented")
+    TODO("Add your solution here")
 }
 
 private class Test {

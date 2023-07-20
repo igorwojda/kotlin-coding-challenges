@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 fun minSubListLength(list: List<Int>, sum: Int): Int {
-    TODO("not implemented")
+    TODO("Add your solution here")
 }
 
 private fun min(i1: Int?, i2: Int?): Int? {

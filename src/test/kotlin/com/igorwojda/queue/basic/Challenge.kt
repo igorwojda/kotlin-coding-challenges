@@ -8,15 +8,15 @@ private class Queue<E> {
         private set
 
     fun add(element: E) {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
-    fun remove(): E = TODO("not implemented")
+    fun remove(): E = TODO("Add your solution here")
 
-    fun peek(): E = TODO("not implemented")
+    fun peek(): E = TODO("Add your solution here")
 
     fun isEmpty(): Boolean {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 }
 

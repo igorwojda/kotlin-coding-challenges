@@ -63,31 +63,31 @@ private class BinarySearchTree<E : Comparable<E>> {
     fun isEmpty() = root == null
 
     fun traverseBreathFirst(): List<E> {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun traverseDepthFirstPreOrder(): List<E> {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun traverseDepthFirstInOrder(): List<E> {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun traverseDepthFirstPostOrder(): List<E> {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun traverseDepthFirstPreOrderReversed(): List<E> {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun traverseDepthFirstInOrderReversed(): List<E> {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun traverseDepthFirstPostOrderReverse(): List<E> {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 }
 

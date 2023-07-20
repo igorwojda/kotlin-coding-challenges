@@ -7,20 +7,20 @@ private class MaxBinaryHeap<E : Comparable<E>> {
     val items = mutableListOf<E>()
 
     fun add(element: E) {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun removeMax(): E? {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
-    private fun getParentIndex(index: Int): Int = TODO("not implemented")
+    private fun getParentIndex(index: Int): Int = TODO("Add your solution here")
 
-    private fun getLeftChildIndex(index: Int): Int = TODO("not implemented")
+    private fun getLeftChildIndex(index: Int): Int = TODO("Add your solution here")
 
-    private fun getRightChildIndex(index: Int): Int = TODO("not implemented")
+    private fun getRightChildIndex(index: Int): Int = TODO("Add your solution here")
 
-    fun isEmpty(): Boolean = TODO("not implemented")
+    fun isEmpty(): Boolean = TODO("Add your solution here")
 
     private fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
         val tmp = this[index1]
