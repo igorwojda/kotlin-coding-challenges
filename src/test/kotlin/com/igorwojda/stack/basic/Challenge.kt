@@ -7,19 +7,19 @@ private class Stack<E> {
     var size = 0
 
     fun add(element: E) {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun remove(): E? {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun peek(): E? {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun isEmpty(): Boolean {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 }
 

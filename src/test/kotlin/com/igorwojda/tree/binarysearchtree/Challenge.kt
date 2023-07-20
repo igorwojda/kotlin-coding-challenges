@@ -8,15 +8,15 @@ private class BinarySearchTree<E : Comparable<E>> {
         private set
 
     fun add(element: E) {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun contains(element: E): Boolean {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun isEmpty(): Boolean {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 }
 

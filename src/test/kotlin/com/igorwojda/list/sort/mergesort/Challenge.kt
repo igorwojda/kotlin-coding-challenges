@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test
 private fun mergeSort(list: List<Int>): List<Int> {
     // Take two sorted lists and merge them together into one sorted list
     fun merge(left: MutableList<Int>, right: MutableList<Int>): MutableList<Int> {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
-    TODO("not implemented")
+    TODO("Add your solution here")
 }
 
 private class Test {

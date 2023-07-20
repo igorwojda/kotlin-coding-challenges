@@ -4,7 +4,7 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun chunk(list: List<Int>, size: Int): List<List<Int>> {
-    TODO("not implemented")
+    TODO("Add your solution here")
 }
 
 private class Test {

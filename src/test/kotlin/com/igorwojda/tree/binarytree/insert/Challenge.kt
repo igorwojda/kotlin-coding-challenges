@@ -9,11 +9,11 @@ private data class Node<E : Comparable<E>>(
     var right: Node<E>? = null,
 ) {
     fun insert(e: E) {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 
     fun contains(e: E): Boolean {
-        TODO("not implemented")
+        TODO("Add your solution here")
     }
 }
 
