@@ -42,6 +42,7 @@ loops which decreases complexity from `O(n^2)` to `O(n)`.
 - [Get duplicated arguments](../src/test/kotlin/com/igorwojda/string/getduplicatedarguments/README.md)
 - [Midpoint](../src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint/README.md)
 - [Circular check](../src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck/README.md)
+- [Medan Of Sorted Lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted/README.md)
 
 ## Frequency counter
 

@@ -24,7 +24,7 @@ Keep in mind that each challenge will usually have more than one solution. Even 
 [10 different ways](https://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/). Usually, we compare various
 solutions using
 ([Big O notation](https://medium.com/karuna-sehgal/a-simplified-explanation-of-the-big-o-notation-82523585e835)) to
-determine space/time complexity and we look at code readability.
+determine space/time complexity, and we look at code readability.
 
 ## How do I start?
 
@@ -47,7 +47,7 @@ look at [problem-solving strategy](https://github.com/igorwojda/kotlin-coding-ch
 Take your time before you view the presented solution. To succeed you need to practice often, repeat the same challenges
 multiple times and be persistent over time.
 
-**Good luck!**
+**Good luck! 🤞**
 
 **New in Town**
 
@@ -130,6 +130,7 @@ multiple times and be persistent over time.
 - [Min sub list length](src/test/kotlin/com/igorwojda/list/minsublistlength)
 - [Subtract](src/test/kotlin/com/igorwojda/list/subtract)
 - [Coins](src/test/kotlin/com/igorwojda/list/coins)
+- [Medan Of Sorted Lists](src/test/kotlin/com/igorwojda/list/medianoftwosorted/README.md)
 
 # Useful links
 
