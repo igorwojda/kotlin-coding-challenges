@@ -1,4 +1,4 @@
-# Find the pair with average
+# The pair with average
 
 ## Instructions
 
