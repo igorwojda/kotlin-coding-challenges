@@ -1,4 +1,4 @@
-# MMedia
+# Median Of Two Sorted Lists
 
 ## Instructions
 
