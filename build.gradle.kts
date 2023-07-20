@@ -16,14 +16,6 @@ dependencies {
     testImplementation("org.amshove.kluent:kluent:1.73")
 }
 
-sourceSets {
-    test {
-        java {
-            srcDirs.add(File("src/test"))
-        }
-    }
-}
-
 tasks.test {
     useJUnitPlatform()
 
