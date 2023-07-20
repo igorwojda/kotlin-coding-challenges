@@ -36,7 +36,7 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(20)
 }
 
 spotless {
