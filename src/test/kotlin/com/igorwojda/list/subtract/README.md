@@ -5,7 +5,7 @@
 - [Is anagram](../../string/isanagram/README.md)
 - [Square equals](../squareequal/README.md)
 - [Digit frequency](../../integer/digitfrequency/README.md)
-- [Max occurring char](../../string/maxchar/README.md)
+- [Max occurring char](../../string/maxoccurringchar/README.md)
 - [Get duplicated arguments](../../string/getduplicatedarguments/README.md)
 
 ## Instructions
