@@ -61,7 +61,7 @@ private object Solution1 {
 // Time complexity: O(n)
 // Space complexity O(n)
 private object Solution2 {
-    fun medianOfSortedLists(list1: IntArray, list2: IntArray): Double {
+    fun medianOfSortedLists(list1: List<Int>, list2: List<Int>): Double {
         val mergedList = list1
             .plus(list2)
             .sorted()
