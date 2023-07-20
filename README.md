@@ -49,7 +49,7 @@ multiple times and be persistent over time.
 
 **Good luck! 🤞**
 
-**New in Town**
+**Beginner**
 
 - [Capitalize sentence](src/test/kotlin/com/igorwojda/string/capitalizesentence)
 - [Get odd numbers](src/test/kotlin/com/igorwojda/integer/getodd)
@@ -70,7 +70,7 @@ multiple times and be persistent over time.
 - [Decapitalize const](src/test/kotlin/com/igorwojda/string/decapitalizeconst)
 - [Longest word](src/test/kotlin/com/igorwojda/string/longestword)
 
-**Apprentice**
+**Intermediate**
 
 - [Is palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/basic)
 - [Is tolerant palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/tolerant)
@@ -86,7 +86,7 @@ multiple times and be persistent over time.
 - [Caesar Cipher](src/test/kotlin/com/igorwojda/string/caesarcipher)
 - [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter)
 
-**Warrior** 
+**Advanced** 
 
 - [Spiral matrix generator](src/test/kotlin/com/igorwojda/matrix/spiralmatrixgenerator)
 - [Find rectangle](src/test/kotlin/com/igorwojda/matrix/findrectangle)
@@ -115,7 +115,7 @@ multiple times and be persistent over time.
 - [Doubly linked list](src/test/kotlin/com/igorwojda/linkedlist/doubly/base)
 - [Max binary heap](src/test/kotlin/com/igorwojda/tree/heap/maxbinaryheap)
 
-**Commander**
+**Expert**
 
 - [Chunk](src/test/kotlin/com/igorwojda/list/chunk)
 - [Singly linked list](src/test/kotlin/com/igorwojda/linkedlist/singly/base)
@@ -136,7 +136,7 @@ multiple times and be persistent over time.
 
 ## More coding challenges
 
-### Challanges
+### Challenges
 
 - [GeeksForGeeks](https://practice.geeksforgeeks.org/explore) - large and nicely segregated set of problems.
 - [HackerRank](https://www.hackerrank.com/dashboard) - large set of problems and additional interview problems for
