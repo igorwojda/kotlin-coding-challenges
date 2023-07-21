@@ -187,8 +187,6 @@ multiple times and be persistent over time.
   structures.
 - [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms) - visually compares the most popular
   sorting algorithms using animations.
-- [Big-O Reference](http://bigoref.com/) - summarizes the complexities in terms of space and time (Big-O) of the most
-  important algorithms and operations in common data structures.
 - [Big-O poster](https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf) - time/space complexity poster to
   print and put on the wall.
 - [Big-O Cheat Sheet](http://bigocheatsheet.com/) - covers the space and time Big-O complexities of common algorithms.
