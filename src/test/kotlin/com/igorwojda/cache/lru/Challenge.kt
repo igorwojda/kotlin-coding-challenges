@@ -4,24 +4,33 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 class LRUCache(private val capacity: Int) {
-    private val map = HashMap<Int, Node>()
-    val size: Int get() = TODO("Add your solution here")
+    private val list = mutableListOf<Pair<Int, String>>()
+
+    val size get() = list.size
 
     fun get(key: Int): String? {
-        TODO("Add your solution here")
+        val value = list.firstOrNull { it.first == key }?.second
+
+        if (value != null) {
+            val pair = Pair(key, value)
+            list.remove(pair)
+            list.add(pair)
+        }
+
+        return list.firstOrNull { it.first == key }?.second
     }
 
     fun put(key: Int, value: String) {
-        TODO("Add your solution here")
+        list.removeIf { it.first == key }
+        list.add(Pair(key, value))
+
+        if (list.size > capacity) {
+            list.removeFirst()
+        }
     }
 
     fun clear() {
-        TODO("Add your solution here")
-    }
-
-    data class Node(var key: Int, var value: String) {
-        var prev: Node? = null
-        var next: Node? = null
+        list.clear()
     }
 }
 
@@ -34,19 +43,7 @@ private class Test {
     }
 
     @Test
-    fun `put 2 items in lru cache when cache size is 2`() {
-        val lruCache = LRUCache(2)
-
-        lruCache.put(1, "Person1")
-        lruCache.put(2, "Person2")
-
-        lruCache.size shouldBeEqualTo 2
-        lruCache.get(1) shouldBeEqualTo "Person1"
-        lruCache.get(2) shouldBeEqualTo "Person2"
-    }
-
-    @Test
-    fun `put 3 items in lru cache when cache size is 2`() {
+    fun `oldest value is not removed from cache after capacity is exceeded`() {
         val lruCache = LRUCache(2)
 
         lruCache.put(1, "Person1")
@@ -56,6 +53,19 @@ private class Test {
         lruCache.size shouldBeEqualTo 2
         lruCache.get(1) shouldBeEqualTo null
         lruCache.get(2) shouldBeEqualTo "Person2"
+        lruCache.get(3) shouldBeEqualTo "Person3"
+    }
+
+    @Test
+    fun `retrieved element becomes most recently used`() {
+        val lruCache = LRUCache(2)
+        lruCache.put(1, "Person1")
+        lruCache.put(2, "Person2")
+        lruCache.get(1)
+        lruCache.put(3, "Person3")
+
+        lruCache.get(1) shouldBeEqualTo "Person1"
+        lruCache.get(2) shouldBeEqualTo null
         lruCache.get(3) shouldBeEqualTo "Person3"
     }
 

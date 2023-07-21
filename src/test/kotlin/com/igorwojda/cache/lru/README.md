@@ -12,6 +12,7 @@ Implement the `LRUCache` class:
 - `put(key: Int, value: String)` - update the value of the key if the key exists, otherwise, add the key-value pair 
 to the cache. If the number of keys exceeds the capacity from this operation, evict the least recently used key.
 - `clear` - clears the cache.
+- `size` - currently used cache.
 
 The overall run time complexity of each methods should be `O(1)`.
 

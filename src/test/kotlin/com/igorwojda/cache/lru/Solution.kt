@@ -88,7 +88,13 @@ private object Solution2 {
             internalCache[key] = value
         }
 
-        fun get(key: Int) = internalCache[key]
+        fun get(key: Int): String? {
+            val value = internalCache.remove(key)
+            if (value != null) {
+                put(key, value)
+            }
+            return value
+        }
 
         fun remove(key: Int) {
             internalCache.remove(key)
@@ -109,8 +115,17 @@ private object Solution3 {
         val size get() = list.size
 
         fun get(key: Int): String? {
+            val value = list.firstOrNull { it.first == key }?.second
+
+            if (value != null) {
+                val pair = Pair(key, value)
+                list.remove(pair)
+                list.add(pair)
+            }
+
             return list.firstOrNull { it.first == key }?.second
         }
+
         fun put(key: Int, value: String) {
             list.removeIf { it.first == key }
             list.add(Pair(key, value))
