@@ -131,7 +131,8 @@ multiple times and be persistent over time.
 - [Min sub list length](src/test/kotlin/com/igorwojda/list/minsublistlength)
 - [Subtract](src/test/kotlin/com/igorwojda/list/subtract)
 - [Coins](src/test/kotlin/com/igorwojda/list/coins)
-- [Medan Of Sorted Lists](src/test/kotlin/com/igorwojda/list/medianoftwosorted/README.md)
+- [Medan Of Sorted Lists](src/test/kotlin/com/igorwojda/list/medianoftwosorted)
+- [LRU Cache](src/test/kotlin/com/igorwojda/cache/lru)
 
 # Useful links
 
