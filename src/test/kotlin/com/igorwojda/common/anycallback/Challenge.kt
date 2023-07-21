@@ -1,4 +1,4 @@
-package com.igorwojda.various.anycallback
+package com.igorwojda.common.anycallback
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test

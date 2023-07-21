@@ -1,4 +1,4 @@
-package com.igorwojda.various.anycallback
+package com.igorwojda.common.anycallback
 
 private object Solution1 {
     private fun anyCallback(list: List<Int>, callback: (Int) -> Boolean): Boolean {

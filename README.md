@@ -105,7 +105,7 @@ multiple times and be persistent over time.
 - [Tree level width](src/test/kotlin/com/igorwojda/tree/classic/levelwidth)
 - [Binary search tree (insert)](src/test/kotlin/com/igorwojda/tree/binarytree/insert)
 - [Binary search tree (validate)](src/test/kotlin/com/igorwojda/tree/binarytree/validate)
-- [Any callback](src/test/kotlin/com/igorwojda/various/anycallback)
+- [Any callback](src/test/kotlin/com/igorwojda/common/anycallback)
 - [Flatten](src/test/kotlin/com/igorwojda/list/flatten)
 - [Binary search](src/test/kotlin/com/igorwojda/list/search/binarysearch)
 - [Surrounded letter](src/test/kotlin/com/igorwojda/string/surroundedletter)

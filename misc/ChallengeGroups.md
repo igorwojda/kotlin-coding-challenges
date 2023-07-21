@@ -9,7 +9,7 @@ List of problems that can be solved using [recursion](https://en.wikipedia.org/w
 
 - [Count down](../src/test/kotlin/com/igorwojda/integer/countdown)
 - [Get odd](../src/test/kotlin/com/igorwojda/integer/getodd)
-- [Any callback](../src/test/kotlin/com/igorwojda/various/anycallback)
+- [Any callback](../src/test/kotlin/com/igorwojda/common/anycallback)
 - [Power](../src/test/kotlin/com/igorwojda/integer/power)
 - [Binary search tree (validate)](../src/test/kotlin/com/igorwojda/tree/binarytree/validate)
 - [Fibonacci](../src/test/kotlin/com/igorwojda/integer/fibonacci/basic)
