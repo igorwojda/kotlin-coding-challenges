@@ -71,6 +71,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 - [Linear search](../src/test/kotlin/com/igorwojda/list/search/linearsearch)
 - [Binary search](../src/test/kotlin/com/igorwojda/list/search/binarysearch)
+- [Medan Of Sorted Lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted)
 
 ### Sort algorithms
 
@@ -93,7 +94,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Square compare](../src/test/kotlin/com/igorwojda/list/squareequal)
 - [List subtract](../src/test/kotlin/com/igorwojda/list/subtract)
 - [Sum zero](../src/test/kotlin/com/igorwojda/list/sumzero)
-- [Coins](src/test/kotlin/com/igorwojda/list/coins)
+- [Coins](../src/test/kotlin/com/igorwojda/list/coins)
 
 ## Singly Linked List
 
