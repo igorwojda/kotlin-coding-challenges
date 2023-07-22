@@ -179,4 +179,4 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 - [Binary search tree](../src/test/kotlin/com/igorwojda/tree/binarysearchtree)
 - [Tree level width](../src/test/kotlin/com/igorwojda/tree/classic/levelwidth)
-- [Tree](../src/test/kotlin/com/igorwojda/tree/classic/traversal)
+- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/classic/traversal)
