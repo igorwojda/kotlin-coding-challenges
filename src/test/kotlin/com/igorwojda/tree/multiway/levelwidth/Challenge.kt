@@ -1,4 +1,4 @@
-package com.igorwojda.tree.classic.levelwidth
+package com.igorwojda.tree.multiway.levelwidth
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test

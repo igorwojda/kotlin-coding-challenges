@@ -1,4 +1,4 @@
-package com.igorwojda.tree.classic.traversal
+package com.igorwojda.tree.multiway.traversal
 
 private object Solution1 {
     private class BinarySearchTree<E : Comparable<E>> {

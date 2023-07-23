@@ -16,7 +16,7 @@ List of problems that can be solved using [recursion](https://en.wikipedia.org/w
 - [Fibonacci with recursive cache](../src/test/kotlin/com/igorwojda/integer/fibonacci/recursivecached)
 - [Add up to](../src/test/kotlin/com/igorwojda/integer/addupto)
 - [Is substring](../src/test/kotlin/com/igorwojda/string/issubstring)
-- [Capitalize first](../src/test/kotlin/com/igorwojda/list/capitalizeFirst)
+- [Capitalize first](../src/test/kotlin/com/igorwojda/list/capitalizefirst)
 - [Merge sort](../src/test/kotlin/com/igorwojda/list/sort/mergesort)
 - [Quick sort](../src/test/kotlin/com/igorwojda/list/sort/quicksort)
   
@@ -29,7 +29,7 @@ for recursive call) or change return type (eg. change `List<Int>` to `MutableLis
 - [Get odd](../src/test/kotlin/com/igorwojda/integer/getodd)
 - [Count down](../src/test/kotlin/com/igorwojda/integer/countdown)
 - [Is substring](../src/test/kotlin/com/igorwojda/string/issubstring)
-- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/classic/traversal)
+- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/multiway/traversal)
 
 ## Double pointer 
 
@@ -84,7 +84,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 ### Other list challenges
 
-- [Capitalize First](../src/test/kotlin/com/igorwojda/list/capitalizeFirst)
+- [Capitalize First](../src/test/kotlin/com/igorwojda/list/capitalizefirst)
 - [Flatten](../src/test/kotlin/com/igorwojda/list/flatten)
 - [Chunk](../src/test/kotlin/com/igorwojda/list/chunk)
 - [Max sub-list sum](../src/test/kotlin/com/igorwojda/list/maxsublistsum)
@@ -164,12 +164,12 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 - [Queue](../src/test/kotlin/com/igorwojda/queue/basic)
 - [Combine two queues](../src/test/kotlin/com/igorwojda/queue/combine)
-- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/classic/traversal)
+- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/multiway/traversal)
 
 ## Stack
 
 - [Stack](../src/test/kotlin/com/igorwojda/stack/basic)
-- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/classic/traversal)
+- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/multiway/traversal)
 
 ## Heap
 
@@ -178,5 +178,5 @@ We use sliding window instead of nested loops which decreases complexity from `O
 ## Tree
 
 - [Binary search tree](../src/test/kotlin/com/igorwojda/tree/binarysearchtree)
-- [Tree level width](../src/test/kotlin/com/igorwojda/tree/classic/levelwidth)
-- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/classic/traversal)
+- [Tree level width](../src/test/kotlin/com/igorwojda/tree/multiway/levelwidth)
+- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/multiway/traversal)
