@@ -120,6 +120,29 @@ private class Queue<E> {
     val size get() = list.size
 }
 
+/*
+Stack can be used as helper class to implement depth first traversal. This is not the most optimal stack implementation,
+however it's enough for this task. Check "Queue challenge" solution for more details and more efficient stack
+implementation.
+*/
+private class Stack<E> {
+    private val list = mutableListOf<E>()
+
+    val size get() = list.size
+
+    fun add(element: E) {
+        list.add(element)
+    }
+
+    fun remove() = if (list.isEmpty()) null else list.removeAt(list.lastIndex)
+
+    fun peek() = list.lastOrNull()
+
+    fun isEmpty() = list.isEmpty()
+
+    fun isNotEmpty() = list.isNotEmpty()
+}
+
 private class Test {
     @Test
     fun `traverse breath first`() {
