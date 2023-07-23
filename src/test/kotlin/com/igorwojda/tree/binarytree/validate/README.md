@@ -11,7 +11,7 @@ every node's right hand child is greater than the parent
 
 Requirements that are always true for any given node in `Binary Search Tree`:
 - parent node value is always
-  greater then value of *all* nodes in the left subtree  
+  greater than value of *all* nodes in the left subtree  
   and less than value of *all* nodes in the right subtree
 - left node value is also a valid  BST
 - right node value is also a valid BST
