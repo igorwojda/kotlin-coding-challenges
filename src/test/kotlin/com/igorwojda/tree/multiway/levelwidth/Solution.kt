@@ -1,4 +1,4 @@
-package com.igorwojda.tree.classic.levelwidth
+package com.igorwojda.tree.multiway.levelwidth
 
 private object Solution1 {
     private fun levelWidth(tree: Node): List<Int> {

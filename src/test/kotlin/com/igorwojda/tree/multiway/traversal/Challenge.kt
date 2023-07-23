@@ -1,4 +1,4 @@
-package com.igorwojda.tree.classic.traversal
+package com.igorwojda.tree.multiway.traversal
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
