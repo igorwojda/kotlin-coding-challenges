@@ -1,4 +1,4 @@
-package com.igorwojda.list.capitalizeFirst
+package com.igorwojda.list.capitalizefirst
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test

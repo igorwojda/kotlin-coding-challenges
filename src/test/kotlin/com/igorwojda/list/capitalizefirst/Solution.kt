@@ -1,4 +1,4 @@
-package com.igorwojda.list.capitalizeFirst
+package com.igorwojda.list.capitalizefirst
 
 // Kotlin idiomatic solution
 private object Solution1 {

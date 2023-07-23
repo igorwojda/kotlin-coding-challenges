@@ -16,7 +16,7 @@ List of problems that can be solved using [recursion](https://en.wikipedia.org/w
 - [Fibonacci with recursive cache](../src/test/kotlin/com/igorwojda/integer/fibonacci/recursivecached)
 - [Add up to](../src/test/kotlin/com/igorwojda/integer/addupto)
 - [Is substring](../src/test/kotlin/com/igorwojda/string/issubstring)
-- [Capitalize first](../src/test/kotlin/com/igorwojda/list/capitalizeFirst)
+- [Capitalize first](../src/test/kotlin/com/igorwojda/list/capitalizefirst)
 - [Merge sort](../src/test/kotlin/com/igorwojda/list/sort/mergesort)
 - [Quick sort](../src/test/kotlin/com/igorwojda/list/sort/quicksort)
   
@@ -84,7 +84,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 ### Other list challenges
 
-- [Capitalize First](../src/test/kotlin/com/igorwojda/list/capitalizeFirst)
+- [Capitalize First](../src/test/kotlin/com/igorwojda/list/capitalizefirst)
 - [Flatten](../src/test/kotlin/com/igorwojda/list/flatten)
 - [Chunk](../src/test/kotlin/com/igorwojda/list/chunk)
 - [Max sub-list sum](../src/test/kotlin/com/igorwojda/list/maxsublistsum)
