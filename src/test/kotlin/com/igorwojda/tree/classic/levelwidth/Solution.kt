@@ -2,6 +2,35 @@ package com.igorwojda.tree.classic.levelwidth
 
 private object Solution1 {
     private fun levelWidth(tree: Node): List<Int> {
+        val nodesAtLevel = mutableListOf<Int>()
+
+        var levelNodes = listOf(tree)
+
+        while (levelNodes.isNotEmpty()) {
+            nodesAtLevel.add(levelNodes.size)
+            levelNodes = levelNodes.flatMap { it.children }
+        }
+
+        return nodesAtLevel
+    }
+
+    private class Node(val data: String, val children: MutableList<Node> = mutableListOf()) {
+        fun add(data: String) {
+            add(Node(data))
+        }
+
+        fun add(node: Node) {
+            children.add(node)
+        }
+
+        fun remove(data: String) {
+            children.removeAll { it.data == data }
+        }
+    }
+}
+
+private object Solution2 {
+    private fun levelWidth(tree: Node): List<Int> {
         val result = mutableListOf<Int>()
 
         val nodes = mutableListOf(tree)
@@ -41,7 +70,7 @@ private object Solution1 {
     }
 }
 
-private object Solution2 {
+private object Solution3 {
     // Counters array solution
     private fun levelWidth(tree: Node): List<Int> {
         val rowSeparator = null
