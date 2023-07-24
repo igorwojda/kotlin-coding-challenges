@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-[Binary search tree](../insert/Insert.md)
+[Binary search tree](../insert/README.md)
 
 ## Instructions
 
