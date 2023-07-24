@@ -11,7 +11,7 @@ private object Solution1 {
 }
 
 // Time complexity: O(n)
-// Optimal solution using double pointer.
+// Using double pointer.
 private object Solution2 {
     fun getDuplicatedArguments(vararg strings: String): List<String>? {
         var pointer1 = 0
