@@ -1,7 +1,5 @@
 # Is substring
 
-## Nice to solve before
-
 ## Instructions
 
 Given two strings implement a function which determines whether the characters in the `second` string is a substring of

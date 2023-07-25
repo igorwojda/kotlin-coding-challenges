@@ -2,18 +2,11 @@
 
 ## Instructions
 
-Design a data structure that follows the constraints of a 
-[Least Recently Used (LRU) cache](https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU).
+Design a data structure that enables the storage and retrieval of items via a key, subject to a specified capacity
+limit. In cases where the addition of new items exceeds this capacity, ensure that space is made available through
+removing the item that was least recently accessed or used.
 
-Implement the `LRUCache` class:
-
-`LRUCache` (int capacity) Initialize the LRU cache with positive size `capacity` and two methods:
-- `get(key: Int)` - return the value of the key if the key exists, otherwise return `null`.
-- `put(key: Int, value: String)` - update the value of the key if the key exists, otherwise, add the key-value pair 
-to the cache. If the number of keys exceeds the capacity from this operation, evict the least recently used key.
-- `size` - currently used cache.
-
-The overall run time complexity of each methods should be `O(1)`.
+The overall run time complexity of each method should be `O(1)`.
 
 [Challenge](Challenge.kt) | [Solution](Solution.kt)
 
@@ -31,7 +24,7 @@ lruCache.put(2, 20)
 lruCache.put(3, 30)
 
 lruCache.size shouldBeEqualTo 2
-lruCache.get(1) shouldBeEqualTo null
+lruCache.get(1) shouldBeEqualTo null // value removed due to capacity limit
 lruCache.get(2) shouldBeEqualTo 20
 lruCache.get(3) shouldBeEqualTo 30
 ```

@@ -18,35 +18,35 @@ class LRUCache(private val capacity: Int) {
 private class Test {
     @Test
     fun `lru cache is empty after creation`() {
-        val lruCache = LRUCache(3)
+        val cache = LRUCache(3)
 
-        lruCache.size shouldBeEqualTo 0
+        cache.size shouldBeEqualTo 0
     }
 
     @Test
     fun `oldest value is not removed from cache after capacity is exceeded`() {
-        val lruCache = LRUCache(2)
+        val cache = LRUCache(2)
 
-        lruCache.put(1, "Person1")
-        lruCache.put(2, "Person2")
-        lruCache.put(3, "Person3")
+        cache.put(1, "Person1")
+        cache.put(2, "Person2")
+        cache.put(3, "Person3")
 
-        lruCache.size shouldBeEqualTo 2
-        lruCache.get(1) shouldBeEqualTo null
-        lruCache.get(2) shouldBeEqualTo "Person2"
-        lruCache.get(3) shouldBeEqualTo "Person3"
+        cache.size shouldBeEqualTo 2
+        cache.get(1) shouldBeEqualTo null
+        cache.get(2) shouldBeEqualTo "Person2"
+        cache.get(3) shouldBeEqualTo "Person3"
     }
 
     @Test
     fun `retrieved element becomes most recently used`() {
-        val lruCache = LRUCache(2)
-        lruCache.put(1, "Person1")
-        lruCache.put(2, "Person2")
-        lruCache.get(1)
-        lruCache.put(3, "Person3")
+        val cache = LRUCache(2)
+        cache.put(1, "Person1")
+        cache.put(2, "Person2")
+        cache.get(1)
+        cache.put(3, "Person3")
 
-        lruCache.get(1) shouldBeEqualTo "Person1"
-        lruCache.get(2) shouldBeEqualTo null
-        lruCache.get(3) shouldBeEqualTo "Person3"
+        cache.get(1) shouldBeEqualTo "Person1"
+        cache.get(2) shouldBeEqualTo null
+        cache.get(3) shouldBeEqualTo "Person3"
     }
 }
