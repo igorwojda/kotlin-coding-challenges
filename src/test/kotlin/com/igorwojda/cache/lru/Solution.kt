@@ -4,70 +4,98 @@ package com.igorwojda.cache.lru
 // Time Complexity: O(1)
 private object Solution1 {
     class LRUCache(private val capacity: Int) {
+        private data class Node(
+            val key: Int,
+            var value: Int,
+            var prev: Node? = null,
+            var next: Node? = null,
+        )
+
         private val map = HashMap<Int, Node>()
-        val size get() = map.size
 
         private var head: Node? = null
-        private var end: Node? = null
+        private var tail: Node? = null
 
-        fun get(key: Int): String? {
-            val node = map[key]
-            return if (node != null) {
-                remove(node)
-                setHead(node)
-                node.value
-            } else {
-                null
-            }
-        }
+        fun put(key: Int, value: Int) {
+            // 1. Check if node exicts
+            val existingNode = map[key]
 
-        fun put(key: Int, value: String) {
-            if (map.containsKey(key)) {
-                val old = map[key]
-                old?.value = value
-                remove(old)
-                setHead(old)
-            } else {
-                val created = Node(key, value)
+            if (existingNode == null) {
+                // 2. Check Map capacity
                 if (map.size >= capacity) {
-                    map.remove(end?.key)
-                    remove(end)
+                    val removedNode = removeHead()
+                    map.remove(removedNode?.key)
                 }
-                setHead(created)
-                map[key] = created
-            }
-        }
 
-        private fun setHead(node: Node?) {
-            node?.next = head
-            node?.prev = null
-            if (head != null) head?.prev = node
-            head = node
-            if (end == null) end = head
-        }
+                // 3. Add a new node
+                val newNode = Node(key, value)
 
-        private fun remove(node: Node?) {
-            if (node?.prev != null) {
-                node.prev?.next = node.next
+                map[key] = newNode
+                addTail(newNode)
             } else {
-                head = node?.next
+                existingNode.value = value
+                moveToTail(existingNode)
             }
-            if (node?.next != null) {
-                node.next?.prev = node.prev
+        }
+
+        private fun addTail(node: Node) {
+            // 1. If list is empty
+            if (head == null) {
+                head = node
             } else {
-                end = node?.prev
+                node.prev = tail
+                tail?.next = node
             }
+
+            tail = node
         }
 
-        fun clear() {
-            map.clear()
-            head = null
-            end = null
+        private fun removeHead(): Node? {
+            // 1. Head exists
+            if (head != null) {
+                // 2. Store current head to return
+                val node = head
+
+                // 3. Remove head
+                head = head?.next
+                head?.prev = null
+
+                // 4. Remove tail if head is tail
+                if (node == tail) tail = null
+
+                return node
+            }
+
+            return null
         }
 
-        data class Node(var key: Int, var value: String) {
-            var prev: Node? = null
-            var next: Node? = null
+        fun get(key: Int): Int {
+            // 1. get the node
+            val node = map[key]
+
+            // 2. Move to tail if exists
+            if (node != null) {
+                moveToTail(node)
+            }
+
+            // 3. Return value
+            return node?.value ?: -1
+        }
+
+        private fun moveToTail(node: Node) {
+            // 1. Check if node is tail
+            if (node != tail) {
+                // 2. Remove node from list
+                if (node == head) {
+                    head = node.next
+                } else {
+                    node.prev?.next = node.next
+                    node.next?.prev = node.prev
+                }
+
+                // 3. Add node to tail
+                addTail(node)
+            }
         }
     }
 }
@@ -75,33 +103,23 @@ private object Solution1 {
 // Implementation using LinkedHashMap
 // Time Complexity: O(1)
 private object Solution2 {
-    class LRUCache(capacity: Int) {
-        private val internalCache = object : LinkedHashMap<Int, String>() {
-            override fun removeEldestEntry(eldest: MutableMap.MutableEntry<Int, String>?): Boolean {
+    class LRUCache(private val capacity: Int) {
+        private val linkedHashMap = object :
+            LinkedHashMap<Int, Int> (capacity, 0.75f, true) {
+            override fun removeEldestEntry(eldest: MutableMap.MutableEntry<Int, Int>?): Boolean {
                 return size > capacity
             }
         }
 
-        val size get() = internalCache.size
-
-        fun put(key: Int, value: String) {
-            internalCache[key] = value
+        fun put(key: Int, value: Int) {
+            linkedHashMap[key] = value
         }
 
-        fun get(key: Int): String? {
-            val value = internalCache.remove(key)
-            if (value != null) {
-                put(key, value)
-            }
-            return value
-        }
-
-        fun remove(key: Int) {
-            internalCache.remove(key)
-        }
-
-        fun clear() {
-            internalCache.clear()
+        fun get(key: Int): Int {
+            return linkedHashMap[key]?.also {
+                linkedHashMap.remove(key)
+                linkedHashMap[key] = it
+            } ?: -1
         }
     }
 }
