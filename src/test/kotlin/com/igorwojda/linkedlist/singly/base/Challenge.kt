@@ -1,7 +1,7 @@
 package com.igorwojda.linkedlist.singly.base
 
 private class SinglyLinkedList<E> {
-    // implement
+    // Add your solution here
 }
 
 private data class Node<T>(

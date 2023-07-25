@@ -180,3 +180,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Binary search tree](../src/test/kotlin/com/igorwojda/tree/binarysearchtree)
 - [Tree level width](../src/test/kotlin/com/igorwojda/tree/multiway/levelwidth)
 - [Tree traversal](../src/test/kotlin/com/igorwojda/tree/multiway/traversal)
+
+## Cache
+
+- [LRU Cache](../src/test/kotlin/com/igorwojda/cache/lru)

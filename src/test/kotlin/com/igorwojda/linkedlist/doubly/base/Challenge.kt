@@ -1,7 +1,7 @@
 package com.igorwojda.linkedlist.doubly.base
 
 private class DoublyLinkedList<E> {
-    // implement
+    // Add your solution here
 }
 
 private data class Node<T>(
