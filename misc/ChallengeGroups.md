@@ -184,3 +184,4 @@ We use sliding window instead of nested loops which decreases complexity from `O
 ## Cache
 
 - [LRU Cache](../src/test/kotlin/com/igorwojda/cache/lru)
+- [Advanced Cache](../src/test/kotlin/com/igorwojda/cache/advancedlru)

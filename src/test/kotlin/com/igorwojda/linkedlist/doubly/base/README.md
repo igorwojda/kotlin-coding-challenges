@@ -2,7 +2,7 @@
 
 ## Nice to solve before
 
-[Singly linked List](../../singly/base/README.md)
+- [Singly linked List](../../singly/base/README.md)
 
 ### Instructions
 

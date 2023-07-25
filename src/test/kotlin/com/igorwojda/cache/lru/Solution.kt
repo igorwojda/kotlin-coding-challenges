@@ -4,7 +4,7 @@ package com.igorwojda.cache.lru
 // Time Complexity: O(1)
 private object Solution1 {
     class LRUCache(private val capacity: Int) {
-        private val map = HashMap<Int, Node>()
+        private val map = mutableMapOf<Int, Node>()
 
         private var head: Node? = null
         private var tail: Node? = null
@@ -12,17 +12,17 @@ private object Solution1 {
         val size get() = map.size
 
         fun put(key: Int, value: String) {
-            // 1. Check if node exicts
+            // Check if node exits
             val existingNode = map[key]
 
             if (existingNode == null) {
-                // 2. Check Map capacity
+                // Check Map capacity
                 if (map.size >= capacity) {
                     val removedNode = removeHead()
                     map.remove(removedNode?.key)
                 }
 
-                // 3. Add a new node
+                // Add a new node
                 val newNode = Node(key, value)
 
                 map[key] = newNode
@@ -34,7 +34,7 @@ private object Solution1 {
         }
 
         private fun addTail(node: Node) {
-            // 1. If list is empty
+            // If list is empty
             if (head == null) {
                 head = node
             } else {
@@ -46,16 +46,16 @@ private object Solution1 {
         }
 
         private fun removeHead(): Node? {
-            // 1. Head exists
+            // Head exists
             if (head != null) {
-                // 2. Store current head to return
+                // Store current head to return
                 val node = head
 
-                // 3. Remove head
+                // Remove head
                 head = head?.next
                 head?.prev = null
 
-                // 4. Remove tail if head is tail
+                // Remove tail if head is tail
                 if (node == tail) tail = null
 
                 return node
@@ -65,22 +65,22 @@ private object Solution1 {
         }
 
         fun get(key: Int): String? {
-            // 1. get the node
+            // Get the node
             val node = map[key]
 
-            // 2. Move to tail if exists
+            // Move to tail if exists
             if (node != null) {
                 moveToTail(node)
             }
 
-            // 3. Return value
+            // Return value
             return node?.value
         }
 
         private fun moveToTail(node: Node) {
-            // 1. Check if node is tail
+            // Check if node is tail
             if (node != tail) {
-                // 2. Remove node from list
+                // Remove node from list
                 if (node == head) {
                     head = node.next
                 } else {
@@ -88,7 +88,7 @@ private object Solution1 {
                     node.next?.prev = node.prev
                 }
 
-                // 3. Add node to tail
+                // Add node to tail
                 addTail(node)
             }
         }

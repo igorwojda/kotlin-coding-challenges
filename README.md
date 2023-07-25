@@ -133,6 +133,7 @@ multiple times and be persistent over time.
 - [Coins](src/test/kotlin/com/igorwojda/list/coins)
 - [Medan Of Sorted Lists](src/test/kotlin/com/igorwojda/list/medianoftwosorted)
 - [LRU Cache](src/test/kotlin/com/igorwojda/cache/lru)
+- [Advanced Cache](src/test/kotlin/com/igorwojda/cache/advancedlru)
 
 # Useful links
 
