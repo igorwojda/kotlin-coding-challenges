@@ -42,7 +42,7 @@ loops which decreases complexity from `O(n^2)` to `O(n)`.
 - [Get duplicated arguments](../src/test/kotlin/com/igorwojda/string/getduplicatedarguments)
 - [Midpoint](../src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint)
 - [Circular check](../src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck)
-- [Medan Of Sorted Lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted)
+- [Medan of sorted lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted)
 
 ## Frequency counter
 
@@ -71,7 +71,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 - [Linear search](../src/test/kotlin/com/igorwojda/list/search/linearsearch)
 - [Binary search](../src/test/kotlin/com/igorwojda/list/search/binarysearch)
-- [Medan Of Sorted Lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted)
+- [Medan of sorted lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted)
 
 ### Sort algorithms
 
@@ -95,6 +95,8 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [List subtract](../src/test/kotlin/com/igorwojda/list/subtract)
 - [Sum zero](../src/test/kotlin/com/igorwojda/list/sumzero)
 - [Coins](../src/test/kotlin/com/igorwojda/list/coins)
+- [Smallest elements](../src/test/kotlin/com/igorwojda/list/smallestelements)
+- [Largest elements](../src/test/kotlin/com/igorwojda/list/largestelements)
 
 ## Singly Linked List
 
@@ -102,7 +104,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Circular linked list?](../src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck)
 - [Take n-th element from last](../src/test/kotlin/com/igorwojda/linkedlist/singly/fromlast)
 - [Midpoint](../src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint)
-- [Add Numbers](../src/test/kotlin/com/igorwojda/linkedlist/singly/addnumbers)
+- [Add numbers](../src/test/kotlin/com/igorwojda/linkedlist/singly/addnumbers)
 
 ## Doubly Linked List
 
@@ -134,7 +136,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 ## String
 
-- [Caesar Cipher](../src/test/kotlin/com/igorwojda/string/caesarcipher)
+- [Caesar cipher](../src/test/kotlin/com/igorwojda/string/caesarcipher)
 - [Capitalize sentence](../src/test/kotlin/com/igorwojda/string/capitalizesentence)
 - [Decapitalize const](../src/test/kotlin/com/igorwojda/string/decapitalizeconst)
 - [Get duplicated arguments](../src/test/kotlin/com/igorwojda/string/getduplicatedarguments)
@@ -185,3 +187,8 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 - [LRU Cache](../src/test/kotlin/com/igorwojda/cache/lru)
 - [Advanced Cache](../src/test/kotlin/com/igorwojda/cache/advancedlru)
+
+## Priority Queue
+
+- [Smallest elements](../src/test/kotlin/com/igorwojda/list/smallestelements)
+- [Largest elements](../src/test/kotlin/com/igorwojda/list/largestelements)
