@@ -137,6 +137,10 @@ multiple times and be persistent over time.
 - [LRU Cache](src/test/kotlin/com/igorwojda/cache/lru)
 - [Advanced Cache](src/test/kotlin/com/igorwojda/cache/advancedlru)
 
+# Troubleshoot
+
+If you don't see the green play icon used to run the tests try to open `Settings` > `Build, Execution, Deployment` > `Build tools` > `Gradle` and set `Gradle JVM` to a different version.
+
 # Useful links
 
 ## More coding challenges
