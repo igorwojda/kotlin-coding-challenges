@@ -4,19 +4,14 @@ package com.igorwojda.cache.lru
 // Time Complexity: O(1)
 private object Solution1 {
     class LRUCache(private val capacity: Int) {
-        private data class Node(
-            val key: Int,
-            var value: Int,
-            var prev: Node? = null,
-            var next: Node? = null,
-        )
-
         private val map = HashMap<Int, Node>()
 
         private var head: Node? = null
         private var tail: Node? = null
 
-        fun put(key: Int, value: Int) {
+        val size get() = map.size
+
+        fun put(key: Int, value: String) {
             // 1. Check if node exicts
             val existingNode = map[key]
 
@@ -69,7 +64,7 @@ private object Solution1 {
             return null
         }
 
-        fun get(key: Int): Int {
+        fun get(key: Int): String? {
             // 1. get the node
             val node = map[key]
 
@@ -79,7 +74,7 @@ private object Solution1 {
             }
 
             // 3. Return value
-            return node?.value ?: -1
+            return node?.value
         }
 
         private fun moveToTail(node: Node) {
@@ -97,6 +92,13 @@ private object Solution1 {
                 addTail(node)
             }
         }
+
+        private data class Node(
+            val key: Int,
+            var value: String,
+            var prev: Node? = null,
+            var next: Node? = null,
+        )
     }
 }
 
@@ -104,22 +106,24 @@ private object Solution1 {
 // Time Complexity: O(1)
 private object Solution2 {
     class LRUCache(private val capacity: Int) {
+        val size get() = linkedHashMap.size
+
         private val linkedHashMap = object :
-            LinkedHashMap<Int, Int> (capacity, 0.75f, true) {
-            override fun removeEldestEntry(eldest: MutableMap.MutableEntry<Int, Int>?): Boolean {
+            LinkedHashMap<Int, String>(capacity, 0.75f, true) {
+            override fun removeEldestEntry(eldest: MutableMap.MutableEntry<Int, String>?): Boolean {
                 return size > capacity
             }
         }
 
-        fun put(key: Int, value: Int) {
+        fun put(key: Int, value: String) {
             linkedHashMap[key] = value
         }
 
-        fun get(key: Int): Int {
+        fun get(key: Int): String? {
             return linkedHashMap[key]?.also {
                 linkedHashMap.remove(key)
                 linkedHashMap[key] = it
-            } ?: -1
+            }
         }
     }
 }
@@ -151,10 +155,6 @@ private object Solution3 {
             if (list.size > capacity) {
                 list.removeFirst()
             }
-        }
-
-        fun clear() {
-            list.clear()
         }
     }
 }

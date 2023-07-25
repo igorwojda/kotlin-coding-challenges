@@ -4,33 +4,14 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 class LRUCache(private val capacity: Int) {
-    private val list = mutableListOf<Pair<Int, String>>()
-
-    val size get() = list.size
+    val size: Int get() = TODO("Add your solution here")
 
     fun get(key: Int): String? {
-        val value = list.firstOrNull { it.first == key }?.second
-
-        if (value != null) {
-            val pair = Pair(key, value)
-            list.remove(pair)
-            list.add(pair)
-        }
-
-        return list.firstOrNull { it.first == key }?.second
+        TODO("Add your solution here")
     }
 
     fun put(key: Int, value: String) {
-        list.removeIf { it.first == key }
-        list.add(Pair(key, value))
-
-        if (list.size > capacity) {
-            list.removeFirst()
-        }
-    }
-
-    fun clear() {
-        list.clear()
+        TODO("Add your solution here")
     }
 }
 
@@ -67,17 +48,5 @@ private class Test {
         lruCache.get(1) shouldBeEqualTo "Person1"
         lruCache.get(2) shouldBeEqualTo null
         lruCache.get(3) shouldBeEqualTo "Person3"
-    }
-
-    @Test
-    fun `clear the cache`() {
-        val lruCache = LRUCache(3)
-        lruCache.put(1, "Person1")
-        lruCache.put(2, "Person2")
-
-        lruCache.clear()
-
-        lruCache.get(1) shouldBeEqualTo null
-        lruCache.get(2) shouldBeEqualTo null
     }
 }
