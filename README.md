@@ -83,8 +83,10 @@ multiple times and be persistent over time.
 - [Pyramid generator](src/test/kotlin/com/igorwojda/integer/pyramidgenerator)
 - [Steps generator](src/test/kotlin/com/igorwojda/integer/stepsgenerator)
 - [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz)
-- [Caesar Cipher](src/test/kotlin/com/igorwojda/string/caesarcipher)
+- [Caesar cipher](src/test/kotlin/com/igorwojda/string/caesarcipher)
 - [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter)
+- [Smallest elements](src/test/kotlin/com/igorwojda/list/smallestelements)
+- [Largest elements](src/test/kotlin/com/igorwojda/list/largestelements)
 
 **Advanced** 
 
@@ -114,7 +116,7 @@ multiple times and be persistent over time.
 - [Radix sort](src/test/kotlin/com/igorwojda/list/sort/radixsort)
 - [Doubly linked list](src/test/kotlin/com/igorwojda/linkedlist/doubly/base)
 - [Max binary heap](src/test/kotlin/com/igorwojda/tree/heap/maxbinaryheap)
-- [Add Numbers](src/test/kotlin/com/igorwojda/linkedlist/singly/addnumbers)
+- [Add numbers](src/test/kotlin/com/igorwojda/linkedlist/singly/addnumbers)
 
 **Expert**
 
@@ -131,7 +133,7 @@ multiple times and be persistent over time.
 - [Min sub list length](src/test/kotlin/com/igorwojda/list/minsublistlength)
 - [Subtract](src/test/kotlin/com/igorwojda/list/subtract)
 - [Coins](src/test/kotlin/com/igorwojda/list/coins)
-- [Medan Of Sorted Lists](src/test/kotlin/com/igorwojda/list/medianoftwosorted)
+- [Medan of sorted lists](src/test/kotlin/com/igorwojda/list/medianoftwosorted)
 - [LRU Cache](src/test/kotlin/com/igorwojda/cache/lru)
 - [Advanced Cache](src/test/kotlin/com/igorwojda/cache/advancedlru)
 
