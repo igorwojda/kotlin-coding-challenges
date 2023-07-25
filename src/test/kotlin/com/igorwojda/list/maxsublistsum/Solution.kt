@@ -80,8 +80,7 @@ private object Solution4 {
         if (list.isEmpty()) return null
 
         return (0..list.size - numElements)
-            .map { i -> list.subList(i, i + numElements).sum() }
-            .maxOrNull()
+            .maxOfOrNull { i -> list.subList(i, i + numElements).sum() }
     }
 }
 
