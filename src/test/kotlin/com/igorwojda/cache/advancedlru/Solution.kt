@@ -11,11 +11,11 @@ private object Solution1 {
 
         fun put(key: String, value: Int, priority: Int, expiryTime: Long) {
             if (map.containsKey(key)) {
-                this.remove(key)
+                remove(key)
             }
 
             if (map.size == capacity) {
-                this.clearCache()
+                clearCache()
             }
 
             val item = CacheItem(key, value, priority, expiryTime)
@@ -69,9 +69,9 @@ private object Solution1 {
 
             override fun compareTo(other: CacheItem): Int {
                 return when {
-                    this.expiryTime != other.expiryTime -> this.expiryTime.compareTo(other.expiryTime)
-                    this.priority != other.priority -> this.priority.compareTo(other.priority)
-                    else -> this.lastUsed.compareTo(other.lastUsed)
+                    expiryTime != other.expiryTime -> expiryTime.compareTo(other.expiryTime)
+                    priority != other.priority -> priority.compareTo(other.priority)
+                    else -> lastUsed.compareTo(other.lastUsed)
                 }
             }
         }
