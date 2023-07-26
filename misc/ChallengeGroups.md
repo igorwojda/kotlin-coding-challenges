@@ -19,6 +19,7 @@ List of problems that can be solved using [recursion](https://en.wikipedia.org/w
 - [Capitalize first](../src/test/kotlin/com/igorwojda/list/capitalizefirst)
 - [Merge sort](../src/test/kotlin/com/igorwojda/list/sort/mergesort)
 - [Quick sort](../src/test/kotlin/com/igorwojda/list/sort/quicksort)
+- [Tree traversal (depth first)](../src/test/kotlin/com/igorwojda/tree/multiway/traversal/depthfirst)
   
 ### Recursion with helper function 
 
@@ -166,12 +167,12 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 - [Queue](../src/test/kotlin/com/igorwojda/queue/basic)
 - [Combine two queues](../src/test/kotlin/com/igorwojda/queue/combine)
-- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/multiway/traversal)
+- [Tree traversal (breath first)](../src/test/kotlin/com/igorwojda/tree/multiway/traversal/breathfirst)
 
 ## Stack
 
 - [Stack](../src/test/kotlin/com/igorwojda/stack/basic)
-- [Tree traversal](../src/test/kotlin/com/igorwojda/tree/multiway/traversal)
+- [Tree traversal (depth first)](../src/test/kotlin/com/igorwojda/tree/multiway/traversal/depthfirst)
 
 ## Heap
 

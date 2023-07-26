@@ -1,7 +1,31 @@
-package com.igorwojda.tree.multiway.traversal
+package com.igorwojda.tree.multiway.traversal.depthfirst
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
+
+private fun traverseDepthFirstPreOrder(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
+private fun traverseDepthFirstInOrder(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
+private fun traverseDepthFirstPostOrder(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
+private fun traverseDepthFirstPreOrderReversed(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
+private fun traverseDepthFirstInOrderReversed(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
+private fun traverseDepthFirstPostOrderReversed(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
 
 private class BinarySearchTree<E : Comparable<E>> {
     var root: BinaryNode<E>? = null
@@ -22,6 +46,7 @@ private class BinarySearchTree<E : Comparable<E>> {
                 current.data == element -> {
                     return
                 }
+
                 element < current.data -> {
                     if (current.left == null) {
                         current.left = newNode
@@ -30,6 +55,7 @@ private class BinarySearchTree<E : Comparable<E>> {
 
                     current.left?.let { current = it }
                 }
+
                 element > current.data -> {
                     if (current.right == null) {
                         current.right = newNode
@@ -61,34 +87,6 @@ private class BinarySearchTree<E : Comparable<E>> {
     }
 
     fun isEmpty() = root == null
-
-    fun traverseBreathFirst(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstPreOrder(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstInOrder(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstPostOrder(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstPreOrderReversed(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstInOrderReversed(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstPostOrderReverse(): List<E> {
-        TODO("Add your solution here")
-    }
 }
 
 private data class BinaryNode<E : Comparable<E>>(
@@ -97,34 +95,6 @@ private data class BinaryNode<E : Comparable<E>>(
     var right: BinaryNode<E>? = null,
 )
 
-/*
-Queue can be used as helper class to implement breath first traversal. This is not the most optimal queue implementation,
-however it's enough for this task. Check "Queue challenge" solution for more details and more efficient queue
-implementation.
-*/
-private class Queue<E> {
-    private val list = mutableListOf<E>()
-
-    fun add(element: E) {
-        list.add(element)
-    }
-
-    fun remove() = if (list.isEmpty()) null else list.removeAt(0)
-
-    fun peek() = list.firstOrNull()
-
-    fun isEmpty() = list.isEmpty()
-
-    fun isNotEmpty() = list.isNotEmpty()
-
-    val size get() = list.size
-}
-
-/*
-Stack can be used as helper class to implement depth first traversal. This is not the most optimal stack implementation,
-however it's enough for this task. Check "Queue challenge" solution for more details and more efficient stack
-implementation.
-*/
 private class Stack<E> {
     private val list = mutableListOf<E>()
 
@@ -144,111 +114,6 @@ private class Stack<E> {
 }
 
 private class Test {
-    @Test
-    fun `traverse breath first`() {
-        getTree().traverseBreathFirst() shouldBeEqualTo listOf(
-            'F',
-            'B',
-            'G',
-            'A',
-            'D',
-            'I',
-            'C',
-            'E',
-            'H',
-        )
-    }
-
-    @Test
-    fun `traverse depth first pre order`() {
-        getTree().traverseDepthFirstPreOrder() shouldBeEqualTo listOf(
-            'F',
-            'B',
-            'A',
-            'D',
-            'C',
-            'E',
-            'G',
-            'I',
-            'H',
-        )
-    }
-
-    @Test
-    fun `traverse depth first in order`() {
-        getTree().traverseDepthFirstInOrder() shouldBeEqualTo listOf(
-            'A',
-            'B',
-            'C',
-            'D',
-            'E',
-            'F',
-            'G',
-            'H',
-            'I',
-        )
-    }
-
-    @Test
-    fun `traverse depth first post order`() {
-        getTree().traverseDepthFirstPostOrder() shouldBeEqualTo listOf(
-            'A',
-            'C',
-            'E',
-            'D',
-            'B',
-            'H',
-            'I',
-            'G',
-            'F',
-        )
-    }
-
-    @Test
-    fun `traverse depth first pre order reversed`() {
-        getTree().traverseDepthFirstPreOrderReversed() shouldBeEqualTo listOf(
-            'F',
-            'G',
-            'I',
-            'H',
-            'B',
-            'D',
-            'E',
-            'C',
-            'A',
-        )
-    }
-
-    @Test
-    fun `traverse depth first in order reversed`() {
-        getTree().traverseDepthFirstInOrderReversed() shouldBeEqualTo listOf(
-            'I',
-            'H',
-            'G',
-            'F',
-            'E',
-            'D',
-            'C',
-            'B',
-            'A',
-        )
-    }
-
-    @Test
-    fun `traverse depth first post order reverse`() {
-        getTree().traverseDepthFirstPostOrderReverse() shouldBeEqualTo listOf(
-            'H',
-            'I',
-            'G',
-            'E',
-            'C',
-            'D',
-            'A',
-            'B',
-            'F',
-        )
-    }
-
     // ---------Tree------------
     //
     //           F
@@ -270,5 +135,95 @@ private class Test {
         add('G')
         add('I')
         add('H')
+    }
+
+    @Test
+    fun `traverse depth first pre order`() {
+        traverseDepthFirstPreOrder(getTree()) shouldBeEqualTo listOf(
+            'F',
+            'B',
+            'A',
+            'D',
+            'C',
+            'E',
+            'G',
+            'I',
+            'H',
+        )
+    }
+
+    @Test
+    fun `traverse depth first in order`() {
+        traverseDepthFirstInOrder(getTree()) shouldBeEqualTo listOf(
+            'A',
+            'B',
+            'C',
+            'D',
+            'E',
+            'F',
+            'G',
+            'H',
+            'I',
+        )
+    }
+
+    @Test
+    fun `traverse depth first post order`() {
+        traverseDepthFirstPostOrder(getTree()) shouldBeEqualTo listOf(
+            'A',
+            'C',
+            'E',
+            'D',
+            'B',
+            'H',
+            'I',
+            'G',
+            'F',
+        )
+    }
+
+    @Test
+    fun `traverse depth first pre order reversed`() {
+        traverseDepthFirstPreOrderReversed(getTree()) shouldBeEqualTo listOf(
+            'F',
+            'G',
+            'I',
+            'H',
+            'B',
+            'D',
+            'E',
+            'C',
+            'A',
+        )
+    }
+
+    @Test
+    fun `traverse depth first in order reversed`() {
+        traverseDepthFirstInOrderReversed(getTree()) shouldBeEqualTo listOf(
+            'I',
+            'H',
+            'G',
+            'F',
+            'E',
+            'D',
+            'C',
+            'B',
+            'A',
+        )
+    }
+
+    @Test
+    fun `traverse depth first post order reverse`() {
+        traverseDepthFirstPostOrderReversed(getTree()) shouldBeEqualTo listOf(
+            'H',
+            'I',
+            'G',
+            'E',
+            'C',
+            'D',
+            'A',
+            'B',
+            'F',
+        )
     }
 }
