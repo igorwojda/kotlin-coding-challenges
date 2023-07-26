@@ -3,33 +3,33 @@ package com.igorwojda.tree.multiway.traversal.depthfirst
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
+private fun traverseDepthFirstPreOrder(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
+private fun traverseDepthFirstInOrder(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
+private fun traverseDepthFirstPostOrder(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
+private fun traverseDepthFirstPreOrderReversed(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
+private fun traverseDepthFirstInOrderReversed(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
+private fun traverseDepthFirstPostOrderReversed(binaryTree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
 private class BinarySearchTree<E : Comparable<E>> {
     var root: BinaryNode<E>? = null
         private set
-
-    fun traverseDepthFirstPreOrder(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstInOrder(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstPostOrder(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstPreOrderReversed(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstInOrderReversed(): List<E> {
-        TODO("Add your solution here")
-    }
-
-    fun traverseDepthFirstPostOrderReversed(): List<E> {
-        TODO("Add your solution here")
-    }
 
     fun add(element: E) {
         val newNode = BinaryNode(element)
@@ -139,7 +139,7 @@ private class Test {
 
     @Test
     fun `traverse depth first pre order`() {
-        getTree().traverseDepthFirstPreOrder() shouldBeEqualTo listOf(
+        traverseDepthFirstPreOrder(getTree()) shouldBeEqualTo listOf(
             'F',
             'B',
             'A',
@@ -154,7 +154,7 @@ private class Test {
 
     @Test
     fun `traverse depth first in order`() {
-        getTree().traverseDepthFirstInOrder() shouldBeEqualTo listOf(
+        traverseDepthFirstInOrder(getTree()) shouldBeEqualTo listOf(
             'A',
             'B',
             'C',
@@ -169,7 +169,7 @@ private class Test {
 
     @Test
     fun `traverse depth first post order`() {
-        getTree().traverseDepthFirstPostOrder() shouldBeEqualTo listOf(
+        traverseDepthFirstPostOrder(getTree()) shouldBeEqualTo listOf(
             'A',
             'C',
             'E',
@@ -184,7 +184,7 @@ private class Test {
 
     @Test
     fun `traverse depth first pre order reversed`() {
-        getTree().traverseDepthFirstPreOrderReversed() shouldBeEqualTo listOf(
+        traverseDepthFirstPreOrderReversed(getTree()) shouldBeEqualTo listOf(
             'F',
             'G',
             'I',
@@ -199,7 +199,7 @@ private class Test {
 
     @Test
     fun `traverse depth first in order reversed`() {
-        getTree().traverseDepthFirstInOrderReversed() shouldBeEqualTo listOf(
+        traverseDepthFirstInOrderReversed(getTree()) shouldBeEqualTo listOf(
             'I',
             'H',
             'G',
@@ -214,7 +214,7 @@ private class Test {
 
     @Test
     fun `traverse depth first post order reverse`() {
-        getTree().traverseDepthFirstPostOrderReversed() shouldBeEqualTo listOf(
+        traverseDepthFirstPostOrderReversed(getTree()) shouldBeEqualTo listOf(
             'H',
             'I',
             'G',

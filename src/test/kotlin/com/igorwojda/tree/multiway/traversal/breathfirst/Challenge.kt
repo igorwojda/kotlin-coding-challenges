@@ -3,13 +3,13 @@ package com.igorwojda.tree.multiway.traversal.breathfirst
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
+private fun traverseBreathFirst(tree: BinarySearchTree<Char>): List<Char> {
+    TODO("Add your solution here")
+}
+
 private class BinarySearchTree<E : Comparable<E>> {
     var root: BinaryNode<E>? = null
         private set
-
-    fun traverseBreathFirst(): List<E> {
-        TODO("Add your solution here")
-    }
 
     fun add(element: E) {
         val newNode = BinaryNode(element)
@@ -99,7 +99,7 @@ private class Test {
 
     @Test
     fun `traverse breath first`() {
-        getTree().traverseBreathFirst() shouldBeEqualTo listOf(
+        traverseBreathFirst(getTree()) shouldBeEqualTo listOf(
             'F',
             'B',
             'G',

@@ -1,135 +1,135 @@
 package com.igorwojda.tree.multiway.traversal.depthfirst
 
 private object Solution1 {
+    private fun traverseDepthFirstPreOrder(tree: BinarySearchTree<Char>): List<Char> {
+        val result = mutableListOf<Char>()
+        val stack = Stack<BinaryNode<Char>>()
+
+        tree.root?.let { stack.add(it) }
+
+        while (stack.isNotEmpty()) {
+            val node = stack.remove()
+            node?.let {
+                result.add(it.data)
+
+                it.right?.let { rightNode -> stack.add(rightNode) }
+                it.left?.let { leftNode -> stack.add(leftNode) }
+            }
+        }
+
+        return result
+    }
+
+    private fun traverseDepthFirstInOrder(tree: BinarySearchTree<Char>): List<Char> {
+        val result = mutableListOf<Char>()
+        val stack = Stack<BinaryNode<Char>>()
+
+        var current = tree.root
+        while (current != null || stack.isNotEmpty()) {
+            while (current != null) {
+                stack.add(current)
+                current = current.left
+            }
+
+            current = stack.remove()
+            current?.let {
+                result.add(it.data)
+                current = it.right
+            }
+        }
+
+        return result
+    }
+
+    private fun traverseDepthFirstPostOrder(tree: BinarySearchTree<Char>): List<Char> {
+        val result = mutableListOf<Char>()
+        val stack = Stack<BinaryNode<Char>>()
+
+        tree.root?.let { stack.add(it) }
+
+        while (stack.isNotEmpty()) {
+            val node = stack.peek()
+            if (node?.left == null && node?.right == null) {
+                val visitedNode = stack.remove()
+                visitedNode?.let { result.add(it.data) }
+            } else {
+                node.right?.let { stack.add(it) }
+                node.right = null
+
+                node.left?.let { stack.add(it) }
+                node.left = null
+            }
+        }
+
+        return result
+    }
+
+    private fun traverseDepthFirstPreOrderReversed(tree: BinarySearchTree<Char>): List<Char> {
+        val result = mutableListOf<Char>()
+        val stack = Stack<BinaryNode<Char>>()
+
+        tree.root?.let { stack.add(it) }
+
+        while (stack.isNotEmpty()) {
+            val node = stack.remove()
+            node?.let {
+                result.add(it.data)
+
+                it.left?.let { leftNode -> stack.add(leftNode) }
+                it.right?.let { rightNode -> stack.add(rightNode) }
+            }
+        }
+
+        return result
+    }
+
+    private fun traverseDepthFirstInOrderReversed(tree: BinarySearchTree<Char>): List<Char> {
+        val result = mutableListOf<Char>()
+        val stack = Stack<BinaryNode<Char>>()
+
+        var current = tree.root
+        while (current != null || stack.isNotEmpty()) {
+            while (current != null) {
+                stack.add(current)
+                current = current.right
+            }
+
+            current = stack.remove()
+            current?.let {
+                result.add(it.data)
+                current = it.left
+            }
+        }
+
+        return result
+    }
+
+    private fun traverseDepthFirstPostOrderReversed(tree: BinarySearchTree<Char>): List<Char> {
+        val result = mutableListOf<Char>()
+        val stack = Stack<BinaryNode<Char>>()
+
+        tree.root?.let { stack.add(it) }
+
+        while (stack.isNotEmpty()) {
+            val node = stack.peek()
+            if (node?.left == null && node?.right == null) {
+                val visitedNode = stack.remove()
+                visitedNode?.let { result.add(it.data) }
+            } else {
+                node.left?.let { stack.add(it) }
+                node.left = null
+
+                node.right?.let { stack.add(it) }
+                node.right = null
+            }
+        }
+
+        return result
+    }
+
     private class BinarySearchTree<E : Comparable<E>> {
         var root: BinaryNode<E>? = null
             private set
-
-        fun traverseDepthFirstPreOrder(): List<E> {
-            val result = mutableListOf<E>()
-            val stack = Stack<BinaryNode<E>>()
-
-            root?.let { stack.add(it) }
-
-            while (stack.isNotEmpty()) {
-                val node = stack.remove()
-                node?.let {
-                    result.add(it.data)
-
-                    it.right?.let { rightNode -> stack.add(rightNode) }
-                    it.left?.let { leftNode -> stack.add(leftNode) }
-                }
-            }
-
-            return result
-        }
-
-        fun traverseDepthFirstInOrder(): List<E> {
-            val result = mutableListOf<E>()
-            val stack = Stack<BinaryNode<E>>()
-
-            var current = root
-            while (current != null || stack.isNotEmpty()) {
-                while (current != null) {
-                    stack.add(current)
-                    current = current.left
-                }
-
-                current = stack.remove()
-                current?.let {
-                    result.add(it.data)
-                    current = it.right
-                }
-            }
-
-            return result
-        }
-
-        fun traverseDepthFirstPostOrder(): List<E> {
-            val result = mutableListOf<E>()
-            val stack = Stack<BinaryNode<E>>()
-
-            root?.let { stack.add(it) }
-
-            while (stack.isNotEmpty()) {
-                val node = stack.peek()
-                if (node?.left == null && node?.right == null) {
-                    val visitedNode = stack.remove()
-                    visitedNode?.let { result.add(it.data) }
-                } else {
-                    node.right?.let { stack.add(it) }
-                    node.right = null
-
-                    node.left?.let { stack.add(it) }
-                    node.left = null
-                }
-            }
-
-            return result
-        }
-
-        fun traverseDepthFirstPreOrderReversed(): List<E> {
-            val result = mutableListOf<E>()
-            val stack = Stack<BinaryNode<E>>()
-
-            root?.let { stack.add(it) }
-
-            while (stack.isNotEmpty()) {
-                val node = stack.remove()
-                node?.let {
-                    result.add(it.data)
-
-                    it.left?.let { leftNode -> stack.add(leftNode) }
-                    it.right?.let { rightNode -> stack.add(rightNode) }
-                }
-            }
-
-            return result
-        }
-
-        fun traverseDepthFirstInOrderReversed(): List<E> {
-            val result = mutableListOf<E>()
-            val stack = Stack<BinaryNode<E>>()
-
-            var current = root
-            while (current != null || stack.isNotEmpty()) {
-                while (current != null) {
-                    stack.add(current)
-                    current = current.right
-                }
-
-                current = stack.remove()
-                current?.let {
-                    result.add(it.data)
-                    current = it.left
-                }
-            }
-
-            return result
-        }
-
-        fun traverseDepthFirstPostOrderReversed(): List<E> {
-            val result = mutableListOf<E>()
-            val stack = Stack<BinaryNode<E>>()
-
-            root?.let { stack.add(it) }
-
-            while (stack.isNotEmpty()) {
-                val node = stack.peek()
-                if (node?.left == null && node?.right == null) {
-                    val visitedNode = stack.remove()
-                    visitedNode?.let { result.add(it.data) }
-                } else {
-                    node.left?.let { stack.add(it) }
-                    node.left = null
-
-                    node.right?.let { stack.add(it) }
-                    node.right = null
-                }
-            }
-
-            return result
-        }
 
         fun add(element: E) {
             val newNode = BinaryNode(element)

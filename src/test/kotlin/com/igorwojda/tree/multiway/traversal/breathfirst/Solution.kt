@@ -1,31 +1,31 @@
 package com.igorwojda.tree.multiway.traversal.breathfirst
 
 private object Solution1 {
+    private fun traverseBreathFirst(tree: BinarySearchTree<Char>): List<Char> {
+        val queue = Queue<BinaryNode<Char>>()
+        val result = mutableListOf<Char>()
+
+        if (tree.isEmpty()) {
+            return result
+        } else {
+            tree.root?.let { queue.add(it) }
+        }
+
+        while (queue.isNotEmpty()) {
+            val current = queue.remove() ?: break
+
+            result.add(current.data)
+
+            current.left?.let { queue.add(it) }
+            current.right?.let { queue.add(it) }
+        }
+
+        return result
+    }
+
     private class BinarySearchTree<E : Comparable<E>> {
         var root: BinaryNode<E>? = null
             private set
-
-        fun traverseBreathFirst(): List<E> {
-            val queue = Queue<BinaryNode<E>>()
-            val result = mutableListOf<E>()
-
-            if (isEmpty()) {
-                return result
-            } else {
-                root?.let { queue.add(it) }
-            }
-
-            while (queue.isNotEmpty()) {
-                val current = queue.remove() ?: break
-
-                result.add(current.data)
-
-                current.left?.let { queue.add(it) }
-                current.right?.let { queue.add(it) }
-            }
-
-            return result
-        }
 
         fun add(element: E) {
             val newNode = BinaryNode(element)
