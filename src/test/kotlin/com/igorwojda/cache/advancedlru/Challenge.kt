@@ -21,23 +21,6 @@ class AdvancedLRUCache(private val capacity: Int) {
         TODO("Add your solution here")
     }
 
-    private data class CacheItem(
-        val key: String,
-        var value: Int,
-        var priority: Int,
-        var expiryTime: Long,
-    ) : Comparable<CacheItem> {
-        var lastUsed: Long = System.currentTimeMillis()
-
-        override fun compareTo(other: CacheItem): Int {
-            return when {
-                this.expiryTime != other.expiryTime -> this.expiryTime.compareTo(other.expiryTime)
-                this.priority != other.priority -> this.priority.compareTo(other.priority)
-                else -> this.lastUsed.compareTo(other.lastUsed)
-            }
-        }
-    }
-
     // Returns fixed system time in milliseconds
     private fun getSystemTimeForExpiry() = 1000
 }
