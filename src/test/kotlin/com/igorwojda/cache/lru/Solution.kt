@@ -4,18 +4,18 @@ package com.igorwojda.cache.lru
 // Time Complexity: O(1)
 private object Solution1 {
     class LRUCache(private val capacity: Int) {
-        private val map = mutableMapOf<Int, Node>()
+        private val map = mutableMapOf<Int, CacheItem>()
 
-        private var head: Node? = null
-        private var tail: Node? = null
+        private var head: CacheItem? = null
+        private var tail: CacheItem? = null
 
         val size get() = map.size
 
         fun put(key: Int, value: String) {
             // Check if node exits
-            val existingNode = map[key]
+            val existingCacheItem = map[key]
 
-            if (existingNode == null) {
+            if (existingCacheItem == null) {
                 // Check Map capacity
                 if (map.size >= capacity) {
                     val removedNode = removeHead()
@@ -23,42 +23,42 @@ private object Solution1 {
                 }
 
                 // Add a new node
-                val newNode = Node(key, value)
+                val newCacheItem = CacheItem(key, value)
 
-                map[key] = newNode
-                addTail(newNode)
+                map[key] = newCacheItem
+                addTail(newCacheItem)
             } else {
-                existingNode.value = value
-                moveToTail(existingNode)
+                existingCacheItem.value = value
+                moveToTail(existingCacheItem)
             }
         }
 
-        private fun addTail(node: Node) {
+        private fun addTail(cacheItem: CacheItem) {
             // If list is empty
             if (head == null) {
-                head = node
+                head = cacheItem
             } else {
-                node.prev = tail
-                tail?.next = node
+                cacheItem.prev = tail
+                tail?.next = cacheItem
             }
 
-            tail = node
+            tail = cacheItem
         }
 
-        private fun removeHead(): Node? {
+        private fun removeHead(): CacheItem? {
             // Head exists
             if (head != null) {
                 // Store current head to return
-                val node = head
+                val cacheItem = head
 
                 // Remove head
                 head = head?.next
                 head?.prev = null
 
                 // Remove tail if head is tail
-                if (node == tail) tail = null
+                if (cacheItem == tail) tail = null
 
-                return node
+                return cacheItem
             }
 
             return null
@@ -77,27 +77,27 @@ private object Solution1 {
             return node?.value
         }
 
-        private fun moveToTail(node: Node) {
+        private fun moveToTail(cacheItem: CacheItem) {
             // Check if node is tail
-            if (node != tail) {
+            if (cacheItem != tail) {
                 // Remove node from list
-                if (node == head) {
-                    head = node.next
+                if (cacheItem == head) {
+                    head = cacheItem.next
                 } else {
-                    node.prev?.next = node.next
-                    node.next?.prev = node.prev
+                    cacheItem.prev?.next = cacheItem.next
+                    cacheItem.next?.prev = cacheItem.prev
                 }
 
                 // Add node to tail
-                addTail(node)
+                addTail(cacheItem)
             }
         }
 
-        private data class Node(
+        private data class CacheItem(
             val key: Int,
             var value: String,
-            var prev: Node? = null,
-            var next: Node? = null,
+            var prev: CacheItem? = null,
+            var next: CacheItem? = null,
         )
     }
 }
