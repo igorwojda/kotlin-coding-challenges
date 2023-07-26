@@ -53,7 +53,9 @@ private object Solution1 {
             }
 
             if (priorityQueue.isEmpty()) return
+
             val item = priorityQueue.poll()
+
             if (map.containsKey(item.key) && map[item.key] == item) {
                 map.remove(item.key)
             }
