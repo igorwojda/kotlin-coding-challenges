@@ -13,14 +13,6 @@ class AdvancedLRUCache(private val capacity: Int) {
         TODO("Add your solution here")
     }
 
-    private fun remove(key: String) {
-        TODO("Add your solution here")
-    }
-
-    private fun clearCache() {
-        TODO("Add your solution here")
-    }
-
     // Returns fixed system time in milliseconds
     private fun getSystemTimeForExpiry() = 1000
 }
