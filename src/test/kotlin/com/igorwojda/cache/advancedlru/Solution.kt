@@ -67,12 +67,10 @@ private object Solution1 {
         ) : Comparable<CacheItem> {
             var lastUsed: Long = System.currentTimeMillis()
 
-            override fun compareTo(other: CacheItem): Int {
-                return when {
-                    expiryTime != other.expiryTime -> expiryTime.compareTo(other.expiryTime)
-                    priority != other.priority -> priority.compareTo(other.priority)
-                    else -> lastUsed.compareTo(other.lastUsed)
-                }
+            override fun compareTo(other: CacheItem) = when {
+                expiryTime != other.expiryTime -> expiryTime.compareTo(other.expiryTime)
+                priority != other.priority -> priority.compareTo(other.priority)
+                else -> lastUsed.compareTo(other.lastUsed)
             }
         }
 
