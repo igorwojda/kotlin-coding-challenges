@@ -7,7 +7,7 @@ import java.util.*
 private object Solution1 {
     class AdvancedLRUCache(private val capacity: Int) {
         private val map: MutableMap<String, CacheItem> = mutableMapOf()
-        private val pq: PriorityQueue<CacheItem> = PriorityQueue()
+        private val priorityQueue: PriorityQueue<CacheItem> = PriorityQueue()
 
         fun put(key: String, value: Int, priority: Int, expiryTime: Long) {
             if (map.containsKey(key)) {
@@ -20,7 +20,7 @@ private object Solution1 {
 
             val item = CacheItem(key, value, priority, expiryTime)
             map[key] = item
-            pq.add(item)
+            priorityQueue.add(item)
         }
 
         fun get(key: String): Int? {
@@ -44,16 +44,16 @@ private object Solution1 {
         }
 
         private fun clearCache() {
-            while (pq.isNotEmpty() && pq.peek().expiryTime < getSystemTimeForExpiry()) {
-                val item = pq.poll()
+            while (priorityQueue.isNotEmpty() && priorityQueue.peek().expiryTime < getSystemTimeForExpiry()) {
+                val item = priorityQueue.poll()
 
                 if (map.containsKey(item.key) && map[item.key] == item) {
                     map.remove(item.key)
                 }
             }
 
-            if (pq.isEmpty()) return
-            val item = pq.poll()
+            if (priorityQueue.isEmpty()) return
+            val item = priorityQueue.poll()
             if (map.containsKey(item.key) && map[item.key] == item) {
                 map.remove(item.key)
             }
