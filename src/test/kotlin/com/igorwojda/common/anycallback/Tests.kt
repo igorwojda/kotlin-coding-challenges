@@ -3,8 +3,9 @@ package com.igorwojda.common.anycallback
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-class Test {
-    val functionUnderTest: (list: List<Int>, callback: (Int) -> Boolean)->Boolean = ::anyCallback
+class Tests {
+    // Easily switch between a known solution and Challenge code
+    val functionUnderTest: (list: List<Int>, callback: (Int) -> Boolean)->Boolean = ::anyCallback // or SolutionN::anyCallback
 
     @Test
     fun `any callback returns true`() {

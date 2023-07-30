@@ -1,6 +1,6 @@
 package com.igorwojda.common.anycallback
 
-fun anyCallback(list: List<Int>, callback: (Int) -> Boolean): Boolean {
+fun <T: Any> anyCallback(list: List<T>, predicate: (T) -> Boolean): Boolean {
     TODO("Add your solution here")
 }
 

@@ -8,7 +8,7 @@ removing the item that was least recently accessed or used.
 
 The overall run time complexity of each method should be `O(1)`.
 
-[Challenge](Challenge.kt) | [Solution](Solution.kt)
+[Challenge](Challenge.kt) | [Solution](Solution.kt) | [Tests](Tests.kt)
 
 ## Examples
 

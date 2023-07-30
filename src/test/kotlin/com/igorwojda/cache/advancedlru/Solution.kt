@@ -7,18 +7,18 @@ import java.util.*
 // Implementation is using  combination of HashMap and PriorityQueue.
 // Time Complexity: O(N) (JVM priority queue is O(log(n)) on offer/poll methods and O(N) on remove(item) method)
 internal object Solution1 {
-    class AdvancedLRUCache<T: Any>(private val capacity: Int, private val clock: Clock = Clock.systemDefaultZone()) : LRUCache<T> {
-        private val map: MutableMap<String, CacheItem<T>> = mutableMapOf()
+    class AdvancedLRUCache<K: Any, V: Any>(private val capacity: Int, private val clock: Clock = Clock.systemDefaultZone()) : LRUCache<K, V> {
+        private val map: MutableMap<K, CacheItem<K, V>> = mutableMapOf()
 
-        private val expiryQueue: PriorityQueue<CacheItem<T>> = PriorityQueue { item1, item2 ->
-            compareBy<CacheItem<T>>({ it.expiryTime }).compare(item1, item2)
+        private val expiryQueue: PriorityQueue<CacheItem<K, V>> = PriorityQueue { item1, item2 ->
+            compareBy<CacheItem<K, V>>({ it.expiryTime }).compare(item1, item2)
         }
 
-        private val priorityQueue: PriorityQueue<CacheItem<T>> = PriorityQueue { item1, item2 ->
-            compareBy<CacheItem<T>>({ it.priority }, { it.lastUsed }).compare(item1, item2)
+        private val priorityQueue: PriorityQueue<CacheItem<K, V>> = PriorityQueue { item1, item2 ->
+            compareBy<CacheItem<K, V>>({ it.priority }, { it.lastUsed }).compare(item1, item2)
         }
 
-        override fun put(key: String, value: T, priority: Int, ttl: Duration) {
+        override fun put(key: K, value: V, priority: Int, ttl: Duration) {
             remove(key)
             checkAndExpireCachedItems()
 
@@ -29,7 +29,7 @@ internal object Solution1 {
             priorityQueue.offer(item)
         }
 
-        override fun get(key: String): T? {
+        override fun get(key: K): V? {
             val item = map[key]
 
             return if (item == null) {
@@ -45,7 +45,7 @@ internal object Solution1 {
             }
         }
 
-        private fun remove(key: String) {
+        private fun remove(key: K) {
             val item = map[key]
 
             item?.let {
@@ -73,9 +73,9 @@ internal object Solution1 {
             expiryQueue.remove(item)
         }
 
-        private class CacheItem<T>(
-            val key: String,
-            val value: T,
+        private class CacheItem<K, V>(
+            val key: K,
+            val value: V,
             val priority: Int,
             val expiryTime: Long,
             val lastUsed: Long
@@ -83,7 +83,7 @@ internal object Solution1 {
             // only compare equality by `key`
             override fun equals(other: Any?): Boolean {
                 if (this === other) return true
-                if (other !is CacheItem<*>) return false
+                if (other !is CacheItem<*, *>) return false
                 if (key == other.key) return true
                 return false
             }

@@ -9,7 +9,7 @@ import java.time.ZoneId
 
 class Tests {
     // Easily switch between a known solution and Challenge code
-    private val classUnderTest: (capacity: Int, clock: Clock)->LRUCache<String> = ::AdvancedLRUCache // ::AdvancedLRUCache
+    private val classUnderTest: (capacity: Int, clock: Clock)->LRUCache<String, String> = ::AdvancedLRUCache // or SolutionN::AdvancedLRUCache
 
     private val testClock = object : Clock() {
         private var testTime = Instant.now()

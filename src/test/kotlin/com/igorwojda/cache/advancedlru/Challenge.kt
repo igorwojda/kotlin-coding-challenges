@@ -3,17 +3,17 @@ package com.igorwojda.cache.advancedlru
 import java.time.Clock
 import java.time.Duration
 
-interface LRUCache<T: Any> {
-    fun put(key: String, value: T, priority: Int, ttl: Duration)
-    fun get(key: String): T?
+interface LRUCache<K: Any, V: Any> {
+    fun put(key: K, value: V, priority: Int, ttl: Duration)
+    fun get(key: K): V?
 }
 
-class AdvancedLRUCache<T: Any>(private val capacity: Int, private val clock: Clock = Clock.systemDefaultZone()): LRUCache<T> {
-    override fun put(key: String, value: T, priority: Int, ttl: Duration) {
+class AdvancedLRUCache<K: Any, V: Any>(private val capacity: Int, private val clock: Clock = Clock.systemDefaultZone()): LRUCache<K, V> {
+    override fun put(key: K, value: V, priority: Int, ttl: Duration) {
         TODO("Add your solution here")
     }
 
-    override fun get(key: String): T? {
+    override fun get(key: K): V? {
         TODO("Add your solution here")
     }
 }
