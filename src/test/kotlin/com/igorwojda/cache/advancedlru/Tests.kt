@@ -7,9 +7,9 @@ import java.time.Duration
 import java.time.Instant
 import java.time.ZoneId
 
-private class Tests {
+class Tests {
     // Easily switch between a known solution and Challenge code
-    private val classUnderTest: (capacity: Int, clock: Clock)->LRUCache<String> = Solution1::AdvancedLRUCache // ::AdvancedLRUCache
+    private val classUnderTest: (capacity: Int, clock: Clock)->LRUCache<String> = ::AdvancedLRUCache // ::AdvancedLRUCache
 
     private val testClock = object : Clock() {
         private var testTime = Instant.now()
