@@ -3,7 +3,7 @@ package com.igorwojda.common.anycallback
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private class Test {
+class Test {
     val functionUnderTest: (list: List<Int>, callback: (Int) -> Boolean)->Boolean = ::anyCallback
 
     @Test
