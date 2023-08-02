@@ -69,6 +69,7 @@ multiple times and be persistent over time.
 - [Capitalize first](src/test/kotlin/com/igorwojda/list/capitalizefirst)
 - [Decapitalize const](src/test/kotlin/com/igorwojda/string/decapitalizeconst)
 - [Longest word](src/test/kotlin/com/igorwojda/string/longestword)
+- [Reverse list](src/test/kotlin/com/igorwojda/list/reverse)
 
 **Intermediate**
 

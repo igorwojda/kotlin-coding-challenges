@@ -98,6 +98,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Coins](../src/test/kotlin/com/igorwojda/list/coins)
 - [Smallest elements](../src/test/kotlin/com/igorwojda/list/smallestelements)
 - [Largest elements](../src/test/kotlin/com/igorwojda/list/largestelements)
+- [Reverse list](../src/test/kotlin/com/igorwojda/list/reverse)
 
 ## Singly Linked List
 
