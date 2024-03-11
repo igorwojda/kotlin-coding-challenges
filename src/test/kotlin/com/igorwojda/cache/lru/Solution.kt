@@ -2,16 +2,16 @@ package com.igorwojda.cache.lru
 
 // Implementation is using  combination of HashMap and LinkedList.
 // Time Complexity: O(1)
-private object Solution1 {
-    class LRUCache(private val capacity: Int) {
-        private val map = mutableMapOf<Int, CacheItem>()
+object Solution1 {
+    class LRUCacheImpl<K: Any, V: Any>(private val capacity: Int) : LRUCache<K, V> {
+        private val map = mutableMapOf<K, CacheItem<K, V>>()
 
-        private var head: CacheItem? = null
-        private var tail: CacheItem? = null
+        private var head: CacheItem<K, V>? = null
+        private var tail: CacheItem<K, V>? = null
 
-        val size get() = map.size
+        override val size get() = map.size
 
-        fun put(key: Int, value: String) {
+        override fun put(key: K, value: V) {
             // Check if node exits
             val existingCacheItem = map[key]
 
@@ -19,6 +19,9 @@ private object Solution1 {
                 // Check Map capacity
                 if (map.size >= capacity) {
                     val removedNode = removeHead()
+                    if (removedNode != null) {
+                        map.remove(removedNode.key)
+                    }
                     map.remove(removedNode?.key)
                 }
 
@@ -33,7 +36,7 @@ private object Solution1 {
             }
         }
 
-        private fun addTail(cacheItem: CacheItem) {
+        private fun addTail(cacheItem: CacheItem<K, V>) {
             // If list is empty
             if (head == null) {
                 head = cacheItem
@@ -45,7 +48,7 @@ private object Solution1 {
             tail = cacheItem
         }
 
-        private fun removeHead(): CacheItem? {
+        private fun removeHead(): CacheItem<K, V>? {
             // Head exists
             if (head != null) {
                 // Store current head to return
@@ -64,7 +67,7 @@ private object Solution1 {
             return null
         }
 
-        fun get(key: Int): String? {
+        override fun get(key: K): V? {
             // Get the node
             val node = map[key]
 
@@ -77,7 +80,7 @@ private object Solution1 {
             return node?.value
         }
 
-        private fun moveToTail(cacheItem: CacheItem) {
+        private fun moveToTail(cacheItem: CacheItem<K, V>) {
             // Check if node is tail
             if (cacheItem != tail) {
                 // Remove node from list
@@ -93,33 +96,33 @@ private object Solution1 {
             }
         }
 
-        private data class CacheItem(
-            val key: Int,
-            var value: String,
-            var prev: CacheItem? = null,
-            var next: CacheItem? = null,
+        private data class CacheItem<K, V>(
+            val key: K,
+            var value: V,
+            var prev: CacheItem<K, V>? = null,
+            var next: CacheItem<K, V>? = null,
         )
     }
 }
 
 // Implementation using LinkedHashMap
 // Time Complexity: O(1)
-private object Solution2 {
-    class LRUCache(private val capacity: Int) {
-        val size get() = linkedHashMap.size
+object Solution2 {
+    class LRUCacheImpl<K: Any, V: Any>(private val capacity: Int): LRUCache<K, V> {
+        override val size get() = linkedHashMap.size
 
         private val linkedHashMap = object :
-            LinkedHashMap<Int, String>(capacity, 0.75f, true) {
-            override fun removeEldestEntry(eldest: MutableMap.MutableEntry<Int, String>?): Boolean {
+            LinkedHashMap<K, V>(capacity, 0.75f, true) {
+            override fun removeEldestEntry(eldest: MutableMap.MutableEntry<K, V>?): Boolean {
                 return size > capacity
             }
         }
 
-        fun put(key: Int, value: String) {
+        override fun put(key: K, value: V) {
             linkedHashMap[key] = value
         }
 
-        fun get(key: Int): String? {
+        override fun get(key: K): V? {
             return linkedHashMap[key]?.also {
                 linkedHashMap.remove(key)
                 linkedHashMap[key] = it
@@ -130,13 +133,13 @@ private object Solution2 {
 
 // Implementation using List
 // Time Complexity: O(n)
-private object Solution3 {
-    class LRUCache(private val capacity: Int) {
-        private val list = mutableListOf<Pair<Int, String>>()
+object Solution3 {
+    class LRUCacheImpl<K: Any, V: Any>(private val capacity: Int): LRUCache<K, V> {
+        private val list = mutableListOf<Pair<K, V>>()
 
-        val size get() = list.size
+        override val size get() = list.size
 
-        fun get(key: Int): String? {
+        override fun get(key: K): V? {
             val value = list.firstOrNull { it.first == key }?.second
 
             if (value != null) {
@@ -148,7 +151,7 @@ private object Solution3 {
             return list.firstOrNull { it.first == key }?.second
         }
 
-        fun put(key: Int, value: String) {
+        override fun put(key: K, value: V) {
             list.removeIf { it.first == key }
             list.add(Pair(key, value))
 
