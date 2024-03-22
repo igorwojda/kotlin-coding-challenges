@@ -1,7 +1,7 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 
 plugins {
-    kotlin("jvm") version "1.8.10"
+    kotlin("jvm") version "1.9.23"
     id("com.adarshr.test-logger") version "3.2.0"
     id("com.diffplug.spotless") version "6.25.0"
 }
