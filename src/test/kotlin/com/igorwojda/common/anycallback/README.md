@@ -10,7 +10,7 @@
 Given list of integers and callback implement a **recursive** function which returns `true` if simple value in the list
 passed to callback returns `true`, otherwise return `false`.
 
-[Challenge](Challenge.kt) | [Solution](Solution.kt)
+[Challenge](Challenge.kt) | [Solution](Solution.kt) | [Tests](Tests.kt)
 
 ## Examples
 
