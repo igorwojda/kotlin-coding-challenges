@@ -26,7 +26,7 @@ private class Test {
     fun `2 smallest elements`() {
         val list = listOf(5, 1, 3)
 
-        smallestElements(list, 2) shouldBeEqualTo listOf(3, 1)
+        smallestElements(list, 2) shouldBeEqualTo listOf(1, 3)
     }
 
     @Test
