@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.12.0")
     testImplementation("org.amshove.kluent:kluent:1.73")
 }
 
