@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.14.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.14.1")
     testImplementation("org.amshove.kluent:kluent:1.73")
     testImplementation("org.jetbrains.kotlin:kotlin-compiler:1.9.25")
 }
