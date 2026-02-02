@@ -37,7 +37,7 @@ jobs:
       - name: Run generated solution tests
         run: ./gradlew test --tests "generated.com.igorwojda.*"
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v6
         with:
           name: unit-test-report
           path: ./**/build/reports/tests/
