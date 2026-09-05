@@ -14,8 +14,8 @@ private object Solution2 {
     private fun capitalizeSentence(str: String): String {
         val words = mutableListOf<String>()
 
-        str.split(" ").filter { it.isNotEmpty() }.forEach {
-            words.add(it[0].uppercase() + it.substring(1))
+        str.split(" ").forEach {
+            words.add(if (it.isEmpty()) it else it[0].uppercase() + it.substring(1))
         }
 
         return words.joinToString(" ")
