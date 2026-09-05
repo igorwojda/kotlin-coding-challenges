@@ -35,13 +35,17 @@ internal object Solution1 {
             return if (item == null) {
                 null
             } else if (item.expiryTime < clock.millis()) {
-                expiryQueue.remove(item)
-                priorityQueue.remove(item)
+                // expired item must leave the map as well, otherwise it keeps consuming capacity forever
+                remove(key)
                 null
             } else {
+                // `lastUsed` takes part in the priority queue ordering, so the item has to be
+                // re-inserted (mutating it in place would not re-heapify the queue)
+                val touchedItem = item.touch(clock.millis())
                 priorityQueue.remove(item)
-                priorityQueue.add(item.touch(clock.millis()))
-                item.value
+                priorityQueue.add(touchedItem)
+                map[key] = touchedItem
+                touchedItem.value
             }
         }
 

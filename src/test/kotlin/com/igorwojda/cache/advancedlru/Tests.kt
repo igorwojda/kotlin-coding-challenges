@@ -94,6 +94,27 @@ class Tests {
     }
 
     @Test
+    fun `expired item does not consume capacity after being read`() {
+        val cache = classUnderTest(2, testClock)
+
+        cache.put("A", "apple", 1, Duration.ofMinutes(1))
+        cache.put("B", "bee", 1, Duration.ofMinutes(1))
+
+        testClock.incTime(Duration.ofMinutes(2))
+
+        // both are expired, reading them has to drop them from the cache
+        cache.get("A") shouldBeEqualTo null
+        cache.get("B") shouldBeEqualTo null
+
+        cache.put("C", "cat", 1, Duration.ofMinutes(15))
+        cache.put("D", "door", 1, Duration.ofMinutes(15))
+
+        // the cache is back to being empty before these inserts, so nothing may be evicted
+        cache.get("C") shouldBeEqualTo "cat"
+        cache.get("D") shouldBeEqualTo "door"
+    }
+
+    @Test
     fun `evict by expiry time`() {
         val cache = classUnderTest(100, testClock)
 
