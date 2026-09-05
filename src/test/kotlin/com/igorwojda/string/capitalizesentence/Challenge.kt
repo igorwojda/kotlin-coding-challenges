@@ -17,4 +17,9 @@ private class Test {
     fun `"this is a house" is capitalised to "This Is A House"`() {
         capitalizeSentence("this is a house") shouldBeEqualTo "This Is A House"
     }
+
+    @Test
+    fun `repeated spaces are preserved`() {
+        capitalizeSentence("hello  from   this side") shouldBeEqualTo "Hello  From   This Side"
+    }
 }
