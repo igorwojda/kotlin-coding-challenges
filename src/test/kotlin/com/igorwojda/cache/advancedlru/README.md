@@ -10,11 +10,14 @@ Design a data structure that enables the storage and retrieval of items via a ke
 limit. In cases where the addition of new items exceeds this capacity, ensure that space is made available through the 
 following sequence of operations:
 
-- Firstly, discard items that have exceeded their validity period (`expiryTime` > `getSystemTimeForExpiry()`).
-- If there are no items past their validity, identify the items with the earliest expiry time, and from those the items with the lowest priority rating, and from these remove 
-the item that was least recently accessed or used.
+- Firstly, discard items that have exceeded their validity period (their expiry time is in the past).
+- If there are no items past their validity, identify the items with the lowest priority rating and from these,
+remove the item that was least recently accessed or used.
 
 To simplify expiry logic testing use the provided `Clock` to determine the current time in milliseconds using `clock.millis()`.
+
+Note: a `PriorityQueue` based implementation is `O(log(n))` for insert/poll, but `O(n)` for removing an arbitrary
+item, so the overall run time complexity of each method is `O(n)`.
 
 [Challenge](Challenge.kt) | [Solution](Solution.kt) | [Tests](Tests.kt)
 
