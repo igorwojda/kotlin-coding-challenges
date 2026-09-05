@@ -44,7 +44,11 @@ kotlin {
 
 spotless {
     kotlin {
-        ktlint()
+        ktlint().editorConfigOverride(
+            mapOf(
+                "ktlint_code_style" to "intellij_idea",
+            ),
+        )
 
         leadingTabsToSpaces()
         endWithNewline()

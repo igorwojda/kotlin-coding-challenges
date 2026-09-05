@@ -72,23 +72,20 @@ class ProjectConsistencyTest {
 
     companion object {
         @JvmStatic
-        fun getSolutionFiles() =
-            TestUtils
-                .challengeDirectories()
-                .map { KotlinParserUtils.getChallengeKtFile(it, ChallengeFile.SOLUTIONS_KT) }
+        fun getSolutionFiles() = TestUtils
+            .challengeDirectories()
+            .map { KotlinParserUtils.getChallengeKtFile(it, ChallengeFile.SOLUTIONS_KT) }
 
         @JvmStatic
         fun getChallengeDirectories() = TestUtils.challengeDirectories()
 
         @JvmStatic
-        fun getChallengeRequiredFilePaths() =
-            TestUtils
-                .challengeDirectories()
-                .flatMap { getProjectRequiredFiles(it) }
+        fun getChallengeRequiredFilePaths() = TestUtils
+            .challengeDirectories()
+            .flatMap { getProjectRequiredFiles(it) }
 
-        private fun getProjectRequiredFiles(challengeDirectory: File) =
-            ChallengeFile
-                .values()
-                .map { "${challengeDirectory.path}/${it.fileName}" }
+        private fun getProjectRequiredFiles(challengeDirectory: File) = ChallengeFile
+            .values()
+            .map { "${challengeDirectory.path}/${it.fileName}" }
     }
 }
