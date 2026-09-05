@@ -5,7 +5,10 @@ package com.igorwojda.string.issubstring
 //
 // Optimal solution using double pointer.
 private object Solution1 {
-    private fun isSubstring(str: String, subStr: String): Boolean {
+    private fun isSubstring(
+        str: String,
+        subStr: String,
+    ): Boolean {
         if (subStr.isEmpty()) return true
         if (str.length < subStr.length) return false
 
@@ -37,8 +40,14 @@ private object Solution1 {
 //
 // Recursive solution
 private object Solution2 {
-    private fun isSubstring(str: String, subStr: String): Boolean {
-        fun isExactMatch(str: String, subStr: String): Boolean {
+    private fun isSubstring(
+        str: String,
+        subStr: String,
+    ): Boolean {
+        fun isExactMatch(
+            str: String,
+            subStr: String,
+        ): Boolean {
             if (subStr.length > str.length) {
                 return false
             }
@@ -62,7 +71,10 @@ private object Solution2 {
 }
 
 private object Solution3 {
-    private fun isSubstring(str: String, subStr: String): Boolean {
+    private fun isSubstring(
+        str: String,
+        subStr: String,
+    ): Boolean {
         if (subStr.isEmpty()) return true
 
         return str
@@ -76,12 +88,20 @@ private object Solution3 {
 // This recursive solution is faster than solution with String.drop because it uses double pointer
 //
 // Recursive solution
-private fun isSubstring(str: String, subStr: String): Boolean {
+private fun isSubstring(
+    str: String,
+    subStr: String,
+): Boolean {
     if (subStr.isEmpty()) {
         return true
     }
 
-    fun helper(first: String, second: String, firstPointer1: Int = 0, secondPointer2: Int = 0): Boolean {
+    fun helper(
+        first: String,
+        second: String,
+        firstPointer1: Int = 0,
+        secondPointer2: Int = 0,
+    ): Boolean {
         if (firstPointer1 > first.lastIndex) {
             return false
         }
@@ -95,8 +115,13 @@ private fun isSubstring(str: String, subStr: String): Boolean {
                     helper(first, second, localPointer1, localPointer2)
                 }
 
-                localPointer2 <= second.lastIndex && localPointer1 > first.lastIndex -> false
-                else -> true
+                localPointer2 <= second.lastIndex && localPointer1 > first.lastIndex -> {
+                    false
+                }
+
+                else -> {
+                    true
+                }
             }
         } else {
             val p1 = firstPointer1 - secondPointer2 + 1

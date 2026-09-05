@@ -16,7 +16,5 @@ private object Solution1 {
 
 // Returns a new list combining one collection of numbers from 0 to n-1 and another with numbers from n to 0
 private object Solution2 {
-    private fun countUpAndDown(n: Int): List<Int> {
-        return (0 until n) + (n downTo 0)
-    }
+    private fun countUpAndDown(n: Int): List<Int> = (0 until n) + (n downTo 0)
 }

@@ -5,7 +5,10 @@ import com.igorwojda.linkedlist.singly.base.Solution1.SinglyLinkedList
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun fromLast(list: SinglyLinkedList<Char>, endIndex: Int): Node<Char>? {
+private fun fromLast(
+    list: SinglyLinkedList<Char>,
+    endIndex: Int,
+): Node<Char>? {
     TODO("Add your solution here")
 }
 

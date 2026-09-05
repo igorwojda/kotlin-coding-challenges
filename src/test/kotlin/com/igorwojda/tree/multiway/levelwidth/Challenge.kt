@@ -75,7 +75,10 @@ private class Test {
     }
 }
 
-private class Node(val data: String, val children: MutableList<Node> = mutableListOf()) {
+private class Node(
+    val data: String,
+    val children: MutableList<Node> = mutableListOf(),
+) {
     fun add(data: String) {
         add(Node(data))
     }

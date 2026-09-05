@@ -1,9 +1,10 @@
+import jdk.internal.vm.vector.VectorSupport.test
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 
 plugins {
-    kotlin("jvm") version "1.9.25"
-    id("com.adarshr.test-logger") version "3.2.0"
-    id("com.diffplug.spotless") version "6.25.0"
+    kotlin("jvm") version "2.4.10"
+    id("com.adarshr.test-logger") version "4.0.0"
+    id("com.diffplug.spotless") version "8.10.2"
 }
 
 repositories {
@@ -14,6 +15,7 @@ repositories {
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.14.4")
     testImplementation("org.amshove.kluent:kluent:1.73")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 sourceSets {
@@ -41,10 +43,17 @@ kotlin {
 
 spotless {
     kotlin {
-        target("test/com/igorwojda/**/*.kt")
-        ktlint()
+        target("src/test/kotlin/com/igorwojda/**/*.kt")
 
-        indentWithSpaces()
+        ktlint().editorConfigOverride(
+            mapOf(
+                "ktlint_code_style" to "intellij_idea",
+                // Every solution for a challenge lives in one Solution.kt
+                "ktlint_standard_filename" to "disabled",
+            ),
+        )
+
+        leadingTabsToSpaces()
         endWithNewline()
     }
 }

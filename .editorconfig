@@ -1,2 +1,5 @@
 [*.{kt,kts}]
-ktlint_custom-rule-set_filename = disabled
+ktlint_code_style = intellij_idea
+
+# Challenges keep all solutions for one challenge in a single Solution.kt
+ktlint_standard_filename = disabled

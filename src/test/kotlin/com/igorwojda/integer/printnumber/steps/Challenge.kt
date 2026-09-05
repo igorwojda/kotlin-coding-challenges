@@ -3,7 +3,10 @@ package com.igorwojda.integer.printnumber.steps
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun printNumber(n: Int, step: Int = 1): List<Int> {
+private fun printNumber(
+    n: Int,
+    step: Int = 1,
+): List<Int> {
     TODO("Add your solution here")
 }
 

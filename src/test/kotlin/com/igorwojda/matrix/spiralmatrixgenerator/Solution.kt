@@ -2,9 +2,10 @@ package com.igorwojda.matrix.spiralmatrixgenerator
 
 private object Solution1 {
     private fun generateSpiralMatrix(n: Int): List<MutableList<Int?>> {
-        val list = MutableList(n) {
-            MutableList<Int?>(n) { null }
-        }
+        val list =
+            MutableList(n) {
+                MutableList<Int?>(n) { null }
+            }
 
         var direction = MatrixDirection.RIGHT
         var rowIndex = 0
@@ -26,6 +27,7 @@ private object Solution1 {
                         rowIndex++
                     }
                 }
+
                 MatrixDirection.DOWN -> {
                     val downValue = if (rowIndex == lastIndex) null else list[rowIndex + 1][columnIndex]
 
@@ -36,6 +38,7 @@ private object Solution1 {
                         direction = MatrixDirection.LEFT
                     }
                 }
+
                 MatrixDirection.LEFT -> {
                     val leftValue = if (columnIndex == 0) null else list[rowIndex][columnIndex - 1]
 
@@ -46,6 +49,7 @@ private object Solution1 {
                         direction = MatrixDirection.UP
                     }
                 }
+
                 MatrixDirection.UP -> {
                     val upValue = if (rowIndex == 0) null else list[rowIndex - 1][columnIndex]
 

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 
 class Tests {
     // Easily switch between a known solution and Challenge code
-    val classUnderTest: (Int)->LRUCache<Int, String> = ::LRUCacheImpl // or SolutionN::LRUCacheImpl
+    val classUnderTest: (Int) -> LRUCache<Int, String> = ::LRUCacheImpl // or SolutionN::LRUCacheImpl
 
     @Test
     fun `lru cache is empty after creation`() {

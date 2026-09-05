@@ -3,7 +3,10 @@ package com.igorwojda.integer.power
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun power(base: Int, exponent: Int): Int {
+private fun power(
+    base: Int,
+    exponent: Int,
+): Int {
     TODO("Add your solution here")
 }
 

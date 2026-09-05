@@ -2,16 +2,12 @@ package com.igorwojda.integer.addupto
 
 // Kotlin idiomatic solution
 private object Solution1 {
-    private fun addUpTo(n: Int): Int {
-        return (1..n).sum()
-    }
+    private fun addUpTo(n: Int): Int = (1..n).sum()
 }
 
 // Kotlin idiomatic solution
 private object Solution2 {
-    private fun addUpTo(n: Int): Int {
-        return (0..n).fold(0) { accumulated, current -> accumulated + current }
-    }
+    private fun addUpTo(n: Int): Int = (0..n).fold(0) { accumulated, current -> accumulated + current }
 }
 
 // Recursive solution
@@ -28,9 +24,7 @@ private object Solution3 {
 // Time Complexity: O(1)
 // Mathematical formula
 private object Solution4 {
-    private fun addUpTo(n: Int): Int {
-        return n * (n + 1) / 2
-    }
+    private fun addUpTo(n: Int): Int = n * (n + 1) / 2
 }
 
 // Time Complexity: O(n)

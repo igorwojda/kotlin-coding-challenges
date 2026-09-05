@@ -2,13 +2,11 @@ package com.igorwojda.string.capitalizesentence
 
 // Kotlin idiomatic solution
 private object Solution1 {
-    private fun capitalizeSentence(str: String): String {
-        return str
-            .split(" ")
-            .joinToString(" ") { string ->
-                string.replaceFirstChar { it.uppercase() }
-            }
-    }
+    private fun capitalizeSentence(str: String): String = str
+        .split(" ")
+        .joinToString(" ") { string ->
+            string.replaceFirstChar { it.uppercase() }
+        }
 }
 
 // Iterative solution

@@ -2,9 +2,7 @@ package com.igorwojda.integer.getodd
 
 // Kotlin idiomatic solution
 private object Solution1 {
-    private fun filterOdd(list: List<Int>): List<Int> {
-        return list.filter { it % 2 == 1 }
-    }
+    private fun filterOdd(list: List<Int>): List<Int> = list.filter { it % 2 == 1 }
 }
 
 // Recursive solution

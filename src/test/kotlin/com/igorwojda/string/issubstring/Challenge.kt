@@ -3,7 +3,10 @@ package com.igorwojda.string.issubstring
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun isSubstring(str: String, subStr: String): Boolean {
+private fun isSubstring(
+    str: String,
+    subStr: String,
+): Boolean {
     TODO("Add your solution here")
 }
 

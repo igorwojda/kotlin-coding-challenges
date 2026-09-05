@@ -3,7 +3,10 @@ package com.igorwojda.string.isanagram
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun isAnagram(str1: String, str2: String): Boolean {
+private fun isAnagram(
+    str1: String,
+    str2: String,
+): Boolean {
     TODO("Add your solution here")
 }
 

@@ -13,7 +13,10 @@ private object Solution1 {
         fun peek() = list.firstOrNull()
     }
 
-    fun combine(q1: Queue<*>, q2: Queue<*>): Queue<*> {
+    fun combine(
+        q1: Queue<*>,
+        q2: Queue<*>,
+    ): Queue<*> {
         val result = Queue<Any>()
 
         while (true) {

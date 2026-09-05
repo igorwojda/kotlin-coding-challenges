@@ -3,11 +3,17 @@ package com.igorwojda.list.pairaverage
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-fun hasAverage(list: List<Int>, average: Double): Boolean {
+fun hasAverage(
+    list: List<Int>,
+    average: Double,
+): Boolean {
     TODO("Add your solution here")
 }
 
-inline fun <K, V> MutableMap<K, V>.incrementExisting(key: K, value: V) {
+inline fun <K, V> MutableMap<K, V>.incrementExisting(
+    key: K,
+    value: V,
+) {
     put(key, value)
 }
 

@@ -1,17 +1,14 @@
 package com.igorwojda.integer.printnumber.basic
 
 private object Solution1 {
-    private fun printNumber(n: Int): List<Int> {
-        return (n downTo 1).toList()
-    }
+    private fun printNumber(n: Int): List<Int> = (n downTo 1).toList()
 }
 
 private object Solution2 {
-    private fun printNumber(n: Int): List<Int> =
-        when (n) {
-            0 -> emptyList()
-            else -> listOf(n) + printNumber(n - 1)
-        }
+    private fun printNumber(n: Int): List<Int> = when (n) {
+        0 -> emptyList()
+        else -> listOf(n) + printNumber(n - 1)
+    }
 }
 
 private object Solution3 {

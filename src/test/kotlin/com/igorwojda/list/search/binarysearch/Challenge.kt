@@ -3,7 +3,10 @@ package com.igorwojda.list.search.binarysearch
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun binarySearch(list: List<Char>, element: Char): Int {
+private fun binarySearch(
+    list: List<Char>,
+    element: Char,
+): Int {
     TODO("Add your solution here")
 }
 

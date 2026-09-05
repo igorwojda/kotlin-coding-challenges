@@ -7,9 +7,7 @@ private fun radixSort(list: List<Int>): List<Number> {
     TODO("Add your solution here")
 }
 
-private fun Int.getDigitAt(index: Int): Char {
-    return '0'
-}
+private fun Int.getDigitAt(index: Int): Char = '0'
 
 private val Int.digitCount get() = -1
 
@@ -98,14 +96,15 @@ private class Test {
 
     @Test
     fun `radix sort 51, 1, 24, 32, 74, 31`() {
-        radixSort(mutableListOf(51, 1, 24, 32, 74, 31)) shouldBeEqualTo listOf(
-            1,
-            24,
-            31,
-            32,
-            51,
-            74,
-        )
+        radixSort(mutableListOf(51, 1, 24, 32, 74, 31)) shouldBeEqualTo
+            listOf(
+                1,
+                24,
+                31,
+                32,
+                51,
+                74,
+            )
     }
 
     @Test

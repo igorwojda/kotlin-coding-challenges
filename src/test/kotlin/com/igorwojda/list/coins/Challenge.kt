@@ -3,7 +3,10 @@ package com.igorwojda.list.coins
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun getCoins(amount: Int, coins: List<Int>): Int {
+private fun getCoins(
+    amount: Int,
+    coins: List<Int>,
+): Int {
     TODO("Add your solution here")
 }
 

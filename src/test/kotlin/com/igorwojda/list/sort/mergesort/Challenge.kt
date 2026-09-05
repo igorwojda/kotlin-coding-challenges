@@ -5,7 +5,10 @@ import org.junit.jupiter.api.Test
 
 private fun mergeSort(list: List<Int>): List<Int> {
     // Take two sorted lists and merge them together into one sorted list
-    fun merge(left: MutableList<Int>, right: MutableList<Int>): MutableList<Int> {
+    fun merge(
+        left: MutableList<Int>,
+        right: MutableList<Int>,
+    ): MutableList<Int> {
         TODO("Add your solution here")
     }
 
@@ -35,29 +38,31 @@ private class Test {
 
     @Test
     fun `merge sort 5, 2, 1, 8, 4, 7, 6, 3`() {
-        mergeSort(mutableListOf(5, 2, 1, 8, 4, 7, 6, 3)) shouldBeEqualTo listOf(
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-        )
+        mergeSort(mutableListOf(5, 2, 1, 8, 4, 7, 6, 3)) shouldBeEqualTo
+            listOf(
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+            )
     }
 
     @Test
     fun `merge sort 17, 4, 12, 19, 80, 75, 16`() {
-        mergeSort(mutableListOf(17, 4, 12, 19, 80, 75, 16)) shouldBeEqualTo listOf(
-            4,
-            12,
-            16,
-            17,
-            19,
-            75,
-            80,
-        )
+        mergeSort(mutableListOf(17, 4, 12, 19, 80, 75, 16)) shouldBeEqualTo
+            listOf(
+                4,
+                12,
+                16,
+                17,
+                19,
+                75,
+                80,
+            )
     }
 
     @Test

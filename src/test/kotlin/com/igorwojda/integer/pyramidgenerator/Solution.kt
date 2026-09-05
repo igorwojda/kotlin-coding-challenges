@@ -30,11 +30,12 @@ private object Solution2 {
         (0 until n).forEach { row ->
             var rowStr = ""
             (0 until numColumns).forEach { column ->
-                rowStr += if (midpoint - row <= column && midpoint + row >= column) {
-                    "#"
-                } else {
-                    " "
-                }
+                rowStr +=
+                    if (midpoint - row <= column && midpoint + row >= column) {
+                        "#"
+                    } else {
+                        " "
+                    }
             }
             list.add(rowStr)
         }

@@ -14,7 +14,10 @@ private object Solution1 {
         return nodesAtLevel
     }
 
-    private class Node(val data: String, val children: MutableList<Node> = mutableListOf()) {
+    private class Node(
+        val data: String,
+        val children: MutableList<Node> = mutableListOf(),
+    ) {
         fun add(data: String) {
             add(Node(data))
         }
@@ -55,7 +58,10 @@ private object Solution2 {
         return result
     }
 
-    private class Node(val data: String, val children: MutableList<Node> = mutableListOf()) {
+    private class Node(
+        val data: String,
+        val children: MutableList<Node> = mutableListOf(),
+    ) {
         fun add(data: String) {
             add(Node(data))
         }
@@ -95,7 +101,10 @@ private object Solution3 {
         return counters
     }
 
-    private class Node(val data: String, val children: MutableList<Node> = mutableListOf()) {
+    private class Node(
+        val data: String,
+        val children: MutableList<Node> = mutableListOf(),
+    ) {
         fun add(data: String) {
             add(Node(data))
         }

@@ -3,7 +3,9 @@ package com.igorwojda.cache.lru
 // Implementation is using  combination of HashMap and LinkedList.
 // Time Complexity: O(1)
 object Solution1 {
-    class LRUCacheImpl<K: Any, V: Any>(private val capacity: Int) : LRUCache<K, V> {
+    class LRUCacheImpl<K : Any, V : Any>(
+        private val capacity: Int,
+    ) : LRUCache<K, V> {
         private val map = mutableMapOf<K, CacheItem<K, V>>()
 
         private var head: CacheItem<K, V>? = null
@@ -11,7 +13,10 @@ object Solution1 {
 
         override val size get() = map.size
 
-        override fun put(key: K, value: V) {
+        override fun put(
+            key: K,
+            value: V,
+        ) {
             // Check if node exits
             val existingCacheItem = map[key]
 
@@ -108,25 +113,27 @@ object Solution1 {
 // Implementation using LinkedHashMap
 // Time Complexity: O(1)
 object Solution2 {
-    class LRUCacheImpl<K: Any, V: Any>(private val capacity: Int): LRUCache<K, V> {
+    class LRUCacheImpl<K : Any, V : Any>(
+        private val capacity: Int,
+    ) : LRUCache<K, V> {
         override val size get() = linkedHashMap.size
 
-        private val linkedHashMap = object :
-            LinkedHashMap<K, V>(capacity, 0.75f, true) {
-            override fun removeEldestEntry(eldest: MutableMap.MutableEntry<K, V>?): Boolean {
-                return size > capacity
+        private val linkedHashMap =
+            object :
+                LinkedHashMap<K, V>(capacity, 0.75f, true) {
+                override fun removeEldestEntry(eldest: MutableMap.MutableEntry<K, V>?): Boolean = size > capacity
             }
-        }
 
-        override fun put(key: K, value: V) {
+        override fun put(
+            key: K,
+            value: V,
+        ) {
             linkedHashMap[key] = value
         }
 
-        override fun get(key: K): V? {
-            return linkedHashMap[key]?.also {
-                linkedHashMap.remove(key)
-                linkedHashMap[key] = it
-            }
+        override fun get(key: K): V? = linkedHashMap[key]?.also {
+            linkedHashMap.remove(key)
+            linkedHashMap[key] = it
         }
     }
 }
@@ -134,7 +141,9 @@ object Solution2 {
 // Implementation using List
 // Time Complexity: O(n)
 object Solution3 {
-    class LRUCacheImpl<K: Any, V: Any>(private val capacity: Int): LRUCache<K, V> {
+    class LRUCacheImpl<K : Any, V : Any>(
+        private val capacity: Int,
+    ) : LRUCache<K, V> {
         private val list = mutableListOf<Pair<K, V>>()
 
         override val size get() = list.size
@@ -151,7 +160,10 @@ object Solution3 {
             return list.firstOrNull { it.first == key }?.second
         }
 
-        override fun put(key: K, value: V) {
+        override fun put(
+            key: K,
+            value: V,
+        ) {
             list.removeIf { it.first == key }
             list.add(Pair(key, value))
 

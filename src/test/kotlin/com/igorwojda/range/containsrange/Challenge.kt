@@ -3,7 +3,10 @@ package com.igorwojda.range.containsrange
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun containsRange(range1: IntRange, range2: IntRange): Boolean {
+private fun containsRange(
+    range1: IntRange,
+    range2: IntRange,
+): Boolean {
     TODO("Add your solution here")
 }
 

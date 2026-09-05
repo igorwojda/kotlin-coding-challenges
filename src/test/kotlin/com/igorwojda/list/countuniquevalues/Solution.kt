@@ -15,19 +15,13 @@ private object Solution1 {
 }
 
 private object Solution2 {
-    private fun countUniqueValues(list: List<Int>): Int {
-        return list.toSet().size
-    }
+    private fun countUniqueValues(list: List<Int>): Int = list.toSet().size
 }
 
 private object Solution3 {
-    private fun countUniqueValues(list: List<Int>): Int {
-        return list.distinct().size
-    }
+    private fun countUniqueValues(list: List<Int>): Int = list.distinct().size
 }
 
 private object Solution4 {
-    private fun countUniqueValues(list: List<Int>): Int {
-        return list.groupBy { it }.size
-    }
+    private fun countUniqueValues(list: List<Int>): Int = list.groupBy { it }.size
 }
