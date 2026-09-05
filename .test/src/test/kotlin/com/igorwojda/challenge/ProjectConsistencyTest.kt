@@ -15,7 +15,6 @@ import java.nio.file.Files
 import kotlin.io.path.Path
 
 class ProjectConsistencyTest {
-
     @ParameterizedTest(name = "chalenge file exists: {0}")
     @MethodSource("getChallengeRequiredFilePaths")
     fun `challenge file exists`(challengeFilePath: String) {
@@ -27,9 +26,10 @@ class ProjectConsistencyTest {
     @MethodSource("getSolutionFiles")
     fun `solution kt file has solution objects`(ktFile: KtFile) {
         // given
-        val solutions = ktFile
-            .children
-            .filterIsInstance<KtObjectDeclaration>()
+        val solutions =
+            ktFile
+                .children
+                .filterIsInstance<KtObjectDeclaration>()
 
         // then
         solutions.size shouldBeGreaterOrEqualTo 1
@@ -39,24 +39,32 @@ class ProjectConsistencyTest {
     @MethodSource("getSolutionFiles")
     fun `solution kt file has solution objects with correct names`(ktFile: KtFile) {
         // given
-        val solutionNames = ktFile
-            .children
-            .filterIsInstance<KtObjectDeclaration>()
-            .map { it.name ?: "" }
-            .filterNot { it == "KtLintWillNotComplain" }
+        val solutionNames =
+            ktFile
+                .children
+                .filterIsInstance<KtObjectDeclaration>()
+                .map { it.name ?: "" }
+                .filterNot { it == "KtLintWillNotComplain" }
 
         // then
         val expected = List(solutionNames.size) { "Solution${it + 1}" }
         solutionNames shouldBeEqualTo expected
     }
 
-    @ParameterizedTest(name = "challenge kt file has one at most one top level Test class: {0}")
-    @MethodSource("getChallenge")
-    fun `challenge kt file has one top level Test class`(ktFile: KtFile) {
+    @ParameterizedTest(name = "challenge has exactly one top level test class: {0}")
+    @MethodSource("getChallengeDirectories")
+    fun `challenge has exactly one top level test class`(challengeDirectory: File) {
         // given
-        val classes = ktFile
-            .children
-            .filterIsInstance<KtClass>().filter { it.name == "Test" }
+        val challengeFile = KotlinParserUtils.getChallengeKtFile(challengeDirectory, ChallengeFile.CHALLENGE_KT)
+        val testsFile =
+            File(challengeDirectory, "Tests.kt")
+                .takeIf { it.isFile }
+                ?.let { KotlinParserUtils.getKtFile(it) }
+        val classes =
+            listOfNotNull(challengeFile, testsFile)
+                .flatMap { it.children.toList() }
+                .filterIsInstance<KtClass>()
+                .filter { it.name == "Test" || it.name == "Tests" }
 
         // then
         classes.size shouldBeEqualTo 1
@@ -64,22 +72,23 @@ class ProjectConsistencyTest {
 
     companion object {
         @JvmStatic
-        fun getSolutionFiles() = TestUtils
-            .challengeDirectories()
-            .map { KotlinParserUtils.getChallengeKtFile(it, ChallengeFile.SOLUTIONS_KT) }
+        fun getSolutionFiles() =
+            TestUtils
+                .challengeDirectories()
+                .map { KotlinParserUtils.getChallengeKtFile(it, ChallengeFile.SOLUTIONS_KT) }
 
         @JvmStatic
-        fun getChallenge() = TestUtils
-            .challengeDirectories()
-            .map { KotlinParserUtils.getChallengeKtFile(it, ChallengeFile.CHALLENGE_KT) }
+        fun getChallengeDirectories() = TestUtils.challengeDirectories()
 
         @JvmStatic
-        fun getChallengeRequiredFilePaths() = TestUtils
-            .challengeDirectories()
-            .flatMap { getProjectRequiredFiles(it) }
+        fun getChallengeRequiredFilePaths() =
+            TestUtils
+                .challengeDirectories()
+                .flatMap { getProjectRequiredFiles(it) }
 
-        private fun getProjectRequiredFiles(challengeDirectory: File) = ChallengeFile
-            .values()
-            .map { "${challengeDirectory.path}/${it.fileName}" }
+        private fun getProjectRequiredFiles(challengeDirectory: File) =
+            ChallengeFile
+                .values()
+                .map { "${challengeDirectory.path}/${it.fileName}" }
     }
 }
