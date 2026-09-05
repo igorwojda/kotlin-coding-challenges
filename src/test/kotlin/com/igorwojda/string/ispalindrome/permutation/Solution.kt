@@ -2,10 +2,7 @@ package com.igorwojda.string.ispalindrome.permutation
 
 // frequency map solution
 private object Solution1 {
-    private fun isPermutationPalindrome(
-        str: String,
-        characterRemoved: Boolean = false,
-    ): Boolean {
+    private fun isPermutationPalindrome(str: String): Boolean {
         val charactersFrequencyMap = str.groupingBy { it }.eachCount()
 
         val filtered = charactersFrequencyMap.filter { it.value % 2 == 1 }
@@ -19,5 +16,5 @@ private object Solution2 {
         .groupBy { it }
         .map { it.value }
         .map { it.size }
-        .count { it % 2 == 1 } == 1
+        .count { it % 2 == 1 } <= 1
 }
