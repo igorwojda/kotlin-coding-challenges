@@ -12,6 +12,12 @@ passed to callback returns `true`, otherwise return `false`.
 
 [Challenge](Challenge.kt) | [Solution](Solution.kt) | [Tests](Tests.kt)
 
+## Limitations
+
+Don't use any Kotlin build-in methods that already answer the question like `any` / `none` / `all` / `find` /
+`firstOrNull` / `filter` / `contains` / `indexOfFirst`, etc. Don't use a loop (`for` / `while` / `forEach`) either -
+the function has to call itself.
+
 ## Examples
 
 Example 1
