@@ -3,17 +3,21 @@ package com.igorwojda.list.minsublistlength
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-fun minSubListLength(list: List<Int>, sum: Int): Int {
+fun minSubListLength(
+    list: List<Int>,
+    sum: Int,
+): Int {
     TODO("Add your solution here")
 }
 
-private fun min(i1: Int?, i2: Int?): Int? {
-    return when {
-        i1 != null && i2 != null -> Math.min(i1, i2)
-        i1 != null && i2 == null -> i1
-        i1 == null && i2 != null -> i2
-        else -> null
-    }
+private fun min(
+    i1: Int?,
+    i2: Int?,
+): Int? = when {
+    i1 != null && i2 != null -> Math.min(i1, i2)
+    i1 != null && i2 == null -> i1
+    i1 == null && i2 != null -> i2
+    else -> null
 }
 
 private class Test {

@@ -139,91 +139,97 @@ private class Test {
 
     @Test
     fun `traverse depth first pre order`() {
-        traverseDepthFirstPreOrder(getTree()) shouldBeEqualTo listOf(
-            'F',
-            'B',
-            'A',
-            'D',
-            'C',
-            'E',
-            'G',
-            'I',
-            'H',
-        )
+        traverseDepthFirstPreOrder(getTree()) shouldBeEqualTo
+            listOf(
+                'F',
+                'B',
+                'A',
+                'D',
+                'C',
+                'E',
+                'G',
+                'I',
+                'H',
+            )
     }
 
     @Test
     fun `traverse depth first in order`() {
-        traverseDepthFirstInOrder(getTree()) shouldBeEqualTo listOf(
-            'A',
-            'B',
-            'C',
-            'D',
-            'E',
-            'F',
-            'G',
-            'H',
-            'I',
-        )
+        traverseDepthFirstInOrder(getTree()) shouldBeEqualTo
+            listOf(
+                'A',
+                'B',
+                'C',
+                'D',
+                'E',
+                'F',
+                'G',
+                'H',
+                'I',
+            )
     }
 
     @Test
     fun `traverse depth first post order`() {
-        traverseDepthFirstPostOrder(getTree()) shouldBeEqualTo listOf(
-            'A',
-            'C',
-            'E',
-            'D',
-            'B',
-            'H',
-            'I',
-            'G',
-            'F',
-        )
+        traverseDepthFirstPostOrder(getTree()) shouldBeEqualTo
+            listOf(
+                'A',
+                'C',
+                'E',
+                'D',
+                'B',
+                'H',
+                'I',
+                'G',
+                'F',
+            )
     }
 
     @Test
     fun `traverse depth first pre order reversed`() {
-        traverseDepthFirstPreOrderReversed(getTree()) shouldBeEqualTo listOf(
-            'F',
-            'G',
-            'I',
-            'H',
-            'B',
-            'D',
-            'E',
-            'C',
-            'A',
-        )
+        traverseDepthFirstPreOrderReversed(getTree()) shouldBeEqualTo
+            listOf(
+                'F',
+                'G',
+                'I',
+                'H',
+                'B',
+                'D',
+                'E',
+                'C',
+                'A',
+            )
     }
 
     @Test
     fun `traverse depth first in order reversed`() {
-        traverseDepthFirstInOrderReversed(getTree()) shouldBeEqualTo listOf(
-            'I',
-            'H',
-            'G',
-            'F',
-            'E',
-            'D',
-            'C',
-            'B',
-            'A',
-        )
+        traverseDepthFirstInOrderReversed(getTree()) shouldBeEqualTo
+            listOf(
+                'I',
+                'H',
+                'G',
+                'F',
+                'E',
+                'D',
+                'C',
+                'B',
+                'A',
+            )
     }
 
     @Test
     fun `traverse depth first post order reverse`() {
-        traverseDepthFirstPostOrderReversed(getTree()) shouldBeEqualTo listOf(
-            'H',
-            'I',
-            'G',
-            'E',
-            'C',
-            'D',
-            'A',
-            'B',
-            'F',
-        )
+        traverseDepthFirstPostOrderReversed(getTree()) shouldBeEqualTo
+            listOf(
+                'H',
+                'I',
+                'G',
+                'E',
+                'C',
+                'D',
+                'A',
+                'B',
+                'F',
+            )
     }
 }

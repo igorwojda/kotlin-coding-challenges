@@ -25,10 +25,11 @@ private class Test {
 
     @Test
     fun `capitalize list with sentence`() {
-        capitalizeFirst(listOf("what a", "beautiful", "morning")) shouldBeEqualTo listOf(
-            "What a",
-            "Beautiful",
-            "Morning",
-        )
+        capitalizeFirst(listOf("what a", "beautiful", "morning")) shouldBeEqualTo
+            listOf(
+                "What a",
+                "Beautiful",
+                "Morning",
+            )
     }
 }

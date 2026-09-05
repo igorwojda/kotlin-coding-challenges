@@ -20,6 +20,7 @@ private object Solution1 {
                     current.data == element -> {
                         return
                     }
+
                     element < current.data -> {
                         if (current.left == null) {
                             current.left = newNode
@@ -28,6 +29,7 @@ private object Solution1 {
 
                         current.left?.let { current = it }
                     }
+
                     element > current.data -> {
                         if (current.right == null) {
                             current.right = newNode

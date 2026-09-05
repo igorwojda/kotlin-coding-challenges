@@ -1,10 +1,13 @@
 package com.igorwojda.list.largestelements
 
-import java.util.*
+import java.util.PriorityQueue
 
 // Time complexity: O(n log k)
 private object Solution1 {
-    private fun largestElements(list: List<Int>, count: Int): List<Int> {
+    private fun largestElements(
+        list: List<Int>,
+        count: Int,
+    ): List<Int> {
         if (list.size <= count) {
             return list
         }

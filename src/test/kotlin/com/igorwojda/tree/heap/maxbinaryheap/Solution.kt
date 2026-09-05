@@ -43,15 +43,16 @@ private object Solution1 {
             while ((items[elementIndex] < items[leftChildIndex]) ||
                 items[elementIndex] < items[rightChildIndex]
             ) {
-                elementIndex = if (rightChildIndex > items.lastIndex ||
-                    items[leftChildIndex] > items[rightChildIndex]
-                ) {
-                    items.swap(leftChildIndex, elementIndex)
-                    leftChildIndex
-                } else {
-                    items.swap(rightChildIndex, elementIndex)
-                    rightChildIndex
-                }
+                elementIndex =
+                    if (rightChildIndex > items.lastIndex ||
+                        items[leftChildIndex] > items[rightChildIndex]
+                    ) {
+                        items.swap(leftChildIndex, elementIndex)
+                        leftChildIndex
+                    } else {
+                        items.swap(rightChildIndex, elementIndex)
+                        rightChildIndex
+                    }
 
                 leftChildIndex = getLeftChildIndex(elementIndex)
                 rightChildIndex = getRightChildIndex(elementIndex)
@@ -78,7 +79,10 @@ private object Solution1 {
 
         fun isEmpty() = items.isEmpty()
 
-        private fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
+        private fun <T> MutableList<T>.swap(
+            index1: Int,
+            index2: Int,
+        ) {
             val tmp = this[index1]
             this[index1] = this[index2]
             this[index2] = tmp

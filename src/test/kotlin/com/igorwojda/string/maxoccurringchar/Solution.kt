@@ -5,7 +5,8 @@ private object Solution1 {
     private fun maxOccurringChar(str: String): Char? {
         if (str.isBlank()) return null
 
-        return str.toCharArray()
+        return str
+            .toCharArray()
             .groupBy { it }
             .maxBy { it.value.size }
             .key
@@ -17,7 +18,8 @@ private object Solution2 {
     private fun maxOccurringChar(str: String): Char? {
         if (str.isBlank()) return null
 
-        return str.toList()
+        return str
+            .toList()
             .groupingBy { it }
             .eachCount()
             .maxBy { it.value }

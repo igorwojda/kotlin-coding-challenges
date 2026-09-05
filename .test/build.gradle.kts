@@ -3,9 +3,9 @@ import com.igorwojda.challenge.utils.TestUtils
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 
 plugins {
-    kotlin("jvm") version "1.9.25"
-    id("com.adarshr.test-logger") version "3.2.0"
-    id("com.diffplug.spotless") version "6.25.0"
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.test.logger)
+    alias(libs.plugins.spotless)
 }
 
 repositories {
@@ -13,9 +13,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.12.1")
-    testImplementation("org.amshove.kluent:kluent:1.73")
-    testImplementation("org.jetbrains.kotlin:kotlin-compiler:1.9.25")
+    testImplementation(libs.junit.jupiter)
+    testImplementation(libs.kluent)
+    testImplementation(libs.kotlin.compiler.embeddable)
+    testRuntimeOnly(libs.junit.platform.launcher)
 }
 
 tasks.test {
@@ -29,10 +30,12 @@ tasks.test {
     }
 }
 
-task("generateTests") {
+tasks.register("generateTests") {
     group = "verification"
 
-    TestUtils.generateTestFiles(project)
+    doLast {
+        TestUtils.generateTestFiles(project)
+    }
 }
 
 kotlin {
@@ -41,9 +44,13 @@ kotlin {
 
 spotless {
     kotlin {
-        ktlint()
+        ktlint().editorConfigOverride(
+            mapOf(
+                "ktlint_code_style" to "intellij_idea",
+            ),
+        )
 
-        indentWithSpaces()
+        leadingTabsToSpaces()
         endWithNewline()
     }
 }

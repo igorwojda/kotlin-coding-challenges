@@ -3,10 +3,11 @@ package com.igorwojda.string.decapitalizeconst
 // Kotlin idiomatic solution
 private object Solution1 {
     private fun decapitalizeConst(str: String): String {
-        val subsStringsList = str
-            .split("_")
-            .map { it.lowercase() }
-            .map { it.replaceFirstChar { string -> string.uppercaseChar() } }
+        val subsStringsList =
+            str
+                .split("_")
+                .map { it.lowercase() }
+                .map { it.replaceFirstChar { string -> string.uppercaseChar() } }
 
         return subsStringsList
             .joinToString("")
@@ -23,13 +24,14 @@ private object Solution2 {
 
         if (words.size == 1) return words.first().lowercase()
 
-        return words.mapIndexed { index, word ->
-            if (index == 0) {
-                word.lowercase()
-            } else {
-                word.first().uppercase() + word.drop(1).lowercase()
-            }
-        }.joinToString(separator = "")
+        return words
+            .mapIndexed { index, word ->
+                if (index == 0) {
+                    word.lowercase()
+                } else {
+                    word.first().uppercase() + word.drop(1).lowercase()
+                }
+            }.joinToString(separator = "")
     }
 }
 

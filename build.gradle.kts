@@ -1,9 +1,9 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 
 plugins {
-    kotlin("jvm") version "1.9.25"
-    id("com.adarshr.test-logger") version "3.2.0"
-    id("com.diffplug.spotless") version "6.25.0"
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.test.logger)
+    alias(libs.plugins.spotless)
 }
 
 repositories {
@@ -12,8 +12,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.12.1")
-    testImplementation("org.amshove.kluent:kluent:1.73")
+    testImplementation(libs.junit.jupiter)
+    testImplementation(libs.kluent)
+    testRuntimeOnly(libs.junit.platform.launcher)
 }
 
 sourceSets {
@@ -41,10 +42,17 @@ kotlin {
 
 spotless {
     kotlin {
-        target("test/com/igorwojda/**/*.kt")
-        ktlint()
+        target("src/test/kotlin/com/igorwojda/**/*.kt")
 
-        indentWithSpaces()
+        ktlint().editorConfigOverride(
+            mapOf(
+                "ktlint_code_style" to "intellij_idea",
+                // Every solution for a challenge lives in one Solution.kt
+                "ktlint_standard_filename" to "disabled",
+            ),
+        )
+
+        leadingTabsToSpaces()
         endWithNewline()
     }
 }

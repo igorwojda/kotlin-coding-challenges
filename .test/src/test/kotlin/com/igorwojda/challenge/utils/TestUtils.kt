@@ -3,7 +3,6 @@ package com.igorwojda.challenge.utils
 import java.io.File
 
 object TestUtils {
-
     /**
      * Return repository root directory File
      */

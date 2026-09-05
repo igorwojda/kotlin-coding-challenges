@@ -8,7 +8,6 @@ fun generatePyramid(n: Int): List<String> {
 }
 
 private class Test {
-
     @Test
     fun `pyramid n = 2`() {
         generatePyramid(2).also {

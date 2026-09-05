@@ -3,7 +3,10 @@ package com.igorwojda.queue.combine
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun combine(q1: Queue<*>, q2: Queue<*>): Queue<*> {
+private fun combine(
+    q1: Queue<*>,
+    q2: Queue<*>,
+): Queue<*> {
     TODO("Add your solution here")
 }
 
@@ -70,19 +73,21 @@ private class Test {
 
     @Test
     fun `weave can combine two queues wit the same length`() {
-        val one = Queue<Int>().apply {
-            add(1)
-            add(2)
-            add(3)
-            add(4)
-        }
+        val one =
+            Queue<Int>().apply {
+                add(1)
+                add(2)
+                add(3)
+                add(4)
+            }
 
-        val two = Queue<String>().apply {
-            add("one")
-            add("two")
-            add("three")
-            add("four")
-        }
+        val two =
+            Queue<String>().apply {
+                add("one")
+                add("two")
+                add("three")
+                add("four")
+            }
 
         combine(one, two).also {
             it.remove() shouldBeEqualTo 1
@@ -99,21 +104,23 @@ private class Test {
 
     @Test
     fun `weave can combine two queues with different length - first queue is longer`() {
-        val one = Queue<Int>().apply {
-            add(1)
-            add(2)
-            add(3)
-            add(4)
-            add(5)
-            add(6)
-        }
+        val one =
+            Queue<Int>().apply {
+                add(1)
+                add(2)
+                add(3)
+                add(4)
+                add(5)
+                add(6)
+            }
 
-        val two = Queue<String>().apply {
-            add("one")
-            add("two")
-            add("three")
-            add("four")
-        }
+        val two =
+            Queue<String>().apply {
+                add("one")
+                add("two")
+                add("three")
+                add("four")
+            }
 
         combine(one, two).apply {
             remove() shouldBeEqualTo 1
@@ -132,21 +139,23 @@ private class Test {
 
     @Test
     fun `weave can combine two queues with different length - second queue is longer`() {
-        val one = Queue<Int>().apply {
-            add(1)
-            add(2)
-            add(3)
-            add(4)
-        }
+        val one =
+            Queue<Int>().apply {
+                add(1)
+                add(2)
+                add(3)
+                add(4)
+            }
 
-        val two = Queue<String>().apply {
-            add("one")
-            add("two")
-            add("three")
-            add("four")
-            add("five")
-            add("six")
-        }
+        val two =
+            Queue<String>().apply {
+                add("one")
+                add("two")
+                add("three")
+                add("four")
+                add("five")
+                add("six")
+            }
 
         combine(one, two).apply {
             remove() shouldBeEqualTo 1

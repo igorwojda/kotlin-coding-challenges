@@ -27,7 +27,10 @@ private object Solution1 {
 
 // Recursive solution
 private object Solution2 {
-    private fun isTolerantPalindrome(str: String, characterRemoved: Boolean = false): Boolean {
+    private fun isTolerantPalindrome(
+        str: String,
+        characterRemoved: Boolean = false,
+    ): Boolean {
         return if (str.isEmpty() || str.length == 1) {
             true
         } else {
@@ -44,14 +47,16 @@ private object Solution2 {
                         return true
                     }
 
-                    val removeLeftResult = isTolerantPalindrome(
-                        str.substring(2 until str.lastIndex),
-                        true,
-                    )
-                    val removeRightResult = isTolerantPalindrome(
-                        str.substring(1 until str.lastIndex - 1),
-                        true,
-                    )
+                    val removeLeftResult =
+                        isTolerantPalindrome(
+                            str.substring(2 until str.lastIndex),
+                            true,
+                        )
+                    val removeRightResult =
+                        isTolerantPalindrome(
+                            str.substring(1 until str.lastIndex - 1),
+                            true,
+                        )
 
                     return removeLeftResult || removeRightResult
                 }
@@ -62,7 +67,10 @@ private object Solution2 {
 
 // recursive solution 2
 private object Solution3 {
-    private fun isTolerantPalindrome(str: String, characterRemoved: Boolean = false): Boolean {
+    private fun isTolerantPalindrome(
+        str: String,
+        characterRemoved: Boolean = false,
+    ): Boolean {
         val revStr = str.reversed()
         if (revStr == str) return true
         if (characterRemoved) return false

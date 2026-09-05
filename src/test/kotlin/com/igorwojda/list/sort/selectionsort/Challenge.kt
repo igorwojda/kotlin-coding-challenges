@@ -3,9 +3,7 @@ package com.igorwojda.list.sort.selectionsort
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun selectionSort(list: List<Int>): List<Number> {
-    return list
-}
+private fun selectionSort(list: List<Int>): List<Number> = list
 
 private class Test {
     @Test
@@ -30,29 +28,31 @@ private class Test {
 
     @Test
     fun `selection sort 5, 2, 1, 8, 4, 7, 6, 3`() {
-        selectionSort(mutableListOf(5, 2, 1, 8, 4, 7, 6, 3)) shouldBeEqualTo listOf(
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-        )
+        selectionSort(mutableListOf(5, 2, 1, 8, 4, 7, 6, 3)) shouldBeEqualTo
+            listOf(
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+            )
     }
 
     @Test
     fun `selection sort 17, 4, 12, 19, 80, 75, 16`() {
-        selectionSort(mutableListOf(17, 4, 12, 19, 80, 75, 16)) shouldBeEqualTo listOf(
-            4,
-            12,
-            16,
-            17,
-            19,
-            75,
-            80,
-        )
+        selectionSort(mutableListOf(17, 4, 12, 19, 80, 75, 16)) shouldBeEqualTo
+            listOf(
+                4,
+                12,
+                16,
+                17,
+                19,
+                75,
+                80,
+            )
     }
 
     @Test

@@ -26,6 +26,7 @@ private class BinarySearchTree<E : Comparable<E>> {
                 current.data == element -> {
                     return
                 }
+
                 element < current.data -> {
                     if (current.left == null) {
                         current.left = newNode
@@ -34,6 +35,7 @@ private class BinarySearchTree<E : Comparable<E>> {
 
                     current.left?.let { current = it }
                 }
+
                 element > current.data -> {
                     if (current.right == null) {
                         current.right = newNode
@@ -99,16 +101,17 @@ private class Test {
 
     @Test
     fun `traverse breath first`() {
-        traverseBreathFirst(getTree()) shouldBeEqualTo listOf(
-            'F',
-            'B',
-            'G',
-            'A',
-            'D',
-            'I',
-            'C',
-            'E',
-            'H',
-        )
+        traverseBreathFirst(getTree()) shouldBeEqualTo
+            listOf(
+                'F',
+                'B',
+                'G',
+                'A',
+                'D',
+                'I',
+                'C',
+                'E',
+                'H',
+            )
     }
 }

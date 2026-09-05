@@ -2,9 +2,7 @@ package com.igorwojda.list.product
 
 // Kotlin idiomatic solution
 private object Solution1 {
-    private fun product(list: List<Int>): Int {
-        return list.reduce { accumulated, current -> accumulated * current }
-    }
+    private fun product(list: List<Int>): Int = list.reduce { accumulated, current -> accumulated * current }
 }
 
 // Recursive solution
@@ -21,7 +19,10 @@ private object Solution2 {
 // Tail-recursive solution
 private object Solution3 {
     private fun product(list: List<Int>): Int {
-        fun prod(acc: Int, list: List<Int>): Int {
+        fun prod(
+            acc: Int,
+            list: List<Int>,
+        ): Int {
             if (list.isEmpty()) {
                 return acc
             }

@@ -4,7 +4,10 @@ package com.igorwojda.list.minsublistlength
 // Space complexity O(n)
 // Use sliding window
 private object Solution1 {
-    fun minSubListLength(list: List<Int>, sum: Int): Int {
+    fun minSubListLength(
+        list: List<Int>,
+        sum: Int,
+    ): Int {
         var total = 0
         var start = 0
         var end = 0
@@ -15,15 +18,14 @@ private object Solution1 {
             if (total < sum && end < list.size) {
                 total += list[end]
                 end++
-            }
-            // if current window adds up to at least the numElements given then we can shrink the window
-            else if (total >= sum) {
+            } else if (total >= sum) {
+                // if current window adds up to at least the numElements given then we can shrink the window
                 minLen = min(minLen, end - start)
                 total -= list[start]
                 start++
-            }
-            // current total less than required total but we reach the end, need this or else we'll be in an infinite loop
-            else {
+            } else {
+                // current total less than required total but we reach the end,
+                // need this or else we'll be in an infinite loop
                 break
             }
         }
@@ -31,20 +33,24 @@ private object Solution1 {
         return minLen ?: 0
     }
 
-    private fun min(i1: Int?, i2: Int?): Int? {
-        return when {
-            i1 != null && i2 != null -> Math.min(i1, i2)
-            i1 != null && i2 == null -> i1
-            i1 == null && i2 != null -> i2
-            else -> null
-        }
+    private fun min(
+        i1: Int?,
+        i2: Int?,
+    ): Int? = when {
+        i1 != null && i2 != null -> Math.min(i1, i2)
+        i1 != null && i2 == null -> i1
+        i1 == null && i2 != null -> i2
+        else -> null
     }
 }
 
 // Time complexity: O(n^2)
 // Loop through all the elements and then loop through all sublists
 private object Solution2 {
-    fun minSubListLength(list: List<Int>, sum: Int): Int {
+    fun minSubListLength(
+        list: List<Int>,
+        sum: Int,
+    ): Int {
         var minListLength: Int? = null
 
         repeat(list.size) { index ->
@@ -66,28 +72,34 @@ private object Solution2 {
         return minListLength ?: 0
     }
 
-    private fun min(i1: Int?, i2: Int?): Int? {
-        return when {
-            i1 != null && i2 != null -> Math.min(i1, i2)
-            i1 != null && i2 == null -> i1
-            i1 == null && i2 != null -> i2
-            else -> null
-        }
+    private fun min(
+        i1: Int?,
+        i2: Int?,
+    ): Int? = when {
+        i1 != null && i2 != null -> Math.min(i1, i2)
+        i1 != null && i2 == null -> i1
+        i1 == null && i2 != null -> i2
+        else -> null
     }
 }
 
 // Solution without use a private fun min
 private object Solution3 {
-    fun minSubListLength(list: List<Int>, sum: Int): Int {
+    fun minSubListLength(
+        list: List<Int>,
+        sum: Int,
+    ): Int {
         if (list.isEmpty()) return 0
 
         var length = 1
 
         while (length < list.size + 1) {
-            val proposal = list.windowed(length)
-                .toMutableList()
-                .map { it.sum() }
-                .filter { it >= sum }
+            val proposal =
+                list
+                    .windowed(length)
+                    .toMutableList()
+                    .map { it.sum() }
+                    .filter { it >= sum }
 
             if (proposal.isNotEmpty()) {
                 break

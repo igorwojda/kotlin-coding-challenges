@@ -2,9 +2,12 @@ package com.igorwojda.list.largestelements
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
-import java.util.*
+import java.util.PriorityQueue
 
-private fun largestElements(list: List<Int>, count: Int): List<Int> {
+private fun largestElements(
+    list: List<Int>,
+    count: Int,
+): List<Int> {
     if (list.size <= count) {
         return list
     }
