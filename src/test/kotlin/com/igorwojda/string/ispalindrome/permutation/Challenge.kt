@@ -27,4 +27,19 @@ private class Test {
     fun `'tami' is not a palindrome`() {
         isPermutationPalindrome("tami") shouldBeEqualTo false
     }
+
+    @Test
+    fun `'oooo' is a palindrome`() {
+        isPermutationPalindrome("oooo") shouldBeEqualTo true
+    }
+
+    @Test
+    fun `'aab' is a palindrome`() {
+        isPermutationPalindrome("aab") shouldBeEqualTo true
+    }
+
+    @Test
+    fun `empty string is a palindrome`() {
+        isPermutationPalindrome("") shouldBeEqualTo true
+    }
 }
