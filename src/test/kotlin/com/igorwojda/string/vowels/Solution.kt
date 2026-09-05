@@ -26,7 +26,5 @@ private object Solution2 {
 
 // Regex
 private object Solution3 {
-    private fun vowels(str: String): Int {
-        return Regex("[aeiouy]").findAll(str.lowercase()).count()
-    }
+    private fun vowels(str: String): Int = Regex("[aeiouy]").findAll(str.lowercase()).count()
 }

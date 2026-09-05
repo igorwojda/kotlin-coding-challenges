@@ -4,7 +4,10 @@ package com.igorwojda.matrix.findrectangle
 private object Solution1 {
     private fun findRectangle(image: List<List<Int>>): List<Int>? {
         // This helper function may be used with challange variation where multiple rectangles exists in the image
-        fun getRectangleFromTopLeftCorner(rowIndex: Int, columnIndex: Int): List<Int> {
+        fun getRectangleFromTopLeftCorner(
+            rowIndex: Int,
+            columnIndex: Int,
+        ): List<Int> {
             // find right x coordinate
             var rightColumnIndex = columnIndex
 

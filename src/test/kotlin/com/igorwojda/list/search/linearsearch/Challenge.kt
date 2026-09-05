@@ -3,7 +3,10 @@ package com.igorwojda.list.search.linearsearch
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun getIndex(list: List<String>, str: String): Int {
+private fun getIndex(
+    list: List<String>,
+    str: String,
+): Int {
     TODO("Add your solution here")
 }
 

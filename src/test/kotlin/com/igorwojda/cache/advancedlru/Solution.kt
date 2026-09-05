@@ -2,12 +2,12 @@ package com.igorwojda.cache.advancedlru
 
 import java.time.Clock
 import java.time.Duration
-import java.util.*
+import java.util.PriorityQueue
 
 // Implementation is using  combination of HashMap and PriorityQueue.
 // Time Complexity: O(N) (JVM priority queue is O(log(n)) on offer/poll methods and O(N) on remove(item) method)
 internal object Solution1 {
-    class AdvancedLRUCache<K: Any, V: Any>(private val capacity: Int, private val clock: Clock = Clock.systemDefaultZone()) : LRUCache<K, V> {
+    class AdvancedLRUCache<K : Any, V : Any>(private val capacity: Int, private val clock: Clock = Clock.systemDefaultZone()) : LRUCache<K, V> {
         private val map: MutableMap<K, CacheItem<K, V>> = mutableMapOf()
 
         private val expiryQueue: PriorityQueue<CacheItem<K, V>> = PriorityQueue { item1, item2 ->
@@ -78,7 +78,7 @@ internal object Solution1 {
             val value: V,
             val priority: Int,
             val expiryTime: Long,
-            val lastUsed: Long
+            val lastUsed: Long,
         ) {
             // only compare equality by `key`
             override fun equals(other: Any?): Boolean {
@@ -88,22 +88,16 @@ internal object Solution1 {
                 return false
             }
 
-            override fun hashCode(): Int {
-                return key.hashCode()
-            }
+            override fun hashCode(): Int = key.hashCode()
 
             fun touch(
-                lastUsed: Long = this.lastUsed
+                lastUsed: Long = this.lastUsed,
             ) = CacheItem(key, value, priority, expiryTime, lastUsed)
 
-            override fun toString(): String {
-                return "CacheItem(key='$key', value=$value, priority=$priority, expiryTime=$expiryTime, lastUsed=$lastUsed)"
-            }
+            override fun toString(): String = "CacheItem(key='$key', value=$value, priority=$priority, expiryTime=$expiryTime, lastUsed=$lastUsed)"
         }
 
-        override fun toString(): String {
-            return "AdvancedLRUCache(capacity=$capacity, clock=$clock, map=$map, priorityQueue=$expiryQueue)"
-        }
+        override fun toString(): String = "AdvancedLRUCache(capacity=$capacity, clock=$clock, map=$map, priorityQueue=$expiryQueue)"
     }
 }
 

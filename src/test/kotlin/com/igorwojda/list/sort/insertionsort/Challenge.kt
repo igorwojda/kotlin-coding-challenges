@@ -30,29 +30,31 @@ private class Test {
 
     @Test
     fun `insertion sort 5, 2, 1, 8, 4, 7, 6, 3`() {
-        insertionSort(mutableListOf(5, 2, 1, 8, 4, 7, 6, 3)) shouldBeEqualTo listOf(
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-        )
+        insertionSort(mutableListOf(5, 2, 1, 8, 4, 7, 6, 3)) shouldBeEqualTo
+            listOf(
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+            )
     }
 
     @Test
     fun `insertion sort 17, 4, 12, 19, 80, 75, 16`() {
-        insertionSort(mutableListOf(17, 4, 12, 19, 80, 75, 16)) shouldBeEqualTo listOf(
-            4,
-            12,
-            16,
-            17,
-            19,
-            75,
-            80,
-        )
+        insertionSort(mutableListOf(17, 4, 12, 19, 80, 75, 16)) shouldBeEqualTo
+            listOf(
+                4,
+                12,
+                16,
+                17,
+                19,
+                75,
+                80,
+            )
     }
 
     @Test

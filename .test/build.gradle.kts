@@ -5,7 +5,7 @@ import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 plugins {
     kotlin("jvm") version "2.4.10"
     id("com.adarshr.test-logger") version "4.0.0"
-    id("com.diffplug.spotless") version "6.25.0"
+    id("com.diffplug.spotless") version "8.10.2"
 }
 
 repositories {
@@ -46,7 +46,7 @@ spotless {
     kotlin {
         ktlint()
 
-        indentWithSpaces()
+        leadingTabsToSpaces()
         endWithNewline()
     }
 }

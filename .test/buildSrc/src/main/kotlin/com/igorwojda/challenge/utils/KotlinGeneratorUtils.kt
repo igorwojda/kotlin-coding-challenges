@@ -13,12 +13,15 @@ object KotlinGeneratorUtils {
             KotlinParserUtils.getChallengeKtFile(challengeDirectoryPath, ChallengeFile.CHALLENGE_KT)
         val solutionKtFile =
             KotlinParserUtils.getChallengeKtFile(challengeDirectoryPath, ChallengeFile.SOLUTIONS_KT)
+        val testsKtFile = File(challengeDirectoryPath, "Tests.kt")
+            .takeIf { it.isFile }
+            ?.let { KotlinParserUtils.getKtFile(it) }
         val challengeName = getChallengeName(challengeKtFile)
 
         val solutions = getSolutions(solutionKtFile)
 
         return solutions.map {
-            getTestFile(challengeName, challengeKtFile, solutionKtFile, it)
+            getTestFile(challengeName, challengeKtFile, solutionKtFile, testsKtFile, it)
         }
     }
 
@@ -26,19 +29,26 @@ object KotlinGeneratorUtils {
         challengeName: String,
         challengeKtFile: KtFile,
         solutionKtFile: KtFile,
+        testsKtFile: KtFile?,
         solution: KtObjectDeclaration,
     ): TestFile {
 
         val solutionName = checkNotNull(solution.name) { "Solution name is null" }
         val packageStr = getPackage(challengeKtFile, solutionName)
-        val imports = getImports(solutionKtFile, challengeKtFile)
+        val imports = getImports(*listOfNotNull(solutionKtFile, challengeKtFile, testsKtFile).toTypedArray())
         val solutionMembers = getSolutionMembers(solution)
-        val tests = getTests(challengeKtFile)
+        val tests = getTests(listOfNotNull(challengeKtFile, testsKtFile))
+        val solutionMemberNames = solution.declarations.mapNotNull { it.name }.toSet()
+        val sharedDeclarations = challengeKtFile.declarations
+            .filterNot { it.name in solutionMemberNames || it.name in setOf("Test", "Tests") }
+            .map { it.text }
 
         val lines = listOf(
             listOf(packageStr),
             listOf("\n"),
             imports,
+            listOf("\n"),
+            sharedDeclarations,
             listOf("\n"),
             solutionMembers,
             listOf("\n"),
@@ -58,22 +68,21 @@ object KotlinGeneratorUtils {
             .removePrefix("com.igorwojda.")
             .replace(".", "_")
 
-    private fun getTests(challengeKtFile: KtFile): List<String> {
-        val tests = challengeKtFile
-            .children
+    private fun getTests(ktFiles: List<KtFile>): List<String> {
+        val tests = ktFiles
+            .flatMap { it.declarations }
             .filterIsInstance<KtClass>()
-            .firstOrNull { it.name == "Test" }
-            .also { checkNotNull(it) { "Missing 'Test' class in ${challengeKtFile.name}" } }
-            ?.text
-            ?.split("\n")
+            .filter { it.name == "Test" || it.name == "Tests" }
 
-        return tests ?: listOf()
+        check(tests.size == 1) {
+            "Expected exactly one 'Test' or 'Tests' class in ${ktFiles.joinToString { it.name }}, found ${tests.size}"
+        }
+        return tests.single().text.lines()
     }
 
     private fun getImports(
-        solutionKtFile: KtFile,
-        challengeKtFile: KtFile,
-    ) = (solutionKtFile.children.toList() + challengeKtFile.children.toList())
+        vararg ktFiles: KtFile,
+    ) = ktFiles.flatMap { it.children.toList() }
         .filterIsInstance<KtImportList>()
         .flatMap { it.imports }
         .map { it.text }

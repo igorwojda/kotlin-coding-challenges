@@ -1,7 +1,10 @@
 package com.igorwojda.list.listchunk
 
 private object Solution1 {
-    private fun chunk(list: List<Int>, size: Int): List<List<Int>> {
+    private fun chunk(
+        list: List<Int>,
+        size: Int,
+    ): List<List<Int>> {
         val chunks = mutableListOf<MutableList<Int>>()
 
         list.forEach {
@@ -17,7 +20,10 @@ private object Solution1 {
 }
 
 private object Solution2 {
-    private fun chunk(list: List<Int>, size: Int): List<List<Int>> {
+    private fun chunk(
+        list: List<Int>,
+        size: Int,
+    ): List<List<Int>> {
         val chunks = mutableListOf<List<Int>>()
 
         for (i in 0..list.lastIndex step size) {
@@ -30,7 +36,10 @@ private object Solution2 {
 }
 
 private object Solution3 {
-    private fun chunk(list: List<Int>, size: Int): List<List<Int>> {
+    private fun chunk(
+        list: List<Int>,
+        size: Int,
+    ): List<List<Int>> {
         var index = 0
         val chunks = mutableListOf<List<Int>>()
 

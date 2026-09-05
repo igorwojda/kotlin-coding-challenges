@@ -1,7 +1,10 @@
 package com.igorwojda.list.subtract
 
 private object Solution1 {
-    private fun getSubtraction(list1: List<String>, list2: List<String>): List<String> {
+    private fun getSubtraction(
+        list1: List<String>,
+        list2: List<String>,
+    ): List<String> {
         val frequencyMap1 = list1.groupingBy { it }.eachCount()
         val frequencyMap2 = list2.groupingBy { it }.eachCount()
 

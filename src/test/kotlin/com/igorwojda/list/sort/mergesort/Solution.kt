@@ -9,7 +9,10 @@ private object Solution1 {
         if (list.size <= 1) return list
 
         // Take two sorted lists and merge them together into one sorted list
-        fun merge(left: MutableList<Int>, right: MutableList<Int>): MutableList<Int> {
+        fun merge(
+            left: MutableList<Int>,
+            right: MutableList<Int>,
+        ): MutableList<Int> {
             val result = mutableListOf<Int>()
 
             while (left.isNotEmpty() && right.isNotEmpty()) {

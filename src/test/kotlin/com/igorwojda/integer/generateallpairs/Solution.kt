@@ -15,13 +15,12 @@ private object Solution1 {
 }
 
 private object Solution2 {
-    private fun getAllPairs(n: Int): List<Pair<Int, Int>> {
-        return (0..n).map { i ->
+    private fun getAllPairs(n: Int): List<Pair<Int, Int>> = (0..n)
+        .map { i ->
             (0..n).map { j ->
                 i to j
             }
         }.flatten()
-    }
 }
 
 private object KtLintWillNotComplain

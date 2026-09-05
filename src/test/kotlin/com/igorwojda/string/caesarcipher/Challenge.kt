@@ -3,7 +3,10 @@ package com.igorwojda.string.caesarcipher
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun encodeCaesarCipher(str: String, shift: Int): String {
+private fun encodeCaesarCipher(
+    str: String,
+    shift: Int,
+): String {
     TODO("Add your solution here")
 }
 

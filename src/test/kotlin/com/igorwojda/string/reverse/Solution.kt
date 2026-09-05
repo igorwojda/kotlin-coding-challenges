@@ -2,9 +2,7 @@ package com.igorwojda.string.reverse
 
 // Kotlin idiomatic way
 private object Solution1 {
-    private fun reverse(str: String): String {
-        return str.reversed()
-    }
+    private fun reverse(str: String): String = str.reversed()
 }
 
 // Iterative approach
@@ -31,9 +29,7 @@ private object Solution3 {
 
 // Kotlin fold
 private object Solution4 {
-    private fun reverse(str: String): String {
-        return str.foldRight("") { char, reversed -> reversed + char }
-    }
+    private fun reverse(str: String): String = str.foldRight("") { char, reversed -> reversed + char }
 }
 
 // Time complexity: O(n)

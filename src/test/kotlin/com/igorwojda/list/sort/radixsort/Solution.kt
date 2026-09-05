@@ -43,10 +43,11 @@ private object Solution1 {
 
     // This is mathematical alternative to this.toString().length witch has better performance
     private val Int.digitCount: Int
-        get() = when (this) {
-            0 -> 1
-            else -> Math.log10(Math.abs(this.toDouble())).toInt() + 1
-        }
+        get() =
+            when (this) {
+                0 -> 1
+                else -> Math.log10(Math.abs(this.toDouble())).toInt() + 1
+            }
 
     private fun maxDigits(list: List<Int>) = list.map { it.digitCount }.maxOrNull() ?: 0
 }

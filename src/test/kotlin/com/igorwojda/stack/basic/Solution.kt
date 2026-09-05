@@ -43,7 +43,10 @@ private object Solution1 {
         fun isEmpty() = first == null
     }
 
-    private data class Node<E>(val data: E, var next: Node<E>? = null)
+    private data class Node<E>(
+        val data: E,
+        var next: Node<E>? = null,
+    )
 }
 
 /*

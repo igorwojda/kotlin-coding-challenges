@@ -2,9 +2,7 @@ package com.igorwojda.string.ispalindrome.basic
 
 // string reverse
 private object Solution1 {
-    private fun isPalindrome(str: String): Boolean {
-        return str == str.reversed()
-    }
+    private fun isPalindrome(str: String): Boolean = str == str.reversed()
 }
 
 // iterative, double pointer solution
@@ -50,15 +48,13 @@ private object Solution3 {
 
 // recursive solution
 private object Solution4 {
-    private fun isPalindrome(str: String): Boolean {
-        return if (str.isEmpty() || str.length == 1) {
-            true
+    private fun isPalindrome(str: String): Boolean = if (str.isEmpty() || str.length == 1) {
+        true
+    } else {
+        if (str.first() == str.last()) {
+            isPalindrome(str.substring(1 until str.lastIndex))
         } else {
-            if (str.first() == str.last()) {
-                isPalindrome(str.substring(1 until str.lastIndex))
-            } else {
-                false
-            }
+            false
         }
     }
 }

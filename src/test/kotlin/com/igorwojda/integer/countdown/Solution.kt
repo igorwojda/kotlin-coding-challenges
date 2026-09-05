@@ -38,7 +38,5 @@ private object Solution3 {
 
 // Kotlin idiomatic solution
 private object Solution4 {
-    private fun countDown(n: Int): List<Int> {
-        return List(n + 1) { n - it }
-    }
+    private fun countDown(n: Int): List<Int> = List(n + 1) { n - it }
 }

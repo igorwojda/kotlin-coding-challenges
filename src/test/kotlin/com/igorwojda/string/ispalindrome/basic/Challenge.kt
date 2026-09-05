@@ -8,7 +8,6 @@ private fun isPalindrome(str: String): Boolean {
 }
 
 private class Test {
-
     @Test
     fun `'aba' is a palindrome`() {
         isPalindrome("aba") shouldBeEqualTo true

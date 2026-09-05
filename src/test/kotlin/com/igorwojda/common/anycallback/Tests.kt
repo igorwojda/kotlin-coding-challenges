@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 
 class Tests {
     // Easily switch between a known solution and Challenge code
-    val functionUnderTest: (list: List<Int>, callback: (Int) -> Boolean)->Boolean = ::anyCallback // or SolutionN::anyCallback
+    val functionUnderTest: (list: List<Int>, callback: (Int) -> Boolean) -> Boolean = ::anyCallback // or SolutionN::anyCallback
 
     @Test
     fun `any callback returns true`() {

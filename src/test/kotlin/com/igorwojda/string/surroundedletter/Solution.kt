@@ -3,9 +3,10 @@ package com.igorwojda.string.surroundedletter
 // Regex solution
 private object Solution1 {
     private fun surroundedLetter(str: String): Boolean {
-        val pattern = Regex("(?=(\\+[a-z]\\+))")
-            .findAll(str)
-            .count()
+        val pattern =
+            Regex("(?=(\\+[a-z]\\+))")
+                .findAll(str)
+                .count()
 
         val letters = str.count { it.isLetter() }
 

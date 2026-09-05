@@ -9,21 +9,23 @@ import java.time.ZoneId
 
 class Tests {
     // Easily switch between a known solution and Challenge code
-    private val classUnderTest: (capacity: Int, clock: Clock)->LRUCache<String, String> = ::AdvancedLRUCache // or SolutionN::AdvancedLRUCache
+    // or SolutionN::AdvancedLRUCache
+    private val classUnderTest: (capacity: Int, clock: Clock) -> LRUCache<String, String> = ::AdvancedLRUCache
 
-    private val testClock = object : Clock() {
-        private var testTime = Instant.now()
-        override fun instant(): Instant {
-           return testTime
+    private val testClock =
+        object : Clock() {
+            private var testTime = Instant.now()
+
+            override fun instant(): Instant = testTime
+
+            fun incTime(duration: Duration) {
+                testTime += duration
+            }
+
+            override fun withZone(zone: ZoneId?): Clock = TODO("Not yet implemented")
+
+            override fun getZone(): ZoneId = systemDefaultZone().zone
         }
-
-        fun incTime(duration: Duration) {
-            testTime += duration
-        }
-
-        override fun withZone(zone: ZoneId?): Clock = TODO("Not yet implemented")
-        override fun getZone(): ZoneId = systemDefaultZone().zone
-    }
 
     @Test
     fun `add and get immediately`() {

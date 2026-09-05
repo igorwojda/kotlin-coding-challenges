@@ -7,7 +7,10 @@ import kotlin.math.max
 // Use "sliding window" - store sum in single variable and with each iteration add (current item)
 // and remove (first item before current sub-list)
 private object Solution1 {
-    private fun maxSubListSum(list: List<Int>, numElements: Int): Int? {
+    private fun maxSubListSum(
+        list: List<Int>,
+        numElements: Int,
+    ): Int? {
         if (list.size < numElements) {
             return null
         }
@@ -25,23 +28,30 @@ private object Solution1 {
 }
 
 private object Solution2 {
-    private fun maxSubListSum(list: List<Int>, numElements: Int): Int? {
+    private fun maxSubListSum(
+        list: List<Int>,
+        numElements: Int,
+    ): Int? {
         if (list.size < numElements) {
             return null
         }
 
-        return list.foldIndexed(0 to 0) { i, (sum, max), next ->
-            (sum + next - (list.getOrNull(i - numElements) ?: 0)).let {
-                it to if (it > max) it else max
-            }
-        }.second
+        return list
+            .foldIndexed(0 to 0) { i, (sum, max), next ->
+                (sum + next - (list.getOrNull(i - numElements) ?: 0)).let {
+                    it to if (it > max) it else max
+                }
+            }.second
     }
 }
 
 // Time Complexity: O(n*m)
 // Loop through the list and at each index loop again to calculate sum of sublist (from index to index + n)
 private object Solution3 {
-    private fun maxSubListSum(list: List<Int>, numElements: Int): Int? {
+    private fun maxSubListSum(
+        list: List<Int>,
+        numElements: Int,
+    ): Int? {
         if (list.size < numElements) {
             return null
         }
@@ -65,18 +75,22 @@ private object Solution3 {
         return maxSum
     }
 
-    private fun max(i1: Int?, i2: Int?): Int? {
-        return when {
-            i1 != null && i2 != null -> max(i1, i2)
-            i1 != null && i2 == null -> i1
-            i1 == null && i2 != null -> i2
-            else -> null
-        }
+    private fun max(
+        i1: Int?,
+        i2: Int?,
+    ): Int? = when {
+        i1 != null && i2 != null -> max(i1, i2)
+        i1 != null && i2 == null -> i1
+        i1 == null && i2 != null -> i2
+        else -> null
     }
 }
 
 private object Solution4 {
-    private fun maxSubListSum(list: List<Int>, numElements: Int): Int? {
+    private fun maxSubListSum(
+        list: List<Int>,
+        numElements: Int,
+    ): Int? {
         if (list.isEmpty()) return null
 
         return (0..list.size - numElements)
@@ -85,7 +99,11 @@ private object Solution4 {
 }
 
 private object Solution5 {
-    private fun maxSubListSum(list: List<Int>, numElements: Int) = list.windowed(numElements)
+    private fun maxSubListSum(
+        list: List<Int>,
+        numElements: Int,
+    ) = list
+        .windowed(numElements)
         .toMutableList()
         .maxOfOrNull { it.sum() }
 }

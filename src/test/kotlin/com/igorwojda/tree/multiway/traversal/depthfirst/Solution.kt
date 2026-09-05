@@ -199,7 +199,7 @@ private object Solution1 {
     Stack can be used as helper class to implement depth first traversal. This is not the most optimal stack implementation,
     however it's enough for this task. Check "Stack challenge" solution for more details and more efficient stack
     implementation.
-    */
+     */
     private class Stack<E> {
         private val list = mutableListOf<E>()
 

@@ -3,7 +3,10 @@ package com.igorwojda.integer.digitfrequency
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun equalDigitFrequency(i1: Int, i2: Int): Boolean {
+private fun equalDigitFrequency(
+    i1: Int,
+    i2: Int,
+): Boolean {
     TODO("Add your solution here")
 }
 

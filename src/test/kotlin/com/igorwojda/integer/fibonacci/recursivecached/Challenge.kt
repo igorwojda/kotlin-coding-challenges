@@ -5,7 +5,10 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Timeout
 import java.util.concurrent.TimeUnit
 
-private fun fibonacciSequenceRecursiveCached(n: Int, methodCache: MutableList<MethodCache> = mutableListOf()): Int {
+private fun fibonacciSequenceRecursiveCached(
+    n: Int,
+    methodCache: MutableList<MethodCache> = mutableListOf(),
+): Int {
     if (n < 2) {
         return n
     }
@@ -13,7 +16,10 @@ private fun fibonacciSequenceRecursiveCached(n: Int, methodCache: MutableList<Me
     return fibonacciSequenceRecursiveCached(n - 1) + fibonacciSequenceRecursiveCached(n - 2)
 }
 
-private data class MethodCache(val n: Int, val result: Int)
+private data class MethodCache(
+    val n: Int,
+    val result: Int,
+)
 
 private class Test {
     @Test

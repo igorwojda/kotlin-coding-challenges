@@ -8,7 +8,10 @@ private data class ListNode(
     var next: ListNode? = null,
 )
 
-private fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
+private fun addTwoNumbers(
+    l1: ListNode?,
+    l2: ListNode?,
+): ListNode? {
     TODO("Add your solution here")
 }
 

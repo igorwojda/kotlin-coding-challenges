@@ -3,7 +3,10 @@ package com.igorwojda.list.squareequal
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun squareEquals(list: List<Int>, squared: List<Int>): Boolean {
+private fun squareEquals(
+    list: List<Int>,
+    squared: List<Int>,
+): Boolean {
     TODO("Add your solution here")
 }
 

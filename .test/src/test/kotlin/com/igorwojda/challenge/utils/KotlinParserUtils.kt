@@ -14,11 +14,12 @@ import java.io.File
 object KotlinParserUtils {
     @OptIn(K1Deprecation::class, CompilerConfiguration.Internals::class)
     private val project by lazy {
-        KotlinCoreEnvironment.createForProduction(
-            Disposer.newDisposable(),
-            CompilerConfiguration(),
-            EnvironmentConfigFiles.JVM_CONFIG_FILES,
-        ).project
+        KotlinCoreEnvironment
+            .createForProduction(
+                Disposer.newDisposable(),
+                CompilerConfiguration(),
+                EnvironmentConfigFiles.JVM_CONFIG_FILES,
+            ).project
     }
 
     private fun getChallengeFile(
@@ -42,7 +43,8 @@ object KotlinParserUtils {
     private fun getChallengeKtFile(
         codeString: String,
         fileName: String,
-    ) = PsiManager.getInstance(project)
+    ) = PsiManager
+        .getInstance(project)
         .findFile(
             LightVirtualFile(fileName, KotlinFileType.INSTANCE, codeString),
         ) as KtFile

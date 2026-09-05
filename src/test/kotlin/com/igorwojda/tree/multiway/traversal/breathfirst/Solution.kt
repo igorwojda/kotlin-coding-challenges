@@ -42,6 +42,7 @@ private object Solution1 {
                     current.data == element -> {
                         return
                     }
+
                     element < current.data -> {
                         if (current.left == null) {
                             current.left = newNode
@@ -50,6 +51,7 @@ private object Solution1 {
 
                         current.left?.let { current = it }
                     }
+
                     element > current.data -> {
                         if (current.right == null) {
                             current.right = newNode
@@ -93,7 +95,7 @@ private object Solution1 {
     Queue can be used as helper class to implement breath first traversal. This is not the most optimal queue implementation,
     however it's enough for this task. Check "Queue challenge" solution for more details and more efficient queue
     implementation.
-    */
+     */
     private class Queue<E> {
         private val list = mutableListOf<E>()
 

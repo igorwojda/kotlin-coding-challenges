@@ -1,10 +1,14 @@
 package com.igorwojda.list.smallestelements
 
-import java.util.*
+import java.util.Collections
+import java.util.PriorityQueue
 
 // Time complexity: O(n log k)
 private object Solution1 {
-    private fun smallestElements(list: List<Int>, count: Int): List<Int> {
+    private fun smallestElements(
+        list: List<Int>,
+        count: Int,
+    ): List<Int> {
         if (list.size <= count) {
             return list
         }

@@ -1,7 +1,14 @@
 package com.igorwojda.common.anycallback
 
 internal object Solution1 {
-    fun <T: Any> anyCallback(list: List<T>, predicate: (T) -> Boolean): Boolean {
+    fun <T : Any> anyCallback(
+        list: List<T>,
+        predicate: (T) -> Boolean,
+    ): Boolean {
+        if (list.isEmpty()) {
+            return false
+        }
+
         if (list.size == 1) {
             return predicate(list.first())
         }
@@ -11,30 +18,40 @@ internal object Solution1 {
 }
 
 internal object Solution2 {
-    fun <T: Any> anyCallback(list: List<T>, predicate: (T) -> Boolean): Boolean {
+    fun <T : Any> anyCallback(
+        list: List<T>,
+        predicate: (T) -> Boolean,
+    ): Boolean {
         if (list.isEmpty()) return false
         return predicate(list.first()) || anyCallback(list.subList(1, list.size), predicate)
     }
 }
 
 internal object Solution3 {
-    fun <T: Any> anyCallback(list: List<T>, predicate: (T) -> Boolean): Boolean {
-        fun _randomAccessOptimized(list: List<T>, predicate: (T) -> Boolean): Boolean {
+    fun <T : Any> anyCallback(
+        list: List<T>,
+        predicate: (T) -> Boolean,
+    ): Boolean {
+        fun randomAccessOptimized(
+            list: List<T>,
+            predicate: (T) -> Boolean,
+        ): Boolean {
             if (list.isEmpty()) return false
-            return predicate(list.first()) || _randomAccessOptimized(list.subList(1, list.size), predicate)
+            return predicate(list.first()) || randomAccessOptimized(list.subList(1, list.size), predicate)
         }
 
-        fun _sequentialOptimized(list: List<T>, predicate: (T) -> Boolean): Boolean {
+        fun sequentialOptimized(
+            list: List<T>,
+            predicate: (T) -> Boolean,
+        ): Boolean {
             if (list.isEmpty()) return false
-            return predicate(list.first()) || _sequentialOptimized(list.drop(1), predicate)
+            return predicate(list.first()) || sequentialOptimized(list.drop(1), predicate)
         }
-
 
         return if (list is RandomAccess) {
-           _randomAccessOptimized(list, predicate)
-        }
-        else {
-            _sequentialOptimized(list, predicate)
+            randomAccessOptimized(list, predicate)
+        } else {
+            sequentialOptimized(list, predicate)
         }
     }
 }

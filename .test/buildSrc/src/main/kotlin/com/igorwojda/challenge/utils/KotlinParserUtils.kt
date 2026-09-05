@@ -28,9 +28,10 @@ object KotlinParserUtils {
 
     fun getChallengeKtFile(challengeDirectoryPath: File, challengeFile: ChallengeFile): KtFile {
         val file = getChallengeFile(challengeDirectoryPath, challengeFile)
-        val fullFileName = "${challengeDirectoryPath.path}/${challengeFile.fileName}"
-        return getChallengeKtFile(file.readText(), fullFileName)
+        return getKtFile(file)
     }
+
+    fun getKtFile(file: File): KtFile = getChallengeKtFile(file.readText(), file.path)
 
     private fun getChallengeKtFile(codeString: String, fileName: String) =
         PsiManager.getInstance(project)
