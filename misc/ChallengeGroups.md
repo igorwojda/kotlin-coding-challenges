@@ -42,7 +42,7 @@ loops which decreases complexity from `O(n^2)` to `O(n)`.
 - [Is substring](../src/test/kotlin/com/igorwojda/string/issubstring)
 - [Midpoint](../src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint)
 - [Circular check](../src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck)
-- [Medan of sorted lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted)
+- [Medan of two sorted lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted)
 
 ## Frequency counter
 
@@ -71,7 +71,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 
 - [Linear search](../src/test/kotlin/com/igorwojda/list/search/linearsearch)
 - [Binary search](../src/test/kotlin/com/igorwojda/list/search/binarysearch)
-- [Medan of sorted lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted)
+- [Medan of two sorted lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted)
 
 ### Sort algorithms
 
