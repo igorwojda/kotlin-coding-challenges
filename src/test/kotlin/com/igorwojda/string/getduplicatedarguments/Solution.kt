@@ -12,7 +12,7 @@ private object Solution1 {
 
 // Time complexity: O(n^2)
 // Loop through all arguments and compare given argument with all other arguments.
-private object Solution3 {
+private object Solution2 {
     fun getDuplicatedArguments(vararg strings: String): List<String>? {
         val result = mutableSetOf<String>()
 
