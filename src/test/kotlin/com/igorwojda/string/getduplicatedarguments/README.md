@@ -19,5 +19,5 @@ getDuplicatedParams("a", "b", "c", "a") // [a]
 
 <details>
 <summary>Hint 1</summary>
-Use frequency counter or multiple pointers pattern.
+Use frequency counter.
 </details>

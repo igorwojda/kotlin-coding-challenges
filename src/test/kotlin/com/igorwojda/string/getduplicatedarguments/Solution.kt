@@ -10,28 +10,6 @@ private object Solution1 {
         .map { it.key }
 }
 
-// Time complexity: O(n)
-// Using double pointer.
-private object Solution2 {
-    fun getDuplicatedArguments(vararg strings: String): List<String>? {
-        var pointer1 = 0
-        var pointer2 = 1
-        val result = mutableSetOf<String>()
-        val sortedList = strings.sorted()
-
-        for (it in 0 until sortedList.lastIndex) {
-            if (sortedList[pointer1] == sortedList[pointer2]) {
-                result.add(sortedList[pointer1])
-            }
-
-            pointer1++
-            pointer2++
-        }
-
-        return result.toList()
-    }
-}
-
 // Time complexity: O(n^2)
 // Loop through all arguments and compare given argument with all other arguments.
 private object Solution3 {

@@ -40,7 +40,6 @@ loops which decreases complexity from `O(n^2)` to `O(n)`.
 - [Sum zero](../src/test/kotlin/com/igorwojda/list/sumzero)
 - [Pair average](../src/test/kotlin/com/igorwojda/list/pairaverage)
 - [Is substring](../src/test/kotlin/com/igorwojda/string/issubstring)
-- [Get duplicated arguments](../src/test/kotlin/com/igorwojda/string/getduplicatedarguments)
 - [Midpoint](../src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint)
 - [Circular check](../src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck)
 - [Medan of sorted lists](../src/test/kotlin/com/igorwojda/list/medianoftwosorted)
