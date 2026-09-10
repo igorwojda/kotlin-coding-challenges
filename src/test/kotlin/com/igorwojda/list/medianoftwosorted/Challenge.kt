@@ -7,19 +7,7 @@ fun medianOfSortedLists(
     list1: List<Int>,
     list2: List<Int>,
 ): Double {
-    val mergedList =
-        list1
-            .plus(list2)
-            .sorted()
-
-    val median =
-        if (mergedList.size % 2 != 0) {
-            mergedList[mergedList.size / 2].toDouble()
-        } else {
-            (mergedList[mergedList.size / 2].toDouble() + mergedList[mergedList.size / 2 - 1].toDouble()) / 2
-        }
-
-    return median
+    TODO("Add your solution here")
 }
 
 private class Test {
