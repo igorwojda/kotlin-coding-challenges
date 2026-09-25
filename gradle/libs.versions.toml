@@ -1,7 +1,7 @@
 [versions]
 kotlin = "2.4.20"
 testLogger = "4.0.0"
-spotless = "8.10.2"
+spotless = "8.10.3"
 junit = "6.1.3"
 kluent = "1.73"
 
