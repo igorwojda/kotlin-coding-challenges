@@ -14,11 +14,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v7
 
-      - name: Set up JDK
-        uses: actions/setup-java@v6
-        with:
-          java-version: 19
-          distribution: 'zulu'
+      - name: Set up Gradle
+        uses: ./.github/actions/setup-gradle
 
       - name: Verify challenges structure (Konsist)
         run: ./gradlew konsistTest
@@ -36,11 +33,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v7
 
-      - name: Set up JDK
-        uses: actions/setup-java@v6
-        with:
-          java-version: 19
-          distribution: 'zulu'
+      - name: Set up Gradle
+        uses: ./.github/actions/setup-gradle
 
       - name: spotless check
         run: ./gradlew spotlessCheck
@@ -52,11 +46,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v7
 
-      - name: Set up JDK
-        uses: actions/setup-java@v6
-        with:
-          java-version: 19
-          distribution: 'zulu'
+      - name: Set up Gradle
+        uses: ./.github/actions/setup-gradle
 
       - name: Generate tests for every solution
         run: ./gradlew generateTests

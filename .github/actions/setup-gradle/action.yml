@@ -1,0 +1,14 @@
+name: Set up Gradle
+description: Sets up JDK and Gradle with caching
+
+runs:
+  using: composite
+  steps:
+    - name: Set up JDK
+      uses: actions/setup-java@v6
+      with:
+        java-version: 25
+        distribution: 'zulu'
+
+    - name: Set up Gradle
+      uses: gradle/actions/setup-gradle@v6
