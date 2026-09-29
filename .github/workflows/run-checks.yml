@@ -7,8 +7,8 @@ on:
     types: [ opened, synchronize ]
 
 jobs:
-  verify-project-structure:
-    name: Verify project structure
+  konsist-test:
+    name: Konsist Test
     runs-on: ubuntu-latest
     steps:
       - name: checkout
