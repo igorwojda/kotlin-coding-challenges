@@ -216,6 +216,12 @@ If you don't see the green play icon used to run the tests try to open `Settings
 Feedback and new contributions are welcome whether it's through bug reports or new PRs. To add new coding challenges just
 follow this [guide](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Adding-a-new-challenge) and open PR.
 
+Checks run with every PR:
+
+- `./gradlew konsistTest` - verifies challenges structure (required files, solution naming, test class) using [Konsist](https://docs.konsist.lemonappdev.com/)
+- `./gradlew generateTests` - combines every `Challenge.kt` with each solution from `Solution.kt` into `src/test/kotlin/generated`
+- `./gradlew test --tests "generated.com.igorwojda.*"` - verifies correctness of every solution
+
 # Author
 
 [![Follow me](https://github.com/igorwojda/kotlin-coding-challenges/raw/main/misc/image/avatar.png)](https://twitter.com/igorwojda)

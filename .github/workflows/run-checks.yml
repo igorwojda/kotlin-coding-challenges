@@ -7,7 +7,8 @@ on:
     types: [ opened, synchronize ]
 
 jobs:
-  check:
+  verify-project-structure:
+    name: Verify project structure
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -19,25 +20,39 @@ jobs:
           java-version: 19
           distribution: 'zulu'
 
-      - name: Verify project consistency
-        run: cd .test && ./gradlew test
+      - name: Verify challenges structure (Konsist)
+        run: ./gradlew konsistTest
 
-      - name: spotless check (test project)
-        run: cd .test && ./gradlew spotlessCheck
-
-      - name: spotless check (root project)
+      - name: spotless check
         run: ./gradlew spotlessCheck
 
-      - name: Generate tests for every solution
-        run: cd .test && ./gradlew generateTests
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: konsist-test-report
+          path: ./build/reports/tests/konsistTest/
 
-      - name: Navigate to root project
-        run: cd .test
+  check-solutions:
+    name: Check solutions
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v7
+
+      - name: Set up JDK
+        uses: actions/setup-java@v6
+        with:
+          java-version: 19
+          distribution: 'zulu'
+
+      - name: Generate tests for every solution
+        run: ./gradlew generateTests
 
       - name: Run generated solution tests
         run: ./gradlew test --tests "generated.com.igorwojda.*"
 
       - uses: actions/upload-artifact@v7
+        if: always()
         with:
-          name: unit-test-report
-          path: ./**/build/reports/tests/
+          name: solution-test-report
+          path: ./build/reports/tests/test/
