@@ -1,6 +1,6 @@
 # Singly linked list
 
-### Instructions
+## Instructions
 
 Implement [singly linked list](https://en.wikipedia.org/wiki/Linked_list) data structure. This is quite big
 challenge, so we will split it into multiple multiple methods and properties that we will implement one my one.

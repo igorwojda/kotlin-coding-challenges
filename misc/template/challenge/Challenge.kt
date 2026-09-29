@@ -3,14 +3,13 @@ package com.igorwojda.challenge
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun challenge() {
-
+private fun challenge(str: String): String {
+    TODO("Add your solution here")
 }
 
 private class Test {
     @Test
-    fun `simple test`() {
-        val actual = challenge()
-        actual shouldBeEqualTo "expected"
+    fun `'input' returns 'expected'`() {
+        challenge("input") shouldBeEqualTo "expected"
     }
 }
