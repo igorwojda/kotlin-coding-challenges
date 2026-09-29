@@ -1,6 +1,8 @@
 package com.igorwojda.string.vowels
 
 // Kotlin collection processing
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
     private fun vowels(str: String): Int {
         val vowels = listOf('a', 'e', 'i', 'o', 'u', 'y')
@@ -9,6 +11,8 @@ private object Solution1 {
 }
 
 // Iterative
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution2 {
     private fun vowels(str: String): Int {
         val vowels = listOf('a', 'e', 'i', 'o', 'u', 'y')
@@ -25,6 +29,8 @@ private object Solution2 {
 }
 
 // Regex
+// Time complexity: O(n)
+// Space complexity: O(n) - lowercase copy
 private object Solution3 {
     private fun vowels(str: String): Int = Regex("[aeiouy]").findAll(str.lowercase()).count()
 }

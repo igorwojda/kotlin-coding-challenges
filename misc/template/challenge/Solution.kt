@@ -1,6 +1,7 @@
 package com.igorwojda.challenge
 
 // Time complexity: O(?)
+// Space complexity: O(?)
 private object Solution1 {
     private fun challenge(str: String): String {
         TODO()
@@ -8,6 +9,7 @@ private object Solution1 {
 }
 
 // Time complexity: O(?)
+// Space complexity: O(?)
 private object Solution2 {
     private fun challenge(str: String): String {
         TODO()

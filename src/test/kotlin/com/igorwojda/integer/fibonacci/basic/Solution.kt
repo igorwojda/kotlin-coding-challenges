@@ -1,6 +1,8 @@
 package com.igorwojda.integer.fibonacci.basic
 
 // iterative solution
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
     private fun fibonacci(n: Int): Int {
         if (n < 2) {
@@ -22,6 +24,8 @@ private object Solution1 {
 }
 
 // iterative solution with temporary list (not efficient)
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution2 {
     private fun fibonacci(n: Int): Int {
         val list = mutableListOf(0, 1)
@@ -35,6 +39,8 @@ private object Solution2 {
 }
 
 // recursive solution
+// Time complexity: O(2^n)
+// Space complexity: O(n) - recursion call stack
 private object Solution3 {
     private fun fibonacci(n: Int): Int = when (n) {
         0 -> 0
@@ -44,6 +50,8 @@ private object Solution3 {
 }
 
 // recursive solution
+// Time complexity: O(2^n)
+// Space complexity: O(n) - recursion call stack
 private object Solution4 {
     private fun fibonacci(n: Int): Int {
         if (n < 2) {

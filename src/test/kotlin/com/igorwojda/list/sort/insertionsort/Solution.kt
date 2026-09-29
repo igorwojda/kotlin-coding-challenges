@@ -1,8 +1,6 @@
 package com.igorwojda.list.sort.insertionsort
 
-// Time complexity (Best): Ω(n) - all data besides one element are sorted
-// Time complexity (Average): Θ(n^2)
-// Time complexity (Worst): O(n^2)
+// Time complexity: O(n^2) - removeAt/add shift elements even for sorted input
 // Space complexity: O(1)
 private object Solution1 {
     private fun insertionSort(list: MutableList<Int>): List<Int> {

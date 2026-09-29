@@ -1,9 +1,7 @@
 package com.igorwojda.list.sort.mergesort
 
-// Time complexity (Best): Ω(n log(n))
-// Time complexity (Average): Θ(n log(n))
-// Time complexity (Worst): O(n log(n))
-// Space complexity: O(n)
+// Time complexity: O(n^2) - merge uses removeAt(0), which shifts the whole list (O(n))
+// Space complexity: O(n) - list copies plus O(log n) recursion stack
 private object Solution1 {
     private fun mergeSort(list: List<Int>): List<Int> {
         if (list.size <= 1) return list

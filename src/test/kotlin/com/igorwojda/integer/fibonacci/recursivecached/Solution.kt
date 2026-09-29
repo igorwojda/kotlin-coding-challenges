@@ -1,5 +1,7 @@
 package com.igorwojda.integer.fibonacci.recursivecached
 
+// Time complexity: O(n^2) - O(n) calls, each does linear cache lookup via firstOrNull
+// Space complexity: O(n) - cache and recursion call stack
 private object Solution1 {
     private data class MethodCache(
         val n: Int,

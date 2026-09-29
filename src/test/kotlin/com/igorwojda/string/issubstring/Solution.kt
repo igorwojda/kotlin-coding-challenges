@@ -1,9 +1,8 @@
 package com.igorwojda.string.issubstring
 
-// Time complexity: O(n*m)
-// Space complexity: O(1)
-//
 // Optimal solution using double pointer.
+// Time complexity: O(n * m) - n is str length, m is subStr length
+// Space complexity: O(1)
 private object Solution1 {
     private fun isSubstring(
         str: String,
@@ -32,13 +31,9 @@ private object Solution1 {
     }
 }
 
-// Time complexity: O(n*m)
-// Space complexity: ??, but more than O(1)
-// Number of iterations (n) is bounded by the length of the first string
-// and String.drop requires copying the entire remaining string (on it's own it has O(m) complexity)
-// First of 5 chars, needs 5 iterations at most and 15 character copied (5+4+3+2+1=15). Second is copied less often.
-//
 // Recursive solution
+// Time complexity: O(n^2 * m) - n is str length, m is subStr length; each drop copies the remaining string
+// Space complexity: O(n^2) - recursion stack of depth n, each frame holds a dropped copy of str
 private object Solution2 {
     private fun isSubstring(
         str: String,
@@ -70,6 +65,8 @@ private object Solution2 {
     }
 }
 
+// Time complexity: O(n * m) - n is str length, m is subStr length
+// Space complexity: O(n * m) - windowed materializes all windows
 private object Solution3 {
     private fun isSubstring(
         str: String,
@@ -83,11 +80,10 @@ private object Solution3 {
     }
 }
 
-// Time complexity: O(n*m)
-// Space complexity: O(1)
-// This recursive solution is faster than solution with String.drop because it uses double pointer
-//
 // Recursive solution
+// This recursive solution is faster than solution with String.drop because it uses double pointer
+// Time complexity: O(n * m) - n is str length, m is subStr length
+// Space complexity: O(n * m) - recursion stack, one frame per character comparison (no tailrec)
 private fun isSubstring(
     str: String,
     subStr: String,

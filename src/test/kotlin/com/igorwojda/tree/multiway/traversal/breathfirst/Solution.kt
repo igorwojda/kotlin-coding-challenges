@@ -1,5 +1,7 @@
 package com.igorwojda.tree.multiway.traversal.breathfirst
 
+// Time complexity: O(n^2) - n is node count, list based queue remove is O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun traverseBreathFirst(tree: BinarySearchTree<Char>): List<Char> {
         val queue = Queue<BinaryNode<Char>>()

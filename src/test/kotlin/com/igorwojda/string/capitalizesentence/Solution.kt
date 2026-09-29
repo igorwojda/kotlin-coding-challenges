@@ -1,6 +1,8 @@
 package com.igorwojda.string.capitalizesentence
 
 // Kotlin idiomatic solution
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun capitalizeSentence(str: String): String = str
         .split(" ")
@@ -10,6 +12,8 @@ private object Solution1 {
 }
 
 // Iterative solution
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution2 {
     private fun capitalizeSentence(str: String): String {
         val words = mutableListOf<String>()

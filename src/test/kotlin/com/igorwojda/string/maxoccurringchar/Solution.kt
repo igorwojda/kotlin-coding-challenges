@@ -1,6 +1,8 @@
 package com.igorwojda.string.maxoccurringchar
 
 // Kotlin idiomatic solution
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun maxOccurringChar(str: String): Char? {
         if (str.isBlank()) return null
@@ -14,6 +16,8 @@ private object Solution1 {
 }
 
 // Kotlin idiomatic solution
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution2 {
     private fun maxOccurringChar(str: String): Char? {
         if (str.isBlank()) return null
@@ -27,6 +31,8 @@ private object Solution2 {
     }
 }
 
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution3 {
     private fun maxOccurringChar(str: String): Char? {
         if (str.isBlank()) return null
@@ -43,6 +49,7 @@ private object Solution3 {
 
 // Recursive naive approach
 // Time complexity: O(n^2)
+// Space complexity: O(n) - substring copy per iteration
 private object Solution4 {
     private fun maxOccurringChar(str: String): Char? {
         if (str.length == 1) {

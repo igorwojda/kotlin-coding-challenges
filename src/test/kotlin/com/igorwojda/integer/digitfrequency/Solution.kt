@@ -1,7 +1,8 @@
 package com.igorwojda.integer.digitfrequency
 
-// Time complexity: O(n)
 // Generate digit frequency map for each integer and compare them
+// Time complexity: O(d) - d is number of digits
+// Space complexity: O(d)
 private object Solution1 {
     private fun equalDigitFrequency(
         i1: Int,
@@ -20,9 +21,10 @@ private object Solution1 {
     }
 }
 
-// Time complexity: O(n^2)
 // Loop through each character of first integer and look for this character in another integer. If character if found
 // remove it from second integer to make sure that character frequency match.
+// Time complexity: O(d^2) - d is number of digits; indexOf and removeAt are O(d)
+// Space complexity: O(d)
 private object Solution2 {
     private fun equalDigitFrequency(
         i1: Int,

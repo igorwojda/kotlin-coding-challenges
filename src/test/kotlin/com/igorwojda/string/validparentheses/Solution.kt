@@ -1,5 +1,7 @@
 package com.igorwojda.string.validparentheses
 
+// Time complexity: O(n)
+// Space complexity: O(n) - stack
 private object Solution1 {
     private fun isValidParentheses(str: String): Boolean {
         val pairs = mapOf(')' to '(', ']' to '[', '}' to '{')

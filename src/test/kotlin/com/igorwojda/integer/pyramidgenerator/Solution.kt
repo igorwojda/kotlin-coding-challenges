@@ -1,6 +1,8 @@
 package com.igorwojda.integer.pyramidgenerator
 
 // iterative solution
+// Time complexity: O(n^3) - String concatenation in loop is O(n^2) per row
+// Space complexity: O(n^2)
 private object Solution1 {
     private fun generatePyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
@@ -21,6 +23,8 @@ private object Solution1 {
 }
 
 // iterative solution - calculate mid point
+// Time complexity: O(n^3) - String concatenation in loop is O(n^2) per row
+// Space complexity: O(n^2)
 private object Solution2 {
     private fun generatePyramid(n: Int): List<String> {
         val list = mutableListOf<String>()
@@ -45,6 +49,8 @@ private object Solution2 {
 }
 
 // simplified iterative solution
+// Time complexity: O(n^2)
+// Space complexity: O(n^2)
 private object Solution3 {
     private fun generatePyramid(n: Int): MutableList<String> {
         val list = mutableListOf<String>()

@@ -1,6 +1,7 @@
 package com.igorwojda.matrix.findrectangle
 
-// Time complexity: O(n*m)
+// Time complexity: O(n * m) - n is row count, m is column count
+// Space complexity: O(1)
 private object Solution1 {
     private fun findRectangle(image: List<List<Int>>): List<Int>? {
         // This helper function may be used with challange variation where multiple rectangles exists in the image
@@ -37,7 +38,8 @@ private object Solution1 {
     }
 }
 
-// Time complexity: O(n*m)
+// Time complexity: O(n * m) - n is row count, m is column count
+// Space complexity: O(1)
 private object Solution2 {
     private fun findRectangle(image: List<List<Int>>): List<Int>? {
         var top: Pair<Int, Int>? = null

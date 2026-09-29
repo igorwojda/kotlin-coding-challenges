@@ -1,7 +1,8 @@
 package com.igorwojda.string.getduplicatedarguments
 
-// Time complexity: O(n)
 // Determine the frequency of each argument and then filter arguments with frequency > 1
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     fun getDuplicatedArguments(vararg strings: String): List<String>? = strings
         .groupingBy { it }
@@ -10,8 +11,9 @@ private object Solution1 {
         .map { it.key }
 }
 
-// Time complexity: O(n^2)
 // Loop through all arguments and compare given argument with all other arguments.
+// Time complexity: O(n^2)
+// Space complexity: O(n)
 private object Solution2 {
     fun getDuplicatedArguments(vararg strings: String): List<String>? {
         val result = mutableSetOf<String>()

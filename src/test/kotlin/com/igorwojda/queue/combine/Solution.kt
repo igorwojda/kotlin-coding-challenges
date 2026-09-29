@@ -1,5 +1,7 @@
 package com.igorwojda.queue.combine
 
+// Time complexity: O(n^2 + m^2) - n, m are q1, q2 sizes, list removeAt(0) is O(n)
+// Space complexity: O(n + m)
 private object Solution1 {
     class Queue<E> {
         private val list = mutableListOf<E>()

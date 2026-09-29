@@ -1,9 +1,7 @@
 package com.igorwojda.list.sort.radixsort
 
-// Time complexity (Best): Ω(n^2)
-// Time complexity (Average): Θ(n^2)
-// Time complexity (Worst): O(n^2)
-// Space complexity: O(1)
+// Time complexity: O(n * d^2) - d is max digit count; getDigitAt calls toString (O(d)) per element per pass
+// Space complexity: O(n) - temp list and buckets
 private object Solution1 {
     private fun radixSort(list: List<Int>): List<Number> {
         // create temp list

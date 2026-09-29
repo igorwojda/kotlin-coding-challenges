@@ -1,14 +1,12 @@
 package com.igorwojda.queue.basic
 
-/*
-Linked List based implementation
-
-Time complexity:
-Insertion: O(1)
-Removal: O(1)
-Searching: O(n)
-Access: O(n)
-*/
+// Linked List based implementation
+// Time complexity:
+// add: O(1)
+// remove: O(1)
+// peek: O(1)
+// isEmpty: O(1)
+// Space complexity: O(n)
 private object Solution1 {
     private class Queue<E> {
         var size = 0
@@ -50,39 +48,32 @@ private object Solution1 {
     )
 }
 
-/*
-List based implementation
-
-It's important to notice that adding element to the beginning of the array or removing element from the beginning is
-expensive operation (all subsequent items have to be re-indexed):
-
-Option A - add to the end, remove from the beginning:
-Insert at the end O(1)
-Remove at the end O(1)
-
-Option B - add to the beginning, remove from the end:
-Bad idea to add elements at the beginning:
-Insert at the beginning O(n)
-Remove at the beginning O(n) - we have to re-index all the other elements in the list
-
-If we would add new element to the beginning of the list (expensive), we would have to remove them from the end of the
-list (cheap). If we would add new element to the end of the array (cheap) we would have to remove ti from the
-beginning (expensive). Because of that the list based implementation can't be efficient. We could use linked list
-based implementation instead.
-
-
-Time complexity (add at the beginning and remove from the end):
-Insertion: O(n)
-Removal: O(1)
-Searching: O(n)
-Access: O(n)
-
-Solution time complexity (add at the end and remove from the beginning):
-Insertion: O(1)
-Removal: O(n)
-Searching: O(n)
-Access: O(n)
-*/
+// List based implementation
+//
+// It's important to notice that adding element to the beginning of the array or removing element from the beginning is
+// expensive operation (all subsequent items have to be re-indexed):
+//
+// Option A - add to the end, remove from the beginning:
+// Insert at the end O(1)
+// Remove at the beginning O(n) - we have to re-index all the other elements in the list
+//
+// Option B - add to the beginning, remove from the end:
+// Insert at the beginning O(n) - we have to re-index all the other elements in the list
+// Remove at the end O(1)
+//
+// If we would add new element to the beginning of the list (expensive), we would have to remove them from the end of the
+// list (cheap). If we would add new element to the end of the array (cheap) we would have to remove it from the
+// beginning (expensive). Because of that the list based implementation can't be efficient. We could use linked list
+// based implementation instead.
+//
+// This solution uses Option A.
+// Time complexity:
+// add: O(1) amortized
+// remove: O(n)
+// peek: O(1)
+// isEmpty: O(1)
+// size: O(1)
+// Space complexity: O(n)
 private object Solution2 {
     private class Queue<E> {
         private val list = mutableListOf<E>()
@@ -102,6 +93,13 @@ private object Solution2 {
 }
 
 // Two Stack based implementation
+// Time complexity:
+// add: O(1) amortized
+// remove: O(n) - moves all elements between stacks twice
+// peek: O(n) - moves all elements between stacks twice
+// isEmpty: O(1)
+// size: O(1)
+// Space complexity: O(n)
 private object Solution3 {
     private class Queue<E> {
         val primaryStack = Stack<E>()

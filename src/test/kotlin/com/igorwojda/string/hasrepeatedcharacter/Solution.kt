@@ -1,6 +1,7 @@
 package com.igorwojda.string.hasrepeatedcharacter
 
 // Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun hasRepeatedChar(str: String): Boolean {
         val frequency = str.groupingBy { it }.eachCount()
@@ -9,6 +10,7 @@ private object Solution1 {
 }
 
 // Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution2 {
     private fun hasRepeatedChar(str: String): Boolean {
         val frequency = str.groupingBy { it }.eachCount()

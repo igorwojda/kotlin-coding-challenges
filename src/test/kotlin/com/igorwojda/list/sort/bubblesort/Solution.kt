@@ -1,9 +1,9 @@
 package com.igorwojda.list.sort.bubblesort
 
-// Time complexity (Best): Ω(n) - all data besides one element are sorted
+// Time complexity (Best): Ω(n) - list already sorted, single pass without swaps
 // Time complexity (Average): Θ(n^2)
 // Time complexity (Worst): O(n^2)
-// Space complexity: O(1)
+// Space complexity: O(n) - toMutableList copy
 private object Solution1 {
     private fun bubbleSort(list: List<Int>): List<Number> {
         val sorted = list.toMutableList()

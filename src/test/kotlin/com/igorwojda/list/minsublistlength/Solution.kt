@@ -1,8 +1,8 @@
 package com.igorwojda.list.minsublistlength
 
-// Time complexity: O(n)
-// Space complexity O(n)
 // Use sliding window
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
     fun minSubListLength(
         list: List<Int>,
@@ -44,8 +44,9 @@ private object Solution1 {
     }
 }
 
-// Time complexity: O(n^2)
 // Loop through all the elements and then loop through all sublists
+// Time complexity: O(n^2)
+// Space complexity: O(1) - subList is O(1) view
 private object Solution2 {
     fun minSubListLength(
         list: List<Int>,
@@ -84,6 +85,8 @@ private object Solution2 {
 }
 
 // Solution without use a private fun min
+// Time complexity: O(n^3) - windowed(length) for each length copies O(n * length) elements
+// Space complexity: O(n^2) - windowed creates up to n - length + 1 lists of size length
 private object Solution3 {
     fun minSubListLength(
         list: List<Int>,

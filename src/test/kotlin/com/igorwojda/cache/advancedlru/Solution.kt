@@ -5,7 +5,10 @@ import java.time.Duration
 import java.util.PriorityQueue
 
 // Implementation is using  combination of HashMap and PriorityQueue.
-// Time Complexity: O(N) (JVM priority queue is O(log(n)) on offer/poll methods and O(N) on remove(item) method)
+// Time complexity:
+// put: O(n) - plus O(n) per expired item evicted; PriorityQueue.remove(item) is O(n), offer/poll O(log n)
+// get: O(n) - PriorityQueue.remove(item) is O(n)
+// Space complexity: O(n) - n is number of cached items
 internal object Solution1 {
     class AdvancedLRUCache<K : Any, V : Any>(private val capacity: Int, private val clock: Clock = Clock.systemDefaultZone()) : LRUCache<K, V> {
         private val map: MutableMap<K, CacheItem<K, V>> = mutableMapOf()

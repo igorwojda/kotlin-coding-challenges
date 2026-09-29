@@ -1,5 +1,10 @@
 package com.igorwojda.tree.binarysearchtree
 
+// Time complexity:
+// add: O(h) - h is tree height, O(log n) balanced, O(n) worst case
+// contains: O(h)
+// isEmpty: O(1)
+// Space complexity: O(n)
 private object Solution1 {
     private class BinarySearchTree<E : Comparable<E>> {
         var root: BinaryNode<E>? = null

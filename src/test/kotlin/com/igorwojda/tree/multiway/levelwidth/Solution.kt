@@ -1,5 +1,7 @@
 package com.igorwojda.tree.multiway.levelwidth
 
+// Time complexity: O(n) - n is node count
+// Space complexity: O(n)
 private object Solution1 {
     private fun levelWidth(tree: Node): List<Int> {
         val nodesAtLevel = mutableListOf<Int>()
@@ -32,6 +34,8 @@ private object Solution1 {
     }
 }
 
+// Time complexity: O(n^2) - n is node count, list removeAt(0) is O(n)
+// Space complexity: O(n)
 private object Solution2 {
     private fun levelWidth(tree: Node): List<Int> {
         val result = mutableListOf<Int>()
@@ -76,6 +80,8 @@ private object Solution2 {
     }
 }
 
+// Time complexity: O(n^2) - n is node count, list removeAt(0) is O(n)
+// Space complexity: O(n)
 private object Solution3 {
     // Counters array solution
     private fun levelWidth(tree: Node): List<Int> {

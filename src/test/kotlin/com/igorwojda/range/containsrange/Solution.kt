@@ -1,5 +1,7 @@
 package com.igorwojda.range.containsrange
 
+// Time complexity: O(1)
+// Space complexity: O(1)
 private object Solution1 {
     private fun containsRange(
         range1: IntRange,

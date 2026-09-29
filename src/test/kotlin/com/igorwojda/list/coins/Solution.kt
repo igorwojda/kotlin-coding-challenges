@@ -1,7 +1,7 @@
 package com.igorwojda.list.coins
 
-// Time complexity: O(n∗m)
-// Space complexity: O(n)O(n)
+// Time complexity: O(n * m) - n is amount, m is number of coins
+// Space complexity: O(n) - n is amount
 private object Solution1 {
     private fun getCoins(
         amount: Int,

@@ -1,9 +1,9 @@
 package com.igorwojda.list.sort.quicksort
 
-// Time complexity (Best): Ω(n log(n))
-// Time complexity (Average): Θ(l log(n))
-// Time complexity (Worst): O(n^2)
-// Space complexity: O(log(n))
+// Time complexity (Best): Ω(n log n)
+// Time complexity (Average): Θ(n log n)
+// Time complexity (Worst): O(n^2) - e.g. already sorted list (first element as pivot)
+// Space complexity: O(n) - worst-case recursion stack (O(log n) on average)
 private object Solution1 {
     private fun quickSort(
         list: MutableList<Int>,
@@ -56,10 +56,10 @@ private object Solution1 {
     }
 }
 
-// Time complexity (Best): Ω(n^2)
-// Time complexity (Average): Θ(n^2)
-// Time complexity (Worst): O(n^2)
-// Space complexity: O(n)
+// Time complexity (Best): Ω(n log n)
+// Time complexity (Average): Θ(n log n)
+// Time complexity (Worst): O(n^2) - e.g. already sorted list (first element as pivot)
+// Space complexity: O(n) - concatenated result lists plus recursion stack
 private object Solution2 {
     private fun quickSort(list: MutableList<Int>): List<Number> {
         if (list.isEmpty()) {

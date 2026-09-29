@@ -1,5 +1,20 @@
 package com.igorwojda.linkedlist.doubly.base
 
+// Time complexity:
+// first: O(1)
+// last: O(n)
+// size: O(n)
+// clear: O(1)
+// insertFirst: O(1)
+// insertLast: O(n)
+// insertAt: O(n)
+// removeFirst: O(1)
+// removeLast: O(n)
+// removeAt: O(n)
+// getAt: O(n)
+// setAt: O(n)
+// plus: O((n + m)^2) - n, m are list sizes, each insertLast is O(n)
+// Space complexity: O(n)
 object Solution1 {
     private class DoublyLinkedList<E> : Iterable<Node<E>> {
         var head: Node<E>? = null

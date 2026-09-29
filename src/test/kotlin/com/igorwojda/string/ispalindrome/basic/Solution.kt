@@ -1,11 +1,15 @@
 package com.igorwojda.string.ispalindrome.basic
 
 // string reverse
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun isPalindrome(str: String): Boolean = str == str.reversed()
 }
 
 // iterative, double pointer solution
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution2 {
     private fun isPalindrome(str: String): Boolean {
         var leftIndex = 0
@@ -28,6 +32,8 @@ private object Solution2 {
 }
 
 // iterative, double pointer solution
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution3 {
     private fun isPalindrome(str: String): Boolean {
         str.forEachIndexed { index, char ->
@@ -47,6 +53,8 @@ private object Solution3 {
 }
 
 // recursive solution
+// Time complexity: O(n^2) - substring copy at each of n/2 recursion levels
+// Space complexity: O(n^2) - recursion stack of depth n/2, each frame holds a substring copy
 private object Solution4 {
     private fun isPalindrome(str: String): Boolean = if (str.isEmpty() || str.length == 1) {
         true

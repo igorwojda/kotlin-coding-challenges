@@ -1,14 +1,12 @@
 package com.igorwojda.stack.basic
 
-/*
-LinkedList based implementation
-
-Time complexity:
-Insertion: O(1)
-Removal: O(1)
-Searching: O(n)
-Access: O(n)
-*/
+// LinkedList based implementation
+// Time complexity:
+// add: O(1)
+// remove: O(1)
+// peek: O(1)
+// isEmpty: O(1)
+// Space complexity: O(n)
 private object Solution1 {
     private class Stack<E> {
         private var first: Node<E>? = null
@@ -49,27 +47,28 @@ private object Solution1 {
     )
 }
 
-/*
-List based implementation
-
-It's important to notice that we should add new element to the end of the list, because adding to the
-beginning is expensive (all subsequent items have to be re-indexed):
-
-Option A - add to the end, remove from the beginning:
-Insert at the end O(1)
-Remove at the end O(1)
-
-Option B - add to the beginning, remove from the end:
-Bad idea to add elements at the beginning:
-Insert at the beginning O(n)
-Remove at the beginning O(n) - we have to re-index all the other elements in the list
-
-Solution time complexity:
-Insertion: O(1)
-Removal: O(1)
-Searching: O(n)
-Access: O(n)
-*/
+// List based implementation
+//
+// It's important to notice that we should add new element to the end of the list, because adding to the
+// beginning is expensive (all subsequent items have to be re-indexed):
+//
+// Option A - add to the end, remove from the end:
+// Insert at the end O(1)
+// Remove at the end O(1)
+//
+// Option B - add to the beginning, remove from the beginning:
+// Bad idea to add elements at the beginning:
+// Insert at the beginning O(n)
+// Remove at the beginning O(n) - we have to re-index all the other elements in the list
+//
+// This solution uses Option A.
+// Time complexity:
+// add: O(1) amortized
+// remove: O(1)
+// peek: O(1)
+// isEmpty: O(1)
+// size: O(1)
+// Space complexity: O(n)
 private object Solution2 {
     private class Stack<E> {
         private val list = mutableListOf<E>()

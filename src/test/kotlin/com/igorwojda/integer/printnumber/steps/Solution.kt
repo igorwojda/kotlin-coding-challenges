@@ -1,5 +1,7 @@
 package com.igorwojda.integer.printnumber.steps
 
+// Time complexity: O(k) - k = n / step, number of returned elements
+// Space complexity: O(k)
 private object Solution1 {
     private fun printNumber(
         n: Int,
@@ -7,6 +9,8 @@ private object Solution1 {
     ): List<Int> = (n downTo 1 step step).toList()
 }
 
+// Time complexity: O(k^2) - k = n / step; each level copies the result of the recursive call
+// Space complexity: O(k) - result list and recursion call stack
 private object Solution2 {
     private fun printNumber(
         n: Int,
@@ -20,6 +24,8 @@ private object Solution2 {
     }
 }
 
+// Time complexity: O(k^2) - k = n / step; each level copies the result of the recursive call
+// Space complexity: O(k) - result list and recursion call stack
 private object Solution3 {
     private fun printNumber(
         n: Int,

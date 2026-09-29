@@ -1,6 +1,7 @@
 package com.igorwojda.list.reverse
 
 // Time complexity: O(n)
+// Space complexity: O(n) - toMutableList copy
 private object Solution1 {
     private fun reverse(list: List<String>): List<String> {
         val newList = list.toMutableList()
