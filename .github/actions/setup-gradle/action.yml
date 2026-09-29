@@ -7,7 +7,7 @@ runs:
     - name: Set up JDK
       uses: actions/setup-java@v6
       with:
-        java-version: 25
+        java-version: 26
         distribution: 'zulu'
 
     - name: Set up Gradle

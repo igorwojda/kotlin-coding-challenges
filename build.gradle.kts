@@ -68,7 +68,7 @@ tasks.register<JavaExec>("generateTests") {
 }
 
 kotlin {
-    jvmToolchain(25)
+    jvmToolchain(26)
 }
 
 spotless {
