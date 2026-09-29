@@ -9,27 +9,18 @@ plugins {
 
 repositories {
     mavenCentral()
-    maven("https://plugins.gradle.org/m2/")
+}
+
+sourceSets {
+    // Generates tests for every solution (see generateTests task)
+    create("testGenerator")
 }
 
 dependencies {
     testImplementation(libs.junit.jupiter)
     testImplementation(libs.kluent)
     testRuntimeOnly(libs.junit.platform.launcher)
-}
 
-sourceSets {
-    test {
-        java {
-            srcDirs.add(File("src/test"))
-        }
-    }
-
-    // Generates tests for every solution (see generateTests task)
-    create("testGenerator")
-}
-
-dependencies {
     "testGeneratorImplementation"(libs.kotlin.compiler.embeddable)
 }
 
@@ -77,7 +68,7 @@ tasks.register<JavaExec>("generateTests") {
 }
 
 kotlin {
-    jvmToolchain(19)
+    jvmToolchain(25)
 }
 
 spotless {
@@ -98,5 +89,11 @@ spotless {
 
         leadingTabsToSpaces()
         endWithNewline()
+    }
+
+    kotlinGradle {
+        target("*.gradle.kts")
+
+        ktlint()
     }
 }
