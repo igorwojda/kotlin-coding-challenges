@@ -151,6 +151,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 - [Max occurring char](../src/test/kotlin/com/igorwojda/string/maxoccurringchar)
 - [Reverse string](../src/test/kotlin/com/igorwojda/string/reverse)
 - [Surrounded letter](../src/test/kotlin/com/igorwojda/string/surroundedletter)
+- [Valid parentheses](../src/test/kotlin/com/igorwojda/string/validparentheses)
 - [Find the vowels](../src/test/kotlin/com/igorwojda/string/vowels)
 - [Format train route](../src/test/kotlin/com/igorwojda/list/formattrainroute)
 
@@ -172,6 +173,7 @@ We use sliding window instead of nested loops which decreases complexity from `O
 ## Stack
 
 - [Stack](../src/test/kotlin/com/igorwojda/stack/basic)
+- [Valid parentheses](../src/test/kotlin/com/igorwojda/string/validparentheses)
 - [Tree traversal (depth first)](../src/test/kotlin/com/igorwojda/tree/multiway/traversal/depthfirst)
 
 ## Heap

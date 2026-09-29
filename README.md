@@ -89,6 +89,7 @@ multiple times and be persistent over time.
 - [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz)
 - [Caesar cipher](src/test/kotlin/com/igorwojda/string/caesarcipher)
 - [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter)
+- [Valid parentheses](src/test/kotlin/com/igorwojda/string/validparentheses)
 - [Smallest elements](src/test/kotlin/com/igorwojda/list/smallestelements)
 - [Largest elements](src/test/kotlin/com/igorwojda/list/largestelements)
 
