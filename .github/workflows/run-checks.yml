@@ -23,14 +23,27 @@ jobs:
       - name: Verify challenges structure (Konsist)
         run: ./gradlew konsistTest
 
-      - name: spotless check
-        run: ./gradlew spotlessCheck
-
       - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: konsist-test-report
           path: ./build/reports/tests/konsistTest/
+
+  spotless-check:
+    name: Spotless check
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v7
+
+      - name: Set up JDK
+        uses: actions/setup-java@v6
+        with:
+          java-version: 19
+          distribution: 'zulu'
+
+      - name: spotless check
+        run: ./gradlew spotlessCheck
 
   check-solutions:
     name: Check solutions
