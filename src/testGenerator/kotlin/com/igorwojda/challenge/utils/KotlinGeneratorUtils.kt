@@ -32,7 +32,6 @@ object KotlinGeneratorUtils {
         testsKtFile: KtFile?,
         solution: KtObjectDeclaration,
     ): TestFile {
-
         val solutionName = checkNotNull(solution.name) { "Solution name is null" }
         val packageStr = getPackage(challengeKtFile, solutionName)
         val imports = getImports(*listOfNotNull(solutionKtFile, challengeKtFile, testsKtFile).toTypedArray())
@@ -52,7 +51,7 @@ object KotlinGeneratorUtils {
             listOf("\n"),
             solutionMembers,
             listOf("\n"),
-            tests
+            tests,
         ).flatten()
 
         val testrSolutionFileName = getFileName(solution, challengeName)
@@ -61,12 +60,11 @@ object KotlinGeneratorUtils {
         return TestFile(testrSolutionFileName, relativePath, lines)
     }
 
-    private fun getChallengeName(challengeKtFile: KtFile) =
-        challengeKtFile
-            .packageFqName
-            .toString()
-            .removePrefix("com.igorwojda.")
-            .replace(".", "_")
+    private fun getChallengeName(challengeKtFile: KtFile) = challengeKtFile
+        .packageFqName
+        .toString()
+        .removePrefix("com.igorwojda.")
+        .replace(".", "_")
 
     private fun getTests(ktFiles: List<KtFile>): List<String> {
         val tests = ktFiles
@@ -89,8 +87,7 @@ object KotlinGeneratorUtils {
         .toSet()
         .toList()
 
-    private fun getPackage(ktFile: KtFile, solutionName: String) =
-        "package generated.${ktFile.packageFqName}.$solutionName".lowercase()
+    private fun getPackage(ktFile: KtFile, solutionName: String) = "package generated.${ktFile.packageFqName}.$solutionName".lowercase()
 
     private fun getFileName(solution: KtObjectDeclaration, challengeName: String): String {
         val solutionName = checkNotNull(solution.name) { "Solution name is null" }

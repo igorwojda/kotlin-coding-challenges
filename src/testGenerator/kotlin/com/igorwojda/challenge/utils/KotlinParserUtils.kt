@@ -23,37 +23,26 @@ object KotlinParserUtils {
         ExperimentalCompilerApi::class,
     )
     private val project by lazy {
-        KotlinCoreEnvironment
-            .createForProduction(
-                Disposer.newDisposable(),
-                CompilerConfiguration().apply { extensionsStorage = CompilerPluginRegistrar.ExtensionStorage() },
-                EnvironmentConfigFiles.JVM_CONFIG_FILES,
-            ).project
+        KotlinCoreEnvironment.createForProduction(
+            Disposer.newDisposable(),
+            CompilerConfiguration().apply { extensionsStorage = CompilerPluginRegistrar.ExtensionStorage() },
+            EnvironmentConfigFiles.JVM_CONFIG_FILES,
+        ).project
     }
 
-    private fun getChallengeFile(
-        challengeDirectoryPath: File,
-        challengeFile: ChallengeFile,
-    ): File {
+    fun getChallengeFile(challengeDirectoryPath: File, challengeFile: ChallengeFile): File {
         val path = "${challengeDirectoryPath.path}/${challengeFile.fileName}"
         return File(path)
     }
 
-    fun getChallengeKtFile(
-        challengeDirectoryPath: File,
-        challengeFile: ChallengeFile,
-    ): KtFile {
+    fun getChallengeKtFile(challengeDirectoryPath: File, challengeFile: ChallengeFile): KtFile {
         val file = getChallengeFile(challengeDirectoryPath, challengeFile)
         return getKtFile(file)
     }
 
     fun getKtFile(file: File): KtFile = getChallengeKtFile(file.readText(), file.path)
 
-    private fun getChallengeKtFile(
-        codeString: String,
-        fileName: String,
-    ) = PsiManager
-        .getInstance(project)
+    private fun getChallengeKtFile(codeString: String, fileName: String) = PsiManager.getInstance(project)
         .findFile(
             LightVirtualFile(fileName, KotlinFileType.INSTANCE, codeString),
         ) as KtFile

@@ -1,20 +1,27 @@
 package com.igorwojda.challenge.utils
 
-import org.gradle.api.Project
 import java.io.File
+
+/**
+ * Entry point of the `generateTests` Gradle task. Expects repository root directory path as the first argument.
+ */
+fun main(args: Array<String>) {
+    val rootDirectory = File(args.single())
+    TestUtils.generateTestFiles(rootDirectory)
+}
 
 object TestUtils {
 
-    fun generateTestFiles(project: Project) {
-        getChallengeDirectories(project).forEach {
-            generateTestFiles(it)
+    fun generateTestFiles(rootDirectory: File) {
+        getChallengeDirectories(rootDirectory).forEach {
+            generateChallengeTestFiles(it)
         }
     }
 
     /**
      * Generate test files for a given challenge by combining challenge file with available solutions
      */
-    private fun generateTestFiles(challengeDirectoryPath: File) {
+    private fun generateChallengeTestFiles(challengeDirectoryPath: File) {
         val generatedChallengeDirecotryPath = challengeDirectoryPath
             .path
             .replace("kotlin/com/igorwojda/", "kotlin/generated/com/igorwojda/")
@@ -37,7 +44,6 @@ object TestUtils {
             // if the directory contains any file
             if (files != null) {
                 for (file in files) {
-
                     // recursive call if the subdirectory is non-empty
                     deleteDirectory(file)
                 }
@@ -60,8 +66,8 @@ object TestUtils {
     /**
      * Return list of project names
      */
-    private fun getChallengeDirectories(project: Project): List<File> {
-        val path = "${project.rootDir.path}/../src/test/kotlin/com/igorwojda"
+    private fun getChallengeDirectories(rootDirectory: File): List<File> {
+        val path = "${rootDirectory.path}/src/test/kotlin/com/igorwojda"
         val directory = File(path)
         val miscDirectoryName = "misc"
 
