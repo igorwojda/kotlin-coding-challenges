@@ -1,7 +1,5 @@
 # Flatten
 
-## Nice to solve before
-
 ## Instructions
 
 Given list containing items (integer, lists, sub-lists) implement **recursive** function which returns list with all

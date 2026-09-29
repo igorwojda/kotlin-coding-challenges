@@ -2,38 +2,20 @@
 
 ## Nice to solve before
 
+- [Other challenge](../otherchallenge/README.md)
+
 ## Instructions
 
 ???
 
 [Challenge](Challenge.kt) | [Solution](Solution.kt)
 
-## Limitations
-
-## Steps
-
-???
-
-### Step 1
-
-???
-
-### Step 2
-
-???
-
 ## Examples
 
-Example 1
-
 ```kotlin
+challenge("input") // "expected"
 
-```
-
-Example 2
-
-```kotlin
-
+challenge("other input") // "other expected"
 ```
 
 ## Hints
