@@ -60,3 +60,11 @@ jobs:
         with:
           name: solution-test-report
           path: ./build/reports/tests/test/
+
+  long-running-check:
+    name: Long running check (30 min)
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Sleep 30 min
+        run: sleep 1800
