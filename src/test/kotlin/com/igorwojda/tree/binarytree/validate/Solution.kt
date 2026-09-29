@@ -1,5 +1,7 @@
 package com.igorwojda.tree.binarytree.validate
 
+// Time complexity: O(n) - n is node count
+// Space complexity: O(h) - recursion call stack, h is tree height
 private object Solution1 {
     private fun isValidSearchBinaryTree(
         node: Node<Int>,

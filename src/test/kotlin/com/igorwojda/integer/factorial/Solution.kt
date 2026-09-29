@@ -1,6 +1,8 @@
 package com.igorwojda.integer.factorial
 
 // iterative solution
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
     private fun factorial(n: Int): Int {
         var total = 1
@@ -14,6 +16,8 @@ private object Solution1 {
 }
 
 // another iterative solution
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution2 {
     private fun factorial(n: Int): Int = when (n) {
         0 -> 1
@@ -22,6 +26,8 @@ private object Solution2 {
 }
 
 // recursive solution
+// Time complexity: O(n)
+// Space complexity: O(n) - recursion call stack
 private object Solution3 {
     private fun factorial(n: Int): Int = when (n) {
         0, 1 -> 1
@@ -30,6 +36,8 @@ private object Solution3 {
 }
 
 // Tail-recursive solution
+// Time complexity: O(n)
+// Space complexity: O(n) - recursion call stack (no tailrec modifier, so not optimized)
 private object Solution4 {
     private fun factorial(n: Int): Int {
         fun fact(

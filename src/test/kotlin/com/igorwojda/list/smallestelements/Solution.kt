@@ -3,7 +3,8 @@ package com.igorwojda.list.smallestelements
 import java.util.Collections
 import java.util.PriorityQueue
 
-// Time complexity: O(n log k)
+// Time complexity: O(n log k) - k is count
+// Space complexity: O(n) - drop(count) copies the list, heap is O(k)
 private object Solution1 {
     private fun smallestElements(
         list: List<Int>,

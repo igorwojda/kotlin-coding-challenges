@@ -1,6 +1,8 @@
 package com.igorwojda.integer.countdown
 
 // Kotlin idiomatic solution
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun countDown(n: Int): List<Int> {
         // Create a range and convert it to a list
@@ -9,6 +11,8 @@ private object Solution1 {
 }
 
 // Recursive solution
+// Time complexity: O(n^2) - each level copies the result of the recursive call
+// Space complexity: O(n) - result list and recursion call stack
 private object Solution2 {
     private fun countDown(n: Int): List<Int> {
         if (n == 0) {
@@ -20,6 +24,8 @@ private object Solution2 {
 }
 
 // Recursive solution with helper function
+// Time complexity: O(n^2) - each level copies the result of the recursive call
+// Space complexity: O(n) - result list and recursion call stack
 private object Solution3 {
     private fun countDown(n: Int): List<Int> {
         // We want to keep return type unchanged while implementing recursive solution, so we will
@@ -37,6 +43,8 @@ private object Solution3 {
 }
 
 // Kotlin idiomatic solution
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution4 {
     private fun countDown(n: Int): List<Int> = List(n + 1) { n - it }
 }

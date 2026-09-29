@@ -1,6 +1,8 @@
 package com.igorwojda.string.ispalindrome.tolerant
 
 // iterative solution
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
     private fun isTolerantPalindrome(str: String): Boolean {
         var characterRemoved = false
@@ -26,6 +28,8 @@ private object Solution1 {
 }
 
 // Recursive solution
+// Time complexity: O(n^2) - substring copy at each recursion level
+// Space complexity: O(n^2) - recursion stack of depth n/2, each frame holds a substring copy
 private object Solution2 {
     private fun isTolerantPalindrome(
         str: String,
@@ -66,6 +70,8 @@ private object Solution2 {
 }
 
 // recursive solution 2
+// Time complexity: O(n) - recursion depth at most 2
+// Space complexity: O(n)
 private object Solution3 {
     private fun isTolerantPalindrome(
         str: String,

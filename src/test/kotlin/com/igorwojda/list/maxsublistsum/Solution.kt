@@ -2,10 +2,10 @@ package com.igorwojda.list.maxsublistsum
 
 import kotlin.math.max
 
-// Time Complexity: O(n)
-// Space Complexity: O(1)
 // Use "sliding window" - store sum in single variable and with each iteration add (current item)
 // and remove (first item before current sub-list)
+// Time complexity: O(n)
+// Space complexity: O(m) - m is numElements; take(numElements) creates a copy
 private object Solution1 {
     private fun maxSubListSum(
         list: List<Int>,
@@ -27,6 +27,8 @@ private object Solution1 {
     }
 }
 
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution2 {
     private fun maxSubListSum(
         list: List<Int>,
@@ -45,8 +47,9 @@ private object Solution2 {
     }
 }
 
-// Time Complexity: O(n*m)
 // Loop through the list and at each index loop again to calculate sum of sublist (from index to index + n)
+// Time complexity: O(n * m) - m is numElements
+// Space complexity: O(1)
 private object Solution3 {
     private fun maxSubListSum(
         list: List<Int>,
@@ -86,6 +89,8 @@ private object Solution3 {
     }
 }
 
+// Time complexity: O(n * m) - m is numElements
+// Space complexity: O(1) - subList is O(1) view
 private object Solution4 {
     private fun maxSubListSum(
         list: List<Int>,
@@ -98,6 +103,8 @@ private object Solution4 {
     }
 }
 
+// Time complexity: O(n * m) - m is numElements
+// Space complexity: O(n * m) - windowed creates n - m + 1 lists of size m
 private object Solution5 {
     private fun maxSubListSum(
         list: List<Int>,

@@ -1,5 +1,7 @@
 package com.igorwojda.list.formattrainroute
 
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun formatTrainRoute(stations: List<String>): String {
         val prefix = "Train is calling at "
@@ -22,6 +24,8 @@ private object Solution1 {
     }
 }
 
+// Time complexity: O(n^2) - string concatenation in loop
+// Space complexity: O(n)
 private object Solution2 {
     private fun formatTrainRoute(stations: List<String>): String {
         var res = ""

@@ -1,6 +1,7 @@
 package com.igorwojda.matrix.findallrectangles
 
-// Time complexity: O(n*m)
+// Time complexity: O(n * m) - n is row count, m is column count
+// Space complexity: O(k) - k is number of rectangles (result)
 private object Solution1 {
     private fun findAllRectangles(image: List<List<Int>>): MutableList<List<Int>> {
         fun getRectangleFromTopLeftCorner(

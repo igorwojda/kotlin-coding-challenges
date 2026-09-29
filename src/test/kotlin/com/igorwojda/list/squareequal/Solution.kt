@@ -1,8 +1,9 @@
 package com.igorwojda.list.squareequal
 
+// Create two frequency map for each list and compare them
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
-    // Time complexity: O(n)
-    // Create two frequency map for each list and compare them
     private fun squareEquals(
         list: List<Int>,
         squared: List<Int>,
@@ -19,10 +20,11 @@ private object Solution1 {
     }
 }
 
+// Loop through first list and look for value square in the second list. If square if found
+// remove it from second list to make sure that item frequency match.
+// Time complexity: O(n^2) - indexOf and removeAt are O(n)
+// Space complexity: O(n) - toMutableList copy
 private object Solution2 {
-    // Time complexity: O(n^2)
-    // Loop through first list and look for value square in the second list. If square if found
-    // remove it from second list to make sure that item frequency match.
     private fun squareEquals(
         list: List<Int>,
         squared: List<Int>,

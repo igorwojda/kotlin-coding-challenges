@@ -1,7 +1,10 @@
 package com.igorwojda.cache.lru
 
 // Implementation is using  combination of HashMap and LinkedList.
-// Time Complexity: O(1)
+// Time complexity:
+// put: O(1)
+// get: O(1)
+// Space complexity: O(n) - n is capacity
 object Solution1 {
     class LRUCacheImpl<K : Any, V : Any>(
         private val capacity: Int,
@@ -111,7 +114,10 @@ object Solution1 {
 }
 
 // Implementation using LinkedHashMap
-// Time Complexity: O(1)
+// Time complexity:
+// put: O(1)
+// get: O(1)
+// Space complexity: O(n) - n is capacity
 object Solution2 {
     class LRUCacheImpl<K : Any, V : Any>(
         private val capacity: Int,
@@ -139,7 +145,10 @@ object Solution2 {
 }
 
 // Implementation using List
-// Time Complexity: O(n)
+// Time complexity:
+// put: O(n) - removeIf and removeFirst on ArrayList
+// get: O(n) - linear search and remove
+// Space complexity: O(n) - n is capacity
 object Solution3 {
     class LRUCacheImpl<K : Any, V : Any>(
         private val capacity: Int,

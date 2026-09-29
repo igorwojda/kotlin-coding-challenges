@@ -1,5 +1,7 @@
 package com.igorwojda.integer.generateallpairs
 
+// Time complexity: O(n^2)
+// Space complexity: O(n^2)
 private object Solution1 {
     private fun getAllPairs(n: Int): List<Pair<Int, Int>> {
         val result = mutableListOf<Pair<Int, Int>>()
@@ -14,6 +16,8 @@ private object Solution1 {
     }
 }
 
+// Time complexity: O(n^2)
+// Space complexity: O(n^2)
 private object Solution2 {
     private fun getAllPairs(n: Int): List<Pair<Int, Int>> = (0..n)
         .map { i ->

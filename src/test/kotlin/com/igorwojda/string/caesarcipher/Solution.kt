@@ -1,5 +1,7 @@
 package com.igorwojda.string.caesarcipher
 
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun encodeCaesarCipher(
         str: String,
@@ -23,6 +25,8 @@ private object Solution1 {
     }
 }
 
+// Time complexity: O(n^2) - string concatenation in loop
+// Space complexity: O(n)
 private object Solution2 {
     private fun encodeCaesarCipher(
         str: String,

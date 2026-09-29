@@ -1,5 +1,7 @@
 package com.igorwojda.linkedlist.singly.addnumbers
 
+// Time complexity: O(n^2) - n is length of longer list, string concatenation in loop
+// Space complexity: O(n)
 object Solution1 {
     private fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
         val n1 = getNumber(l1)

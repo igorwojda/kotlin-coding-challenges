@@ -1,6 +1,8 @@
 package com.igorwojda.string.ispalindrome.permutation
 
 // frequency map solution
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun isPermutationPalindrome(str: String): Boolean {
         val charactersFrequencyMap = str.groupingBy { it }.eachCount()
@@ -11,6 +13,8 @@ private object Solution1 {
     }
 }
 
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution2 {
     private fun isPermutationPalindrome(str: String): Boolean = str
         .groupBy { it }

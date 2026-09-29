@@ -1,8 +1,9 @@
 package com.igorwojda.list.sumzero
 
+// Optimal solution using double pointer.
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
-    // Optimal solution using double pointer.
-    // Time complexity: O(n)
     fun sumZero(list: List<Int>): Pair<Int, Int>? {
         if (list.isEmpty()) {
             return null
@@ -30,6 +31,7 @@ private object Solution1 {
 
 // Naive solution using nested loop
 // Time complexity: O(n^2)
+// Space complexity: O(1)
 private object Solution2 {
     fun sumZero(list: List<Int>): Pair<Int, Int>? {
         list.forEachIndexed { index, element1 ->

@@ -1,5 +1,7 @@
 package com.igorwojda.common.anycallback
 
+// Time complexity: O(n^2) - drop(1) copies the list at each level
+// Space complexity: O(n^2) - each stack frame holds its own dropped copy
 internal object Solution1 {
     fun <T : Any> anyCallback(
         list: List<T>,
@@ -17,6 +19,8 @@ internal object Solution1 {
     }
 }
 
+// Time complexity: O(n) - subList is an O(1) view
+// Space complexity: O(n) - recursion call stack
 internal object Solution2 {
     fun <T : Any> anyCallback(
         list: List<T>,
@@ -27,6 +31,8 @@ internal object Solution2 {
     }
 }
 
+// Time complexity: O(n) - O(n^2) for non-RandomAccess lists (drop copies)
+// Space complexity: O(n) - recursion call stack; O(n^2) for non-RandomAccess lists
 internal object Solution3 {
     fun <T : Any> anyCallback(
         list: List<T>,

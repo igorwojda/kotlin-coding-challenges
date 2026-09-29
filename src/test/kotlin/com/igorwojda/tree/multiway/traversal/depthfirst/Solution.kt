@@ -1,5 +1,7 @@
 package com.igorwojda.tree.multiway.traversal.depthfirst
 
+// Time complexity: O(n) - n is node count, per traversal
+// Space complexity: O(n)
 private object Solution1 {
     private fun traverseDepthFirstPreOrder(tree: BinarySearchTree<Char>): List<Char> {
         val result = mutableListOf<Char>()
@@ -220,6 +222,8 @@ private object Solution1 {
 }
 
 // recursive solution
+// Time complexity: O(n * h) - n is node count, h is tree height (O(n^2) worst case), list + copies at each level
+// Space complexity: O(n) - result lists plus O(h) recursion call stack
 private object Solution2 {
     private class BinarySearchTree<E : Comparable<E>> {
         var root: BinaryNode<E>? = null

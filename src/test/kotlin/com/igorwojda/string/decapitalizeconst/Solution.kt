@@ -1,6 +1,8 @@
 package com.igorwojda.string.decapitalizeconst
 
 // Kotlin idiomatic solution
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun decapitalizeConst(str: String): String {
         val subsStringsList =
@@ -18,6 +20,8 @@ private object Solution1 {
 }
 
 // Another Approach
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution2 {
     private fun decapitalizeConst(str: String): String? {
         val words = str.split("_").filter { it.isNotEmpty() }

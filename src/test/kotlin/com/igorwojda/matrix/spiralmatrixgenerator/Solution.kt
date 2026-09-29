@@ -1,5 +1,7 @@
 package com.igorwojda.matrix.spiralmatrixgenerator
 
+// Time complexity: O(n^2)
+// Space complexity: O(n^2) - n x n result matrix
 private object Solution1 {
     private fun generateSpiralMatrix(n: Int): List<MutableList<Int?>> {
         val list =

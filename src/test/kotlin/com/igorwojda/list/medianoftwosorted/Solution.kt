@@ -1,6 +1,7 @@
 package com.igorwojda.list.medianoftwosorted
 
-// Time complexity: O(log (m+n))
+// Time complexity: O(n + m) - n is list1 size, m is list2 size
+// Space complexity: O(1)
 private object Solution1 {
     fun medianOfSortedLists(
         list1: List<Int>,
@@ -65,8 +66,8 @@ private object Solution1 {
     }
 }
 
-// Time complexity: O(n)
-// Space complexity O(n)
+// Time complexity: O((n + m) log(n + m)) - n is list1 size, m is list2 size; sorted
+// Space complexity: O(n + m)
 private object Solution2 {
     fun medianOfSortedLists(
         list1: List<Int>,

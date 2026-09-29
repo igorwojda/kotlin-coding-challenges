@@ -1,5 +1,7 @@
 package com.igorwojda.list.listchunk
 
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun chunk(
         list: List<Int>,
@@ -19,6 +21,8 @@ private object Solution1 {
     }
 }
 
+// Time complexity: O(n / m) - n is list size, m is chunk size; subList is O(1) view
+// Space complexity: O(n / m) - one subList view per chunk
 private object Solution2 {
     private fun chunk(
         list: List<Int>,
@@ -35,6 +39,8 @@ private object Solution2 {
     }
 }
 
+// Time complexity: O(n / m) - n is list size, m is chunk size; subList is O(1) view
+// Space complexity: O(n / m) - one subList view per chunk
 private object Solution3 {
     private fun chunk(
         list: List<Int>,

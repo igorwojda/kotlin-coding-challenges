@@ -1,5 +1,7 @@
 package com.igorwojda.string.isanagram
 
+// Time complexity: O(n + m) - n is str1 length, m is str2 length
+// Space complexity: O(n + m)
 private object Solution1 {
     private fun isAnagram(
         str1: String,
@@ -11,6 +13,8 @@ private object Solution1 {
     }
 }
 
+// Time complexity: O(n + m) - n is str1 length, m is str2 length
+// Space complexity: O(n + m)
 private object Solution2 {
     private fun isAnagram(
         str1: String,
@@ -23,6 +27,8 @@ private object Solution2 {
         .groupBy { it }
 }
 
+// Time complexity: O(n + m) - n is str1 length, m is str2 length
+// Space complexity: O(n + m)
 private object Solution3 {
     private fun isAnagram(
         str1: String,

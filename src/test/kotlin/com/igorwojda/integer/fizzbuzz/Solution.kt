@@ -1,5 +1,7 @@
 package com.igorwojda.integer.fizzbuzz
 
+// Time complexity: O(n)
+// Space complexity: O(n)
 private object Solution1 {
     private fun fizzBuzz(n: Int): List<String> {
         val list = mutableListOf<String>()

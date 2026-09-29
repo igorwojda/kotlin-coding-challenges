@@ -2,6 +2,8 @@ package com.igorwojda.linkedlist.singly.circularcheck
 
 import com.igorwojda.linkedlist.singly.base.Solution1.SinglyLinkedList
 
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
     private fun circularCheck(list: SinglyLinkedList<Char>): Boolean {
         var slowPointer = list.first

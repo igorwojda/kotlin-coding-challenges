@@ -3,6 +3,8 @@ package com.igorwojda.linkedlist.singly.fromlast
 import com.igorwojda.linkedlist.singly.base.Solution1.Node
 import com.igorwojda.linkedlist.singly.base.Solution1.SinglyLinkedList
 
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
     private fun fromLast(
         list: SinglyLinkedList<Char>,

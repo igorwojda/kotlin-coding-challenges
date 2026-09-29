@@ -1,6 +1,8 @@
 package com.igorwojda.integer.power
 
 // Recursive solution
+// Time complexity: O(n) - n is exponent
+// Space complexity: O(n) - recursion call stack
 private object Solution1 {
     private fun power(
         base: Int,

@@ -1,5 +1,10 @@
 package com.igorwojda.tree.heap.maxbinaryheap
 
+// Time complexity:
+// add: O(log n)
+// removeMax: O(log n)
+// isEmpty: O(1)
+// Space complexity: O(n)
 private object Solution1 {
     private class MaxBinaryHeap<E : Comparable<E>> {
         val items = mutableListOf<E>()

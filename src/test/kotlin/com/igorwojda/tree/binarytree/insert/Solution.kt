@@ -1,5 +1,9 @@
 package com.igorwojda.tree.binarytree.insert
 
+// Time complexity:
+// insert: O(h) - h is tree height, O(log n) balanced, O(n) worst case
+// contains: O(h)
+// Space complexity: O(n) - plus O(h) recursion call stack
 private object Solution1 {
     private data class Node<E : Comparable<E>>(
         var data: E,

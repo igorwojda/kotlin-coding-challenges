@@ -3,6 +3,8 @@ package com.igorwojda.linkedlist.singly.midpoint
 import com.igorwojda.linkedlist.singly.base.Solution1.Node
 import com.igorwojda.linkedlist.singly.base.Solution1.SinglyLinkedList
 
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
     private fun midpoint(list: SinglyLinkedList<Char>): Node<Char>? {
         var slowPointer = list.first

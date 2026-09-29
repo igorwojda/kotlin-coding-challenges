@@ -1,7 +1,8 @@
 package com.igorwojda.list.pairaverage
 
-// Time complexity: O(n)
 // Optimal solution using double pointer.
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
     fun hasAverage(
         list: List<Int>,

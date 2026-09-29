@@ -1,6 +1,8 @@
 package com.igorwojda.string.surroundedletter
 
 // Regex solution
+// Time complexity: O(n)
+// Space complexity: O(1)
 private object Solution1 {
     private fun surroundedLetter(str: String): Boolean {
         val pattern =
@@ -15,6 +17,8 @@ private object Solution1 {
 }
 
 // Iterative solution
+// Time complexity: O(n)
+// Space complexity: O(n) - drop(1) copies string
 private object Solution2 {
     private fun surroundedLetter(str: String): Boolean {
         if (str.length < 3) {
