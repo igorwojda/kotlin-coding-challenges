@@ -14,9 +14,8 @@ files ([screen](./misc/image/challenge-structure.png)):
 
 - `README.md` - the task description.
 - `Challenge.kt` - file containing an empty method/class where the challenge should be solved. This file also contains
-  a set of tests and occasionally helper methods. You can run all tests directly from this file (click the green arrow next to
-  `Test` class).
-  [JUnit](https://junit.org/junit4/) tests which verify that the task was solved correctly.
+  a set of [JUnit](https://junit.org/) tests which verify that the task was solved correctly, and occasionally helper
+  methods. You can run all tests directly from this file (click the green arrow next to `Test` class).
 - `Solution.kt` - a file containing one or more solutions.
 
 Keep in mind that each challenge will usually have more than one solution. Even simple challenges like
@@ -35,7 +34,8 @@ determine space/time complexity, and we look at code readability.
    3. Click `Clone`
 3. Choose a challenge ([src\test\kotlin\com\igorwojda](src/test/kotlin/com/igorwojda) package) and code
    the solution in the `Challenge.kt` file
-4. [Run the tests](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Running-tests) in the `Challenge.kt` file to verify the provided solution
+4. Run the tests in the `Challenge.kt` file to verify the provided solution - click the green arrow next to the `Test`
+   class ([screen](./misc/image/run-test.png)). Rerun the last configuration with `Run` (`⌘ + R`).
 
 # Let's solve some challenges
 
@@ -43,9 +43,8 @@ The challenges below are segregated by different difficulties. The repository al
 [problem type](misc/ChallengeGroups.md).
 
 Some challenges may contain a reference to other challenges that should be solved before to have a better understanding
-of the problem. Check the
-look at [problem-solving strategy](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Solving-coding-challenges)
-.
+of the problem. Take a look at the
+[problem-solving strategy](misc/ProblemSolvingStrategy.md).
 
 Take your time before you view the presented solution. To succeed you need to practice often, repeat the same challenges
 multiple times and be persistent over time.
@@ -162,7 +161,7 @@ If you don't see the green play icon used to run the tests try to open `Settings
 - [Project Euler](https://projecteuler.net/archives) - more complex challenges, usually related to mathematics. The site
   already contains 600+ problems and a new code challenge is available every week or two. You will probably have to
   discuss the problem with the community because solutions are not on the website.
-- [Advent of code](https://adventofcode.com/2018/events) - one month of various programming problems released daily at
+- [Advent of code](https://adventofcode.com/events) - one month of various programming problems released daily at
   the end of the year. Fortunately, archive of past events is still there.
 - [CoderByte](https://coderbyte.com/challenges) - 200+ challenges, data structures/algorithms/company interview
   problems segregated by difficulty. Unfortunately, most of them are only available for premium users. Premium gives you
@@ -172,10 +171,11 @@ If you don't see the green play icon used to run the tests try to open `Settings
   you will still have plenty of problems to solve.
 - [Spoj](https://www.spoj.com/problems/classical) - list of programming challenges is smaller than other websites, but
   you will still have plenty of problems to solve.
+- [CodeWars](https://www.codewars.com/) - solve coding challenges (kata) ranked by difficulty and compare your solutions
+  with others.
 
 ### Game challenges
-- [CodeWars](https://www.codewars.com/) - solve visual challenges by writing code for the.
-- [CodinGame](https://www.codingame.com/) - solve visual challenges by writing code for the.
+- [CodinGame](https://www.codingame.com/) - solve visual challenges by writing code that controls the game.
 
 ## Video courses
 
@@ -214,7 +214,7 @@ If you don't see the green play icon used to run the tests try to open `Settings
 # Contribute
 
 Feedback and new contributions are welcome whether it's through bug reports or new PRs. To add new coding challenges just
-follow this [guide](https://github.com/igorwojda/kotlin-coding-challenges/wiki/Adding-a-new-challenge) and open PR.
+copy the [challenge template](misc/template/challenge) into a new package and open PR.
 
 Checks run with every PR:
 
@@ -232,7 +232,7 @@ Checks run with every PR:
 ```
 MIT License
 
-Copyright (c) 2023 Igor Wojda
+Copyright (c) 2018-2026 Igor Wojda
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
